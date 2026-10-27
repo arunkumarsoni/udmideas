@@ -121,21 +121,27 @@ export const MapUsaSection: React.FC<MapUsaSectionProps> = ({
                   <span className="text-[11px] text-blue-400 font-mono">20 States Active</span>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 max-h-40 overflow-y-auto pr-1">
-                  {USA_STATES.map((state) => (
-                    <button
-                      key={state}
-                      onClick={() => onSelectState(state)}
-                      onMouseEnter={() => setHoveredState(state)}
-                      onMouseLeave={() => setHoveredState(null)}
-                      className={`text-left px-2 py-1 text-xs rounded transition-colors truncate ${
-                        state === 'New York'
-                          ? 'bg-blue-600 text-white font-semibold'
-                          : 'bg-slate-900 text-slate-300 hover:bg-slate-800 hover:text-white'
-                      }`}
-                    >
-                      {state}
-                    </button>
-                  ))}
+                  {USA_STATES.map((state) => {
+                    const slug = `/${state.toLowerCase().replace(/\s+/g, '-')}/`;
+                    return (
+                      <a
+                        key={state}
+                        href={slug}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onMouseEnter={() => setHoveredState(state)}
+                        onMouseLeave={() => setHoveredState(null)}
+                        className={`text-left px-2 py-1 text-xs rounded transition-colors truncate flex items-center justify-between ${
+                          state === 'New York'
+                            ? 'bg-blue-600 text-white font-semibold'
+                            : 'bg-slate-900 text-slate-300 hover:bg-slate-800 hover:text-white'
+                        }`}
+                      >
+                        <span className="truncate">{state}</span>
+                        <span className="text-[9px] opacity-40 ml-1">↗</span>
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             </div>

@@ -91,14 +91,16 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({
                   <span>{study.languages.join(', ')}</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => onSelectCaseStudy(study)}
+                  <a
+                    href={`/case-study/${study.slug}/`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-600/20 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/40 text-xs font-semibold transition-all group/btn"
                     aria-label={`Open dedicated case study page for ${study.title}`}
                   >
                     <span>Read Case Study Page</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </article>

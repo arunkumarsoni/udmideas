@@ -127,13 +127,15 @@ class HreflangOrchestrator {
               </a>
 
               {/* Consultation / Strategy Audit CTA */}
-              <button
-                onClick={onOpenContact}
+              <a
+                href="/contact-us/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl text-sm font-semibold text-slate-100 bg-slate-900 hover:bg-slate-800 border border-slate-700/80 hover:border-slate-600 shadow-sm transition-all"
               >
                 <span>Request Multilingual Audit</span>
                 <ArrowRight className="w-4 h-4 text-blue-400" />
-              </button>
+              </a>
             </div>
 
             {/* Micro Trust Indicators */}

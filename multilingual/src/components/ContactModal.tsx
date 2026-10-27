@@ -22,6 +22,23 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email) return;
+
+    // Trigger direct email dispatch to soni9999arun9999@gmail.com
+    const subject = encodeURIComponent(`UDMIDEAS Consultation Request from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Hello Arun,\n\n` +
+      `You have received a new consultation request on UDMIDEAS:\n\n` +
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone/WhatsApp: ${formData.phone || 'N/A'}\n` +
+      `Service: ${formData.service}\n` +
+      `Target Region: ${formData.region}\n\n` +
+      `Project Details:\n${formData.message}\n\n` +
+      `Please reply to the sender at: ${formData.email}`
+    );
+
+    // Launch mail client addressed to soni9999arun9999@gmail.com
+    window.location.href = `mailto:soni9999arun9999@gmail.com?subject=${subject}&body=${body}`;
     setIsSubmitted(true);
   };
 
@@ -46,19 +63,19 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
             <div className="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto border border-emerald-500/40">
               <CheckCircle2 className="w-8 h-8" />
             </div>
-            <h3 className="text-2xl font-bold text-white">Thank You, {formData.name}!</h3>
+            <h3 className="text-2xl font-bold text-white">Inquiry Sent to soni9999arun9999@gmail.com!</h3>
             <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-              Arun and the UDMIDEAS multilingual strategy team have received your inquiry. We will analyze your target market ({formData.region}) and reach out within 4 business hours.
+              Thank you, <strong>{formData.name}</strong>. Your message has been routed directly to Founder Arun at <strong className="text-emerald-400 font-mono">soni9999arun9999@gmail.com</strong>. We will review your target market ({formData.region}) and respond within 4 business hours.
             </p>
             <div className="pt-4 flex flex-wrap items-center justify-center gap-3">
               <a
-                href={`https://wa.me/919521186150?text=Hello%20Arun,%20I%20just%20submitted%20a%20project%20inquiry%20under%20the%20name%20${encodeURIComponent(formData.name)}.`}
+                href={`https://wa.me/919521186150?text=Hello%20Arun,%20I%20just%20submitted%20the%20consultation%20form%20under%20the%20name%20${encodeURIComponent(formData.name)}.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-500"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Follow up immediately on WhatsApp</span>
+                <span>Follow up immediately on WhatsApp (+91-9521186150)</span>
               </a>
               <button
                 onClick={() => {

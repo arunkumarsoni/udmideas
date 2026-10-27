@@ -93,20 +93,25 @@ export const AboutUsSection: React.FC<AboutUsSectionProps> = ({
               </div>
             </div>
 
-            <div className="flex items-center gap-4 pt-2">
-              <button
-                onClick={onOpenTeam}
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <a
+                href="/team/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 border border-slate-800 transition-all"
               >
                 <span>Meet Founder Arun & Team</span>
                 <ArrowRight className="w-3.5 h-3.5 text-blue-400" />
-              </button>
-              <button
-                onClick={onOpenContact}
-                className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors"
+              </a>
+              <a
+                href="/contact-us/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-1"
               >
-                Schedule Architecture Consultation →
-              </button>
+                <span>Schedule Architecture Consultation</span>
+                <span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
 

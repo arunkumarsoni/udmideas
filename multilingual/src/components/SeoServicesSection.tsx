@@ -79,18 +79,40 @@ export const SeoServicesSection: React.FC<SeoServicesSectionProps> = ({
               </div>
 
               {/* Bottom Target Metrics & CTA */}
-              <div className="pt-4 border-t border-slate-900 space-y-4">
+              <div className="pt-4 border-t border-slate-900 space-y-3">
                 <div className="flex items-center justify-between text-xs">
                   <span className="text-slate-400">Target Benchmark:</span>
                   <span className="text-emerald-400 font-bold font-mono">{service.kpi}</span>
                 </div>
-                <button
-                  onClick={onOpenContact}
-                  className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 border border-slate-800 transition-all"
-                >
-                  <span>Request Strategy Audit for {service.title.split(' ')[0]}</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-emerald-400" />
-                </button>
+                {(() => {
+                  const targetUrl =
+                    service.id === 'seo-aeo'
+                      ? '/answer-engine-optimization/'
+                      : service.id === 'seo-geo'
+                      ? '/generative-engine-optimization/'
+                      : '/multilingual-search-engine-optimization/';
+                  return (
+                    <div className="flex flex-col sm:flex-row gap-2">
+                      <button
+                        onClick={onOpenContact}
+                        className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-500 transition-all cursor-pointer shadow-sm"
+                      >
+                        <span>Request Strategy Audit</span>
+                        <ArrowRight className="w-3.5 h-3.5 text-emerald-200" />
+                      </button>
+                      <a
+                        href={targetUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl text-xs font-semibold text-slate-300 bg-slate-900 hover:bg-slate-800 hover:text-white border border-slate-800 transition-all"
+                        title={`Open dedicated ${service.title} page in a new tab`}
+                      >
+                        <span>View Page</span>
+                        <ArrowRight className="w-3.5 h-3.5 text-slate-400" />
+                      </a>
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           ))}
