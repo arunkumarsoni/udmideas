@@ -150,6 +150,19 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
+                  href="/sitemap.xml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="sitemap.xml"
+                  className="text-blue-400 hover:text-blue-300 font-mono transition-colors inline-flex items-center gap-1"
+                  title="Download and view sitemap.xml"
+                >
+                  <span>Sitemap XML (Download)</span>
+                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://wa.me/919521186150?text=Hello%20UDMIDEAS,%20I%20am%20contacting%20you%20from%20the%20website%20footer."
                   target="_blank"
                   rel="noopener noreferrer"
@@ -366,6 +379,16 @@ export const Footer: React.FC = () => {
             <span>WCAG 2.1 AA Screen Reader Compliant</span>
             <span aria-hidden="true">·</span>
             <span>NYC 10001, USA</span>
+            <span aria-hidden="true">·</span>
+            <a
+              href="/sitemap.xml"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="sitemap.xml"
+              className="text-blue-400 hover:underline font-mono"
+            >
+              sitemap.xml
+            </a>
             <span aria-hidden="true">·</span>
             <a
               href="https://wa.me/919521186150"
