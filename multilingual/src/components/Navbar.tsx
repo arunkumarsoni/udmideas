@@ -264,9 +264,59 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                     <span className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider">
                       Top 20 USA States
                     </span>
-                    <a href="/new-york/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-emerald-400 font-mono hover:underline">
-                      HQ NYC 10001
-                    </a>
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <a href="/new-york/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-emerald-400 font-mono hover:underline">
+                        NYC
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/manhattan/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-pink-400 font-mono hover:underline">
+                        Manhattan
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/empire-state/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-yellow-400 font-mono hover:underline">
+                        Empire State
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/central-park/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-amber-400 font-mono hover:underline">
+                        Central Park
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/brooklyn/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-indigo-400 font-mono hover:underline">
+                        Brooklyn
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/bronx/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-cyan-400 font-mono hover:underline">
+                        Bronx
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/albany/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-blue-400 font-mono hover:underline">
+                        Albany
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/buffalo/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-teal-400 font-mono hover:underline">
+                        Buffalo
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/kingston/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-emerald-400 font-mono hover:underline">
+                        Kingston
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/mount-vernon/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-amber-400 font-mono hover:underline">
+                        Mount Vernon
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/new-rochelle/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-rose-400 font-mono hover:underline">
+                        New Rochelle
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/queens/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-purple-400 font-mono hover:underline">
+                        Queens
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/rochester/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-sky-400 font-mono hover:underline">
+                        Rochester
+                      </a>
+                    </div>
                   </div>
                   <div className="grid grid-cols-2 gap-1 max-h-64 overflow-y-auto pr-1">
                     {USA_STATES.map((st) => {
@@ -563,7 +613,61 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
               <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpandedSection === 'usa' ? 'rotate-180' : ''}`} />
             </button>
             {mobileExpandedSection === 'usa' && (
-              <div className="grid grid-cols-2 gap-1 pl-2 mt-1 border-l-2 border-slate-800">
+              <div className="pl-2 mt-1 border-l-2 border-slate-800 space-y-2">
+                <div className="flex items-center flex-wrap gap-2 pt-1 pb-1 text-xs">
+                  <a href="/new-york/" target="_blank" rel="noopener noreferrer" className="text-emerald-400 font-semibold hover:underline">
+                    NYC 10001
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/manhattan/" target="_blank" rel="noopener noreferrer" className="text-pink-400 font-semibold hover:underline">
+                    Manhattan
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/empire-state/" target="_blank" rel="noopener noreferrer" className="text-yellow-400 font-semibold hover:underline">
+                    Empire State
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/central-park/" target="_blank" rel="noopener noreferrer" className="text-amber-400 font-semibold hover:underline">
+                    Central Park
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/brooklyn/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 font-semibold hover:underline">
+                    Brooklyn
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/bronx/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 font-semibold hover:underline">
+                    The Bronx
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/albany/" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-semibold hover:underline">
+                    Albany NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/buffalo/" target="_blank" rel="noopener noreferrer" className="text-teal-400 font-semibold hover:underline">
+                    Buffalo NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/kingston/" target="_blank" rel="noopener noreferrer" className="text-emerald-400 font-semibold hover:underline">
+                    Kingston NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/mount-vernon/" target="_blank" rel="noopener noreferrer" className="text-amber-400 font-semibold hover:underline">
+                    Mount Vernon NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/new-rochelle/" target="_blank" rel="noopener noreferrer" className="text-rose-400 font-semibold hover:underline">
+                    New Rochelle NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/queens/" target="_blank" rel="noopener noreferrer" className="text-purple-400 font-semibold hover:underline">
+                    Queens NYC
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/rochester/" target="_blank" rel="noopener noreferrer" className="text-sky-400 font-semibold hover:underline">
+                    Rochester NY
+                  </a>
+                </div>
+                <div className="grid grid-cols-2 gap-1">
                 {USA_STATES.map((st) => (
                   <a
                     key={st}
@@ -575,6 +679,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                     {st}
                   </a>
                 ))}
+                </div>
               </div>
             )}
           </div>

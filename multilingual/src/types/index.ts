@@ -89,12 +89,27 @@ export interface ProjectWork {
   liveUrlOrScope: string;
 }
 
+export interface BlogTable {
+  title: string;
+  headers: string[];
+  rows: string[][];
+}
+
+export interface BlogFaq {
+  question: string;
+  answer: string;
+}
+
 export interface BlogPost {
   id: string;
   title: string;
   slug: string;
+  customUrl?: string;
   excerpt: string;
   content: string[];
+  tables?: BlogTable[];
+  faqs?: BlogFaq[];
+  regionBlocks?: string[];
   category: 'Multilingual SEO' | 'AEO & GEO' | 'Custom Development' | 'PPC & Growth' | 'eCommerce Architecture';
   readTime: string;
   date: string;

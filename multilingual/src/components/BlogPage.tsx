@@ -301,19 +301,15 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                   </div>
 
                   <div className="pt-3 border-t border-slate-800/80">
-                    <button
-                      onClick={() => {
-                        if (onSelectBlog) {
-                          onSelectBlog(blog);
-                        } else {
-                          setSelectedArticle(blog);
-                        }
-                      }}
+                    <a
+                      href={blog.customUrl || `/blog/${blog.slug}/`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-full inline-flex items-center justify-between py-2 px-3 rounded-lg text-xs font-semibold text-slate-200 bg-slate-950 hover:bg-blue-950/40 hover:text-white border border-slate-850 transition-all group-hover:border-slate-700"
                     >
                       <span>Read Article</span>
                       <ArrowRight className="w-3.5 h-3.5 text-blue-400" />
-                    </button>
+                    </a>
                   </div>
                 </article>
               ))}

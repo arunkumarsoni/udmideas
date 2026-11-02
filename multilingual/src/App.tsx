@@ -74,9 +74,11 @@ export default function App() {
   // Check if currentPath is a blog detail page
   const matchedBlog = BLOG_POSTS.find((b) => {
     const slug = b.slug.toLowerCase();
+    const custom = b.customUrl ? b.customUrl.toLowerCase() : '';
     return (
       currentPath === `/blog/${slug}/` ||
       currentPath === `/${slug}/` ||
+      (custom && currentPath === custom) ||
       currentPath.includes(slug)
     );
   });

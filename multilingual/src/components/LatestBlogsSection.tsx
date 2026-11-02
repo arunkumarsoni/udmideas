@@ -116,7 +116,7 @@ export const LatestBlogsSection: React.FC<LatestBlogsSectionProps> = ({
               {/* Action Button */}
               <div className="pt-3 border-t border-slate-800/80">
                 <a
-                  href={`/blog/${blog.slug}/`}
+                  href={blog.customUrl || `/blog/${blog.slug}/`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-between py-2 px-3 rounded-lg text-xs font-semibold text-slate-200 bg-slate-950 hover:bg-blue-950/40 hover:text-white border border-slate-850 transition-all group-hover:border-slate-700"
