@@ -17,6 +17,335 @@ export interface PageSEO {
 export const CANONICAL_BASE = 'https://www.udmideasusa.com';
 
 export const ALL_PAGES: Record<string, PageSEO> = {
+  '/yonkers/': {
+    path: '/yonkers/',
+    title: 'SEO Expert for Yonkers, NY | UDMIDEAS | Arun SEO Consultant',
+    description: 'SEO Expert for Yonkers, NY.',
+    kicker: 'Yonkers NY Westchester & NYC Metro Remote SEO',
+    heading: 'SEO Expert for Yonkers, NY | Arun, Remote SEO Consultant.',
+    subheading: 'I\'m Arun, founder of UDMIDEAS, and I work as a remote SEO expert for businesses in Yonkers, New York: the fourth-largest city in NY state, navigating Bronx border cross-shopping, Hudson River waterfront redevelopment, Empire City Casino visitors, and Getty Square commerce.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/yonkers/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Leadership: Arun, Founder of UDMIDEAS leading tailored technical and local search optimization',
+      'Fourth-Largest NY City Scope: Sizing search reach for a major metropolitan market of 200,000+ residents rather than a generic suburb',
+      'Bronx Border Cross-Shopping Strategy: Precision geotargeting capturing customers searching across the NYC city line without diluting relevance',
+      'Hudson Waterfront & Casino Visibility: Capturing incoming commercial foot traffic around Empire City Casino and new riverfront developments',
+      'Multilingual Demographic Coverage: Crafting multilingual content for the significant portion of Yonkers households speaking non-English languages',
+      'Transparent $500/Month Retainer: Comprehensive onpage audits, local schema markup, citations, and monthly performance tracking',
+      'AEO & GEO Search Dominance: Structuring your service offerings for AI answer engines including ChatGPT, Perplexity, and Gemini'
+    ],
+    features: [
+      { title: 'Technical Onpage & Speed', desc: 'Technical audits, schema markup, Core Web Vitals, and structured local business architecture.' },
+      { title: 'Bronx & Westchester Geotargeting', desc: 'Optimizing service areas and Google Business Profiles for high-intent queries across borders.' },
+      { title: 'AEO & GEO Generative Visibility', desc: 'Positioning your business inside AI-generated direct answers and search summaries.' },
+      { title: 'React JS Website Engineering', desc: 'Custom React JS builds optimized from the ground up for speed, conversions, and clean code.' }
+    ],
+    languages: ['English', 'Spanish', 'Multilingual Westchester SEO'],
+    faq: [
+      { q: 'My business is close to the Bronx border. How do you handle that overlap?', a: 'Service area targeting and Google Business Profile setup are configured carefully so you show up for the right searches on both sides of the line without diluting your local relevance.' },
+      { q: "Can you build content that speaks to Yonkers' diverse population?", a: 'Yes. Multilingual SEO is often part of the strategy given how many language communities the city includes.' },
+      { q: 'Is remote SEO effective for a city this large and this close to New York City?', a: 'Yes. Local research, competitor analysis, and execution rely on accurate data and consistent work, not physical presence.' },
+      { q: 'Do you offer long-term contracts?', a: 'Long-term retainers are preferred since SEO compounds over time, but terms are shaped around what fits your business.' }
+    ]
+  },
+  '/hells-kitchen/': {
+    path: '/hells-kitchen/',
+    title: 'hells-kitchen SEO Agency | UDMIDEAS | Arun SEO Consultant',
+    description: "UDMIDEAS, a New York SEO agency and digital marketing agency, helps Hell's Kitchen businesses get found.",
+    kicker: "Hell's Kitchen & Clinton Manhattan Local SEO",
+    heading: "Hell's Kitchen SEO Agency | UDMIDEAS | Arun SEO Consultant.",
+    subheading: "Hell's Kitchen, also called Clinton, is the neighborhood on Manhattan's west side where Ninth Avenue restaurants, Broadway theaters, small shops and new apartment towers share the same few blocks. UDMIDEAS helps Hell's Kitchen businesses get found with senior SEO expertise led by Arun.",
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/hells-kitchen/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Leadership: Arun, Founder of UDMIDEAS delivering senior attention without bloated agency overhead',
+      'High-Density Food & Nightlife Competition: Ninth Avenue restaurants, pre-theater dinner bookings, cocktail bars, and Clinton local services',
+      'Google Maps 3-Pack Dominance: Optimizing Google Business Profile listings, fresh photography, and customer review velocity',
+      'Hyper-Local Keyword Targeting: Capturing mobile searches for 34th to 59th Street, Eighth Avenue to the Hudson River waterfront',
+      'Transparent $500/Month Retainer: Full local SEO management including onpage speed, content guidance, citations, and monthly reports',
+      'AEO & GEO Search Readiness: Structuring local business information for inclusion in ChatGPT, Gemini, and voice search trip answers',
+      'Custom React JS Development: Ultra-fast mobile menus, service reservation funnels, and sub-second load times'
+    ],
+    features: [
+      { title: 'Google Business Profile & 3-Pack', desc: 'Category selection, photo optimization, review acceleration, and local citation building.' },
+      { title: 'Hyper-Local Onpage SEO', desc: 'Targeting Ninth Avenue, Clinton, Broadway pre-theater, and Hudson River Park search intent.' },
+      { title: 'AEO & Generative AI Search', desc: 'Structuring schema and FAQs so AI trip planners and voice search recommend your venue.' },
+      { title: 'Mobile Speed & Menu Engineering', desc: 'Mobile-first optimization turning fast queries into phone calls, walk-ins, and direct reservations.' }
+    ],
+    languages: ['English', 'Spanish', 'Multilingual NYC SEO'],
+    faq: [
+      { q: 'How long before I see results?', a: 'Local improvements often show within 2 to 3 months, with stronger gains by month 6, depending on competition.' },
+      { q: 'Does SEO work for restaurants and bars?', a: 'Yes. Maps rankings, reviews and photos drive many dining decisions, and SEO improves all three.' },
+      { q: 'Can you guarantee the #1 spot?', a: 'No honest SEO expert can. Arun commits to transparent work and measurable progress.' },
+      { q: 'Do you work remotely?', a: 'Yes. Calls, video meetings and shared reports cover everything, anywhere in New York.' },
+      { q: 'What does the $500 cover?', a: 'The monthly SEO plan above. Larger projects, like a website rebuild, are quoted separately.' }
+    ]
+  },
+  '/watertown/': {
+    path: '/watertown/',
+    title: 'Arun SEO Consultant for watertown Business Owners | UDMIDEAS',
+    description: 'SEO Expert for Watertown Business Owners | Arun, Ecommerce SEO Expert New York.',
+    kicker: 'Watertown NY North Country Ecommerce & Local SEO',
+    heading: 'SEO Expert for Watertown Business Owners | Arun, Ecommerce SEO Expert New York.',
+    subheading: 'I\'m Arun, founder of UDMIDEAS, and I work as an Ecommerce SEO Expert New York business owners and startups turn to: helping Watertown businesses capture high-turnover military family searches from Fort Drum (10th Mountain Division), Thousand Islands seasonal tourism, and local commerce.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/watertown/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Leadership: Arun, Ecommerce SEO Expert New York leading a dedicated team of SEO specialists',
+      'Fort Drum Military Turn-Over: Optimizing for incoming soldiers and military families who search online with zero prior local brand loyalty',
+      'Thousand Islands Tourism & Dairy Economy: Capturing seasonal visitors and regional agricultural B2B commercial searches',
+      'Lake-Effect Snow eCommerce Strategy: Preparing businesses for intense winter weather when buying shifts predominantly online',
+      'Pre-Launch Store Structuring: Helping Watertown startups architect clean category taxonomies and fast Core Web Vitals before launch',
+      'Transparent $500/Month Retainer: Full onpage and offpage SEO management with clear monthly reporting and performance tracking',
+      'AEO & GEO Search Visibility: Structuring content so generative AI answer engines cite your Watertown business in local recommendations'
+    ],
+    features: [
+      { title: 'Technical Onpage & Speed', desc: 'Technical audits, local business schema markup, Core Web Vitals, and structured content architecture.' },
+      { title: 'Ecommerce SEO & Taxonomy', desc: 'Category optimization, product feed alignment, and conversion-focused checkout UX.' },
+      { title: 'AEO & GEO Generative Visibility', desc: 'Positioning your brand inside AI-generated direct answers and search summaries.' },
+      { title: 'React JS Website Engineering', desc: 'Custom React JS builds optimized from the ground up for high-converting online stores.' }
+    ],
+    languages: ['English', 'Spanish', 'Multilingual North Country SEO'],
+    faq: [
+      { q: 'How does the Fort Drum population affect our SEO strategy?', a: 'It means your content needs to work for people with zero existing knowledge of the area, so clear service descriptions, straightforward local information, and strong Google Business Profile presence matter more than in a market with a stable, familiar customer base.' },
+      { q: 'We’re a new business thinking about selling products online. Where do we start?', a: 'Connect with me before launch if possible. Ecommerce SEO built into the store from day one avoids the common mistakes that are far more expensive to fix after the fact.' },
+      { q: 'Does seasonality and weather actually affect search behavior here?', a: 'Yes. Heavy winter weather shifts a real share of local commerce online for months at a time, which makes strong SEO more valuable, not less, during the coldest stretches of the year.' },
+      { q: 'Do you offer long-term contracts?', a: 'Long-term retainers are preferred since SEO compounds over time, but terms are shaped around what fits your business.' }
+    ]
+  },
+  '/utica/': {
+    path: '/utica/',
+    title: 'Arun SEO Consultant for Utica Business Owners | UDMIDEAS',
+    description: 'SEO Expert for Utica Business Owners | Arun, Ecommerce SEO Expert New York',
+    kicker: 'Utica NY Mohawk Valley Ecommerce & Local SEO',
+    heading: 'SEO Expert for Utica Business Owners | Arun, Ecommerce SEO Expert New York.',
+    subheading: 'I\'m Arun, founder of UDMIDEAS, and I work as an Ecommerce SEO Expert New York business owners and startups turn to: helping Utica businesses capture emerging demand from the downtown regional healthcare campus, Marcy Nanocenter semiconductor investments, and Mohawk Valley expansion.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/utica/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Leadership: Arun, Ecommerce SEO Expert New York leading a dedicated team of SEO specialists',
+      'Pivotal Economic Growth Window: Capturing incoming hospital staff, construction workers, and semiconductor supplier searches',
+      'Mohawk Valley & Marcy Nanocenter: Positioning local businesses before digital competition catches up to regional expansion',
+      'Pre-Launch Ecommerce Structuring: Guiding startups to build crawlable taxonomies, fast checkout funnels, and product schema from day one',
+      'Transparent $500/Month Retainer: Full onpage and offpage SEO management with clear monthly reporting and performance tracking',
+      'AEO & GEO Search Visibility: Structuring content so generative AI answer engines cite your Utica business in local recommendations',
+      'Custom React JS Development: Engineered for ultra-fast Core Web Vitals speed and seamless mobile customer conversion'
+    ],
+    features: [
+      { title: 'Technical Onpage & Speed', desc: 'Technical audits, local business schema markup, Core Web Vitals, and structured content architecture.' },
+      { title: 'Ecommerce SEO & Taxonomy', desc: 'Category optimization, product feed alignment, and conversion-focused checkout UX.' },
+      { title: 'AEO & GEO Generative Visibility', desc: 'Positioning your brand inside AI-generated direct answers and search summaries.' },
+      { title: 'React JS Website Engineering', desc: 'Custom React JS builds optimized from the ground up for high-converting online stores.' }
+    ],
+    languages: ['English', 'Spanish', 'Multilingual Mohawk Valley SEO'],
+    faq: [
+      { q: 'Is it really worth investing in SEO now, before the growth fully arrives?', a: 'Yes. Establishing strong search visibility before demand peaks is far more effective than trying to catch up once every competitor is doing the same thing.' },
+      { q: "We're a startup considering an online store. What should we do first?", a: 'Connect with me before launch if possible. Ecommerce SEO built into the store from the beginning avoids costly structural mistakes that are much harder to fix after the fact.' },
+      { q: 'How do new hospital staff or construction workers moving to the area actually find local businesses?', a: 'Almost entirely through search, since they have no prior relationships or reputation to rely on, which makes a strong Google Business Profile and clear website content essential.' },
+      { q: 'Do you offer long-term contracts?', a: 'Long-term retainers are preferred since SEO compounds over time, but terms are shaped around what fits your business.' }
+    ]
+  },
+  '/troy/': {
+    path: '/troy/',
+    title: 'Arun SEO Consultant for Troy Businesses | UDMIDEAS',
+    description: 'Remote SEO Expert for Troy Business Owners | Arun, Ecommerce SEO Expert New York with a team of SEO experts.',
+    kicker: 'Troy NY Capital Region Ecommerce & Local SEO',
+    heading: 'SEO Expert for Troy Business Owners | Arun, Ecommerce SEO Expert New York.',
+    subheading: 'I\'m Arun, founder of UDMIDEAS, and I work as an Ecommerce SEO Expert New York business owners and startups turn to: helping Troy businesses size their SEO for the wider 1.1 million Capital Region market and capture recurring demand from Rensselaer Polytechnic Institute (RPI).',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/troy/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Leadership: Arun, Ecommerce SEO Expert New York leading a dedicated team of SEO specialists',
+      'Capital Region Regional Sizing: Sizing your addressable market beyond Troy’s 50,000 residents to the 1.1M regional population',
+      'RPI Student & University Market: Capturing recurring demand for local services, hospitality, food, and retail from students and faculty',
+      'Pre-Launch Ecommerce Strategy: Advising startups before launch to structure taxonomy, category architecture, and conversion paths',
+      'Transparent $500/Month Retainer: Full onpage and offpage SEO management with clear monthly reporting and performance tracking',
+      'AEO & GEO Search Visibility: Structuring content so generative AI answer engines cite your Troy business in regional answers',
+      'Custom React JS Development: Engineered for ultra-fast load times and seamless mobile eCommerce checkout flows'
+    ],
+    features: [
+      { title: 'Technical Onpage & Speed', desc: 'Technical audits, product schema markup, Core Web Vitals, and structured catalog architecture.' },
+      { title: 'Ecommerce SEO & Taxonomy', desc: 'Category optimization, product feed alignment, and conversion-focused checkout UX.' },
+      { title: 'AEO & GEO Generative Visibility', desc: 'Positioning your brand inside AI-generated direct answers and search summaries.' },
+      { title: 'React JS Website Engineering', desc: 'Custom React JS builds optimized from the ground up for high-converting online stores.' }
+    ],
+    languages: ['English', 'Spanish', 'Multilingual Capital Region SEO'],
+    faq: [
+      { q: 'Should we target just Troy, or the whole Capital Region?', a: 'For most businesses, targeting the wider region captures far more potential customers than city-limited SEO alone, especially since so many Troy visitors and customers commute in from surrounding counties.' },
+      { q: "We're a startup thinking about launching an online store. Where should we start?", a: 'Connect with me before launch if possible. Sizing your ecommerce SEO strategy around the full regional population from day one avoids under-targeting your real addressable market.' },
+      { q: "Does RPI's student population actually matter for local SEO?", a: 'Yes, for many businesses. Students and the university community represent a meaningful, recurring share of searches for services, food, and retail throughout the year.' },
+      { q: 'Do you offer long-term contracts?', a: 'Long-term retainers are preferred since SEO compounds over time, but terms are shaped around what fits your business.' }
+    ]
+  },
+  '/times-square/': {
+    path: '/times-square/',
+    title: 'Arun SEO Consultant for Times Square Businesses | UDMIDEAS',
+    description: 'Remote SEO Consultant for Times Square Businesses. Arun, Tour & Travel Agency SEO Expert',
+    kicker: 'Times Square & Broadway Tour Agency SEO',
+    heading: 'Remote SEO Consultant for Times Square Businesses | Arun, Tour & Travel Agency SEO Expert.',
+    subheading: 'I\'m Arun, founder of UDMIDEAS, and I work as a remote SEO consultant for businesses operating in and around Times Square, New York: tour operators, travel agencies, hotels, and entertainment attractions competing for international visitor bookings weeks before they arrive in NYC.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/times-square/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Leadership: Arun, Founder of UDMIDEAS specializing in tour & travel agency search acquisition',
+      'Winning Against Big Aggregators: Outranking generic booking portals through specific itinerary content, pricing signals, and review authority',
+      'Global Pre-Trip Discovery Search: Capturing high-intent international travel searches happening weeks and months in advance',
+      'Broadway & Entertainment Funnels: Ticketing page schema, event markup, and conversion-optimized booking architectures',
+      'Transparent $500/Month Retainer: Dedicated onpage and offpage SEO management with full monthly conversion reporting',
+      'AEO & GEO Travel Recommendation: Formatting structured itineraries for inclusion in ChatGPT, Gemini, and Perplexity trip planners',
+      'Custom React JS Booking Sites: Sub-second loading speeds engineered for high mobile booking conversions'
+    ],
+    features: [
+      { title: 'Itinerary & Booking Funnel SEO', desc: 'Content architecture for specific tour itineraries, fast checkout pages, and event schema.' },
+      { title: 'Multilingual Traveler Optimization', desc: 'Capturing global travelers searching for Times Square experiences in their native languages.' },
+      { title: 'AEO & GEO AI Trip Planning', desc: 'Positioning your tour or hotel inside generative AI travel planning answers and summaries.' },
+      { title: 'Custom React JS Booking Engines', desc: 'Lightning-fast booking websites built from scratch to turn mobile travel searches into direct sales.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Italian', 'Multilingual Global Travel SEO'],
+    faq: [
+      { q: "We're a small tour company competing against big booking platforms. Can SEO really help?", a: "Yes. Specific, well-structured itinerary content and strong reviews let smaller operators win searches that generic aggregator listings can't answer as precisely." },
+      { q: 'Do you build content for international visitors, not just English speakers?', a: "Yes. Multilingual SEO is often essential given how much of Times Square's audience is traveling from outside the U.S." },
+      { q: 'How is travel SEO different from typical local SEO?', a: 'Travel search involves longer research windows, comparison across cities, and heavy reliance on reviews, so the content and technical strategy differ from standard local business SEO.' }
+    ]
+  },
+  '/syracuse/': {
+    path: '/syracuse/',
+    title: 'Arun SEO Consultant for Syracuse | UDMIDEAS',
+    description: 'SEO Expert and Consultant for Syracuse, NY | Arun, Remote SEO Team',
+    kicker: 'Syracuse NY Central New York Remote SEO',
+    heading: 'SEO Expert and Consultant for Syracuse, NY | Arun, Remote SEO Team.',
+    subheading: 'I\'m Arun, founder of UDMIDEAS, and I work as a remote SEO consultant and expert for businesses in Syracuse, New York: combining industrial manufacturing heritage, Erie Canal transport hubs, Syracuse University academic student traffic, and heavy lake-effect winter digital commerce.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/syracuse/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Leadership: Arun and a full remote team covering technical SEO, content, design, and analytics',
+      'Central New York & University Traffic: Capturing ongoing demand from Syracuse University students, researchers, and healthcare networks',
+      'Lake-Effect Winter Online Commerce: Optimizing local businesses for heavy snow seasons when commerce shifts heavily online',
+      'Full Analytics & Tracking Infrastructure: Complete GA4, Google Search Console, and Google Tag Manager setup and monthly monitoring',
+      'Google Merchant Center & E-Commerce: Product catalog taxonomy, shopping feed optimization, and conversion-focused UX',
+      'Transparent $500/Month Retainer: Full onpage and offpage SEO management with clear reporting and ROI tracking',
+      'Custom React JS Web Builds: UI/UX design and fast modern React architectures engineered from the first line of code'
+    ],
+    features: [
+      { title: 'Technical Onpage & Speed', desc: 'Technical audits, schema markup, Core Web Vitals, and structured content architecture.' },
+      { title: 'Analytics & Tracking Architecture', desc: 'GA4 configuration, Google Search Console monitoring, and Google Tag Manager implementation.' },
+      { title: 'AEO, GEO & Generative Answers', desc: 'Optimizing content for direct answers in ChatGPT, Gemini, and AI search summaries.' },
+      { title: 'E-commerce & Merchant Center', desc: 'Product feed setup, Shopping campaign optimization, and custom React JS development.' }
+    ],
+    languages: ['English', 'Spanish', 'Multilingual Central NY SEO'],
+    faq: [
+      { q: "Can you set up analytics from scratch if we've never tracked anything properly?", a: "Yes. GA4, Google Search Console, and Google Tag Manager setup is often the first step before any SEO work begins, so we know what's actually happening on the site." },
+      { q: 'Do you handle multilingual content for diverse customer bases?', a: 'Yes. Central New York has growing immigrant and international student populations, and multilingual SEO content helps capture that demand directly.' },
+      { q: 'Can your team design a new website, not just optimize an existing one?', a: 'Yes. We design and build React JS websites with UI/UX thinking built in from the start, not layered on afterward.' },
+      { q: 'Do you support Google Shopping and Merchant Center for e-commerce?', a: 'Yes. Product feed setup and ongoing Merchant Center management are part of our e-commerce SEO service.' }
+    ]
+  },
+  '/statue-of-liberty-area/': {
+    path: '/statue-of-liberty-area/',
+    title: 'Arun SEO Consultant for Statue of Liberty Area | UDMIDEAS',
+    description: 'Remote SEO Consultant for Statue of Liberty Area Businesses. Hire Arun today, Tour & Travel Agency SEO Expert.',
+    kicker: 'Statue of Liberty & Harbor Tour Agency SEO',
+    heading: 'Remote SEO Consultant for Statue of Liberty Area Businesses | Arun, Tour & Travel Agency SEO Expert.',
+    subheading: 'I\'m Arun, founder of UDMIDEAS, and I work as a remote SEO consultant for businesses serving visitors to the Statue of Liberty and Ellis Island: ferry operators, harbor cruises, historical walking tours, Lower Manhattan hotels, and Battery Park hospitality venues.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/statue-of-liberty-area/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Leadership: Arun, Founder of UDMIDEAS specializing in destination tourism & tour agency search growth',
+      'Differentiation from Official Ferries: Ranking for high-intent alternative experiences (harbor views, historical walking tours, skyline cruises)',
+      'Global Multilingual Visitor SEO: Multilingual keyword targeting capturing international tourists searching in native languages',
+      'Group & Educational Tour Funnels: Crafting optimized landing experiences tailored to school organizers, family reunions, and heritage researchers',
+      'Transparent $500/Month Retainer: Full onpage and offpage SEO management with clear reporting and conversion tracking',
+      'AEO & GEO Search Readiness: Formatting structured itineraries for inclusion in ChatGPT, Gemini, and Perplexity trip summaries',
+      'Custom React JS Booking Sites: Sub-second load speeds engineered for high mobile booking conversions'
+    ],
+    features: [
+      { title: 'Technical Onpage & Booking Funnels', desc: 'Technical audits, booking engine schema markup, Core Web Vitals, and conversion rate alignment.' },
+      { title: 'Multilingual Digital PR & Citations', desc: 'High-authority travel link building, global tourism directory placements, and Google Business Profile authority.' },
+      { title: 'AEO & GEO AI Trip Planning', desc: 'Structuring content so AI assistants recommend your harbor tour or hotel in direct travel itineraries.' },
+      { title: 'React JS Booking Engine Builds', desc: 'Bespoke, lightning-fast tour reservation websites built from the ground up for international mobile traffic.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Italian', 'Multilingual Global Tourism SEO'],
+    faq: [
+      { q: 'How do we compete with official ferry ticket search results?', a: 'By positioning clearly as a complementary or alternative experience, harbor views, added history, flexible timing, rather than trying to outrank the official channel on identical search terms.' },
+      { q: 'Do you build content for school and group tour bookings specifically?', a: 'Yes. Group and educational bookings have their own search patterns and decision-makers, and content can be built to speak directly to teachers and group organizers.' },
+      { q: 'Is multilingual content really necessary here?', a: 'Given how globally recognized this landmark is, yes, multilingual SEO consistently captures visitor segments that English-only content misses entirely.' }
+    ]
+  },
+  '/staten-island/': {
+    path: '/staten-island/',
+    title: 'Arun SEO Consultant for Staten Island | UDMIDEAS',
+    description: 'SEO Consultant for Staten Island, NY. Arun and a Team of 10+ SEO Experts.',
+    kicker: 'Staten Island NYC Local & Commercial SEO',
+    heading: 'SEO Consultant for Staten Island, NY | Arun and a Team of 10+ SEO Experts.',
+    subheading: 'I\'m Arun, founder of UDMIDEAS, and I lead a remote team of more than 10 SEO experts who work with Staten Island businesses: supporting local contractors, healthcare practices, family-owned retail, and professional services across North Shore, Mid-Island, and South Shore neighborhoods.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/staten-island/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Leadership: Arun and a dedicated team of 10+ SEO specialists delivering comprehensive search growth',
+      'Hyper-Local Staten Island Search Behavior: Optimizing for car-culture online research and local reviews before phone calls',
+      'Specialized Team Allocation: Dedicated experts covering technical audits, authoritative content, digital PR, and AI readiness',
+      'Family-Owned & Contractor Focus: Tailored strategies for home improvement contractors, private clinics, and local services',
+      'Transparent $500/Month Retainer: Full onpage and offpage SEO management with clear monthly reporting and scalable scope',
+      'AEO & GEO Search Dominance: Structuring content to earn direct citations in ChatGPT, Gemini, and Perplexity summaries',
+      'Bespoke React JS Engineering: Blazing fast web development built from scratch for maximum Core Web Vitals speed'
+    ],
+    features: [
+      { title: 'Technical Onpage Audits & Speed', desc: 'Technical crawl audits, schema markup, Core Web Vitals, and content restructuring.' },
+      { title: 'Local Citations & Link Outreach', desc: 'High-authority backlink building, local directory placements, and Google Business Profile authority.' },
+      { title: 'AEO & GEO AI Optimization', desc: 'Content built so AI answer engines surface your Staten Island business in direct answers.' },
+      { title: 'E-commerce & React Builds', desc: 'Product and category optimization paired with custom-coded React JS web engineering.' }
+    ],
+    languages: ['English', 'Spanish', 'Italian', 'Multilingual Local SEO'],
+    faq: [
+      { q: 'Is a remote team as effective as a local Staten Island agency?', a: 'Yes. Local SEO depends on accurate data, consistent execution, and real communication, all of which a remote team of 10+ specialists delivers without needing a physical office nearby.' },
+      { q: 'Can you handle a family-owned business as well as a larger company?', a: 'Yes. Retainers start at $500 a month and scale up as a business grows, so both fit within the same structure.' },
+      { q: 'What industries has your team worked with?', a: "Home services, healthcare, retail, e-commerce, and professional services, among others, adapting strategy to how each industry's customers actually search." },
+      { q: 'Do you offer long-term contracts?', a: 'Long-term retainers are preferred since SEO compounds over months, but terms are shaped around what works for your business.' }
+    ]
+  },
+  '/schenectady/': {
+    path: '/schenectady/',
+    title: 'Arun Remote SEO Consultant for Schenectady | UDMIDEAS',
+    description: 'Remote SEO Consultant for Schenectady, NY. Discuss with Arun, Founder of UDMIDEAS, today for Multilingual SEO Solutions.',
+    kicker: 'Schenectady NY Capital Region Remote SEO',
+    heading: 'Remote SEO Consultant for Schenectady, NY | Arun, Founder of UDMIDEAS.',
+    subheading: 'I\'m Arun, founder of UDMIDEAS, and I work as a remote SEO consultant for businesses in Schenectady, New York: combining industrial B2B heritage (General Electric, ALCO), Union College education corridors, Proctors Theatre downtown revitalization, and Capital Region search dominance.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/schenectady/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Leadership: Arun, Founder of UDMIDEAS delivering pragmatic, ROI-driven remote SEO retainers',
+      'Industrial & B2B Manufacturing SEO: Proven keyword mapping and technical authority for heavy manufacturing, engineering, and logistics',
+      'Capital Region Market Dominance: Competing effectively across Schenectady, Albany, Troy, and Saratoga corridors',
+      'Long-Standing Business Digital Transition: Protecting generational brand equity as search patterns shift toward AI answer engines',
+      'Transparent $500/Month Retainer: Full onpage and offpage SEO management with clear monthly reporting and no hidden fees',
+      'AEO & GEO Search Readiness: Formatting structured data to ensure visibility in ChatGPT, Gemini, and Perplexity summaries',
+      'Custom React JS Development: High-performance web architectures engineered for sub-second Core Web Vitals'
+    ],
+    features: [
+      { title: 'Onpage Technical Audits & Speed', desc: 'Technical crawl audits, schema markup, Core Web Vitals, and content restructuring.' },
+      { title: 'Offpage & Industrial Citations', desc: 'High-authority backlink development, digital PR, and verified local business directory placement.' },
+      { title: 'AEO & GEO AI Optimization', desc: 'Structuring content so AI answer engines surface your Schenectady brand in direct answers.' },
+      { title: 'E-commerce & React Web Builds', desc: 'Faceted product taxonomy and bespoke React JS engineering built from the ground up.' }
+    ],
+    languages: ['English', 'Spanish', 'Multilingual Technical SEO'],
+    faq: [
+      { q: 'My business has been around for decades. Do we really need SEO now?', a: 'Yes. A long-standing reputation still needs to show up clearly when new customers search online, especially as more of that search shifts toward AI-generated answers.' },
+      { q: 'Can you work with manufacturing or industrial businesses, not just retail?', a: "Yes. Schenectady's industrial base needs a different content and keyword approach than consumer-facing retail, and I build strategy specific to B2B and industrial search behavior." },
+      { q: 'Is remote SEO effective for a market this connected to the wider Capital Region?', a: 'Yes. Competitor research and local optimization are done with accurate regional data, whether the goal is to dominate Schenectady specifically or the wider Capital Region market.' },
+      { q: 'Do you offer long-term contracts?', a: 'Long-term retainers are preferred since SEO compounds over time, but terms are shaped around what fits your business.' }
+    ]
+  },
   '/rochester/': {
     path: '/rochester/',
     title: 'Arun Remote SEO Consultant for Rochester Businesses | UDMIDEAS',

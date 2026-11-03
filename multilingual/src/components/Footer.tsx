@@ -227,149 +227,6 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/organic-seo-agency-in-new-york-usa/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-emerald-400 hover:text-emerald-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Organic SEO Agency NYC</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/manhattan/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pink-400 hover:text-pink-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>SEO Consultant Manhattan NYC</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/empire-state/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-yellow-400 hover:text-yellow-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Empire State Area SEO NYC</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/central-park/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-amber-400 hover:text-amber-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Central Park Tour SEO NYC</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/brooklyn/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-indigo-400 hover:text-indigo-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>SEO Consultant Brooklyn NY</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/bronx/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cyan-400 hover:text-cyan-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>SEO Consultant Bronx NY</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/albany/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Remote SEO Albany NY</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/buffalo/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-teal-400 hover:text-teal-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Remote SEO Buffalo NY</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/kingston/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-emerald-400 hover:text-emerald-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Remote SEO Kingston NY</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/mount-vernon/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-amber-400 hover:text-amber-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Remote SEO Mount Vernon NY</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/new-rochelle/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-rose-400 hover:text-rose-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Remote SEO New Rochelle NY</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/queens/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-purple-400 hover:text-purple-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Remote SEO Queens NYC</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/rochester/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sky-400 hover:text-sky-300 font-medium transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Remote SEO Rochester NY</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-70" />
-                </a>
-              </li>
-              <li>
-                <a
                   href="/answer-engine-optimization/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -448,7 +305,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex flex-wrap items-center gap-2">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/UniqueDigitalMarketing/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-blue-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
@@ -458,7 +315,7 @@ export const Footer: React.FC = () => {
                   <span className="font-bold text-xs">fb</span>
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/udmideas/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-pink-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
@@ -468,7 +325,7 @@ export const Footer: React.FC = () => {
                   <span className="font-bold text-xs">ig</span>
                 </a>
                 <a
-                  href="https://pinterest.com"
+                  href="https://www.pinterest.com/udmideas/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-red-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
@@ -478,7 +335,7 @@ export const Footer: React.FC = () => {
                   <span className="font-bold text-xs">pin</span>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/company/udmideas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-blue-700 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
@@ -488,7 +345,7 @@ export const Footer: React.FC = () => {
                   <span className="font-bold text-xs">in</span>
                 </a>
                 <a
-                  href="https://youtube.com"
+                  href="https://www.youtube.com/@udmideas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-red-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
@@ -498,7 +355,7 @@ export const Footer: React.FC = () => {
                   <span className="font-bold text-xs">yt</span>
                 </a>
                 <a
-                  href="https://x.com"
+                  href="https://x.com/udmideas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-slate-700 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"

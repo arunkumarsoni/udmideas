@@ -316,6 +316,46 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                       <a href="/rochester/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-sky-400 font-mono hover:underline">
                         Rochester
                       </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/schenectady/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-emerald-400 font-mono hover:underline">
+                        Schenectady
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/staten-island/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-indigo-400 font-mono hover:underline">
+                        Staten Island
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/statue-of-liberty-area/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-teal-300 font-mono hover:underline">
+                        Statue of Liberty
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/syracuse/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-orange-400 font-mono hover:underline">
+                        Syracuse
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/times-square/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-yellow-300 font-mono hover:underline">
+                        Times Square
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/hells-kitchen/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-rose-400 font-mono hover:underline">
+                        Hell's Kitchen
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/troy/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-cyan-400 font-mono hover:underline">
+                        Troy
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/utica/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-lime-400 font-mono hover:underline">
+                        Utica
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/watertown/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-emerald-300 font-mono hover:underline">
+                        Watertown
+                      </a>
+                      <span className="text-slate-600 text-[10px]">·</span>
+                      <a href="/yonkers/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-amber-300 font-mono hover:underline">
+                        Yonkers
+                      </a>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-1 max-h-64 overflow-y-auto pr-1">
@@ -665,6 +705,46 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                   <span className="text-slate-600">·</span>
                   <a href="/rochester/" target="_blank" rel="noopener noreferrer" className="text-sky-400 font-semibold hover:underline">
                     Rochester NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/schenectady/" target="_blank" rel="noopener noreferrer" className="text-emerald-400 font-semibold hover:underline">
+                    Schenectady NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/staten-island/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 font-semibold hover:underline">
+                    Staten Island NYC
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/statue-of-liberty-area/" target="_blank" rel="noopener noreferrer" className="text-teal-300 font-semibold hover:underline">
+                    Statue of Liberty
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/syracuse/" target="_blank" rel="noopener noreferrer" className="text-orange-400 font-semibold hover:underline">
+                    Syracuse NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/times-square/" target="_blank" rel="noopener noreferrer" className="text-yellow-300 font-semibold hover:underline">
+                    Times Square NYC
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/hells-kitchen/" target="_blank" rel="noopener noreferrer" className="text-rose-400 font-semibold hover:underline">
+                    Hell's Kitchen NYC
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/troy/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 font-semibold hover:underline">
+                    Troy NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/utica/" target="_blank" rel="noopener noreferrer" className="text-lime-400 font-semibold hover:underline">
+                    Utica NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/watertown/" target="_blank" rel="noopener noreferrer" className="text-emerald-300 font-semibold hover:underline">
+                    Watertown NY
+                  </a>
+                  <span className="text-slate-600">·</span>
+                  <a href="/yonkers/" target="_blank" rel="noopener noreferrer" className="text-amber-300 font-semibold hover:underline">
+                    Yonkers NY
                   </a>
                 </div>
                 <div className="grid grid-cols-2 gap-1">

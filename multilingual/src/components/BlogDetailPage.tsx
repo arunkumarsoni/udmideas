@@ -234,6 +234,16 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
 
   // Internal Links Directory for this blog article
   const internalLinks = [
+    { label: 'Yonkers Remote SEO Expert', href: '/yonkers/' },
+    { label: "Hell's Kitchen Manhattan SEO Agency", href: '/hells-kitchen/' },
+    { label: 'Watertown North Country Ecommerce SEO', href: '/watertown/' },
+    { label: 'Utica Mohawk Valley Ecommerce SEO', href: '/utica/' },
+    { label: 'Troy Capital Region Ecommerce SEO', href: '/troy/' },
+    { label: 'Times Square Tour & Travel SEO', href: '/times-square/' },
+    { label: 'Syracuse Remote SEO Consultant', href: '/syracuse/' },
+    { label: 'Statue of Liberty Area Tour SEO', href: '/statue-of-liberty-area/' },
+    { label: 'Staten Island Remote SEO Consultant', href: '/staten-island/' },
+    { label: 'Schenectady Remote SEO Consultant', href: '/schenectady/' },
     { label: 'Rochester Remote SEO Consultant', href: '/rochester/' },
     { label: 'Queens Remote SEO Consultant', href: '/queens/' },
     { label: 'New Rochelle Remote SEO Consultant', href: '/new-rochelle/' },
@@ -529,7 +539,10 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               const getRegionLink = (name: string): { href: string; isLive: boolean } => {
                 const lower = name.toLowerCase();
                 if (lower === 'empire state building' || lower === 'empire state') return { href: '/empire-state/', isLive: true };
+                if (lower === 'statue of liberty' || lower === 'statue of liberty area') return { href: '/statue-of-liberty-area/', isLive: true };
                 if (lower === 'central park') return { href: '/central-park/', isLive: true };
+                if (lower === 'times square') return { href: '/times-square/', isLive: true };
+                if (lower === "hell's kitchen" || lower === 'hells kitchen' || lower === 'clinton') return { href: '/hells-kitchen/', isLive: true };
                 if (lower === 'manhattan') return { href: '/manhattan/', isLive: true };
                 if (lower === 'new york' || lower === 'nyc') return { href: '/new-york/', isLive: true };
                 if (lower === 'brooklyn') return { href: '/brooklyn/', isLive: true };
@@ -541,6 +554,13 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                 if (lower === 'new rochelle') return { href: '/new-rochelle/', isLive: true };
                 if (lower === 'queens') return { href: '/queens/', isLive: true };
                 if (lower === 'rochester') return { href: '/rochester/', isLive: true };
+                if (lower === 'schenectady') return { href: '/schenectady/', isLive: true };
+                if (lower === 'staten island') return { href: '/staten-island/', isLive: true };
+                if (lower === 'syracuse') return { href: '/syracuse/', isLive: true };
+                if (lower === 'troy') return { href: '/troy/', isLive: true };
+                if (lower === 'utica') return { href: '/utica/', isLive: true };
+                if (lower === 'watertown') return { href: '/watertown/', isLive: true };
+                if (lower === 'yonkers') return { href: '/yonkers/', isLive: true };
                 return {
                   href: `https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20remote%20SEO%20consulting%20for%20my%20business%20in%20${encodeURIComponent(name)},%20New%20York.`,
                   isLive: false
