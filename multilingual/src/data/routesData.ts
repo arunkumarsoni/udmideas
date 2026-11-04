@@ -17,6 +17,217 @@ export interface PageSEO {
 export const CANONICAL_BASE = 'https://www.udmideasusa.com';
 
 export const ALL_PAGES: Record<string, PageSEO> = {
+  '/usa-to-latam-spanish-seo-and-market-expansion/': {
+    path: '/usa-to-latam-spanish-seo-and-market-expansion/',
+    title: 'USA to LATAM: Spanish SEO and Market Expansion | UDMIDEAS',
+    description: 'USA to LATAM: Spanish SEO and Market Expansion. Hire Arun, founder of UDMIDEAS for your SEO Work.',
+    kicker: 'US to Latin America Cross-Border Spanish SEO',
+    heading: 'USA to LATAM: Spanish SEO and Market Expansion',
+    subheading: 'Reach 485 million Spanish speakers across 21 nations plus 65 million US Spanish speakers. Engineer country-specific keyword architectures, hreflang clusters (/es-mx/, /es-co/, /es-us/), and Spanish AEO/GEO discovery with senior specialist Arun.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/usa-to-latam-spanish-seo-and-market-expansion/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      'Access to 485M+ Global & 65M US Spanish Speakers: Unlocking high-growth markets where Mexico leads as the #1 buyer of US goods ($226.4B)',
+      'Country-Specific Vocabulary Mapping: Differentiating regional Mexican (computadora) vs. South American (ordenador/celular/móvil) search queries',
+      'Technical Hreflang Subfolder Routing: Clean architecture using /es-mx/, /es-co/, and /es-us/ to pool root domain authority while preserving local relevance',
+      'Services vs. Products Economics: Capitalizing on high-margin US services exports (+114% growth to Mexico) with zero physical customs friction',
+      'Free Trade Agreement Alignment: Benefiting from USMCA, CAFTA-DR, and bilateral free trade pacts with Colombia, Chile, Peru, and Panama',
+      'Full Spanish AEO & GEO Mastery: Structuring Spanish direct-answer snippets and verified entity citations for Google AI Overviews, ChatGPT, and Gemini'
+    ],
+    features: [
+      { title: 'Spanish Multi-Country Hreflang', desc: 'Deploying reciprocal hreflang clusters for Mexico, Colombia, Argentina, and US Spanish.' },
+      { title: 'High-Margin Services Playbook', desc: 'Exporting IT, finance, healthcare, and consulting services with zero customs overhead.' },
+      { title: 'Local Currency & WhatsApp Signals', desc: 'Integrating regional checkout trust and mobile WhatsApp conversion funnels.' },
+      { title: 'Spanish AEO & GEO Optimization', desc: 'Capturing position zero and generative AI citations across Latin American queries.' }
+    ],
+    languages: ['Spanish (Mexico, Colombia, Argentina, Chile)', 'English'],
+    faq: [
+      { q: 'Which Spanish-speaking country should a US business enter first?', a: 'Mexico. It has the largest population at about 132 million, the highest per-person US imports among the larger markets ($2,525/person), and e-commerce forecast to pass 17% of retail in 2026.' },
+      { q: 'Is Spanish SEO the same as translating my site?', a: 'No. Vocabulary, search habits and payment methods differ by country (e.g. computadora in Mexico vs. ordenador in Spain; celular in Colombia vs. móvil in Spain), so each market needs its own keyword research and pages.' },
+      { q: 'Should I sell services or products?', a: 'Start with services if you want revenue in weeks and no customs. Choose products if you can handle freight and target Mexico, Panama, Costa Rica or the Dominican Republic.' },
+      { q: 'What is AEO and GEO for Spanish content?', a: 'AEO shapes your pages so search engines show your answer directly in featured snippets. GEO ensures AI assistants like ChatGPT, Gemini and Perplexity cite your brand in Spanish answers.' },
+      { q: 'Do I need a different site for each country?', a: 'No. One domain with country subfolders (/es-mx/, /es-co/, /es-us/) and correct hreflang tags works for most businesses.' },
+      { q: 'How long does Spanish SEO take?', a: 'Expect early movement in three to six months for new pages. This depends on competition and site authority, with country-specific estimates provided after an audit.' }
+    ]
+  },
+  '/cross-market-seo-israel-and-the-arab-world/': {
+    path: '/cross-market-seo-israel-and-the-arab-world/',
+    title: 'Cross-Market SEO - Israel and the Arab World | UDMIDEAS',
+    description: 'Cross-Market SEO - Israel & the Arab World. Get in touch with Arun today.',
+    kicker: 'Bilingual RTL Search Strategy & Middle East Market Expansion',
+    heading: 'Cross-Market SEO: Israel & the Arab World',
+    subheading: 'Cross-market SEO between Israel and the Arab world is viable as two carefully localized, technically mirrored projects. Master Hebrew and Arabic RTL architectures, hreflang clusters, and commercial search demand with senior specialist Arun.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/cross-market-seo-israel-and-the-arab-world/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      'Dual Bi-Directional RTL Engineering: Handcrafted CSS logical properties and script hierarchy ensuring authentic mirrored Hebrew and Arabic rendering',
+      'Reciprocal Multi-Country Hreflang: Technical tags covering he-IL (Israel), ar-IL (Israeli Arabs), ar-AE (UAE), ar-SA (Saudi Arabia), and ar-EG (Egypt)',
+      'Under-Served Search Opportunity: Capitalizing on thin commercial competition in Hebrew and Arabic technical, health, tourism, and agritech niches',
+      'Localized Dialect & Spelling Precision: Capturing Modern Standard Arabic (MSA), Gulf dialects, and Hebrew vowel-variation search queries natively',
+      'Trade Route Alignment: Leveraging post-Abraham Accords commercial openings across cybersecurity, agritech, medical travel, and luxury retail',
+      'Dual AEO & GEO Structured Entities: Deploying inLanguage schema and direct answers so AI engines quote your business in Hebrew and Arabic'
+    ],
+    features: [
+      { title: 'Bilingual RTL Architecture', desc: 'Custom React JS layouts supporting mixed Latin, Hebrew, and Arabic text direction.' },
+      { title: 'Reciprocal Hreflang Clusters', desc: 'Accurate targeting across Israel, the UAE, Saudi Arabia, Egypt, and Jordan.' },
+      { title: 'Native Intent Mapping', desc: 'Zero literal translations; native keyword research reflecting local search behavior.' },
+      { title: 'AEO & GEO Knowledge Graphs', desc: 'Position zero answers and generative AI citations across both language ecosystems.' }
+    ],
+    languages: ['Hebrew', 'Arabic', 'English'],
+    faq: [
+      { q: 'Is cross-market SEO between Israel and the Arab world really viable?', a: 'Yes. It operates as two distinct, carefully localized technical projects under a unified domain with reciprocal hreflang (he-IL, ar-AE, ar-SA, ar-IL). Because very few agencies specialize in authentic RTL optimization for both languages, competition for high-value commercial keywords remains thin.' },
+      { q: 'How does Arun handle the technical differences of right-to-left (RTL) rendering?', a: 'We implement native CSS logical properties, dir="rtl", and script-aware font hierarchy for Hebrew and Arabic, ensuring mirrored navigation, forms, breadcrumbs, and proper mixed Latin text display without broken layouts.' },
+      { q: 'What hreflang configuration is required for Israeli and Arab audiences?', a: 'We deploy specific tags including he-IL for Israel, ar-IL for Arabic-speaking Israeli citizens, ar-AE for the UAE, ar-SA for Saudi Arabia, ar-EG for Egypt, and an x-default fallback, ensuring all tags are 100% reciprocal.' },
+      { q: 'How do you handle Arabic spelling variants and dialects in search queries?', a: 'Modern Standard Arabic (MSA) is used for foundational B2B service architecture, while localized Gulf, Egyptian, and Levantine phrasing is used for local intent and social discovery. We account for common spelling variations (such as hamza and ta marbuta) so single pages capture full search demand.' },
+      { q: 'What are the legal and compliance considerations when targeting these markets?', a: 'Different Arab countries maintain distinct commercial regulations. We review target country policies, tailor brand presentation, and isolate analytics in Google Search Console and GA4 to ensure compliance and unbiased performance reporting.' },
+      { q: 'How does AEO and GEO function across Hebrew and Arabic?', a: 'We structure concise 40-to-60 word answer blocks under question headings and deploy inLanguage schema (Organization, LocalBusiness, FAQ). This enables AI search engines like Google AI Overviews, ChatGPT, Gemini, and Perplexity to quote your business accurately in both Hebrew and Arabic.' }
+    ]
+  },
+  '/from-website-creation-to-digital-authority/': {
+    path: '/from-website-creation-to-digital-authority/',
+    title: 'From Website Creation to Digital Authority | UDMIDEAS',
+    description: 'From Website Creation to Digital Authority: A Complete Growth Approach - by UDMIDEAS.',
+    kicker: 'From Digital Asset to Recognized Authority',
+    heading: 'From Website Creation to Digital Authority: A Complete Growth Approach',
+    subheading: 'A website is not a growth strategy — it is the starting point. Discover how Arun and UDMIDEAS engineer the complete journey from custom React JS foundation and omnichannel visibility to trusted E-E-A-T authority and AI discovery.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/from-website-creation-to-digital-authority/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      'Website as Infrastructure: Engineered on fast React JS with sub-second LCP and semantic schema rather than bloated themes',
+      'Unified Visibility Architecture: Aligning SEO, Google Business Profile local search, and targeted PPC to cross-feed conversion data',
+      'True Digital Authority & E-E-A-T: Constructing proof through real outcome reviews, authoritative backlinks, and verifiable entity profiles',
+      'Dual AEO & GEO Mastery: Structuring direct-answer snippets and high-credibility entity signals for ChatGPT, Gemini, and Perplexity',
+      'Hands-On Specialist Leadership: Direct collaboration with founder Arun without intermediary account managers or sales scripts',
+      'Full 6-Stage Framework: Sequential progression through Foundation, Visibility, Conversion, Authority, AI Readiness, and Analytics Refinement'
+    ],
+    features: [
+      { title: 'Technical Website Foundation', desc: 'Custom React JS builds, Core Web Vitals excellence, and clean schema markup.' },
+      { title: 'Omnichannel Search Integration', desc: 'Using PPC conversion data to inform durable, high-intent organic SEO strategies.' },
+      { title: 'Accumulated E-E-A-T Proof', desc: 'Establishing verified signals that convince both human buyers and search algorithms.' },
+      { title: 'Generative AI Readiness', desc: 'Positioning your business as a safe, highly quoted entity across modern AI tools.' }
+    ],
+    languages: ['English', 'Spanish', 'Hebrew', 'Arabic'],
+    faq: [
+      { q: 'Why is a good-looking website not enough for business growth?', a: 'A website is an asset, not a growth strategy. Without technical crawlability, fast Core Web Vitals, authoritative content, and strong E-E-A-T signals, an attractive website sits unnoticed by both search engines and potential buyers.' },
+      { q: 'How does PPC data improve organic SEO performance?', a: 'PPC delivers instant search feedback. Converting search queries from paid campaigns reveal exactly what high-intent buyers type before purchasing, allowing us to build organic content clusters around proven revenue keywords.' },
+      { q: 'What are the core signals of digital authority under E-E-A-T?', a: 'Digital authority requires consistent business data across directories, genuine outcome-based client reviews, contextual links from credible publishers, and recognized author credentials backed by verified expertise.' },
+      { q: 'How do AEO and GEO integrate with traditional SEO?', a: 'AEO structures concise direct answers for featured snippets and voice assistants, while GEO ensures entity citations within generative engines like ChatGPT and Gemini. Both require a solid foundation of classic organic crawlability.' },
+      { q: 'Why does UDMIDEAS operate with a hands-on technical expert instead of account managers?', a: 'Direct specialist involvement guarantees technical accountability. CTOs and business owners speak directly with the engineer auditing code, configuring schema, and managing link outreach without sales scripts or intermediary delays.' },
+      { q: 'How long does it take to advance from website build to digital authority?', a: 'Technical foundations and speed improvements take weeks. Visibility and initial rankings mature within 3 to 4 months, while comprehensive multi-market authority and AI citation prominence establish over 6 to 9 months.' }
+    ]
+  },
+  '/the-architecture-of-multilingual-digital-visibility/': {
+    path: '/the-architecture-of-multilingual-digital-visibility/',
+    title: 'The Architecture of Multilingual Digital Visibility | UDMIDEAS',
+    description: 'The Architecture of Multilingual Digital Visibility: Connecting Websites, SEO, AEO, GEO, SMM and PPC.',
+    kicker: 'Holistic 6-Layer Cross-Border Visibility Architecture',
+    heading: 'The Architecture of Multilingual Digital Visibility: Connecting Websites, SEO, AEO, GEO, SMM and PPC',
+    subheading: 'Growth happens when every channel speaks your customer\'s language: from decoupled React JS and native hreflang to localized AEO direct answers, GEO entity citations, regional social networks, and data-driven PPC.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/the-architecture-of-multilingual-digital-visibility/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      'Layer 1: Foundational Multilingual Engineering — React JS architecture, separate subfolder URLs (/fr/, /de/, /es/), native editors, and bi-directional Arabic RTL layout',
+      'Layer 2: Localized Keyword & Intent Mapping — Non-translated keyword research tailored to regional dialects across Europe, the Americas, Asia, and the Arab world',
+      'Layer 3: AEO Direct Answer Dominance — 40-to-60 word concise direct-answer structures with FAQ & HowTo schema for featured snippets and voice search',
+      'Layer 4: GEO Generative Citations — Verifiable entity data, primary sources, and high-trust digital PR securing citations in ChatGPT, Gemini, and Perplexity',
+      'Layer 5: Regional Social Ecosystems — Tailored platforms from LinkedIn and Facebook to WhatsApp, Instagram, LINE (Japan), Naver/Kakao (Korea), and WeChat (China)',
+      'Layer 6: Agile Cross-Border PPC — Geo-targeted Google Ads, Baidu Ads, and Naver Ads validating high-intent commercial keywords in days rather than months',
+      'Proven Multi-Region Results — Scaling international businesses across USA, Israel, the Gulf, Latin America, and Australia, with specialized focus on Texas dental clinics'
+    ],
+    features: [
+      { title: 'Six-Layer Digital Architecture', desc: 'Connecting web development, organic SEO, answer optimization, generative AI, social, and paid ads.' },
+      { title: 'Market & Language Matrix', desc: 'Custom strategies for USA, UK, Spain, France, Germany, Poland, Arab World, Japan, Korea, and China.' },
+      { title: 'Native-Human Translation Rigor', desc: 'Zero unverified machine translations; localized font pairings, spacing, and cultural nuances.' },
+      { title: 'Cross-Border Lead Attribution', desc: 'Measurable ROI tracking per language, cost per lead analytics, and AI answer citations.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Polish', 'Arabic', 'Japanese', 'Korean', 'Chinese'],
+    faq: [
+      { q: 'How long does multilingual SEO take?', a: 'Most markets show early movement in 3 to 4 months and stable results in 6 to 9 months, depending on competition; but all you need is excellent hard worker professional!' },
+      { q: 'Is machine translation enough?', a: 'It works for drafts. Published pages need native review for tone, search terms and cultural fit.' },
+      { q: 'Do I need a separate domain per country?', a: 'Not usually. Subfolders on one domain concentrate authority and cost less to maintain. Country domains suit large, locally operated businesses.' },
+      { q: 'What is the difference between AEO and GEO?', a: 'AEO targets direct answers in search features and voice. GEO targets citations inside generative AI responses.' },
+      { q: 'Which market should I start with?', a: 'Start where demand is proven and your service delivery is ready. I decide this in the audit, with data.' },
+      { q: 'Can UDMIDEAS handle China?', a: 'Yes, but it requires China-compatible hosting, an ICP filing and Baidu-specific optimization, so I scope it separately.' }
+    ]
+  },
+  '/how-arun-handle-seo-aeo-and-geo/': {
+    path: '/how-arun-handle-seo-aeo-and-geo/',
+    title: 'How Arun Handle SEO, AEO and GEO | UDMIDEAS',
+    description: 'How Arun Handle SEO, AEO and GEO? Arun, Founder of UDMIDEAS',
+    kicker: '15+ Years Hands-On Search & AI Discovery Leadership',
+    heading: 'How Arun Handle SEO, AEO and GEO: Founder, UDMIDEAS',
+    subheading: 'Arun personally leads every SEO, Answer Engine Optimization (AEO), and Generative Engine Optimization (GEO) project with hands-on manual auditing, conversion tracking, E-E-A-T manual content, and lower PPC acquisition costs.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/how-arun-handle-seo-aeo-and-geo/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Specialist Leadership: Arun handles every audit, technical fix, and monthly analytics report directly',
+      'Data-Driven Three Access Foundation: Powered by Google Search Console, Google Analytics 4, and Google Tag Manager',
+      'Revenue & Sales-First Focus: Prioritizing real phone calls, qualified booking leads, and e-commerce transactions over vanity metrics',
+      'Human-Crafted E-E-A-T Content: Zero machine-generated thin text; deep domain research ensuring high trust and citation-worthiness',
+      'Triple Search Integration: Seamless orchestration of technical SEO crawling, AEO position zero direct answers, and GEO AI brand citations',
+      'PPC & SMM Cost Reductions: Increasing Google Ads Quality Scores and repurposing proven organic content to minimize advertising spend'
+    ],
+    features: [
+      { title: 'Three-Layer Optimization (SEO + AEO + GEO)', desc: 'From crawlability and indexation to AI summaries in ChatGPT, Gemini, and Perplexity.' },
+      { title: 'Conversion Tracking Setup', desc: 'Custom event tracking via GTM, GA4 conversion funnels, and Search Console query analysis.' },
+      { title: 'Manual E-E-A-T Architecture', desc: 'Content constructed with real Experience, Expertise, Authoritativeness, and Trustworthiness.' },
+      { title: 'Paid Ad Efficiency', desc: 'Optimized landing pages and negative keyword pruning to significantly reduce customer acquisition costs.' }
+    ],
+    languages: ['English', 'Spanish', 'Hebrew', 'Arabic'],
+    faq: [
+      { q: 'I do not understand this SEO audit report. Do I need technical knowledge?', a: 'No technical knowledge is required. Arun translates every metric into plain business terms: on-page fixes on your website and off-page trust building outside it.' },
+      { q: 'I need more sales, not just rankings. How do you measure success?', a: 'Rankings are only a step. Arun tracks what actually matters for your business: phone calls, consultation requests, form submissions, and e-commerce transactions.' },
+      { q: 'I do not know GSC, GA4 or GTM. What should I do?', a: 'You only need to provide access permissions. Arun sets up, configures, and manages Google Search Console, Google Analytics 4, and Google Tag Manager, delivering simple reports without confusing jargon.' },
+      { q: 'I only need sales from my e-commerce website. What is the focus?', a: 'The focus is strictly on revenue drivers: high-converting category and product pages, structured product schema, verified reviews, speed optimization, and cutting budget wasted on non-converting traffic.' },
+      { q: 'How long will it take?', a: 'SEO is not instant and Arun never promises a fake date. Technical fixes show results quickly, while content authority and link trust take months with clear monthly milestones.' },
+      { q: 'Why should I trust Arun?', a: 'Because Arun is the senior specialist doing 100% of the work directly, and all performance is measured in your own Google Analytics and Search Console data, not unsubstantiated claims.' },
+      { q: 'What is the difference between AEO and GEO?', a: 'AEO (Answer Engine Optimization) structures concise answers for featured snippets and voice assistants, while GEO (Generative Engine Optimization) builds authoritative entity signals and citations for AI engines like ChatGPT, Gemini, and Perplexity.' }
+    ]
+  },
+  '/why-arun-is-the-best-multilingual-seo-expert/': {
+    path: '/why-arun-is-the-best-multilingual-seo-expert/',
+    title: 'Why Arun Is the Best Multilingual SEO Expert  | UDMIDEAS',
+    description: 'Why Arun Is the Best Multilingual SEO Expert | UDMIDEAS Founder',
+    kicker: '100% Hands-On Multilingual SEO & Multi-Region Technical Mastery',
+    heading: 'Why Arun Is the Best Multilingual SEO Expert | UDMIDEAS Founder',
+    subheading: 'Search does not happen in one language. Arun, founder of UDMIDEAS, brings 15+ years of hands-on technical SEO, building rankings that work across languages, countries, and search engines — 100% manually, with zero bulk tools or AI shortcuts.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/why-arun-is-the-best-multilingual-seo-expert/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years Direct Technical Leadership: Arun, Founder of UDMIDEAS, executes every technical SEO and link task by hand',
+      '100% Manual Execution: No spun or machine-translated text; human-crafted content tailored to regional dialects and intent',
+      'Native-Language Keyword Research: Market-specific intent mapping across Hebrew, Arabic, Spanish, French, German, and English',
+      'Proven Industry Track Record: Texas dental clinics, international travel portals, multi-region eCommerce, and local trade contractors',
+      'Full-Stack Onpage & Technical Precision: Bespoke title tags, H1-H6 hierarchy, Schema markup, hreflang cluster testing, and Core Web Vitals',
+      'Content-Led Contextual Link Building: High-authority editorial outreach and digital PR with zero link farms or bulk networks',
+      'Modern AEO & GEO Optimization: Structured direct answers and entity signals engineered for Google AI Overviews, ChatGPT, and Gemini'
+    ],
+    features: [
+      { title: '100% Manual Multilingual SEO', desc: 'Hand-written content, native keyword intent research, and custom hreflang architecture.' },
+      { title: 'AEO & Generative Engine Visibility', desc: 'Direct-answer formatting and entity schema that secure citations in ChatGPT, Perplexity, and Gemini.' },
+      { title: 'Content-Focused Backlinks', desc: 'Contextual, editorial links earned through original research, data-led guides, and publisher outreach.' },
+      { title: '3-4 Month Proven Roadmap', desc: 'Structured four-month phase from technical audits and on-page fixes to scalable organic growth.' }
+    ],
+    languages: ['English', 'Spanish', 'Hebrew', 'Arabic', 'French', 'German', 'Portuguese'],
+    faq: [
+      { q: 'Why choose Arun over a large agency?', a: 'You work directly with a 15+ year specialist, not a junior team.' },
+      { q: 'Is all the work really manual?', a: 'Yes. Content, on-page and off-page work are done by hand.' },
+      { q: 'Do you use AI-written or translated content?', a: 'No. Content is written manually by people who know the market and language.' },
+      { q: 'How long until rankings improve?', a: 'Usually 3-4 months, depending on competition and the starting point.' },
+      { q: 'Do you guarantee page-one rankings?', a: 'No honest SEO can. We commit to a proven process and transparent reporting.' },
+      { q: 'What is hreflang and do I need it?', a: 'It tells Google which language/region version to show. Any multilingual site needs it, and we implement and test it.' },
+      { q: 'What are AEO and GEO?', a: 'Optimising to be the cited answer in AI Overviews, ChatGPT, Perplexity and similar tools.' },
+      { q: 'How do you build backlinks safely?', a: 'Through content-focused outreach, relevant guest posts and digital PR. There are no link farms.' },
+      { q: 'Can you rank me in several countries at once?', a: 'Yes, with country- and language-specific structure, content and links.' },
+      { q: 'How do I start?', a: 'Request a free audit, and we\'ll share a plan covering what to fix and how long it will take.' }
+    ]
+  },
   '/yonkers/': {
     path: '/yonkers/',
     title: 'SEO Expert for Yonkers, NY | UDMIDEAS | Arun SEO Consultant',
@@ -1045,20 +1256,25 @@ export const ALL_PAGES: Record<string, PageSEO> = {
     canonicalUrl: `${CANONICAL_BASE}/website-design-development/`,
     schemaType: 'Service',
     keyHighlights: [
-      '100% Custom Coding Only — Zero Elementor, Divi, or pre-made commercial theme bloat',
-      'Sub-second page loading speeds and 95+ Core Web Vitals guarantees',
-      'Bespoke decoupled backends in Laravel, CodeIgniter, and PHP with React frontends',
-      'Native bi-directional (LTR/RTL) engineering for global multilingual parity'
+      'Websites starting at $500 with 1 Year Free Hosting & 1 Year Free Maintenance included',
+      '100% Custom Coding Only — React JS, Laravel, CodeIgniter, and PHP (Zero page builder bloat)',
+      'Sub-second page loading speeds and 95+ Core Web Vitals guarantees (<1.2s LCP, 0.00 CLS)',
+      'Triple-Engine Optimization: Built-in SEO, Answer Engine Optimization (AEO), and Generative Engine Optimization (GEO)',
+      'Native bi-directional (LTR/RTL) engineering for global multilingual parity in 28+ languages'
     ],
     features: [
-      { title: 'Custom React JS Applications', desc: 'Reactive, modular frontend experiences with instant transitions and dynamic state management.' },
-      { title: 'Handcrafted WordPress & WooCommerce', desc: 'Lightweight bespoke themes and custom plugin code engineered without drag-and-drop builders.' },
+      { title: 'Custom React JS Applications', desc: 'Reactive, modular frontend experiences with instant transitions, zero layout reflows, and dynamic state management.' },
+      { title: 'Handcrafted WordPress & WooCommerce', desc: 'Lightweight bespoke themes and custom plugin code engineered without drag-and-drop builders like Elementor or Divi.' },
       { title: 'Enterprise Laravel & CodeIgniter', desc: 'High-throughput database architectures, custom REST APIs, and role-based access control.' },
-      { title: 'Scalable Magento eCommerce', desc: 'Multi-store, multi-currency catalogs supporting 50,000+ SKUs with Elasticsearch.' }
+      { title: 'Scalable Magento & Custom eCommerce', desc: 'Multi-store, multi-currency catalogs with frictionless checkout and product schema markup.' }
     ],
-    languages: ['English', 'Spanish', 'French', 'German', 'Arabic', 'Hebrew'],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic', 'Hebrew', 'Japanese', 'Korean', 'Polish', 'Portuguese'],
     faq: [
-      { q: 'Do I own the source code upon project completion?', a: 'Yes, 100%. All custom code, repositories, and assets belong entirely to you with zero vendor lock-in.' }
+      { q: 'How much does a custom website cost with UDMIDEAS?', a: 'Our custom website projects start at $500 for a 5-page custom-coded website. Business growth packages are $1,500, multilingual international websites are $3,000, custom eCommerce stores start at $4,000, and large-scale enterprise custom web applications range from $10,000 to $50,000.' },
+      { q: 'Is web hosting really free for the first year?', a: 'Yes, 100%. Every website we build includes 1 full year of blazing-fast cloud hosting at zero extra charge.' },
+      { q: 'What is included in the 1-year free maintenance support?', a: 'Our 1-year free maintenance covers technical bug fixes, security patch updates, daily/weekly automated backups, minor text/image updates, SSL renewals, and 99.9% uptime monitoring.' },
+      { q: 'Do I own the source code upon project completion?', a: 'Yes, 100%. All custom code, repositories, and assets belong entirely to you with zero vendor lock-in.' },
+      { q: 'Why do you avoid pre-made templates and page builders?', a: 'Pre-made templates bundle thousands of lines of unused JavaScript and CSS that cause poor Core Web Vitals, slow speeds, and security vulnerabilities. We code by hand to guarantee sub-second speeds.' }
     ]
   },
   '/digital-marketing-services/': {

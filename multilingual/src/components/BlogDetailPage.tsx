@@ -21,9 +21,10 @@ import {
   ExternalLink,
   Zap,
   Globe2,
+  Globe,
   MapPin
 } from 'lucide-react';
-import { BLOG_POSTS, NEW_YORK_REGIONS } from '../data/contentData';
+import { BLOG_POSTS, NEW_YORK_REGIONS, LATAM_EXPANSION_REGIONS } from '../data/contentData';
 import { BlogPost } from '../types';
 
 interface BlogDetailPageProps {
@@ -234,6 +235,12 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
 
   // Internal Links Directory for this blog article
   const internalLinks = [
+    { label: 'USA to LATAM: Spanish SEO', href: '/usa-to-latam-spanish-seo-and-market-expansion/' },
+    { label: 'Cross-Market SEO: Israel & Arab World', href: '/cross-market-seo-israel-and-the-arab-world/' },
+    { label: 'From Website Creation to Digital Authority', href: '/from-website-creation-to-digital-authority/' },
+    { label: 'The Architecture of Multilingual Digital Visibility', href: '/the-architecture-of-multilingual-digital-visibility/' },
+    { label: 'How Arun Handle SEO, AEO and GEO', href: '/how-arun-handle-seo-aeo-and-geo/' },
+    { label: 'Why Arun Is the Best Multilingual SEO Expert', href: '/why-arun-is-the-best-multilingual-seo-expert/' },
     { label: 'Yonkers Remote SEO Expert', href: '/yonkers/' },
     { label: "Hell's Kitchen Manhattan SEO Agency", href: '/hells-kitchen/' },
     { label: 'Watertown North Country Ecommerce SEO', href: '/watertown/' },
@@ -658,6 +665,113 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               );
             }
 
+            // Check if paragraph is LATAM_REGIONS_BLOCKS
+            if (paragraph === '[LATAM_REGIONS_BLOCKS]') {
+              const allRegions = blog.regionBlocks || LATAM_EXPANSION_REGIONS;
+              const filteredRegions = regionSearch.trim()
+                ? allRegions.filter(r => r.toLowerCase().includes(regionSearch.toLowerCase()))
+                : allRegions;
+
+              const getLatamLink = (name: string): { href: string; isLive: boolean } => {
+                const lower = name.toLowerCase();
+                if (lower === 'latam' || lower === 'latin america') return { href: '/latam/', isLive: true };
+                return {
+                  href: `https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20Spanish%20SEO%20and%20market%20expansion%20for%20my%20business%20in%20${encodeURIComponent(name)}.`,
+                  isLive: false
+                };
+              };
+
+              return (
+                <div key={pIdx} className="my-10 p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 border border-slate-800 shadow-2xl space-y-6">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-800">
+                    <div>
+                      <div className="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider flex items-center gap-2">
+                        <Globe className="w-4 h-4 text-amber-400" />
+                        <span>Latin America & Spanish-Speaking Coverage · {allRegions.length} Markets</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-extrabold text-white mt-1">
+                        Arun Is Available for These Latin American & Spanish-Speaking Regions
+                      </h3>
+                      <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl leading-relaxed">
+                        From Mexico, Colombia, and Argentina to Chile, Costa Rica, Panama, and the US Spanish-speaking market—Arun builds localized multilingual SEO, AEO, and GEO authority.
+                      </p>
+                    </div>
+
+                    {/* Quick Search */}
+                    <div className="relative min-w-[220px]">
+                      <Search className="w-3.5 h-3.5 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                      <input
+                        type="text"
+                        placeholder="Search LATAM regions..."
+                        value={regionSearch}
+                        onChange={(e) => setRegionSearch(e.target.value)}
+                        className="w-full pl-8 pr-3 py-2 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 font-mono"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Regions Interactive Blocks Grid */}
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2.5 max-h-[500px] overflow-y-auto pr-1">
+                    {filteredRegions.map((region, rIdx) => {
+                      const { href, isLive } = getLatamLink(region);
+                      return (
+                        <a
+                          key={rIdx}
+                          href={href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`p-3 rounded-xl border text-xs transition-all flex flex-col justify-between group ${
+                            isLive
+                              ? 'bg-gradient-to-br from-amber-950/60 to-slate-900 border-amber-600/50 hover:border-amber-400 hover:shadow-lg hover:shadow-amber-950/50'
+                              : 'bg-slate-950/70 border-slate-850 hover:border-slate-700 hover:bg-slate-900'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between gap-1 mb-1.5">
+                            <span className="flex items-center gap-1 font-semibold text-slate-200 group-hover:text-white truncate">
+                              <Globe className={`w-3 h-3 shrink-0 ${isLive ? 'text-amber-400' : 'text-slate-500 group-hover:text-amber-400'}`} />
+                              <span className="truncate">{region}</span>
+                            </span>
+                            {isLive && (
+                              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
+                            )}
+                          </div>
+                          <div className="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-slate-900">
+                            <span className={isLive ? 'text-amber-300 font-medium' : 'text-slate-400'}>
+                              {isLive ? 'Dedicated Hub' : 'Spanish SEO'}
+                            </span>
+                            <ExternalLink className="w-2.5 h-2.5 opacity-50 group-hover:opacity-100 group-hover:text-amber-400" />
+                          </div>
+                        </a>
+                      );
+                    })}
+                  </div>
+
+                  {filteredRegions.length === 0 && (
+                    <div className="text-center py-6 text-xs text-slate-500 font-mono">
+                      No region matched "{regionSearch}". Clear filter to see all {allRegions.length} markets.
+                    </div>
+                  )}
+
+                  {/* Consultation Footnote */}
+                  <div className="pt-3 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+                    <div className="flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-amber-400"></span>
+                      <span>Arun works with US businesses scaling across every Spanish-speaking market directly.</span>
+                    </div>
+                    <a
+                      href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20discuss%20Spanish%20SEO%20and%20LATAM%20market%20expansion%20for%20my%20business."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-amber-400 hover:underline font-semibold font-mono inline-flex items-center gap-1"
+                    >
+                      <span>Inquire on WhatsApp (+91-9521186150)</span>
+                      <ArrowRight className="w-3 h-3" />
+                    </a>
+                  </div>
+                </div>
+              );
+            }
+
             // Check if paragraph is a bullet list item
             if (paragraph.startsWith('• ')) {
               const raw = paragraph.replace('• ', '');
@@ -679,6 +793,20 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                     ) : (
                       <span className="text-slate-300 text-sm leading-relaxed">{descPart}</span>
                     )}
+                  </div>
+                </div>
+              );
+            }
+
+            // Check if paragraph is a numbered review or list item
+            if (/^\d+\.\s+/.test(paragraph)) {
+              return (
+                <div key={pIdx} className="my-2.5 p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-sm text-slate-200 flex items-start gap-3 hover:border-slate-700 transition-colors">
+                  <span className="w-6 h-6 rounded-md bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/30 font-mono text-xs font-bold mt-0.5">
+                    ★
+                  </span>
+                  <div className="leading-relaxed text-slate-300">
+                    {paragraph}
                   </div>
                 </div>
               );

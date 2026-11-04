@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { PageSEO, getPageMetadata } from '../data/routesData';
 import { USA_STATES, LATAM_COUNTRIES, EU_COUNTRIES, ARABIC_COUNTRIES } from '../data/contentData';
+import { WebsiteDesignServicesContent } from './WebsiteDesignServicesContent';
 
 interface StandalonePageViewProps {
   path: string;
@@ -134,6 +135,12 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     { label: 'Utica Mohawk Valley Ecommerce SEO', path: '/utica/' },
     { label: 'Watertown North Country Ecommerce SEO', path: '/watertown/' },
     { label: 'Yonkers Remote SEO Expert', path: '/yonkers/' },
+    { label: 'Why Arun Is the Best Multilingual SEO Expert', path: '/why-arun-is-the-best-multilingual-seo-expert/' },
+    { label: 'How Arun Handle SEO, AEO and GEO', path: '/how-arun-handle-seo-aeo-and-geo/' },
+    { label: 'The Architecture of Multilingual Digital Visibility', path: '/the-architecture-of-multilingual-digital-visibility/' },
+    { label: 'From Website Creation to Digital Authority', path: '/from-website-creation-to-digital-authority/' },
+    { label: 'Cross-Market SEO: Israel & Arab World', path: '/cross-market-seo-israel-and-the-arab-world/' },
+    { label: 'USA to LATAM: Spanish SEO', path: '/usa-to-latam-spanish-seo-and-market-expansion/' },
     { label: 'Empire State Tour & B2B SEO', path: '/empire-state/' },
     { label: 'Central Park Tour & Travel SEO', path: '/central-park/' },
     { label: 'Brooklyn Businesses SEO Consultant', path: '/brooklyn/' },
@@ -230,6 +237,13 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
             </a>
           </div>
         </header>
+
+        {/* Website Design & Development Comprehensive Content */}
+        {page.path === '/website-design-development/' && (
+          <div className="mb-16">
+            <WebsiteDesignServicesContent />
+          </div>
+        )}
 
         {/* Key Highlights Grid */}
         <section className="mb-14 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-slate-950 border border-slate-800 shadow-xl">
