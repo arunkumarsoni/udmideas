@@ -17,6 +17,39 @@ export interface PageSEO {
 export const CANONICAL_BASE = 'https://www.udmideasusa.com';
 
 export const ALL_PAGES: Record<string, PageSEO> = {
+  '/learn-about-blog-commenting/': {
+    path: '/learn-about-blog-commenting/',
+    title: 'Learn about Blog Commenting | UDMIDEAS | How to do Blog Commenting?',
+    description: 'How to do Blog Commenting? Learn about Blog Commenting from UDMIDEAS .- by - Arun Kumar Soni',
+    kicker: 'White Hat Off-Page SEO & Link Building Strategy',
+    heading: 'Learn about Blog Commenting | How to do Blog Commenting?',
+    subheading: 'Master the art of manual blog commenting, footprints, do-follow vs. no-follow links, and genuine conversational link building with UDMIDEAS founder Arun Kumar Soni.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/learn-about-blog-commenting/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      'Comprehensive Off-Page SEO Link Building: Leveraging manual blog commenting for authentic reader interaction and domain trust',
+      '20 High-Precision Google Search Footprints: Locating high-authority .edu, .gov, Disqus, and CommentLuv blog opportunities',
+      'Balanced Anchor Text Strategy: Applying Google-recommended 25% distribution (keywords, brand+keyword, keyword+brand, contextual variations)',
+      'Do-Follow vs No-Follow Technical Inspection: Inspecting rel="dofollow" tags and understanding link equity distribution',
+      'Historic 9-Part Discussion Archive: Public debate between Adrian Alexa and Arun Kumar Soni on spam vs. genuine manual SEO',
+      'Debunking "SEO is Dead": Authoritative analysis on how manual community building transitions into modern AEO and GEO visibility'
+    ],
+    features: [
+      { title: 'Manual Search Footprints Mastery', desc: 'Find open discussion blogs on .edu, .gov, and high-authority platforms using Google advanced search operators.' },
+      { title: 'Google-Compliant Anchor Text Ratios', desc: 'Deploying the proven 25% anchor distribution formula to maximize ranking impact while preventing over-optimization.' },
+      { title: 'Do-Follow vs No-Follow Balance', desc: 'Analyzing link equity, inspect element techniques, and building natural link profiles that withstand algorithm updates.' },
+      { title: 'Debate Archive & Future of SEO', desc: 'Exhaustive analysis answering whether blog commenting survives long term and why organic SEO continues to evolve into AEO and GEO.' }
+    ],
+    languages: ['English', 'Spanish (LATAM Coverage)'],
+    faq: [
+      { q: 'What is blog commenting in SEO?', a: 'Blog commenting is an off-page SEO and link building technique where you engage in active blog posts in your industry, contribute valuable insights, and build high-quality contextual links.' },
+      { q: 'Are blog comments counted as spam by Google?', a: 'Only automated, spun, or generic comments (like "nice info") on unrelated sites are considered spam. Genuine, manual, informative comments that add value to readers and authors are 100% white-hat and beneficial.' },
+      { q: 'How do you inspect if a blog comment link is do-follow?', a: 'Right click on the comment author link in your browser, select "Inspect Element", and check the <a> tag. If rel="nofollow" or rel="ugc" is not present, search engines treat it as a standard do-follow link passing link equity.' },
+      { q: 'Is SEO dead or will it die in the future?', a: 'SEO is not dead. While low-quality automated tactics get penalized, organic search has evolved into AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) where authoritative, verified sources win visibility.' },
+      { q: 'Why is anchor text distribution important in link building?', a: 'Natural link profiles have varied anchors. Using our 25% rule (25% keywords, 25% brand+keyword, 25% keyword+brand, 25% contextual variations) ensures balanced authority growth without triggering Google Penguin penalties.' }
+    ]
+  },
   '/usa-to-latam-spanish-seo-and-market-expansion/': {
     path: '/usa-to-latam-spanish-seo-and-market-expansion/',
     title: 'USA to LATAM: Spanish SEO and Market Expansion | UDMIDEAS',
@@ -1279,28 +1312,35 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   },
   '/digital-marketing-services/': {
     path: '/digital-marketing-services/',
-    title: 'Multilingual Digital Marketing Services | 15+ Yrs | UDMIDEAS',
-    description: 'International digital marketing services: SEO, AEO, GEO, SMM, PPC, content creation, and video creation. 15+ years experience driving global revenue.',
+    title: 'Digital Marketing Services: What They Are & Why Your Business Needs Them | UDMIDEAS',
+    description: 'Digital marketing services help a business get found on search engines, earn attention on social media, win paid clicks and turn visitors into customers. Led by Arun (15+ yrs experience).',
     kicker: 'Marketing Pillar',
-    heading: 'Full-Funnel Multilingual Digital Marketing Services.',
-    subheading: 'Backed by 15+ years of digital marketing dominance, UDMIDEAS delivers international SEO, AI answer engine capture, creative social storytelling, and high-ROAS paid media across five continents.',
+    heading: 'Digital Marketing Services: What They Are and Why Your Business Needs Them',
+    subheading: 'Digital marketing services help a business get found on search engines, earn attention on social media, win paid clicks and turn visitors into customers. At UDMIDEAS, led by Arun with more than 15 years of SEO experience, we deliver connected growth plans across the USA, Latin America, Europe, the Gulf region, Israel and Australia.',
     category: 'service',
     canonicalUrl: `${CANONICAL_BASE}/digital-marketing-services/`,
     schemaType: 'Service',
     keyHighlights: [
-      '15+ Years Track Record led by Founder Arun from New York, NY 10001',
-      'Full-Funnel Strategy: International SEO, AEO, GEO, SMM, PPC, Content & Video',
-      'Dedicated multilingual teams fluent in European, Latin American, and Middle Eastern markets',
-      'Data-driven ROI reporting tied to actual revenue, booked demos, and eCommerce checkouts'
+      'Connected 7-Service Growth Architecture: SEO (including AEO & GEO), SMM, PPC, Content, Video, ORM, and Web Development',
+      'Data-Driven Impact: 69% of global ad spend is digital; combining search intent with social demand and sub-second site speed',
+      'Strategic Channel Synergy: SEO for lasting compounding ROI (~8x), PPC for immediate leads (~4x), and SMM for community trust',
+      'Native Multilingual Delivery: Specialized campaigns in French, German, Spanish, Arabic, Polish, English and Hebrew',
+      'Universal Industry Mastery: Tailored playbooks for clinics, ecommerce, real estate, B2B software, law, contractors, and hospitality'
     ],
     features: [
-      { title: 'Multi-Country Search Dominance', desc: 'Rank on top of Google across 28+ languages without duplicate content penalties.' },
-      { title: 'Answer & Generative Engine Capture', desc: 'Win featured snippets in voice search and secure citations in ChatGPT and Perplexity.' },
-      { title: 'Cross-Border Paid Advertising', desc: 'High-ROAS Google Ads, Meta Ads, and LinkedIn B2B campaigns in local currencies.' }
+      { title: '7 Connected Digital Services', desc: 'Single cohesive plan connecting your search rankings, social profiles, ads, reviews, and website against measurable revenue.' },
+      { title: 'Worldwide Multilingual Campaigns', desc: 'Targeted execution in Latin America, Europe, the Gulf region, North America, Israel, and Australia with native writers.' },
+      { title: 'AI-Ready Search (AEO & GEO)', desc: 'Engineered for visibility across Google AI Overviews, ChatGPT, Perplexity, and voice search answers.' },
+      { title: 'Founder-Led Strategic Execution', desc: 'Direct strategy with Arun (15+ years experience) backed by transparent monthly lead, call, and sales reporting.' }
     ],
-    languages: ['All supported languages'],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic', 'Polish', 'Hebrew'],
     faq: [
-      { q: 'How do you measure marketing ROI?', a: 'We implement server-side tracking, GTM, and GA4 to trace every dollar spent directly to customer acquisitions and revenue.' }
+      { q: 'What are digital marketing services?', a: 'Digital marketing services are online activities that grow a business: SEO, social media marketing, PPC, content creation, video marketing, online reputation management and web development, all tracked against revenue.' },
+      { q: 'How much do digital marketing services cost?', a: 'Cost depends on your industry, target markets, languages and commercial goals. We run a free comprehensive audit first, then quote a tailored plan that fits your budget.' },
+      { q: 'How long do digital marketing services take to show results?', a: 'PPC advertising can bring qualified leads within days. SEO usually shows steady gains in 3 to 6 months. Social media community and brand recognition build over 1 to 3 months.' },
+      { q: 'Which digital marketing service is best for a small business?', a: 'A small local business usually gets the best return from local SEO and Google Business Profile optimization, paired with a modest PPC budget for immediate customer inquiries.' },
+      { q: 'Do you offer multilingual digital marketing services?', a: 'Yes. We run campaigns in French, German, Spanish, Arabic and Polish, with native language writers and correct international hreflang site structures.' },
+      { q: 'Can you market my business in Europe, Latin America or the Gulf?', a: 'Yes. We plan each market separately, because search habits, cultural buying terminology, dominant platforms and data privacy laws (like GDPR) differ by country.' }
     ]
   },
   '/multilingual-search-engine-optimization/': {

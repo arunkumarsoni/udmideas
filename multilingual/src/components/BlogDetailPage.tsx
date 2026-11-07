@@ -22,7 +22,11 @@ import {
   Zap,
   Globe2,
   Globe,
-  MapPin
+  MapPin,
+  ZoomIn,
+  X,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 import { BLOG_POSTS, NEW_YORK_REGIONS, LATAM_EXPANSION_REGIONS } from '../data/contentData';
 import { BlogPost } from '../types';
@@ -50,6 +54,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [regionSearch, setRegionSearch] = useState('');
+  const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null);
 
   const canonicalUrl = `https://www.udmideasusa.com${blog.customUrl || `/blog/${blog.slug}/`}`;
 
@@ -235,6 +240,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
 
   // Internal Links Directory for this blog article
   const internalLinks = [
+    { label: 'Learn about Blog Commenting & Link Building', href: '/learn-about-blog-commenting/' },
     { label: 'USA to LATAM: Spanish SEO', href: '/usa-to-latam-spanish-seo-and-market-expansion/' },
     { label: 'Cross-Market SEO: Israel & Arab World', href: '/cross-market-seo-israel-and-the-arab-world/' },
     { label: 'From Website Creation to Digital Authority', href: '/from-website-creation-to-digital-authority/' },
@@ -275,6 +281,102 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
     { label: 'Meet Founder Arun & Team', href: '/team/' },
     { label: 'Contact UDMIDEAS NYC', href: '/contact-us/' }
   ];
+
+  const DISCUSSION_IMAGES = [
+    {
+      id: 1,
+      src: '/assets/aistudio/1_b21cfd16.jpg',
+      part: 'Part 01',
+      title: 'Adrian Alexa Post & Initial Discussion on Comment Spam',
+      desc: 'Adrian shares automated comment spam screenshots. Arun responds: "Well it is the worst manual work, but there are professionals who provide excellent blog comments..."'
+    },
+    {
+      id: 2,
+      src: '/assets/aistudio/2_62a84de5.jpg',
+      part: 'Part 02',
+      title: 'Evaluating Metrics: DA, PA, Alexa Rank & Relevancy',
+      desc: 'Arun outlines the technical factors analyzed before placing a manual blog comment: DA, PA, Alexa Rank, Relevancy, Unique informative content, and link count.'
+    },
+    {
+      id: 3,
+      src: '/assets/aistudio/3_632f904e.jpg',
+      part: 'Part 03',
+      title: 'Small Business Budgets ($100/mo) vs $200 Editorial Links',
+      desc: 'Arun defends small business owners with $100 monthly budgets who cannot afford $200+ per post for high-end publications like Huffington Post.'
+    },
+    {
+      id: 4,
+      src: '/assets/aistudio/4_472dee0b.jpg',
+      part: 'Part 04',
+      title: 'Old Is Gold — Manual Quality Commenting Is Evergreen',
+      desc: 'Arun emphasizes: "OLD is GOLD My dear. Blog Comment is Not a SPAM If Done in Quality Manner" and connects with webmasters seeking genuine engagement.'
+    },
+    {
+      id: 5,
+      src: '/assets/aistudio/5_eb1a0e75.jpg',
+      part: 'Part 05',
+      title: 'The Debate on Long-Term Strategy & Natural Links',
+      desc: 'Adrian argues blog comments are useless for high-level SEO. Arun stands firm on client satisfaction, natural link profiles, and high manual diligence.'
+    },
+    {
+      id: 6,
+      src: '/assets/aistudio/6_fcffc901.jpg',
+      part: 'Part 06',
+      title: 'Digital Marketing Scope & White Hat Strategy',
+      desc: 'Arun explains: "Digital Marketing is very Broad... Every SEO professional always goes with complete White Hat SEO Organic Strategy. We are in a new age of SEO."'
+    },
+    {
+      id: 7,
+      src: '/assets/aistudio/7_a4d0e296.jpg',
+      part: 'Part 07',
+      title: 'Unsolicited Spam vs Real Human Conversation',
+      desc: 'Adrian defines spam as anything unsolicited. Arun clarifies that genuine knowledge-sharing, relevant insights, and natural participation are valuable contributions.'
+    },
+    {
+      id: 8,
+      src: '/assets/aistudio/8_21195f56.jpg',
+      part: 'Part 08',
+      title: 'Global Marketplace Demand on Upwork for .EDU & .GOV',
+      desc: 'Arun highlights real-world demand: "Look at Upwork website where hundreds of business professionals look for edu blog comments and GOV blog comments..."'
+    },
+    {
+      id: 9,
+      src: '/assets/aistudio/9_4cada4a3.jpg',
+      part: 'Part 09',
+      title: 'The Verdict: "Will Blog Commenting Die in 2 Years?" / "Is SEO Dead?"',
+      desc: 'Adrian predicts clients will vanish in 2 years. Arun counters: "There are so many professionals who always post SEO is DEAD... Blog commenting is part of SEO strategy and it is TRUE."'
+    }
+  ];
+
+  const renderFormattedText = (text: string) => {
+    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const parts: (string | React.ReactNode)[] = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = linkRegex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push(text.slice(lastIndex, match.index));
+      }
+      const label = match[1];
+      const href = match[2];
+      parts.push(
+        <a
+          key={match.index}
+          href={href}
+          className="text-blue-400 hover:text-blue-300 underline font-medium transition-colors"
+        >
+          {label}
+        </a>
+      );
+      lastIndex = linkRegex.lastIndex;
+    }
+    if (lastIndex < text.length) {
+      parts.push(text.slice(lastIndex));
+    }
+
+    return parts;
+  };
 
   return (
     <article className="pt-28 pb-24 min-h-screen bg-slate-950 text-slate-100 text-left">
@@ -812,9 +914,80 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               );
             }
 
+            // Check if paragraph is the discussion images archive
+            if (
+              paragraph.startsWith('BLOG COMMENT LATEST UPDATE - WHAT DO YOU SAY?') ||
+              paragraph === '[DISCUSSION_IMAGES_ARCHIVE]'
+            ) {
+              return (
+                <div key={pIdx} className="my-10 p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
+                  <div className="pb-4 border-b border-slate-800">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold mb-3">
+                      <Sparkles className="w-3.5 h-3.5" />
+                      <span>Historic Debate Archive · Adrian Alexa vs. Arun Kumar Soni (UDMIDEAS)</span>
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
+                      BLOG COMMENT LATEST UPDATE - WHAT DO YOU SAY? -- Here is the complete discussion - read the images - discussion...
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                      Original unedited screenshots from the public discussion between SEO practitioner Adrian Alexa and Arun Kumar Soni (Founder, UDMIDEAS) debating whether blog commenting is spam, how small businesses utilize link building, and whether SEO is dead. Click any screenshot below to inspect and read full size:
+                    </p>
+                  </div>
+
+                  {/* 9 Screenshots Grid */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-2">
+                    {DISCUSSION_IMAGES.map((img, idx) => (
+                      <div
+                        key={img.id}
+                        onClick={() => setActiveImageIndex(idx)}
+                        className="group relative cursor-pointer rounded-2xl bg-slate-950 border border-slate-800 hover:border-emerald-500/60 overflow-hidden shadow-lg transition-all flex flex-col justify-between"
+                      >
+                        <div className="p-3 bg-slate-900/80 border-b border-slate-850 flex items-center justify-between text-xs">
+                          <span className="font-mono font-bold text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-900/40 text-[11px]">
+                            {img.part}
+                          </span>
+                          <span className="inline-flex items-center gap-1 text-[11px] text-slate-400 group-hover:text-emerald-400 transition-colors">
+                            <ZoomIn className="w-3.5 h-3.5" />
+                            <span>Click to Zoom</span>
+                          </span>
+                        </div>
+
+                        <div className="relative aspect-[3/4] bg-slate-900 overflow-hidden">
+                          <img
+                            src={img.src}
+                            alt={`${img.part}: ${img.title}`}
+                            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors" />
+                        </div>
+
+                        <div className="p-3.5 bg-slate-950 space-y-1">
+                          <div className="text-xs font-bold text-white group-hover:text-emerald-300 transition-colors leading-snug">
+                            {img.title}
+                          </div>
+                          <p className="text-[11px] text-slate-400 leading-relaxed line-clamp-2">
+                            {img.desc}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                    <span className="flex items-center gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <span>9 Original Debate Screenshots Documented & Preserved</span>
+                    </span>
+                    <span className="font-mono text-emerald-400 text-[11px]">UDMIDEAS Archive</span>
+                  </div>
+                </div>
+              );
+            }
+
             return (
               <p key={pIdx} className="leading-relaxed text-slate-300">
-                {paragraph}
+                {renderFormattedText(paragraph)}
               </p>
             );
           })}
@@ -1073,6 +1246,72 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal for Discussion Screenshots */}
+      {activeImageIndex !== null && (
+        <div
+          className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md flex items-center justify-center p-4 sm:p-6"
+          onClick={() => setActiveImageIndex(null)}
+        >
+          <div
+            className="relative max-w-4xl w-full max-h-[92vh] bg-slate-900 border border-slate-800 rounded-3xl p-4 sm:p-6 flex flex-col items-center shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="w-full flex items-center justify-between pb-3 mb-3 border-b border-slate-800 text-xs">
+              <div className="flex items-center gap-2">
+                <span className="font-mono font-bold text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded border border-emerald-900/50">
+                  {DISCUSSION_IMAGES[activeImageIndex].part} of 09
+                </span>
+                <span className="text-white font-bold truncate max-w-[200px] sm:max-w-md">
+                  {DISCUSSION_IMAGES[activeImageIndex].title}
+                </span>
+              </div>
+              <button
+                onClick={() => setActiveImageIndex(null)}
+                className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer"
+                title="Close Lightbox"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Modal Body with Zoomable Image */}
+            <div className="relative w-full flex-1 overflow-auto flex items-center justify-center bg-slate-950 rounded-2xl p-2 sm:p-4 border border-slate-850">
+              <img
+                src={DISCUSSION_IMAGES[activeImageIndex].src}
+                alt={DISCUSSION_IMAGES[activeImageIndex].title}
+                className="max-h-[70vh] w-auto max-w-full object-contain rounded-lg shadow-md"
+              />
+            </div>
+
+            {/* Modal Footer Controls */}
+            <div className="w-full flex items-center justify-between pt-3 mt-3 border-t border-slate-800 text-xs text-slate-300">
+              <button
+                disabled={activeImageIndex === 0}
+                onClick={() => setActiveImageIndex((prev) => (prev !== null && prev > 0 ? prev - 1 : prev))}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                <span>Previous</span>
+              </button>
+
+              <div className="text-[11px] font-mono text-slate-400 text-center hidden sm:block">
+                Click outside or press Close to return to article
+              </div>
+
+              <button
+                disabled={activeImageIndex === DISCUSSION_IMAGES.length - 1}
+                onClick={() => setActiveImageIndex((prev) => (prev !== null && prev < DISCUSSION_IMAGES.length - 1 ? prev + 1 : prev))}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
+              >
+                <span>Next</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </article>
   );
 };

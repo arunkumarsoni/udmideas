@@ -19,6 +19,7 @@ import {
 import { PageSEO, getPageMetadata } from '../data/routesData';
 import { USA_STATES, LATAM_COUNTRIES, EU_COUNTRIES, ARABIC_COUNTRIES } from '../data/contentData';
 import { WebsiteDesignServicesContent } from './WebsiteDesignServicesContent';
+import { DigitalMarketingServicesContent } from './DigitalMarketingServicesContent';
 
 interface StandalonePageViewProps {
   path: string;
@@ -245,59 +246,72 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           </div>
         )}
 
-        {/* Key Highlights Grid */}
-        <section className="mb-14 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-slate-950 border border-slate-800 shadow-xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-4 flex items-center gap-2">
-            <Sparkles className="w-4 h-4 text-blue-400" />
-            Key Architecture & Strategy Highlights
+        {/* Digital Marketing Services Comprehensive Content */}
+        {page.path === '/digital-marketing-services/' && (
+          <div className="mb-16">
+            <DigitalMarketingServicesContent />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {page.keyHighlights.map((highlight, idx) => (
-              <div key={idx} className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-950/80 border border-slate-850">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span className="text-xs sm:text-sm text-slate-200 leading-relaxed">{highlight}</span>
-              </div>
-            ))}
-          </div>
-        </section>
+        )}
 
-        {/* Detailed Feature Blocks */}
-        <section className="mb-16 space-y-6">
-          <div className="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider">
-            Detailed Capabilities & Solutions
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {page.features.map((feat, idx) => (
-              <div
-                key={idx}
-                className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all"
-              >
-                <div>
-                  <div className="text-xs font-mono text-blue-400 font-bold mb-2">
-                    0{idx + 1}. SPECIFICATION
-                  </div>
-                  <h3 className="text-lg font-bold text-white mb-2">{feat.title}</h3>
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">{feat.desc}</p>
+        {/* Key Highlights Grid (for standard pages) */}
+        {page.path !== '/digital-marketing-services/' && page.path !== '/website-design-development/' && (
+          <section className="mb-14 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-slate-950 border border-slate-800 shadow-xl">
+            <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-4 flex items-center gap-2">
+              <Sparkles className="w-4 h-4 text-blue-400" />
+              Key Architecture & Strategy Highlights
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {page.keyHighlights.map((highlight, idx) => (
+                <div key={idx} className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-950/80 border border-slate-850">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <span className="text-xs sm:text-sm text-slate-200 leading-relaxed">{highlight}</span>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
+        )}
 
-        {/* Languages Strip */}
-        <div className="mb-16 p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs">
-          <div className="flex items-center gap-2 text-slate-400">
-            <Globe2 className="w-4 h-4 text-blue-400" />
-            <span className="font-semibold text-slate-200">Supported Linguistic Formats:</span>
+        {/* Detailed Feature Blocks (for standard pages) */}
+        {page.path !== '/digital-marketing-services/' && page.path !== '/website-design-development/' && (
+          <section className="mb-16 space-y-6">
+            <div className="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider">
+              Detailed Capabilities & Solutions
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {page.features.map((feat, idx) => (
+                <div
+                  key={idx}
+                  className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all"
+                >
+                  <div>
+                    <div className="text-xs font-mono text-blue-400 font-bold mb-2">
+                      0{idx + 1}. SPECIFICATION
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2">{feat.title}</h3>
+                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">{feat.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Languages Strip (for standard pages) */}
+        {page.path !== '/digital-marketing-services/' && page.path !== '/website-design-development/' && (
+          <div className="mb-16 p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs">
+            <div className="flex items-center gap-2 text-slate-400">
+              <Globe2 className="w-4 h-4 text-blue-400" />
+              <span className="font-semibold text-slate-200">Supported Linguistic Formats:</span>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {page.languages.map((lang) => (
+                <span key={lang} className="px-2.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300 font-mono text-[11px]">
+                  {lang}
+                </span>
+              ))}
+            </div>
           </div>
-          <div className="flex flex-wrap gap-1.5">
-            {page.languages.map((lang) => (
-              <span key={lang} className="px-2.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300 font-mono text-[11px]">
-                {lang}
-              </span>
-            ))}
-          </div>
-        </div>
+        )}
 
         {/* Dedicated Contact Form Targeting soni9999arun9999@gmail.com */}
         <section id="inquiry-form" className="mb-16 p-8 sm:p-10 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl">
@@ -429,8 +443,8 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           )}
         </section>
 
-        {/* Page Specific FAQs */}
-        {page.faq && page.faq.length > 0 && (
+        {/* Page Specific FAQs (suppressed on custom service pages which already manage their content structure) */}
+        {page.path !== '/digital-marketing-services/' && page.path !== '/website-design-development/' && page.faq && page.faq.length > 0 && (
           <section className="mb-16 space-y-4">
             <h3 className="text-xl font-bold text-white flex items-center gap-2">
               <HelpCircle className="w-5 h-5 text-blue-400" />
