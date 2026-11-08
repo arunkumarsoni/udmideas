@@ -1345,132 +1345,161 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   },
   '/multilingual-search-engine-optimization/': {
     path: '/multilingual-search-engine-optimization/',
-    title: 'International Multilingual SEO & hreflang Strategy | UDMIDEAS',
-    description: 'Dominate global Google search results with custom multilingual SEO, bulletproof hreflang architecture, and localized keyword targeting in 28+ languages.',
-    kicker: 'SEO Pillar',
-    heading: 'Multilingual Search Engine Optimization (SEO).',
-    subheading: 'Dominate organic search rankings across the USA, Europe, Latin America, Israel, and the Arab World. We architect clean international site structures, hreflang tags, and culturally tuned keyword clusters.',
+    title: 'Multilingual SEO Services: Rank in Google, Bing & AI Across Languages | UDMIDEAS',
+    description: 'Multilingual SEO services help your website rank in Google, Bing and AI search tools in French, German, Spanish, Polish, Arabic and English. 15+ yrs experience, plans from $500/mo.',
+    kicker: 'Multilingual SEO Pillar',
+    heading: 'Multilingual SEO Services: Rank Worldwide in Every Customer\'s Language',
+    subheading: 'Multilingual SEO services help your website rank in Google, Bing and AI search tools in more than one language, so buyers find you in the language they actually search in. At UDMIDEAS, led by Arun with more than 15 years of SEO experience, we deliver native search rankings across French, German, Spanish, Polish, Arabic and English for all business industries.',
     category: 'service',
     canonicalUrl: `${CANONICAL_BASE}/multilingual-search-engine-optimization/`,
     schemaType: 'Service',
     keyHighlights: [
-      'Bulletproof hreflang tagging and automated multi-country XML sitemaps',
-      'Distinguishing regional dialects (e.g. Mexican Spanish vs Castilian Spanish, Swiss German vs High German)',
-      'Server-side geo-targeting signals and Google Search Console multi-property architecture',
-      'High-authority international backlink acquisition from country-specific domains'
+      'Comprehensive Multi-Language Search Dominance: Full-stack execution across French, German, Spanish, Polish, Arabic, and English',
+      'Data-Backed Conversion Impact: 76% of buyers demand information in their native language; 40% will never buy from foreign-only sites',
+      'Systematic 90-Day Execution Roadmap: Foundation & Audits (Days 1-30), Build & Native Content (Days 31-60), Scale & Authority (Days 61-90)',
+      'Durable Organic Asset vs. PPC: Compounding long-term ranking equity starting from $500/month flat retainer',
+      'AI Search Readiness (AEO & GEO): Structured direct answers, inLanguage schema, and entity citations for ChatGPT, Gemini, and AI Overviews'
     ],
     features: [
-      { title: 'hreflang Architecture', desc: 'Prevent duplicate content cannibalization across multi-country English, Spanish, and European pages.' },
-      { title: 'Technical Core Web Vitals', desc: 'Sub-second server response times that give your site an algorithmic ranking advantage globally.' },
-      { title: 'Localized Search Intent', desc: 'Mapping the precise commercial terminology used by local buyers in each target country.' }
+      { title: 'Native Keyword & Intent Mapping', desc: 'Independent keyword research conducted from scratch in each local language and regional search index.' },
+      { title: 'Reciprocal hreflang & Technical SEO', desc: 'Bulletproof language subfolder routing (/fr/, /de/, /es/, /ar/, /pl/) and Google-compliant canonical tags.' },
+      { title: 'Country-Domain Link Acquisition', desc: 'Manual white-hat outreach securing trusted backlinks on .fr, .de, .es, .pl, and .ae domains.' },
+      { title: 'Universal Industry Customization', desc: 'Tailored execution for dental clinics, e-commerce, real estate, manufacturing, law, and B2B SaaS.' }
     ],
-    languages: ['English', 'Spanish', 'French', 'German', 'Arabic', 'Hebrew', 'Portuguese'],
+    languages: ['French', 'German', 'Spanish', 'Polish', 'Arabic', 'English'],
     faq: [
-      { q: 'What is the most common mistake in international SEO?', a: 'Relying on automatic client-side translation plugins that create unindexable URLs and cause duplicate content penalties.' }
+      { q: 'What are multilingual SEO services?', a: 'They optimize your website to rank in several languages through native keyword research, localized content, hreflang tags and local links.' },
+      { q: 'How much do multilingual SEO services cost?', a: 'UDMIDEAS plans start at $500 per month. Final pricing depends on the number of languages and pages.' },
+      { q: 'Which languages do you support?', a: 'French, German, Spanish, Polish, Arabic and English.' },
+      { q: 'How long does multilingual SEO take?', a: 'Most sites see early movement in 60 to 90 days. Competitive keywords can take 4 to 6 months.' },
+      { q: 'Is SEO better than PPC?', a: 'For long-term growth and cost per lead, yes. PPC is useful for quick tests.' },
+      { q: 'Do you work with all industries?', a: 'Yes. We do SEO for all business industries.' }
     ]
   },
   '/answer-engine-optimization/': {
     path: '/answer-engine-optimization/',
-    title: 'Answer Engine Optimization (AEO) | Position Zero | UDMIDEAS',
-    description: 'Capture Google Position Zero and voice search queries with Answer Engine Optimization (AEO). Structured schema graphs and direct answer architectures.',
-    kicker: 'AEO Pillar',
-    heading: 'Answer Engine Optimization (AEO) for Voice & Search.',
-    subheading: 'Voice assistants and Google featured snippets prioritize direct answers. We reverse-engineer question intent and structure clear factual schemas so search engines select your business as the single definitive answer.',
+    title: 'AEO Services: Answer Engine Optimization for Google, ChatGPT & AI | UDMIDEAS',
+    description: 'AEO services help your brand become the direct answer in Google AI Overviews, ChatGPT, Gemini, Perplexity and voice search. 15+ yrs SEO experience by UDMIDEAS.',
+    kicker: 'Answer Engine Optimization (AEO) Pillar',
+    heading: 'AEO Services: Answer Engine Optimization for Google, ChatGPT & AI',
+    subheading: 'AEO services help your brand become the direct answer that Google, ChatGPT, Gemini, Perplexity and voice assistants give when people ask a question. At UDMIDEAS, we deliver AEO services built on 15+ years of SEO experience, for businesses in the USA, the Gulf, Latin America, Israel and Australia.',
     category: 'service',
     canonicalUrl: `${CANONICAL_BASE}/answer-engine-optimization/`,
     schemaType: 'Service',
     keyHighlights: [
-      'Conquering Google Position Zero featured snippets across high-intent commercial keywords',
-      'Speakable and FAQPage JSON-LD structured data markup for voice devices (Siri, Google Assistant)',
-      'Conversational query mapping answering who, what, where, and how in 45-word concise formats',
-      'Significantly higher click-through rates and brand authority in local and national search'
+      'Position Zero & AI Overview Dominance: Structuring concise direct answers for Google snippets, Gemini, and ChatGPT Search',
+      'Data-Backed Shift: 58% of Google searches end zero-click; 1.5B+ monthly AI Overview users and 800M weekly ChatGPT users',
+      'Systematic 8-Step Process & 90-Day Plan: Baseline Audits (Days 1-30), Answer Page Build (Days 31-60), Scale & Measure (Days 61-90)',
+      'AEO vs SEO vs GEO Synergy: Solid organic crawl foundation, direct snippet formatting, and generative entity citations',
+      'Multi-Industry & Multilingual Execution: Tailored playbooks for clinics, law firms, contractors, e-commerce, and B2B SaaS'
     ],
     features: [
-      { title: 'Position Zero Capture', desc: 'Engineering content blocks specifically formatted for Google snippet selection.' },
-      { title: 'Voice Search Ready', desc: 'Optimizing for natural language conversational queries on smartphones and smart speakers.' },
-      { title: 'Nested Schema Graphs', desc: 'Rich Schema.org markups that make your data unmistakable to search engine crawlers.' }
+      { title: 'Direct 40-to-60 Word Answer Engineering', desc: 'Structuring opening answers that search crawlers and AI models lift cleanly into snippets and conversational answers.' },
+      { title: 'Nested Schema.org Markup', desc: 'Implementing FAQPage, Service, Organization, and LocalBusiness JSON-LD markup following Google guidelines.' },
+      { title: 'Entity Authority & Knowledge Graph Expansion', desc: 'Aligning business profiles, expert author credentials, and brand co-occurrences across trusted authority sites.' },
+      { title: 'Voice Assistant & Mobile Conversational Capture', desc: 'Optimizing conversational answer blocks so Siri, Alexa, and Google Assistant speak your business as the single answer.' }
     ],
-    languages: ['Universal language support'],
+    languages: ['English', 'Spanish', 'French', 'German', 'Polish', 'Arabic'],
     faq: [
-      { q: 'How quickly can a page win Google Position Zero?', a: 'With clean custom code and precise answer formatting, existing ranking pages often capture snippets within 3 to 6 weeks.' }
+      { q: 'What are AEO services?', a: 'AEO services optimize your content, schema and brand signals so Google, ChatGPT and other answer engines pick your page as the direct answer to a user\'s question.' },
+      { q: 'How is AEO different from SEO?', a: 'SEO ranks pages in search results. AEO shapes the content on those pages so one clear answer can be quoted in snippets, AI Overviews and chatbots.' },
+      { q: 'How long do AEO services take to work?', a: 'Most sites see early snippet and AI citation gains within 60 to 90 days. Competitive topics can take 4 to 6 months.' },
+      { q: 'Do AEO services replace SEO?', a: 'No. AEO sits on top of SEO. Without technical health, links and quality content, answer engines have nothing reliable to quote.' },
+      { q: 'Which businesses need AEO services?', a: 'Any business whose customers ask questions before buying, including clinics, law firms, e-commerce stores, SaaS companies and local service providers.' },
+      { q: 'Can you guarantee that ChatGPT will name my brand?', a: 'No agency can guarantee that. We improve the signals AI tools use, such as clear answers, schema, authority and fresh content, and we measure your citations every month.' }
     ]
   },
   '/generative-engine-optimization/': {
     path: '/generative-engine-optimization/',
-    title: 'Generative Engine Optimization (GEO) | AI Search SEO | UDMIDEAS',
-    description: 'Optimize your business to be cited and recommended by AI search engines: ChatGPT Search, Perplexity AI, Claude, and Google Gemini Overviews.',
-    kicker: 'GEO Pillar',
-    heading: 'Generative Engine Optimization (GEO) for AI Search.',
-    subheading: 'Search has fundamentally shifted to generative models. We optimize your website authority, entity knowledge graph, and factual citations so generative AI engines recommend your business.',
+    title: 'Generative Engine Optimization (GEO) Services | ChatGPT, Gemini & AI Search | UDMIDEAS',
+    description: 'GEO services help your brand get mentioned, recommended and cited by AI tools such as ChatGPT, Gemini, Perplexity, Copilot and Google AI Overviews. Led by Arun (15+ years experience).',
+    kicker: 'Generative Engine Optimization (GEO) Pillar',
+    heading: 'GEO Services: Generative Engine Optimization for ChatGPT & AI',
+    subheading: 'GEO services help your brand get mentioned, recommended and cited by AI tools such as ChatGPT, Gemini, Perplexity, Copilot and Google AI Overviews. Built on 15+ years of SEO authority by UDMIDEAS.',
     category: 'service',
     canonicalUrl: `${CANONICAL_BASE}/generative-engine-optimization/`,
     schemaType: 'Service',
     keyHighlights: [
-      'Optimizing for ChatGPT Search, Perplexity AI, Claude, and Google Gemini Overviews',
-      'Entity relationship clustering and Knowledge Graph footprint expansion',
-      'Publishing verifiable statistical proof, timelines, and quantitative outcomes for LLM ingestion',
-      'Continuous monitoring of synthetic search citations and brand recommendation share'
+      'Be cited and recommended inside ChatGPT, Gemini, Perplexity, Claude, and Copilot answers',
+      'Entity knowledge graph structuring with nested Organization, Service, and Person JSON-LD',
+      'Citable data-rich content architecture designed specifically for LLM retrieval and ingestion',
+      'Monthly brand citation tracking and quarterly page refreshes to eliminate content decay'
     ],
     features: [
-      { title: 'Knowledge Graph Clustering', desc: 'Positioning your brand as an indisputable entity authority in your industry.' },
-      { title: 'Factual Proof Optimization', desc: 'Structuring data so AI crawlers extract and quote your exact achievements.' },
-      { title: 'Multi-Engine Monitoring', desc: 'Tracking citations across Perplexity, ChatGPT, and Gemini Overviews.' }
+      { title: 'AI Visibility & Citation Audit', desc: 'Benchmarking brand mention rates across ChatGPT, Gemini, Perplexity, and Google AI Overviews against top competitors.' },
+      { title: 'Prompt & Entity Architecture', desc: 'Mapping 100+ high-intent buyer prompts and building cohesive Knowledge Graph consensus across trusted digital sources.' },
+      { title: 'Digital PR & Trusted Citations', desc: 'Earning authoritative brand mentions and media placements on domains heavily indexed by large language models.' }
     ],
-    languages: ['Universal language support'],
+    languages: ['English', 'Spanish', 'French', 'German', 'Polish', 'Arabic'],
     faq: [
-      { q: 'How does GEO differ from traditional SEO?', a: 'Traditional SEO counts backlinks and keyword density; GEO builds factual consensus, entity relationships, and verified claims for LLM models.' }
+      { q: 'What are GEO services?', a: 'GEO (Generative Engine Optimization) services improve the probability that AI tools such as ChatGPT, Gemini, Claude, and Perplexity mention, cite, and recommend your brand when users ask conversational questions. They work by strengthening your content quality, schema markup, entity data, and authoritative third-party mentions.' },
+      { q: 'How is GEO different from SEO?', a: 'SEO focuses on ranking web pages in lists of search engine results based on keywords and backlinks. GEO builds the citable content, entity consensus, and brand authority signals that cause AI tools to name your business inside the synthesized answers they generate.' },
+      { q: 'How long do GEO services take to work?', a: 'Many websites see initial citation gains, model mentions, and brand recommendations within 60 to 90 days as structured entity data and PR citations get crawled. Highly competitive commercial niches typically require 4 to 6 months of steady authority building.' },
+      { q: 'Do GEO services replace SEO?', a: 'No. GEO builds directly on SEO. AI engines rely on real-time web retrieval and trusted domains, which means strong technical crawlability, organic rankings, and quality backlinks remain essential prerequisites for AI recommendation.' },
+      { q: 'Which businesses need GEO services?', a: 'Any business whose buyers compare options, research alternatives, or ask questions before purchasing. This includes dental clinics, healthcare practices, law firms, contractors, e-commerce stores, SaaS companies, and local service providers.' },
+      { q: 'Can you guarantee that ChatGPT will recommend my brand?', a: 'No legitimate agency can guarantee that because large language models generate text based on probabilistic neural weights. However, we maximize the exact signals AI tools parse — factual entity consistency, structured schema, author expertise, third-party press mentions, and clean direct answers — and track your citations every month.' }
     ]
   },
   '/social-media-marketing/': {
     path: '/social-media-marketing/',
-    title: 'Multilingual Social Media Marketing (SMM) & Video | UDMIDEAS',
-    description: 'Cross-cultural social media marketing, short-form video creation, and 24/7 native community moderation across Instagram, TikTok, LinkedIn, YouTube, X.',
-    kicker: 'SMM Pillar',
-    heading: 'Multilingual Social Media Marketing (SMM) & Video.',
-    subheading: 'Cross-cultural brand storytelling, viral short-form video creation, and 24/7 native community moderation across Instagram, TikTok, LinkedIn, YouTube, and X in six languages.',
+    title: 'SMM Services: Social Media Marketing Services | UDMIDEAS',
+    description: 'SMM services help your business find, win and keep customers on Facebook, Instagram, LinkedIn, TikTok, YouTube and X. Multilingual social media marketing by UDMIDEAS.',
+    kicker: 'Social Media Marketing (SMM) Services',
+    heading: 'Social Media Marketing (SMM) Services by UDMIDEAS',
+    subheading: 'SMM services help your business find, win and keep customers on Facebook, Instagram, LinkedIn, TikTok, YouTube and X. Delivered in many languages and backed by 15+ years of digital marketing experience.',
     category: 'service',
     canonicalUrl: `${CANONICAL_BASE}/social-media-marketing/`,
     schemaType: 'Service',
     keyHighlights: [
-      'Tailored content calendars reflecting regional holidays, humor, and cultural norms',
-      'In-house creative production of 4K vertical Reels, TikToks, and YouTube Shorts',
-      '24/7 native community managers responding in English, Spanish, French, German, Arabic, and Hebrew',
-      'Direct CRM and WhatsApp lead routing converting viral views into active sales pipelines'
+      'Strategic content creation: posts, carousels, reels, short videos, stories and graphics',
+      'Active community management: prompt replies to comments, direct messages and reviews',
+      'Targeted paid social ads across Facebook, Instagram, LinkedIn, TikTok and YouTube',
+      'Multilingual native execution across English, Spanish, French, German, Polish, Arabic, and Hebrew'
     ],
     features: [
-      { title: 'Cross-Cultural Strategy', desc: 'Calibrated social campaigns that resonate with local buyers in Europe, the USA, LATAM, and the GCC.' },
-      { title: 'Short-Form Video Production', desc: 'Hook-tested scripts, dynamic multilingual captions, and high-impact visual editing.' },
-      { title: '24/7 Triage & Moderation', desc: 'Instant response to DMs, comments, and brand inquiries in the native tongue of the buyer.' }
+      { title: 'Strategy & Calendar Planning', desc: 'Audience research, competitor review, commercial goals, and a 30-day content calendar planned in advance.' },
+      { title: 'Multilingual Community Care', desc: 'Native writers responding to comments and direct messages in your buyer\'s native language.' },
+      { title: 'Paid Social & Search Synergy', desc: 'Paid ad scaling paired with social brand signals that strengthen SEO, AEO, and GEO search presence.' }
     ],
-    languages: ['English', 'Spanish', 'French', 'German', 'Arabic', 'Hebrew'],
+    languages: ['English', 'Spanish', 'French', 'German', 'Polish', 'Arabic', 'Hebrew', 'Worldwide'],
     faq: [
-      { q: 'Why does translating American social posts fail internationally?', a: 'Cultural idioms, purchasing psychology, and humor differ radically between New York, Paris, Bogotá, and Riyadh.' }
+      { q: 'What are SMM services?', a: 'SMM services are social media marketing services. They include strategy, content, posting, community management, paid ads and reporting to grow your brand and leads on social platforms.' },
+      { q: 'Which platforms do you manage?', a: 'Facebook, Instagram, LinkedIn, YouTube, TikTok, X, Snapchat and Pinterest, chosen by where your buyers spend time.' },
+      { q: 'Do you offer multilingual SMM services?', a: 'Yes. We run English, Spanish, French, German, Polish, Arabic and Hebrew with our core team and cover other languages with native writers.' },
+      { q: 'How long do SMM services take to show results?', a: 'Most accounts see growth in reach and engagement within 60 to 90 days. Leads and sales depend on your offer, budget and market.' },
+      { q: 'Is social media marketing better than SEO?', a: 'They do different jobs. Social media builds awareness and trust fast, while SEO captures people who are already searching. We plan both together.' },
+      { q: 'Do you work with all industries and countries?', a: 'Yes. We serve businesses in every industry and work with clients worldwide.' }
     ]
   },
   '/pay-per-click/': {
     path: '/pay-per-click/',
-    title: 'Multilingual Pay-Per-Click (PPC) Advertising | UDMIDEAS',
-    description: 'High-ROAS international PPC campaigns: Google Search, Performance Max, Shopping, Meta Ads, and LinkedIn B2B ABM across USA, LATAM, EU, and Gulf markets.',
-    kicker: 'PPC Pillar',
-    heading: 'Multilingual Pay-Per-Click (PPC) & Paid Acquisition.',
-    subheading: 'High-intent search capture, visual paid social funnels, and B2B Account-Based Marketing in local currencies delivering predictable pipeline and 4x+ ROAS.',
+    title: 'Pay Per Click (PPC) Services: Google Ads Campaigns | UDMIDEAS',
+    description: 'Pay per click services put your business in front of buyers when they search, watch or shop. High-ROAS Google Ads, Shopping, and YouTube campaigns by UDMIDEAS.',
+    kicker: 'Pay Per Click (PPC) Services',
+    heading: 'Pay Per Click Services by UDMIDEAS: Google Ads Campaigns',
+    subheading: 'PPC campaigns that bring sales, leads and traffic on Google Ads and YouTube for businesses in the USA, Latin America and worldwide. Backed by 15+ years of digital marketing experience.',
     category: 'service',
     canonicalUrl: `${CANONICAL_BASE}/pay-per-click/`,
     schemaType: 'Service',
     keyHighlights: [
-      'Granular single-theme ad groups with native-language ad copy and negative keyword filters',
-      'Multi-currency Google Shopping and dynamic Meta Catalog ads for cross-border retailers',
-      'LinkedIn B2B Account-Based Marketing targeting C-suite executives in USA, DACH, and Israel',
-      'Custom-coded multilingual landing pages with local trust badges and localized checkouts'
+      'High-intent Search, Performance Max, Demand Gen, Video, and Shopping setup',
+      'Server-side Google Tag Manager, GA4 enhanced conversions, and dynamic call tracking',
+      'Google Merchant Center feed optimization, GTIN barcodes, and custom labels for eCommerce',
+      'Native multilingual ad writing in English, Spanish, French, German, Polish, Arabic, and Hebrew'
     ],
     features: [
-      { title: 'Google Ads & PMax', desc: 'Dominating commercial search intent across USA, Europe, LATAM, and the Middle East.' },
-      { title: 'Meta Ads Global Funnels', desc: 'Hyper-targeted Instagram and Facebook campaigns with click-to-WhatsApp capabilities.' },
-      { title: 'LinkedIn B2B ABM', desc: 'Reaching decision-makers by company revenue, job title, and technological stack.' }
+      { title: 'High-Intent Search Ads', desc: 'Capturing ready-to-buy prospects searching for your services with strict negative keyword pruning.' },
+      { title: 'Google Shopping & PMax', desc: 'Optimizing product feeds and multichannel assets to drive scalable eCommerce catalog revenue.' },
+      { title: 'Conversion Rate Engineering', desc: 'Aligning landing page speed, message match, trust signals, and booking forms with ad copy.' }
     ],
-    languages: ['All target markets'],
+    languages: ['English', 'Spanish', 'French', 'German', 'Polish', 'Arabic', 'Hebrew', 'Worldwide'],
     faq: [
-      { q: 'How do you handle multi-currency ad budgets?', a: 'We pace budgets dynamically based on purchasing power parity, regional CPCs, and verified customer lifetime value.' }
+      { q: 'What are pay per click services?', a: 'Pay per click services plan, launch and optimize paid ads on Google, YouTube and other platforms, where you pay only when someone clicks your ad.' },
+      { q: 'Which Google Ads campaign type is best?', a: 'It depends on your goal. Search is best for leads, Shopping for product sales, Video for views and awareness, and Performance Max for scaling across Google.' },
+      { q: 'Is display, video or text better?', a: 'Text ads on Search are usually best for sales and leads because users are already searching. Video builds trust and display supports remarketing.' },
+      { q: 'What do I need for Google Shopping ads?', a: 'A Google Merchant Center account, a clean product feed, a verified website and product pages that match your feed prices and stock.' },
+      { q: 'How long do PPC services take to work?', a: 'Ads can go live in days. Most accounts need 60 to 90 days of testing and optimization to reach stable cost per lead or return on ad spend.' },
+      { q: 'Do you offer PPC for all countries and languages?', a: 'Yes. We run campaigns for the USA, Latin America and other regions, in English, Spanish, French, German, Polish, Arabic, Hebrew and more.' }
     ]
   },
   '/new-york/': {

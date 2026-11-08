@@ -20,6 +20,11 @@ import { PageSEO, getPageMetadata } from '../data/routesData';
 import { USA_STATES, LATAM_COUNTRIES, EU_COUNTRIES, ARABIC_COUNTRIES } from '../data/contentData';
 import { WebsiteDesignServicesContent } from './WebsiteDesignServicesContent';
 import { DigitalMarketingServicesContent } from './DigitalMarketingServicesContent';
+import { MultilingualSeoServicesContent } from './MultilingualSeoServicesContent';
+import { AeoServicesContent } from './AeoServicesContent';
+import { GeoServicesContent } from './GeoServicesContent';
+import { SmmServicesContent } from './SmmServicesContent';
+import { PpcServicesContent } from './PpcServicesContent';
 
 interface StandalonePageViewProps {
   path: string;
@@ -33,6 +38,15 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
   onNavigateTo
 }) => {
   const page = getPageMetadata(path);
+  const isCustomServicePage =
+    page.path === '/digital-marketing-services/' ||
+    page.path === '/website-design-development/' ||
+    page.path === '/multilingual-search-engine-optimization/' ||
+    page.path === '/answer-engine-optimization/' ||
+    page.path === '/generative-engine-optimization/' ||
+    page.path === '/social-media-marketing/' ||
+    page.path === '/pay-per-click/';
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -253,8 +267,43 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           </div>
         )}
 
+        {/* Multilingual SEO Services Comprehensive Content */}
+        {page.path === '/multilingual-search-engine-optimization/' && (
+          <div className="mb-16">
+            <MultilingualSeoServicesContent />
+          </div>
+        )}
+
+        {/* Answer Engine Optimization (AEO) Comprehensive Content */}
+        {page.path === '/answer-engine-optimization/' && (
+          <div className="mb-16">
+            <AeoServicesContent />
+          </div>
+        )}
+
+        {/* Generative Engine Optimization (GEO) Comprehensive Content */}
+        {page.path === '/generative-engine-optimization/' && (
+          <div className="mb-16">
+            <GeoServicesContent />
+          </div>
+        )}
+
+        {/* Social Media Marketing (SMM) Comprehensive Content */}
+        {page.path === '/social-media-marketing/' && (
+          <div className="mb-16">
+            <SmmServicesContent />
+          </div>
+        )}
+
+        {/* Pay Per Click (PPC) Comprehensive Content */}
+        {page.path === '/pay-per-click/' && (
+          <div className="mb-16">
+            <PpcServicesContent />
+          </div>
+        )}
+
         {/* Key Highlights Grid (for standard pages) */}
-        {page.path !== '/digital-marketing-services/' && page.path !== '/website-design-development/' && (
+        {!isCustomServicePage && (
           <section className="mb-14 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-slate-950 border border-slate-800 shadow-xl">
             <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-4 flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-blue-400" />
@@ -272,7 +321,7 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         )}
 
         {/* Detailed Feature Blocks (for standard pages) */}
-        {page.path !== '/digital-marketing-services/' && page.path !== '/website-design-development/' && (
+        {!isCustomServicePage && (
           <section className="mb-16 space-y-6">
             <div className="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider">
               Detailed Capabilities & Solutions
@@ -297,7 +346,7 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         )}
 
         {/* Languages Strip (for standard pages) */}
-        {page.path !== '/digital-marketing-services/' && page.path !== '/website-design-development/' && (
+        {!isCustomServicePage && (
           <div className="mb-16 p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs">
             <div className="flex items-center gap-2 text-slate-400">
               <Globe2 className="w-4 h-4 text-blue-400" />
@@ -444,7 +493,7 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         </section>
 
         {/* Page Specific FAQs (suppressed on custom service pages which already manage their content structure) */}
-        {page.path !== '/digital-marketing-services/' && page.path !== '/website-design-development/' && page.faq && page.faq.length > 0 && (
+        {!isCustomServicePage && page.faq && page.faq.length > 0 && (
           <section className="mb-16 space-y-4">
             <h3 className="text-xl font-bold text-white flex items-center gap-2">
               <HelpCircle className="w-5 h-5 text-blue-400" />
