@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { X, Send, MessageCircle, Phone, Mail, MapPin, CheckCircle2 } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { X, Send, MessageCircle, Mail, CheckCircle2, Loader2, AlertCircle } from 'lucide-react';
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -11,58 +11,71 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
     name: '',
     email: '',
     phone: '',
-    service: 'Website Design & Development',
-    region: 'USA',
+    service: 'Website Design & Development (Custom Code)',
+    region: 'USA (New York, California, Texas & Nationwide)',
     message: ''
   });
-  const [submittedMailUrl, setSubmittedMailUrl] = useState('');
-  const [submittedUrl, setSubmittedUrl] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      setErrorMessage(null);
+    }
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name.trim() || !formData.email.trim()) return;
 
-    // Structured consultation request body
-    const emailSubject = encodeURIComponent(`New Consultation Request from UDMIDEAS (${formData.service}) - ${formData.name.trim()}`);
-    const emailBody = encodeURIComponent(
-      `Hello Arun and UDMIDEAS Team,\n\n` +
-      `New consultation inquiry submitted via UDMIDEAS website modal:\n\n` +
-      `Full Name: ${formData.name.trim()}\n` +
-      `Work Email: ${formData.email.trim()}\n` +
-      `Phone / WhatsApp: ${formData.phone.trim() || 'N/A'}\n` +
-      `Service of Interest: ${formData.service}\n` +
-      `Target Region: ${formData.region}\n` +
-      `Project Details & Goals:\n${formData.message.trim() || 'N/A'}\n\n` +
-      `Please reply directly to: ${formData.email.trim()}`
-    );
+    setIsSubmitting(true);
+    setErrorMessage(null);
 
-    // mailto URL directing strictly to info@udmideasusa.com
-    const mailtoUrl = `mailto:info@udmideasusa.com?subject=${emailSubject}&body=${emailBody}`;
-    setSubmittedMailUrl(mailtoUrl);
+    try {
+      const response = await fetch('https://formspree.io/f/mljbrgbp', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          phone: formData.phone.trim() || 'N/A',
+          service: formData.service,
+          region: formData.region,
+          message: formData.message.trim() || 'N/A'
+        })
+      });
 
-    // Format all input fields neatly into a structured WhatsApp message
-    const formattedMessage = [
-      `*New Consultation Request - UDMIDEAS*`,
-      ``,
-      `*Name:* ${formData.name.trim()}`,
-      `*Work Email:* ${formData.email.trim()}`,
-      `*Phone / WhatsApp Number:* ${formData.phone.trim() || 'N/A'}`,
-      `*Service of Interest:* ${formData.service}`,
-      `*Target Geographic Region:* ${formData.region}`,
-      `*Project Details & Goals:* ${formData.message.trim() || 'N/A'}`
-    ].join('\n');
-
-    // Click-to-Chat URL format for target number 919521186150
-    const targetUrl = `https://wa.me/919521186150?text=${encodeURIComponent(formattedMessage)}`;
-    setSubmittedUrl(targetUrl);
-
-    // Trigger email client to info@udmideasusa.com
-    window.location.href = mailtoUrl;
-
-    setIsSubmitted(true);
+      if (response.ok) {
+        setIsSuccess(true);
+        // Clear form fields after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: 'Website Design & Development (Custom Code)',
+          region: 'USA (New York, California, Texas & Nationwide)',
+          message: ''
+        });
+      } else {
+        const data = await response.json().catch(() => null);
+        const errorDetail =
+          data?.errors?.map((err: { message?: string }) => err.message).filter(Boolean).join(', ') ||
+          'Submission failed. Please try again or reach out directly via WhatsApp (+91-9521186150) or email (info@udmideasusa.com).';
+        setErrorMessage(errorDetail);
+      }
+    } catch {
+      setErrorMessage(
+        'Unable to connect to the form server. Please try again or contact us directly via WhatsApp (+91-9521186150) or email (info@udmideasusa.com).'
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -81,25 +94,20 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
           <X className="w-5 h-5" />
         </button>
 
-        {isSubmitted ? (
-          <div className="text-center py-8 sm:py-10 space-y-4">
+        {isSuccess ? (
+          <div className="text-center py-8 sm:py-10 space-y-4 animate-in fade-in">
             <div className="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto border border-emerald-500/40">
               <CheckCircle2 className="w-8 h-8" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white">Inquiry Dispatched to info@udmideasusa.com!</h3>
-            <p className="text-xs sm:text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-              Thank you, <strong>{formData.name}</strong>. Your consultation request details have been dispatched to <strong className="text-emerald-400 font-mono">info@udmideasusa.com</strong> and structured for WhatsApp (<strong className="text-emerald-400 font-mono">+91-9521186150</strong>).
+            <h3 className="text-xl sm:text-2xl font-bold text-white">
+              Thank you! Your consultation request has been sent.
+            </h3>
+            <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
+              We will get back to you within 4 hours.
             </p>
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
-                href={submittedMailUrl || 'mailto:info@udmideasusa.com'}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md transition-all"
-              >
-                <Mail className="w-4 h-4" />
-                <span>Email info@udmideasusa.com</span>
-              </a>
-              <a
-                href={submittedUrl || 'https://wa.me/919521186150'}
+                href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20just%20submitted%20a%20consultation%20request%20on%20UDMIDEAS."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md transition-all"
@@ -109,12 +117,12 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
               </a>
               <button
                 onClick={() => {
-                  setIsSubmitted(false);
+                  setIsSuccess(false);
                   onClose();
                 }}
-                className="w-full sm:w-auto px-4 py-2.5 rounded-xl text-xs font-medium text-slate-300 bg-slate-900 border border-slate-800 hover:bg-slate-800 transition-colors"
+                className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-xs font-medium text-slate-300 bg-slate-900 border border-slate-800 hover:bg-slate-800 transition-colors"
               >
-                Done
+                Close
               </button>
             </div>
           </div>
@@ -151,6 +159,17 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
               </a>
             </div>
 
+            {/* Error Notification Alert */}
+            {errorMessage && (
+              <div className="p-3.5 mb-4 rounded-xl bg-rose-950/70 border border-rose-800/80 text-rose-200 text-xs flex items-start gap-2.5 animate-in fade-in">
+                <AlertCircle className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" />
+                <div className="flex-1">
+                  <div className="font-semibold text-white">Unable to send request</div>
+                  <div className="mt-0.5">{errorMessage}</div>
+                </div>
+              </div>
+            )}
+
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -161,10 +180,11 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   <input
                     type="text"
                     required
+                    disabled={isSubmitting}
                     placeholder="e.g. John Doe"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 disabled:opacity-60"
                   />
                 </div>
 
@@ -175,10 +195,11 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   <input
                     type="email"
                     required
+                    disabled={isSubmitting}
                     placeholder="name@company.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 disabled:opacity-60"
                   />
                 </div>
               </div>
@@ -190,10 +211,11 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   </label>
                   <input
                     type="text"
+                    disabled={isSubmitting}
                     placeholder="+1 (555) 000-0000"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 disabled:opacity-60"
                   />
                 </div>
 
@@ -202,9 +224,10 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                     Service of Interest
                   </label>
                   <select
+                    disabled={isSubmitting}
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-blue-500 disabled:opacity-60"
                   >
                     <option>Website Design & Development (Custom Code)</option>
                     <option>React Js & Headless Web Applications</option>
@@ -225,9 +248,10 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                   Target Geographic Region
                 </label>
                 <select
+                  disabled={isSubmitting}
                   value={formData.region}
                   onChange={(e) => setFormData({ ...formData, region: e.target.value })}
-                  className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-blue-500"
+                  className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-blue-500 disabled:opacity-60"
                 >
                   <option>USA (New York, California, Texas & Nationwide)</option>
                   <option>Latin America (Brazil, Mexico, Colombia & LATAM)</option>
@@ -244,10 +268,11 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                 </label>
                 <textarea
                   rows={3}
+                  disabled={isSubmitting}
                   placeholder="Describe your current platform, target languages, and desired timeline..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                  className="w-full px-3.5 py-2.5 text-sm sm:text-xs rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 disabled:opacity-60"
                 />
               </div>
 
@@ -257,10 +282,20 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                 </div>
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all inline-flex items-center justify-center gap-2 cursor-pointer"
+                  disabled={isSubmitting}
+                  className="w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 disabled:bg-blue-600/50 disabled:cursor-not-allowed shadow-md shadow-blue-600/30 transition-all inline-flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <span>Submit Consultation Request</span>
-                  <Send className="w-3.5 h-3.5" />
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                      <span>Sending...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Submit Consultation Request</span>
+                      <Send className="w-3.5 h-3.5" />
+                    </>
+                  )}
                 </button>
               </div>
             </form>
