@@ -1256,6 +1256,127 @@ export const ALL_PAGES: Record<string, PageSEO> = {
       { q: 'How long does SEO take to show results in Brazil?', a: 'SEO usually takes 3 to 6 months to show steady gains. PPC can bring leads within days, so many clients run both while SEO builds.' }
     ]
   },
+  '/colombia/': {
+    path: '/colombia/',
+    title: 'Colombia Multilingual Web Design, Development, SEO & Digital Marketing | UDMIDEAS',
+    description: 'UDMIDEAS provides Colombia web design, custom React JS development, Spanish SEO, AEO/GEO, and PPC services for Colombian businesses. Led by Arun with 15+ years experience.',
+    kicker: 'Colombia Country Focus',
+    heading: 'Colombia Multilingual Web Design, Development, SEO and Digital Marketing in One Team',
+    subheading: 'UDMIDEAS builds custom React JS websites and runs Spanish, multilingual and AI-ready SEO for Colombian businesses, under the direct supervision of Arun, an SEO expert with 15+ years of experience.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/colombia/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom React JS website development built mobile-first for Colombia\'s 44M social identities and 96.5% phone access',
+      'Native Spanish SEO tailored for Colombian search intent across Bogotá, Medellín, Cali, Barranquilla, and Cartagena',
+      'Comprehensive multilingual routing with reciprocal hreflang tags for Spanish, English, and Portuguese',
+      'Dual AEO & GEO optimization earning direct citations in Google AI Overviews, ChatGPT, Gemini, and Perplexity',
+      'Direct execution led by founder Arun with 15+ years of international hands-on search experience'
+    ],
+    features: [
+      { title: 'Mobile-First React Architecture', desc: 'Custom coded from scratch with zero template bloat for sub-second speeds on mobile connections.' },
+      { title: 'Authentic Colombian Spanish SEO', desc: 'Keyword research and localized content reflecting colloquial Colombian phrasing and commercial search intent.' },
+      { title: 'Omnichannel Digital Marketing', desc: 'Unifying organic rankings, Google Ads PPC, and social media brand building under one accountable lead.' }
+    ],
+    languages: ['Spanish (Colombia / es-CO)', 'English', 'Portuguese'],
+    faq: [
+      { q: 'What does a multilingual SEO company in Colombia do?', a: 'It researches keywords in Spanish, English and Portuguese, builds language-specific pages with hreflang tags, and optimizes each for local search intent.' },
+      { q: 'How long does Spanish SEO take to show results?', a: 'Most sites see movement in 3 to 6 months, depending on competition, site health and content depth.' },
+      { q: 'Which is better: SEO, SMM or PPC?', a: 'SEO gives lasting rankings, PPC gives fast clicks and SMM builds awareness. We usually lead with SEO and add PPC for urgent leads.' },
+      { q: 'Why build a multilingual website in React JS?', a: 'React JS gives fast page loads, clean code and flexible language routing, which helps users and search engines.' }
+    ]
+  },
+  '/chile/': {
+    path: '/chile/',
+    title: 'Chile Multilingual Web Design, Development, Spanish SEO & Digital Marketing | UDMIDEAS',
+    description: 'Chile multilingual web design, custom React JS development, Spanish SEO, PPC and SMM services for Chilean businesses. Led by Arun with 15+ years experience.',
+    kicker: 'Chile Country Focus',
+    heading: 'Chile Multilingual Web Design, Development, Spanish SEO & Digital Marketing Services',
+    subheading: 'Capture Chile\'s 18.8 million internet users with custom React JS web development, high-intent Spanish SEO, PPC, and AI search visibility under founder Arun.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/chile/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom React JS website development built mobile-first for Chile\'s 94.5% internet penetration and 95.3% mobile users',
+      'Native Spanish SEO tailored for Chilean search intent across Santiago, Valparaíso, Biobío, and Antofagasta',
+      'Full growth synergy joining organic search, Google Ads PPC, and social media brand building under one accountable lead',
+      'Dual AEO & GEO optimization earning direct citations in Google AI Overviews, ChatGPT, Gemini, and Perplexity',
+      'Direct senior specialist leadership with founder Arun backed by 15+ years of international hands-on search experience'
+    ],
+    features: [
+      { title: 'Mobile-First React Architecture', desc: 'Custom coded from scratch with zero template bloat for sub-second load times on mobile devices.' },
+      { title: 'Authentic Chilean Spanish SEO', desc: 'Keyword research and localized content reflecting Chilean search terms and colloquial phrasing.' },
+      { title: 'Omnichannel Digital Marketing', desc: 'Unifying organic rankings, Google Ads PPC, and social media marketing under one accountable lead.' }
+    ],
+    languages: ['Spanish (Chile / es-CL)', 'English'],
+    faq: [
+      { q: 'How long does SEO take to work in Chile?', a: 'Most Chile websites see ranking movement in 3 to 6 months, depending on competition, content and technical health.' },
+      { q: 'What is multilingual SEO?', a: 'Multilingual SEO optimizes a website for several languages using separate keyword research, translated content and hreflang tags, so each audience finds the right version.' },
+      { q: 'Do you build websites in React JS?', a: 'Yes. We custom code fast, SEO-friendly React JS websites for every business industry.' },
+      { q: 'Can you do Spanish SEO for my business?', a: 'Yes. We research Chilean Spanish keywords, write local content and optimize your Google Business Profile.' }
+    ]
+  },
+  '/ecuador/': {
+    path: '/ecuador/',
+    title: 'Ecuador Multilingual Web Design & SEO Services | UDMIDEAS',
+    description: 'Ecuador multilingual web design, custom React JS development, Spanish SEO, AEO/GEO, and digital marketing services for Ecuadorian businesses. Led by Arun with 15+ years experience.',
+    kicker: 'Ecuador Country Focus',
+    heading: 'Ecuador Multilingual Web Design and SEO: Why It Matters Now',
+    subheading: 'Ecuador multilingual web design development SEO digital marketing services from UDMIDEAS help Ecuadorian businesses rank higher in Spanish and English, then turn those visitors into customers.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/ecuador/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom React JS website development built mobile-first for Ecuador\'s 15.6M internet users (84.2% penetration)',
+      'Native Spanish SEO tailored for Ecuadorian search intent across Quito, Guayaquil, Cuenca, and Manta',
+      'Unified digital marketing combining organic search, Google Ads PPC, and social media brand building',
+      'Dual AEO & GEO optimization earning direct citations in Google AI Overviews, ChatGPT, Gemini, and Perplexity',
+      'Direct senior specialist leadership with founder Arun backed by 15+ years of international hands-on search experience'
+    ],
+    features: [
+      { title: 'Mobile-First React Architecture', desc: 'Custom coded from scratch with zero template bloat for sub-second speeds and 95+ Core Web Vitals.' },
+      { title: 'Authentic Ecuadorian Spanish SEO', desc: 'Keyword research and localized content reflecting Ecuadorian colloquial phrasing and commercial search intent.' },
+      { title: 'Omnichannel Digital Marketing', desc: 'Unifying organic rankings, Google Ads PPC, and social media marketing under one accountable lead.' }
+    ],
+    languages: ['Spanish (Ecuador / es-EC)', 'English'],
+    faq: [
+      { q: 'How long does multilingual SEO take in Ecuador?', a: 'Most sites see ranking gains in 3 to 6 months. Competitive keywords and new domains can take longer.' },
+      { q: 'Do you do SEO in Spanish for my website?', a: 'Yes. We research Spanish keywords, write native-quality content, and set up hreflang so Google serves the right language.' },
+      { q: 'Do you build websites in React JS?', a: 'Yes. Every site is custom coded in React JS, with server-side rendering where SEO requires it.' },
+      { q: 'What is the difference between AEO and GEO?', a: 'AEO gets your answers selected by search engines and voice assistants. GEO gets your brand cited inside AI tools such as ChatGPT and Perplexity.' },
+      { q: 'How much do your services cost?', a: 'Pricing depends on scope, languages and competition. We quote after a free audit.' }
+    ]
+  },
+  '/panama/': {
+    path: '/panama/',
+    title: 'Panama Multilingual Web Design, Development, SEO & Digital Marketing | UDMIDEAS',
+    description: 'UDMIDEAS provides Panama multilingual web design, custom React JS development, Spanish SEO, and digital marketing services for Panamanian businesses. Led by Arun with 15+ years experience.',
+    kicker: 'Panama Country Focus',
+    heading: 'Panama Multilingual Web Design, Development, SEO and Digital Marketing Services',
+    subheading: 'Reach Panama\'s 3.84 million internet users with custom React JS web engineering, Panamanian Spanish SEO, and PPC billed in USD, led directly by founder Arun.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/panama/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom React JS website development built mobile-first for Panama\'s 3.84M internet users (+6.7% YoY)',
+      'Native Panamanian Spanish SEO (es-PA) and bilingual routing targeting high-intent local and international buyers',
+      'PPC advertising and performance reporting billed transparently in US Dollars (USD)',
+      'Dual AEO & GEO optimization earning direct citations in Google AI Overviews, ChatGPT, and Gemini',
+      'Direct senior specialist leadership with founder Arun backed by 15+ years of international hands-on search experience'
+    ],
+    features: [
+      { title: 'Mobile-First React Architecture', desc: 'Custom coded from scratch with pre-rendered pages, clean URLs, and sub-second Core Web Vitals.' },
+      { title: 'Authentic Panamanian Spanish SEO', desc: 'Keyword research and localized content reflecting Panamanian commercial search queries.' },
+      { title: 'Omnichannel Digital Marketing', desc: 'Unifying organic rankings, Google Ads PPC in USD, and social media brand building under one accountable lead.' }
+    ],
+    languages: ['Spanish (Panama / es-PA)', 'English'],
+    faq: [
+      { q: 'Why should Panama businesses invest in multilingual web design and SEO?', a: 'Panama is an international commercial crossroads where both Spanish and English are used in commerce. Having a properly localized bilingual site with hreflang tags ensures you capture both local consumers and international investors.' },
+      { q: 'How are campaigns billed for Panama businesses?', a: 'Because Panama utilizes the US Dollar (USD), all our service retainers, Google Ads budgets, and performance reporting are structured and billed directly in USD for complete financial transparency.' },
+      { q: 'How long does Spanish SEO take to rank in Panama?', a: 'Most businesses begin seeing noticeable keyword movement and traffic improvements within 3 to 6 months.' },
+      { q: 'Why choose custom React JS over standard WordPress templates?', a: 'Custom React JS websites load in under one second, have zero plugin bloat or security vulnerabilities, and provide flawless multilingual routing.' }
+    ]
+  },
   '/eu/': {
     path: '/eu/',
     title: 'European Union Web Design & Multilingual SEO | UDMIDEAS',

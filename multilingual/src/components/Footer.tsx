@@ -45,12 +45,20 @@ export const Footer: React.FC = () => {
               Dedicated multilingual SEO, AEO, GEO, SMM, and PPC experts serving USA, LATAM, EU, Israel, and the Arab World.
             </p>
 
-            <div className="space-y-1.5 pt-2 text-slate-300 font-mono text-[11px]">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-blue-400 shrink-0" />
-                <span>350 5th Ave, New York, NY 10001, USA</span>
+            <div className="space-y-2.5 pt-2 text-slate-300 font-mono text-[11px]">
+              <div className="flex items-start gap-2">
+                <MapPin className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
+                <span className="leading-snug">350 5th Ave, New York, NY 10001, USA</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-start gap-2">
+                <MapPin className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
+                <span className="leading-snug">11 Sams Trailer Ct, Hazlet, NJ 07730, United States</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                <span className="leading-snug">16 Gamal Abdelwahab Street, El-Darb El-Ahmar, El Sayeda Zeinab, Cairo Governorate 11925, Egypt</span>
+              </div>
+              <div className="flex items-center gap-2 pt-1 border-t border-slate-900/80">
                 <Mail className="w-3.5 h-3.5 text-blue-400 shrink-0" />
                 <a href="mailto:info@udmideasusa.com" className="hover:text-white transition-colors">
                   info@udmideasusa.com

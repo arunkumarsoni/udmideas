@@ -26,6 +26,10 @@ import { GeoServicesContent } from './GeoServicesContent';
 import { SmmServicesContent } from './SmmServicesContent';
 import { PpcServicesContent } from './PpcServicesContent';
 import { BrazilServicesContent } from './BrazilServicesContent';
+import { ColombiaServicesContent } from './ColombiaServicesContent';
+import { ChileServicesContent } from './ChileServicesContent';
+import { EcuadorServicesContent } from './EcuadorServicesContent';
+import { PanamaServicesContent } from './PanamaServicesContent';
 
 interface StandalonePageViewProps {
   path: string;
@@ -47,7 +51,11 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     page.path === '/generative-engine-optimization/' ||
     page.path === '/social-media-marketing/' ||
     page.path === '/pay-per-click/' ||
-    page.path === '/brazil/';
+    page.path === '/brazil/' ||
+    page.path === '/colombia/' ||
+    page.path === '/chile/' ||
+    page.path === '/ecuador/' ||
+    page.path === '/panama/';
 
   const [formData, setFormData] = useState({
     name: '',
@@ -213,47 +221,49 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           </a>
         </nav>
 
-        {/* Hero Section */}
-        <header className="max-w-4xl space-y-4 mb-12">
-          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
-            <span className="font-semibold text-emerald-400 font-mono bg-emerald-950/50 px-2.5 py-1 rounded border border-emerald-900/50">
-              {page.kicker}
-            </span>
-            <span aria-hidden="true">·</span>
-            <span className="text-slate-300">USA HQ NYC 10001</span>
-            <span aria-hidden="true">·</span>
-            <span className="text-blue-400 font-mono">15+ Years Track Record</span>
-          </div>
+        {/* Hero Section (omitted on /ecuador/ because EcuadorServicesContent contains the dedicated hero section) */}
+        {page.path !== '/ecuador/' && (
+          <header className="max-w-4xl space-y-4 mb-12">
+            <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
+              <span className="font-semibold text-emerald-400 font-mono bg-emerald-950/50 px-2.5 py-1 rounded border border-emerald-900/50">
+                {page.kicker}
+              </span>
+              <span aria-hidden="true">·</span>
+              <span className="text-slate-300">USA HQ NYC 10001</span>
+              <span aria-hidden="true">·</span>
+              <span className="text-blue-400 font-mono">15+ Years Track Record</span>
+            </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
-            {page.heading}
-          </h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+              {page.heading}
+            </h1>
 
-          <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl">
-            {page.subheading}
-          </p>
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl">
+              {page.subheading}
+            </p>
 
-          {/* Quick Action Buttons */}
-          <div className="flex flex-wrap items-center gap-3 pt-3">
-            <a
-              href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20your%20services%20from%20page:%20"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
-            >
-              <MessageCircle className="w-4 h-4" />
-              <span>WhatsApp: +91-9521186150</span>
-            </a>
+            {/* Quick Action Buttons */}
+            <div className="flex flex-wrap items-center gap-3 pt-3">
+              <a
+                href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20your%20services%20from%20page:%20"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>WhatsApp: +91-9521186150</span>
+              </a>
 
-            <a
-              href="#inquiry-form"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
-            >
-              <span>Submit Project Form (Direct Email)</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </a>
-          </div>
-        </header>
+              <a
+                href="#inquiry-form"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+              >
+                <span>Submit Project Form (Direct Email)</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </header>
+        )}
 
         {/* Website Design & Development Comprehensive Content */}
         {page.path === '/website-design-development/' && (
@@ -308,6 +318,34 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         {page.path === '/brazil/' && (
           <div className="mb-16">
             <BrazilServicesContent />
+          </div>
+        )}
+
+        {/* Colombia Web Design, Development, SEO & Digital Marketing Content */}
+        {page.path === '/colombia/' && (
+          <div className="mb-16">
+            <ColombiaServicesContent />
+          </div>
+        )}
+
+        {/* Chile Web Design, Development, SEO & Digital Marketing Content */}
+        {page.path === '/chile/' && (
+          <div className="mb-16">
+            <ChileServicesContent />
+          </div>
+        )}
+
+        {/* Ecuador Web Design, Development, SEO & Digital Marketing Content */}
+        {page.path === '/ecuador/' && (
+          <div className="mb-16">
+            <EcuadorServicesContent />
+          </div>
+        )}
+
+        {/* Panama Web Design, Development, SEO & Digital Marketing Content */}
+        {page.path === '/panama/' && (
+          <div className="mb-16">
+            <PanamaServicesContent />
           </div>
         )}
 
