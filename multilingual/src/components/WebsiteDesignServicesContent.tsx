@@ -412,7 +412,7 @@ export const WebsiteDesignServicesContent: React.FC = () => {
     },
     {
       q: 'How do I get started with UDMIDEAS today?',
-      a: 'Simply call or message us on WhatsApp at +91-9521186150 or send an email to soni9999arun9999@gmail.com. We will discuss your goals, recommend the right package, and provide a clear proposal within 24 hours.'
+      a: 'Simply call or message us on WhatsApp at +91-9521186150 or send an email to info@udmideasusa.com. We will discuss your goals, recommend the right package, and provide a clear proposal within 24 hours.'
     }
   ];
 

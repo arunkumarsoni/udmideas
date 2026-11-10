@@ -52,8 +52,8 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-blue-400 shrink-0" />
-                <a href="mailto:soni9999arun9999@gmail.com" className="hover:text-white transition-colors">
-                  soni9999arun9999@gmail.com
+                <a href="mailto:info@udmideasusa.com" className="hover:text-white transition-colors">
+                  info@udmideasusa.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -373,7 +373,7 @@ export const Footer: React.FC = () => {
         <div className="mt-12 pt-8 border-t border-slate-900 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 text-center md:text-left">
           <div>
             © {new Date().getFullYear()} <strong className="text-slate-300">UDMIDEAS</strong>. All rights reserved. 
-            All client inquiries forwarded directly to <span className="text-emerald-400 font-mono">soni9999arun9999@gmail.com</span>.
+            All client inquiries forwarded directly to <span className="text-emerald-400 font-mono">info@udmideasusa.com</span>.
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 text-slate-400">
             <span>WCAG 2.1 AA Screen Reader Compliant</span>

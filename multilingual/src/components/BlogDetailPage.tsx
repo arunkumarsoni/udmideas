@@ -233,8 +233,8 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
       `Please reply to: ${formData.email}`
     );
 
-    // Dispatch mailto to soni9999arun9999@gmail.com
-    window.location.href = `mailto:soni9999arun9999@gmail.com?subject=${subject}&body=${body}`;
+    // Dispatch mailto to info@udmideasusa.com
+    window.location.href = `mailto:info@udmideasusa.com?subject=${subject}&body=${body}`;
     setIsSubmitted(true);
   };
 
@@ -1030,18 +1030,18 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
           </div>
         </div>
 
-        {/* Dedicated Organic SEO Quote & Consultation Form Targeting soni9999arun9999@gmail.com */}
+        {/* Dedicated Organic SEO Quote & Consultation Form Targeting info@udmideasusa.com */}
         <section id="quote-form" className="mt-14 mb-16 p-8 sm:p-10 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl">
           <div className="max-w-2xl mb-8">
             <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1 flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              Direct Email Delivery to soni9999arun9999@gmail.com
+              Direct Email Delivery to info@udmideasusa.com
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
               Request a Quote for Organic SEO Services.
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-              We at UDMIDEAS NYC Digital Marketing Agency take your business to the next level. Fill out this form to connect with Founder Arun at <strong className="text-emerald-400 font-mono">soni9999arun9999@gmail.com</strong> or call/text directly at <strong className="text-emerald-400 font-mono">+91-9521186150</strong>.
+              We at UDMIDEAS NYC Digital Marketing Agency take your business to the next level. Fill out this form to connect with Founder Arun at <strong className="text-emerald-400 font-mono">info@udmideasusa.com</strong> or call/text directly at <strong className="text-emerald-400 font-mono">+91-9521186150</strong>.
             </p>
           </div>
 
@@ -1050,9 +1050,9 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               <div className="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto border border-emerald-500/40">
                 <CheckCircle2 className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-white">Inquiry Dispatched to soni9999arun9999@gmail.com!</h3>
+              <h3 className="text-xl font-bold text-white">Inquiry Dispatched to info@udmideasusa.com!</h3>
               <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
-                Thank you, <strong>{formData.name}</strong>. Your Organic SEO audit request has been sent to Founder Arun's primary inbox. We will review your website and reply within 4 business hours.
+                Thank you, <strong>{formData.name}</strong>. Your Organic SEO audit request has been sent to <span className="text-emerald-400 font-mono">info@udmideasusa.com</span>. We will review your website and reply within 4 business hours.
               </p>
               <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
                 <a
@@ -1147,7 +1147,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="text-[11px] text-slate-400">
-                  🔒 Direct routing to <span className="text-emerald-400 font-mono">soni9999arun9999@gmail.com</span> · Strict NDA protected.
+                  🔒 Direct routing to <span className="text-emerald-400 font-mono">info@udmideasusa.com</span> · Strict NDA protected.
                 </div>
                 <button
                   type="submit"

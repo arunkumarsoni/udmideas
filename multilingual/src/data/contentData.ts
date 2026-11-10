@@ -908,7 +908,7 @@ export const BLOG_POSTS: BlogPost[] = [
       '[FAQS:Frequently Asked Questions About Blog Commenting & Link Building]',
       '## Arun Is Available for These Latin American & Spanish-Speaking Regions',
       '[LATAM_REGIONS_BLOCKS]',
-      'Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Blog Commenting & Off-Page SEO Expert'
+      'Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Blog Commenting & Off-Page SEO Expert'
     ]
   },
   {
@@ -1088,7 +1088,7 @@ export const BLOG_POSTS: BlogPost[] = [
       'Arun, Founder, UDMIDEAS Phone: +91-9521186150 Website: udmideasusa.com',
       '## Arun Is Available for These Latin American & Spanish-Speaking Regions',
       '[LATAM_REGIONS_BLOCKS]',
-      'Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS USA to LATAM Spanish SEO'
+      'Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS USA to LATAM Spanish SEO'
     ]
   },
   {
@@ -1217,7 +1217,7 @@ export const BLOG_POSTS: BlogPost[] = [
       'Ready to establish dominant cross-market search visibility across Israel, the UAE, Saudi Arabia, and the broader Middle East? Contact Arun at UDMIDEAS: Phone +91-9521186150.',
       '## Arun Is Available to Work for These New York Regions Remotely',
       '[NY_REGIONS_BLOCKS]',
-      'Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Middle East Cross-Market SEO'
+      'Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Middle East Cross-Market SEO'
     ]
   },
   {
@@ -1354,7 +1354,7 @@ export const BLOG_POSTS: BlogPost[] = [
       'Arun, Founder, UDMIDEAS Phone: +91-9521186150',
       '## Arun Is Available to Work for These New York Regions Remotely',
       '[NY_REGIONS_BLOCKS]',
-      'Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Digital Authority Consulting'
+      'Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Digital Authority Consulting'
     ]
   },
   {
@@ -1470,7 +1470,7 @@ export const BLOG_POSTS: BlogPost[] = [
       'Ready to connect your website, multilingual SEO, AEO, GEO, SMM, and PPC into a unified system? Contact Arun at UDMIDEAS: Phone +91-9521186150.',
       '## Arun Is Available to Work for These New York Regions Remotely',
       '[NY_REGIONS_BLOCKS]',
-      'Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Multilingual Digital Architecture'
+      'Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Multilingual Digital Architecture'
     ]
   },
   {
@@ -1612,7 +1612,7 @@ export const BLOG_POSTS: BlogPost[] = [
       'Arun, Founder, UDMIDEAS Phone: +91-9521186150',
       '## Arun Is Available to Work for These New York Regions Remotely',
       '[NY_REGIONS_BLOCKS]',
-      'Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Arun SEO, AEO & GEO Expert'
+      'Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Arun SEO, AEO & GEO Expert'
     ]
   },
   {
@@ -1827,7 +1827,7 @@ export const BLOG_POSTS: BlogPost[] = [
       'If you want a multilingual SEO expert who writes, optimises and builds links by hand, contact UDMIDEAS at +91-9521186150.',
       '## Arun Is Available to Work for These New York Regions Remotely',
       '[NY_REGIONS_BLOCKS]',
-      'Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Multilingual SEO Expert'
+      'Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Multilingual SEO Expert'
     ]
   },
   {
@@ -1913,7 +1913,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you run a business in Yonkers and want SEO built around this city's real size and diversity, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Yonkers NY Westchester Remote SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Yonkers NY Westchester Remote SEO"
     ]
   },
   {
@@ -2024,7 +2024,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Your next customers are searching right now. Contact UDMIDEAS, the New York SEO agency and digital marketing agency, and talk with Arun about a plan for your business.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Hell's Kitchen Manhattan NYC SEO Agency"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Hell's Kitchen Manhattan NYC SEO Agency"
     ]
   },
   {
@@ -2112,7 +2112,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you're a business owner or startup in Watertown and want SEO built around this market's unique mix of military, local, and seasonal customers, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Watertown NY North Country Remote SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Watertown NY North Country Remote SEO"
     ]
   },
   {
@@ -2198,7 +2198,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you're a business owner or startup in Utica and want to capture this moment of growth before it becomes obvious to everyone else, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Utica NY & Mohawk Valley Remote SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Utica NY & Mohawk Valley Remote SEO"
     ]
   },
   {
@@ -2295,7 +2295,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you're a business owner or startup in Troy and want SEO sized correctly for the real regional market around you, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Troy NY & Capital Region Remote SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Troy NY & Capital Region Remote SEO"
     ]
   },
   {
@@ -2381,7 +2381,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you run a tour, travel, hospitality, or attraction business in Times Square and want SEO built specifically for how travelers actually search, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Times Square NYC Tour & Travel SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Times Square NYC Tour & Travel SEO"
     ]
   },
   {
@@ -2469,7 +2469,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you run a business in Syracuse and want a remote team covering SEO, analytics, design, and e-commerce under one roof, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Syracuse NY Remote SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Syracuse NY Remote SEO"
     ]
   },
   {
@@ -2556,7 +2556,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If your business serves visitors to the Statue of Liberty and Ellis Island, I'd be glad to put together an SEO plan built around how this specific, highly international audience actually searches.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Statue of Liberty Area & NYC Tour SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Statue of Liberty Area & NYC Tour SEO"
     ]
   },
   {
@@ -2630,7 +2630,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you run a business on Staten Island and want a full team behind your SEO instead of one person juggling everything, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Staten Island NYC Remote SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Staten Island NYC Remote SEO"
     ]
   },
   {
@@ -2716,7 +2716,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you run a business in Schenectady and want SEO built around your market and your history, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Schenectady NY & Capital Region Remote SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Schenectady NY & Capital Region Remote SEO"
     ]
   },
   {
@@ -2808,7 +2808,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you run a business in Rochester and want SEO that actually compounds into visibility, traffic, and revenue, I'm ready to put together a plan built around your specific market.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Rochester NY Remote SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Rochester NY Remote SEO"
     ]
   },
   {
@@ -2894,7 +2894,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If your business operates anywhere in Queens and you want an SEO approach built around the borough's real diversity instead of a one-size-fits-all template, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Queens NYC SEO Consulting"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Queens NYC SEO Consulting"
     ]
   },
   {
@@ -2980,7 +2980,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you run a business in New Rochelle and want SEO built around your specific neighborhood and competition, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS New Rochelle NY & Westchester County Remote SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS New Rochelle NY & Westchester County Remote SEO"
     ]
   },
   {
@@ -3065,7 +3065,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you run a business in Mount Vernon and want SEO built around your exact location and competition, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Mount Vernon NY & Westchester County Remote SEO"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Mount Vernon NY & Westchester County Remote SEO"
     ]
   },
   {
@@ -3142,7 +3142,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you're running a business in Manhattan and want SEO built around real competitive intelligence rather than generic tactics, I'd be glad to put together a plan with my team.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Manhattan NYC (350 5th Ave) SEO Consulting"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Manhattan NYC (350 5th Ave) SEO Consulting"
     ]
   },
   {
@@ -3229,7 +3229,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you run a business in Kingston and want SEO built around both its history and its momentum, I'd be glad to put together a plan.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Kingston NY Remote SEO Consulting"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Kingston NY Remote SEO Consulting"
     ]
   },
   {
@@ -3319,7 +3319,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If your business serves visitors to the Empire State Building or operates in the Midtown district around it, I'd be glad to put together an SEO plan built around exactly which audience you're trying to reach.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Midtown Manhattan NYC (350 5th Ave) Remote SEO Consulting"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Midtown Manhattan NYC (350 5th Ave) Remote SEO Consulting"
     ]
   },
   {
@@ -3408,7 +3408,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "If your business depends on visitors to Central Park, whether through tours, events, hospitality, or retail, I'd be glad to put together an SEO plan built around how those visitors actually search.",
       "## Arun Is Available to Work for These New York Regions Remotely",
       "[NY_REGIONS_BLOCKS]",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Central Park NYC Remote SEO Consulting"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Central Park NYC Remote SEO Consulting"
     ]
   },
   {
@@ -3497,7 +3497,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "[FAQS:Questions Buffalo Business Owners Ask Me]",
       "## Ready to Grow Your Buffalo Business?",
       "If you're ready to get serious about your search visibility, let's talk. Reach out directly and we'll review your current website, look at your competitors in the Buffalo area, and map out a clear plan.",
-      "Direct contact: WhatsApp +91-9521186150 | Email soni9999arun9999@gmail.com | UDMIDEAS Remote SEO Services for Buffalo, NY"
+      "Direct contact: WhatsApp +91-9521186150 | Email info@udmideasusa.com | UDMIDEAS Remote SEO Services for Buffalo, NY"
     ]
   },
   {
@@ -3594,7 +3594,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "## Frequently Asked Questions by Brooklyn Businesses",
       "[FAQS:Frequently Asked Questions by Brooklyn Businesses]",
       "Brooklyn businesses that want SEO handled with the same seriousness they bring to their own craft are exactly who I built this for. If you're ready for a long-term partner instead of another vendor, let's talk about your 15-day starting plan.",
-      "Connect with Founder Arun directly on WhatsApp at +91-9521186150 or email soni9999arun9999@gmail.com for your custom Brooklyn 15-day starting SEO plan."
+      "Connect with Founder Arun directly on WhatsApp at +91-9521186150 or email info@udmideasusa.com for your custom Brooklyn 15-day starting SEO plan."
     ]
   },
   {
@@ -3685,7 +3685,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "## Questions Bronx Business Owners Ask",
       "[FAQS:Questions Bronx Business Owners Ask]",
       "If you're building a business in the Bronx and want SEO that turns your reputation into consistent online discovery, I'd be glad to put together a plan built around your neighborhood and your industry.",
-      "Connect with Founder Arun directly on WhatsApp at +91-9521186150 or email soni9999arun9999@gmail.com for a tailored local SEO strategy."
+      "Connect with Founder Arun directly on WhatsApp at +91-9521186150 or email info@udmideasusa.com for a tailored local SEO strategy."
     ]
   },
   {
@@ -3770,7 +3770,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "## Questions Albany Business Owners Ask",
       "[FAQS:Questions Albany Business Owners Ask]",
       "If you run a business in Albany and want SEO built around how this market actually works, I'd be glad to put together a plan.",
-      "Let's discuss how we can engineer tangible search growth for your enterprise in Albany and across New York State. Reach Founder Arun directly on WhatsApp at +91-9521186150 or via email at soni9999arun9999@gmail.com."
+      "Let's discuss how we can engineer tangible search growth for your enterprise in Albany and across New York State. Reach Founder Arun directly on WhatsApp at +91-9521186150 or via email at info@udmideasusa.com."
     ]
   },
   {
@@ -3813,7 +3813,7 @@ export const BLOG_POSTS: BlogPost[] = [
       'Meta Tags created for website and applied to the website. Content Optimization is done. Make website to Follow all the Google rules including Google page Speed Optimization and solving Core web vital issues. Along with Doing Link building with various techniques. Improve website ranking and improve business brand visibility - thus organic SEO improve leads, thus Improved ROI.',
       '## our seo process',
       'Look UDMIDEAS Digital Marketing Agency New York bulletproof process to win on Organic SEO: 1. Website SEO Audit. 2. Keyword research. 3. On-page optimization. 4. Meta Tags creation. 5. Making Website to Follow all the Google rules which are more than 500. 6. Optimizing Website Content, making it unique and plagiarism free. 7. Making web content to include AI. 8. Link Building. 9. Lead generation.',
-      'Request a quote for organic SEO services for your business growth at UDMIDEAS NYC Digital Marketing Agency. Call or text at +91-9521186150. Email: soni9999arun9999@gmail.com'
+      'Request a quote for organic SEO services for your business growth at UDMIDEAS NYC Digital Marketing Agency. Call or text at +91-9521186150. Email: info@udmideasusa.com'
     ]
   },
   {

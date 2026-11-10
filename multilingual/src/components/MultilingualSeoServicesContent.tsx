@@ -913,7 +913,7 @@ export const MultilingualSeoServicesContent: React.FC = () => {
         </p>
 
         <p className="text-sm font-bold text-white">
-          Direct Line & WhatsApp: <span className="text-emerald-400 font-mono">+91-9521186150</span> · Email: <span className="text-blue-400 font-mono">soni9999arun9999@gmail.com</span>
+          Direct Line & WhatsApp: <span className="text-emerald-400 font-mono">+91-9521186150</span> · Email: <span className="text-blue-400 font-mono">info@udmideasusa.com</span>
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">

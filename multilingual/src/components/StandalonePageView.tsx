@@ -25,6 +25,7 @@ import { AeoServicesContent } from './AeoServicesContent';
 import { GeoServicesContent } from './GeoServicesContent';
 import { SmmServicesContent } from './SmmServicesContent';
 import { PpcServicesContent } from './PpcServicesContent';
+import { BrazilServicesContent } from './BrazilServicesContent';
 
 interface StandalonePageViewProps {
   path: string;
@@ -45,7 +46,8 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     page.path === '/answer-engine-optimization/' ||
     page.path === '/generative-engine-optimization/' ||
     page.path === '/social-media-marketing/' ||
-    page.path === '/pay-per-click/';
+    page.path === '/pay-per-click/' ||
+    page.path === '/brazil/';
 
   const [formData, setFormData] = useState({
     name: '',
@@ -103,7 +105,7 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     e.preventDefault();
     if (!formData.name || !formData.email) return;
 
-    // Construct mailto link specifically to soni9999arun9999@gmail.com
+    // Construct mailto link specifically to info@udmideasusa.com
     const subject = encodeURIComponent(`New Consultation Request from UDMIDEAS (${page.heading.slice(0, 30)})`);
     const body = encodeURIComponent(
       `Hello Arun and UDMIDEAS Team,\n\n` +
@@ -118,8 +120,8 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
       `Please reply to: ${formData.email}`
     );
 
-    // Attempt to trigger mailto client to soni9999arun9999@gmail.com
-    const mailtoUrl = `mailto:soni9999arun9999@gmail.com?subject=${subject}&body=${body}`;
+    // Attempt to trigger mailto client to info@udmideasusa.com
+    const mailtoUrl = `mailto:info@udmideasusa.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoUrl;
 
     setIsSubmitted(true);
@@ -302,6 +304,13 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           </div>
         )}
 
+        {/* Brazil Web Design, Development, SEO & Digital Marketing Content */}
+        {page.path === '/brazil/' && (
+          <div className="mb-16">
+            <BrazilServicesContent />
+          </div>
+        )}
+
         {/* Key Highlights Grid (for standard pages) */}
         {!isCustomServicePage && (
           <section className="mb-14 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-slate-950 border border-slate-800 shadow-xl">
@@ -362,18 +371,18 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           </div>
         )}
 
-        {/* Dedicated Contact Form Targeting soni9999arun9999@gmail.com */}
+        {/* Dedicated Contact Form Targeting info@udmideasusa.com */}
         <section id="inquiry-form" className="mb-16 p-8 sm:p-10 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl">
           <div className="max-w-2xl mb-8">
             <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1 flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              Direct Email Notification to soni9999arun9999@gmail.com
+              Direct Email Notification to info@udmideasusa.com
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
               Request Your Free Multilingual Strategy & Architecture Audit.
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-              Submitting this form directly notifies Founder Arun at <strong className="text-emerald-400 font-mono">soni9999arun9999@gmail.com</strong>. We analyze your requirements and reply within 4 business hours.
+              Submitting this form directly notifies Founder Arun at <strong className="text-emerald-400 font-mono">info@udmideasusa.com</strong>. We analyze your requirements and reply within 4 business hours.
             </p>
           </div>
 
@@ -382,9 +391,9 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
               <div className="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto border border-emerald-500/40">
                 <CheckCircle2 className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-white">Inquiry Dispatched to soni9999arun9999@gmail.com!</h3>
+              <h3 className="text-xl font-bold text-white">Inquiry Dispatched to info@udmideasusa.com!</h3>
               <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
-                Thank you, <strong>{formData.name}</strong>. Your inquiry has been routed to Founder Arun's primary email address (<span className="text-emerald-400 font-mono">soni9999arun9999@gmail.com</span>) for expedited review.
+                Thank you, <strong>{formData.name}</strong>. Your inquiry has been routed to Founder Arun's official address (<span className="text-emerald-400 font-mono">info@udmideasusa.com</span>) for expedited review.
               </p>
               <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
                 <a
@@ -478,7 +487,7 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="text-[11px] text-slate-400">
-                  🔒 Direct delivery to <span className="text-emerald-400 font-mono">soni9999arun9999@gmail.com</span> · Strict NDA protected.
+                  🔒 Direct delivery to <span className="text-emerald-400 font-mono">info@udmideasusa.com</span> · Strict NDA protected.
                 </div>
                 <button
                   type="submit"

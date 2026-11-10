@@ -1012,7 +1012,7 @@ export const ALL_PAGES: Record<string, PageSEO> = {
     faq: [
       { q: 'Why choose UDMIDEAS as your organic SEO agency in New York?', a: 'UDMIDEAS only does 100% White Hat Organic SEO. When Google Algorithm updates roll out, your rankings automatically improve because we follow all 500+ Google rules and regulations.' },
       { q: 'How does organic SEO generate leads for businesses?', a: 'Through targeted keyword mapping, on-page optimization, Google PageSpeed mastery, and relevant link building across forums, articles, directories, and guest posts.' },
-      { q: 'How to request a quote for organic SEO services?', a: 'Contact Founder Arun directly at UDMIDEAS NYC on WhatsApp at +91-9521186150 or email soni9999arun9999@gmail.com for a customized proposal.' }
+      { q: 'How to request a quote for organic SEO services?', a: 'Contact Founder Arun directly at UDMIDEAS NYC on WhatsApp at +91-9521186150 or email info@udmideasusa.com for a customized proposal.' }
     ]
   },
   '/about-us/': {
@@ -1135,7 +1135,7 @@ export const ALL_PAGES: Record<string, PageSEO> = {
     keyHighlights: [
       'Direct WhatsApp Hotline: +91-9521186150 (Instant response from Arun)',
       'Headquarters: 350 5th Avenue, New York, NY 10001, United States',
-      'Direct Email Routing: Inquiries routed straight to soni9999arun9999@gmail.com',
+      'Direct Email Routing: Inquiries routed straight to info@udmideasusa.com',
       'Guaranteed 4-hour business turnaround on all technical audits and quote requests'
     ],
     features: [
@@ -1224,6 +1224,36 @@ export const ALL_PAGES: Record<string, PageSEO> = {
     languages: ['Spanish (Regional Dialects)', 'Portuguese (Brazil)', 'English'],
     faq: [
       { q: 'Do you support Brazilian Pix payments?', a: 'Yes! We custom-code automated Pix QR code generators and instant webhook payment confirmations directly into WooCommerce and Magento.' }
+    ]
+  },
+  '/brazil/': {
+    path: '/brazil/',
+    title: 'Brazil Web Design, Development, SEO & Digital Marketing | UDMIDEAS',
+    description: 'UDMIDEAS provides Brazil web design, development, SEO and digital marketing services in Brazilian Portuguese and English. Custom React JS websites, multilingual SEO, PPC and SMM led by Arun.',
+    kicker: 'Brazil Country Focus',
+    heading: 'Brazil Web Design, Development, SEO & Digital Marketing Services',
+    subheading: 'Reach Brazil\'s 185 million internet users with custom-coded React JS web engineering, multilingual SEO in Brazilian Portuguese, Google Ads PPC, and high-impact social media marketing.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/brazil/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom React JS web development built mobile-first for Brazil\'s 218M mobile connections',
+      'Multilingual SEO in Brazilian Portuguese (pt-BR) with dedicated hreflang tags for English and Spanish',
+      'Local SEO dominance across São Paulo, Rio de Janeiro, Belo Horizonte, Brasília, Curitiba and Porto Alegre',
+      'Frictionless click-to-WhatsApp integration capturing Brazil\'s 94.3% monthly WhatsApp user base',
+      'Led personally by founder Arun with 15+ years of international hands-on search experience'
+    ],
+    features: [
+      { title: 'Mobile-First React Architecture', desc: 'Engineering sub-second load times tailored for Brazil\'s 102% mobile penetration rate.' },
+      { title: 'Native pt-BR Linguistic Optimization', desc: 'Keyword research conducted in natural Brazilian Portuguese rather than literal translations.' },
+      { title: 'Full Growth Synergy (SEO + SMM + PPC)', desc: 'Unifying organic Google rankings, Google Ads, and Instagram/TikTok brand authority under one senior lead.' }
+    ],
+    languages: ['Portuguese (Brazil / pt-BR)', 'English', 'Spanish'],
+    faq: [
+      { q: 'What services does UDMIDEAS offer Brazil businesses?', a: 'UDMIDEAS offers web design and development in React JS, SEO, multilingual SEO, PPC, social media marketing, AEO and GEO for Brazil businesses. All services run under one plan led by Arun.' },
+      { q: 'What is the difference between SEO, SMM and PPC?', a: 'SEO earns organic Google rankings over time. SMM builds audience and trust on social platforms. PPC buys paid clicks that start fast and stop when the budget ends.' },
+      { q: 'Do you do multilingual SEO for Brazil?', a: 'Yes. We optimize in Brazilian Portuguese (pt-BR), English and Spanish, and set up hreflang tags so each visitor sees the right language version.' },
+      { q: 'How long does SEO take to show results in Brazil?', a: 'SEO usually takes 3 to 6 months to show steady gains. PPC can bring leads within days, so many clients run both while SEO builds.' }
     ]
   },
   '/eu/': {
@@ -1556,7 +1586,7 @@ export const ALL_PAGES: Record<string, PageSEO> = {
       'Zero unauthorized tracking: We never sell, lease, or monetize client or visitor data',
       'Full compliance with the European Union GDPR, French CNIL, and German TTDSG standards',
       'California Consumer Privacy Act (CCPA) compliant data handling and deletion rights',
-      'Encrypted inquiry transmission directly to soni9999arun9999@gmail.com with mutual NDA protection'
+      'Encrypted inquiry transmission directly to info@udmideasusa.com with mutual NDA protection'
     ],
     features: [
       { title: 'Information Collected', desc: 'We only store data voluntarily provided via contact forms, consultations, and authorized project accounts.' },
@@ -1565,7 +1595,7 @@ export const ALL_PAGES: Record<string, PageSEO> = {
     ],
     languages: ['English'],
     faq: [
-      { q: 'How can I exercise my privacy rights?', a: 'Email us directly at soni9999arun9999@gmail.com with your request.' }
+      { q: 'How can I exercise my privacy rights?', a: 'Email us directly at info@udmideasusa.com with your request.' }
     ]
   },
   '/terms-and-conditions/': {

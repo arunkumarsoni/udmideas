@@ -206,7 +206,7 @@ export default function App() {
       {/* Persistent WhatsApp Button at Bottom Right Corner */}
       <FloatingWhatsApp />
 
-      {/* Contact Modal (Direct Email Notification to soni9999arun9999@gmail.com) */}
+      {/* Contact Modal (Direct Email Notification to info@udmideasusa.com) */}
       <ContactModal
         isOpen={isContactModalOpen}
         onClose={() => setIsContactModalOpen(false)}
