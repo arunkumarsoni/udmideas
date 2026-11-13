@@ -1150,28 +1150,31 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   },
   '/israel/': {
     path: '/israel/',
-    title: 'Israel Web Design & Multilingual Marketing Services | UDMIDEAS',
-    description: 'Custom bilingual Hebrew and English website design and digital marketing for Israeli tech, cybersecurity, and eCommerce firms in Tel Aviv, Jerusalem, and Haifa.',
-    kicker: 'Regional Focus',
-    heading: 'Web Design & Digital Marketing for the Israeli Tech Corridor.',
-    subheading: 'Bridging Silicon Valley and Start-Up Nation: We build high-security, custom-coded bilingual Hebrew/English platforms that position Israeli startups and enterprises in front of North American and European buyers.',
+    title: 'Israel Website Design, Development & Hebrew SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom website development, RTL Hebrew websites, Hebrew SEO, eCommerce SEO, Social Media Marketing (SMM), and PPC advertising solutions in Israel.',
+    kicker: 'Israel Digital Focus',
+    heading: 'Israel Website Design, Development & Hebrew SEO Digital Marketing Company – UDMIDEAS',
+    subheading: 'Custom website development, Hebrew SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising solutions for Israeli businesses.',
     category: 'region',
     canonicalUrl: `${CANONICAL_BASE}/israel/`,
-    schemaType: 'Place',
+    schemaType: 'LocalBusiness',
     keyHighlights: [
-      'Bilingual Hebrew and English web applications with native Right-to-Left (RTL) typography',
-      'High-Security CodeIgniter and React architectures tailored for cybersecurity and fintech',
-      'AEO and GEO optimization ensuring Israeli innovations rank in AI search summaries',
-      'Cross-border B2B lead generation targeting Fortune 500 decision-makers in New York and California'
+      'Custom-coded Hebrew websites with native Right-to-Left (RTL) architecture in React JS, WordPress, Laravel, CodeIgniter, and PHP',
+      'Comprehensive Hebrew SEO, keyword research, Core Web Vitals, Google Business Profile, and structured schema markup',
+      'Hebrew eCommerce SEO, Shopping technical SEO, product schema, and conversion optimization',
+      'Full-funnel Hebrew SMM (Facebook, Instagram) and PPC (Google Search, Display, Remarketing)',
+      'Backed by 15+ years of international experience and transparent packages starting at $500'
     ],
     features: [
-      { title: 'Tel Aviv & Jerusalem Tech Hubs', desc: 'Direct experience engineering portals for venture-backed Israeli SaaS and cybersecurity firms.' },
-      { title: 'Bilingual Typography Pairing', desc: 'Flawless visual balance pairing Hebrew display fonts (Heebo, Assistant) with Latin typefaces.' },
-      { title: 'North American Market Penetration', desc: 'Executing high-converting US Google Ads and LinkedIn ABM campaigns from our New York headquarters.' }
+      { title: 'Custom RTL Web Engineering', desc: 'Bespoke Hebrew business, corporate, and eCommerce websites engineered without generic templates.' },
+      { title: 'Native Hebrew & eCommerce SEO', desc: 'Dedicated Hebrew keyword research, on-page/technical optimization, and product page rankings.' },
+      { title: 'Hebrew SMM & PPC Advertising', desc: 'Targeted Hebrew Google Ads and Meta campaigns built for qualified Israeli leads and sales.' }
     ],
     languages: ['Hebrew (Native RTL)', 'English'],
     faq: [
-      { q: 'How do you handle Hebrew bi-directional design?', a: 'We use CSS logical properties to dynamically invert layout directions while preserving number and code formats.' }
+      { q: 'Why does my Israeli business need a custom RTL Hebrew website?', a: 'A professional Hebrew-language website with true Right-to-Left (RTL) layout and fast loading speed lets you communicate directly with Israel\'s 8.72 million internet users and rank higher in local Google searches.' },
+      { q: 'Is translating English content into Hebrew enough for SEO?', a: 'No. Hebrew has its own search behaviour, vocabulary, and keyword variations, requiring dedicated Hebrew keyword research, native-quality content, RTL structure, and technical SEO.' },
+      { q: 'What is the starting cost for UDMIDEAS Israel services?', a: 'Selected introductory packages for Web Design & Development, Hebrew SEO, and Hebrew SMM & PPC start at $500, with final proposals customized based on scope and project requirements.' }
     ]
   },
   '/usa/': {
@@ -1377,6 +1380,209 @@ export const ALL_PAGES: Record<string, PageSEO> = {
       { q: 'Why choose custom React JS over standard WordPress templates?', a: 'Custom React JS websites load in under one second, have zero plugin bloat or security vulnerabilities, and provide flawless multilingual routing.' }
     ]
   },
+  '/mexico/': {
+    path: '/mexico/',
+    title: 'Spanish Website Design, Development & SEO Digital Marketing Company in Mexico | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded Spanish website development, Mexican Spanish SEO, eCommerce SEO, Social Media Marketing (SMM), and PPC advertising solutions for businesses in Mexico.',
+    kicker: 'Mexico Country Focus',
+    heading: 'Spanish Website Design, Development & SEO Digital Marketing Company in Mexico – UDMIDEAS',
+    subheading: 'Custom-coded website development, Spanish-language SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising solutions for businesses in Mexico.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/mexico/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded Spanish websites with React JS, WordPress, PHP, Laravel, and CodeIgniter architecture',
+      'Mexican Spanish SEO, keyword research, Google Search Console, GA4, Core Web Vitals, and schema markup',
+      'Spanish eCommerce SEO, product schema, checkout optimization, and Google/Meta Ads',
+      'Reaching Mexico\'s 111M internet users (DataReportal) and 104.9M INEGI internet users',
+      'Introductory packages starting at $500 backed by 15+ years of international SEO experience'
+    ],
+    features: [
+      { title: 'Custom Spanish Web Engineering', desc: 'Responsive, fast-loading Spanish websites with WhatsApp integration and online payment functionality.' },
+      { title: 'Mexican Spanish & eCommerce SEO', desc: 'Keyword research matching how Mexican buyers search, plus product and category optimization.' },
+      { title: 'Spanish SMM & PPC Advertising', desc: 'Facebook, Instagram, Google Search, Display, and remarketing campaigns tailored for Mexico.' }
+    ],
+    languages: ['Spanish (Mexico / es-MX)', 'English'],
+    faq: [
+      { q: 'Why does my business in Mexico need a custom Spanish website?', a: 'Mexico has 111 million internet users (83.6% penetration) and 112 million social media user identities. A fast, mobile-friendly Spanish website helps you communicate directly with local buyers and convert search traffic.' },
+      { q: 'Is translating English content into Spanish enough for SEO in Mexico?', a: 'No. Simply translating English content does not guarantee rankings. You need Mexican Spanish keyword research, local search intent optimization, and technical SEO.' },
+      { q: 'What is the starting cost for UDMIDEAS services in Mexico?', a: 'Selected introductory packages for Web Design & Development, Spanish SEO, and Spanish SMM & PPC start at $500, with final pricing customized to your scope and goals.' }
+    ]
+  },
+  '/argentina/': {
+    path: '/argentina/',
+    title: 'Spanish Website Design, Development & SEO Digital Marketing Company in Argentina | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded Spanish website development, Argentine Spanish SEO, eCommerce SEO, Social Media Marketing (SMM), and PPC advertising solutions for businesses in Argentina.',
+    kicker: 'Argentina Country Focus',
+    heading: 'Spanish Website Design, Development & SEO Digital Marketing Company in Argentina – UDMIDEAS',
+    subheading: 'Custom-coded website development, Spanish-language SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising solutions for businesses in Argentina.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/argentina/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded Spanish websites with React JS, WordPress, PHP, Laravel, and CodeIgniter architecture',
+      'Argentine Spanish SEO targeting local vocabulary (computadora, celular, negocio, servicios)',
+      'Spanish eCommerce SEO, product schema, checkout optimization, and Google/Meta Ads',
+      'Reaching Argentina\'s 41.9M internet users (91.1% penetration) and 33.7M social media user identities',
+      'Introductory packages starting at $500 backed by 15+ years of international SEO experience'
+    ],
+    features: [
+      { title: 'Custom Argentine Web Engineering', desc: 'Responsive Spanish websites with WhatsApp integration and online payment functionality.' },
+      { title: 'Argentine Spanish & eCommerce SEO', desc: 'Local keyword research, technical optimization, and product/category SEO for Google Argentina.' },
+      { title: 'Spanish SMM & PPC Advertising', desc: 'Facebook, Instagram, Google Search, Display, and remarketing campaigns for Argentina.' }
+    ],
+    languages: ['Spanish (Argentina / es-AR)', 'English'],
+    faq: [
+      { q: 'Does UDMIDEAS provide website development services in Argentina?', a: 'Yes. We develop custom-coded Spanish-language websites for startups, local businesses, professional companies, and eCommerce stores targeting Argentina.' },
+      { q: 'Do you provide SEO services for Argentine Spanish websites?', a: 'Yes. We offer keyword research, on-page SEO, technical SEO, content optimization, link building, and local SEO for Spanish-language websites.' },
+      { q: 'How much does website development or SEO cost?', a: 'Our selected website development, Spanish SEO, and SMM/PPC service packages start at $500. Final pricing depends on project requirements and campaign scope.' }
+    ]
+  },
+  '/peru/': {
+    path: '/peru/',
+    title: 'Spanish Website Design, Development & SEO Digital Marketing Company in Peru | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded Spanish website development, Peruvian Spanish SEO, eCommerce SEO, Social Media Marketing (SMM), and PPC advertising solutions for businesses in Peru.',
+    kicker: 'Peru Country Focus',
+    heading: 'Spanish Website Design, Development & SEO Digital Marketing Company in Peru – UDMIDEAS',
+    subheading: 'Custom-coded website development, Spanish-language SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising solutions for businesses in Peru.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/peru/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded Spanish websites with React JS, WordPress, PHP, Laravel, and CodeIgniter architecture',
+      'Peruvian Spanish SEO tailored to local vocabulary and search patterns across Peru',
+      'Spanish eCommerce SEO, product schema, checkout optimization, and Google/Meta Ads',
+      'Reaching Peru\'s 29.5M internet users (84.2% penetration) and 32.7M social media identities',
+      'Introductory packages starting at $500 backed by 15+ years of international SEO experience'
+    ],
+    features: [
+      { title: 'Custom Peruvian Web Engineering', desc: 'Responsive Spanish websites with WhatsApp integration and online payment functionality.' },
+      { title: 'Peruvian Spanish & eCommerce SEO', desc: 'Local keyword research, technical optimization, and product/category SEO for Google Peru.' },
+      { title: 'Spanish SMM & PPC Advertising', desc: 'Facebook, Instagram, Google Search, Display, and remarketing campaigns for Peru.' }
+    ],
+    languages: ['Spanish (Peru / es-PE)', 'English'],
+    faq: [
+      { q: 'Does UDMIDEAS provide website development services in Peru?', a: 'Yes. We develop custom-coded Spanish-language websites for startups, local businesses, professional companies, and eCommerce stores targeting Peru.' },
+      { q: 'Do you provide Spanish SEO services for Peruvian businesses?', a: 'Yes. We provide keyword research, on-page SEO, technical SEO, content optimization, link building, and local SEO for Spanish-language websites.' },
+      { q: 'How much does website development or SEO cost?', a: 'Our selected website development, Spanish SEO, and SMM/PPC packages start at $500. Final pricing depends on project requirements and service scope.' }
+    ]
+  },
+  '/costa-rica/': {
+    path: '/costa-rica/',
+    title: 'Spanish Website Design, Development & SEO Digital Marketing Company in Costa Rica | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded Spanish website development, Costa Rican Spanish SEO, eCommerce SEO, Social Media Marketing (SMM), and PPC advertising across all 7 provinces of Costa Rica.',
+    kicker: 'Costa Rica Country Focus',
+    heading: 'Spanish Website Design, Development & SEO Digital Marketing Company in Costa Rica – UDMIDEAS',
+    subheading: 'Custom-coded website development, Spanish-language SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising solutions for businesses in Costa Rica.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/costa-rica/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded Spanish websites (business, tourism, hotel, real estate, eCommerce) in React JS, WordPress, PHP, Laravel, and CodeIgniter',
+      'Location-specific SEO across all 7 provinces: San José, Alajuela, Cartago, Heredia, Guanacaste, Puntarenas, and Limón',
+      'Reaching Costa Rica\'s 4.78M internet users (92.3% penetration) and 4.45M social media identities',
+      'Spanish eCommerce SEO, product schema, checkout optimization, and Google/Meta Ads',
+      'Introductory packages starting at $500 backed by 15+ years of international SEO experience'
+    ],
+    features: [
+      { title: '7-Province Regional SEO', desc: 'Targeted landing pages and local GBP optimization across San José, Escazú, Tamarindo, Jacó, Liberia, and Limón.' },
+      { title: 'Custom Costa Rican Web Engineering', desc: 'Fast-loading Spanish websites with WhatsApp integration and online payments for tourism, real estate, and retail.' },
+      { title: 'Spanish SMM & PPC Advertising', desc: 'Facebook, Instagram, Google Search, Display, and remarketing campaigns tailored for Costa Rica.' }
+    ],
+    languages: ['Spanish (Costa Rica / es-CR)', 'English'],
+    faq: [
+      { q: 'Does UDMIDEAS provide website development services in Costa Rica?', a: 'Yes. We develop custom-coded Spanish-language websites for startups, local businesses, professional companies, hotels, and eCommerce stores targeting Costa Rica.' },
+      { q: 'Do you provide Spanish SEO services for Costa Rican businesses?', a: 'Yes. We provide keyword research, on-page SEO, technical SEO, content optimization, link building, and local SEO for Spanish-language websites.' },
+      { q: 'How much does website development or SEO cost?', a: 'Our selected website development, Spanish SEO, and SMM/PPC packages start at $500. Final pricing depends on project requirements and service scope.' }
+    ]
+  },
+  '/uruguay/': {
+    path: '/uruguay/',
+    title: 'Spanish Website Design, Development & SEO Digital Marketing Company in Uruguay | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded Spanish website development, Uruguayan Spanish SEO, eCommerce SEO, Social Media Marketing (SMM), and PPC advertising across all 19 departments of Uruguay.',
+    kicker: 'Uruguay Country Focus',
+    heading: 'Spanish Website Design, Development & SEO Digital Marketing Company in Uruguay – UDMIDEAS',
+    subheading: 'Custom-coded website development, Spanish-language SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising solutions for businesses in Uruguay.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/uruguay/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded Spanish websites (business, corporate, tourism, hotel, real estate, eCommerce) in React JS, WordPress, PHP, Laravel, and CodeIgniter',
+      'Location-specific SEO across all 19 administrative departments: Montevideo, Canelones, Maldonado, Punta del Este, Colonia, Salto, Rivera, and more',
+      'Reaching Uruguay\'s 3.14M internet users (92.9% penetration) and 2.61M social media identities (77.2%)',
+      'Spanish eCommerce SEO, product schema, checkout optimization, and Google/Meta Ads',
+      'Introductory packages starting at $500 backed by 15+ years of international SEO experience'
+    ],
+    features: [
+      { title: '19-Department Regional SEO', desc: 'Targeted landing pages and local GBP optimization across Montevideo, Punta del Este, Canelones, Colonia, Salto, and Rivera.' },
+      { title: 'Custom Uruguayan Web Engineering', desc: 'Fast-loading Spanish websites with WhatsApp integration and online payments for corporate, tourism, agriculture, and retail.' },
+      { title: 'Spanish SMM & PPC Advertising', desc: 'Facebook, Instagram, Google Search, Display, and remarketing campaigns tailored for Uruguay.' }
+    ],
+    languages: ['Spanish (Uruguay / es-UY)', 'English'],
+    faq: [
+      { q: 'Does UDMIDEAS provide website development services in Uruguay?', a: 'Yes. We develop custom-coded Spanish-language websites for startups, local businesses, professional companies, hotels, and eCommerce stores targeting Uruguay.' },
+      { q: 'Do you provide Spanish SEO services for Uruguayan businesses?', a: 'Yes. We provide keyword research, on-page SEO, technical SEO, content optimization, link building, and local SEO for Spanish-language websites.' },
+      { q: 'How much does website development or SEO cost?', a: 'Our selected website development, Spanish SEO, and SMM/PPC packages start at $500. Final pricing depends on project requirements and service scope.' }
+    ]
+  },
+  '/dominican-republic/': {
+    path: '/dominican-republic/',
+    title: 'Dominican Republic Spanish Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides Spanish website design and development, Spanish SEO, eCommerce SEO, SMM, and PPC advertising across Santo Domingo, Santiago, Punta Cana, and all 31 provinces of the Dominican Republic.',
+    kicker: 'Dominican Republic Country Focus',
+    heading: 'Dominican Republic Spanish Website Design, Development & SEO Digital Marketing Company',
+    subheading: 'Custom-coded Spanish websites, Spanish SEO, eCommerce SEO, social media marketing (SMM), and PPC advertising services for businesses across the Dominican Republic.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/dominican-republic/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded Spanish business, corporate, and eCommerce websites in React JS, WordPress, and custom PHP',
+      'Local SEO coverage across all 10 administrative development regions, 31 provinces, and the National District',
+      'Reaching 10.6 million internet users (91.0% penetration) and 8.78 million social media identities in the Dominican Republic',
+      'Spanish eCommerce SEO, product schema, and Google, YouTube, Facebook & Instagram Ads',
+      'Starting packages from $500 backed by 15+ years of international SEO experience'
+    ],
+    features: [
+      { title: 'Province & City Local SEO', desc: 'Original location-focused landing pages for Santo Domingo, Punta Cana, La Altagracia, Santiago, La Romana, and Puerto Plata.' },
+      { title: 'Custom Spanish Web Engineering', desc: 'Fast-loading, mobile-first Spanish websites with WhatsApp lead integration and eCommerce functionality.' },
+      { title: 'Spanish SMM & PPC Advertising', desc: 'Targeted Google Search, Display, YouTube, Facebook, and Instagram campaigns tailored for Dominican audiences.' }
+    ],
+    languages: ['Spanish (Dominican Republic / es-DO)', 'English'],
+    faq: [
+      { q: 'Do you provide website development services in the Dominican Republic?', a: 'Yes. UDMIDEAS provides custom website design and development for businesses targeting the Dominican Republic.' },
+      { q: 'Do you provide Spanish SEO services?', a: 'Yes. Our services include keyword research, on-page SEO, technical SEO, local SEO, and link-building strategies.' },
+      { q: 'What is the starting price for your services?', a: 'Our listed starting price is $500 for each service category. The final quotation depends on project requirements.' }
+    ]
+  },
+  '/guatemala/': {
+    path: '/guatemala/',
+    title: 'Guatemala Spanish Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded Spanish website design and development, Spanish SEO, eCommerce SEO, SMM, and PPC advertising across Guatemala City, Antigua Guatemala, Quetzaltenango, Escuintla, and all 22 departments.',
+    kicker: 'Guatemala Country Focus',
+    heading: 'Guatemala Spanish Website Design, Development & SEO Digital Marketing Company',
+    subheading: 'Custom-coded Spanish websites, Spanish SEO, eCommerce SEO, social media marketing (SMM), and pay-per-click advertising (PPC) for businesses targeting Guatemala.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/guatemala/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded Spanish business, corporate, and eCommerce websites in React JS, WordPress, and custom PHP',
+      'Local SEO coverage across all 8 development regions and 22 departments including Guatemala City, Antigua Guatemala, Quetzaltenango, and Petén',
+      'Reaching 12.1 million internet users (63.7% penetration) and 14.0 million social media identities in Guatemala',
+      'Spanish eCommerce SEO, product schema, and Google, YouTube, Facebook & Instagram Ads',
+      'Starting packages from $500 backed by 15+ years of international SEO experience'
+    ],
+    features: [
+      { title: '22-Department Local SEO', desc: 'Original location-focused landing pages for Guatemala City, Antigua Guatemala, Quetzaltenango, Escuintla, Flores, and Panajachel.' },
+      { title: 'Custom Spanish Web Engineering', desc: 'Fast-loading, mobile-first Spanish websites with WhatsApp lead integration and eCommerce functionality.' },
+      { title: 'Spanish SMM & PPC Advertising', desc: 'Targeted Google Search, Display, YouTube, Facebook, and Instagram campaigns calibrated for Guatemala.' }
+    ],
+    languages: ['Spanish (Guatemala / es-GT)', 'English'],
+    faq: [
+      { q: 'Do you provide website development services in Guatemala?', a: 'Yes. UDMIDEAS provides custom website design and development for businesses targeting Guatemala.' },
+      { q: 'Do you provide Spanish SEO services?', a: 'Yes. Our services include keyword research, on-page SEO, technical SEO, local SEO, and off-page SEO.' },
+      { q: 'What is the starting price for your services?', a: 'Our listed starting price is $500 for each service category. Final quotations depend on project requirements.' }
+    ]
+  },
   '/eu/': {
     path: '/eu/',
     title: 'European Union Web Design & Multilingual SEO | UDMIDEAS',
@@ -1401,6 +1607,151 @@ export const ALL_PAGES: Record<string, PageSEO> = {
     languages: ['French', 'German', 'Spanish', 'Polish', 'English'],
     faq: [
       { q: 'How do you guarantee EU GDPR compliance?', a: 'We build privacy-first architectures that self-host fonts, anonymize IPs server-side, and block tracking cookies until explicit opt-in.' }
+    ]
+  },
+  '/france/': {
+    path: '/france/',
+    title: 'France Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded French website design and development, French-language SEO, eCommerce SEO, AEO, GEO, SMM, and PPC advertising across Paris, Lyon, Marseille, and all of France.',
+    kicker: 'France Country Focus',
+    heading: 'France Website Design, Development & SEO Digital Marketing Company UDMIDEAS',
+    subheading: 'Website design and development, French-language SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising solutions for businesses targeting France.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/france/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded French websites in React JS, PHP, Laravel, CodeIgniter, and WordPress starting from $500',
+      'French-language SEO, AEO, GEO, and local SEO targeting Paris, Lyon, Marseille, Toulouse, Nice, Bordeaux, Lille, Nantes, and Strasbourg',
+      'Built for France\'s €196.4B eCommerce market and 42.2M online shoppers',
+      'French eCommerce SEO for WooCommerce, Magento, Shopify, and custom platforms',
+      'Integrated French SMM and Google Ads / Shopping PPC campaigns backed by 15+ years of experience'
+    ],
+    features: [
+      { title: 'French Web Design & Engineering', desc: 'Custom-coded responsive French business, corporate, and eCommerce websites tailored for high performance.' },
+      { title: 'French SEO, AEO & GEO', desc: 'Native French keyword intent optimization, structured data, and local Google Business Profile visibility.' },
+      { title: 'French eCommerce, SMM & PPC', desc: 'Product/category optimization, Facebook & Instagram marketing, Google Search, Display, and retargeting campaigns.' }
+    ],
+    languages: ['French (France / fr-FR)', 'English'],
+    faq: [
+      { q: 'Does UDMIDEAS provide SEO services for French-language websites?', a: 'Yes. We provide French-language SEO services, including keyword research, technical SEO, content optimization, link building, and local SEO.' },
+      { q: 'Can you develop a complete French-language business website?', a: 'Yes. We design and develop custom-coded websites for French businesses, including corporate websites, service websites, and eCommerce platforms.' },
+      { q: 'What is the starting cost of website design and development?', a: 'Our introductory website design and development pricing starts at $500. Final pricing depends on the number of pages, functionality, design requirements, and technology.' }
+    ]
+  },
+  '/germany/': {
+    path: '/germany/',
+    title: 'Germany Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded German website design and development, German-language SEO, eCommerce SEO, AEO, GEO, SMM, and PPC advertising across Berlin, Hamburg, Munich, Frankfurt, and all of Germany.',
+    kicker: 'Germany Country Focus',
+    heading: 'Germany Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    subheading: 'Custom-coded website development, German-language SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising services for businesses targeting Germany.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/germany/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded German websites in React JS, PHP, Laravel, CodeIgniter, and WordPress starting from $500',
+      'German-language SEO, AEO, GEO, and local SEO targeting Berlin, Hamburg, Munich, Frankfurt, Cologne, Stuttgart, and 7+ other cities',
+      'Built for Germany\'s €83.1B eCommerce goods market, €14.4B digital services market, and 85% online shopper adoption',
+      'German eCommerce SEO for WooCommerce, Magento, Shopify, and custom platforms',
+      'Integrated German SMM and Google Ads / Shopping PPC backed by 15+ years of experience'
+    ],
+    features: [
+      { title: 'German Web Design & Engineering', desc: 'Custom-coded German corporate, B2B, and eCommerce websites engineered for speed and technical SEO.' },
+      { title: 'German SEO, AEO & GEO', desc: 'Authentic German industry terminology, search intent analysis, structured data, and DACH multilingual targeting.' },
+      { title: 'German eCommerce, SMM & PPC', desc: 'Product/category SEO, Facebook & Instagram marketing, Google Search, Display, Shopping, and retargeting.' }
+    ],
+    languages: ['German (Germany / de-DE)', 'English'],
+    faq: [
+      { q: 'Does UDMIDEAS provide SEO services for German-language websites?', a: 'Yes. We provide German SEO, including keyword research, technical SEO, on-page optimization, content marketing, link building, and local SEO.' },
+      { q: 'Can you develop a complete German-language business website?', a: 'Yes. We design and develop custom-coded websites for German businesses, including corporate websites, service websites, and eCommerce stores.' },
+      { q: 'What is the starting price for website development?', a: 'Our introductory website design and development pricing starts at $500. Final pricing depends on the project size, number of pages, and required functionality.' }
+    ]
+  },
+  '/spain/': {
+    path: '/spain/',
+    title: 'Spain Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded Spanish website design and development, Spanish-language SEO, eCommerce SEO, AEO, GEO, SMM, and PPC advertising across Madrid, Barcelona, Valencia, Seville, and all 17 autonomous communities of Spain.',
+    kicker: 'Spain Country Focus',
+    heading: 'Spain Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    subheading: 'Website design and development, Spanish-language SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising services for businesses targeting Spain.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/spain/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded Spanish websites in React JS, PHP, Laravel, CodeIgniter, and WordPress starting from $500',
+      'Regional SEO across all 17 autonomous communities & 2 autonomous cities (Madrid, Barcelona, Valencia, Seville, Málaga, Bilbao, Zaragoza)',
+      'Built for Spain\'s ~€95B eCommerce market (13.1% growth) and ~96% internet penetration',
+      'Spanish eCommerce SEO for WooCommerce, Magento, Shopify, and custom platforms',
+      'Integrated Spanish SEO, AEO, GEO, SMM, and Google Ads PPC backed by 15+ years of experience'
+    ],
+    features: [
+      { title: '17-Community Regional SEO', desc: 'Location-specific Spanish service pages and regional language considerations across Catalonia, Basque Country, Galicia, Balearic Islands, and Madrid.' },
+      { title: 'Custom Spanish Web Engineering', desc: 'Fast-loading, mobile-first Spanish websites built around local search behaviour and user experience.' },
+      { title: 'Spanish eCommerce, SMM & PPC', desc: 'Product/category SEO, Facebook & Instagram campaigns, Google Search, Display, Shopping, and retargeting.' }
+    ],
+    languages: ['Spanish (Spain / es-ES)', 'English'],
+    faq: [
+      { q: 'Does UDMIDEAS provide SEO services for Spanish-language websites?', a: 'Yes. We provide Spanish SEO, including keyword research, technical SEO, on-page optimization, content marketing, link building, and local SEO.' },
+      { q: 'Can you develop a complete Spanish-language business website?', a: 'Yes. We design and develop custom-coded websites for Spanish businesses, including corporate websites, service websites, and eCommerce stores.' },
+      { q: 'What is the starting price for website development?', a: 'Our introductory website design and development pricing starts at $500. Final pricing depends on website size, pages, functionality, and project requirements.' }
+    ]
+  },
+  '/switzerland/': {
+    path: '/switzerland/',
+    title: 'Switzerland Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides multilingual website design and development, SEO, eCommerce SEO, AEO, GEO, SMM, and PPC advertising across German, French, Italian, and Romansh across all 26 cantons of Switzerland.',
+    kicker: 'Switzerland Country Focus',
+    heading: 'Switzerland Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    subheading: 'Multilingual website design and development, SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising across German, French, Italian, and Romansh in Switzerland.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/switzerland/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Multilingual websites & custom web development in German, French, Italian, and Romansh starting from $500',
+      'Coverage across all 26 Swiss cantons including Zurich, Geneva, Bern, Basel, Lausanne, Lucerne, Ticino, and Graubünden',
+      'Proper hreflang architecture and separate language URLs (/de/, /fr/, /it/, /rm/)',
+      'Four-language eCommerce SEO for WooCommerce, Magento, Shopify, and custom platforms',
+      'Multilingual SMM, Google Ads, AEO, and GEO optimization backed by 15+ years of experience'
+    ],
+    features: [
+      { title: '4-Language Swiss Web Engineering', desc: 'Custom-coded German, French, Italian, and Romansh websites with seamless language switching.' },
+      { title: 'Canton & Multilingual SEO', desc: 'Keyword optimization, hreflang tags, and AEO/GEO targeting Zurich, Geneva, Basel, Bern, and Ticino.' },
+      { title: 'Multilingual eCommerce, SMM & PPC', desc: 'Localized shopping campaigns, Google Ads, Facebook, and Instagram advertising across all four languages.' }
+    ],
+    languages: ['German (de-CH)', 'French (fr-CH)', 'Italian (it-CH)', 'Romansh (rm-CH)', 'English'],
+    faq: [
+      { q: 'Does UDMIDEAS provide website development in all four Swiss languages?', a: 'Yes. We provide website design and development supporting German, French, Italian, and Romansh. We can build multilingual websites with separate language sections.' },
+      { q: 'Can you target all 26 cantons of Switzerland?', a: 'Yes. We can develop canton-specific and city-specific SEO strategies, including multilingual targeting for regions such as Bern, Fribourg, Valais, and Graubünden.' },
+      { q: 'What is the starting price for a multilingual website?', a: 'Our website design and development pricing starts at $500 for qualifying projects. A complete four-language website may require a higher budget depending on the number of pages, content, and functionality.' }
+    ]
+  },
+  '/poland/': {
+    path: '/poland/',
+    title: 'Poland Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded Polish website design and development, Polish-language SEO, eCommerce SEO, AEO, GEO, SMM, and PPC advertising across Warsaw, Kraków, Wrocław, Poznań, Gdańsk, and all 16 voivodeships of Poland.',
+    kicker: 'Poland Country Focus',
+    heading: 'Poland Website Design, Development & SEO Digital Marketing Company | UDMIDEAS',
+    subheading: 'Website design and development, Polish-language SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising services for businesses targeting Poland.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/poland/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded Polish websites in React JS, PHP, Laravel, CodeIgniter, and WordPress starting from $500',
+      'Regional SEO across all 16 voivodeships including Warsaw, Kraków, Wrocław, Poznań, Gdańsk, Łódź, Katowice, and Szczecin',
+      'Built for Poland\'s ~37.5M population, >85% internet adoption, and >70% online shopping adoption',
+      'Polish eCommerce SEO for WooCommerce, Magento, Shopify, and custom platforms',
+      'Integrated Polish SEO, AEO, GEO, SMM, and Google Ads PPC backed by 15+ years of experience'
+    ],
+    features: [
+      { title: '16-Voivodeship Regional SEO', desc: 'City-specific landing pages and Polish keyword targeting across Masovian, Lesser Poland, Lower Silesian, Greater Poland, and Pomeranian regions.' },
+      { title: 'Custom Polish Web Engineering', desc: 'Fast-loading, mobile-first Polish corporate, service, and eCommerce websites engineered for technical SEO.' },
+      { title: 'Polish eCommerce, SMM & PPC', desc: 'Product/category optimization, Facebook & Instagram campaigns, Google Search, Display, Shopping, and retargeting.' }
+    ],
+    languages: ['Polish (Poland / pl-PL)', 'English'],
+    faq: [
+      { q: 'Does UDMIDEAS provide SEO services for Polish-language websites?', a: 'Yes. We provide Polish SEO, including keyword research, technical SEO, on-page optimization, content marketing, link building, and local SEO.' },
+      { q: 'Can you develop a complete Polish-language business website?', a: 'Yes. We design and develop custom-coded websites for Polish businesses, including corporate websites, professional service websites, and eCommerce stores.' },
+      { q: 'What is the starting price for website development?', a: 'Our introductory website design and development pricing starts at $500. Final pricing depends on website size, number of pages, functionality, and project requirements.' }
     ]
   },
   '/arab-world/': {

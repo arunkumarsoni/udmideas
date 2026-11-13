@@ -171,9 +171,9 @@ export const PanamaServicesContent: React.FC = () => {
             <Globe2 className="w-3.5 h-3.5" />
             <span>Panama Multilingual Web Design, Development, SEO & Marketing · 15+ Years Track Record</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
             Panama Multilingual Web Design, Development, SEO and Digital Marketing Services
-          </h2>
+          </h1>
           <div className="mt-4 space-y-3 text-sm sm:text-base text-slate-300 leading-relaxed">
             <p>
               UDMIDEAS provides Panama multilingual web design, development, SEO and digital marketing services for businesses that want to be found in Spanish and English. Panama had <strong className="text-white font-semibold">3.84 million internet users in October 2026</strong>, up <strong className="text-emerald-400 font-semibold">6.7 percent in one year</strong>, and social media identities equal to <strong className="text-white font-semibold">74.9 percent of the population</strong>.
@@ -181,6 +181,27 @@ export const PanamaServicesContent: React.FC = () => {
             <p className="text-slate-300">
               Your next customer is searching right now. The only question is whether they find you or a competitor. Contact UDMIDEAS today for a free audit.
             </p>
+          </div>
+
+          {/* Quick Action Buttons */}
+          <div className="flex flex-wrap items-center gap-3 pt-4">
+            <a
+              href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20your%20services%20from%20page:%20/panama/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>WhatsApp: +91-9521186150</span>
+            </a>
+
+            <a
+              href="#inquiry-form"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+            >
+              <span>Submit Project Form (Direct Email)</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </a>
           </div>
         </div>
 

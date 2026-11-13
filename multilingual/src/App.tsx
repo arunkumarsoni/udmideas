@@ -97,7 +97,7 @@ export default function App() {
   const isBlogListing = currentPath === '/blog/';
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-emerald-500 selection:text-white">
       {/* Universal Top Navigation with Mega/Submenus & New Tab Links */}
       <Navbar currentPath={currentPath} />
 

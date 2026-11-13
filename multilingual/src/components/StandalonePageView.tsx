@@ -30,6 +30,19 @@ import { ColombiaServicesContent } from './ColombiaServicesContent';
 import { ChileServicesContent } from './ChileServicesContent';
 import { EcuadorServicesContent } from './EcuadorServicesContent';
 import { PanamaServicesContent } from './PanamaServicesContent';
+import { IsraelServicesContent } from './IsraelServicesContent';
+import { MexicoServicesContent } from './MexicoServicesContent';
+import { ArgentinaServicesContent } from './ArgentinaServicesContent';
+import { PeruServicesContent } from './PeruServicesContent';
+import { CostaRicaServicesContent } from './CostaRicaServicesContent';
+import { UruguayServicesContent } from './UruguayServicesContent';
+import { DominicanRepublicServicesContent } from './DominicanRepublicServicesContent';
+import { GuatemalaServicesContent } from './GuatemalaServicesContent';
+import { FranceServicesContent } from './FranceServicesContent';
+import { GermanyServicesContent } from './GermanyServicesContent';
+import { SpainServicesContent } from './SpainServicesContent';
+import { SwitzerlandServicesContent } from './SwitzerlandServicesContent';
+import { PolandServicesContent } from './PolandServicesContent';
 
 interface StandalonePageViewProps {
   path: string;
@@ -55,7 +68,20 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     page.path === '/colombia/' ||
     page.path === '/chile/' ||
     page.path === '/ecuador/' ||
-    page.path === '/panama/';
+    page.path === '/panama/' ||
+    page.path === '/israel/' ||
+    page.path === '/mexico/' ||
+    page.path === '/argentina/' ||
+    page.path === '/peru/' ||
+    page.path === '/costa-rica/' ||
+    page.path === '/uruguay/' ||
+    page.path === '/dominican-republic/' ||
+    page.path === '/guatemala/' ||
+    page.path === '/france/' ||
+    page.path === '/germany/' ||
+    page.path === '/spain/' ||
+    page.path === '/switzerland/' ||
+    page.path === '/poland/';
 
   const [formData, setFormData] = useState({
     name: '',
@@ -221,8 +247,8 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           </a>
         </nav>
 
-        {/* Hero Section (omitted on /ecuador/ because EcuadorServicesContent contains the dedicated hero section) */}
-        {page.path !== '/ecuador/' && (
+        {/* Hero Section (omitted on dedicated custom country pages that render their own hero section) */}
+        {page.path !== '/ecuador/' && page.path !== '/israel/' && page.path !== '/mexico/' && page.path !== '/argentina/' && page.path !== '/peru/' && page.path !== '/costa-rica/' && page.path !== '/uruguay/' && page.path !== '/dominican-republic/' && page.path !== '/guatemala/' && page.path !== '/france/' && page.path !== '/germany/' && page.path !== '/spain/' && page.path !== '/switzerland/' && page.path !== '/poland/' && (
           <header className="max-w-4xl space-y-4 mb-12">
             <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
               <span className="font-semibold text-emerald-400 font-mono bg-emerald-950/50 px-2.5 py-1 rounded border border-emerald-900/50">
@@ -346,6 +372,97 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         {page.path === '/panama/' && (
           <div className="mb-16">
             <PanamaServicesContent />
+          </div>
+        )}
+
+        {/* Israel Website Design, Development & Hebrew SEO Content */}
+        {page.path === '/israel/' && (
+          <div className="mb-16">
+            <IsraelServicesContent />
+          </div>
+        )}
+
+        {/* Mexico Website Design, Development & Spanish SEO Content */}
+        {page.path === '/mexico/' && (
+          <div className="mb-16">
+            <MexicoServicesContent />
+          </div>
+        )}
+
+        {/* Argentina Website Design, Development & Spanish SEO Content */}
+        {page.path === '/argentina/' && (
+          <div className="mb-16">
+            <ArgentinaServicesContent />
+          </div>
+        )}
+
+        {/* Peru Website Design, Development & Spanish SEO Content */}
+        {page.path === '/peru/' && (
+          <div className="mb-16">
+            <PeruServicesContent />
+          </div>
+        )}
+
+        {/* Costa Rica Website Design, Development & Spanish SEO Content */}
+        {page.path === '/costa-rica/' && (
+          <div className="mb-16">
+            <CostaRicaServicesContent />
+          </div>
+        )}
+
+        {/* Uruguay Website Design, Development & Spanish SEO Content */}
+        {page.path === '/uruguay/' && (
+          <div className="mb-16">
+            <UruguayServicesContent />
+          </div>
+        )}
+
+        {/* Dominican Republic Website Design, Development & Spanish SEO Content */}
+        {page.path === '/dominican-republic/' && (
+          <div className="mb-16">
+            <DominicanRepublicServicesContent />
+          </div>
+        )}
+
+        {/* Guatemala Website Design, Development & Spanish SEO Content */}
+        {page.path === '/guatemala/' && (
+          <div className="mb-16">
+            <GuatemalaServicesContent />
+          </div>
+        )}
+
+        {/* France Website Design, Development & French SEO Content */}
+        {page.path === '/france/' && (
+          <div className="mb-16">
+            <FranceServicesContent />
+          </div>
+        )}
+
+        {/* Germany Website Design, Development & German SEO Content */}
+        {page.path === '/germany/' && (
+          <div className="mb-16">
+            <GermanyServicesContent />
+          </div>
+        )}
+
+        {/* Spain Website Design, Development & Spanish SEO Content */}
+        {page.path === '/spain/' && (
+          <div className="mb-16">
+            <SpainServicesContent />
+          </div>
+        )}
+
+        {/* Switzerland Website Design, Development & Multilingual SEO Content */}
+        {page.path === '/switzerland/' && (
+          <div className="mb-16">
+            <SwitzerlandServicesContent />
+          </div>
+        )}
+
+        {/* Poland Website Design, Development & Polish SEO Content */}
+        {page.path === '/poland/' && (
+          <div className="mb-16">
+            <PolandServicesContent />
           </div>
         )}
 

@@ -31,14 +31,14 @@ export const FloatingWhatsApp: React.FC = () => {
         href="https://wa.me/919521186150?text=Hello%20Arun%20and%20UDMIDEAS,%20I%20would%20like%20to%20discuss%20a%20multilingual%20website%20design%20and%20digital%20marketing%20project."
         target="_blank"
         rel="noopener noreferrer"
-        className="relative flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-2xl shadow-emerald-950/80 hover:scale-105 active:scale-95 transition-all group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-400/50"
+        className="relative flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-2xl shadow-emerald-500/50 hover:scale-105 active:scale-95 transition-all group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-400/50"
         aria-label="Start WhatsApp conversation at +91-9521186150"
         title="WhatsApp: +91-9521186150"
       >
         {/* Soft pulse ping */}
-        <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-30 animate-ping pointer-events-none" />
+        <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-40 animate-ping pointer-events-none" />
 
-        <MessageCircle className="w-7 h-7 fill-white text-emerald-500 group-hover:scale-110 transition-transform" />
+        <MessageCircle className="w-7 h-7 fill-white text-white group-hover:scale-110 transition-transform" />
       </a>
     </aside>
   );
