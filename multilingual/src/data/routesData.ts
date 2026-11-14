@@ -2299,42 +2299,263 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   },
   '/new-york/': {
     path: '/new-york/',
-    title: 'New York Web Design & SEO Agency | NYC 10001, Manhattan, Empire State, Central Park & Buffalo NY | UDMIDEAS',
-    description: 'Premier custom website design, React/Laravel engineering, and enterprise SEO in New York, NY 10001, SEO consultant for Manhattan businesses, Empire State Building area, Central Park tour & travel SEO, Kingston, Brooklyn, Bronx, Albany, and Buffalo. Headquartered at 350 5th Avenue, NYC.',
-    kicker: 'New York Hub & Five Boroughs',
-    heading: 'New York Custom Web Design, Five Boroughs & Statewide SEO.',
-    subheading: 'Headquartered in Midtown Manhattan (Zip Code 10001, 350 5th Avenue at the Empire State Building) with dedicated SEO consulting for Manhattan businesses, Kingston NY, Empire State area businesses, Central Park tour & travel operators, Brooklyn, The Bronx, Albany, Buffalo, and 90 New York regions statewide.',
+    title: 'New York Website Design, Development & Multilingual Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom-coded website design and development (from $500), multilingual SEO (English, Spanish, French, German, Arabic), AEO, GEO, SMM, and PPC for businesses across Manhattan, Brooklyn, Queens, the Bronx, and New York City.',
+    kicker: 'New York City Web & Multilingual Marketing',
+    heading: 'New York Website Design, Development & Multilingual Digital Marketing Company',
+    subheading: 'Custom-coded websites from scratch, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), SMM, and PPC advertising built for NYC businesses.',
     category: 'usa-state',
     canonicalUrl: `${CANONICAL_BASE}/new-york/`,
     schemaType: 'LocalBusiness',
     keyHighlights: [
-      'Physical Office: 350 5th Avenue, Suite 4100, New York, NY 10001 (Empire State Building)',
-      'SEO Consultant for Manhattan Businesses: Team-based execution for Midtown law firms, SoHo retail, and FiDi fintech',
-      'SEO Consultant for Kingston & Hudson Valley: Stockade District, Rondout waterfront, and NYC transplant growth',
-      'SEO Consultant for Empire State Area: Observation deck ticket SEO, skyline photography, and Midtown B2B corporate tenant authority',
-      'SEO Consultant for Central Park Businesses: Tour & travel agency SEO expert, carriage & bike tours, and wedding vendors',
-      'SEO Consultant for Brooklyn Businesses: 15-day starting plan for Williamsburg, DUMBO, Park Slope',
-      'SEO Consultant for The Bronx: Mott Haven, Fordham, Pelham Bay local growth & GBP optimization',
-      'Remote SEO Consultant for Albany & Tech Valley (Capital Region of New York State)',
-      'Remote SEO Consultant for Buffalo & Western NY: Healthcare, tech corridor, and lake-effect seasonality strategies',
-      'Remote SEO Coverage for 90+ New York Regions across Upstate, Long Island, and Hudson Valley',
-      'Founder Arun leads executive architecture consultations directly from NYC'
+      '15+ years of custom website development and international digital marketing experience serving Manhattan, Brooklyn, Queens, and the Bronx',
+      'Business websites starting at $500 using React JS, PHP, Laravel, WordPress, and custom eCommerce architectures',
+      'Multilingual SEO across English, Spanish, French, German, Arabic, hreflang, and Google Business Profile optimization',
+      'Integrated SEO, AEO, GEO, Social Media Marketing (SMM), and Google/Meta/LinkedIn PPC advertising',
+      'Industry-tailored digital foundations for NYC real estate, healthcare, law, hospitality, finance, retail, and B2B services'
     ],
     features: [
-      { title: 'Midtown Manhattan Headquarters', desc: 'Convenient executive briefing location at 350 5th Ave serving Fortune 500 firms, local businesses, and hospitality leaders.' },
-      { title: 'Manhattan Commercial SEO', desc: 'Team-based parallel execution outperforming competitors in Midtown, SoHo, Chelsea, and the Financial District.' },
-      { title: 'Kingston & Hudson Valley SEO', desc: 'Dual-audience strategies connecting heritage businesses with new waves of digital-first residents.' },
-      { title: 'Empire State & Midtown B2B SEO', desc: 'Tourism observation ticket funnels and corporate B2B credibility for firms near Herald Square & Koreatown.' },
-      { title: 'Central Park Tour & Travel SEO', desc: 'Direct-booking funnels, multilingual visitor targeting, and tour operator comparison content.' },
-      { title: 'Brooklyn & Five Boroughs SEO', desc: 'Targeted local SEO, 15-day starting plans, GBP verification, and citation building across Brooklyn, The Bronx, and Queens.' },
-      { title: 'Albany & Capital Region SEO', desc: 'Remote SEO consulting tailored for legal, government-adjacent, education, and Tech Valley companies.' },
-      { title: 'Buffalo & Western NY SEO', desc: 'Remote SEO consulting for healthcare, manufacturing, and local services across Buffalo, Amherst, and Tonawanda.' },
-      { title: 'Sub-Second NYC CDN Performance', desc: 'Ultra-fast page loads hosted on local New York edge nodes for instantaneous response.' }
+      { title: 'Custom NYC Web Engineering', desc: 'Hand-coded React JS, PHP, Laravel, WordPress, and eCommerce websites starting from $500.' },
+      { title: 'Multilingual SEO, AEO & GEO', desc: 'Language-specific URLs, hreflang, technical SEO, direct-answer AEO, and generative discovery GEO.' },
+      { title: 'SMM & PPC Campaigns', desc: 'Google Search, Display, Shopping, YouTube, Meta, and LinkedIn campaigns tracked to qualified leads.' }
     ],
-    languages: ['English', 'Spanish'],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
     faq: [
-      { q: 'Where in New York is UDMIDEAS located?', a: 'Our office is located at 350 5th Avenue, New York, NY 10001 (in the Empire State Building district).' },
-      { q: 'Do you offer dedicated SEO consulting for Manhattan, Kingston, Empire State, Central Park, Brooklyn, The Bronx, Albany, and Buffalo, NY?', a: 'Yes. Founder Arun and the UDMIDEAS team provide specialized SEO consulting for Manhattan businesses, Kingston & Hudson Valley, Empire State area corporate tenants, Central Park tour and travel operators, Brooklyn businesses (15-day roadmap), The Bronx businesses (GBP, local citations), Albany and the Capital Region, Buffalo and Western New York, and 90+ regions across New York State remotely.' }
+      { q: 'How much does a business website cost with UDMIDEAS?', a: 'Our business website development starts at $500. The final price depends on the number of pages, design, functionality, languages and technical requirements.' },
+      { q: 'Do you develop custom-coded websites?', a: 'Yes. We build custom-coded websites from scratch using React JS, PHP, Laravel and other modern development technologies.' },
+      { q: 'Do you provide multilingual website development in New York?', a: 'Yes. We develop websites in English, Spanish, French, German, Arabic and other languages according to your business requirements and target markets.' }
+    ]
+  },
+  '/california/': {
+    path: '/california/',
+    title: 'California Website Design, Development & Multilingual Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom website design and development (starting at $500), multilingual SEO (English, Spanish, French, German, Arabic), AEO, GEO, SMM, and PPC across Silicon Valley, Los Angeles, San Diego, San Francisco, and California.',
+    kicker: 'California Web & Multilingual Marketing',
+    heading: 'California Website Design, Development & Multilingual Digital Marketing Company',
+    subheading: 'Custom-coded websites from scratch, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), SMM, and PPC built for California businesses.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/california/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      '15+ years of custom website development and international digital marketing experience serving Los Angeles, San Francisco, Silicon Valley, San Diego, and Sacramento',
+      'Business websites starting at $500 using React JS, PHP, Laravel, WordPress, and custom eCommerce architectures',
+      'Multilingual website development and SEO in English, Spanish, French, German, and Arabic backed by hreflang and search intent research',
+      'Integrated SEO, AEO, GEO, Social Media Marketing (SMM), and Google/Meta/LinkedIn PPC advertising',
+      'Industry-specific digital solutions for California tech, real estate, healthcare, law, construction, eCommerce, and manufacturing'
+    ],
+    features: [
+      { title: 'Custom California Web Engineering', desc: 'Hand-coded React JS, PHP, Laravel, WordPress, eCommerce, and custom web applications starting from $500.' },
+      { title: 'Multilingual SEO, AEO & GEO', desc: 'Language-specific URLs, hreflang, technical SEO, direct-answer AEO, and generative search GEO.' },
+      { title: 'SMM & PPC Campaigns', desc: 'Google Search, Display, Shopping, YouTube, Meta, and LinkedIn campaigns tracked to qualified leads.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
+    faq: [
+      { q: 'How much does a business website cost?', a: 'UDMIDEAS offers business website development starting at $500. Final pricing depends on design, pages, functionality and technical requirements.' },
+      { q: 'Can you provide SEO services throughout California?', a: 'Yes. We provide local, national and international SEO services for businesses targeting Los Angeles, San Francisco, San Diego, San Jose, Sacramento and other California locations.' },
+      { q: 'Do you provide Spanish SEO services?', a: 'Yes. We provide Spanish keyword research, Spanish content optimisation, multilingual technical SEO and international SEO for businesses targeting Spanish-speaking audiences.' }
+    ]
+  },
+  '/texas/': {
+    path: '/texas/',
+    title: 'Texas Website Design, Development & Multilingual Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom website design and development (from $500), multilingual SEO (English, Spanish, French, German, Arabic), AEO, GEO, SMM, and PPC across Austin, Dallas, Houston, San Antonio, Fort Worth, and Texas.',
+    kicker: 'Texas Web & Multilingual Marketing',
+    heading: 'Texas Website Design, Development & Multilingual Digital Marketing Company',
+    subheading: 'Custom-coded websites from scratch, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), SMM, and PPC built for Texas businesses.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/texas/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      '15+ years of custom website development and international digital marketing experience serving Austin, Dallas, Houston, San Antonio, Fort Worth, and statewide regions',
+      'Business websites starting at $500 using React JS, PHP, Laravel, WordPress, and custom eCommerce architectures',
+      'Multilingual website development and SEO in English, Spanish, French, German, and Arabic backed by hreflang and search intent research',
+      'Integrated SEO, AEO, GEO, Social Media Marketing (SMM), and Google/Meta/LinkedIn PPC advertising',
+      'Dedicated digital solutions for Texas tech, oil and gas, energy, healthcare, real estate, construction, manufacturing, and logistics'
+    ],
+    features: [
+      { title: 'Custom Texas Web Engineering', desc: 'Hand-coded React JS, PHP, Laravel, WordPress, eCommerce, and custom web applications starting from $500.' },
+      { title: 'Multilingual SEO, AEO & GEO', desc: 'Language-specific URLs, hreflang, technical SEO, direct-answer AEO, and generative search GEO.' },
+      { title: 'SMM & PPC Campaigns', desc: 'Google Search, Display, Shopping, YouTube, Meta, and LinkedIn campaigns tracked to qualified leads.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
+    faq: [
+      { q: 'How much does a business website cost with UDMIDEAS?', a: 'Our business website development starts at $500. The final cost depends on pages, design, functionality, languages and technical requirements.' },
+      { q: 'Do you provide website development services throughout Texas?', a: 'Yes. We serve businesses in Dallas, Houston, Austin, San Antonio, Fort Worth, El Paso and other Texas locations.' },
+      { q: 'Do you provide Spanish website development and SEO?', a: 'Yes. We develop Spanish-language websites and provide Spanish keyword research, multilingual SEO, content optimisation and international SEO services.' }
+    ]
+  },
+  '/florida/': {
+    path: '/florida/',
+    title: 'Florida Website Design, Development & Multilingual Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom website design and development (from $500), multilingual SEO (English, Spanish, French, German, Arabic), AEO, GEO, SMM, and PPC across Miami, Fort Lauderdale, Orlando, Tampa, Jacksonville, Naples, and Florida.',
+    kicker: 'Florida Web & Multilingual Marketing',
+    heading: 'Florida Website Design, Development & Multilingual Digital Marketing Company',
+    subheading: 'Custom-coded websites from scratch, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), SMM, and PPC built for Florida businesses.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/florida/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      '15+ years of custom website development and international digital marketing experience serving Miami, Fort Lauderdale, Orlando, Tampa, Jacksonville, Naples, and statewide regions',
+      'Business websites starting at $500 using React JS, PHP, Laravel, WordPress, and custom eCommerce architectures',
+      'Multilingual website development and SEO in English, Spanish, French, German, and Arabic backed by hreflang and search intent research',
+      'Integrated SEO, AEO, GEO, Social Media Marketing (SMM), and Google/Meta/LinkedIn PPC advertising',
+      'Industry-specific digital solutions for Florida real estate, healthcare, law, tourism, hospitality, marine, construction, tech, and eCommerce'
+    ],
+    features: [
+      { title: 'Custom Florida Web Engineering', desc: 'Hand-coded React JS, PHP, Laravel, WordPress, eCommerce, and custom web applications starting from $500.' },
+      { title: 'Multilingual SEO, AEO & GEO', desc: 'Language-specific URLs, hreflang, technical SEO, direct-answer AEO, and generative search GEO.' },
+      { title: 'SMM & PPC Campaigns', desc: 'Google Search, Display, Shopping, YouTube, Meta, and LinkedIn campaigns tracked to qualified leads.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
+    faq: [
+      { q: 'How much does a business website cost with UDMIDEAS?', a: 'Our business website development starts at $500. The final cost depends on the number of pages, design, functionality, integrations and technical requirements.' },
+      { q: 'Do you provide website development services throughout Florida?', a: 'Yes. UDMIDEAS offers website design and development services throughout Florida, including Miami, Orlando, Tampa, Jacksonville, Naples, Fort Lauderdale and other cities.' },
+      { q: 'Do you provide Spanish website development and SEO?', a: 'Yes. We offer Spanish website development, Spanish keyword research, multilingual SEO, content optimisation and international SEO services.' }
+    ]
+  },
+  '/illinois/': {
+    path: '/illinois/',
+    title: 'Illinois Website Design, Development & Multilingual Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom website design and development (from $500), multilingual SEO (English, Spanish, French, German, Arabic), AEO, GEO, SMM, and PPC across Chicago, Rockford, Naperville, Springfield, Peoria, and all 10 Illinois regions.',
+    kicker: 'Illinois Web & Multilingual Marketing',
+    heading: 'Illinois Website Design, Development & Multilingual Digital Marketing Company',
+    subheading: 'Custom-coded websites from scratch, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), SMM, and PPC built for Illinois businesses.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/illinois/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      '15+ years of custom website development and international digital marketing experience serving Chicago, Rockford, Naperville, Springfield, Peoria, and all 10 Illinois economic development regions',
+      'Business websites starting at $500 using React JS, PHP, Laravel, WordPress, and custom eCommerce architectures',
+      'Multilingual website development and SEO in English, Spanish, French, German, and Arabic backed by hreflang and search intent research',
+      'Integrated SEO, AEO, GEO, Social Media Marketing (SMM), and Google/Meta/LinkedIn PPC advertising',
+      'Industry-specific solutions for Illinois manufacturing, technology, healthcare, finance, logistics, real estate, law, construction, and eCommerce'
+    ],
+    features: [
+      { title: 'Custom Illinois Web Engineering', desc: 'Hand-coded React JS, PHP, Laravel, WordPress, eCommerce, and custom web applications starting from $500.' },
+      { title: 'Multilingual SEO, AEO & GEO', desc: 'Language-specific URLs, hreflang, technical SEO, direct-answer AEO, and generative search GEO.' },
+      { title: 'SMM & PPC Campaigns', desc: 'Google Search, Display, Shopping, YouTube, Meta, and LinkedIn campaigns tracked to qualified leads.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
+    faq: [
+      { q: 'How much does a business website cost with UDMIDEAS?', a: 'Our business website development starts at $500. Final pricing depends on the number of pages, design, functionality, integrations and technical requirements.' },
+      { q: 'Do you provide website development services throughout Illinois?', a: 'Yes. We serve businesses across Illinois, including Chicago, Naperville, Aurora, Rockford, Springfield, Peoria, Champaign, Joliet and other locations.' },
+      { q: 'Do you provide Spanish website development and SEO?', a: 'Yes. We offer Spanish website development, Spanish keyword research, multilingual SEO, content optimisation and international SEO services.' }
+    ]
+  },
+  '/pennsylvania/': {
+    path: '/pennsylvania/',
+    title: 'Pennsylvania Website Design, Development & Multilingual Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS provides custom website design and development (from $500), multilingual SEO (English, Spanish, French, German, Arabic), AEO, GEO, SMM, and PPC across Philadelphia, Pittsburgh, Harrisburg, Allentown, Erie, Lancaster, and all 11 Pennsylvania regions.',
+    kicker: 'Pennsylvania Web & Multilingual Marketing',
+    heading: 'Pennsylvania Website Design, Development & Multilingual Digital Marketing Company – UDMIDEAS',
+    subheading: 'Custom-coded websites from scratch, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), SMM, and PPC built for Pennsylvania businesses.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/pennsylvania/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      '15+ years of custom website development and international digital marketing experience serving Philadelphia, Pittsburgh, Harrisburg, Allentown, Erie, Lancaster, and all 11 Pennsylvania regions',
+      'Business websites starting at $500 using React JS, PHP, Laravel, WordPress, and custom eCommerce architectures',
+      'Multilingual website development and SEO in English, Spanish, French, German, and Arabic backed by hreflang and search intent research',
+      'Integrated SEO, AEO, GEO, Social Media Marketing (SMM), and Google/Meta/LinkedIn PPC advertising',
+      'Industry-specific digital solutions for Pennsylvania healthcare, legal, construction, manufacturing, real estate, education, hospitality, retail, and technology'
+    ],
+    features: [
+      { title: 'Custom Pennsylvania Web Engineering', desc: 'Hand-coded React JS, PHP, Laravel, WordPress, eCommerce, and custom web applications starting from $500.' },
+      { title: 'Multilingual SEO, AEO & GEO', desc: 'Language-specific URLs, hreflang, technical SEO, direct-answer AEO, and generative search GEO.' },
+      { title: 'SMM & PPC Campaigns', desc: 'Google Ads, Meta, LinkedIn, content marketing, and video campaigns tracked to measurable enquiries.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
+    faq: [
+      { q: 'Does UDMIDEAS provide website design and development services across Pennsylvania?', a: 'Yes. We offer website design and development services throughout Pennsylvania, including Philadelphia, Pittsburgh, Harrisburg, Allentown, Erie, Lancaster and other locations.' },
+      { q: 'What is the starting price for a business website?', a: 'Our business website development starts at $500. The final cost depends on the required pages, features, design and functionality.' },
+      { q: 'Can you work with businesses outside major Pennsylvania cities?', a: 'Yes. Our services are available throughout Pennsylvania, including smaller towns and communities in all 11 recognised tourism regions.' }
+    ]
+  },
+  '/ohio/': {
+    path: '/ohio/',
+    title: 'Ohio Website Design, Development & Multilingual Digital Marketing – UDMIDEAS',
+    description: 'UDMIDEAS provides custom website development (from $500), multilingual SEO (English, Spanish, French, German, Arabic), AEO, GEO, SMM, and PPC across Columbus, Cleveland, Cincinnati, Toledo, Dayton, and all five Ohio regions.',
+    kicker: 'Ohio Web & Multilingual Marketing',
+    heading: 'Ohio Website Design, Development & Multilingual Digital Marketing – UDMIDEAS',
+    subheading: 'Custom-coded websites from scratch, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), SMM, and PPC built for Ohio businesses.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/ohio/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      '15+ years of custom website development and international digital marketing experience serving Central, Northeast, Northwest, Southeast, and Southwest Ohio',
+      'Business websites starting at $500 using React JS, PHP, Laravel, WordPress, and custom eCommerce architectures',
+      'Multilingual website development and SEO in English, Spanish, French, German, and Arabic backed by hreflang and search intent research',
+      'Integrated SEO, AEO, GEO, Social Media Marketing (SMM), and Google/Meta/LinkedIn PPC advertising',
+      'Industry-specific digital solutions for Ohio manufacturing, healthcare, construction, legal, real estate, education, logistics, retail, and technology'
+    ],
+    features: [
+      { title: 'Custom Ohio Web Engineering', desc: 'Hand-coded React JS, PHP, Laravel, WordPress, eCommerce, and custom web applications starting from $500.' },
+      { title: 'Multilingual SEO, AEO & GEO', desc: 'Language-specific URLs, hreflang, technical SEO, direct-answer AEO, and generative search GEO.' },
+      { title: 'SMM & PPC Campaigns', desc: 'Google Ads, Meta, LinkedIn, content marketing, and video campaigns tracked to measurable enquiries.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
+    faq: [
+      { q: 'Does UDMIDEAS provide website development services across Ohio?', a: 'Yes. We provide website design and development services throughout Ohio, including Columbus, Cleveland, Cincinnati, Dayton, Toledo, Akron and other locations.' },
+      { q: 'What is the starting price for a business website?', a: 'Our business website development starts at $500. Final pricing depends on the required pages, design, features and functionality.' },
+      { q: 'Do you serve businesses outside Columbus, Cleveland and Cincinnati?', a: 'Yes. Our services are available throughout all five major Ohio regions, including smaller towns and surrounding communities.' }
+    ]
+  },
+  '/georgia/': {
+    path: '/georgia/',
+    title: 'Georgia Website Design, Development & Multilingual Digital Marketing Company – UDMIDEAS',
+    description: 'UDMIDEAS provides custom website development (from $500), multilingual SEO (English, Spanish, French, German, Arabic), AEO, GEO, SMM, and PPC across Atlanta, Savannah, Augusta, Columbus, Macon, Athens, and all 12 Georgia regions.',
+    kicker: 'Georgia Web & Multilingual Marketing',
+    heading: 'Georgia Website Design, Development & Multilingual Digital Marketing Company – UDMIDEAS',
+    subheading: 'Custom-coded websites from scratch, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), SMM, and PPC built for Georgia businesses.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/georgia/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      '15+ years of custom website development and international digital marketing experience serving Atlanta, Savannah, Augusta, Columbus, Macon, Athens, and all 12 Georgia regions',
+      'Business websites starting at $500 using React JS, PHP, Laravel, WordPress, and custom eCommerce architectures',
+      'Multilingual website development and SEO in English, Spanish, French, German, and Arabic backed by hreflang and search intent research',
+      'Integrated SEO, AEO, GEO, Social Media Marketing (SMM), and Google/Meta/LinkedIn PPC advertising',
+      'Industry-specific digital solutions for Georgia logistics, manufacturing, healthcare, construction, real estate, technology, legal, education, and hospitality'
+    ],
+    features: [
+      { title: 'Custom Georgia Web Engineering', desc: 'Hand-coded React JS, PHP, Laravel, WordPress, eCommerce, and custom web applications starting from $500.' },
+      { title: 'Multilingual SEO, AEO & GEO', desc: 'Language-specific URLs, hreflang, technical SEO, direct-answer AEO, and generative search GEO.' },
+      { title: 'SMM & PPC Campaigns', desc: 'Google Ads, Meta, LinkedIn, content marketing, and video campaigns tracked to measurable enquiries.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
+    faq: [
+      { q: 'Does UDMIDEAS provide website development services throughout Georgia?', a: 'Yes. We provide website design and development services throughout Georgia, including Atlanta, Savannah, Augusta, Columbus, Macon, Athens and other locations.' },
+      { q: 'What is the starting price for a business website?', a: 'Our business website development starts at $500. Final pricing depends on the required pages, features, design and functionality.' },
+      { q: 'Do you serve businesses outside Atlanta?', a: 'Yes. Our services are available throughout Georgia, including all 12 business and economic development regions and their surrounding communities.' }
+    ]
+  },
+  '/north-carolina/': {
+    path: '/north-carolina/',
+    title: 'North Carolina Website Design, Development & Multilingual Digital Marketing Company – UDMIDEAS',
+    description: 'UDMIDEAS provides custom website development (from $500), multilingual SEO (English, Spanish, French, German, Arabic), AEO, GEO, SMM, and PPC across Charlotte, Raleigh, Durham, Greensboro, Asheville, Wilmington, and all NC regions.',
+    kicker: 'North Carolina Web & Multilingual Marketing',
+    heading: 'North Carolina Website Design, Development & Multilingual Digital Marketing Company – UDMIDEAS',
+    subheading: 'Custom-coded websites from scratch, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), SMM, and PPC built for North Carolina businesses.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/north-carolina/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      '15+ years of custom website development and international digital marketing experience serving Charlotte, Raleigh, Durham, Greensboro, Asheville, Wilmington, and all NC regions',
+      'Business websites starting at $500 using React JS, PHP, Laravel, WordPress, and custom eCommerce architectures',
+      'Multilingual website development and SEO in English, Spanish, French, German, and Arabic backed by hreflang and search intent research',
+      'Integrated SEO, AEO, GEO, Social Media Marketing (SMM), and Google/Meta/LinkedIn PPC advertising',
+      'Industry-specific solutions for North Carolina tech, banking, healthcare, construction, manufacturing, real estate, agriculture, tourism, and logistics'
+    ],
+    features: [
+      { title: 'Custom North Carolina Web Engineering', desc: 'Hand-coded React JS, PHP, Laravel, WordPress, eCommerce, and custom web applications starting from $500.' },
+      { title: 'Multilingual SEO, AEO & GEO', desc: 'Language-specific URLs, hreflang, technical SEO, direct-answer AEO, and generative search GEO.' },
+      { title: 'SMM & PPC Campaigns', desc: 'Google Ads, Meta, LinkedIn, content marketing, and video campaigns tracked to measurable enquiries.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
+    faq: [
+      { q: 'Does UDMIDEAS provide website development services throughout North Carolina?', a: 'Yes. We provide website design and development services throughout North Carolina, including Charlotte, Raleigh, Durham, Greensboro, Asheville, Wilmington and other locations.' },
+      { q: 'What is the starting price for a business website?', a: 'Our business website development starts at $500. Final pricing depends on the required pages, features, design and functionality.' },
+      { q: 'Do you serve businesses outside Charlotte and Raleigh?', a: 'Yes. Our services are available throughout North Carolina, including the Mountains, Piedmont and Coast regions and their surrounding communities.' }
     ]
   },
   '/privacy-policy/': {

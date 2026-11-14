@@ -54,6 +54,15 @@ import { MoroccoServicesContent } from './MoroccoServicesContent';
 import { EgyptServicesContent } from './EgyptServicesContent';
 import { IraqServicesContent } from './IraqServicesContent';
 import { AboutUsServicesContent } from './AboutUsServicesContent';
+import { NewYorkServicesContent } from './NewYorkServicesContent';
+import { CaliforniaServicesContent } from './CaliforniaServicesContent';
+import { TexasServicesContent } from './TexasServicesContent';
+import { FloridaServicesContent } from './FloridaServicesContent';
+import { IllinoisServicesContent } from './IllinoisServicesContent';
+import { PennsylvaniaServicesContent } from './PennsylvaniaServicesContent';
+import { OhioServicesContent } from './OhioServicesContent';
+import { GeorgiaServicesContent } from './GeorgiaServicesContent';
+import { NorthCarolinaServicesContent } from './NorthCarolinaServicesContent';
 
 interface StandalonePageViewProps {
   path: string;
@@ -103,7 +112,16 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     page.path === '/morocco/' ||
     page.path === '/egypt/' ||
     page.path === '/iraq/' ||
-    page.path === '/about-us/';
+    page.path === '/about-us/' ||
+    page.path === '/new-york/' ||
+    page.path === '/california/' ||
+    page.path === '/texas/' ||
+    page.path === '/florida/' ||
+    page.path === '/illinois/' ||
+    page.path === '/pennsylvania/' ||
+    page.path === '/ohio/' ||
+    page.path === '/georgia/' ||
+    page.path === '/north-carolina/';
 
   const [formData, setFormData] = useState({
     name: '',
@@ -270,7 +288,7 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         </nav>
 
         {/* Hero Section (omitted on dedicated custom country pages that render their own hero section) */}
-        {page.path !== '/ecuador/' && page.path !== '/israel/' && page.path !== '/mexico/' && page.path !== '/argentina/' && page.path !== '/peru/' && page.path !== '/costa-rica/' && page.path !== '/uruguay/' && page.path !== '/dominican-republic/' && page.path !== '/guatemala/' && page.path !== '/france/' && page.path !== '/germany/' && page.path !== '/spain/' && page.path !== '/switzerland/' && page.path !== '/poland/' && page.path !== '/uae/' && page.path !== '/oman/' && page.path !== '/iran/' && page.path !== '/bahrain/' && page.path !== '/yemen/' && page.path !== '/saudi-arabia/' && page.path !== '/qatar/' && page.path !== '/morocco/' && page.path !== '/egypt/' && page.path !== '/iraq/' && page.path !== '/about-us/' && (
+        {page.path !== '/ecuador/' && page.path !== '/israel/' && page.path !== '/mexico/' && page.path !== '/argentina/' && page.path !== '/peru/' && page.path !== '/costa-rica/' && page.path !== '/uruguay/' && page.path !== '/dominican-republic/' && page.path !== '/guatemala/' && page.path !== '/france/' && page.path !== '/germany/' && page.path !== '/spain/' && page.path !== '/switzerland/' && page.path !== '/poland/' && page.path !== '/uae/' && page.path !== '/oman/' && page.path !== '/iran/' && page.path !== '/bahrain/' && page.path !== '/yemen/' && page.path !== '/saudi-arabia/' && page.path !== '/qatar/' && page.path !== '/morocco/' && page.path !== '/egypt/' && page.path !== '/iraq/' && page.path !== '/about-us/' && page.path !== '/new-york/' && page.path !== '/california/' && page.path !== '/texas/' && page.path !== '/florida/' && page.path !== '/illinois/' && page.path !== '/pennsylvania/' && page.path !== '/ohio/' && page.path !== '/georgia/' && page.path !== '/north-carolina/' && (
           <header className="max-w-4xl space-y-4 mb-12">
             <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
               <span className="font-semibold text-emerald-400 font-mono bg-emerald-950/50 px-2.5 py-1 rounded border border-emerald-900/50">
@@ -562,6 +580,69 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         {page.path === '/about-us/' && (
           <div className="mb-16">
             <AboutUsServicesContent />
+          </div>
+        )}
+
+        {/* New York Page Content */}
+        {page.path === '/new-york/' && (
+          <div className="mb-16">
+            <NewYorkServicesContent />
+          </div>
+        )}
+
+        {/* California Page Content */}
+        {page.path === '/california/' && (
+          <div className="mb-16">
+            <CaliforniaServicesContent />
+          </div>
+        )}
+
+        {/* Texas Page Content */}
+        {page.path === '/texas/' && (
+          <div className="mb-16">
+            <TexasServicesContent />
+          </div>
+        )}
+
+        {/* Florida Page Content */}
+        {page.path === '/florida/' && (
+          <div className="mb-16">
+            <FloridaServicesContent />
+          </div>
+        )}
+
+        {/* Illinois Page Content */}
+        {page.path === '/illinois/' && (
+          <div className="mb-16">
+            <IllinoisServicesContent />
+          </div>
+        )}
+
+        {/* Pennsylvania Page Content */}
+        {page.path === '/pennsylvania/' && (
+          <div className="mb-16">
+            <PennsylvaniaServicesContent />
+          </div>
+        )}
+
+        {/* Ohio Page Content */}
+        {page.path === '/ohio/' && (
+          <div className="mb-16">
+            <OhioServicesContent />
+          </div>
+        )}
+
+        {/* Georgia Page Content */}
+        {page.path === '/georgia/' && (
+          <div className="mb-16">
+            <GeorgiaServicesContent />
+          </div>
+        )}
+
+        {/* North Carolina Page Content */}
+        {page.path === '/north-carolina/' && (
+          <div className="mb-16">
+            <NorthCarolinaServicesContent />
           </div>
         )}
 
