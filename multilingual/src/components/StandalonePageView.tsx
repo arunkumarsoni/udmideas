@@ -43,6 +43,17 @@ import { GermanyServicesContent } from './GermanyServicesContent';
 import { SpainServicesContent } from './SpainServicesContent';
 import { SwitzerlandServicesContent } from './SwitzerlandServicesContent';
 import { PolandServicesContent } from './PolandServicesContent';
+import { UaeServicesContent } from './UaeServicesContent';
+import { OmanServicesContent } from './OmanServicesContent';
+import { IranServicesContent } from './IranServicesContent';
+import { BahrainServicesContent } from './BahrainServicesContent';
+import { YemenServicesContent } from './YemenServicesContent';
+import { SaudiArabiaServicesContent } from './SaudiArabiaServicesContent';
+import { QatarServicesContent } from './QatarServicesContent';
+import { MoroccoServicesContent } from './MoroccoServicesContent';
+import { EgyptServicesContent } from './EgyptServicesContent';
+import { IraqServicesContent } from './IraqServicesContent';
+import { AboutUsServicesContent } from './AboutUsServicesContent';
 
 interface StandalonePageViewProps {
   path: string;
@@ -81,7 +92,18 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     page.path === '/germany/' ||
     page.path === '/spain/' ||
     page.path === '/switzerland/' ||
-    page.path === '/poland/';
+    page.path === '/poland/' ||
+    page.path === '/uae/' ||
+    page.path === '/oman/' ||
+    page.path === '/iran/' ||
+    page.path === '/bahrain/' ||
+    page.path === '/yemen/' ||
+    page.path === '/saudi-arabia/' ||
+    page.path === '/qatar/' ||
+    page.path === '/morocco/' ||
+    page.path === '/egypt/' ||
+    page.path === '/iraq/' ||
+    page.path === '/about-us/';
 
   const [formData, setFormData] = useState({
     name: '',
@@ -248,7 +270,7 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         </nav>
 
         {/* Hero Section (omitted on dedicated custom country pages that render their own hero section) */}
-        {page.path !== '/ecuador/' && page.path !== '/israel/' && page.path !== '/mexico/' && page.path !== '/argentina/' && page.path !== '/peru/' && page.path !== '/costa-rica/' && page.path !== '/uruguay/' && page.path !== '/dominican-republic/' && page.path !== '/guatemala/' && page.path !== '/france/' && page.path !== '/germany/' && page.path !== '/spain/' && page.path !== '/switzerland/' && page.path !== '/poland/' && (
+        {page.path !== '/ecuador/' && page.path !== '/israel/' && page.path !== '/mexico/' && page.path !== '/argentina/' && page.path !== '/peru/' && page.path !== '/costa-rica/' && page.path !== '/uruguay/' && page.path !== '/dominican-republic/' && page.path !== '/guatemala/' && page.path !== '/france/' && page.path !== '/germany/' && page.path !== '/spain/' && page.path !== '/switzerland/' && page.path !== '/poland/' && page.path !== '/uae/' && page.path !== '/oman/' && page.path !== '/iran/' && page.path !== '/bahrain/' && page.path !== '/yemen/' && page.path !== '/saudi-arabia/' && page.path !== '/qatar/' && page.path !== '/morocco/' && page.path !== '/egypt/' && page.path !== '/iraq/' && page.path !== '/about-us/' && (
           <header className="max-w-4xl space-y-4 mb-12">
             <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
               <span className="font-semibold text-emerald-400 font-mono bg-emerald-950/50 px-2.5 py-1 rounded border border-emerald-900/50">
@@ -463,6 +485,83 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         {page.path === '/poland/' && (
           <div className="mb-16">
             <PolandServicesContent />
+          </div>
+        )}
+
+        {/* UAE Website Design, Development & Arabic SEO Content */}
+        {page.path === '/uae/' && (
+          <div className="mb-16">
+            <UaeServicesContent />
+          </div>
+        )}
+
+        {/* Oman Website Design, Development & Arabic SEO Content */}
+        {page.path === '/oman/' && (
+          <div className="mb-16">
+            <OmanServicesContent />
+          </div>
+        )}
+
+        {/* Iran Website Design, Development & Persian SEO Content */}
+        {page.path === '/iran/' && (
+          <div className="mb-16">
+            <IranServicesContent />
+          </div>
+        )}
+
+        {/* Bahrain Website Design, Development & Arabic SEO Content */}
+        {page.path === '/bahrain/' && (
+          <div className="mb-16">
+            <BahrainServicesContent />
+          </div>
+        )}
+
+        {/* Yemen Website Design, Development & Arabic SEO Content */}
+        {page.path === '/yemen/' && (
+          <div className="mb-16">
+            <YemenServicesContent />
+          </div>
+        )}
+
+        {/* Saudi Arabia Website Design, Development & Arabic SEO Content */}
+        {page.path === '/saudi-arabia/' && (
+          <div className="mb-16">
+            <SaudiArabiaServicesContent />
+          </div>
+        )}
+
+        {/* Qatar Website Design, Development & Arabic SEO Content */}
+        {page.path === '/qatar/' && (
+          <div className="mb-16">
+            <QatarServicesContent />
+          </div>
+        )}
+
+        {/* Morocco Website Design, Development & Arabic SEO Content */}
+        {page.path === '/morocco/' && (
+          <div className="mb-16">
+            <MoroccoServicesContent />
+          </div>
+        )}
+
+        {/* Egypt Website Design, Development & Arabic SEO Content */}
+        {page.path === '/egypt/' && (
+          <div className="mb-16">
+            <EgyptServicesContent />
+          </div>
+        )}
+
+        {/* Iraq Website Design, Development & Arabic SEO Content */}
+        {page.path === '/iraq/' && (
+          <div className="mb-16">
+            <IraqServicesContent />
+          </div>
+        )}
+
+        {/* About Us Page Content */}
+        {page.path === '/about-us/' && (
+          <div className="mb-16">
+            <AboutUsServicesContent />
           </div>
         )}
 

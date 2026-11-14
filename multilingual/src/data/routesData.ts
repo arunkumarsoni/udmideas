@@ -1017,30 +1017,33 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   },
   '/about-us/': {
     path: '/about-us/',
-    title: 'About Us | UDMIDEAS - 15+ Years Custom Web & Multilingual Growth',
-    description: 'Learn about UDMIDEAS, founded by Arun with USA headquarters in New York NY 10001. 15+ years engineering custom React, WordPress, Laravel, and Magento solutions with multilingual SEO.',
-    kicker: 'Heritage & Vision',
-    heading: 'About UDMIDEAS: 15+ Years of Custom Code & Global Growth.',
-    subheading: 'Headquartered in New York, NY 10001, UDMIDEAS is an elite digital engineering agency founded by Arun. We reject bloated templates and off-the-shelf page builders in favor of handcrafted code and cross-border digital dominance.',
+    title: 'UDMIDEAS About Us: Founder Arun and Full-Stack Digital Agency',
+    description: 'UDMIDEAS is a full-service digital agency led by Founder Arun (15+ years hands-on SEO). Custom code, React JS, WordPress, Laravel, CodeIgniter, and Magento builds paired with SEO, AEO, GEO, SMM, and PPC.',
+    kicker: 'Founder Arun & Full-Stack Agency',
+    heading: 'UDMIDEAS About Us: Founder Arun and Full-Stack Digital Agency',
+    subheading: 'UDMIDEAS builds your website, gets it found, and keeps it growing from one team across custom code, React JS, WordPress, Laravel, CodeIgniter, Magento, SEO, AEO, GEO, SMM, and PPC.',
     category: 'core',
     canonicalUrl: `${CANONICAL_BASE}/about-us/`,
     schemaType: 'AboutPage',
     keyHighlights: [
-      '15+ Years of Proven Agency Track Record across North America, Europe, LATAM, and Middle East',
-      'Founder-Led Engineering by Arun with Headquarters in Midtown Manhattan, New York, NY 10001',
-      '100% Custom Coding Only: React JS, WordPress, CodeIgniter, Laravel, Magento, PHP',
-      'Dedicated In-House Teams for Multilingual SEO, AEO, GEO, SMM, and Cross-Border PPC'
+      'Led by Founder Arun with 15+ years of hands-on technical SEO experience',
+      'Seven connected services: Custom Code, Website Development, Ecommerce, SEO, AEO, GEO, and SMM & PPC',
+      'Built to scale from 100-page sites to 50,000 and 100,000-page catalogs',
+      'Multilingual remote delivery across the USA, Europe, Arabic-speaking countries, Latin America, Australia, and Israel'
     ],
     features: [
-      { title: 'Custom Coding Philosophy', desc: 'Zero page builders or bloated third-party plugins. Every layout and database query is crafted for maximum speed and security.' },
-      { title: 'Multilingual Native DNA', desc: 'Deep bi-directional RTL support for Arabic and Hebrew, plus native fluency across European and Latin American regional dialects.' },
-      { title: 'USA Headquarters (NYC 10001)', desc: 'Client executive briefing center located at 350 5th Ave, New York, serving clients in all 50 states and international hubs.' },
-      { title: 'Direct Founder Access', desc: 'Arun personally scopes enterprise architectures and guarantees 4-hour communication turnarounds via WhatsApp and direct hotline.' }
+      { title: 'Build for Search From Line One', desc: 'URL structure, page speed, rendering, and schema decided at architecture stage rather than patched later.' },
+      { title: 'Seven Services Under One Roof', desc: 'Developers, SEO/AEO/GEO specialists, and paid media managers collaborating in one accountable team.' },
+      { title: '100 to 100,000-Page Scalability', desc: 'Template URL logic, crawl budget control, server caching, and structured data engineered for large catalogs.' },
+      { title: 'Global Multilingual Execution', desc: 'Native-intent SEO in English, Spanish, French, German, and Arabic across major international regions.' }
     ],
-    languages: ['English', 'Spanish', 'French', 'German', 'Arabic', 'Hebrew'],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
     faq: [
-      { q: 'Who is Arun?', a: 'Arun is the Founder and Principal Solutions Architect of UDMIDEAS with over 15 years of industry leadership.' },
-      { q: 'Where are you based?', a: 'We are based in Midtown Manhattan, New York, NY 10001, United States.' }
+      { q: 'What does UDMIDEAS do?', a: 'We build websites and custom software, and we market them with SEO, AEO, GEO, social media marketing and PPC, all from one team.' },
+      { q: 'Which platforms do you build on?', a: 'React JS, WordPress, Laravel, CodeIgniter and Magento, plus custom code when a standard platform is not enough.' },
+      { q: 'Can you handle very large websites?', a: 'Yes. We build and optimize sites from 100 pages up to 50,000 and 100,000 pages, with architecture planned for crawling, indexing and speed.' },
+      { q: 'What is the difference between SEO, AEO and GEO?', a: 'SEO helps you rank in search engines. AEO helps you become the direct answer to a question. GEO helps AI assistants cite and recommend your business.' },
+      { q: 'Do you work with clients outside India?', a: 'Yes. We serve clients in the USA, Europe, the Arabic-speaking countries, Latin America and other regions, working remotely and in your market\'s language.' }
     ]
   },
   '/team/': {
@@ -1752,6 +1755,296 @@ export const ALL_PAGES: Record<string, PageSEO> = {
       { q: 'Does UDMIDEAS provide SEO services for Polish-language websites?', a: 'Yes. We provide Polish SEO, including keyword research, technical SEO, on-page optimization, content marketing, link building, and local SEO.' },
       { q: 'Can you develop a complete Polish-language business website?', a: 'Yes. We design and develop custom-coded websites for Polish businesses, including corporate websites, professional service websites, and eCommerce stores.' },
       { q: 'What is the starting price for website development?', a: 'Our introductory website design and development pricing starts at $500. Final pricing depends on website size, number of pages, functionality, and project requirements.' }
+    ]
+  },
+  '/uae/': {
+    path: '/uae/',
+    title: 'UAE Website Design, Development and SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS builds custom-coded Arabic (RTL) websites and delivers Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC advertising across the UAE starting from $500.',
+    kicker: 'UAE Country Focus',
+    heading: 'UAE Website Design, Development and SEO Digital Marketing Company',
+    subheading: 'Custom-coded Arabic (RTL) websites, Arabic SEO, e-commerce SEO, SMM, and PPC solutions tailored for Arabic-speaking customers in the UAE.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/uae/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Hand-coded Arabic (RTL) and bilingual Arabic/English websites starting from $500',
+      'Arabic keyword research covering dialect and spelling variations, RTL technical audits, schema markup, and AEO/GEO',
+      'Built for 11.5M UAE internet users (99% penetration) and 78.67% smartphone e-commerce share',
+      'Arabic e-commerce SEO combined with Instagram, TikTok, Facebook, and Google Shopping/Search ads',
+      '15+ years of founder-led SEO expertise with transparent $500 starting packages'
+    ],
+    features: [
+      { title: 'True RTL Arabic Web Engineering', desc: 'Hand-coded right-to-left layouts, native Arabic typography, mobile-first speed, and bilingual Arabic/English support.' },
+      { title: 'Arabic SEO, AEO & GEO', desc: 'Dialect-aware Arabic keyword research, RTL technical SEO, local link building, and AI answer engine optimization.' },
+      { title: 'Arabic E-commerce, SMM & PPC', desc: 'Product-page SEO paired with Instagram, TikTok, Facebook, and Google Shopping ads tracked to revenue.' }
+    ],
+    languages: ['Arabic (UAE / ar-AE RTL)', 'English'],
+    faq: [
+      { q: 'How much does Arabic SEO cost?', a: 'Packages start at $500.' },
+      { q: 'Do you build Arabic websites with RTL support?', a: 'Yes, custom-coded and fully right-to-left.' },
+      { q: 'Can you do SEO for my Arabic online store?', a: 'Yes, including product, category and technical SEO.' }
+    ]
+  },
+  '/oman/': {
+    path: '/oman/',
+    title: 'Oman Website Design, Development and SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS builds custom-coded Arabic (RTL) websites and delivers Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC advertising across Muscat, Salalah, Sohar, and Oman starting from $500.',
+    kicker: 'Oman Country Focus',
+    heading: 'Oman Website Design, Development and SEO Digital Marketing Company',
+    subheading: 'Custom-coded Arabic (RTL) websites, Arabic SEO, e-commerce SEO, SMM, and PPC solutions tailored for Omani Arabic-speaking customers.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/oman/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Hand-coded Arabic (RTL) and bilingual Arabic/English websites starting from $500',
+      'Arabic keyword research tailored to Gulf and Omani search habits, RTL audits, schema markup, and AEO/GEO',
+      'Built for Oman\'s 5.44M internet users (95.3% penetration) and 3.44M active social media identities',
+      'Arabic e-commerce SEO paired with Instagram, TikTok, Facebook, Snapchat, and Google Shopping/Search ads',
+      'City and regional targeting across Muscat, Salalah, Sohar, and Oman backed by 15+ years of SEO experience'
+    ],
+    features: [
+      { title: 'True RTL Arabic Web Engineering', desc: 'Hand-coded right-to-left layouts, native Arabic typography, mobile-first speed, and bilingual Arabic/English support.' },
+      { title: 'Omani & Gulf Arabic SEO, AEO & GEO', desc: 'Search-habit-aligned Arabic keyword research, RTL technical audits, local link building, and AI answer optimization.' },
+      { title: 'Arabic E-commerce, SMM & PPC', desc: 'Product-page SEO paired with Instagram, TikTok, Facebook, Snapchat, and Google Shopping ads tracked to revenue.' }
+    ],
+    languages: ['Arabic (Oman / ar-OM RTL)', 'English'],
+    faq: [
+      { q: 'How much does Arabic SEO cost?', a: 'Packages start at $500.' },
+      { q: 'Do you build Arabic websites with RTL support?', a: 'Yes, custom-coded and fully right-to-left.' },
+      { q: 'Can you target Muscat, Salalah or Sohar specifically?', a: 'Yes, by city, region and country.' }
+    ]
+  },
+  '/iran/': {
+    path: '/iran/',
+    title: 'Iran Website Design, Development and SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS builds custom-coded Persian (Farsi RTL) websites and delivers Persian SEO, AEO, GEO, e-commerce SEO, SMM, and online advertising across Tehran, Isfahan, Shiraz, and Iran starting from $500.',
+    kicker: 'Iran Country Focus',
+    heading: 'Iran Website Design, Development and SEO Digital Marketing Company',
+    subheading: 'Custom-coded Persian (Farsi RTL) websites, Persian SEO, e-commerce SEO, SMM, and online advertising solutions tailored for Iranian customers.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/iran/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Custom-coded Persian (RTL) and bilingual Persian/English websites starting from $500',
+      'Persian keyword research including spelling variants and colloquial phrases, RTL technical audits, schema markup, and AEO/GEO',
+      'Engineered for 79.7M Iranian internet users (85.3% penetration) with lightweight mobile-first performance',
+      'Persian product-page SEO paired with platform-relevant social media and ad campaigns tracked from click to sale',
+      'City and regional targeting across Tehran, Isfahan, Shiraz, and Iran backed by 15+ years of SEO experience'
+    ],
+    features: [
+      { title: 'True RTL Persian Web Engineering', desc: 'Hand-coded right-to-left layouts, Persian typography, lightweight mobile-first speed, and hosting planned inside or outside Iran.' },
+      { title: 'Persian SEO, AEO & GEO', desc: 'Colloquial and spelling-variant keyword research, RTL technical audits, natural Persian content, and AI answer optimization.' },
+      { title: 'Persian E-commerce, SMM & Ads', desc: 'Product-page SEO paired with local social media and available ad channels tracked from click to revenue.' }
+    ],
+    languages: ['Persian / Farsi (Iran / fa-IR RTL)', 'English'],
+    faq: [
+      { q: 'How much does Persian SEO cost?', a: 'Packages start at $500.' },
+      { q: 'Do you build Persian websites with RTL support?', a: 'Yes, custom-coded and fully right-to-left.' },
+      { q: 'Can you target Tehran, Isfahan or Shiraz specifically?', a: 'Yes, by city and region.' }
+    ]
+  },
+  '/bahrain/': {
+    path: '/bahrain/',
+    title: 'Bahrain Website Design, Development and SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS builds custom-coded Arabic (RTL) websites and delivers Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC advertising across Manama, Muharraq, Riffa, and Bahrain starting from $500.',
+    kicker: 'Bahrain Country Focus',
+    heading: 'Bahrain Website Design, Development and SEO Digital Marketing Company',
+    subheading: 'Custom-coded Arabic (RTL) websites, Arabic SEO, e-commerce SEO, SMM, and PPC solutions tailored for Bahraini Arabic-speaking customers.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/bahrain/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Hand-coded Arabic (RTL) and bilingual Arabic/English websites starting from $500 with digital wallet integration',
+      'Arabic keyword research tailored to Gulf and Bahraini search habits, RTL audits, schema markup, and AEO/GEO',
+      'Built for Bahrain\'s 1.67M internet users (99.0% penetration), 98.2% social reach, and 67.98% smartphone e-commerce share',
+      'Arabic e-commerce SEO paired with Instagram, TikTok, Facebook, Snapchat, and Google Shopping/Search ads',
+      'City and regional targeting across Manama, Muharraq, Riffa, and Bahrain backed by 15+ years of SEO experience'
+    ],
+    features: [
+      { title: 'True RTL Arabic Web Engineering', desc: 'Hand-coded right-to-left layouts, Arabic typography, mobile-first speed, digital wallet integration, and bilingual support.' },
+      { title: 'Bahraini & Gulf Arabic SEO, AEO & GEO', desc: 'Search-habit-aligned Arabic keyword research, RTL technical audits, local link building, and AI answer optimization.' },
+      { title: 'Arabic E-commerce, SMM & PPC', desc: 'Product-page SEO paired with Instagram, TikTok, Facebook, Snapchat, and Google Shopping ads tracked to revenue.' }
+    ],
+    languages: ['Arabic (Bahrain / ar-BH RTL)', 'English'],
+    faq: [
+      { q: 'How much does Arabic SEO cost?', a: 'Packages start at $500.' },
+      { q: 'Do you build Arabic websites with RTL support?', a: 'Yes, custom-coded and fully right-to-left.' },
+      { q: 'Can you target Manama, Muharraq or Riffa specifically?', a: 'Yes, by city, area and country.' }
+    ]
+  },
+  '/yemen/': {
+    path: '/yemen/',
+    title: 'Yemen Website Design, Development and SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS builds lightweight, custom-coded Arabic (RTL) websites with WhatsApp ordering & COD flows, plus Arabic SEO, AEO, GEO, SMM, and PPC across Sana\'a, Aden, Taiz, and Yemen diaspora starting from $500.',
+    kicker: 'Yemen Country Focus',
+    heading: 'Yemen Website Design, Development and SEO Digital Marketing Company',
+    subheading: 'Lightweight, mobile-first custom-coded Arabic (RTL) websites, Arabic SEO, e-commerce catalogs, SMM, and PPC solutions for Yemen and Yemeni diaspora audiences.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/yemen/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Lightweight, mobile-first Arabic (RTL) and bilingual websites starting from $500 with WhatsApp ordering & cash-on-delivery flows',
+      'Arabic keyword research covering Yemeni dialect and spelling variations, RTL audits, schema markup, and AEO/GEO',
+      'Built for Yemen\'s 7.65M internet users, 6.67M active social media identities, and 25.1M cellular mobile connections',
+      'Upgrade WhatsApp and Facebook selling into trackable online stores with Facebook/Instagram ads and diaspora targeting',
+      'City and regional targeting across Sana\'a, Aden, Taiz, and Yemenis abroad backed by 15+ years of SEO experience'
+    ],
+    features: [
+      { title: 'Lightweight RTL Arabic Web Engineering', desc: 'Hand-coded mobile-first RTL layouts optimized for slower connections with WhatsApp ordering, COD, and bilingual Arabic/English.' },
+      { title: 'Yemeni Arabic SEO, AEO & GEO', desc: 'Dialect-aware Arabic keyword research, RTL technical audits, local link building, and AI answer engine optimization.' },
+      { title: 'E-commerce, Social & Diaspora Ads', desc: 'Full online catalogues and order tracking paired with Facebook/Instagram campaigns targeting local buyers and Yemeni diaspora.' }
+    ],
+    languages: ['Arabic (Yemen / ar-YE RTL)', 'English'],
+    faq: [
+      { q: 'How much does Arabic SEO cost?', a: 'Packages start at $500.' },
+      { q: 'Can customers order through WhatsApp?', a: 'Yes, we can add WhatsApp ordering and cash-on-delivery options.' },
+      { q: 'Can you target Sana\'a, Aden or Taiz specifically?', a: 'Yes, by city and region, and also Yemenis living abroad.' }
+    ]
+  },
+  '/saudi-arabia/': {
+    path: '/saudi-arabia/',
+    title: 'Saudi Arabia Website Design, Development and SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS builds custom-coded Arabic (RTL) websites and delivers Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC across Riyadh, Jeddah, Dammam, and Saudi Arabia starting from $500.',
+    kicker: 'Saudi Arabia Country Focus',
+    heading: 'Saudi Arabia Website Design, Development and SEO Digital Marketing Company',
+    subheading: 'Custom-coded Arabic (RTL) websites, Arabic SEO, e-commerce SEO, SMM, and PPC solutions tailored for Arabic-speaking customers in Saudi Arabia.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/saudi-arabia/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Hand-coded Arabic (RTL) and bilingual Arabic/English websites starting from $500',
+      'Arabic keyword research covering Saudi and Gulf search habits, RTL technical audits, schema markup, and AEO/GEO',
+      'Built for 35.0M Saudi internet users (99.0% penetration), 57.2% online product research, and 82.7% mobile web traffic',
+      'Arabic product-page SEO paired with Snapchat, Instagram, TikTok, X, Facebook, and Google Shopping/Search ads',
+      'City and regional targeting across Riyadh, Jeddah, Dammam, and Saudi Arabia backed by 15+ years of SEO experience'
+    ],
+    features: [
+      { title: 'True RTL Arabic Web Engineering', desc: 'Hand-coded right-to-left layouts, Arabic typography, mobile-first speed, clean crawlable code, and bilingual support.' },
+      { title: 'Saudi & Gulf Arabic SEO, AEO & GEO', desc: 'Search-habit-aligned Arabic keyword research, RTL technical audits, local link building, and AI answer optimization.' },
+      { title: 'Arabic E-commerce, SMM & PPC', desc: 'Product-page SEO paired with Snapchat, Instagram, TikTok, X, Facebook, and Google Shopping ads tracked to revenue.' }
+    ],
+    languages: ['Arabic (Saudi Arabia / ar-SA RTL)', 'English'],
+    faq: [
+      { q: 'How much does Arabic SEO cost?', a: 'Packages start at $500.' },
+      { q: 'Do you build Arabic websites with RTL support?', a: 'Yes, custom-coded and fully right-to-left.' },
+      { q: 'Can you target Riyadh, Jeddah or Dammam specifically?', a: 'Yes, by city, region and country.' }
+    ]
+  },
+  '/qatar/': {
+    path: '/qatar/',
+    title: 'Qatar Website Design, Development and SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS builds custom-coded Arabic (RTL) websites and delivers Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC across Doha, Lusail, Al Wakrah, Al Rayyan, and Qatar starting from $500.',
+    kicker: 'Qatar Country Focus',
+    heading: 'Qatar Website Design, Development and SEO Digital Marketing Company',
+    subheading: 'Custom-coded Arabic (RTL) websites, Arabic SEO, e-commerce SEO, SMM, and PPC solutions tailored for Arabic-speaking customers in Qatar.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/qatar/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Hand-coded Arabic (RTL) and bilingual Arabic/English websites starting from $500',
+      'Arabic keyword research covering Qatari and Gulf search habits, RTL technical audits, schema markup, and AEO/GEO',
+      'Built for 3.13M Qatar internet users (~99% penetration), 2.95M active social identities, and 5G mobile commerce',
+      'Arabic product-page SEO paired with Instagram, TikTok, Snapchat, Facebook, and Google Shopping/Search ads',
+      'City and regional targeting across Doha, Lusail, Al Wakrah, Al Rayyan, and Qatar backed by 15+ years of SEO experience'
+    ],
+    features: [
+      { title: 'True RTL Arabic Web Engineering', desc: 'Hand-coded right-to-left layouts, Arabic typography, 5G mobile-first speed, clean crawlable code, and bilingual Arabic/English.' },
+      { title: 'Qatari & Gulf Arabic SEO, AEO & GEO', desc: 'Search-habit-aligned Arabic keyword research, RTL technical audits, local link building, and AI answer optimization.' },
+      { title: 'Arabic E-commerce, SMM & PPC', desc: 'Product-page SEO paired with Instagram, TikTok, Snapchat, Facebook, and Google Shopping ads tracked to revenue.' }
+    ],
+    languages: ['Arabic (Qatar / ar-QA RTL)', 'English'],
+    faq: [
+      { q: 'How much does Arabic SEO cost?', a: 'Packages start at $500.' },
+      { q: 'Do you build Arabic websites with RTL support?', a: 'Yes, custom-coded and fully right-to-left.' },
+      { q: 'Can you target Doha, Lusail or Al Rayyan specifically?', a: 'Yes, by city, area and country.' }
+    ]
+  },
+  '/morocco/': {
+    path: '/morocco/',
+    title: 'Morocco Website Design, Development and SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS builds custom-coded Arabic (RTL) & multilingual websites and delivers Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC across Casablanca, Rabat, Marrakech, and Morocco starting from $500.',
+    kicker: 'Morocco Country Focus',
+    heading: 'Morocco Website Design, Development and SEO Digital Marketing Company',
+    subheading: 'Custom-coded Arabic (RTL), French & English websites, Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC solutions for Morocco.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/morocco/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Hand-coded Arabic (RTL), French & English websites starting from $500 with cash-on-delivery e-commerce flows',
+      'Arabic SEO covering Darija and Modern Standard Arabic variants, RTL technical audits, and Casablanca/Rabat/Marrakech targeting',
+      'Dedicated Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) for AI answers and recommendations',
+      'Built for Morocco\'s 35.8M internet users (92.2% penetration), 22.8M social media users, and 56.1M mobile connections',
+      'Arabic product-page SEO paired with Instagram, TikTok, Facebook, YouTube, and Google Shopping/Search ads'
+    ],
+    features: [
+      { title: 'True RTL Arabic & Multilingual Web Engineering', desc: 'Hand-coded RTL layouts, Arabic typography, clean code for search & AI crawlers, and Arabic/French/English support.' },
+      { title: 'Morocco SEO, AEO & GEO Visibility', desc: 'Darija & MSA keyword research, structured FAQ/entity markup for AI quotes, and consistent brand citations across generative AI.' },
+      { title: 'E-commerce (COD), SMM & PPC', desc: 'Product-page SEO, cash-on-delivery workflows, and Instagram, TikTok, Facebook, YouTube & Google ads tracked to revenue.' }
+    ],
+    languages: ['Arabic (Morocco Darija & MSA / ar-MA RTL)', 'French (fr-MA)', 'English'],
+    faq: [
+      { q: 'How much does Arabic SEO cost?', a: 'Packages start at $500.' },
+      { q: 'What is AEO?', a: 'Answer Engine Optimization makes your content the source that search and AI answers quote.' },
+      { q: 'What is GEO?', a: 'Generative Engine Optimization improves how AI tools describe and recommend your brand.' }
+    ]
+  },
+  '/egypt/': {
+    path: '/egypt/',
+    title: 'Egypt Website Design, Development and SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS builds custom-coded Arabic (RTL) websites and delivers Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC across Cairo, Giza, Alexandria, and Egypt starting from $500.',
+    kicker: 'Egypt Country Focus',
+    heading: 'Egypt Website Design, Development and SEO Digital Marketing Company',
+    subheading: 'Custom-coded Arabic (RTL) websites, Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC solutions for the largest Arabic-speaking market in the world.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/egypt/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Hand-coded Arabic (RTL) and bilingual Arabic/English websites starting from $500',
+      'Arabic SEO covering Egyptian dialect and Modern Standard Arabic variants, RTL technical audits, and Cairo/Giza/Alexandria targeting',
+      'Dedicated Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) for AI answers and recommendations',
+      'Built for Egypt\'s 99.0M internet users, 51.6M active social media identities, and 72% mobile e-commerce transaction share',
+      'Arabic product-page SEO paired with Facebook, Instagram, TikTok, YouTube, and Google Shopping/Search ads'
+    ],
+    features: [
+      { title: 'True RTL Arabic Web Engineering', desc: 'Hand-coded right-to-left layouts, Arabic typography, fast mobile-first loading, clean crawlable code, and bilingual Arabic/English.' },
+      { title: 'Egypt SEO, AEO & GEO Visibility', desc: 'Egyptian & MSA keyword research, structured FAQ/entity markup for AI quotes, and consistent brand citations across generative AI.' },
+      { title: 'Arabic E-commerce, SMM & PPC', desc: 'Product-page SEO paired with Facebook, Instagram, TikTok, YouTube, and Google Shopping ads tracked from click to sale.' }
+    ],
+    languages: ['Arabic (Egypt / ar-EG RTL)', 'English'],
+    faq: [
+      { q: 'How much does Arabic SEO cost?', a: 'Packages start at $500.' },
+      { q: 'What is AEO?', a: 'Answer Engine Optimization makes your content the source that search and AI answers quote.' },
+      { q: 'What is GEO?', a: 'Generative Engine Optimization improves how AI tools describe and recommend your brand.' }
+    ]
+  },
+  '/iraq/': {
+    path: '/iraq/',
+    title: 'Iraq Website Design, Development and SEO Digital Marketing Company | UDMIDEAS',
+    description: 'UDMIDEAS builds custom-coded Arabic (RTL) websites with COD & digital-payment flows and delivers Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC across Baghdad, Basra, Erbil, Mosul, and Iraq starting from $500.',
+    kicker: 'Iraq Country Focus',
+    heading: 'Iraq Website Design, Development and SEO Digital Marketing Company',
+    subheading: 'Custom-coded Arabic (RTL) websites, Arabic SEO, AEO, GEO, e-commerce SEO, SMM, and PPC solutions tailored for Iraq.',
+    category: 'region',
+    canonicalUrl: `${CANONICAL_BASE}/iraq/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Hand-coded Arabic (RTL) and bilingual Arabic/English websites starting from $500 with COD and digital-payment flows',
+      'Arabic SEO covering Iraqi dialect and Modern Standard Arabic variants, RTL technical audits, and Baghdad/Basra/Erbil/Mosul targeting',
+      'Dedicated Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) for AI answers and recommendations',
+      'Built for Iraq\'s 42.1M internet users (83.8% penetration), 34.3M social identities, and expanding electronic payments',
+      'Arabic product-page SEO paired with Facebook, Instagram, TikTok, YouTube, and Google Search & Shopping ads'
+    ],
+    features: [
+      { title: 'True RTL Arabic Web Engineering', desc: 'Hand-coded right-to-left layouts, Arabic typography, fast mobile-first loading, clean crawlable code, and bilingual Arabic/English.' },
+      { title: 'Iraq SEO, AEO & GEO Visibility', desc: 'Iraqi & MSA keyword research, structured FAQ/entity markup for AI quotes, and consistent brand citations across generative AI.' },
+      { title: 'E-commerce (COD & Digital Pay), SMM & PPC', desc: 'Product-page SEO, COD/digital payment flows, and Facebook, Instagram, TikTok, YouTube & Google ads tracked to revenue.' }
+    ],
+    languages: ['Arabic (Iraq / ar-IQ RTL)', 'English'],
+    faq: [
+      { q: 'How much does Arabic SEO cost?', a: 'Packages start at $500.' },
+      { q: 'Can customers pay on delivery?', a: 'Yes, we can set up cash-on-delivery and digital-payment options.' },
+      { q: 'Can you target Baghdad, Basra or Erbil specifically?', a: 'Yes, by city and governorate.' }
     ]
   },
   '/arab-world/': {
