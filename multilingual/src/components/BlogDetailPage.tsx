@@ -240,6 +240,13 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
 
   // Internal Links Directory for this blog article
   const internalLinks = [
+    { label: 'Bakersfield Website Development Company', href: '/bakersfield-website-development-company/' },
+    { label: 'Anaheim Web Development Company', href: '/anaheim-web-development-company/' },
+    { label: 'Top PPC Services in San Diego, CA', href: '/top-ppc-services-in-san-diego-ca-usa/' },
+    { label: 'Best SEO Company in France (French SEO)', href: '/seo-company-france/' },
+    { label: 'Best SEO Agency in Kuwait (Arabic SEO)', href: '/seo-agency-kuwait/' },
+    { label: 'Keep PPC Sales & Cut the Bill (SEO, AEO & GEO)', href: '/keep-the-sales-and-cut-the-ppc-bill-how/' },
+    { label: 'Traditional Jewelry & Shoe Shops: Go Online', href: '/its-time-to-go-online/' },
     { label: 'Learn about Blog Commenting & Link Building', href: '/learn-about-blog-commenting/' },
     { label: 'USA to LATAM: Spanish SEO', href: '/usa-to-latam-spanish-seo-and-market-expansion/' },
     { label: 'Cross-Market SEO: Israel & Arab World', href: '/cross-market-seo-israel-and-the-arab-world/' },
@@ -985,6 +992,16 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               );
             }
 
+            // Check if paragraph is a bullet point item
+            if (paragraph.startsWith('• ')) {
+              return (
+                <div key={pIdx} className="flex items-start gap-3 pl-2 sm:pl-4 text-slate-200 leading-relaxed">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 shrink-0 mt-2.5" />
+                  <span>{renderFormattedText(paragraph.slice(2).trim())}</span>
+                </div>
+              );
+            }
+
             return (
               <p key={pIdx} className="leading-relaxed text-slate-300">
                 {renderFormattedText(paragraph)}
@@ -1182,34 +1199,36 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
         </div>
 
         {/* Strategic Internal Links Directory (Opening in New Tab) */}
-        <section className="mt-14 pt-10 border-t border-slate-900">
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
-                Internal Links Directory
+        {!blog.disableInternalLinks && (
+          <section className="mt-14 pt-10 border-t border-slate-900">
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
+                  Internal Links Directory
+                </div>
+                <h3 className="text-xl font-bold text-white mt-1">
+                  Explore Related Web Design & Digital Marketing Solutions
+                </h3>
               </div>
-              <h3 className="text-xl font-bold text-white mt-1">
-                Explore Related Web Design & Digital Marketing Solutions
-              </h3>
+              <span className="text-xs text-slate-500 hidden sm:inline font-mono">Opens in new tab</span>
             </div>
-            <span className="text-xs text-slate-500 hidden sm:inline font-mono">Opens in new tab</span>
-          </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
-            {internalLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-slate-900/50 border border-slate-850 hover:border-blue-500/50 hover:bg-slate-900 transition-all text-xs text-slate-300 hover:text-white flex items-center justify-between group"
-              >
-                <span className="truncate">{link.label}</span>
-                <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-blue-400 shrink-0 ml-1.5" />
-              </a>
-            ))}
-          </div>
-        </section>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
+              {internalLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-xl bg-slate-900/50 border border-slate-850 hover:border-blue-500/50 hover:bg-slate-900 transition-all text-xs text-slate-300 hover:text-white flex items-center justify-between group"
+                >
+                  <span className="truncate">{link.label}</span>
+                  <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-blue-400 shrink-0 ml-1.5" />
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Related Articles Carousel / Grid */}
         <div className="mt-14 pt-10 border-t border-slate-900">

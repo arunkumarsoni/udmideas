@@ -115,6 +115,7 @@ export interface BlogPost {
   date: string;
   author: string;
   tags: string[];
+  disableInternalLinks?: boolean;
 }
 
 export interface TeamMember {

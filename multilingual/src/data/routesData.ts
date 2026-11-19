@@ -17,6 +17,240 @@ export interface PageSEO {
 export const CANONICAL_BASE = 'https://www.udmideasusa.com';
 
 export const ALL_PAGES: Record<string, PageSEO> = {
+  '/bakersfield-website-development-company/': {
+    path: '/bakersfield-website-development-company/',
+    title: 'Bakersfield Website Development Company: Your Partner in Digital Success | UDMIDEAS',
+    description: 'UDMIDEAS is a top Bakersfield website development company with 15 years of experience in custom website design, front-end and back-end development, e-commerce solutions, SEO, and website optimization.',
+    kicker: 'Bakersfield, CA Custom Website Development & Design',
+    heading: 'Bakersfield Website Development Company: Your Partner in Digital Success',
+    subheading: '15 years of custom web design, front-end (React, Angular) and back-end (PHP, Python, Ruby, Java) engineering, e-commerce development, and digital marketing for Bakersfield businesses.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/bakersfield-website-development-company/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15 Years of Web Development Experience: Serving Bakersfield businesses across diverse industries with tailored digital solutions',
+      'Full-Stack Front-End & Back-End Coders: Proficient in HTML, CSS, JavaScript, React, Angular, PHP, Python, Ruby, and Java',
+      'End-to-End Digital Growth Services: Custom website design, e-commerce platforms, SEO, website maintenance, and digital marketing',
+      'Website Optimization & Redesigns: Structure, performance, usability, and search ranking improvements for existing business websites'
+    ],
+    features: [
+      { title: 'Custom Website Design & Dev', desc: 'Informational sites, complex web applications, and scalable e-commerce stores tailored to your brand.' },
+      { title: 'Front-End & Back-End Engineering', desc: 'Interactive React and Angular interfaces paired with secure, scalable PHP, Python, Ruby, and Java back ends.' },
+      { title: 'Website Optimization & Support', desc: 'Performance upgrades, usability audits, SEO improvements, and ongoing website security and maintenance.' },
+      { title: 'ROI-Driven Digital Marketing', desc: 'Content creation, social media management, analytics-backed campaigns, and SEO built for conversions.' }
+    ],
+    languages: ['English', 'Multilingual Web Development'],
+    faq: [
+      { q: 'What website development services does UDMIDEAS provide in Bakersfield?', a: 'UDMIDEAS provides Custom Website Design and Development, Front-End and Back-End Development, E-commerce Solutions, SEO, Website Maintenance and Support, and Digital Marketing Services.' },
+      { q: 'Can UDMIDEAS optimize my existing Bakersfield business website?', a: 'Yes. Our team analyzes your current site’s structure, content, and design to improve speed, usability, conversions, and search engine rankings.' },
+      { q: 'What technologies do UDMIDEAS Bakersfield developers use?', a: 'Our front-end developers use HTML, CSS, JavaScript, React, and Angular, while our back-end developers build secure, scalable systems in PHP, Python, Ruby, and Java.' }
+    ]
+  },
+  '/anaheim-web-development-company/': {
+    path: '/anaheim-web-development-company/',
+    title: 'Anaheim Web Development Company: A Trusted Partner in Digital Success | UDMIDEAS',
+    description: 'UDMIDEAS is a top-rated Anaheim eCommerce and PHP web development company with 15+ years of experience building custom websites, React/Node.js/PHP apps, SEO-friendly platforms, and responsive web designs.',
+    kicker: 'Anaheim, CA Custom Web & eCommerce Development',
+    heading: 'Anaheim Web Development Company: A Trusted Partner in Digital Success',
+    subheading: 'Over 15 years delivering custom eCommerce platforms, front-end and back-end engineering, SEO-friendly architecture, and responsive web design for Anaheim businesses.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/anaheim-web-development-company/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years of Proven Web Development Excellence: Serving startups, growing brands, and enterprises across Anaheim, CA',
+      'Full-Stack Engineering Team: Front-end (React, Angular, Vue.js) and back-end (Node.js, Python, PHP, Ruby on Rails) specialists',
+      'Custom eCommerce & SEO-Friendly Builds: Smooth navigation, secure payment gateways, mobile-first responsiveness, and built-in SEO best practices',
+      'Proven Anaheim Client Outcomes: +300% online sales, +150% website traffic, and +200% user engagement'
+    ],
+    features: [
+      { title: 'Front-End & Responsive Design', desc: 'Intuitive interfaces built with React, Angular, and Vue.js that look and perform flawlessly across smartphones and desktops.' },
+      { title: 'Back-End & PHP Architecture', desc: 'Robust, secure, scalable back-end engineering powered by PHP, Node.js, Python, and Ruby on Rails.' },
+      { title: 'Custom eCommerce Solutions', desc: 'Tailored online stores with fast performance, secure payment gateways, and conversion-focused customer journeys.' },
+      { title: 'Built-In SEO Best Practices', desc: 'Search-engine-ready structure and clean code engineered from launch to capture organic traffic.' }
+    ],
+    languages: ['English', 'Multilingual eCommerce Support'],
+    faq: [
+      { q: 'What web development services does UDMIDEAS offer in Anaheim?', a: 'UDMIDEAS provides Front-End Development (React, Angular, Vue.js), Back-End Development (Node.js, Python, PHP, Ruby on Rails), custom E-Commerce Solutions, SEO-friendly websites, and responsive web design.' },
+      { q: 'Why choose a custom website over a template for an Anaheim business?', a: 'A custom website reflects your unique brand identity, scales smoothly as your business grows, and delivers faster load times and superior user experiences compared to cookie-cutter templates.' },
+      { q: 'Can Anaheim businesses hire dedicated coders from UDMIDEAS?', a: 'Yes. UDMIDEAS makes it easy to hire experienced front-end, back-end, and full-stack coders for new builds, site revamps, and ongoing eCommerce development.' }
+    ]
+  },
+  '/top-ppc-services-in-san-diego-ca-usa/': {
+    path: '/top-ppc-services-in-san-diego-ca-usa/',
+    title: 'Unlocking Success: UDMIDEAS – The Top PPC Services in San Diego, CA',
+    description: 'UDMIDEAS is a top PPC agency in San Diego, CA with 15 years of experience managing Search Ads, Display Ads, Google Shopping, Video Ads, Performance Max, and Remarketing campaigns.',
+    kicker: 'San Diego, CA Pay-Per-Click Advertising Agency',
+    heading: 'Unlocking Success: UDMIDEAS – The Top PPC Services in San Diego, CA',
+    subheading: 'Drive instant visibility, quality leads, higher conversions, and up to 10x ROI across San Diego, La Jolla, Carlsbad, Encinitas, Coronado, Del Mar, Oceanside, and Chula Vista.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/top-ppc-services-in-san-diego-ca-usa/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15 Years of San Diego PPC Expertise: Search Ads, Re-marketing Ads, Display Ads, Google Shopping, Video Ads, Performance Max, and Sponsored Gmail Ads',
+      'San Diego Cities Coverage: Serving San Diego, La Jolla, Carlsbad, Encinitas, Coronado, Del Mar, Oceanside, Chula Vista, and global clients',
+      'Niche Industry Campaigns: Tailored PPC for sports & fitness, gems & jewelry, used trailers, car rentals, and eCommerce businesses',
+      'Conversion & ROI Focused: Ad extensions, long-tail keyword optimization, and hands-on campaign management targeting lower CPC and higher sales'
+    ],
+    features: [
+      { title: 'Search, Shopping & Performance Max', desc: 'Holistic Google Ads campaigns engineered to lower Cost Per Click and capture ready-to-buy intent.' },
+      { title: 'San Diego Local & Global Targeting', desc: 'Precision geo-targeting across San Diego County cities as well as Australia, UK, Ireland, Spain, and Switzerland.' },
+      { title: 'Industry-Tailored Ad Strategy', desc: 'Specialized PPC frameworks for sports equipment, gems & jewelry, used trailers, and car rental companies.' },
+      { title: 'Continuous Expert Management', desc: 'Hands-on monitoring, ad extension optimization, and data-driven bidding adjustments for maximum ROI.' }
+    ],
+    languages: ['English', 'Multilingual Global PPC'],
+    faq: [
+      { q: 'Which San Diego cities does UDMIDEAS serve for PPC services?', a: 'UDMIDEAS serves businesses across San Diego, La Jolla, Carlsbad, Encinitas, Coronado, Del Mar, Oceanside, Chula Vista, and international markets.' },
+      { q: 'What types of PPC campaigns does UDMIDEAS manage?', a: 'UDMIDEAS manages Search Ads, Remarketing Ads, Display Ads, Google Shopping Ads, Video Ads, Performance Max Campaigns, and Sponsored Gmail Ads.' },
+      { q: 'Which industries does UDMIDEAS specialize in for San Diego PPC?', a: 'UDMIDEAS works across diverse niches including sports businesses (tennis, baseball, basketball, football), gems and jewelry, used trailers, car rentals, and online retail.' }
+    ]
+  },
+  '/seo-company-in-new-zealand/': {
+    path: '/seo-company-in-new-zealand/',
+    title: 'Best SEO Company in New Zealand 2026-2027 | UDMIdeas (15+ Years Experience)',
+    description: 'UDMIdeas is the best SEO company in New Zealand with 15+ years of experience in On-Page SEO, Off-Page SEO, Technical SEO, GA4 & GTM analytics, ECommerce SEO, and PHP web development across Auckland, Wellington, Christchurch, and nationwide.',
+    kicker: 'New Zealand SEO Agency & Growth Partner',
+    heading: 'Best SEO Company in New Zealand 2026-2027',
+    subheading: 'Full-spectrum white-hat On-Page, Off-Page, Technical, Local, and ECommerce SEO services plus SEO-friendly web development across New Zealand cities, towns, and villages.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/seo-company-in-new-zealand/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '15+ Years of White-Hat SEO Experience: Proven rankings, DA/PA growth, and conversions across New Zealand, Australia, USA, Europe, and Asia',
+      'Full-Spectrum SEO & Analytics: On-Page SEO, Off-Page Link Building, Technical SEO, GSC issue fixes, GA4 & GTM event tracking',
+      'ECommerce & PHP Development: Specialized SEO and custom builds for Shopify, WooCommerce, Magento, Laravel, CodeIgniter, Symfony, and Core PHP',
+      'Nationwide New Zealand Coverage: Supporting businesses across Auckland, Wellington, Christchurch, regional towns, and rural villages'
+    ],
+    features: [
+      { title: 'On-Page & Technical SEO', desc: 'Keyword research, semantic content, schema markup, Core Web Vitals, crawlability, and GSC error resolution.' },
+      { title: 'White-Hat Link Building & DA/PA', desc: 'Authority editorial links, geo-targeted NZ links, local NZ citations, and Google Business Profile optimization.' },
+      { title: 'GA4, GTM & ECommerce Tracking', desc: 'Complete funnel tracking from View Product and Add to Cart to Purchase, Form Submit, and Phone Click conversions.' },
+      { title: 'Flexible Expert Hiring', desc: 'Hire hourly SEO experts, monthly professionals, dedicated SEO teams, or enterprise consulting across New Zealand.' }
+    ],
+    languages: ['English', 'Multilingual Global SEO'],
+    faq: [
+      { q: 'Why choose UDMIdeas as an SEO agency in New Zealand?', a: 'UDMIdeas has 15+ years of experience, proven results, and full-stack SEO expertise.' },
+      { q: 'Do you provide local SEO in New Zealand?', a: 'Yes, we specialize in NZ local SEO for all cities and towns.' },
+      { q: 'Do you offer ECommerce SEO?', a: 'Yes, including Shopify, WooCommerce, Magento, and custom PHP stores.' },
+      { q: 'How long does SEO take?', a: 'Typically 3–6 months for visible growth.' },
+      { q: 'Are your SEO methods safe?', a: '100% white-hat SEO.' }
+    ]
+  },
+  '/seo-company-france/': {
+    path: '/seo-company-france/',
+    title: 'UDMIDEAS: The Best SEO Company in France | French SEO Agency Services',
+    description: 'UDMIDEAS is recognized as the best SEO company in France, offering comprehensive SEO audits, customized strategies, on-page, off-page, technical SEO, local SEO, and transparent reporting.',
+    kicker: 'France SEO Company & Digital Marketing',
+    heading: 'UDMIDEAS: The Best SEO Company in France',
+    subheading: 'Discover why SEO is crucial in France, explore on-page, off-page, technical, local SEO, and content marketing strategies, and partner with UDMIDEAS for sustainable growth.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/seo-company-france/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      'Full-Spectrum SEO in France: On-Page SEO, Off-Page Link Building, Technical SEO, Local SEO, and Content Marketing',
+      'Customized 9-Point Agency Approach: From comprehensive SEO audits and keyword research to high-quality content and transparent reporting',
+      'Competitive Edge Across France: Higher Google rankings, enhanced user experience, stronger brand credibility, and sustained organic traffic',
+      'Accessible Support Team: Direct, responsive assistance from UDMIDEAS Digital Marketing Company in France'
+    ],
+    features: [
+      { title: 'Comprehensive SEO Audits', desc: 'Deep analysis of current performance, technical crawlability, strengths, weaknesses, and growth opportunities.' },
+      { title: 'On-Page & Content Strategy', desc: 'Keyword optimization, compelling meta tags, internal linking, blog posts, infographics, and video content.' },
+      { title: 'Off-Page & Local French SEO', desc: 'Reputable backlinks, guest blogging, Google My Business optimization, local citations, and regional keywords.' },
+      { title: 'Technical SEO & Transparency', desc: 'Site speed, mobile-friendliness, XML sitemaps, structured data, and regular ROI-focused reporting.' }
+    ],
+    languages: ['French', 'English'],
+    faq: [
+      { q: 'Why is SEO important for businesses in France?', a: 'SEO increases visibility and organic traffic on Google, delivers cost-effective long-term ROI, improves site speed and user experience, builds credibility, and gives businesses a competitive edge across France.' },
+      { q: 'What types of SEO services does UDMIDEAS provide in France?', a: 'UDMIDEAS provides comprehensive SEO audits, customized SEO strategies, keyword research, on-page optimization, content creation, link building, technical SEO, local SEO, and transparent reporting.' },
+      { q: 'Does UDMIDEAS handle Local SEO for French cities and regions?', a: 'Yes. UDMIDEAS optimizes Google My Business profiles, builds accurate local citations, and targets location-specific French keywords to capture local search traffic.' }
+    ]
+  },
+  '/seo-agency-kuwait/': {
+    path: '/seo-agency-kuwait/',
+    title: 'UDMIDEAS: The Best SEO Agency in Kuwait | Arabic & Organic SEO Services',
+    description: 'UDMIDEAS is the premier organic and Arabic SEO agency in Kuwait. Top-page Google Kuwait rankings, local SEO, technical SEO, transparent weekly meetings, and plans from 150 KD/month.',
+    kicker: 'Kuwait Arabic & Organic SEO Agency',
+    heading: 'UDMIDEAS: The Best SEO Agency in Kuwait',
+    subheading: 'Comprehensive Arabic and English organic SEO services for Kuwait service businesses and eCommerce stores, backed by weekly client meetings and transparent reporting.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/seo-agency-kuwait/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      'Google Kuwait Top-Page Rankings: Keyword research, Arabic on-page optimization, technical SEO, link building, content marketing, and local SEO',
+      'Transparent Kuwait SEO Plans: Essential SEO Plan (150 KD/month), Enterprise SEO Plan (400 KD/month), and Corporate SEO Plan (600 KD/month)',
+      'Weekly Online Client Meetings: Detailed transparent reporting keeping Kuwait business owners informed every step of the way',
+      'Proven Kuwait Results: +40% retail online sales in 6 months, +50% healthcare organic traffic, and +60% eCommerce organic traffic growth'
+    ],
+    features: [
+      { title: 'Arabic & Local Kuwait SEO', desc: 'Native keyword research, Arabic on-page content, and local search optimization tailored to Kuwait buyers.' },
+      { title: 'Technical SEO & Link Building', desc: 'Site speed, mobile-friendliness, crawlability, and authoritative backlinks for long-term Google Kuwait rankings.' },
+      { title: 'Transparent KD Monthly Plans', desc: 'Flexible Essential (150 KD), Enterprise (400 KD), and Corporate (600 KD) monthly SEO packages.' },
+      { title: 'Weekly Online Strategy Calls', desc: 'Direct weekly meetings with the UDMIDEAS SEO team to review rankings, traffic, and next steps.' }
+    ],
+    languages: ['Arabic', 'English'],
+    faq: [
+      { q: 'How much do monthly SEO packages in Kuwait cost at UDMIDEAS?', a: 'UDMIDEAS offers three transparent monthly plans in Kuwait: Essential SEO Plan at 150 KD/month (blogs and up to 20 pages), Enterprise SEO Plan at 400 KD/month (company sites), and Corporate SEO Plan at 600 KD/month (eCommerce websites).' },
+      { q: 'Does UDMIDEAS offer Arabic SEO for Kuwait businesses?', a: 'Yes. UDMIDEAS has a dedicated team of experienced Arabic SEO analysts, content creators, link builders, developers, and technical SEO specialists serving Kuwait service businesses and eCommerce stores.' },
+      { q: 'How can I contact UDMIDEAS for Arabic SEO in Kuwait?', a: 'You can reach UDMIDEAS directly on WhatsApp at +91-9521186150 to schedule an online meeting and discuss your Kuwait SEO campaign.' }
+    ]
+  },
+  '/keep-the-sales-and-cut-the-ppc-bill-how/': {
+    path: '/keep-the-sales-and-cut-the-ppc-bill-how/',
+    title: 'Your PPC Is Working. But What If You Could Keep the Sales and Cut the Bill? | UDMIDEAS',
+    description: 'Keep your Google Ads running while building SEO, AEO and GEO for $1,000 a month with Arun, Founder of UDMIDEAS. Own organic and AI traffic and cut ad spend dependency.',
+    kicker: 'eCommerce PPC Reduction & Organic SEO / AEO / GEO Growth',
+    heading: 'Your PPC Is Working. But What If You Could Keep the Sales and Cut the Bill?',
+    subheading: 'Stop renting 100% of your e-commerce traffic from Google Ads. Build compounding SEO, AEO, and GEO visibility alongside your PPC campaigns for $1,000/month.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/keep-the-sales-and-cut-the-ppc-bill-how/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      'Own Traffic Instead of Renting It: Complement Google Ads with organic rankings and AI recommendations that keep selling without per-click fees',
+      'Under 0.7% of Monthly Ad Spend: A $1,000/month SEO, AEO, and GEO engagement compared against $150,000/month in paid search spend',
+      '6-Point Execution Plan: Technical SEO audit, buyer-intent research, product/category optimization, AEO content, GEO authority building, and multilingual SEO',
+      '6-Month Compounding Transition: Protect paid revenue early, then lower ad spend step by step as organic and AI orders scale'
+    ],
+    features: [
+      { title: 'Technical & Product SEO', desc: 'Fix Core Web Vitals, crawl errors, structured data, and optimize category and product pages to rank and convert.' },
+      { title: 'AEO Direct-Answer Content', desc: 'Create FAQs, buying guides, and comparisons formatted for featured snippets and voice/AI answers.' },
+      { title: 'GEO AI Brand Authority', desc: 'Strengthen brand mentions, reviews, citations, and entity signals for ChatGPT, Gemini, Perplexity, and Copilot.' },
+      { title: 'Multilingual Market Expansion', desc: 'Expand your e-commerce store into new regions and languages without paying for every click.' }
+    ],
+    languages: ['English', 'Multilingual Global Coverage'],
+    faq: [
+      { q: 'Do I have to stop Google Ads to invest in SEO, AEO, and GEO?', a: 'No. You keep your PPC running as usual during the first few months so sales stay protected while organic rankings and AI citations build.' },
+      { q: 'How do AEO and GEO bring free e-commerce traffic?', a: 'AEO structures your pages for direct answers and featured snippets, while GEO builds brand authority and entity signals so AI platforms like ChatGPT, Gemini, Perplexity, and Copilot recommend your store with no per-click fee.' },
+      { q: 'What does Arun’s $1,000/month engagement include?', a: 'It covers a full technical SEO audit, buyer-intent keyword research, product and category page optimization, AEO content creation, GEO authority building, and multilingual SEO strategy.' }
+    ]
+  },
+  '/its-time-to-go-online/': {
+    path: '/its-time-to-go-online/',
+    title: 'Still Running Only a Traditional Jewelry or Shoe Shop? It’s Time to Go Online – Grow Business | UDMIDEAS',
+    description: 'Move your traditional jewelry or shoe shop online with a multilingual eCommerce store. Speak every customer’s language, earn in multiple currencies, and grow globally with Arun, Founder of UDMIDEAS.',
+    kicker: 'Multilingual eCommerce & Retail Digital Transformation',
+    heading: 'Still Running Only a Traditional Jewelry or Shoe Shop? It’s Time to Go Online – Grow Business',
+    subheading: 'Expand beyond one street and one city. Plan, design, develop, and market a complete multilingual online jewelry or shoe store with SEO, AEO, GEO, PPC, and international shipping.',
+    category: 'blog',
+    canonicalUrl: `${CANONICAL_BASE}/its-time-to-go-online/`,
+    schemaType: 'BlogPosting',
+    keyHighlights: [
+      '24/7 Global Selling: Reach buyers across Paris, Berlin, Madrid, Houston, Dubai, Riyadh, and worldwide around the clock',
+      'Multilingual eCommerce Architecture: Full localization in English, French, German, Arabic (RTL), and Spanish with local currencies and payments',
+      'Complete 5-Step Execution: Plan, Design, Develop, Market, and Grow directly with Arun, Founder of UDMIDEAS',
+      'AI & Search Visibility: Built-in SEO, AEO (Answer Engine Optimization), and GEO (Generative Engine Optimization) for Google, ChatGPT, Gemini, and Perplexity'
+    ],
+    features: [
+      { title: 'Luxury Mobile-First Design', desc: 'Clean, fast website design showcasing handcrafted jewelry and premium leather shoes across every device.' },
+      { title: 'Multilingual & Multi-Currency Store', desc: 'Complete product catalogs, RTL Arabic support, secure local payments, and international shipping setup.' },
+      { title: 'SEO, AEO & GEO Growth', desc: 'Rank on Google in every target country and earn recommendations across voice assistants and AI search engines.' },
+      { title: 'Direct Founder Guidance', desc: 'Work directly with Arun (15+ years experience) across the USA, Europe, Gulf countries, Israel, Latin America, and Australia.' }
+    ],
+    languages: ['English', 'French', 'German', 'Arabic (RTL)', 'Spanish'],
+    faq: [
+      { q: 'Why should a traditional jewelry or shoe shop go online?', a: 'A street shop only serves people who walk past it. An online store sells around the clock to buyers across countries, builds lasting brand equity for your family, and protects your market share.' },
+      { q: 'Why is a multilingual eCommerce store better than an English-only website?', a: 'Customers buy faster where they feel understood. Selling in French, German, Arabic (RTL), Spanish, and English builds trust, ranks in each country’s Google search results, and faces less competition.' },
+      { q: 'How does UDMIDEAS help traditional shops launch online?', a: 'Arun and UDMIDEAS handle all five steps: Plan target countries and pricing, Design a luxury mobile-ready store, Develop multilingual eCommerce with payments and shipping, Market with SEO, AEO, GEO, PPC and social media, and Grow worldwide sales.' }
+    ]
+  },
   '/learn-about-blog-commenting/': {
     path: '/learn-about-blog-commenting/',
     title: 'Learn about Blog Commenting | UDMIDEAS | How to do Blog Commenting?',
@@ -1048,29 +1282,33 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   },
   '/team/': {
     path: '/team/',
-    title: 'Our Dedicated Team | Arun & Multilingual Experts | UDMIDEAS',
-    description: 'Meet the executive team at UDMIDEAS led by Founder Arun. Dedicated full-stack developers, multilingual SEO masters, AEO/GEO analysts, and senior PPC media buyers.',
-    kicker: 'Our People',
-    heading: 'Meet Founder Arun & The UDMIDEAS Multilingual Team.',
-    subheading: 'A dedicated group of senior software architects, native-speaking SEO strategists, and performance media buyers managing cross-border digital expansion.',
+    title: 'UDMIDEAS Team Profiles | Arun, Aidasaad Noor, Sophie Richard, Juliette Celine, Jouse & Jake Adam',
+    description: 'Meet the senior specialists behind UDMIDEAS: Founder Arun (Multilingual SEO & PHP Web Development), Aidasaad Noor (Arabic Digital Marketing, Saudi Arabia), Sophie Richard (German SEO, Germany), Juliette Celine (French SEO & Web Dev, France), Jouse (Web Developer, New York), and Jake Adam (AI Engineer, Spain).',
+    kicker: 'Our Team',
+    heading: 'Meet the Specialists Behind UDMIDEAS.',
+    subheading: 'Six senior practitioners across New York, France, Germany, Spain, Saudi Arabia, and global markets uniting multilingual SEO, web development, digital marketing, and applied AI.',
     category: 'core',
     canonicalUrl: `${CANONICAL_BASE}/team/`,
     schemaType: 'AboutPage',
     keyHighlights: [
-      'Founder Arun: 15+ years directing enterprise web architecture and global acquisition',
-      'Dedicated Multilingual SEO & AEO/GEO Engineers for international search dominance',
-      'Full-Stack React, Laravel, and Magento engineers delivering sub-second experiences',
-      'Cross-Cultural SMM and Video Production teams operating across 28+ languages'
+      'Arun (Founder, 15+ Years): Multilingual SEO, PHP web development, web design, SMM, and PPC across French, German, Arabic, Hebrew, Polish, and Spanish',
+      'Aidasaad Noor (Saudi Arabia, 10+ Years): Arabic SEO, right-to-left content optimization, social media marketing, and paid search/social across the Gulf & Middle East',
+      'Sophie Richard (Germany, 10+ Years): German keyword research, technical SEO audits, on-page optimization, content strategy, and local search',
+      'Juliette Celine (France, 10+ Years): French SEO specialist and responsive web developer building sites made to rank from the first line of code',
+      'Jouse (New York, 10+ Years): Fast, secure, responsive website development from planning and layout to testing and launch',
+      'Jake Adam (Spain, 10+ Years): Practical AI engineering, automation workflows, intelligent tools, and AI answer engine readiness'
     ],
     features: [
-      { title: 'Executive Architecture Lead', desc: 'Direct strategy consulting with Founder Arun for high-value enterprise and eCommerce solutions.' },
-      { title: 'Native Linguistic Specialists', desc: 'In-house content strategists and community managers fluent in Arabic, Hebrew, German, French, and Spanish.' },
-      { title: 'Certified Ad Strategists', desc: 'Google Premier and Meta certified media buyers managing multi-million dollar international budgets.' },
-      { title: '24/7 Global Delivery', desc: 'Synchronized operational hubs in the USA, Europe, and the Middle East ensuring zero timezone lag.' }
+      { title: 'Multilingual Leadership', desc: 'Led directly by Founder Arun with 15+ years combining SEO, PPC, SMM, and PHP web development.' },
+      { title: 'Native Regional Specialists', desc: 'In-market experts in Saudi Arabia, Germany, and France crafting culturally authentic search and marketing campaigns.' },
+      { title: 'Full-Stack Web Engineering', desc: 'Responsive, search-friendly websites built cleanly in New York and France for speed and conversions.' },
+      { title: 'Applied AI Engineering', desc: 'Practical automation workflows, intelligent tools, and AI search optimization engineered from Spain.' }
     ],
-    languages: ['English', 'Spanish', 'French', 'German', 'Arabic', 'Hebrew', 'Portuguese'],
+    languages: ['English', 'French', 'German', 'Arabic', 'Hebrew', 'Polish', 'Spanish'],
     faq: [
-      { q: 'Can I speak directly with Arun?', a: 'Yes! Arun connects directly with all prospective enterprise and eCommerce clients via WhatsApp (+91-9521186150) and scheduled video calls.' }
+      { q: 'Can I work directly with Arun and the UDMIDEAS specialists?', a: 'Yes. Arun works closely with business owners, founders, and technical teams directly, coordinating with our regional specialists in Saudi Arabia, Germany, France, New York, and Spain.' },
+      { q: 'Which languages and markets does the UDMIDEAS team cover?', a: 'Our team works across English, French, German, Arabic, Hebrew, Polish, and Spanish, supporting clients across the USA, Europe, Saudi Arabia and the Middle East, Latin America, and international markets.' },
+      { q: 'Does UDMIDEAS handle both website development and AI automation alongside SEO?', a: 'Yes. Our team unites multilingual SEO, PPC, and social media marketing with hands-on web development (Arun, Juliette Celine, and Jouse) and applied AI engineering (Jake Adam).' }
     ]
   },
   '/services/': {
@@ -2556,6 +2794,35 @@ export const ALL_PAGES: Record<string, PageSEO> = {
       { q: 'Does UDMIDEAS provide website development services throughout North Carolina?', a: 'Yes. We provide website design and development services throughout North Carolina, including Charlotte, Raleigh, Durham, Greensboro, Asheville, Wilmington and other locations.' },
       { q: 'What is the starting price for a business website?', a: 'Our business website development starts at $500. Final pricing depends on the required pages, features, design and functionality.' },
       { q: 'Do you serve businesses outside Charlotte and Raleigh?', a: 'Yes. Our services are available throughout North Carolina, including the Mountains, Piedmont and Coast regions and their surrounding communities.' }
+    ]
+  },
+  '/michigan/': {
+    path: '/michigan/',
+    title: 'Michigan Website Design, Development & Multilingual Digital Marketing Company – UDMIDEAS',
+    description: 'UDMIDEAS provides custom website development (from $500), multilingual SEO (English, Spanish, French, German, Arabic), AEO, GEO, SMM, and PPC across Detroit, Grand Rapids, Ann Arbor, Lansing, Traverse City, Kalamazoo, and all 10 Michigan regions.',
+    kicker: 'Michigan Web & Multilingual Marketing',
+    heading: 'Michigan Website Design, Development & Multilingual Digital Marketing Company – UDMIDEAS',
+    subheading: 'Custom-coded websites from scratch, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), SMM, and PPC built for Michigan businesses.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/michigan/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      '15+ years of custom website development and international digital marketing experience serving Detroit, Grand Rapids, Ann Arbor, Lansing, Traverse City, Kalamazoo, and all 10 Michigan regions',
+      'Business websites starting at $500 using React JS, PHP, Laravel, WordPress, and custom eCommerce architectures',
+      'Multilingual website development and SEO in English, Spanish, French, German, and Arabic backed by hreflang and search intent research',
+      'Integrated SEO, AEO, GEO, Social Media Marketing (SMM), and Google/Meta/LinkedIn PPC advertising',
+      'Industry-specific solutions for Michigan automotive, manufacturing, healthcare, construction, technology, real estate, agriculture, tourism, and logistics'
+    ],
+    features: [
+      { title: 'Custom Michigan Web Engineering', desc: 'Hand-coded React JS, PHP, Laravel, WordPress, eCommerce, and custom web applications starting from $500.' },
+      { title: 'Multilingual SEO, AEO & GEO', desc: 'Language-specific URLs, hreflang, technical SEO, direct-answer AEO, and generative search GEO.' },
+      { title: 'SMM & PPC Campaigns', desc: 'Google Ads, Meta, LinkedIn, content marketing, and video campaigns tracked to measurable enquiries.' }
+    ],
+    languages: ['English', 'Spanish', 'French', 'German', 'Arabic'],
+    faq: [
+      { q: 'Does UDMIDEAS provide website development services throughout Michigan?', a: 'Yes. We provide website design and development services throughout Michigan, including Detroit, Grand Rapids, Ann Arbor, Lansing, Traverse City, Kalamazoo and Upper Peninsula locations.' },
+      { q: 'What is the starting price for a business website?', a: 'Our business website development starts at $500. Final pricing depends on the required pages, features, design and functionality.' },
+      { q: 'Do you serve businesses in the Upper Peninsula?', a: 'Yes. Our services are available throughout Michigan, including the Upper Peninsula, Traverse City Region, Detroit Region and all other business regions.' }
     ]
   },
   '/privacy-policy/': {

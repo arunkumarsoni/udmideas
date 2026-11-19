@@ -116,7 +116,7 @@ export default function App() {
           <BlogDetailPage
             blog={matchedBlog}
             onBack={() => navigateTo('/blog/')}
-            onSelectBlog={(b) => navigateTo(`/blog/${b.slug}/`)}
+            onSelectBlog={(b) => navigateTo(b.customUrl || `/blog/${b.slug}/`)}
             onOpenContact={() => setIsContactModalOpen(true)}
           />
         </main>
@@ -125,7 +125,7 @@ export default function App() {
           <BlogPage
             onBackToHome={() => navigateTo('/')}
             onOpenContact={() => setIsContactModalOpen(true)}
-            onSelectBlog={(b) => navigateTo(`/blog/${b.slug}/`, true)}
+            onSelectBlog={(b) => navigateTo(b.customUrl || `/blog/${b.slug}/`, true)}
           />
         </main>
       ) : isHome ? (
@@ -173,7 +173,7 @@ export default function App() {
 
           {/* 11. Our Latest Blogs Section (4 Blogs in Slider) */}
           <LatestBlogsSection
-            onOpenBlogReader={(b) => navigateTo(`/blog/${b.slug}/`, true)}
+            onOpenBlogReader={(b) => navigateTo(b.customUrl || `/blog/${b.slug}/`, true)}
             onOpenBlogPage={() => navigateTo('/blog/', true)}
           />
 
