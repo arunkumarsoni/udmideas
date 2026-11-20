@@ -359,33 +359,33 @@ export const AeoServicesContent: React.FC = () => {
       {/* 1. What Are AEO Services & Where It Shows Up */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 font-mono text-xs font-semibold mb-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-[#1D4ED8] font-mono text-xs font-semibold mb-2">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Next-Generation Search Visibility · 15+ Years Search Track Record</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             What Are AEO Services?
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
-            AEO services, or answer engine optimization services, prepare your website and brand entity so search engines and AI tools can extract a clear, correct answer from your content and display it directly to users. The objective is to be <strong className="text-white">the answer</strong>, not merely an unclicked link.
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
+            AEO services, or answer engine optimization services, prepare your website and brand entity so search engines and AI tools can extract a clear, correct answer from your content and display it directly to users. The objective is to be <strong className="text-[#0F172A]">the answer</strong>, not merely an unclicked link.
           </p>
         </div>
 
         {/* 2-Column Overview Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Card 1: Where AEO Shows Up */}
-          <div className="p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2 text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
+          <div className="p-6 sm:p-7 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2 text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider">
               <Cpu className="w-4 h-4" />
               <span>Where AEO Appears Across Modern Search</span>
             </div>
             <div className="space-y-3">
               {whereAeoShowsUp.map((item, idx) => (
-                <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <div key={idx} className="flex items-start gap-2.5 text-xs text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-white">{item.title}:</strong>{' '}
-                    <span className="text-slate-400">{item.desc}</span>
+                    <strong className="text-[#0F172A]">{item.title}:</strong>{' '}
+                    <span className="text-[#64748B]">{item.desc}</span>
                   </div>
                 </div>
               ))}
@@ -393,20 +393,20 @@ export const AeoServicesContent: React.FC = () => {
           </div>
 
           {/* Card 2: How Answer Engines Choose a Source */}
-          <div className="p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="p-6 sm:p-7 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
               <Bot className="w-4 h-4" />
               <span>How Answer Engines Select Your Business</span>
             </div>
             <div className="space-y-3">
               {howEnginesChooseSource.map((item) => (
-                <div key={item.num} className="flex items-start gap-2.5 text-xs text-slate-300">
-                  <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">
+                <div key={item.num} className="flex items-start gap-2.5 text-xs text-[#475569]">
+                  <span className="font-mono text-emerald-700 font-bold shrink-0 mt-0.5">
                     {item.num}.
                   </span>
                   <div>
-                    <strong className="text-white">{item.title}:</strong>{' '}
-                    <span className="text-slate-400">{item.desc}</span>
+                    <strong className="text-[#0F172A]">{item.title}:</strong>{' '}
+                    <span className="text-[#64748B]">{item.desc}</span>
                   </div>
                 </div>
               ))}
@@ -414,28 +414,28 @@ export const AeoServicesContent: React.FC = () => {
           </div>
         </div>
 
-        <div className="p-5 rounded-2xl bg-slate-900/40 border border-slate-850 text-xs sm:text-sm text-slate-300 leading-relaxed">
-          <strong className="text-white">Traditional SEO ranks pages. AEO makes sure the right sentence from your page is the one that gets quoted.</strong> We treat the two as one connected system, which is why our AEO services sit directly on top of robust technical SEO, schema architecture, and high-authority link building.
+        <div className="p-5 rounded-2xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
+          <strong className="text-[#0F172A]">Traditional SEO ranks pages. AEO makes sure the right sentence from your page is the one that gets quoted.</strong> We treat the two as one connected system, which is why our AEO services sit directly on top of robust technical SEO, schema architecture, and high-authority link building.
         </div>
       </section>
 
       {/* 2. AEO Statistics: Why Answers Matter in 2026 */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Data-Led Market Reality
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             AEO Statistics: Why Answers Matter in 2026
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             The fundamental shift from scrolling links to reading answers is already evident in global search analytics. These figures explain why AEO is now mandatory for high-converting search visibility:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Market Metric</th>
                 <th className="py-3.5 px-4 sm:px-6">Figure (Approx.)</th>
@@ -443,19 +443,19 @@ export const AeoServicesContent: React.FC = () => {
                 <th className="py-3.5 px-4 sm:px-6">What It Means for Your Brand</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {aeoStats.map((stat, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-[#0F172A]">
                     {stat.stat}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {stat.figure}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-400 text-xs whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#64748B] text-xs whitespace-nowrap">
                     {stat.source}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {stat.meaning}
                   </td>
                 </tr>
@@ -464,7 +464,7 @@ export const AeoServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 italic">
+        <p className="text-xs text-[#64748B] italic">
           <strong>The core takeaway:</strong> Search is not dying, but the click is moving. Brands that supply the definitive answer capture buyer trust, even before the visitor ever clicks through to a page.
         </p>
       </section>
@@ -472,13 +472,13 @@ export const AeoServicesContent: React.FC = () => {
       {/* 3. Benefits of AEO Services */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Proven Commercial Impact
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Benefits of AEO Services for Modern Businesses
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             For service businesses like dental practices, legal firms, and home contractors, the ROI is direct. When someone searches <em>"who is the best dentist near me"</em> and an AI assistant names your clinic, the phone call comes to you:
           </p>
         </div>
@@ -487,16 +487,16 @@ export const AeoServicesContent: React.FC = () => {
           {benefits.map((b) => (
             <div
               key={b.num}
-              className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-all space-y-2 flex flex-col justify-between"
+              className="p-6 rounded-2xl bg-white border border-[#E2E8F0] hover:border-blue-600/30 transition-all space-y-2 flex flex-col justify-between"
             >
               <div>
-                <div className="font-mono text-xs font-bold text-emerald-400 bg-emerald-950/60 px-2.5 py-0.5 rounded border border-emerald-900/40 w-fit mb-3">
+                <div className="font-mono text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200 w-fit mb-3">
                   BENEFIT {b.num}
                 </div>
-                <h3 className="text-base font-bold text-white mb-2">
+                <h3 className="text-base font-bold text-[#0F172A] mb-2">
                   {b.title}
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {b.desc}
                 </p>
               </div>
@@ -508,13 +508,13 @@ export const AeoServicesContent: React.FC = () => {
       {/* 4. Our AEO Services Process: 8 Steps */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Systematic Methodology
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our AEO Services Process: 8 Systematic Steps
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             This 8-step framework functions across every industry and language we support, transforming standard content into authoritative direct-answer assets:
           </p>
         </div>
@@ -523,16 +523,16 @@ export const AeoServicesContent: React.FC = () => {
           {eightStepsProcess.map((step) => (
             <div
               key={step.step}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 flex flex-col justify-between hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 flex flex-col justify-between hover:border-blue-600/30 transition-all"
             >
               <div>
-                <div className="font-mono text-xs font-bold text-blue-400 mb-1">
+                <div className="font-mono text-xs font-bold text-[#1D4ED8] mb-1">
                   STEP {step.step}
                 </div>
-                <h3 className="text-sm font-bold text-white mb-2">
+                <h3 className="text-sm font-bold text-[#0F172A] mb-2">
                   {step.title}
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -544,13 +544,13 @@ export const AeoServicesContent: React.FC = () => {
       {/* 5. Our 90-Day AEO Services Plan */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Execution Timeline
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our 90-Day AEO Services Plan
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Most websites show early snippet captures and AI citations within 90 days. We establish a clear, predictable quarterly timeline from audit to measurable revenue:
           </p>
         </div>
@@ -559,24 +559,24 @@ export const AeoServicesContent: React.FC = () => {
           {ninetyDayPlan.map((phase, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all relative overflow-hidden"
+              className="p-6 sm:p-7 rounded-2xl bg-white border border-[#E2E8F0] flex flex-col justify-between hover:border-blue-600/30 transition-all relative overflow-hidden"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-xs font-bold text-emerald-400 bg-emerald-950/60 px-2.5 py-1 rounded border border-emerald-900/40">
+                  <span className="font-mono text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">
                     {phase.timeline}
                   </span>
-                  <span className="text-xs font-mono text-slate-500 font-bold">
+                  <span className="text-xs font-mono text-[#64748B] font-bold">
                     {phase.phase}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-3">
+                <h3 className="text-lg font-bold text-[#0F172A] mb-3">
                   {phase.title}
                 </h3>
-                <div className="space-y-2.5 pt-3 border-t border-slate-850">
+                <div className="space-y-2.5 pt-3 border-t border-[#E2E8F0]">
                   {phase.items.map((item, itemIdx) => (
-                    <div key={itemIdx} className="flex items-start gap-2 text-xs text-slate-300">
-                      <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                    <div key={itemIdx} className="flex items-start gap-2 text-xs text-[#475569]">
+                      <span className="font-mono text-emerald-700 font-bold shrink-0 mt-0.5">•</span>
                       <span className="leading-relaxed">{item}</span>
                     </div>
                   ))}
@@ -590,40 +590,40 @@ export const AeoServicesContent: React.FC = () => {
       {/* 6. AEO vs SEO vs GEO: What Is the Difference? */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Channel Comparison & Synergy
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             AEO vs SEO vs GEO: What Is the Difference?
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             The three disciplines overlap, and an elite search strategy integrates all three. SEO is the foundation, AEO formats the answers, and GEO establishes the brand authority:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Strategic Factor</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">SEO</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">AEO</th>
-                <th className="py-3.5 px-4 sm:px-6 text-purple-400">GEO</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">SEO</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">AEO</th>
+                <th className="py-3.5 px-4 sm:px-6 text-purple-700">GEO</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {comparisonData.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.factor}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.seo}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-300">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700">
                     {row.aeo}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-purple-300">
+                  <td className="py-3.5 px-4 sm:px-6 text-purple-700">
                     {row.geo}
                   </td>
                 </tr>
@@ -632,7 +632,7 @@ export const AeoServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
           <p>
             <strong>AEO is never a one-time project:</strong> Answers go stale over time, and generative AI models strongly favor fresh, updated sources. At UDMIDEAS, we audit and update your priority answer pages every quarter to protect your citations.
           </p>
@@ -640,27 +640,27 @@ export const AeoServicesContent: React.FC = () => {
       </section>
 
       {/* 7. Why Choose UDMIDEAS for AEO Services */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-6">
+      <section className="p-8 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Proven Agency Leadership
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Why Choose UDMIDEAS for AEO Services
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Led by founder Arun with more than 15 years of technical search engine dominance, we combine engineering rigor, semantic schema, and high-authority link outreach under one roof:
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {whyChooseUdmideas.map((item, idx) => (
-            <div key={idx} className="p-4 rounded-xl bg-slate-950 border border-slate-850 space-y-1">
-              <h4 className="text-sm font-bold text-white flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <div key={idx} className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-1">
+              <h4 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
                 <span>{item.title}</span>
               </h4>
-              <p className="text-xs text-slate-300 pl-6 leading-relaxed">
+              <p className="text-xs text-[#475569] pl-6 leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -671,36 +671,36 @@ export const AeoServicesContent: React.FC = () => {
       {/* 8. Industries We Serve */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Tailored Industry Frameworks
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Industries We Serve with AEO Solutions
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             We adapt question research and schema models to your industry's specific commercial buying questions:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Industry Sector</th>
                 <th className="py-3.5 px-4 sm:px-6">Typical Question We Target</th>
                 <th className="py-3.5 px-4 sm:px-6">AEO Solution Architecture</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {industriesServed.map((ind, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {ind.industry}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {ind.question}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-xs text-slate-300">
+                  <td className="py-3.5 px-4 sm:px-6 text-xs text-[#475569]">
                     {ind.solution}
                   </td>
                 </tr>
@@ -709,7 +709,7 @@ export const AeoServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 italic">
+        <p className="text-xs text-[#64748B] italic">
           <strong>Honesty pledge:</strong> We do not make false promises to control what an AI algorithm outputs. No legitimate agency can. We promise a proven, rigorous process, superior content, and steady, measured progress.
         </p>
       </section>
@@ -717,10 +717,10 @@ export const AeoServicesContent: React.FC = () => {
       {/* 9. AEO Services FAQ */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Questions & Answers
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             AEO Services FAQ
           </h2>
         </div>
@@ -731,23 +731,23 @@ export const AeoServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-all"
+                className="rounded-2xl border border-[#E2E8F0] bg-white overflow-hidden transition-all"
               >
                 <button
                   onClick={() => toggleFaq(idx)}
-                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-slate-850/50 transition-colors cursor-pointer"
+                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-[#F8FAFC] transition-colors cursor-pointer"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="text-xs font-mono font-bold text-blue-400 shrink-0 mt-0.5">
+                    <span className="text-xs font-mono font-bold text-[#1D4ED8] shrink-0 mt-0.5">
                       Q{String(idx + 1).padStart(2, '0')}.
                     </span>
-                    <span className="text-xs sm:text-sm font-bold text-white leading-snug">
+                    <span className="text-xs sm:text-sm font-bold text-[#0F172A] leading-snug">
                       {faq.q}
                     </span>
                   </div>
-                  <div className="text-slate-400 shrink-0">
+                  <div className="text-[#64748B] shrink-0">
                     {isOpen ? (
-                      <ChevronUp className="w-4 h-4 text-emerald-400" />
+                      <ChevronUp className="w-4 h-4 text-emerald-700" />
                     ) : (
                       <ChevronDown className="w-4 h-4" />
                     )}
@@ -755,7 +755,7 @@ export const AeoServicesContent: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-slate-850/60 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
                     <p className="pl-7">{faq.a}</p>
                   </div>
                 )}
@@ -766,22 +766,22 @@ export const AeoServicesContent: React.FC = () => {
       </section>
 
       {/* 10. Conclusion: Be the Answer Your Customers Hear */}
-      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-blue-950/60 via-slate-900 to-emerald-950/40 border border-blue-500/30 text-center space-y-6">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 text-center space-y-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Clock className="w-3.5 h-3.5" />
           <span>Full-Spectrum AEO & GEO Architecture</span>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight max-w-2xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] tracking-tight max-w-2xl mx-auto">
           Conclusion: Be the Answer Your Customers Hear
         </h2>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-xl mx-auto leading-relaxed">
           Search is turning into conversation. The brand that provides the clear, trusted answer wins the customer, often without a single click. AEO services are how you earn that place while competitors are still chasing outdated keyword tricks.
         </p>
 
-        <p className="text-sm font-bold text-white">
-          Contact Founder Arun directly: <span className="text-emerald-400 font-mono">+91-9521186150</span> · Email: <span className="text-blue-400 font-mono">info@udmideasusa.com</span>
+        <p className="text-sm font-bold text-[#0F172A]">
+          Contact Founder Arun directly: <span className="text-emerald-700 font-mono">+91-9521186150</span> · Email: <span className="text-[#1D4ED8] font-mono">info@udmideasusa.com</span>
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -789,7 +789,7 @@ export const AeoServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20ready%20to%20get%20started%20with%20AEO%20Services%20at%20UDMIDEAS."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-xl shadow-emerald-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp Arun (+91-9521186150)</span>
@@ -797,7 +797,7 @@ export const AeoServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <Mail className="w-4 h-4" />
             <span>Request Custom AEO Audit</span>

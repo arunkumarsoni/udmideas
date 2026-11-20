@@ -380,23 +380,23 @@ export const UruguayServicesContent: React.FC = () => {
     <div className="space-y-14 text-left">
       {/* Hero / Page Introduction */}
       <header className="max-w-4xl space-y-4">
-        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Globe2 className="w-3.5 h-3.5 shrink-0" />
           <span>Uruguay Website Design, Development & Spanish SEO · 15+ Years Experience</span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight text-balance">
           Spanish Website Design, Development & SEO Digital Marketing Company in Uruguay – UDMIDEAS
         </h1>
 
-        <div className="space-y-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+        <div className="space-y-3 text-sm sm:text-base text-[#475569] leading-relaxed">
           <p>
             Are you looking for a professional Spanish website design, development, and SEO digital marketing company in Uruguay? UDMIDEAS provides custom-coded website development, Spanish-language SEO, eCommerce SEO, Social Media Marketing (SMM), and Pay-Per-Click (PPC) advertising solutions for businesses looking to grow online.
           </p>
           <p>
             We help Uruguayan businesses build professional websites, improve Google search rankings, attract potential customers, and expand their digital presence through customized digital marketing strategies.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Whether you operate a startup, local business, professional service company, retail brand, tourism business, or eCommerce store, UDMIDEAS offers complete digital solutions to connect your brand with Spanish-speaking customers across Uruguay.
           </p>
         </div>
@@ -406,7 +406,7 @@ export const UruguayServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20Spanish%20website%20design%20and%20SEO%20in%20Uruguay."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp: +91-9521186150</span>
@@ -414,7 +414,7 @@ export const UruguayServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
           >
             <span>Request Proposal (Direct Email)</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -425,16 +425,16 @@ export const UruguayServicesContent: React.FC = () => {
       {/* Why Does Your Business in Uruguay Need a Professional Website? */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider">
             Digital Foundation
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Why Does Your Business in Uruguay Need a Professional Website?
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Uruguay has a highly connected digital population. Customers increasingly use Google, websites, and social media to discover businesses, compare products, research services, and make purchasing decisions.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             A professional Spanish-language website helps your business establish credibility and communicate with local customers. Your website should include:
           </p>
         </div>
@@ -443,15 +443,15 @@ export const UruguayServicesContent: React.FC = () => {
           {whyWebsiteItems.map((item, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <div className="p-4 rounded-xl bg-blue-950/30 border border-blue-800/40 text-xs sm:text-sm text-blue-200">
+        <div className="p-4 rounded-xl bg-blue-50 border border-blue-200 text-xs sm:text-sm text-[#1D4ED8]">
           At UDMIDEAS, we develop custom-coded websites according to your business requirements, target audience, and long-term growth objectives.
         </div>
       </section>
@@ -459,32 +459,32 @@ export const UruguayServicesContent: React.FC = () => {
       {/* Uruguay Digital Market – Important Statistics */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Market Intelligence
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Uruguay Digital Market – Important Statistics
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Uruguay offers attractive opportunities for businesses investing in website development, SEO, eCommerce, and digital advertising. According to DataReportal's Digital 2027 Uruguay report, using October 2026 data:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-3xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-3xl">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Digital Market Statistics</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Figures</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Figures</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {uruguayStats.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-medium text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-medium text-[#0F172A]">
                     {row.metric}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700">
                     {row.figure}
                   </td>
                 </tr>
@@ -494,25 +494,25 @@ export const UruguayServicesContent: React.FC = () => {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-sm font-bold text-white">Additional digital market indicators:</h3>
+          <h3 className="text-sm font-bold text-[#0F172A]">Additional digital market indicators:</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-4xl">
             {marketIndicators.map((item, idx) => (
               <div
                 key={idx}
-                className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+                className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
               >
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                 <span>{item}</span>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="max-w-4xl space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="max-w-4xl space-y-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
           <p>
             These figures demonstrate the importance of having a professional website and a strong digital marketing strategy.
           </p>
-          <p className="text-xs text-slate-400 italic">
+          <p className="text-xs text-[#64748B] italic">
             Note: Mobile connections can exceed the population because individuals may have multiple connections. Social media user identities do not necessarily represent unique individuals. (DataReportal – Global Digital Insights)
           </p>
         </div>
@@ -521,37 +521,37 @@ export const UruguayServicesContent: React.FC = () => {
       {/* Uruguay Regions – Our Website Design & SEO Target Locations */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <MapPin className="w-4 h-4" />
             <span>National 19-Department Coverage</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Uruguay Regions – Our Website Design & SEO Target Locations
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Uruguay is divided into 19 administrative departments. UDMIDEAS can develop location-specific websites, SEO landing pages, and digital marketing campaigns for businesses targeting these regions.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Department / Region</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Important Cities & Locations</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Business Opportunities</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Important Cities & Locations</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Business Opportunities</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {departments.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.department}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A] text-xs">
                     {row.cities}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {row.opportunities}
                   </td>
                 </tr>
@@ -560,24 +560,24 @@ export const UruguayServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 italic">
+        <p className="text-xs text-[#64748B] italic">
           Geographic reference: Uruguay's 19-department administrative division. Locations listed are examples of important cities and commercial areas, not an exhaustive list. (www5.ine.gub.uy)
         </p>
 
         <div className="space-y-3">
-          <h3 className="text-sm font-bold text-white">Our regional SEO approach includes:</h3>
+          <h3 className="text-sm font-bold text-[#0F172A]">Our regional SEO approach includes:</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {regionalSeoApproach.map((item, idx) => (
               <div
                 key={idx}
-                className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs text-slate-200"
+                className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs text-[#0F172A]"
               >
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                 <span>{item}</span>
               </div>
             ))}
           </div>
-          <p className="text-xs sm:text-sm text-slate-300 pt-1">
+          <p className="text-xs sm:text-sm text-[#475569] pt-1">
             We can help businesses target customers in Montevideo, Canelones, Maldonado, Punta del Este, Colonia, Salto, Rivera, and other important commercial areas.
           </p>
         </div>
@@ -586,17 +586,17 @@ export const UruguayServicesContent: React.FC = () => {
       {/* Our Website Design & Development Services in Uruguay */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Code2 className="w-4 h-4" />
             <span>Custom Engineering</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our Website Design & Development Services in Uruguay
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS designs and develops custom-coded websites for Spanish-speaking businesses across Uruguay.
           </p>
-          <p className="text-sm font-semibold text-white">
+          <p className="text-sm font-semibold text-[#0F172A]">
             Our website development services include:
           </p>
         </div>
@@ -605,15 +605,15 @@ export const UruguayServicesContent: React.FC = () => {
           {devSolutions.map((item, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           We develop responsive websites for desktops, tablets, and mobile devices, focusing on speed, security, user experience, and scalability.
         </p>
       </section>
@@ -621,17 +621,17 @@ export const UruguayServicesContent: React.FC = () => {
       {/* Spanish SEO Services – Improve Your Google Rankings in Uruguay */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Search className="w-4 h-4" />
             <span>Organic Visibility</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Spanish SEO Services – Improve Your Google Rankings in Uruguay
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Spanish SEO requires relevant keyword research, quality content, technical improvements, and an understanding of local search behaviour. Businesses targeting Uruguay should use natural Uruguayan Spanish and locally relevant search terms rather than simply translating English content or copying content from other Spanish-speaking markets.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS provides Spanish SEO services for businesses targeting customers throughout Uruguay. Our Spanish SEO services include:
           </p>
         </div>
@@ -640,15 +640,15 @@ export const UruguayServicesContent: React.FC = () => {
           {spanishSeoServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           Our objective is to improve organic search visibility and attract relevant visitors searching for your products and services.
         </p>
       </section>
@@ -656,14 +656,14 @@ export const UruguayServicesContent: React.FC = () => {
       {/* Spanish eCommerce SEO & Digital Marketing Solutions */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <ShoppingCart className="w-4 h-4" />
             <span>Online Store Growth</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Spanish eCommerce SEO & Digital Marketing Solutions
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Are you operating an online store in Uruguay? Your eCommerce website needs an effective combination of website development, SEO, social media promotion, and paid advertising. UDMIDEAS provides complete digital solutions for Spanish-language eCommerce businesses.
           </p>
         </div>
@@ -672,15 +672,15 @@ export const UruguayServicesContent: React.FC = () => {
           {ecommerceSolutions.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           We help online stores improve product visibility, attract potential buyers, and create better shopping experiences.
         </p>
       </section>
@@ -688,46 +688,46 @@ export const UruguayServicesContent: React.FC = () => {
       {/* Spanish SMM & PPC Advertising Services */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider">
             Paid Social & Search Advertising
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Spanish SMM & PPC Advertising Services
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Social Media Marketing and PPC advertising help Uruguayan businesses reach potential customers, promote products, and generate enquiries.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2.5 text-base font-bold text-white">
-              <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+          <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2.5 text-base font-bold text-[#0F172A]">
+              <div className="w-8 h-8 rounded-lg bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 shrink-0">
                 <Share2 className="w-4 h-4" />
               </div>
               <span>Social Media Marketing (SMM)</span>
             </div>
             <ul className="space-y-2">
               {smmItems.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2.5 text-base font-bold text-white">
-              <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+          <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2.5 text-base font-bold text-[#0F172A]">
+              <div className="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-[#1D4ED8] shrink-0">
                 <MousePointerClick className="w-4 h-4" />
               </div>
               <span>Pay-Per-Click (PPC)</span>
             </div>
             <ul className="space-y-2">
               {ppcItems.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -735,7 +735,7 @@ export const UruguayServicesContent: React.FC = () => {
           </div>
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           Our focus is to reach relevant audiences, generate enquiries, and improve advertising performance through measurable campaigns.
         </p>
       </section>
@@ -743,36 +743,36 @@ export const UruguayServicesContent: React.FC = () => {
       {/* UDMIDEAS Services & Pricing */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Starting Packages
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             UDMIDEAS Services & Pricing
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             We offer starting packages for businesses looking for Spanish website development and digital marketing services in Uruguay.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Our Services</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Solutions</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Starting Cost</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Solutions</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Starting Cost</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {pricingRows.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.service}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.solutions}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {row.cost}
                   </td>
                 </tr>
@@ -781,11 +781,11 @@ export const UruguayServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 space-y-1.5 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] space-y-1.5 leading-relaxed">
           <p>
-            <strong className="text-white">Pricing note:</strong> $500 is the starting price for selected service packages. Final costs depend on website size, functionality, competition, SEO requirements, and campaign scope. Advertising budgets are separate.
+            <strong className="text-[#0F172A]">Pricing note:</strong> $500 is the starting price for selected service packages. Final costs depend on website size, functionality, competition, SEO requirements, and campaign scope. Advertising budgets are separate.
           </p>
-          <p className="text-blue-400 font-medium">
+          <p className="text-[#1D4ED8] font-medium">
             Contact UDMIDEAS for a customized project proposal.
           </p>
         </div>
@@ -794,14 +794,14 @@ export const UruguayServicesContent: React.FC = () => {
       {/* How UDMIDEAS Helps Grow Your Business in Uruguay */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <TrendingUp className="w-4 h-4" />
             <span>6-Stage Growth Approach</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             How UDMIDEAS Helps Grow Your Business in Uruguay
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Our digital growth strategy combines website development, organic search optimization, and online advertising.
           </p>
         </div>
@@ -810,22 +810,22 @@ export const UruguayServicesContent: React.FC = () => {
           {growthSteps.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
             >
-              <div className="text-xs font-mono text-emerald-400 font-bold">
+              <div className="text-xs font-mono text-emerald-700 font-bold">
                 0{idx + 1}
               </div>
-              <h3 className="text-sm sm:text-base font-bold text-white">
+              <h3 className="text-sm sm:text-base font-bold text-[#0F172A]">
                 {item.step}
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
+              <p className="text-xs text-[#475569] leading-relaxed">
                 {item.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           We focus on building a strong digital foundation and identifying opportunities for sustainable business growth.
         </p>
       </section>
@@ -833,11 +833,11 @@ export const UruguayServicesContent: React.FC = () => {
       {/* Benefits of Choosing UDMIDEAS & Why Choose UDMIDEAS */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <Award className="w-4 h-4" />
             <span>Partner Advantages</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Benefits of Choosing UDMIDEAS
           </h2>
         </div>
@@ -846,41 +846,41 @@ export const UruguayServicesContent: React.FC = () => {
           {benefits.map((b, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1.5"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] space-y-1.5"
             >
-              <div className="flex items-center gap-2 font-bold text-sm text-white">
-                <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+              <div className="flex items-center gap-2 font-bold text-sm text-[#0F172A]">
+                <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0" />
                 <span>{b.title}</span>
               </div>
-              <p className="text-xs text-slate-300 pl-6 leading-relaxed">
+              <p className="text-xs text-[#475569] pl-6 leading-relaxed">
                 {b.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-blue-950/30 border border-blue-900/30 space-y-4">
-          <h3 className="text-lg sm:text-xl font-bold text-white">
+        <div className="p-6 rounded-2xl bg-gradient-to-br from-white via-white to-blue-50/40 border border-blue-200 space-y-4">
+          <h3 className="text-lg sm:text-xl font-bold text-[#0F172A]">
             Why Choose UDMIDEAS as Your Uruguay Digital Marketing Company?
           </h3>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             UDMIDEAS brings website development and digital marketing services together under one service provider. We understand that Spanish websites targeting Uruguay need more than translated English content. They require locally relevant keywords, Uruguayan Spanish terminology, quality content, proper website architecture, technical SEO, and effective marketing campaigns.
           </p>
-          <p className="text-xs sm:text-sm font-semibold text-white">
+          <p className="text-xs sm:text-sm font-semibold text-[#0F172A]">
             Our services are suitable for:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
             {suitableBusinesses.map((biz, idx) => (
               <div
                 key={idx}
-                className="p-3 rounded-xl bg-slate-950/70 border border-slate-800 flex items-center gap-2 text-xs text-slate-200"
+                className="p-3 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-center gap-2 text-xs text-[#0F172A]"
               >
-                <Building2 className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                <Building2 className="w-3.5 h-3.5 text-[#1D4ED8] shrink-0" />
                 <span>{biz}</span>
               </div>
             ))}
           </div>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             Whether you need a new website, an online shopping platform, professional Spanish SEO, or complete SMM and PPC management, our team can help develop your digital growth strategy.
           </p>
         </div>
@@ -889,10 +889,10 @@ export const UruguayServicesContent: React.FC = () => {
       {/* Frequently Asked Questions – Uruguay Business Owners */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Common Inquiries
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Frequently Asked Questions – Uruguay Business Owners
           </h2>
         </div>
@@ -903,23 +903,23 @@ export const UruguayServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-colors"
+                className="rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-colors"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(idx)}
-                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-white hover:text-blue-400 transition-colors"
+                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-[#0F172A] hover:text-[#1D4ED8] transition-colors"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.q}</span>
                   {isOpen ? (
-                    <ChevronUp className="w-4 h-4 text-blue-400 shrink-0" />
+                    <ChevronUp className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                   ) : (
-                    <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+                    <ChevronDown className="w-4 h-4 text-[#64748B] shrink-0" />
                   )}
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-4 text-xs sm:text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+                  <div className="px-5 pb-4 text-xs sm:text-sm text-[#475569] border-t border-[#E2E8F0] pt-3 leading-relaxed">
                     {faq.a}
                   </div>
                 )}
@@ -930,23 +930,23 @@ export const UruguayServicesContent: React.FC = () => {
       </section>
 
       {/* Grow Your Business in Uruguay with UDMIDEAS */}
-      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-950 via-slate-900 to-emerald-950/50 border border-blue-800/40 space-y-6 shadow-xl">
+      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 space-y-6 shadow-sm">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Rocket className="w-4 h-4" />
             <span>Get Started</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Grow Your Business in Uruguay with UDMIDEAS
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Are you planning to launch a new Spanish website in Uruguay? Do you already have a website but need better Google rankings, more organic visitors, and additional customer enquiries? UDMIDEAS can help with custom website design and development, Spanish SEO, eCommerce SEO, social media marketing, and PPC advertising.
           </p>
         </div>
 
-        <div className="pt-4 border-t border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1 text-xs sm:text-sm text-slate-300">
-            <div className="font-bold text-white text-base">
+        <div className="pt-4 border-t border-[#E2E8F0] flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1 text-xs sm:text-sm text-[#475569]">
+            <div className="font-bold text-[#0F172A] text-base">
               Let's build your digital presence in Uruguay!
             </div>
             <div>
@@ -955,19 +955,19 @@ export const UruguayServicesContent: React.FC = () => {
                 href="https://udmideasusa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:underline font-mono"
+                className="text-[#1D4ED8] hover:underline font-mono"
               >
                 https://udmideasusa.com/
               </a>{' '}
               · Email:{' '}
               <a
                 href="mailto:info@udmideasusa.com"
-                className="text-emerald-400 hover:underline font-mono"
+                className="text-emerald-700 hover:underline font-mono"
               >
                 info@udmideasusa.com
               </a>
             </div>
-            <div className="text-xs text-slate-400">
+            <div className="text-xs text-[#64748B]">
               UDMIDEAS – Spanish Website Design, Development, SEO & Digital Marketing Solutions for Businesses in Uruguay.
             </div>
           </div>
@@ -977,14 +977,14 @@ export const UruguayServicesContent: React.FC = () => {
               href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20discuss%20Spanish%20website%20development%20and%20SEO%20for%20Uruguay."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp: +91-9521186150</span>
             </a>
             <a
               href="#inquiry-form"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
             >
               <span>Contact UDMIDEAS</span>
               <ArrowRight className="w-3.5 h-3.5" />

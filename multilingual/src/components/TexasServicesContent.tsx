@@ -257,29 +257,29 @@ export const TexasServicesContent: React.FC = () => {
     <div className="space-y-16 text-left">
       {/* Hero / Introduction */}
       <header className="max-w-4xl space-y-5">
-        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Globe2 className="w-3.5 h-3.5 shrink-0" />
           <span>Texas Custom Web Design, Multilingual SEO, AEO, GEO, SMM &amp; PPC · 15+ Years</span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight text-balance">
           Texas Website Design, Development &amp; Multilingual Digital Marketing Company
         </h1>
 
         <div className="space-y-3 pt-1">
-          <h2 className="text-xl sm:text-2xl font-bold text-blue-400">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#1D4ED8]">
             Introduction: Grow Your Texas Business with UDMIDEAS
           </h2>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             Texas is one of the largest and fastest-growing business markets in the United States. From technology companies in Austin and Dallas to energy businesses in Houston, healthcare providers in San Antonio and construction companies across Fort Worth, businesses need a strong online presence to compete in the digital marketplace.
           </p>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             UDMIDEAS provides professional website design, custom website development, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), Social Media Marketing (SMM) and Pay-Per-Click (PPC) advertising services for Texas businesses.
           </p>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             We help startups, small businesses, eCommerce companies, professional service providers and established enterprises build modern websites and reach customers throughout Texas, the USA and international markets.
           </p>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             Our objective is to combine custom-coded website development with multilingual digital marketing strategies to improve online visibility, attract qualified visitors and generate business opportunities.
           </p>
         </div>
@@ -289,7 +289,7 @@ export const TexasServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20website%20design%20and%20multilingual%20digital%20marketing%20in%20Texas."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp: +91-9521186150</span>
@@ -297,7 +297,7 @@ export const TexasServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
           >
             <span>Request Texas Consultation</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -308,14 +308,14 @@ export const TexasServicesContent: React.FC = () => {
       {/* Why Choose UDMIDEAS for Texas Businesses? */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Award className="w-4 h-4" />
             <span>Why work with UDMIDEAS?</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Why Choose UDMIDEAS for Texas Businesses?
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS brings 15+ years of website development and digital marketing experience to businesses looking for professional online solutions.
           </p>
         </div>
@@ -324,15 +324,15 @@ export const TexasServicesContent: React.FC = () => {
           {advantages.map((pt, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{pt}</span>
             </div>
           ))}
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           We focus on developing websites and marketing strategies according to each company&apos;s business objectives, target audience and future expansion plans.
         </div>
       </section>
@@ -340,14 +340,14 @@ export const TexasServicesContent: React.FC = () => {
       {/* Custom Website Design & Development Services in Texas */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Code2 className="w-4 h-4" />
             <span>Our Website Development Services Include</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Custom Website Design &amp; Development Services in Texas
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             A professional website is an essential business asset. It introduces your company, explains your services, builds customer trust and creates opportunities to generate enquiries. UDMIDEAS develops custom-coded websites from scratch using modern development technologies and frameworks.
           </p>
         </div>
@@ -356,15 +356,15 @@ export const TexasServicesContent: React.FC = () => {
           {webDevServices.map((srv, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
               <span>{srv}</span>
             </div>
           ))}
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           We do not depend entirely on ready-made templates. Our development approach focuses on custom design, functionality, scalability, responsive layouts and SEO-friendly website architecture.
         </div>
       </section>
@@ -372,33 +372,33 @@ export const TexasServicesContent: React.FC = () => {
       {/* Website Development Cost for Texas Businesses */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Transparent Investment
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Website Development Cost for Texas Businesses
           </h2>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-white">Website Package</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Starting Cost</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Suitable For</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Website Package</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Starting Cost</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Suitable For</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {pricingPackages.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.pkg}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {row.cost}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.suitable}
                   </td>
                 </tr>
@@ -407,7 +407,7 @@ export const TexasServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           Business website development starts at $500. Final pricing depends on the number of pages, design complexity, functionality, languages and integrations. Domain, hosting and third-party services may be additional.
         </div>
       </section>
@@ -415,14 +415,14 @@ export const TexasServicesContent: React.FC = () => {
       {/* Multilingual Website Development & SEO Services in Texas */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Search className="w-4 h-4" />
             <span>Multilingual Reach</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Multilingual Website Development &amp; SEO Services in Texas
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Texas has a diverse population and a substantial Spanish-speaking community. Businesses can explore new customer segments by offering websites and marketing content in multiple languages.
           </p>
         </div>
@@ -431,23 +431,23 @@ export const TexasServicesContent: React.FC = () => {
           {multilingualLanguages.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-1.5 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-1.5 hover:border-blue-600/30 transition-all"
             >
-              <div className="text-sm sm:text-base font-bold text-emerald-400 font-mono">
+              <div className="text-sm sm:text-base font-bold text-emerald-700 font-mono">
                 {item.lang}
               </div>
-              <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#0F172A] leading-relaxed">
                 {item.market}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-5 rounded-xl bg-white border border-[#E2E8F0] space-y-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
           <p>
             Our multilingual SEO services include international keyword research, language-specific content optimisation, technical SEO, hreflang implementation, multilingual URL structures, link building and international search visibility strategies.
           </p>
-          <p className="text-slate-200 font-medium">
+          <p className="text-[#0F172A] font-medium">
             We research local search behaviour and customer intent instead of simply translating English keywords.
           </p>
         </div>
@@ -456,37 +456,37 @@ export const TexasServicesContent: React.FC = () => {
       {/* SEO, AEO & GEO Services for Texas Companies */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Sparkles className="w-4 h-4" />
             <span>Search &amp; AI Discovery</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             SEO, AEO &amp; GEO Services for Texas Companies
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Search behaviour is changing. Customers discover businesses through Google, Bing, conversational search, direct answers and generative search platforms. UDMIDEAS helps Texas companies build visibility across traditional and emerging search experiences.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Service</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Our Work</th>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Business Objective</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Service</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Our Work</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Business Objective</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {searchVisibilityRows.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.service}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.work}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-300 font-medium whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700 font-medium whitespace-nowrap">
                     {row.objective}
                   </td>
                 </tr>
@@ -495,7 +495,7 @@ export const TexasServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           Our strategies focus on relevant content, technical performance, website authority and useful information that answers customer questions.
         </div>
       </section>
@@ -503,43 +503,43 @@ export const TexasServicesContent: React.FC = () => {
       {/* Multilingual SMM & PPC Advertising Services */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <Megaphone className="w-4 h-4" />
             <span>Paid &amp; Social Acquisition</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Multilingual SMM &amp; PPC Advertising Services
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Social media and paid advertising help businesses connect with potential customers, promote their services and generate enquiries.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 sm:p-8 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2 font-bold text-lg text-white">
-              <Share2 className="w-5 h-5 text-purple-400 shrink-0" />
+          <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2 font-bold text-lg text-[#0F172A]">
+              <Share2 className="w-5 h-5 text-purple-700 shrink-0" />
               <h3>Social Media Marketing (SMM)</h3>
             </div>
-            <ul className="space-y-2.5 text-xs sm:text-sm text-slate-200">
+            <ul className="space-y-2.5 text-xs sm:text-sm text-[#0F172A]">
               {smmPoints.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-blue-950/30 border border-blue-900/30 space-y-4">
-            <div className="flex items-center gap-2 font-bold text-lg text-white">
-              <TrendingUp className="w-5 h-5 text-blue-400 shrink-0" />
+          <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white via-white to-blue-50/40 border border-blue-200 space-y-4">
+            <div className="flex items-center gap-2 font-bold text-lg text-[#0F172A]">
+              <TrendingUp className="w-5 h-5 text-[#1D4ED8] shrink-0" />
               <h3>Pay-Per-Click (PPC) Advertising</h3>
             </div>
-            <ul className="space-y-2.5 text-xs sm:text-sm text-slate-200">
+            <ul className="space-y-2.5 text-xs sm:text-sm text-[#0F172A]">
               {ppcPoints.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -547,7 +547,7 @@ export const TexasServicesContent: React.FC = () => {
           </div>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           We develop campaigns according to business objectives, customer locations, audience interests, languages and advertising budgets.
         </div>
       </section>
@@ -555,14 +555,14 @@ export const TexasServicesContent: React.FC = () => {
       {/* Texas Business Industries We Work For */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Building2 className="w-4 h-4" />
             <span>Sector Coverage</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Texas Business Industries We Work For
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Texas has a diverse economy covering technology, energy, manufacturing, healthcare, construction, real estate, retail and professional services. UDMIDEAS provides industry-specific website development and digital marketing solutions.
           </p>
         </div>
@@ -571,12 +571,12 @@ export const TexasServicesContent: React.FC = () => {
           {texasIndustries.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-1.5 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-1.5 hover:border-blue-600/30 transition-all"
             >
-              <div className="text-sm sm:text-base font-bold text-white">
+              <div className="text-sm sm:text-base font-bold text-[#0F172A]">
                 {item.industry}
               </div>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                 {item.services}
               </p>
             </div>
@@ -587,37 +587,37 @@ export const TexasServicesContent: React.FC = () => {
       {/* Texas Regions We Serve */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <MapPin className="w-4 h-4" />
             <span>Statewide Regional Reach</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Texas Regions We Serve
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Texas is geographically diverse, with different business opportunities across its major regions. UDMIDEAS offers website development and digital marketing services for companies throughout the state. The following regional grouping is based on commonly recognised Texas geographic and tourism regions.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Texas Region</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Major Cities &amp; Locations</th>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Business Opportunities</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Texas Region</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Major Cities &amp; Locations</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Business Opportunities</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {texasRegions.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.region}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.cities}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569]">
                     {row.opportunities}
                   </td>
                 </tr>
@@ -626,7 +626,7 @@ export const TexasServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           We can develop dedicated location pages and targeted SEO strategies for businesses operating in these regions.
         </div>
       </section>
@@ -634,33 +634,33 @@ export const TexasServicesContent: React.FC = () => {
       {/* Texas Digital Market Statistics */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <BarChart3 className="w-4 h-4" />
             <span>Market Intelligence</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Texas Digital Market Statistics
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Texas offers a substantial market for website development, digital marketing and multilingual business services.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Market Indicator</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Latest Available Statistics</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Market Indicator</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Latest Available Statistics</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {texasStats.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-[#0F172A]">
                     {row.indicator}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {row.value}
                   </td>
                 </tr>
@@ -669,7 +669,7 @@ export const TexasServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           These statistics demonstrate the potential for businesses to invest in professional websites, multilingual customer experiences and digital marketing.
         </div>
       </section>
@@ -677,33 +677,33 @@ export const TexasServicesContent: React.FC = () => {
       {/* Future of Website Development & Digital Marketing (2027–2030) */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <ShieldCheck className="w-4 h-4" />
             <span>2027–2030 Strategic Outlook</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Future of Website Development &amp; Digital Marketing (2027–2030)
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             The digital marketplace is moving towards personalised customer experiences, generative search, automation, video marketing and multilingual online communication.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Future Trend</th>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Business Opportunity</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Future Trend</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Business Opportunity</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {futureTrends.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.trend}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.opp}
                   </td>
                 </tr>
@@ -712,11 +712,11 @@ export const TexasServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] space-y-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
           <p>
             Between 2027 and 2030, Texas businesses should consider combining SEO, AEO, GEO, SMM, PPC, video creation and multilingual website development. Businesses that build a strong digital foundation can prepare for changing customer discovery and purchasing behaviour.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             These are strategic opportunities, not guaranteed growth forecasts.
           </p>
         </div>
@@ -725,10 +725,10 @@ export const TexasServicesContent: React.FC = () => {
       {/* Frequently Asked Questions: Texas Business Owners */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Common Questions
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Frequently Asked Questions: Texas Business Owners
           </h2>
         </div>
@@ -739,23 +739,23 @@ export const TexasServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-colors"
+                className="rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-colors"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(idx)}
-                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-white hover:text-blue-400 transition-colors"
+                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-[#0F172A] hover:text-[#1D4ED8] transition-colors"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.q}</span>
                   {isOpen ? (
-                    <ChevronUp className="w-4 h-4 text-blue-400 shrink-0" />
+                    <ChevronUp className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                   ) : (
-                    <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+                    <ChevronDown className="w-4 h-4 text-[#64748B] shrink-0" />
                   )}
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-4 text-xs sm:text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+                  <div className="px-5 pb-4 text-xs sm:text-sm text-[#475569] border-t border-[#E2E8F0] pt-3 leading-relaxed">
                     {faq.a}
                   </div>
                 )}
@@ -766,50 +766,50 @@ export const TexasServicesContent: React.FC = () => {
       </section>
 
       {/* Grow Your Texas Business with UDMIDEAS */}
-      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-950 via-slate-900 to-emerald-950/50 border border-blue-800/40 space-y-6 shadow-xl">
+      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 space-y-6 shadow-sm">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Rocket className="w-4 h-4" />
             <span>Contact UDMIDEAS Today – Let&apos;s Grow Your Texas Business Online</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Grow Your Texas Business with UDMIDEAS
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Your website should be more than an online business card. It should support your brand, customer acquisition and long-term business expansion.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS combines custom website development, multilingual SEO, AEO, GEO, social media marketing and PPC advertising to help businesses build stronger digital identities.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Whether you are launching a startup in Austin, managing a company in Dallas, operating an industrial business in Houston or expanding an eCommerce brand across Texas, we can help you develop the right digital strategy.
           </p>
-          <p className="text-sm font-bold text-white">
+          <p className="text-sm font-bold text-[#0F172A]">
             We Build Custom Websites. We Improve Search Visibility. We Grow Businesses.
           </p>
         </div>
 
-        <div className="pt-4 border-t border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1 text-xs sm:text-sm text-slate-300">
+        <div className="pt-4 border-t border-[#E2E8F0] flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1 text-xs sm:text-sm text-[#475569]">
             <div>
               Website:{' '}
               <a
                 href="https://www.udmideasusa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:underline font-mono"
+                className="text-[#1D4ED8] hover:underline font-mono"
               >
                 https://www.udmideasusa.com/
               </a>{' '}
               · Email:{' '}
               <a
                 href="mailto:info@udmideasusa.com"
-                className="text-emerald-400 hover:underline font-mono"
+                className="text-emerald-700 hover:underline font-mono"
               >
                 info@udmideasusa.com
               </a>
             </div>
-            <div className="text-xs text-slate-400">
+            <div className="text-xs text-[#64748B]">
               UDMIDEAS – Your Website Development &amp; Multilingual Digital Marketing Partner in Texas, USA.
             </div>
           </div>
@@ -819,14 +819,14 @@ export const TexasServicesContent: React.FC = () => {
               href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20grow%20my%20Texas%20business%20with%20UDMIDEAS."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp: +91-9521186150</span>
             </a>
             <a
               href="#inquiry-form"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
             >
               <span>Let&apos;s Grow Online</span>
               <ArrowRight className="w-3.5 h-3.5" />

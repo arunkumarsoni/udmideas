@@ -261,16 +261,16 @@ export const SpainServicesContent: React.FC = () => {
     <div className="space-y-14 text-left">
       {/* Hero / Page Introduction */}
       <header className="max-w-4xl space-y-4">
-        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Globe2 className="w-3.5 h-3.5 shrink-0" />
           <span>Spain Website Design, Development & Spanish SEO · 15+ Years Experience</span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight text-balance">
           Spain Website Design, Development & SEO Digital Marketing Company | UDMIDEAS
         </h1>
 
-        <div className="space-y-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+        <div className="space-y-3 text-sm sm:text-base text-[#475569] leading-relaxed">
           <p>
             Spain is one of Europe's important digital economies, offering significant opportunities for businesses in eCommerce, tourism, real estate, manufacturing, healthcare, education, professional services, and retail. With millions of Spanish-speaking internet users, businesses need professional websites and effective digital marketing strategies to attract customers and compete online.
           </p>
@@ -280,7 +280,7 @@ export const SpainServicesContent: React.FC = () => {
           <p>
             We help Spanish business owners build professional websites, improve Google search visibility, attract qualified visitors, generate enquiries, and increase online sales.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Our digital solutions combine custom-coded website development with SEO, AEO, GEO, content marketing, social media marketing, and paid advertising.
           </p>
         </div>
@@ -290,7 +290,7 @@ export const SpainServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20Spanish%20website%20design%20and%20SEO%20in%20Spain."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp: +91-9521186150</span>
@@ -298,7 +298,7 @@ export const SpainServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
           >
             <span>Request Proposal (Direct Email)</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -309,32 +309,32 @@ export const SpainServicesContent: React.FC = () => {
       {/* Spain Digital Market: Statistics and Future Opportunities */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Market Intelligence
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Spain Digital Market: Statistics and Future Opportunities
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Spain has a growing digital economy supported by internet adoption, online shopping, mobile usage, and digital business transformation.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-3xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-3xl">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Digital market indicator</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Statistics / market context</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Statistics / market context</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {spainStats.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-medium text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-medium text-[#0F172A]">
                     {row.indicator}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700">
                     {row.context}
                   </td>
                 </tr>
@@ -343,21 +343,21 @@ export const SpainServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 italic max-w-4xl">
+        <p className="text-xs text-[#64748B] italic max-w-4xl">
           Figures are rounded and drawn from different reporting periods and statistical definitions. Reference sources include INE, Eurostat, CNMC and industry eCommerce reports.
         </p>
 
         {/* Future of Spanish Digital Business: 2027–2030 */}
         <div className="space-y-4 pt-2">
           <div className="max-w-4xl space-y-1.5">
-            <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+            <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
               <Sparkles className="w-4 h-4" />
               <span>Strategic Horizon</span>
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#0F172A]">
               Future of Spanish Digital Business: 2027–2030
             </h3>
-            <p className="text-xs sm:text-sm text-slate-300">
+            <p className="text-xs sm:text-sm text-[#475569]">
               The Spanish digital market offers several opportunities for businesses investing in online growth.
             </p>
           </div>
@@ -366,22 +366,22 @@ export const SpainServicesContent: React.FC = () => {
             {futureDevelopments.map((item, idx) => (
               <div
                 key={idx}
-                className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+                className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
               >
-                <div className="text-xs font-mono text-emerald-400 font-bold">
+                <div className="text-xs font-mono text-emerald-700 font-bold">
                   0{idx + 1}
                 </div>
-                <h4 className="text-sm sm:text-base font-bold text-white">
+                <h4 className="text-sm sm:text-base font-bold text-[#0F172A]">
                   {item.title}
                 </h4>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {item.desc}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-xs text-slate-400 italic">
+          <p className="text-xs text-[#64748B] italic">
             These are strategic opportunities, not guaranteed numerical forecasts.
           </p>
         </div>
@@ -390,37 +390,37 @@ export const SpainServicesContent: React.FC = () => {
       {/* Spain's Autonomous Communities and Regions: SEO Targeting Opportunities */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <MapPin className="w-4 h-4" />
             <span>17 Autonomous Communities · 2 Autonomous Cities</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Spain's Autonomous Communities and Regions: SEO Targeting Opportunities
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Spain has 17 autonomous communities and 2 autonomous cities. Businesses can use regional SEO strategies to reach customers in different parts of the country.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Autonomous community / region</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Capital</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">SEO target location</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Capital</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">SEO target location</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {autonomousCommunities.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.community}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A] whitespace-nowrap">
                     {row.capital}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569]">
                     {row.targets}
                   </td>
                 </tr>
@@ -430,22 +430,22 @@ export const SpainServicesContent: React.FC = () => {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-sm font-bold text-white">Autonomous cities:</h3>
-          <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-xl">
+          <h3 className="text-sm font-bold text-[#0F172A]">Autonomous cities:</h3>
+          <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-xl">
             <table className="w-full text-left text-xs sm:text-sm">
-              <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+              <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
                 <tr>
                   <th className="py-3 px-4 sm:px-6">Autonomous city</th>
-                  <th className="py-3 px-4 sm:px-6 text-emerald-400">SEO target location</th>
+                  <th className="py-3 px-4 sm:px-6 text-emerald-700">SEO target location</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-800/80 text-slate-300">
+              <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
                 {autonomousCities.map((row, idx) => (
-                  <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                    <td className="py-3 px-4 sm:px-6 font-bold text-white">
+                  <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                    <td className="py-3 px-4 sm:px-6 font-bold text-[#0F172A]">
                       {row.city}
                     </td>
-                    <td className="py-3 px-4 sm:px-6 text-emerald-400 font-mono">
+                    <td className="py-3 px-4 sm:px-6 text-emerald-700 font-mono">
                       {row.target}
                     </td>
                   </tr>
@@ -453,7 +453,7 @@ export const SpainServicesContent: React.FC = () => {
               </tbody>
             </table>
           </div>
-          <p className="text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
             Regional targeting can help companies build location-specific service pages, local business listings, and Spanish-language content. In Catalonia, the Basque Country, Galicia, and the Balearic Islands, regional languages can also matter alongside Spanish.
           </p>
         </div>
@@ -462,17 +462,17 @@ export const SpainServicesContent: React.FC = () => {
       {/* Spanish Website Design and Development Services */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Code2 className="w-4 h-4" />
             <span>Custom Engineering</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Spanish Website Design and Development Services
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             A professional Spanish-language website helps customers understand your business, explore your services, and contact your company. UDMIDEAS designs and develops custom-coded websites for businesses targeting Spain.
           </p>
-          <p className="text-sm font-semibold text-white">
+          <p className="text-sm font-semibold text-[#0F172A]">
             Our website development services include:
           </p>
         </div>
@@ -481,19 +481,19 @@ export const SpainServicesContent: React.FC = () => {
           {devServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <div className="space-y-2 text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <div className="space-y-2 text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           <p>
             We work with React JS, PHP, Laravel, CodeIgniter, and WordPress according to project requirements.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Our objective is to develop websites that combine professional design, technical performance, and search engine visibility.
           </p>
         </div>
@@ -502,17 +502,17 @@ export const SpainServicesContent: React.FC = () => {
       {/* Spanish SEO Services for Business Websites */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Search className="w-4 h-4" />
             <span>Organic Search Visibility</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Spanish SEO Services for Business Websites
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Spanish customers search using different keywords and expressions depending on their industry, location, and purchasing requirements. Our Spanish SEO services focus on improving organic visibility and attracting relevant customers.
           </p>
-          <p className="text-sm font-semibold text-white">
+          <p className="text-sm font-semibold text-[#0F172A]">
             Our Spanish SEO activities include:
           </p>
         </div>
@@ -521,15 +521,15 @@ export const SpainServicesContent: React.FC = () => {
           {spanishSeoActivities.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           We focus on Spanish search queries rather than simply translating English keywords. Our strategy considers local search behaviour, regional terminology, and customer intent.
         </p>
       </section>
@@ -537,14 +537,14 @@ export const SpainServicesContent: React.FC = () => {
       {/* Spanish eCommerce SEO Solutions */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <ShoppingCart className="w-4 h-4" />
             <span>Online Store Growth</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Spanish eCommerce SEO Solutions
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Spain's growing eCommerce market provides opportunities for online retailers selling products across different industries. UDMIDEAS provides Spanish eCommerce SEO solutions to improve product visibility and generate online sales opportunities.
           </p>
         </div>
@@ -553,19 +553,19 @@ export const SpainServicesContent: React.FC = () => {
           {ecommerceSeoServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <div className="space-y-2 text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <div className="space-y-2 text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           <p>
             We can work with WooCommerce, Magento, Shopify, and custom eCommerce development platforms.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Whether you sell fashion, electronics, furniture, beauty products, home accessories, automotive products, or industrial equipment, we help optimize your online store for Spanish-speaking customers.
           </p>
         </div>
@@ -574,46 +574,46 @@ export const SpainServicesContent: React.FC = () => {
       {/* Spanish SMM and PPC Digital Marketing Services */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider">
             Paid Social & Search Advertising
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Spanish SMM and PPC Digital Marketing Services
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             SEO helps businesses develop long-term organic visibility. Social media marketing and PPC provide additional opportunities to reach potential customers.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2.5 text-base font-bold text-white">
-              <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+          <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2.5 text-base font-bold text-[#0F172A]">
+              <div className="w-8 h-8 rounded-lg bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 shrink-0">
                 <Share2 className="w-4 h-4" />
               </div>
               <span>Spanish Social Media Marketing (SMM)</span>
             </div>
             <ul className="space-y-2">
               {smmItems.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2.5 text-base font-bold text-white">
-              <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+          <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2.5 text-base font-bold text-[#0F172A]">
+              <div className="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-[#1D4ED8] shrink-0">
                 <MousePointerClick className="w-4 h-4" />
               </div>
               <span>Spanish Pay-Per-Click (PPC) Advertising</span>
             </div>
             <ul className="space-y-2">
               {ppcItems.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -621,7 +621,7 @@ export const SpainServicesContent: React.FC = () => {
           </div>
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           We create Spanish-language advertising campaigns targeting relevant customers, products, interests, and locations across Spain.
         </p>
       </section>
@@ -629,14 +629,14 @@ export const SpainServicesContent: React.FC = () => {
       {/* How UDMIDEAS Helps Grow Spanish Businesses */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <TrendingUp className="w-4 h-4" />
             <span>5-Stage Connected Strategy</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             How UDMIDEAS Helps Grow Spanish Businesses
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Our approach connects website development, SEO, and digital marketing into one business growth strategy.
           </p>
         </div>
@@ -645,22 +645,22 @@ export const SpainServicesContent: React.FC = () => {
           {growthSteps.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
             >
-              <div className="text-xs font-mono text-emerald-400 font-bold">
+              <div className="text-xs font-mono text-emerald-700 font-bold">
                 0{idx + 1}
               </div>
-              <h3 className="text-sm sm:text-base font-bold text-white">
+              <h3 className="text-sm sm:text-base font-bold text-[#0F172A]">
                 {item.step}
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
+              <p className="text-xs text-[#475569] leading-relaxed">
                 {item.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           Our objective is to help businesses turn digital visibility into meaningful enquiries, customers, and sales.
         </p>
       </section>
@@ -668,11 +668,11 @@ export const SpainServicesContent: React.FC = () => {
       {/* Benefits of Choosing UDMIDEAS & Why Spanish Business Owners Should Choose UDMIDEAS */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <Award className="w-4 h-4" />
             <span>Partner Advantages</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Benefits of Choosing UDMIDEAS
           </h2>
         </div>
@@ -681,36 +681,36 @@ export const SpainServicesContent: React.FC = () => {
           {benefits.map((b, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{b}</span>
             </div>
           ))}
         </div>
 
-        <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-blue-950/30 border border-blue-900/30 space-y-4">
-          <h3 className="text-lg sm:text-xl font-bold text-white">
+        <div className="p-6 rounded-2xl bg-gradient-to-br from-white via-white to-blue-50/40 border border-blue-200 space-y-4">
+          <h3 className="text-lg sm:text-xl font-bold text-[#0F172A]">
             Why Spanish Business Owners Should Choose UDMIDEAS
           </h3>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             UDMIDEAS brings 15+ years of experience in website development and digital marketing. We understand that businesses targeting Spain need professional websites, natural Spanish content, reliable technical performance, and marketing strategies that match local customer expectations.
           </p>
-          <p className="text-xs sm:text-sm font-semibold text-white">
+          <p className="text-xs sm:text-sm font-semibold text-[#0F172A]">
             Our strengths include:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {strengths.map((reason, idx) => (
               <div
                 key={idx}
-                className="p-3 rounded-xl bg-slate-950/70 border border-slate-800 flex items-start gap-2 text-xs text-slate-200"
+                className="p-3 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-start gap-2 text-xs text-[#0F172A]"
               >
-                <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#1D4ED8] shrink-0 mt-0.5" />
                 <span>{reason}</span>
               </div>
             ))}
           </div>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             We work with businesses that want a long-term digital growth partner rather than just a website designer or an advertising provider.
           </p>
         </div>
@@ -719,30 +719,30 @@ export const SpainServicesContent: React.FC = () => {
       {/* Spanish Industries We Can Work For */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Building2 className="w-4 h-4" />
             <span>Industry Support</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Spanish Industries We Can Work For
           </h2>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-3xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-3xl">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Industry</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Recommended digital services</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Recommended digital services</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {supportedIndustries.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.industry}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.services}
                   </td>
                 </tr>
@@ -755,10 +755,10 @@ export const SpainServicesContent: React.FC = () => {
       {/* Frequently Asked Questions: Spanish Business Owners */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Common Inquiries
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Frequently Asked Questions: Spanish Business Owners
           </h2>
         </div>
@@ -769,23 +769,23 @@ export const SpainServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-colors"
+                className="rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-colors"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(idx)}
-                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-white hover:text-blue-400 transition-colors"
+                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-[#0F172A] hover:text-[#1D4ED8] transition-colors"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.q}</span>
                   {isOpen ? (
-                    <ChevronUp className="w-4 h-4 text-blue-400 shrink-0" />
+                    <ChevronUp className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                   ) : (
-                    <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+                    <ChevronDown className="w-4 h-4 text-[#64748B] shrink-0" />
                   )}
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-4 text-xs sm:text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+                  <div className="px-5 pb-4 text-xs sm:text-sm text-[#475569] border-t border-[#E2E8F0] pt-3 leading-relaxed">
                     {faq.a}
                   </div>
                 )}
@@ -796,26 +796,26 @@ export const SpainServicesContent: React.FC = () => {
       </section>
 
       {/* Grow Your Business in Spain with UDMIDEAS */}
-      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-950 via-slate-900 to-emerald-950/50 border border-blue-800/40 space-y-6 shadow-xl">
+      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 space-y-6 shadow-sm">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Rocket className="w-4 h-4" />
             <span>Get Started</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Grow Your Business in Spain with UDMIDEAS
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Spain offers significant opportunities for companies investing in professional websites, Spanish SEO, eCommerce optimization, and digital advertising. Whether you operate a local service business, manufacturing company, professional organization, or online store, your digital presence plays an important role in attracting customers and generating sales.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS helps Spanish business owners build professional websites, improve organic search visibility, promote products, generate leads, and develop long-term digital growth strategies.
           </p>
         </div>
 
-        <div className="pt-4 border-t border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1 text-xs sm:text-sm text-slate-300">
-            <div className="font-bold text-white text-base">
+        <div className="pt-4 border-t border-[#E2E8F0] flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1 text-xs sm:text-sm text-[#475569]">
+            <div className="font-bold text-[#0F172A] text-base">
               Let's build your website, improve your Spanish search visibility, and grow your business across Spain.
             </div>
             <div>
@@ -824,14 +824,14 @@ export const SpainServicesContent: React.FC = () => {
                 href="https://udmideasusa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:underline font-mono"
+                className="text-[#1D4ED8] hover:underline font-mono"
               >
                 https://udmideasusa.com/
               </a>{' '}
               · Email:{' '}
               <a
                 href="mailto:info@udmideasusa.com"
-                className="text-emerald-400 hover:underline font-mono"
+                className="text-emerald-700 hover:underline font-mono"
               >
                 info@udmideasusa.com
               </a>
@@ -843,14 +843,14 @@ export const SpainServicesContent: React.FC = () => {
               href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20discuss%20Spanish%20website%20development%20and%20SEO%20for%20Spain."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp: +91-9521186150</span>
             </a>
             <a
               href="#inquiry-form"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
             >
               <span>Connect with UDMIDEAS</span>
               <ArrowRight className="w-3.5 h-3.5" />

@@ -419,38 +419,38 @@ export const WebsiteDesignServicesContent: React.FC = () => {
   return (
     <div className="mt-12 space-y-16 text-left">
       {/* 1. What UDMIDEAS Does (Narrative Section) */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-slate-900/90 border border-slate-800 shadow-2xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+      <section className="p-8 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] shadow-sm relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl pointer-events-none" />
         <div className="relative z-10 max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 font-mono text-xs font-semibold mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-[#1D4ED8] font-mono text-xs font-semibold mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Full-Stack Digital Engineering Under One Roof</span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-6">
             Website Design and Development Services by UDMIDEAS
           </h2>
 
-          <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
-            <h3 className="text-xl font-bold text-white flex items-center gap-2">
-              <Code2 className="w-5 h-5 text-blue-400" />
+          <div className="space-y-4 text-[#475569] text-sm sm:text-base leading-relaxed">
+            <h3 className="text-xl font-bold text-[#0F172A] flex items-center gap-2">
+              <Code2 className="w-5 h-5 text-[#1D4ED8]" />
               What UDMIDEAS Does
             </h3>
             <p>
               UDMIDEAS designs and builds custom websites for businesses that want a site that earns its place. For more than 15 years our team has worked in SEO first and web development second, so every site we deliver is built to be found, read and acted on from day one. We design the interface, write the code from scratch, set up the search structure, and then, if you want it, market the site after launch. Design, development, SEO, AEO, GEO, PPC and social media sit under one roof, so you talk to one team instead of four vendors who point at each other when traffic is flat.
             </p>
             <p>
-              Our main stack is <strong className="text-white">React JS</strong>. We also build with <strong className="text-white">PHP frameworks</strong> when a project calls for them. Websites start at <span className="text-emerald-400 font-bold">$500</span>, include <span className="text-emerald-400 font-bold">one year of hosting and one year of maintenance support at no extra cost</span>, and the only thing you buy yourself is the domain name.
+              Our main stack is <strong className="text-[#0F172A]">React JS</strong>. We also build with <strong className="text-[#0F172A]">PHP frameworks</strong> when a project calls for them. Websites start at <span className="text-emerald-700 font-bold">$500</span>, include <span className="text-emerald-700 font-bold">one year of hosting and one year of maintenance support at no extra cost</span>, and the only thing you buy yourself is the domain name.
             </p>
-            <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800 flex flex-wrap items-center justify-between gap-4 mt-6">
-              <div className="text-xs sm:text-sm text-slate-300">
-                Ready to talk directly with Founder Arun? <span className="text-emerald-400 font-bold">Call or WhatsApp: +91-9521186150</span>
+            <div className="p-4 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] flex flex-wrap items-center justify-between gap-4 mt-6">
+              <div className="text-xs sm:text-sm text-[#475569]">
+                Ready to talk directly with Founder Arun? <span className="text-emerald-700 font-bold">Call or WhatsApp: +91-9521186150</span>
               </div>
               <a
                 href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20Website%20Design%20and%20Development%20Services."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-md transition-all"
               >
                 <MessageCircle className="w-3.5 h-3.5" />
                 <span>WhatsApp Arun Now</span>
@@ -463,13 +463,13 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       {/* 2. 9-Step Build Process */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-2">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-2">
             Systematic Engineering Workflow
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             How We Build: From First Call to a Site That Converts
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             A website only succeeds when rigorous discovery, custom clean code, and search engine architecture work in unison. Here is our exact 9-step delivery blueprint:
           </p>
         </div>
@@ -478,19 +478,19 @@ export const WebsiteDesignServicesContent: React.FC = () => {
           {steps.map((s, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between hover:border-slate-700 hover:bg-slate-900/80 transition-all group"
+              className="p-6 rounded-2xl bg-white border border-[#E2E8F0] flex flex-col justify-between hover:border-blue-600/30 hover:bg-white transition-all group"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-mono font-bold text-emerald-400 bg-emerald-950/60 border border-emerald-900/50 px-2.5 py-0.5 rounded">
+                  <span className="text-xs font-mono font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded">
                     STEP {s.step}
                   </span>
-                  <CheckCircle2 className="w-4 h-4 text-slate-600 group-hover:text-emerald-400 transition-colors" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-600 group-hover:text-emerald-700 transition-colors" />
                 </div>
-                <h3 className="text-base font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
+                <h3 className="text-base font-bold text-[#0F172A] mb-2 group-hover:text-[#1D4ED8] transition-colors">
                   {s.title}
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {s.desc}
                 </p>
               </div>
@@ -500,46 +500,46 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       </section>
 
       {/* 3. Tech Stack & Engineering Philosophy */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-slate-900/40 border border-slate-800 space-y-6">
+      <section className="p-8 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Engineered For Speed & Durability
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our Main Tech Stack: React JS & Modern PHP Frameworks
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             We deliberately reject bloated visual site builders that generate nested `div` soups and hundreds of unused CSS files. Instead, we architect every view with production-grade engineering:
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-6 rounded-2xl bg-slate-950 border border-slate-850 space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center">
+          <div className="p-6 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 text-[#1D4ED8] flex items-center justify-center">
               <Zap className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-white">React JS Frontend</h3>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <h3 className="text-lg font-bold text-[#0F172A]">React JS Frontend</h3>
+            <p className="text-xs text-[#475569] leading-relaxed">
               Modular component-driven architecture, instant client-side routing, zero layout reflows, and lightning state transitions. Provides the seamless feel of a native mobile app on any web browser.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-950 border border-slate-850 space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center">
+          <div className="p-6 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-purple-50 border border-purple-200 text-purple-700 flex items-center justify-center">
               <Server className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-white">PHP Frameworks (Laravel & CodeIgniter)</h3>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <h3 className="text-lg font-bold text-[#0F172A]">PHP Frameworks (Laravel & CodeIgniter)</h3>
+            <p className="text-xs text-[#475569] leading-relaxed">
               When dynamic databases, custom user authentication, and high-throughput APIs are required, we engineer bulletproof PHP backends with strict MVC patterns and high-efficiency SQL queries.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-950 border border-slate-850 space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center">
+          <div className="p-6 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-3">
+            <div className="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center">
               <ShieldCheck className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-white">Handcrafted Custom WordPress</h3>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <h3 className="text-lg font-bold text-[#0F172A]">Handcrafted Custom WordPress</h3>
+            <p className="text-xs text-[#475569] leading-relaxed">
               When clients require an easy CMS, we code bespoke WordPress themes from scratch. Zero Elementor, zero Divi, and zero plugin overload — delivering 95+ PageSpeed scores reliably.
             </p>
           </div>
@@ -547,46 +547,46 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       </section>
 
       {/* 4. Built to Rank: SEO, AEO & GEO Engineered From Day One */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-slate-950 border border-slate-800 space-y-6">
+      <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-white via-white to-[#F8FAFC] border border-[#E2E8F0] space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Triple-Engine Optimization
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Built to Rank: SEO, AEO & GEO From the Very First Commit
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Most web development shops build a pretty website and tell you to "hire an SEO person later." We do the exact opposite. Because Arun has specialized in SEO for 15+ years, the entire architecture is engineered to rank from day one:
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-6 rounded-2xl bg-slate-950/80 border border-slate-850 space-y-3">
-            <div className="flex items-center gap-2 text-blue-400 font-bold text-sm">
+          <div className="p-6 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-3">
+            <div className="flex items-center gap-2 text-[#1D4ED8] font-bold text-sm">
               <Search className="w-4 h-4" />
               <span>1. Technical Core SEO</span>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed">
-              Semantic HTML5 outlines, automated XML sitemaps, clean canonical tags, descriptive image metadata, and strict Core Web Vitals guarantees (<span className="text-emerald-400 font-mono">LCP &lt; 1.2s</span>, <span className="text-emerald-400 font-mono">CLS 0.00</span>).
+            <p className="text-xs text-[#475569] leading-relaxed">
+              Semantic HTML5 outlines, automated XML sitemaps, clean canonical tags, descriptive image metadata, and strict Core Web Vitals guarantees (<span className="text-emerald-700 font-mono">LCP &lt; 1.2s</span>, <span className="text-emerald-700 font-mono">CLS 0.00</span>).
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-950/80 border border-slate-850 space-y-3">
-            <div className="flex items-center gap-2 text-purple-400 font-bold text-sm">
+          <div className="p-6 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-3">
+            <div className="flex items-center gap-2 text-purple-700 font-bold text-sm">
               <Bot className="w-4 h-4" />
               <span>2. Answer Engine Optimization (AEO)</span>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <p className="text-xs text-[#475569] leading-relaxed">
               Structured Q&A patterns, definition summaries, and FAQ schema designed specifically to capture Google Featured Snippets and voice search answers.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-950/80 border border-slate-850 space-y-3">
-            <div className="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+          <div className="p-6 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-3">
+            <div className="flex items-center gap-2 text-emerald-700 font-bold text-sm">
               <Sparkles className="w-4 h-4" />
               <span>3. Generative Engine Optimization (GEO)</span>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <p className="text-xs text-[#475569] leading-relaxed">
               Deep JSON-LD knowledge graphs connecting your brand, credentials, and offerings so AI models (ChatGPT, Perplexity, Claude, Gemini) cite you as the authoritative source.
             </p>
           </div>
@@ -596,20 +596,20 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       {/* 5. 50-Year Internet History Table (1976 to 2027+) */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Historical Evolution & Technological Trajectory
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             50-Year Internet History (1976 to 2027+): The Evolution of Web Architecture
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Understanding the five-decade evolution of the internet reveals why modern custom coding and AI generative readiness are critical for business longevity:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/60 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Era</th>
                 <th className="py-3.5 px-4 sm:px-6">Milestone & Paradigm</th>
@@ -617,19 +617,19 @@ export const WebsiteDesignServicesContent: React.FC = () => {
                 <th className="py-3.5 px-4 sm:px-6">Commercial Business Impact</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {internetHistory.map((item, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {item.era}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-[#0F172A]">
                     {item.milestone}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {item.tech}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-400 text-xs leading-relaxed">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#64748B] text-xs leading-relaxed">
                     {item.businessImpact}
                   </td>
                 </tr>
@@ -642,37 +642,37 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       {/* 6. Benefits of Having a Custom Website Table */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Commercial Advantages
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Key Benefits of Having a High-Performance Custom Website
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Why investing in a custom-coded web asset outperforms rented social media channels and off-the-shelf templates every single time:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/60 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Benefit Category</th>
                 <th className="py-3.5 px-4 sm:px-6">Why It Matters For Business Growth</th>
                 <th className="py-3.5 px-4 sm:px-6">UDMIDEAS Custom Advantage</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {websiteBenefits.map((b, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
                     <span>{b.category}</span>
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs leading-relaxed">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs leading-relaxed">
                     {b.importance}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-400 text-xs font-medium leading-relaxed">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700 text-xs font-medium leading-relaxed">
                     {b.udmideasAdvantage}
                   </td>
                 </tr>
@@ -685,14 +685,14 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       {/* 7. Website Packages & Transparent Pricing Table ($500 to $50,000) */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Transparent Investment Tiers
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Website Packages & Pricing ($500 to $50,000)
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
-            Every package includes <span className="text-emerald-400 font-bold">1 Year of Free Cloud Hosting</span> and <span className="text-emerald-400 font-bold">1 Year of Maintenance Support</span>. No hidden fees, no surprises.
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
+            Every package includes <span className="text-emerald-700 font-bold">1 Year of Free Cloud Hosting</span> and <span className="text-emerald-700 font-bold">1 Year of Maintenance Support</span>. No hidden fees, no surprises.
           </p>
         </div>
 
@@ -702,49 +702,49 @@ export const WebsiteDesignServicesContent: React.FC = () => {
               key={idx}
               className={`p-6 sm:p-8 rounded-3xl flex flex-col justify-between transition-all ${
                 pkg.popular
-                  ? 'bg-slate-900 border-2 border-blue-500 shadow-2xl shadow-blue-500/10'
-                  : 'bg-slate-900/60 border border-slate-800 hover:border-slate-700'
+                  ? 'bg-white border-2 border-[#1D4ED8] shadow-lg'
+                  : 'bg-white border border-[#E2E8F0] hover:border-blue-600/30 hover:shadow-md'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-[11px] font-mono font-semibold px-2.5 py-1 rounded bg-slate-800 text-blue-300 border border-slate-700">
+                  <span className="text-[11px] font-mono font-semibold px-2.5 py-1 rounded bg-blue-50 text-[#1D4ED8] border border-blue-200">
                     {pkg.badge}
                   </span>
                   {pkg.popular && (
-                    <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded bg-blue-600 text-white">
+                    <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded bg-[#1D4ED8] text-white">
                       POPULAR
                     </span>
                   )}
                 </div>
 
-                <h3 className="text-xl font-extrabold text-white mb-2">{pkg.name}</h3>
-                <div className="text-3xl sm:text-4xl font-black text-emerald-400 font-mono mb-3">
+                <h3 className="text-xl font-extrabold text-[#0F172A] mb-2">{pkg.name}</h3>
+                <div className="text-3xl sm:text-4xl font-black text-emerald-700 font-mono mb-3">
                   {pkg.price}
                 </div>
-                <p className="text-xs text-slate-400 mb-6 leading-relaxed">
-                  <strong className="text-slate-300">Target Fit:</strong> {pkg.idealFor}
+                <p className="text-xs text-[#64748B] mb-6 leading-relaxed">
+                  <strong className="text-[#475569]">Target Fit:</strong> {pkg.idealFor}
                 </p>
 
                 <div className="space-y-2.5 mb-8">
-                  <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+                  <div className="text-[11px] font-bold text-[#64748B] uppercase tracking-wider">
                     Included Features:
                   </div>
                   {pkg.features.map((feat, fIdx) => (
-                    <div key={fIdx} className="flex items-start gap-2 text-xs text-slate-300">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                    <div key={fIdx} className="flex items-start gap-2 text-xs text-[#475569]">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
                       <span>{feat}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-slate-800">
+              <div className="pt-4 border-t border-[#E2E8F0]">
                 <a
                   href={`https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20interested%20in%20the%20${encodeURIComponent(pkg.name)}%20(${pkg.price}).`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md transition-all inline-flex items-center justify-center gap-2"
+                  className="w-full py-3 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md transition-all inline-flex items-center justify-center gap-2"
                 >
                   <MessageCircle className="w-3.5 h-3.5" />
                   <span>Choose {pkg.name.split(' ')[0]} Package</span>
@@ -756,48 +756,48 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       </section>
 
       {/* 8. eCommerce Websites & eCommerce SEO */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-6">
+      <section className="p-8 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Online Store Engineering
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             High-Performance eCommerce Websites & eCommerce SEO
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Building an online store requires more than displaying product cards. We engineer custom eCommerce platforms that convert casual browsers into repeat buyers, backed by technical product schema that wins Google Shopping organic placements:
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="p-5 rounded-2xl bg-slate-950 border border-slate-850 space-y-2">
-            <ShoppingBag className="w-6 h-6 text-purple-400" />
-            <h3 className="text-sm font-bold text-white">One-Page Frictionless Checkout</h3>
-            <p className="text-xs text-slate-400 leading-relaxed">
+          <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-2">
+            <ShoppingBag className="w-6 h-6 text-purple-700" />
+            <h3 className="text-sm font-bold text-[#0F172A]">One-Page Frictionless Checkout</h3>
+            <p className="text-xs text-[#64748B] leading-relaxed">
               Eliminate cart abandonment with streamlined, single-screen checkouts supporting Stripe, PayPal, Apple Pay, and local gateways.
             </p>
           </div>
 
-          <div className="p-5 rounded-2xl bg-slate-950 border border-slate-850 space-y-2">
-            <TrendingUp className="w-6 h-6 text-emerald-400" />
-            <h3 className="text-sm font-bold text-white">Product Schema Markup</h3>
-            <p className="text-xs text-slate-400 leading-relaxed">
+          <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-2">
+            <TrendingUp className="w-6 h-6 text-emerald-700" />
+            <h3 className="text-sm font-bold text-[#0F172A]">Product Schema Markup</h3>
+            <p className="text-xs text-[#64748B] leading-relaxed">
               Every SKU automatically renders JSON-LD product data with price, stock status, ratings, and variants for Google search snippets.
             </p>
           </div>
 
-          <div className="p-5 rounded-2xl bg-slate-950 border border-slate-850 space-y-2">
-            <Database className="w-6 h-6 text-blue-400" />
-            <h3 className="text-sm font-bold text-white">Instant Faceted Filtering</h3>
-            <p className="text-xs text-slate-400 leading-relaxed">
+          <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-2">
+            <Database className="w-6 h-6 text-[#1D4ED8]" />
+            <h3 className="text-sm font-bold text-[#0F172A]">Instant Faceted Filtering</h3>
+            <p className="text-xs text-[#64748B] leading-relaxed">
               Filter thousands of products by size, color, brand, and price without page reloads or lagging server roundtrips.
             </p>
           </div>
 
-          <div className="p-5 rounded-2xl bg-slate-950 border border-slate-850 space-y-2">
-            <Globe2 className="w-6 h-6 text-emerald-400" />
-            <h3 className="text-sm font-bold text-white">Multi-Currency & Regional Tax</h3>
-            <p className="text-xs text-slate-400 leading-relaxed">
+          <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-2">
+            <Globe2 className="w-6 h-6 text-emerald-700" />
+            <h3 className="text-sm font-bold text-[#0F172A]">Multi-Currency & Regional Tax</h3>
+            <p className="text-xs text-[#64748B] leading-relaxed">
               Accept USD, EUR, GBP, AED, and local currencies with automated geo-location detection and compliant sales tax logic.
             </p>
           </div>
@@ -805,18 +805,18 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       </section>
 
       {/* 9. Post-Launch Marketing Under One Roof */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-slate-900/90 border border-slate-800 space-y-6">
+      <section className="p-8 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Complete Digital Synergy
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Post-Launch Marketing Under One Roof: SEO, AEO, GEO, PPC & SMM
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             The biggest mistake companies make is hiring a web agency to build the site, an SEO freelancer to audit it, a Google Ads agency to run PPC, and a social media agency to post content. When traffic drops, each vendor points fingers at the other.
           </p>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mt-2">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed mt-2">
             At UDMIDEAS, the team that writes your code also manages your search rankings, answer engine citations, paid search campaigns, and brand storytelling. Everything connects, analytics are tracked server-side, and results are measured in revenue rather than vanity metrics.
           </p>
         </div>
@@ -825,13 +825,13 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       {/* 10. Real Client Reviews (6 Verified Testimonials) */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Verified Global Feedback
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Client Reviews: Real Feedback From Businesses Worldwide
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             See what founders and business leaders across the USA, Middle East, Europe, and Latin America say about working directly with Arun:
           </p>
         </div>
@@ -840,23 +840,23 @@ export const WebsiteDesignServicesContent: React.FC = () => {
           {reviews.map((rev, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all text-left"
+              className="p-6 rounded-2xl bg-white border border-[#E2E8F0] flex flex-col justify-between hover:border-blue-600/30 transition-all text-left"
             >
               <div>
-                <div className="flex items-center gap-1 text-amber-400 mb-3">
+                <div className="flex items-center gap-1 text-amber-700 mb-3">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-amber-400" />
                   ))}
                 </div>
-                <p className="text-xs sm:text-sm text-slate-300 italic leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm text-[#475569] italic leading-relaxed mb-4">
                   "{rev.quote}"
                 </p>
               </div>
 
-              <div className="pt-3 border-t border-slate-800/80">
-                <div className="text-xs font-bold text-white">{rev.author}</div>
-                <div className="text-[11px] text-blue-400">{rev.business}</div>
-                <div className="text-[11px] text-slate-500 font-mono">{rev.location}</div>
+              <div className="pt-3 border-t border-[#E2E8F0]">
+                <div className="text-xs font-bold text-[#0F172A]">{rev.author}</div>
+                <div className="text-[11px] text-[#1D4ED8]">{rev.business}</div>
+                <div className="text-[11px] text-[#64748B] font-mono">{rev.location}</div>
               </div>
             </div>
           ))}
@@ -866,13 +866,13 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       {/* 11. 30 Frequently Asked Questions (Accordion) */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Exhaustive Technical & Commercial Clarity
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             30 Frequently Asked Questions About Our Web Design & Development Services
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Clear, transparent answers to every question about pricing, hosting, maintenance, tech stack, timelines, and post-launch support:
           </p>
         </div>
@@ -883,23 +883,23 @@ export const WebsiteDesignServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-all"
+                className="rounded-2xl border border-[#E2E8F0] bg-white overflow-hidden transition-all"
               >
                 <button
                   onClick={() => toggleFaq(idx)}
-                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-slate-850/50 transition-colors cursor-pointer"
+                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-[#F8FAFC] transition-colors cursor-pointer"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="text-xs font-mono font-bold text-blue-400 shrink-0 mt-0.5">
+                    <span className="text-xs font-mono font-bold text-[#1D4ED8] shrink-0 mt-0.5">
                       Q{String(idx + 1).padStart(2, '0')}.
                     </span>
-                    <span className="text-xs sm:text-sm font-bold text-white leading-snug">
+                    <span className="text-xs sm:text-sm font-bold text-[#0F172A] leading-snug">
                       {faq.q}
                     </span>
                   </div>
-                  <div className="text-slate-400 shrink-0">
+                  <div className="text-[#64748B] shrink-0">
                     {isOpen ? (
-                      <ChevronUp className="w-4 h-4 text-emerald-400" />
+                      <ChevronUp className="w-4 h-4 text-emerald-700" />
                     ) : (
                       <ChevronDown className="w-4 h-4" />
                     )}
@@ -907,7 +907,7 @@ export const WebsiteDesignServicesContent: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-slate-850/60 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
                     <p className="pl-7">{faq.a}</p>
                   </div>
                 )}
@@ -918,18 +918,18 @@ export const WebsiteDesignServicesContent: React.FC = () => {
       </section>
 
       {/* 12. Final Call to Action */}
-      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-blue-950/60 via-slate-900 to-emerald-950/40 border border-blue-500/30 text-center space-y-6">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 text-center space-y-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Clock className="w-3.5 h-3.5" />
           <span>Quick 24-Hour Turnaround On Proposals</span>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight max-w-2xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] tracking-tight max-w-2xl mx-auto">
           Start Your Custom Website Project with UDMIDEAS Today
         </h2>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
-          Get a handcrafted, sub-second custom website starting at just <strong className="text-emerald-400">$500</strong> with <strong className="text-white">1 Year of Free Hosting</strong> and <strong className="text-white">1 Year of Free Maintenance</strong> included. Speak directly with Founder Arun.
+        <p className="text-xs sm:text-sm text-[#475569] max-w-xl mx-auto leading-relaxed">
+          Get a handcrafted, sub-second custom website starting at just <strong className="text-emerald-700">$500</strong> with <strong className="text-[#0F172A]">1 Year of Free Hosting</strong> and <strong className="text-[#0F172A]">1 Year of Free Maintenance</strong> included. Speak directly with Founder Arun.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -937,7 +937,7 @@ export const WebsiteDesignServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20want%20to%20start%20a%20website%20project%20with%20UDMIDEAS."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-xl shadow-emerald-950/60 transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp: +91-9521186150</span>
@@ -945,7 +945,7 @@ export const WebsiteDesignServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-950/60 transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-sm hover:shadow-md transition-all"
           >
             <Mail className="w-4 h-4" />
             <span>Submit Email Inquiry to Arun</span>

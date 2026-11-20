@@ -371,7 +371,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
         <a
           key={match.index}
           href={href}
-          className="text-blue-400 hover:text-blue-300 underline font-medium transition-colors"
+          className="text-[#1D4ED8] hover:text-[#1E40AF] underline font-medium transition-colors"
         >
           {label}
         </a>
@@ -386,108 +386,105 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
   };
 
   return (
-    <article className="pt-28 pb-24 min-h-screen bg-slate-950 text-slate-100 text-left">
+    <article className="pt-28 pb-24 min-h-screen bg-[#F8FAFC] text-[#475569] text-left">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Navigation Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="flex items-center justify-between pb-6 mb-8 border-b border-slate-900 text-xs">
+        <nav aria-label="Breadcrumb" className="flex items-center justify-between gap-3 pb-6 mb-8 border-b border-[#E2E8F0] text-xs">
           <button
             onClick={onBack}
-            className="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors py-1.5 px-3 rounded-lg bg-slate-900 border border-slate-800 cursor-pointer"
+            className="inline-flex items-center gap-2 text-[#475569] hover:text-[#0F172A] hover:border-[#1D4ED8]/40 transition-all py-1.5 px-3 rounded-lg bg-white border border-[#E2E8F0] shadow-xs cursor-pointer font-medium"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>Back to All Blogs</span>
           </button>
 
-          <div className="flex items-center gap-2 text-slate-400 flex-wrap">
-            <a href="/" target="_blank" rel="noopener noreferrer" className="hover:text-white">Home</a>
+          <div className="flex items-center gap-2 text-[#64748B] flex-wrap">
+            <a href="/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1D4ED8] transition-colors">Home</a>
             <span aria-hidden="true">/</span>
-            <a href="/blog/" target="_blank" rel="noopener noreferrer" className="hover:text-white">Blog</a>
+            <a href="/blog/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1D4ED8] transition-colors">Blog</a>
             <span aria-hidden="true">/</span>
-            <span className="text-blue-400 font-medium truncate max-w-[200px]">{blog.category}</span>
+            <span className="text-[#1D4ED8] font-semibold truncate max-w-[200px]">{blog.category}</span>
           </div>
         </nav>
 
         {/* Article Header */}
         <header className="mb-10 space-y-4">
-          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
-            <span className="text-blue-400 font-semibold bg-blue-950/40 px-2.5 py-1 rounded border border-blue-900/50">
+          <div className="flex flex-wrap items-center gap-2 text-xs text-[#64748B]">
+            <span className="text-[#1D4ED8] font-semibold bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">
               {blog.category}
             </span>
             <span aria-hidden="true">·</span>
             <span className="flex items-center gap-1 font-mono">
-              <Clock className="w-3 h-3 text-slate-500" />
+              <Clock className="w-3 h-3 text-[#64748B]" />
               {blog.readTime}
             </span>
             <span aria-hidden="true">·</span>
             <span className="flex items-center gap-1">
-              <Calendar className="w-3 h-3 text-slate-500" />
+              <Calendar className="w-3 h-3 text-[#64748B]" />
               {blog.date}
             </span>
             <span aria-hidden="true">·</span>
-            <span className="text-emerald-400 font-mono text-[11px] bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-900/40">
+            <span className="text-emerald-700 font-mono text-[11px] font-semibold bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
               100% White Hat Organic SEO
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-[-0.02em] leading-[1.15] text-balance">
             {blog.title}
           </h1>
 
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-4 border-y border-slate-900">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-4 border-y border-[#E2E8F0]">
             <div className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-blue-600 via-indigo-600 to-emerald-500 p-[1.5px]">
-                <div className="w-full h-full bg-slate-950 rounded-full flex items-center justify-center font-bold text-xs text-blue-300 font-mono">
-                  {blog.author.slice(0, 2).toUpperCase()}
-                </div>
+              <div className="w-11 h-11 rounded-full bg-[#0F172A] flex items-center justify-center font-bold text-xs text-white font-mono border border-[#E2E8F0] shrink-0">
+                {blog.author.slice(0, 2).toUpperCase()}
               </div>
               <div>
-                <div className="text-xs font-bold text-white">{blog.author}</div>
-                <div className="text-[11px] text-slate-400">
+                <div className="text-xs font-bold text-[#0F172A]">{blog.author}</div>
+                <div className="text-[11px] text-[#64748B]">
                   UDMIDEAS NYC Digital Marketing Agency · 350 5th Ave, New York, NY 10001
                 </div>
               </div>
             </div>
 
             {/* Sharing Bar */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <a
                 href={`https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20reading%20your%20article%20on%20${encodeURIComponent(blog.title)}%20and%20would%20like%20to%20discuss%20Organic%20SEO.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-950/50 border border-emerald-800/60 text-emerald-300 text-xs hover:bg-emerald-900/50 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-700 font-semibold text-xs hover:bg-emerald-100 transition-colors"
                 title="Discuss this blog with Arun on WhatsApp"
               >
-                <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
+                <MessageCircle className="w-3.5 h-3.5 text-emerald-600" />
                 <span>Discuss on WhatsApp (+91-9521186150)</span>
               </a>
 
               <button
                 onClick={handleCopyLink}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 text-xs hover:text-white hover:bg-slate-850 transition-colors cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-[#E2E8F0] text-[#475569] text-xs font-medium hover:text-[#0F172A] hover:border-[#1D4ED8]/40 transition-colors cursor-pointer"
                 title="Copy article link"
               >
-                {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+                {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
                 <span>{copied ? 'Copied URL!' : 'Share'}</span>
               </button>
             </div>
           </div>
         </header>
 
-        {/* Creative Article Lead Box / Hero Graphic Section */}
-        <div className="relative rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-slate-950 border border-slate-800 p-8 sm:p-10 mb-12 shadow-2xl overflow-hidden">
-          <div className="absolute top-0 right-0 w-80 h-80 bg-blue-600/10 blur-[100px] pointer-events-none" />
+        {/* Executive Summary Contrast Banner */}
+        <div className="relative rounded-2xl bg-[#0F172A] border border-slate-800 p-8 sm:p-10 mb-12 shadow-lg overflow-hidden">
           <div className="relative z-10 space-y-4">
-            <span className="text-xs font-mono font-semibold text-emerald-400 uppercase tracking-widest block">
-              Executive Summary & Strategy Statement
+            <span className="text-xs font-mono font-semibold text-[#F59E0B] uppercase tracking-[0.08em] block">
+              – Executive Summary & Strategy Statement
             </span>
-            <p className="text-lg sm:text-xl text-slate-200 font-medium leading-relaxed italic">
+            <p className="text-lg sm:text-xl text-white font-medium leading-relaxed italic">
               "{blog.excerpt}"
             </p>
             <div className="flex flex-wrap gap-2 pt-2">
               {blog.tags.map((t) => (
                 <span
                   key={t}
-                  className="px-2.5 py-1 rounded bg-slate-950 text-slate-300 border border-slate-800 text-xs font-mono"
+                  className="px-2.5 py-1 rounded-md bg-slate-800/90 text-slate-200 border border-slate-700 text-xs font-mono"
                 >
                   #{t}
                 </span>
@@ -497,21 +494,21 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
         </div>
 
         {/* Prose Article Content with Semantic HTML & Headings */}
-        <div className="space-y-6 text-slate-300 text-base leading-relaxed">
+        <div className="space-y-6 text-[#475569] text-base leading-[1.7]">
           {blog.content.map((paragraph, pIdx) => {
             // Check if paragraph is an H2 heading
             if (paragraph.startsWith('## ')) {
               const headingText = paragraph.replace('## ', '');
               const isStep = headingText.toLowerCase().startsWith('step ');
               return (
-                <div key={pIdx} className="pt-8 pb-2 border-b border-slate-900">
+                <div key={pIdx} className="pt-8 pb-2 border-b border-[#E2E8F0]">
                   {isStep && (
-                    <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/40 px-2.5 py-1 rounded border border-emerald-900/40 mb-2 inline-block">
+                    <span className="text-[11px] font-mono font-bold uppercase tracking-[0.08em] text-[#1D4ED8] bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200 mb-2 inline-block">
                       Structured Framework
                     </span>
                   )}
-                  <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight flex items-center gap-2">
-                    <span className="text-blue-400">#</span>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#0F172A] tracking-tight flex items-center gap-2.5">
+                    <span className="text-[#1D4ED8] font-extrabold">#</span>
                     <span>{headingText}</span>
                   </h2>
                 </div>
@@ -532,21 +529,21 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                 '9. Lead generation'
               ];
               return (
-                <div key={pIdx} className="my-8 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 space-y-4">
-                  <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-2">
-                    <Zap className="w-4 h-4 text-emerald-400" />
+                <div key={pIdx} className="my-8 p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm space-y-4">
+                  <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-[0.08em] flex items-center gap-2">
+                    <Zap className="w-4 h-4 text-[#1D4ED8]" />
                     Our 9-Step Bulletproof Organic SEO Process
                   </div>
-                  <h3 className="text-xl font-bold text-white">
+                  <h3 className="text-xl font-bold text-[#0F172A]">
                     Look UDMIDEAS Digital Marketing Agency New York bulletproof process to win on Organic SEO:
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                     {steps.map((st, sIdx) => (
-                      <div key={sIdx} className="flex items-start gap-3 p-3 rounded-xl bg-slate-950 border border-slate-850">
-                        <span className="w-6 h-6 rounded-md bg-blue-600/20 text-blue-400 text-xs font-bold font-mono flex items-center justify-center shrink-0 border border-blue-500/30">
+                      <div key={sIdx} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0]">
+                        <span className="w-6 h-6 rounded-md bg-blue-50 text-[#1D4ED8] text-xs font-bold font-mono flex items-center justify-center shrink-0 border border-blue-200">
                           {sIdx + 1}
                         </span>
-                        <span className="text-xs text-slate-200 font-medium">{st.replace(/^\d+\.\s*/, '')}</span>
+                        <span className="text-xs text-[#0F172A] font-medium leading-relaxed">{st.replace(/^\d+\.\s*/, '')}</span>
                       </div>
                     ))}
                   </div>
@@ -560,22 +557,22 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               const matchedTable = blog.tables?.find((t) => t.title.toLowerCase() === tableName.toLowerCase()) || blog.tables?.[0];
               if (matchedTable) {
                 return (
-                  <div key={pIdx} className="my-8 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/90 shadow-xl">
-                    <div className="px-6 py-4 bg-slate-950/80 border-b border-slate-800 flex items-center justify-between flex-wrap gap-2">
+                  <div key={pIdx} className="my-8 overflow-hidden rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
+                    <div className="px-6 py-4 bg-[#0F172A] border-b border-slate-800 flex items-center justify-between flex-wrap gap-2">
                       <div className="flex items-center gap-2">
-                        <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                        <span className="w-2.5 h-2.5 rounded-full bg-[#F59E0B]"></span>
                         <h3 className="text-sm sm:text-base font-bold text-white font-mono tracking-tight">
                           {matchedTable.title}
                         </h3>
                       </div>
-                      <span className="text-[11px] font-mono text-emerald-400 bg-emerald-950/40 border border-emerald-900/40 px-2 py-0.5 rounded">
+                      <span className="text-[11px] font-mono text-amber-300 bg-amber-500/15 border border-amber-400/30 px-2.5 py-0.5 rounded-md">
                         Transparent Pricing & Data
                       </span>
                     </div>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse text-xs sm:text-sm">
                         <thead>
-                          <tr className="bg-slate-950/60 border-b border-slate-800 text-slate-400 font-mono uppercase text-[11px] tracking-wider">
+                          <tr className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#0F172A] font-mono uppercase text-[11px] tracking-wider">
                             {matchedTable.headers.map((h, hIdx) => (
                               <th key={hIdx} className="py-3.5 px-5 font-semibold">
                                 {h}
@@ -583,24 +580,24 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                             ))}
                           </tr>
                         </thead>
-                        <tbody className="divide-y divide-slate-850">
+                        <tbody className="divide-y divide-[#E2E8F0]">
                           {matchedTable.rows.map((row, rIdx) => (
-                            <tr key={rIdx} className="hover:bg-slate-850/50 transition-colors">
+                            <tr key={rIdx} className="hover:bg-[#F8FAFC] transition-colors">
                               {row.map((cell, cIdx) => {
                                 const isPrice = cell.includes('$') || cell.toLowerCase().includes('quoted');
                                 const isGrowth = cell.includes('%') || cell.includes('x') || cell.includes('+');
                                 return (
-                                  <td key={cIdx} className="py-3.5 px-5 text-slate-200">
+                                  <td key={cIdx} className="py-3.5 px-5 text-[#475569]">
                                     {isPrice ? (
-                                      <span className="font-mono font-bold text-emerald-400 bg-emerald-950/50 border border-emerald-800/40 px-2.5 py-1 rounded-md text-xs">
+                                      <span className="font-mono font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-md text-xs">
                                         {cell}
                                       </span>
                                     ) : isGrowth ? (
-                                      <span className="font-mono font-bold text-blue-400 bg-blue-950/50 border border-blue-800/40 px-2.5 py-1 rounded-md text-xs">
+                                      <span className="font-mono font-bold text-[#1D4ED8] bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-md text-xs">
                                         {cell}
                                       </span>
                                     ) : (
-                                      <span>{cell}</span>
+                                      <span className={cIdx === 0 ? 'font-semibold text-[#0F172A]' : ''}>{cell}</span>
                                     )}
                                   </td>
                                 );
@@ -620,20 +617,20 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               if (blog.faqs && blog.faqs.length > 0) {
                 return (
                   <div key={pIdx} className="my-8 space-y-4">
-                    <div className="p-4 rounded-xl bg-blue-950/30 border border-blue-800/40 text-xs text-blue-300 font-mono flex items-center gap-2">
-                      <Sparkles className="w-4 h-4 text-blue-400" />
-                      AEO Direct-Answer Knowledge Hub · {blog.title.split('|')[0].trim()}
+                    <div className="p-4 rounded-xl bg-blue-50 border border-blue-200 text-xs text-[#1D4ED8] font-mono font-semibold flex items-center gap-2">
+                      <Sparkles className="w-4 h-4 text-[#1D4ED8] shrink-0" />
+                      <span>AEO Direct-Answer Knowledge Hub · {blog.title.split('|')[0].trim()}</span>
                     </div>
                     <div className="grid grid-cols-1 gap-4">
                       {blog.faqs.map((faq, fIdx) => (
-                        <div key={fIdx} className="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all space-y-3">
-                          <h4 className="text-base font-bold text-white flex items-start gap-2.5">
-                            <span className="text-emerald-400 font-mono text-sm font-bold bg-emerald-950/50 px-2 py-0.5 rounded border border-emerald-900/40 shrink-0">
+                        <div key={fIdx} className="p-6 rounded-2xl bg-white border border-[#E2E8F0] hover:border-blue-600/30 hover:shadow-md transition-all space-y-3">
+                          <h4 className="text-base font-bold text-[#0F172A] flex items-start gap-2.5">
+                            <span className="text-[#1D4ED8] font-mono text-xs font-bold bg-blue-50 px-2 py-0.5 rounded-md border border-blue-200 shrink-0 mt-0.5">
                               Q{fIdx + 1}
                             </span>
                             <span>{faq.question}</span>
                           </h4>
-                          <p className="text-sm text-slate-300 pl-8 leading-relaxed border-l-2 border-emerald-500/40 ml-2">
+                          <p className="text-sm text-[#475569] pl-6 leading-relaxed border-l-2 border-[#1D4ED8]/30 ml-2">
                             {faq.answer}
                           </p>
                         </div>
@@ -684,30 +681,30 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               };
 
               return (
-                <div key={pIdx} className="my-10 p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 border border-slate-800 shadow-2xl space-y-6">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-800">
+                <div key={pIdx} className="my-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm space-y-6">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#E2E8F0]">
                     <div>
-                      <div className="text-xs font-mono font-bold text-teal-400 uppercase tracking-wider flex items-center gap-2">
-                        <MapPin className="w-4 h-4 text-teal-400" />
+                      <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-[0.08em] flex items-center gap-2">
+                        <MapPin className="w-4 h-4 text-[#1D4ED8]" />
                         <span>Statewide New York Regional Coverage · {allRegions.length} Regions</span>
                       </div>
-                      <h3 className="text-xl sm:text-2xl font-extrabold text-white mt-1">
+                      <h3 className="text-xl sm:text-2xl font-extrabold text-[#0F172A] mt-1">
                         Arun Is Available to Work for These New York Regions Remotely
                       </h3>
-                      <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl leading-relaxed">
+                      <p className="text-xs sm:text-sm text-[#475569] mt-1 max-w-2xl leading-relaxed">
                         From Central Park and Midtown Manhattan across Long Island, Hudson Valley, Capital Region, and Western New York—Arun delivers 100% white hat remote SEO, AEO, and GEO consulting.
                       </p>
                     </div>
 
                     {/* Quick Search */}
                     <div className="relative min-w-[220px]">
-                      <Search className="w-3.5 h-3.5 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                      <Search className="w-3.5 h-3.5 text-[#64748B] absolute left-3 top-1/2 -translate-y-1/2" />
                       <input
                         type="text"
                         placeholder="Search 90 NY regions..."
                         value={regionSearch}
                         onChange={(e) => setRegionSearch(e.target.value)}
-                        className="w-full pl-8 pr-3 py-2 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 font-mono"
+                        className="w-full pl-8 pr-3 py-2 text-xs rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] font-mono"
                       />
                     </div>
                   </div>
@@ -724,24 +721,24 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                           rel="noopener noreferrer"
                           className={`p-3 rounded-xl border text-xs transition-all flex flex-col justify-between group ${
                             isLive
-                              ? 'bg-gradient-to-br from-teal-950/60 to-slate-900 border-teal-600/50 hover:border-teal-400 hover:shadow-lg hover:shadow-teal-950/50'
-                              : 'bg-slate-950/70 border-slate-850 hover:border-slate-700 hover:bg-slate-900'
+                              ? 'bg-blue-50/70 border-blue-200 hover:border-[#1D4ED8] hover:shadow-md'
+                              : 'bg-[#F8FAFC] border-[#E2E8F0] hover:border-blue-600/30 hover:bg-white'
                           }`}
                         >
                           <div className="flex items-center justify-between gap-1 mb-1.5">
-                            <span className="flex items-center gap-1 font-semibold text-slate-200 group-hover:text-white truncate">
-                              <MapPin className={`w-3 h-3 shrink-0 ${isLive ? 'text-teal-400' : 'text-slate-500 group-hover:text-teal-400'}`} />
+                            <span className="flex items-center gap-1 font-semibold text-[#0F172A] group-hover:text-[#1D4ED8] truncate">
+                              <MapPin className={`w-3 h-3 shrink-0 ${isLive ? 'text-[#1D4ED8]' : 'text-[#64748B] group-hover:text-[#1D4ED8]'}`} />
                               <span className="truncate">{region}</span>
                             </span>
                             {isLive && (
-                              <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse shrink-0"></span>
+                              <span className="w-1.5 h-1.5 rounded-full bg-[#1D4ED8] animate-pulse shrink-0"></span>
                             )}
                           </div>
-                          <div className="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-slate-900">
-                            <span className={isLive ? 'text-teal-300 font-medium' : 'text-slate-400'}>
+                          <div className="flex items-center justify-between text-[10px] text-[#64748B] pt-1 border-t border-[#E2E8F0]">
+                            <span className={isLive ? 'text-[#1D4ED8] font-semibold' : 'text-[#64748B]'}>
                               {isLive ? 'Dedicated Page' : 'Remote SEO'}
                             </span>
-                            <ExternalLink className="w-2.5 h-2.5 opacity-50 group-hover:opacity-100 group-hover:text-teal-400" />
+                            <ExternalLink className="w-2.5 h-2.5 opacity-60 group-hover:opacity-100 group-hover:text-[#1D4ED8]" />
                           </div>
                         </a>
                       );
@@ -749,22 +746,22 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                   </div>
 
                   {filteredRegions.length === 0 && (
-                    <div className="text-center py-6 text-xs text-slate-500 font-mono">
+                    <div className="text-center py-6 text-xs text-[#64748B] font-mono">
                       No New York region matched "{regionSearch}". Clear filter to see all 90 regions.
                     </div>
                   )}
 
                   {/* Consultation Footnote */}
-                  <div className="pt-3 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+                  <div className="pt-3 border-t border-[#E2E8F0] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#475569]">
                     <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+                      <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
                       <span>Arun works with clients across every NY county and borough directly.</span>
                     </div>
                     <a
                       href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20discuss%20remote%20SEO%20services%20for%20my%20business%20in%20New%20York."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-400 hover:underline font-semibold font-mono inline-flex items-center gap-1"
+                      className="text-emerald-700 hover:underline font-semibold font-mono inline-flex items-center gap-1"
                     >
                       <span>Inquire on WhatsApp (+91-9521186150)</span>
                       <ArrowRight className="w-3 h-3" />
@@ -791,30 +788,30 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               };
 
               return (
-                <div key={pIdx} className="my-10 p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 border border-slate-800 shadow-2xl space-y-6">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-800">
+                <div key={pIdx} className="my-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm space-y-6">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#E2E8F0]">
                     <div>
-                      <div className="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider flex items-center gap-2">
-                        <Globe className="w-4 h-4 text-amber-400" />
+                      <div className="text-xs font-mono font-bold text-amber-700 uppercase tracking-[0.08em] flex items-center gap-2">
+                        <Globe className="w-4 h-4 text-[#F59E0B]" />
                         <span>Latin America & Spanish-Speaking Coverage · {allRegions.length} Markets</span>
                       </div>
-                      <h3 className="text-xl sm:text-2xl font-extrabold text-white mt-1">
+                      <h3 className="text-xl sm:text-2xl font-extrabold text-[#0F172A] mt-1">
                         Arun Is Available for These Latin American & Spanish-Speaking Regions
                       </h3>
-                      <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl leading-relaxed">
+                      <p className="text-xs sm:text-sm text-[#475569] mt-1 max-w-2xl leading-relaxed">
                         From Mexico, Colombia, and Argentina to Chile, Costa Rica, Panama, and the US Spanish-speaking market—Arun builds localized multilingual SEO, AEO, and GEO authority.
                       </p>
                     </div>
 
                     {/* Quick Search */}
                     <div className="relative min-w-[220px]">
-                      <Search className="w-3.5 h-3.5 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                      <Search className="w-3.5 h-3.5 text-[#64748B] absolute left-3 top-1/2 -translate-y-1/2" />
                       <input
                         type="text"
                         placeholder="Search LATAM regions..."
                         value={regionSearch}
                         onChange={(e) => setRegionSearch(e.target.value)}
-                        className="w-full pl-8 pr-3 py-2 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 font-mono"
+                        className="w-full pl-8 pr-3 py-2 text-xs rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] font-mono"
                       />
                     </div>
                   </div>
@@ -831,24 +828,24 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                           rel="noopener noreferrer"
                           className={`p-3 rounded-xl border text-xs transition-all flex flex-col justify-between group ${
                             isLive
-                              ? 'bg-gradient-to-br from-amber-950/60 to-slate-900 border-amber-600/50 hover:border-amber-400 hover:shadow-lg hover:shadow-amber-950/50'
-                              : 'bg-slate-950/70 border-slate-850 hover:border-slate-700 hover:bg-slate-900'
+                              ? 'bg-amber-50 border-amber-200 hover:border-amber-400 hover:shadow-md'
+                              : 'bg-[#F8FAFC] border-[#E2E8F0] hover:border-blue-600/30 hover:bg-white'
                           }`}
                         >
                           <div className="flex items-center justify-between gap-1 mb-1.5">
-                            <span className="flex items-center gap-1 font-semibold text-slate-200 group-hover:text-white truncate">
-                              <Globe className={`w-3 h-3 shrink-0 ${isLive ? 'text-amber-400' : 'text-slate-500 group-hover:text-amber-400'}`} />
+                            <span className="flex items-center gap-1 font-semibold text-[#0F172A] group-hover:text-[#1D4ED8] truncate">
+                              <Globe className={`w-3 h-3 shrink-0 ${isLive ? 'text-amber-600' : 'text-[#64748B] group-hover:text-[#1D4ED8]'}`} />
                               <span className="truncate">{region}</span>
                             </span>
                             {isLive && (
-                              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
+                              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse shrink-0"></span>
                             )}
                           </div>
-                          <div className="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-slate-900">
-                            <span className={isLive ? 'text-amber-300 font-medium' : 'text-slate-400'}>
+                          <div className="flex items-center justify-between text-[10px] text-[#64748B] pt-1 border-t border-[#E2E8F0]">
+                            <span className={isLive ? 'text-amber-700 font-semibold' : 'text-[#64748B]'}>
                               {isLive ? 'Dedicated Hub' : 'Spanish SEO'}
                             </span>
-                            <ExternalLink className="w-2.5 h-2.5 opacity-50 group-hover:opacity-100 group-hover:text-amber-400" />
+                            <ExternalLink className="w-2.5 h-2.5 opacity-60 group-hover:opacity-100 group-hover:text-[#1D4ED8]" />
                           </div>
                         </a>
                       );
@@ -856,22 +853,22 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                   </div>
 
                   {filteredRegions.length === 0 && (
-                    <div className="text-center py-6 text-xs text-slate-500 font-mono">
+                    <div className="text-center py-6 text-xs text-[#64748B] font-mono">
                       No region matched "{regionSearch}". Clear filter to see all {allRegions.length} markets.
                     </div>
                   )}
 
                   {/* Consultation Footnote */}
-                  <div className="pt-3 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+                  <div className="pt-3 border-t border-[#E2E8F0] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#475569]">
                     <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-amber-400"></span>
+                      <span className="w-2 h-2 rounded-full bg-[#F59E0B]"></span>
                       <span>Arun works with US businesses scaling across every Spanish-speaking market directly.</span>
                     </div>
                     <a
                       href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20discuss%20Spanish%20SEO%20and%20LATAM%20market%20expansion%20for%20my%20business."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-amber-400 hover:underline font-semibold font-mono inline-flex items-center gap-1"
+                      className="text-[#1D4ED8] hover:underline font-semibold font-mono inline-flex items-center gap-1"
                     >
                       <span>Inquire on WhatsApp (+91-9521186150)</span>
                       <ArrowRight className="w-3 h-3" />
@@ -889,18 +886,18 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               const descPart = colonIdx > -1 ? raw.slice(colonIdx + 1).trim() : raw;
 
               return (
-                <div key={pIdx} className="flex items-start gap-3 p-4 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-blue-500/40 transition-colors">
-                  <div className="w-6 h-6 rounded-md bg-blue-600/20 text-blue-400 flex items-center justify-center shrink-0 border border-blue-500/30 font-mono text-xs font-bold mt-0.5">
+                <div key={pIdx} className="flex items-start gap-3 p-4 rounded-xl bg-white border border-[#E2E8F0] hover:border-blue-600/30 transition-colors">
+                  <div className="w-6 h-6 rounded-md bg-blue-50 text-[#1D4ED8] flex items-center justify-center shrink-0 border border-blue-200 font-mono text-xs font-bold mt-0.5">
                     ✓
                   </div>
                   <div>
                     {titlePart ? (
                       <>
-                        <strong className="text-white text-sm font-semibold">{titlePart}:</strong>{' '}
-                        <span className="text-slate-300 text-sm leading-relaxed">{descPart}</span>
+                        <strong className="text-[#0F172A] text-sm font-semibold">{titlePart}:</strong>{' '}
+                        <span className="text-[#475569] text-sm leading-relaxed">{renderFormattedText(descPart)}</span>
                       </>
                     ) : (
-                      <span className="text-slate-300 text-sm leading-relaxed">{descPart}</span>
+                      <span className="text-[#475569] text-sm leading-relaxed">{renderFormattedText(descPart)}</span>
                     )}
                   </div>
                 </div>
@@ -910,12 +907,12 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
             // Check if paragraph is a numbered review or list item
             if (/^\d+\.\s+/.test(paragraph)) {
               return (
-                <div key={pIdx} className="my-2.5 p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-sm text-slate-200 flex items-start gap-3 hover:border-slate-700 transition-colors">
-                  <span className="w-6 h-6 rounded-md bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/30 font-mono text-xs font-bold mt-0.5">
+                <div key={pIdx} className="my-2.5 p-4 rounded-xl bg-white border border-[#E2E8F0] text-sm text-[#475569] flex items-start gap-3 hover:border-blue-600/30 transition-colors">
+                  <span className="w-6 h-6 rounded-md bg-amber-50 text-[#F59E0B] flex items-center justify-center shrink-0 border border-amber-200 font-mono text-xs font-bold mt-0.5">
                     ★
                   </span>
-                  <div className="leading-relaxed text-slate-300">
-                    {paragraph}
+                  <div className="leading-relaxed text-[#475569]">
+                    {renderFormattedText(paragraph)}
                   </div>
                 </div>
               );
@@ -927,16 +924,16 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
               paragraph === '[DISCUSSION_IMAGES_ARCHIVE]'
             ) {
               return (
-                <div key={pIdx} className="my-10 p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
-                  <div className="pb-4 border-b border-slate-800">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold mb-3">
+                <div key={pIdx} className="my-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm space-y-6">
+                  <div className="pb-4 border-b border-[#E2E8F0]">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold mb-3">
                       <Sparkles className="w-3.5 h-3.5" />
                       <span>Historic Debate Archive · Adrian Alexa vs. Arun Kumar Soni (UDMIDEAS)</span>
                     </div>
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#0F172A] tracking-tight">
                       BLOG COMMENT LATEST UPDATE - WHAT DO YOU SAY? -- Here is the complete discussion - read the images - discussion...
                     </h3>
-                    <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-[#475569] mt-2 leading-relaxed">
                       Original unedited screenshots from the public discussion between SEO practitioner Adrian Alexa and Arun Kumar Soni (Founder, UDMIDEAS) debating whether blog commenting is spam, how small businesses utilize link building, and whether SEO is dead. Click any screenshot below to inspect and read full size:
                     </p>
                   </div>
@@ -947,33 +944,32 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                       <div
                         key={img.id}
                         onClick={() => setActiveImageIndex(idx)}
-                        className="group relative cursor-pointer rounded-2xl bg-slate-950 border border-slate-800 hover:border-emerald-500/60 overflow-hidden shadow-lg transition-all flex flex-col justify-between"
+                        className="group relative cursor-pointer rounded-2xl bg-white border border-[#E2E8F0] hover:border-blue-600/40 hover:-translate-y-1 hover:shadow-lg overflow-hidden transition-all duration-300 flex flex-col justify-between"
                       >
-                        <div className="p-3 bg-slate-900/80 border-b border-slate-850 flex items-center justify-between text-xs">
-                          <span className="font-mono font-bold text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-900/40 text-[11px]">
+                        <div className="p-3 bg-[#F8FAFC] border-b border-[#E2E8F0] flex items-center justify-between text-xs">
+                          <span className="font-mono font-bold text-[#1D4ED8] bg-blue-50 px-2 py-0.5 rounded border border-blue-200 text-[11px]">
                             {img.part}
                           </span>
-                          <span className="inline-flex items-center gap-1 text-[11px] text-slate-400 group-hover:text-emerald-400 transition-colors">
+                          <span className="inline-flex items-center gap-1 text-[11px] text-[#64748B] group-hover:text-[#1D4ED8] transition-colors font-medium">
                             <ZoomIn className="w-3.5 h-3.5" />
                             <span>Click to Zoom</span>
                           </span>
                         </div>
 
-                        <div className="relative aspect-[3/4] bg-slate-900 overflow-hidden">
+                        <div className="relative aspect-[3/4] bg-[#F8FAFC] overflow-hidden">
                           <img
                             src={img.src}
                             alt={`${img.part}: ${img.title}`}
                             className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
                             loading="lazy"
                           />
-                          <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors" />
                         </div>
 
-                        <div className="p-3.5 bg-slate-950 space-y-1">
-                          <div className="text-xs font-bold text-white group-hover:text-emerald-300 transition-colors leading-snug">
+                        <div className="p-3.5 bg-white border-t border-[#E2E8F0] space-y-1">
+                          <div className="text-xs font-bold text-[#0F172A] group-hover:text-[#1D4ED8] transition-colors leading-snug">
                             {img.title}
                           </div>
-                          <p className="text-[11px] text-slate-400 leading-relaxed line-clamp-2">
+                          <p className="text-[11px] text-[#64748B] leading-relaxed line-clamp-2">
                             {img.desc}
                           </p>
                         </div>
@@ -981,66 +977,56 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                     ))}
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                  <div className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-center justify-between text-xs text-[#475569]">
                     <span className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                       <span>9 Original Debate Screenshots Documented & Preserved</span>
                     </span>
-                    <span className="font-mono text-emerald-400 text-[11px]">UDMIDEAS Archive</span>
+                    <span className="font-mono font-semibold text-[#1D4ED8] text-[11px]">UDMIDEAS Archive</span>
                   </div>
                 </div>
               );
             }
 
-            // Check if paragraph is a bullet point item
-            if (paragraph.startsWith('• ')) {
-              return (
-                <div key={pIdx} className="flex items-start gap-3 pl-2 sm:pl-4 text-slate-200 leading-relaxed">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 shrink-0 mt-2.5" />
-                  <span>{renderFormattedText(paragraph.slice(2).trim())}</span>
-                </div>
-              );
-            }
-
             return (
-              <p key={pIdx} className="leading-relaxed text-slate-300">
+              <p key={pIdx} className="leading-[1.7] text-[#475569]">
                 {renderFormattedText(paragraph)}
               </p>
             );
           })}
 
           {/* AEO (Answer Engine Optimization) & GEO (Generative Engine Optimization) Highlight Box */}
-          <div className="my-10 p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
-              <CheckCircle2 className="w-4 h-4" />
+          <div className="my-10 p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm space-y-4">
+            <div className="flex items-center gap-2 text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-[0.08em]">
+              <CheckCircle2 className="w-4 h-4 text-[#1D4ED8]" />
               AEO & GEO Compliance Signals (Answer & Generative Engine Rules)
             </div>
-            <h3 className="text-lg font-bold text-white">
+            <h3 className="text-lg font-bold text-[#0F172A]">
               Why UDMIDEAS Organic White Hat SEO Wins Across Google & Generative AI:
             </h3>
-            <ul className="space-y-3 text-sm text-slate-300">
+            <ul className="space-y-3 text-sm text-[#475569]">
               <li className="flex items-start gap-2.5">
-                <span className="text-blue-400 font-bold font-mono">01.</span>
+                <span className="text-[#1D4ED8] font-bold font-mono">01.</span>
                 <span>
-                  <strong>Algorithm-Proof Longevity:</strong> By following all 500+ Google rules and regulations strictly through White Hat SEO, algorithm updates (Core, Helpful Content, Spam) actually boost your rankings rather than penalize you.
+                  <strong className="text-[#0F172A]">Algorithm-Proof Longevity:</strong> By following all 500+ Google rules and regulations strictly through White Hat SEO, algorithm updates (Core, Helpful Content, Spam) actually boost your rankings rather than penalize you.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="text-blue-400 font-bold font-mono">02.</span>
+                <span className="text-[#1D4ED8] font-bold font-mono">02.</span>
                 <span>
-                  <strong>AEO Voice Search Position Zero:</strong> We optimize conversational answer blocks, schema graphs, and direct definitions so voice assistants (Siri, Google Assistant) pick your brand as the definitive source.
+                  <strong className="text-[#0F172A]">AEO Voice Search Position Zero:</strong> We optimize conversational answer blocks, schema graphs, and direct definitions so voice assistants (Siri, Google Assistant) pick your brand as the definitive source.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="text-blue-400 font-bold font-mono">03.</span>
+                <span className="text-[#1D4ED8] font-bold font-mono">03.</span>
                 <span>
-                  <strong>GEO (Generative Engine Optimization):</strong> Entity knowledge graphs, citations in authoritative directories, and verified factual claims ensure that ChatGPT, Perplexity, and Gemini cite UDMIDEAS and your business in AI search summaries.
+                  <strong className="text-[#0F172A]">GEO (Generative Engine Optimization):</strong> Entity knowledge graphs, citations in authoritative directories, and verified factual claims ensure that ChatGPT, Perplexity, and Gemini cite UDMIDEAS and your business in AI search summaries.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <span className="text-blue-400 font-bold font-mono">04.</span>
+                <span className="text-[#1D4ED8] font-bold font-mono">04.</span>
                 <span>
-                  <strong>Tangible Inbound Leads:</strong> Link building through active forums, local listings, and high-relevance guest posts brings direct human referral traffic and verified prospective buyers.
+                  <strong className="text-[#0F172A]">Tangible Inbound Leads:</strong> Link building through active forums, local listings, and high-relevance guest posts brings direct human referral traffic and verified prospective buyers.
                 </span>
               </li>
             </ul>
@@ -1048,42 +1034,42 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
         </div>
 
         {/* Dedicated Organic SEO Quote & Consultation Form Targeting info@udmideasusa.com */}
-        <section id="quote-form" className="mt-14 mb-16 p-8 sm:p-10 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl">
+        <section id="quote-form" className="mt-14 mb-16 p-8 sm:p-10 rounded-2xl bg-white border border-[#E2E8F0] shadow-lg">
           <div className="max-w-2xl mb-8">
-            <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1 flex items-center gap-2">
+            <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-[0.08em] mb-1.5 flex items-center gap-2">
               <Mail className="w-4 h-4" />
               Direct Email Delivery to info@udmideasusa.com
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
               Request a Quote for Organic SEO Services.
             </h2>
-            <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-              We at UDMIDEAS NYC Digital Marketing Agency take your business to the next level. Fill out this form to connect with Founder Arun at <strong className="text-emerald-400 font-mono">info@udmideasusa.com</strong> or call/text directly at <strong className="text-emerald-400 font-mono">+91-9521186150</strong>.
+            <p className="text-xs sm:text-sm text-[#475569] mt-2 leading-relaxed">
+              We at UDMIDEAS NYC Digital Marketing Agency take your business to the next level. Fill out this form to connect with Founder Arun at <strong className="text-[#0F172A] font-mono">info@udmideasusa.com</strong> or call/text directly at <strong className="text-[#0F172A] font-mono">+91-9521186150</strong>.
             </p>
           </div>
 
           {isSubmitted ? (
-            <div className="p-8 rounded-2xl bg-emerald-950/40 border border-emerald-800/60 text-center space-y-4 animate-in fade-in">
-              <div className="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto border border-emerald-500/40">
+            <div className="p-8 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-4">
+              <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto border border-emerald-200">
                 <CheckCircle2 className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-white">Inquiry Dispatched to info@udmideasusa.com!</h3>
-              <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
-                Thank you, <strong>{formData.name}</strong>. Your Organic SEO audit request has been sent to <span className="text-emerald-400 font-mono">info@udmideasusa.com</span>. We will review your website and reply within 4 business hours.
+              <h3 className="text-xl font-bold text-[#0F172A]">Inquiry Dispatched to info@udmideasusa.com!</h3>
+              <p className="text-xs sm:text-sm text-[#475569] max-w-lg mx-auto leading-relaxed">
+                Thank you, <strong className="text-[#0F172A]">{formData.name}</strong>. Your Organic SEO audit request has been sent to <span className="text-emerald-700 font-semibold font-mono">info@udmideasusa.com</span>. We will review your website and reply within 4 business hours.
               </p>
               <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
                 <a
                   href={`https://wa.me/919521186150?text=Hello%20Arun,%20I%20just%20submitted%20an%20Organic%20SEO%20quote%20request%20under%20the%20name%20${encodeURIComponent(formData.name)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs inline-flex items-center gap-2"
+                  className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs inline-flex items-center gap-2 transition-all hover:shadow-md"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>Follow Up on WhatsApp (+91-9521186150)</span>
                 </a>
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 text-xs cursor-pointer"
+                  className="px-4 py-2.5 rounded-xl bg-white border border-[#E2E8F0] text-[#475569] hover:text-[#0F172A] hover:bg-[#F8FAFC] text-xs font-medium cursor-pointer"
                 >
                   Submit Another Request
                 </button>
@@ -1093,7 +1079,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
             <form onSubmit={handleFormSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1">
+                  <label className="block text-xs font-semibold text-[#0F172A] mb-1.5">
                     Your Full Name *
                   </label>
                   <input
@@ -1102,12 +1088,12 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                     placeholder="e.g. John Smith"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-600/15 transition-all"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1">
+                  <label className="block text-xs font-semibold text-[#0F172A] mb-1.5">
                     Business Email *
                   </label>
                   <input
@@ -1116,14 +1102,14 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                     placeholder="name@company.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-600/15 transition-all"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1">
+                  <label className="block text-xs font-semibold text-[#0F172A] mb-1.5">
                     Phone / WhatsApp Number
                   </label>
                   <input
@@ -1131,12 +1117,12 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                     placeholder="+1 (555) 000-0000"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-600/15 transition-all"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1">
+                  <label className="block text-xs font-semibold text-[#0F172A] mb-1.5">
                     Website URL to Audit
                   </label>
                   <input
@@ -1144,13 +1130,13 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                     placeholder="https://yourwebsite.com"
                     value={formData.website}
                     onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-600/15 transition-all"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-slate-300 mb-1">
+                <label className="block text-xs font-semibold text-[#0F172A] mb-1.5">
                   Target Keywords, Industry & Organic Goals
                 </label>
                 <textarea
@@ -1158,17 +1144,17 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                   placeholder="Tell us about your industry, current rankings, and target keywords for Organic SEO..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                  className="w-full px-3.5 py-2.5 text-sm rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-600/15 transition-all"
                 />
               </div>
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div className="text-[11px] text-slate-400">
-                  🔒 Direct routing to <span className="text-emerald-400 font-mono">info@udmideasusa.com</span> · Strict NDA protected.
+                <div className="text-[11px] text-[#64748B]">
+                  Direct routing to <span className="text-[#0F172A] font-semibold font-mono">info@udmideasusa.com</span> · Strict NDA protected.
                 </div>
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-8 py-3 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all inline-flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full sm:w-auto px-8 py-3 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] hover:shadow-md transition-all duration-200 inline-flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <span>Request Organic SEO Quote</span>
                   <Send className="w-3.5 h-3.5" />
@@ -1179,20 +1165,22 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
         </section>
 
         {/* Author Bio Box */}
-        <div className="mt-12 p-6 rounded-2xl bg-slate-900 border border-slate-800 flex flex-col sm:flex-row items-center gap-5">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-emerald-500 p-[2px] shrink-0">
-            <div className="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center text-xl font-bold text-white font-mono">
-              AR
-            </div>
+        <div className="mt-12 p-6 rounded-2xl bg-white border border-[#E2E8F0] shadow-xs flex flex-col sm:flex-row items-center gap-5">
+          <div className="w-16 h-16 rounded-2xl overflow-hidden border-2 border-[#E2E8F0] shrink-0 bg-[#F8FAFC]">
+            <img
+              src="/assets/aistudio/Arun_Kumar_soni_39359c64.png"
+              alt="Arun — Founder, UDMIDEAS"
+              className="w-full h-full object-cover object-top"
+            />
           </div>
           <div className="space-y-1">
-            <div className="flex items-center gap-2">
-              <h4 className="text-base font-bold text-white">Written by {blog.author}</h4>
-              <span className="text-[10px] text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-900/40">
+            <div className="flex items-center gap-2 flex-wrap">
+              <h4 className="text-base font-bold text-[#0F172A]">Written by {blog.author}</h4>
+              <span className="text-[10px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
                 15+ Yrs Industry Lead
               </span>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <p className="text-xs text-[#475569] leading-relaxed">
               Arun leads UDMIDEAS NYC Digital Marketing Agency from New York, NY 10001 (350 5th Ave). With 15+ years of digital marketing and custom engineering experience, Arun specializes in White Hat Organic SEO, AEO, GEO, and high-performance international acquisition.
             </p>
           </div>
@@ -1200,17 +1188,17 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
 
         {/* Strategic Internal Links Directory (Opening in New Tab) */}
         {!blog.disableInternalLinks && (
-          <section className="mt-14 pt-10 border-t border-slate-900">
+          <section className="mt-14 pt-10 border-t border-[#E2E8F0]">
             <div className="flex items-center justify-between mb-6">
               <div>
-                <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
-                  Internal Links Directory
+                <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-[0.08em]">
+                  – Internal Links Directory
                 </div>
-                <h3 className="text-xl font-bold text-white mt-1">
+                <h3 className="text-xl font-bold text-[#0F172A] mt-1">
                   Explore Related Web Design & Digital Marketing Solutions
                 </h3>
               </div>
-              <span className="text-xs text-slate-500 hidden sm:inline font-mono">Opens in new tab</span>
+              <span className="text-xs text-[#64748B] hidden sm:inline font-mono">Opens in new tab</span>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
@@ -1220,10 +1208,10 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-xl bg-slate-900/50 border border-slate-850 hover:border-blue-500/50 hover:bg-slate-900 transition-all text-xs text-slate-300 hover:text-white flex items-center justify-between group"
+                  className="p-3 rounded-xl bg-white border border-[#E2E8F0] hover:border-blue-600/30 hover:shadow-sm transition-all text-xs text-[#475569] hover:text-[#1D4ED8] font-medium flex items-center justify-between group"
                 >
                   <span className="truncate">{link.label}</span>
-                  <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-blue-400 shrink-0 ml-1.5" />
+                  <ExternalLink className="w-3 h-3 text-[#94A3B8] group-hover:text-[#1D4ED8] shrink-0 ml-1.5" />
                 </a>
               ))}
             </div>
@@ -1231,8 +1219,8 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
         )}
 
         {/* Related Articles Carousel / Grid */}
-        <div className="mt-14 pt-10 border-t border-slate-900">
-          <h3 className="text-xl font-bold text-white mb-6">
+        <div className="mt-14 pt-10 border-t border-[#E2E8F0]">
+          <h3 className="text-xl font-bold text-[#0F172A] mb-6">
             Continue Reading Knowledge Base
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -1243,22 +1231,22 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
                   onSelectBlog(rel);
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
-                className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-all cursor-pointer group flex flex-col justify-between"
+                className="p-5 rounded-2xl bg-white border border-[#E2E8F0] hover:border-blue-600/30 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-pointer group flex flex-col justify-between"
               >
                 <div>
-                  <div className="text-[11px] text-blue-400 font-medium mb-1">
+                  <div className="text-[11px] text-[#1D4ED8] font-semibold mb-1.5">
                     {rel.category} · {rel.readTime}
                   </div>
-                  <h4 className="text-sm font-bold text-white group-hover:text-blue-400 transition-colors mb-2 line-clamp-2">
+                  <h4 className="text-sm font-bold text-[#0F172A] group-hover:text-[#1D4ED8] transition-colors mb-2 line-clamp-2">
                     {rel.title}
                   </h4>
-                  <p className="text-xs text-slate-400 line-clamp-2 mb-4">
+                  <p className="text-xs text-[#475569] line-clamp-2 mb-4 leading-relaxed">
                     {rel.excerpt}
                   </p>
                 </div>
-                <div className="text-xs text-slate-400 group-hover:text-white flex items-center gap-1 font-semibold">
+                <div className="text-xs text-[#1D4ED8] flex items-center gap-1 font-semibold">
                   <span>Read Article</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
                 </div>
               </div>
             ))}
@@ -1269,26 +1257,26 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
       {/* Lightbox Modal for Discussion Screenshots */}
       {activeImageIndex !== null && (
         <div
-          className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md flex items-center justify-center p-4 sm:p-6"
+          className="fixed inset-0 z-50 bg-[#0F172A]/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6"
           onClick={() => setActiveImageIndex(null)}
         >
           <div
-            className="relative max-w-4xl w-full max-h-[92vh] bg-slate-900 border border-slate-800 rounded-3xl p-4 sm:p-6 flex flex-col items-center shadow-2xl overflow-hidden"
+            className="relative max-w-4xl w-full max-h-[92vh] bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-6 flex flex-col items-center shadow-2xl overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
-            <div className="w-full flex items-center justify-between pb-3 mb-3 border-b border-slate-800 text-xs">
+            <div className="w-full flex items-center justify-between pb-3 mb-3 border-b border-[#E2E8F0] text-xs">
               <div className="flex items-center gap-2">
-                <span className="font-mono font-bold text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded border border-emerald-900/50">
+                <span className="font-mono font-bold text-[#1D4ED8] bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">
                   {DISCUSSION_IMAGES[activeImageIndex].part} of 09
                 </span>
-                <span className="text-white font-bold truncate max-w-[200px] sm:max-w-md">
+                <span className="text-[#0F172A] font-bold truncate max-w-[200px] sm:max-w-md">
                   {DISCUSSION_IMAGES[activeImageIndex].title}
                 </span>
               </div>
               <button
                 onClick={() => setActiveImageIndex(null)}
-                className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer"
+                className="p-1.5 rounded-lg bg-[#F8FAFC] hover:bg-slate-200 text-[#475569] hover:text-[#0F172A] border border-[#E2E8F0] transition-colors cursor-pointer"
                 title="Close Lightbox"
               >
                 <X className="w-5 h-5" />
@@ -1296,33 +1284,33 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
             </div>
 
             {/* Modal Body with Zoomable Image */}
-            <div className="relative w-full flex-1 overflow-auto flex items-center justify-center bg-slate-950 rounded-2xl p-2 sm:p-4 border border-slate-850">
+            <div className="relative w-full flex-1 overflow-auto flex items-center justify-center bg-[#F8FAFC] rounded-xl p-2 sm:p-4 border border-[#E2E8F0]">
               <img
                 src={DISCUSSION_IMAGES[activeImageIndex].src}
                 alt={DISCUSSION_IMAGES[activeImageIndex].title}
-                className="max-h-[70vh] w-auto max-w-full object-contain rounded-lg shadow-md"
+                className="max-h-[70vh] w-auto max-w-full object-contain rounded-lg shadow-sm"
               />
             </div>
 
             {/* Modal Footer Controls */}
-            <div className="w-full flex items-center justify-between pt-3 mt-3 border-t border-slate-800 text-xs text-slate-300">
+            <div className="w-full flex items-center justify-between pt-3 mt-3 border-t border-[#E2E8F0] text-xs text-[#475569]">
               <button
                 disabled={activeImageIndex === 0}
                 onClick={() => setActiveImageIndex((prev) => (prev !== null && prev > 0 ? prev - 1 : prev))}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#F8FAFC] hover:bg-slate-200 border border-[#E2E8F0] text-[#0F172A] font-medium disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
               >
                 <ChevronLeft className="w-4 h-4" />
                 <span>Previous</span>
               </button>
 
-              <div className="text-[11px] font-mono text-slate-400 text-center hidden sm:block">
+              <div className="text-[11px] font-mono text-[#64748B] text-center hidden sm:block">
                 Click outside or press Close to return to article
               </div>
 
               <button
                 disabled={activeImageIndex === DISCUSSION_IMAGES.length - 1}
                 onClick={() => setActiveImageIndex((prev) => (prev !== null && prev < DISCUSSION_IMAGES.length - 1 ? prev + 1 : prev))}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1D4ED8] hover:bg-[#1E40AF] text-white font-medium disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
               >
                 <span>Next</span>
                 <ChevronRight className="w-4 h-4" />

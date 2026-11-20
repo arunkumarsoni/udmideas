@@ -431,20 +431,20 @@ export const PpcServicesContent: React.FC = () => {
       {/* 1. What Are Pay Per Click Services and What Do We Do */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold mb-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold mb-2">
             <MousePointerClick className="w-3.5 h-3.5" />
             <span>Google Ads & PPC Management · 15+ Years Track Record</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Pay Per Click Services by UDMIDEAS: Google Ads Campaigns That Bring Sales, Leads and Traffic
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Pay per click services put your business in front of buyers at the exact moment they search, watch, or shop, and you pay only when someone clicks. At UDMIDEAS, we deliver pay per click services on Google Ads and YouTube for businesses in the USA, Latin America, and worldwide, backed by 15+ years of digital marketing experience.
           </p>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Good PPC is not about spending more. It is about matching the right goal to the right campaign type, sending the click to a page that converts, and measuring every single dollar. Poor setup wastes budget fast, and most accounts we audit have the same problems: wrong objective, weak product data, and landing pages that do not match the ad.
           </p>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Arun, our founder, leads a team that joins PPC with SEO services, content, and web development. This comprehensive guide explains what we do in PPC, how we do it, which campaign type fits which business, how Shopping ads work, our 90-day plan, and why businesses choose UDMIDEAS.
           </p>
         </div>
@@ -454,13 +454,13 @@ export const PpcServicesContent: React.FC = () => {
           {whatWeDoList.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
             >
-              <div className="flex items-center gap-2 text-sm font-bold text-white">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+              <div className="flex items-center gap-2 text-sm font-bold text-[#0F172A]">
+                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
                 <span>{item.title}</span>
               </div>
-              <p className="text-xs text-slate-300 leading-relaxed pl-6">
+              <p className="text-xs text-[#475569] leading-relaxed pl-6">
                 {item.desc}
               </p>
             </div>
@@ -471,20 +471,20 @@ export const PpcServicesContent: React.FC = () => {
       {/* 2. PPC Statistics: Why Pay Per Click Services Work */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Data-Led Commercial Power
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             PPC Statistics: Why Pay Per Click Services Work
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Paid search puts your business in front of people who are ready to act. These verified figures explain why pay per click services remain an indispensable growth engine:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Market Metric</th>
                 <th className="py-3.5 px-4 sm:px-6">Figure (Approx.)</th>
@@ -492,19 +492,19 @@ export const PpcServicesContent: React.FC = () => {
                 <th className="py-3.5 px-4 sm:px-6">What It Means for Your Business</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {ppcStats.map((stat, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-[#0F172A]">
                     {stat.stat}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {stat.figure}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-400 text-xs whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#64748B] text-xs whitespace-nowrap">
                     {stat.source}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {stat.meaning}
                   </td>
                 </tr>
@@ -513,7 +513,7 @@ export const PpcServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 italic">
+        <p className="text-xs text-[#64748B] italic">
           <strong>The lesson:</strong> PPC rewards precision. Commercial intent, message match, and landing page quality decide the financial outcome, not budget size alone. Figures are approximate and compiled from public industry benchmarks.
         </p>
       </section>
@@ -521,13 +521,13 @@ export const PpcServicesContent: React.FC = () => {
       {/* 3. Benefits of Pay Per Click Services */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Predictable ROI
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             7 Proven Benefits of Pay Per Click Services
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             For a Texas dental clinic, a Mexican online store, or a US SaaS company, the commercial return is concrete: qualified buyers, measured acquisition cost, and transparent numbers:
           </p>
         </div>
@@ -536,16 +536,16 @@ export const PpcServicesContent: React.FC = () => {
           {benefits.map((b) => (
             <div
               key={b.num}
-              className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] hover:border-blue-600/30 transition-all flex flex-col justify-between"
             >
               <div>
-                <div className="font-mono text-xs font-bold text-emerald-400 mb-2">
+                <div className="font-mono text-xs font-bold text-emerald-700 mb-2">
                   BENEFIT {b.num}
                 </div>
-                <h3 className="text-sm font-bold text-white mb-2">
+                <h3 className="text-sm font-bold text-[#0F172A] mb-2">
                   {b.title}
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {b.desc}
                 </p>
               </div>
@@ -557,20 +557,20 @@ export const PpcServicesContent: React.FC = () => {
       {/* 4. PPC Campaign Objectives: Which Goal Fits Your Business? */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Strategic Alignment
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             PPC Campaign Objectives: Which Goal Fits Your Business?
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Every profitable campaign starts with one crystal-clear objective. We select your objective first, then configure campaign types and smart bidding algorithms to match:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Campaign Objective</th>
                 <th className="py-3.5 px-4 sm:px-6">Best Campaign Types</th>
@@ -578,19 +578,19 @@ export const PpcServicesContent: React.FC = () => {
                 <th className="py-3.5 px-4 sm:px-6">What We Track & Optimize</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {campaignObjectives.map((obj, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {obj.objective}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-400 font-medium">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700 font-medium">
                     {obj.types}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A] text-xs">
                     {obj.example}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {obj.tracking}
                   </td>
                 </tr>
@@ -599,10 +599,10 @@ export const PpcServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-5 rounded-2xl bg-amber-950/30 border border-amber-500/30 text-xs sm:text-sm text-amber-200 leading-relaxed flex items-start gap-3">
-          <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+        <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-700 leading-relaxed flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
           <div>
-            <strong className="text-white">A common industry mistake to avoid:</strong> Choosing a "Website Traffic" campaign objective when the actual commercial goal is lead generation or sales. Traffic campaigns optimize for the cheapest possible clicks, not buyers. At UDMIDEAS, we install conversion tracking first so Google's AI learns exclusively from the actions that generate revenue.
+            <strong className="text-[#0F172A]">A common industry mistake to avoid:</strong> Choosing a "Website Traffic" campaign objective when the actual commercial goal is lead generation or sales. Traffic campaigns optimize for the cheapest possible clicks, not buyers. At UDMIDEAS, we install conversion tracking first so Google's AI learns exclusively from the actions that generate revenue.
           </div>
         </div>
       </section>
@@ -610,20 +610,20 @@ export const PpcServicesContent: React.FC = () => {
       {/* 5. Google Ads Campaign Types: Which Is Better for Whom? */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Platform Selection
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Google Ads Campaign Types: Which Is Better for Whom?
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             No single campaign type is universally best for every business. This breakdown shows exactly where each format fits:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Campaign Type</th>
                 <th className="py-3.5 px-4 sm:px-6">Where Ads Appear</th>
@@ -631,19 +631,19 @@ export const PpcServicesContent: React.FC = () => {
                 <th className="py-3.5 px-4 sm:px-6">Who Should Use It</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {campaignTypesComparison.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.type}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A] text-xs">
                     {row.where}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-400 text-xs font-medium">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700 text-xs font-medium">
                     {row.bestFor}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {row.who}
                   </td>
                 </tr>
@@ -653,14 +653,14 @@ export const PpcServicesContent: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-          <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300">
-            <strong className="text-white block mb-1">Local Healthcare Example:</strong> A dental clinic in Dallas starts with Google Search ads targeting high-urgency keywords like "emergency dentist near me".
+          <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs text-[#475569]">
+            <strong className="text-[#0F172A] block mb-1">Local Healthcare Example:</strong> A dental clinic in Dallas starts with Google Search ads targeting high-urgency keywords like "emergency dentist near me".
           </div>
-          <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300">
-            <strong className="text-white block mb-1">eCommerce Fashion Example:</strong> A Colombian leather bag store scales with Google Shopping and Performance Max campaigns across LATAM and the USA.
+          <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs text-[#475569]">
+            <strong className="text-[#0F172A] block mb-1">eCommerce Fashion Example:</strong> A Colombian leather bag store scales with Google Shopping and Performance Max campaigns across LATAM and the USA.
           </div>
-          <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300">
-            <strong className="text-white block mb-1">Mobile Software Example:</strong> A fitness tracking app drives low-cost customer downloads through Google App Campaigns and YouTube Shorts video ads.
+          <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs text-[#475569]">
+            <strong className="text-[#0F172A] block mb-1">Mobile Software Example:</strong> A fitness tracking app drives low-cost customer downloads through Google App Campaigns and YouTube Shorts video ads.
           </div>
         </div>
       </section>
@@ -668,20 +668,20 @@ export const PpcServicesContent: React.FC = () => {
       {/* 6. Display vs Video vs Text Ads: Which Is Best? */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Format Analysis
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Display vs Video vs Text Ads: Which Is Best?
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             For direct customer inquiries and sales, text ads on Google Search are almost always best because the buyer is actively searching for your service. Video and display ads excel at building authority and remarketing:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Ad Format</th>
                 <th className="py-3.5 px-4 sm:px-6">Core Strength</th>
@@ -689,19 +689,19 @@ export const PpcServicesContent: React.FC = () => {
                 <th className="py-3.5 px-4 sm:px-6">Best Strategic Role</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {formatComparison.map((fmt, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {fmt.format}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A] text-xs">
                     {fmt.strength}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-400 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#64748B] text-xs">
                     {fmt.weakness}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-400 text-xs font-semibold">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700 text-xs font-semibold">
                     {fmt.role}
                   </td>
                 </tr>
@@ -710,12 +710,12 @@ export const PpcServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-5 rounded-2xl bg-slate-900/40 border border-slate-850 text-xs sm:text-sm text-slate-300 leading-relaxed space-y-2">
+        <div className="p-5 rounded-2xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed space-y-2">
           <p>
-            <strong className="text-white">Why this multi-format sequence works:</strong> A text ad solves an immediate commercial need today. A video explains complex services and builds trust. A display banner reminds past visitors. A customer might first watch your video, see a display banner on a news site, and finally click your Search ad when ready to buy.
+            <strong className="text-[#0F172A]">Why this multi-format sequence works:</strong> A text ad solves an immediate commercial need today. A video explains complex services and builds trust. A display banner reminds past visitors. A customer might first watch your video, see a display banner on a news site, and finally click your Search ad when ready to buy.
           </p>
-          <p className="text-slate-400 font-medium">
-            <strong className="text-emerald-400">Our agency rule:</strong> Always start with Search or Shopping to generate immediate revenue. Introduce Video and Display once tracking is mature and you have an audience pool to remarket to.
+          <p className="text-[#64748B] font-medium">
+            <strong className="text-emerald-700">Our agency rule:</strong> Always start with Search or Shopping to generate immediate revenue. Introduce Video and Display once tracking is mature and you have an audience pool to remarket to.
           </p>
         </div>
       </section>
@@ -723,13 +723,13 @@ export const PpcServicesContent: React.FC = () => {
       {/* 7. How We Set Up PPC Campaigns: Our 10-Step Process */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Systematic Methodology
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             How We Set Up PPC Campaigns: Our 10-Step Process
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Every dollar of ad spend is engineered for maximum return through this rigorous 10-step protocol:
           </p>
         </div>
@@ -738,16 +738,16 @@ export const PpcServicesContent: React.FC = () => {
           {tenStepsProcess.map((step) => (
             <div
               key={step.step}
-              className="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 flex flex-col justify-between hover:border-slate-700 transition-all"
+              className="p-4 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 flex flex-col justify-between hover:border-blue-600/30 transition-all"
             >
               <div>
-                <div className="font-mono text-xs font-bold text-emerald-400 mb-1">
+                <div className="font-mono text-xs font-bold text-emerald-700 mb-1">
                   STEP {step.step}
                 </div>
-                <h3 className="text-xs font-bold text-white mb-1">
+                <h3 className="text-xs font-bold text-[#0F172A] mb-1">
                   {step.title}
                 </h3>
-                <p className="text-[11px] text-slate-300 leading-relaxed">
+                <p className="text-[11px] text-[#475569] leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -755,21 +755,21 @@ export const PpcServicesContent: React.FC = () => {
           ))}
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/50 border border-slate-800 text-xs text-slate-300 leading-relaxed">
-          <strong className="text-white">Healthcare Campaign Application:</strong> For a Texas dental clinic, we install dynamic phone call and booking form tracking, launch Search ads for high-intent keywords like "dental implants Houston", add negative keywords like "free" and "jobs", and direct traffic to a dedicated landing page featuring transparent pricing, reviews, and direct booking forms.
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs text-[#475569] leading-relaxed">
+          <strong className="text-[#0F172A]">Healthcare Campaign Application:</strong> For a Texas dental clinic, we install dynamic phone call and booking form tracking, launch Search ads for high-intent keywords like "dental implants Houston", add negative keywords like "free" and "jobs", and direct traffic to a dedicated landing page featuring transparent pricing, reviews, and direct booking forms.
         </div>
       </section>
 
       {/* 8. Google Shopping Ads: How We Plan, Set Up and Optimize */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             eCommerce Catalog Mastery
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Google Shopping Ads: How We Plan, Set Up and Optimize
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Google Shopping ads display your product photography, title, price, and store name directly in Google search results. Because Shopping ads are built from your product data feed rather than manually typed keywords, the accuracy of your feed decides the profitability of your ads.
           </p>
         </div>
@@ -777,12 +777,12 @@ export const PpcServicesContent: React.FC = () => {
         {/* 5-Step Shopping Workflow */}
         <div className="space-y-4">
           {/* Step 1: Plan */}
-          <div className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2">
-            <h3 className="text-sm font-bold text-white flex items-center gap-2">
-              <span className="font-mono text-xs text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-900/40">Step 1</span>
+          <div className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2">
+            <h3 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+              <span className="font-mono text-xs text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Step 1</span>
               <span>Strategic Product Planning</span>
             </h3>
-            <ul className="text-xs text-slate-300 space-y-1.5 pl-4 list-disc marker:text-emerald-400">
+            <ul className="text-xs text-[#475569] space-y-1.5 pl-4 list-disc marker:text-emerald-600">
               <li>Prioritize best sellers, high-inventory items, and top-margin products first.</li>
               <li>Benchmark shipping speed, return policies, and pricing directly against top market competitors.</li>
               <li>Establish realistic target return on ad spend (ROAS) or target cost per acquisition (tCPA).</li>
@@ -791,12 +791,12 @@ export const PpcServicesContent: React.FC = () => {
           </div>
 
           {/* Step 2: Set Up Google Merchant Center */}
-          <div className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2">
-            <h3 className="text-sm font-bold text-white flex items-center gap-2">
-              <span className="font-mono text-xs text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-900/40">Step 2</span>
+          <div className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2">
+            <h3 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+              <span className="font-mono text-xs text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Step 2</span>
               <span>Set Up & Configure Google Merchant Center</span>
             </h3>
-            <ol className="text-xs text-slate-300 space-y-1.5 pl-4 list-decimal marker:text-emerald-400">
+            <ol className="text-xs text-[#475569] space-y-1.5 pl-4 list-decimal marker:text-emerald-600">
               <li>Create your Merchant Center account, verify site ownership, and claim your canonical web domain.</li>
               <li>Input verified business details, tax configurations, and comprehensive shipping and return policies.</li>
               <li>Link Google Merchant Center seamlessly to your Google Ads account and GA4 property.</li>
@@ -807,29 +807,29 @@ export const PpcServicesContent: React.FC = () => {
 
           {/* Step 3: Build a Strong Product Feed (Table) */}
           <div className="space-y-3">
-            <h3 className="text-sm font-bold text-white flex items-center gap-2">
-              <span className="font-mono text-xs text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-900/40">Step 3</span>
+            <h3 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+              <span className="font-mono text-xs text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Step 3</span>
               <span>Build a Bulletproof Product Feed</span>
             </h3>
-            <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+            <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
               <table className="w-full text-left text-xs sm:text-sm">
-                <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+                <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
                   <tr>
                     <th className="py-3 px-4 sm:px-6">Attribute</th>
                     <th className="py-3 px-4 sm:px-6">Feed Rule & Requirement</th>
                     <th className="py-3 px-4 sm:px-6">High-Performing Example</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-800/80 text-slate-300">
+                <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
                   {shoppingFeedRules.map((rule, idx) => (
-                    <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                      <td className="py-3 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                    <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                      <td className="py-3 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                         {rule.attr}
                       </td>
-                      <td className="py-3 px-4 sm:px-6 text-slate-300 text-xs">
+                      <td className="py-3 px-4 sm:px-6 text-[#475569] text-xs">
                         {rule.rule}
                       </td>
-                      <td className="py-3 px-4 sm:px-6 text-slate-200 text-xs">
+                      <td className="py-3 px-4 sm:px-6 text-[#0F172A] text-xs">
                         {rule.example}
                       </td>
                     </tr>
@@ -840,44 +840,44 @@ export const PpcServicesContent: React.FC = () => {
           </div>
 
           {/* Step 4: Fix Website On-Page & Schema */}
-          <div className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2">
-            <h3 className="text-sm font-bold text-white flex items-center gap-2">
-              <span className="font-mono text-xs text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-900/40">Step 4</span>
+          <div className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2">
+            <h3 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+              <span className="font-mono text-xs text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Step 4</span>
               <span>Verify On-Page Website Compliance</span>
             </h3>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-[#64748B]">
               Google rigorously crawls your site to cross-check feed attributes. A price mismatch or hidden return policy can trigger account suspension. We verify:
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-slate-300 pt-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-[#475569] pt-1">
               <div className="flex items-start gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
                 <span>Product pages display visible price, stock availability, images, and clear checkout buttons</span>
               </div>
               <div className="flex items-start gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
                 <span>Structured Product schema includes accurate price, currency, availability, and review ratings</span>
               </div>
               <div className="flex items-start gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
                 <span>Mobile loading speed is optimized with HTTPS security across all catalog pages</span>
               </div>
               <div className="flex items-start gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
                 <span>Contact, shipping, refunds/returns, and privacy policy links are prominently accessible in footers</span>
               </div>
             </div>
           </div>
 
           {/* Step 5: Optimize Every Week */}
-          <div className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 text-xs text-slate-300 leading-relaxed">
-            <h3 className="text-sm font-bold text-white flex items-center gap-2">
-              <span className="font-mono text-xs text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-900/40">Step 5</span>
+          <div className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 text-xs text-[#475569] leading-relaxed">
+            <h3 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+              <span className="font-mono text-xs text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Step 5</span>
               <span>Weekly Feed & Campaign Optimization</span>
             </h3>
             <p>
               We segment catalogs with custom labels (e.g. Top Sellers, High Margin, Clearance), add negative keywords for low-intent terms like "free" or "repair", rewrite search titles, replace unappealing photos, pause wasteful items, and A/B test Standard Shopping against Performance Max.
             </p>
-            <p className="text-slate-400 italic">
+            <p className="text-[#64748B] italic">
               <strong>Real-World Feed Example:</strong> A leather bag brand in Mexico upgraded an unoptimized title from "Bag 101" to "Women's Brown Leather Crossbody Bag, Adjustable Strap, 10 inch". The product immediately started matching search queries like "brown leather crossbody bag", driving a 180% surge in qualified buyer clicks.
             </p>
           </div>
@@ -887,41 +887,41 @@ export const PpcServicesContent: React.FC = () => {
       {/* 9. Case Study Example and Client Reviews */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Verified Proof & Results
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Case Study: Texas Dental Clinic & Client Feedback
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             <strong>Goal:</strong> Generate high-value dental implant consultations while cutting cost per lead in half.
           </p>
         </div>
 
         {/* Case Study Table */}
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Campaign Performance Metric</th>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-400">Month 1 Baseline</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Month 3 Optimized</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#64748B]">Month 1 Baseline</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Month 3 Optimized</th>
                 <th className="py-3.5 px-4 sm:px-6">Outcome Analysis</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {caseStudyMetrics.map((m, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A]">
                     {m.metric}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-400 font-mono">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#64748B] font-mono">
                     {m.m1}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-400 font-mono font-bold text-sm">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700 font-mono font-bold text-sm">
                     {m.m3}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {m.note}
                   </td>
                 </tr>
@@ -932,27 +932,27 @@ export const PpcServicesContent: React.FC = () => {
 
         {/* Client Reviews Cards */}
         <div className="space-y-3 pt-2">
-          <h3 className="text-base font-bold text-white flex items-center gap-2">
-            <Award className="w-4 h-4 text-emerald-400" />
+          <h3 className="text-base font-bold text-[#0F172A] flex items-center gap-2">
+            <Award className="w-4 h-4 text-emerald-700" />
             <span>Verified Client Reviews</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {clientReviews.map((rev, idx) => (
               <div
                 key={idx}
-                className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 flex flex-col justify-between space-y-3"
+                className="p-5 rounded-2xl bg-white border border-[#E2E8F0] flex flex-col justify-between space-y-3"
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="font-bold text-white">{rev.client}</span>
-                    <span className="text-[11px] font-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-900/40">
+                    <span className="font-bold text-[#0F172A]">{rev.client}</span>
+                    <span className="text-[11px] font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                       {rev.location}
                     </span>
                   </div>
-                  <div className="text-[11px] font-mono text-slate-400">
+                  <div className="text-[11px] font-mono text-[#64748B]">
                     {rev.service}
                   </div>
-                  <p className="text-xs text-slate-300 leading-relaxed italic">
+                  <p className="text-xs text-[#475569] leading-relaxed italic">
                     "{rev.quote}"
                   </p>
                 </div>
@@ -965,13 +965,13 @@ export const PpcServicesContent: React.FC = () => {
       {/* 10. Our 90-Day Pay Per Click Services Plan */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             PPC Roadmap
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our 90-Day Pay Per Click Services Plan
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Google's machine learning requires real conversion data to optimize bidding. The first 30 days build the foundation, months two and three systematically drive down acquisition costs:
           </p>
         </div>
@@ -980,24 +980,24 @@ export const PpcServicesContent: React.FC = () => {
           {ninetyDayPlan.map((phase, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all"
+              className="p-6 sm:p-7 rounded-2xl bg-white border border-[#E2E8F0] flex flex-col justify-between hover:border-blue-600/30 transition-all"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-xs font-bold text-emerald-400 bg-emerald-950/60 px-2.5 py-1 rounded border border-emerald-900/40">
+                  <span className="font-mono text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">
                     {phase.timeline}
                   </span>
-                  <span className="text-xs font-mono text-slate-500 font-bold">
+                  <span className="text-xs font-mono text-[#64748B] font-bold">
                     {phase.phase}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-3">
+                <h3 className="text-lg font-bold text-[#0F172A] mb-3">
                   {phase.title}
                 </h3>
-                <div className="space-y-2.5 pt-3 border-t border-slate-850">
+                <div className="space-y-2.5 pt-3 border-t border-[#E2E8F0]">
                   {phase.items.map((item, itemIdx) => (
-                    <div key={itemIdx} className="flex items-start gap-2 text-xs text-slate-300">
-                      <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                    <div key={itemIdx} className="flex items-start gap-2 text-xs text-[#475569]">
+                      <span className="font-mono text-emerald-700 font-bold shrink-0 mt-0.5">•</span>
                       <span className="leading-relaxed">{item}</span>
                     </div>
                   ))}
@@ -1011,20 +1011,20 @@ export const PpcServicesContent: React.FC = () => {
       {/* 11. PPC Services Worldwide: USA, LATAM and Multilingual */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Global Geographic Coverage
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             PPC Services Worldwide: USA, LATAM and Multilingual Campaigns
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             We deliver pay per click services for business owners across every continent. Precise geographic radius and native-language calibration are built into every account:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Target Global Region</th>
                 <th className="py-3.5 px-4 sm:px-6">Representative Markets</th>
@@ -1032,19 +1032,19 @@ export const PpcServicesContent: React.FC = () => {
                 <th className="py-3.5 px-4 sm:px-6">Typical Campaign Architecture</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {geographicMarkets.map((geo, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {geo.region}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A] text-xs">
                     {geo.examples}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-400 text-xs font-medium">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700 text-xs font-medium">
                     {geo.languages}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {geo.campaigns}
                   </td>
                 </tr>
@@ -1053,56 +1053,56 @@ export const PpcServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-5 rounded-2xl bg-slate-900/40 border border-slate-850 text-xs sm:text-sm text-slate-300 leading-relaxed space-y-2">
+        <div className="p-5 rounded-2xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed space-y-2">
           <p>
-            <strong className="text-white">Multilingual PPC Precision:</strong> We write ads, callout extensions, and landing page advice natively in English, Spanish, French, German, Polish, Arabic, and Hebrew. Native phrasing matters—direct literal translations always lower click-through rates and degrade trust. Pair your campaigns with our <strong>Multilingual SEO services</strong> to win both paid and organic positions simultaneously.
+            <strong className="text-[#0F172A]">Multilingual PPC Precision:</strong> We write ads, callout extensions, and landing page advice natively in English, Spanish, French, German, Polish, Arabic, and Hebrew. Native phrasing matters—direct literal translations always lower click-through rates and degrade trust. Pair your campaigns with our <strong>Multilingual SEO services</strong> to win both paid and organic positions simultaneously.
           </p>
           <p>
-            <strong className="text-white">Local PPC for Physical Store Visits:</strong> We integrate Google Business Profile links, location assets, and local radius geofencing so clinics, law offices, and retailers drive calls, walk-in visits, and turn-by-turn driving directions from nearby searchers.
+            <strong className="text-[#0F172A]">Local PPC for Physical Store Visits:</strong> We integrate Google Business Profile links, location assets, and local radius geofencing so clinics, law offices, and retailers drive calls, walk-in visits, and turn-by-turn driving directions from nearby searchers.
           </p>
         </div>
       </section>
 
       {/* 12. Why Choose UDMIDEAS for Pay Per Click Services */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-6">
+      <section className="p-8 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Proven Agency Excellence
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Why Choose UDMIDEAS for Pay Per Click Services
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Led personally by founder Arun with over 15 years in search marketing, we treat your advertising capital with total fiscal discipline:
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {whyChooseUdmideas.map((item, idx) => (
-            <div key={idx} className="p-4 rounded-xl bg-slate-950 border border-slate-850 space-y-1">
-              <h4 className="text-sm font-bold text-white flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <div key={idx} className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-1">
+              <h4 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
                 <span>{item.title}</span>
               </h4>
-              <p className="text-xs text-slate-300 pl-6 leading-relaxed">
+              <p className="text-xs text-[#475569] pl-6 leading-relaxed">
                 {item.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/50 border border-slate-800 text-xs text-slate-300">
-          <strong className="text-white">Absolute transparency guarantee:</strong> We never promise fictional overnight millions or hide hidden agency markups. You retain full administrative access to your ad accounts and see exactly where every single dollar goes.
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs text-[#475569]">
+          <strong className="text-[#0F172A]">Absolute transparency guarantee:</strong> We never promise fictional overnight millions or hide hidden agency markups. You retain full administrative access to your ad accounts and see exactly where every single dollar goes.
         </div>
       </section>
 
       {/* 13. Pay Per Click Services FAQ */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             PPC Questions & Answers
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Pay Per Click Services FAQ
           </h2>
         </div>
@@ -1113,23 +1113,23 @@ export const PpcServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-all"
+                className="rounded-2xl border border-[#E2E8F0] bg-white overflow-hidden transition-all"
               >
                 <button
                   onClick={() => toggleFaq(idx)}
-                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-slate-850/50 transition-colors cursor-pointer"
+                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-[#F8FAFC] transition-colors cursor-pointer"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="text-xs font-mono font-bold text-emerald-400 shrink-0 mt-0.5">
+                    <span className="text-xs font-mono font-bold text-emerald-700 shrink-0 mt-0.5">
                       Q{String(idx + 1).padStart(2, '0')}.
                     </span>
-                    <span className="text-xs sm:text-sm font-bold text-white leading-snug">
+                    <span className="text-xs sm:text-sm font-bold text-[#0F172A] leading-snug">
                       {faq.q}
                     </span>
                   </div>
-                  <div className="text-slate-400 shrink-0">
+                  <div className="text-[#64748B] shrink-0">
                     {isOpen ? (
-                      <ChevronUp className="w-4 h-4 text-emerald-400" />
+                      <ChevronUp className="w-4 h-4 text-emerald-700" />
                     ) : (
                       <ChevronDown className="w-4 h-4" />
                     )}
@@ -1137,7 +1137,7 @@ export const PpcServicesContent: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-slate-850/60 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
                     <p className="pl-7">{faq.a}</p>
                   </div>
                 )}
@@ -1148,22 +1148,22 @@ export const PpcServicesContent: React.FC = () => {
       </section>
 
       {/* 14. Conclusion: Pay Only for Clicks That Grow Your Business */}
-      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-emerald-950/60 via-slate-900 to-blue-950/40 border border-emerald-500/30 text-center space-y-6">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-emerald-50/70 via-white to-blue-50/40 border border-emerald-200 text-center space-y-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Clock className="w-3.5 h-3.5" />
           <span>High-ROAS Google Ads Management</span>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight max-w-2xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] tracking-tight max-w-2xl mx-auto">
           Conclusion: Pay Only for Clicks That Grow Your Business
         </h2>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-xl mx-auto leading-relaxed">
           PPC works when the objective, campaign type, product feed, and landing page all point in the same direction. Search wins qualified leads, Shopping wins direct product sales, Video builds enduring trust, and Display brings past visitors back. The right strategy, measured and pruned every single week, turns ad spend into predictable revenue growth.
         </p>
 
-        <p className="text-sm font-bold text-white">
-          Contact Founder Arun directly: <span className="text-emerald-400 font-mono">+91-9521186150</span> · Email: <span className="text-blue-400 font-mono">info@udmideasusa.com</span>
+        <p className="text-sm font-bold text-[#0F172A]">
+          Contact Founder Arun directly: <span className="text-emerald-700 font-mono">+91-9521186150</span> · Email: <span className="text-[#1D4ED8] font-mono">info@udmideasusa.com</span>
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -1171,7 +1171,7 @@ export const PpcServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20ready%20to%20get%20started%20with%20Pay%20Per%20Click%20Services%20at%20UDMIDEAS."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-xl shadow-emerald-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp Arun (+91-9521186150)</span>
@@ -1179,7 +1179,7 @@ export const PpcServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <Mail className="w-4 h-4" />
             <span>Request Free PPC Audit</span>

@@ -239,29 +239,29 @@ export const NewYorkServicesContent: React.FC = () => {
     <div className="space-y-16 text-left">
       {/* Hero / Introduction */}
       <header className="max-w-4xl space-y-5">
-        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Globe2 className="w-3.5 h-3.5 shrink-0" />
           <span>New York City Multilingual Web Design, SEO, AEO, GEO, SMM & PPC · 15+ Years</span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight text-balance">
           New York Website Design, Development &amp; Multilingual Digital Marketing Company
         </h1>
 
         <div className="space-y-3 pt-1">
-          <h2 className="text-xl sm:text-2xl font-bold text-blue-400">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#1D4ED8]">
             Introduction: Helping New York Businesses Grow Online
           </h2>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             New York City is one of the world&apos;s most competitive business markets, with opportunities across technology, finance, healthcare, real estate, hospitality, retail, education, professional services and eCommerce. Businesses need more than an attractive website to succeed in this competitive environment. They need a strong digital presence, search visibility, effective marketing and websites that convert visitors into customers.
           </p>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             UDMIDEAS provides multilingual website design and development, multilingual SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), Social Media Marketing (SMM) and Pay-Per-Click (PPC) advertising services for businesses in New York City.
           </p>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             We build custom-coded websites from scratch using modern development technologies and frameworks. Our objective is to help NYC businesses reach local, national and international customers through professional websites and multilingual digital marketing strategies.
           </p>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             Whether you operate a small business in Manhattan, a professional service in Brooklyn, a retail company in Queens or an expanding enterprise in the Bronx, UDMIDEAS helps you grow your business online.
           </p>
         </div>
@@ -271,7 +271,7 @@ export const NewYorkServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20website%20design%20and%20multilingual%20digital%20marketing%20in%20New%20York."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp: +91-9521186150</span>
@@ -279,7 +279,7 @@ export const NewYorkServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
           >
             <span>Request NYC Consultation</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -290,14 +290,14 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* Why Choose UDMIDEAS for New York Businesses? */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Award className="w-4 h-4" />
             <span>Why Work With Us</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Why Choose UDMIDEAS for New York Businesses?
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS combines website development with international digital marketing experience. We understand that different industries, audiences and languages require different website structures and marketing strategies.
           </p>
         </div>
@@ -306,9 +306,9 @@ export const NewYorkServicesContent: React.FC = () => {
           {whyChoosePoints.map((pt, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{pt}</span>
             </div>
           ))}
@@ -318,17 +318,17 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* Multilingual Website Design & Development Services in NYC */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Code2 className="w-4 h-4" />
             <span>Custom Engineering</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Multilingual Website Design &amp; Development Services in NYC
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             New York is a multicultural city with customers from different countries, cultures and language backgrounds. A multilingual website helps businesses communicate with more customers and explore new markets.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS develops multilingual websites with language-specific content, navigation, URLs and SEO structures. Our website development services include:
           </p>
         </div>
@@ -337,15 +337,15 @@ export const NewYorkServicesContent: React.FC = () => {
           {webDevServices.map((srv, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
               <span>{srv}</span>
             </div>
           ))}
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           We develop websites from scratch instead of depending entirely on pre-designed templates. Each website is planned around your business objectives, target audience, services and future expansion requirements.
         </div>
       </section>
@@ -353,33 +353,33 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* Website Development Cost for NYC Businesses */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Transparent Investment
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Website Development Cost for NYC Businesses
           </h2>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-white">Website Package</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Starting Cost</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Suitable For</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Website Package</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Starting Cost</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Suitable For</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {pricingPackages.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.pkg}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {row.cost}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.suitable}
                   </td>
                 </tr>
@@ -388,7 +388,7 @@ export const NewYorkServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           Business website development starts at $500. The final cost depends on the number of pages, design complexity, functionality, integrations, languages and technical requirements. Domain, hosting and third-party services may be additional.
         </div>
       </section>
@@ -396,14 +396,14 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* Multilingual SEO Services in New York */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Search className="w-4 h-4" />
             <span>Organic Multilingual Growth</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Multilingual SEO Services in New York
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Search Engine Optimization helps businesses attract customers through organic search results. However, reaching multilingual audiences requires more than translating website content. UDMIDEAS provides multilingual SEO services to help New York companies reach customers searching in different languages.
           </p>
         </div>
@@ -412,15 +412,15 @@ export const NewYorkServicesContent: React.FC = () => {
           {multilingualSeoPoints.map((pt, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{pt}</span>
             </div>
           ))}
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           We research search behaviour, keywords and customer intent for each target language and market.
         </div>
       </section>
@@ -428,37 +428,37 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* SEO, AEO & GEO Services: The Future of Search Visibility */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Sparkles className="w-4 h-4" />
             <span>Search &amp; AI Discovery</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             SEO, AEO &amp; GEO Services: The Future of Search Visibility
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Online search is evolving. Businesses must prepare for traditional search engines, conversational answers and AI-powered discovery platforms.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Service</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">What We Do</th>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Business Benefits</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Service</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">What We Do</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Business Benefits</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {searchVisibilityRows.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.service}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.whatWeDo}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-300 font-medium">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700 font-medium">
                     {row.benefit}
                   </td>
                 </tr>
@@ -467,7 +467,7 @@ export const NewYorkServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           Our objective is to help businesses build sustainable visibility across traditional and emerging search experiences. Rankings, AI citations and customer acquisition depend on competition, website quality and search platform algorithms; they cannot be guaranteed.
         </div>
       </section>
@@ -475,43 +475,43 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* Multilingual SMM & PPC Advertising Services */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <Megaphone className="w-4 h-4" />
             <span>Paid &amp; Social Acquisition</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Multilingual SMM &amp; PPC Advertising Services
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             A successful digital marketing strategy combines organic visibility with targeted paid advertising and social media engagement.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 sm:p-8 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2 font-bold text-lg text-white">
-              <Share2 className="w-5 h-5 text-purple-400 shrink-0" />
+          <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2 font-bold text-lg text-[#0F172A]">
+              <Share2 className="w-5 h-5 text-purple-700 shrink-0" />
               <h3>Social Media Marketing (SMM)</h3>
             </div>
-            <ul className="space-y-2.5 text-xs sm:text-sm text-slate-200">
+            <ul className="space-y-2.5 text-xs sm:text-sm text-[#0F172A]">
               {smmPoints.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-blue-950/30 border border-blue-900/30 space-y-4">
-            <div className="flex items-center gap-2 font-bold text-lg text-white">
-              <TrendingUp className="w-5 h-5 text-blue-400 shrink-0" />
+          <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white via-white to-blue-50/40 border border-blue-200 space-y-4">
+            <div className="flex items-center gap-2 font-bold text-lg text-[#0F172A]">
+              <TrendingUp className="w-5 h-5 text-[#1D4ED8] shrink-0" />
               <h3>Pay-Per-Click (PPC) Advertising</h3>
             </div>
-            <ul className="space-y-2.5 text-xs sm:text-sm text-slate-200">
+            <ul className="space-y-2.5 text-xs sm:text-sm text-[#0F172A]">
               {ppcPoints.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -519,7 +519,7 @@ export const NewYorkServicesContent: React.FC = () => {
           </div>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           We plan advertising campaigns around business goals, customer locations, language preferences, search intent and available budgets. Advertising spend is separate from management fees.
         </div>
       </section>
@@ -527,14 +527,14 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* NYC Business Industries We Work For */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Building2 className="w-4 h-4" />
             <span>Sector Coverage</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             NYC Business Industries We Work For
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             New York has businesses across almost every major economic sector. UDMIDEAS develops industry-specific websites and marketing strategies.
           </p>
         </div>
@@ -543,12 +543,12 @@ export const NewYorkServicesContent: React.FC = () => {
           {nycIndustries.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-1.5 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-1.5 hover:border-blue-600/30 transition-all"
             >
-              <div className="text-sm sm:text-base font-bold text-white">
+              <div className="text-sm sm:text-base font-bold text-[#0F172A]">
                 {item.industry}
               </div>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                 {item.services}
               </p>
             </div>
@@ -559,14 +559,14 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* Benefits of Working with UDMIDEAS */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <ShieldCheck className="w-4 h-4" />
             <span>Business Impact</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Benefits of Working with UDMIDEAS
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Choosing the right website development and digital marketing company can help your business establish a stronger online presence.
           </p>
         </div>
@@ -575,13 +575,13 @@ export const NewYorkServicesContent: React.FC = () => {
           {benefits.map((b, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-1.5"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-1.5"
             >
-              <div className="flex items-center gap-2 font-bold text-sm sm:text-base text-white">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+              <div className="flex items-center gap-2 font-bold text-sm sm:text-base text-[#0F172A]">
+                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
                 <h3>{b.title}</h3>
               </div>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                 {b.desc}
               </p>
             </div>
@@ -592,33 +592,33 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* NYC Business Digital Marketing: Statistics & Future Opportunities */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <BarChart3 className="w-4 h-4" />
             <span>Important New York Market Statistics</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             NYC Business Digital Marketing: Statistics &amp; Future Opportunities
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             New York City&apos;s digital economy provides opportunities for companies that invest in websites, online visibility and customer acquisition. NYC is home to hundreds of thousands of businesses, creating a substantial market for digital services.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Market Indicator</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Latest Available Statistics</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Market Indicator</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Latest Available Statistics</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {nycMarketStats.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-[#0F172A]">
                     {row.indicator}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {row.value}
                   </td>
                 </tr>
@@ -631,33 +631,33 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* The Future of Website Development & Digital Marketing (2027–2030) */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Sparkles className="w-4 h-4" />
             <span>2027–2030 Strategic Outlook</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             The Future of Website Development &amp; Digital Marketing (2027–2030)
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Digital marketing is moving towards more personalised, multilingual and search-intent-driven customer experiences.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Future Trend</th>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Opportunity for Businesses</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Future Trend</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Opportunity for Businesses</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {futureTrends.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.trend}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.opp}
                   </td>
                 </tr>
@@ -666,11 +666,11 @@ export const NewYorkServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-5 rounded-xl bg-white border border-[#E2E8F0] space-y-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
           <p>
             Between 2027 and 2030, businesses should prepare for changes in how people discover companies, compare services and make purchasing decisions. Rather than relying exclusively on traditional Google rankings, NYC businesses should invest in a combination of SEO, AEO, GEO, social media, video marketing, PPC and multilingual website experiences.
           </p>
-          <p className="text-slate-400 italic">
+          <p className="text-[#64748B] italic">
             These are strategic growth opportunities, not guaranteed market-growth percentages or fixed forecasts.
           </p>
         </div>
@@ -679,10 +679,10 @@ export const NewYorkServicesContent: React.FC = () => {
       {/* Frequently Asked Questions: NYC Business Owners */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Common Questions
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Frequently Asked Questions: NYC Business Owners
           </h2>
         </div>
@@ -693,23 +693,23 @@ export const NewYorkServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-colors"
+                className="rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-colors"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(idx)}
-                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-white hover:text-blue-400 transition-colors"
+                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-[#0F172A] hover:text-[#1D4ED8] transition-colors"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.q}</span>
                   {isOpen ? (
-                    <ChevronUp className="w-4 h-4 text-blue-400 shrink-0" />
+                    <ChevronUp className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                   ) : (
-                    <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+                    <ChevronDown className="w-4 h-4 text-[#64748B] shrink-0" />
                   )}
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-4 text-xs sm:text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+                  <div className="px-5 pb-4 text-xs sm:text-sm text-[#475569] border-t border-[#E2E8F0] pt-3 leading-relaxed">
                     {faq.a}
                   </div>
                 )}
@@ -720,47 +720,47 @@ export const NewYorkServicesContent: React.FC = () => {
       </section>
 
       {/* Let's Grow Your New York Business with UDMIDEAS */}
-      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-950 via-slate-900 to-emerald-950/50 border border-blue-800/40 space-y-6 shadow-xl">
+      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 space-y-6 shadow-sm">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Rocket className="w-4 h-4" />
             <span>Get Started Today – Build Your Digital Future with UDMIDEAS</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Let&apos;s Grow Your New York Business with UDMIDEAS
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Your website should be more than an online business card. It should become an important part of your customer acquisition, brand development and business expansion strategy.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             At UDMIDEAS, we combine custom website development, multilingual SEO, AEO, GEO, SMM and PPC services to help businesses establish a stronger digital presence. Whether you are launching a startup, managing an established company, expanding an eCommerce store or entering international markets, our team can help you plan and develop the right digital strategy.
           </p>
-          <p className="text-sm font-bold text-white">
+          <p className="text-sm font-bold text-[#0F172A]">
             We Build Websites. We Improve Search Visibility. We Grow Businesses.
           </p>
         </div>
 
-        <div className="pt-4 border-t border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1 text-xs sm:text-sm text-slate-300">
+        <div className="pt-4 border-t border-[#E2E8F0] flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1 text-xs sm:text-sm text-[#475569]">
             <div>
               Website:{' '}
               <a
                 href="https://udmideasusa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:underline font-mono"
+                className="text-[#1D4ED8] hover:underline font-mono"
               >
                 https://udmideasusa.com/
               </a>{' '}
               · Email:{' '}
               <a
                 href="mailto:info@udmideasusa.com"
-                className="text-emerald-400 hover:underline font-mono"
+                className="text-emerald-700 hover:underline font-mono"
               >
                 info@udmideasusa.com
               </a>
             </div>
-            <div className="text-xs text-slate-400">
+            <div className="text-xs text-[#64748B]">
               UDMIDEAS – Your Website Development &amp; Multilingual Digital Marketing Partner for New York Businesses.
             </div>
           </div>
@@ -770,14 +770,14 @@ export const NewYorkServicesContent: React.FC = () => {
               href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20grow%20my%20New%20York%20business%20with%20UDMIDEAS."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp: +91-9521186150</span>
             </a>
             <a
               href="#inquiry-form"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
             >
               <span>Get Started Today</span>
               <ArrowRight className="w-3.5 h-3.5" />

@@ -255,25 +255,25 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
   ].filter(l => l.path !== page.path);
 
   return (
-    <article className="pt-28 pb-24 min-h-screen bg-slate-950 text-slate-100 text-left">
+    <article className="pt-28 pb-24 min-h-screen bg-[#F8FAFC] text-[#475569] text-left">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb Navigation with clean internal links */}
-        <nav aria-label="Breadcrumb" className="flex items-center justify-between pb-6 mb-8 border-b border-slate-900 text-xs">
-          <div className="flex items-center gap-2 text-slate-400 flex-wrap">
+        <nav aria-label="Breadcrumb" className="flex items-center justify-between pb-6 mb-8 border-b border-[#E2E8F0] text-xs">
+          <div className="flex items-center gap-2 text-[#475569] flex-wrap">
             <a
               href="/"
               onClick={(e) => {
                 e.preventDefault();
                 onNavigateHome();
               }}
-              className="hover:text-white transition-colors"
+              className="hover:text-[#0F172A] font-medium transition-colors"
             >
               Home
             </a>
             <span aria-hidden="true">/</span>
             <span className="text-slate-500 capitalize">{page.category.replace('-', ' ')}</span>
             <span aria-hidden="true">/</span>
-            <span className="text-blue-400 font-medium truncate max-w-[200px] sm:max-w-none">
+            <span className="text-[#1D4ED8] font-semibold truncate max-w-[200px] sm:max-w-none">
               {page.path}
             </span>
           </div>
@@ -284,7 +284,7 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
               e.preventDefault();
               onNavigateHome();
             }}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white text-xs"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-white border border-[#E2E8F0] text-[#475569] hover:text-[#0F172A] hover:border-[#1D4ED8]/40 font-semibold shadow-xs transition-all text-xs"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>Back to Home</span>
@@ -294,42 +294,42 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         {/* Hero Section (omitted on dedicated custom country pages that render their own hero section) */}
         {page.path !== '/ecuador/' && page.path !== '/israel/' && page.path !== '/mexico/' && page.path !== '/argentina/' && page.path !== '/peru/' && page.path !== '/costa-rica/' && page.path !== '/uruguay/' && page.path !== '/dominican-republic/' && page.path !== '/guatemala/' && page.path !== '/france/' && page.path !== '/germany/' && page.path !== '/spain/' && page.path !== '/switzerland/' && page.path !== '/poland/' && page.path !== '/uae/' && page.path !== '/oman/' && page.path !== '/iran/' && page.path !== '/bahrain/' && page.path !== '/yemen/' && page.path !== '/saudi-arabia/' && page.path !== '/qatar/' && page.path !== '/morocco/' && page.path !== '/egypt/' && page.path !== '/iraq/' && page.path !== '/about-us/' && page.path !== '/new-york/' && page.path !== '/california/' && page.path !== '/texas/' && page.path !== '/florida/' && page.path !== '/illinois/' && page.path !== '/pennsylvania/' && page.path !== '/ohio/' && page.path !== '/georgia/' && page.path !== '/north-carolina/' && page.path !== '/michigan/' && (
           <header className="max-w-4xl space-y-4 mb-12">
-            <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400">
-              <span className="font-semibold text-emerald-400 font-mono bg-emerald-950/50 px-2.5 py-1 rounded border border-emerald-900/50">
+            <div className="flex flex-wrap items-center gap-2 text-xs text-[#475569]">
+              <span className="font-semibold text-[#1D4ED8] bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200/80 uppercase tracking-[0.06em]">
                 {page.kicker}
               </span>
               <span aria-hidden="true">·</span>
-              <span className="text-slate-300">USA HQ NYC 10001</span>
+              <span className="text-[#0F172A] font-semibold">USA HQ NYC 10001</span>
               <span aria-hidden="true">·</span>
-              <span className="text-blue-400 font-mono">15+ Years Track Record</span>
+              <span className="text-[#B45309] font-mono font-semibold">★ 15+ Years Track Record</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+            <h1 className="text-[32px] sm:text-[44px] font-extrabold text-[#0F172A] tracking-[-0.02em] leading-[1.15] text-balance">
               {page.heading}
             </h1>
 
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl">
+            <p className="text-base sm:text-lg text-[#475569] leading-[1.65] max-w-3xl">
               {page.subheading}
             </p>
 
             {/* Quick Action Buttons */}
-            <div className="flex flex-wrap items-center gap-3 pt-3">
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              <a
+                href="#inquiry-form"
+                className="group inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-sm hover:shadow-md transition-all duration-200"
+              >
+                <span>Submit Project Form (Direct Email)</span>
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
+              </a>
+
               <a
                 href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20your%20services%20from%20page:%20"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-[#0F172A] bg-white hover:bg-slate-50 border border-[#E2E8F0] hover:border-[#1D4ED8]/40 shadow-xs transition-all duration-200"
               >
-                <MessageCircle className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4 text-emerald-600" />
                 <span>WhatsApp: +91-9521186150</span>
-              </a>
-
-              <a
-                href="#inquiry-form"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
-              >
-                <span>Submit Project Form (Direct Email)</span>
-                <ArrowRight className="w-3.5 h-3.5" />
               </a>
             </div>
           </header>
@@ -666,16 +666,16 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
 
         {/* Key Highlights Grid (for standard pages) */}
         {!isCustomServicePage && (
-          <section className="mb-14 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-slate-950 border border-slate-800 shadow-xl">
-            <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-4 flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-blue-400" />
-              Key Architecture & Strategy Highlights
+          <section className="mb-14 p-6 sm:p-8 rounded-xl bg-white border border-[#E2E8F0] shadow-sm">
+            <div className="text-[12px] font-semibold text-[#1D4ED8] uppercase tracking-[0.08em] mb-4 flex items-center gap-2">
+              <Sparkles className="w-4 h-4 text-[#1D4ED8]" />
+              Key Architecture &amp; Strategy Highlights
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {page.keyHighlights.map((highlight, idx) => (
-                <div key={idx} className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-950/80 border border-slate-850">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm text-slate-200 leading-relaxed">{highlight}</span>
+                <div key={idx} className="flex items-start gap-3 p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0]">
+                  <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
+                  <span className="text-sm text-[#0F172A] leading-relaxed">{highlight}</span>
                 </div>
               ))}
             </div>
@@ -685,21 +685,21 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         {/* Detailed Feature Blocks (for standard pages) */}
         {!isCustomServicePage && (
           <section className="mb-16 space-y-6">
-            <div className="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider">
-              Detailed Capabilities & Solutions
+            <div className="text-[12px] font-semibold text-[#1D4ED8] uppercase tracking-[0.08em]">
+              – DETAILED CAPABILITIES &amp; SOLUTIONS
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {page.features.map((feat, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all"
+                  className="p-6 rounded-xl bg-white border border-[#E2E8F0] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-600/30"
                 >
                   <div>
-                    <div className="text-xs font-mono text-blue-400 font-bold mb-2">
-                      0{idx + 1}. SPECIFICATION
+                    <div className="text-xs font-mono text-[#1D4ED8] font-bold mb-2 tabular-nums">
+                      0{idx + 1} / Specification
                     </div>
-                    <h3 className="text-lg font-bold text-white mb-2">{feat.title}</h3>
-                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">{feat.desc}</p>
+                    <h3 className="text-lg font-bold text-[#0F172A] mb-2">{feat.title}</h3>
+                    <p className="text-sm text-[#475569] leading-[1.65]">{feat.desc}</p>
                   </div>
                 </div>
               ))}
@@ -709,14 +709,14 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
 
         {/* Languages Strip (for standard pages) */}
         {!isCustomServicePage && (
-          <div className="mb-16 p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs">
-            <div className="flex items-center gap-2 text-slate-400">
-              <Globe2 className="w-4 h-4 text-blue-400" />
-              <span className="font-semibold text-slate-200">Supported Linguistic Formats:</span>
+          <div className="mb-16 p-5 rounded-xl bg-white border border-[#E2E8F0] flex flex-wrap items-center justify-between gap-3 text-xs shadow-xs">
+            <div className="flex items-center gap-2 text-[#475569]">
+              <Globe2 className="w-4 h-4 text-[#1D4ED8]" />
+              <span className="font-bold text-[#0F172A]">Supported Linguistic Formats:</span>
             </div>
             <div className="flex flex-wrap gap-1.5">
               {page.languages.map((lang) => (
-                <span key={lang} className="px-2.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300 font-mono text-[11px]">
+                <span key={lang} className="px-2.5 py-1 rounded-md bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] font-mono text-[11px] font-medium">
                   {lang}
                 </span>
               ))}
@@ -725,42 +725,42 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         )}
 
         {/* Dedicated Contact Form Targeting info@udmideasusa.com */}
-        <section id="inquiry-form" className="mb-16 p-8 sm:p-10 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl">
+        <section id="inquiry-form" className="mb-16 p-7 sm:p-10 rounded-xl bg-white border border-[#E2E8F0] shadow-xl">
           <div className="max-w-2xl mb-8">
-            <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1 flex items-center gap-2">
+            <div className="text-[12px] font-semibold text-[#1D4ED8] uppercase tracking-[0.08em] mb-1.5 flex items-center gap-2">
               <Mail className="w-4 h-4" />
               Direct Email Notification to info@udmideasusa.com
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-              Request Your Free Multilingual Strategy & Architecture Audit.
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#0F172A] tracking-tight leading-[1.2]">
+              Request Your Free Multilingual Strategy &amp; Architecture Audit.
             </h2>
-            <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-              Submitting this form directly notifies Founder Arun at <strong className="text-emerald-400 font-mono">info@udmideasusa.com</strong>. We analyze your requirements and reply within 4 business hours.
+            <p className="text-sm text-[#475569] mt-2 leading-[1.65]">
+              Submitting this form directly notifies Founder Arun at <strong className="text-[#0F172A] font-mono">info@udmideasusa.com</strong>. We analyze your requirements and reply within 4 business hours.
             </p>
           </div>
 
           {isSubmitted ? (
-            <div className="p-8 rounded-2xl bg-emerald-950/40 border border-emerald-800/60 text-center space-y-4 animate-in fade-in">
-              <div className="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto border border-emerald-500/40">
+            <div className="p-8 rounded-xl bg-emerald-50 border border-emerald-200 text-center space-y-4">
+              <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto border border-emerald-200">
                 <CheckCircle2 className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-white">Inquiry Dispatched to info@udmideasusa.com!</h3>
-              <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto leading-relaxed">
-                Thank you, <strong>{formData.name}</strong>. Your inquiry has been routed to Founder Arun's official address (<span className="text-emerald-400 font-mono">info@udmideasusa.com</span>) for expedited review.
+              <h3 className="text-xl font-bold text-[#0F172A]">Inquiry Dispatched to info@udmideasusa.com!</h3>
+              <p className="text-sm text-[#475569] max-w-lg mx-auto leading-relaxed">
+                Thank you, <strong className="text-[#0F172A]">{formData.name}</strong>. Your inquiry has been routed to Founder Arun's official address (<span className="text-[#1D4ED8] font-mono font-semibold">info@udmideasusa.com</span>) for expedited review.
               </p>
               <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
                 <a
                   href={`https://wa.me/919521186150?text=Hello%20Arun,%20I%20just%20submitted%20the%20form%20for%20${encodeURIComponent(page.path)}%20under%20the%20name%20${encodeURIComponent(formData.name)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs inline-flex items-center gap-2"
+                  className="px-5 py-2.5 rounded-xl bg-[#0F172A] hover:bg-slate-800 text-white font-semibold text-xs inline-flex items-center gap-2 transition-colors"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <MessageCircle className="w-4 h-4 text-emerald-400" />
                   <span>Follow Up Instantly via WhatsApp (+91-9521186150)</span>
                 </a>
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 text-xs"
+                  className="px-4 py-2.5 rounded-xl bg-white border border-[#E2E8F0] text-[#0F172A] hover:bg-[#F8FAFC] text-xs font-semibold cursor-pointer"
                 >
                   Send Another Inquiry
                 </button>
@@ -770,7 +770,7 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1">
+                  <label className="block text-xs font-semibold text-[#0F172A] mb-1">
                     Your Full Name *
                   </label>
                   <input
@@ -779,12 +779,12 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
                     placeholder="e.g. John Doe"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-slate-400 focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-[#1D4ED8]/15"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1">
+                  <label className="block text-xs font-semibold text-[#0F172A] mb-1">
                     Work Email * (Will receive confirmation)
                   </label>
                   <input
@@ -793,14 +793,14 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
                     placeholder="name@company.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-slate-400 focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-[#1D4ED8]/15"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1">
+                  <label className="block text-xs font-semibold text-[#0F172A] mb-1">
                     Phone / WhatsApp Number
                   </label>
                   <input
@@ -808,43 +808,43 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
                     placeholder="+1 (555) 000-0000"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-slate-400 focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-[#1D4ED8]/15"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1">
+                  <label className="block text-xs font-semibold text-[#0F172A] mb-1">
                     Selected Service Scope
                   </label>
                   <input
                     type="text"
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-[#1D4ED8]/15"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-slate-300 mb-1">
-                  Project Details, Target Languages & Goals
+                <label className="block text-xs font-semibold text-[#0F172A] mb-1">
+                  Project Details, Target Languages &amp; Goals
                 </label>
                 <textarea
                   rows={4}
                   placeholder={`Describe your technical requirements, desired countries, and timeline for ${page.path}...`}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                  className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-slate-400 focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-[#1D4ED8]/15"
                 />
               </div>
 
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div className="text-[11px] text-slate-400">
-                  🔒 Direct delivery to <span className="text-emerald-400 font-mono">info@udmideasusa.com</span> · Strict NDA protected.
+                <div className="text-xs text-[#475569]">
+                  🔒 Direct delivery to <span className="text-[#0F172A] font-semibold font-mono">info@udmideasusa.com</span> · Strict NDA protected.
                 </div>
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-8 py-3 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all inline-flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-8 py-3 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-sm hover:shadow-md transition-all duration-200 inline-flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <span>Submit Inquiry to Arun</span>
                   <Send className="w-3.5 h-3.5" />
@@ -854,36 +854,36 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           )}
         </section>
 
-        {/* Page Specific FAQs (suppressed on custom service pages which already manage their content structure) */}
+        {/* Page Specific FAQs */}
         {!isCustomServicePage && page.faq && page.faq.length > 0 && (
           <section className="mb-16 space-y-4">
-            <h3 className="text-xl font-bold text-white flex items-center gap-2">
-              <HelpCircle className="w-5 h-5 text-blue-400" />
+            <h3 className="text-xl font-bold text-[#0F172A] flex items-center gap-2">
+              <HelpCircle className="w-5 h-5 text-[#1D4ED8]" />
               Frequently Asked Questions for {page.heading.split(':')[0]}
             </h3>
-            <div className="space-y-3">
+            <div className="bg-white rounded-xl border border-[#E2E8F0] divide-y divide-[#E2E8F0] overflow-hidden shadow-xs">
               {page.faq.map((item, idx) => (
-                <div key={idx} className="rounded-xl border border-slate-850 bg-slate-900/60 p-5">
-                  <div className="text-sm font-bold text-white mb-2">{item.q}</div>
-                  <div className="text-xs text-slate-300 leading-relaxed">{item.a}</div>
+                <div key={idx} className="p-5 sm:p-6">
+                  <div className="text-sm sm:text-base font-bold text-[#0F172A] mb-1.5">{item.q}</div>
+                  <div className="text-sm text-[#475569] leading-[1.65]">{item.a}</div>
                 </div>
               ))}
             </div>
           </section>
         )}
 
-        {/* Inter-linked Cross-Linking Section (Open in New Tab) */}
-        <section className="pt-12 border-t border-slate-900">
+        {/* Inter-linked Cross-Linking Section */}
+        <section className="pt-12 border-t border-[#E2E8F0]">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
-                Internal Links Directory
+              <div className="text-[12px] font-semibold text-[#1D4ED8] uppercase tracking-[0.08em]">
+                – INTERNAL LINKS DIRECTORY
               </div>
-              <h3 className="text-xl font-bold text-white mt-1">
-                Explore Related Multilingual Web & Digital Marketing Pages
+              <h3 className="text-xl font-bold text-[#0F172A] mt-1">
+                Explore Related Multilingual Web &amp; Digital Marketing Pages
               </h3>
             </div>
-            <span className="text-xs text-slate-500 hidden sm:inline font-mono">Links open in new tab</span>
+            <span className="text-xs text-[#475569] hidden sm:inline font-mono">Links open in new tab</span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
@@ -893,10 +893,10 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
                 href={link.path}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-slate-900/50 border border-slate-850 hover:border-blue-500/50 hover:bg-slate-900 transition-all text-xs text-slate-300 hover:text-white flex items-center justify-between group"
+                className="p-3 rounded-xl bg-white border border-[#E2E8F0] hover:border-[#1D4ED8]/50 hover:shadow-sm transition-all text-xs font-medium text-[#475569] hover:text-[#1D4ED8] flex items-center justify-between group"
               >
                 <span className="truncate">{link.label}</span>
-                <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-blue-400 shrink-0 ml-1.5" />
+                <ExternalLink className="w-3 h-3 text-slate-400 group-hover:text-[#1D4ED8] shrink-0 ml-1.5" />
               </a>
             ))}
           </div>

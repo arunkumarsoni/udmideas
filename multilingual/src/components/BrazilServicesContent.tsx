@@ -162,17 +162,17 @@ export const BrazilServicesContent: React.FC = () => {
       {/* 1. Intro Narrative & Core Market Context */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold mb-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold mb-2">
             <Globe2 className="w-3.5 h-3.5" />
             <span>Brazil Web Design, Development, SEO & Marketing · 15+ Years Track Record</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Brazil Web Design, Development, SEO and Digital Marketing Services
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Brazil has about 185 million internet users, and Google handles about 88% of searches there. If your business wants those customers, you need a fast website and a search plan in Brazilian Portuguese. UDMIDEAS provides Brazil web design, development, SEO, and digital marketing services for business owners.
           </p>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             We build custom-coded React JS websites, run multilingual SEO, and manage PPC and social media. Arun, our founder with 15+ years of SEO experience, leads every project. Below we compare SEO, SMM, and PPC, share Brazil market statistics, and explain why business owners hire us. We write and optimize in Brazilian Portuguese and English.
           </p>
         </div>
@@ -182,14 +182,14 @@ export const BrazilServicesContent: React.FC = () => {
           {brazilServices.map((svc, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all flex flex-col justify-between"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-center gap-2 text-sm font-bold text-white mb-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <div className="flex items-center gap-2 text-sm font-bold text-[#0F172A] mb-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
                   <span>{svc.title}</span>
                 </div>
-                <p className="text-xs text-slate-300 leading-relaxed pl-6">
+                <p className="text-xs text-[#475569] leading-relaxed pl-6">
                   {svc.desc}
                 </p>
               </div>
@@ -201,41 +201,41 @@ export const BrazilServicesContent: React.FC = () => {
       {/* 2. SEO vs SMM vs PPC: What Is the Difference? */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Channel Comparison & Strategy
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             SEO vs SMM vs PPC: What Is the Difference?
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             SEO earns free Google rankings over months, PPC buys instant clicks that stop when the budget stops, and SMM builds audience and trust on platforms like Instagram, YouTube, and TikTok. Most Brazil businesses do best by combining all three, with SEO as the base.
           </p>
         </div>
 
         {/* Services Comparison Table */}
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Service</th>
                 <th className="py-3.5 px-4 sm:px-6">Best For</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Typical Time to Results</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Brazil Market Fact</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Typical Time to Results</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Brazil Market Fact</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {comparisonTable.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.service}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A] text-xs">
                     {row.bestFor}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono text-emerald-400 text-xs whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-emerald-700 text-xs whitespace-nowrap">
                     {row.time}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {row.fact}
                   </td>
                 </tr>
@@ -244,7 +244,7 @@ export const BrazilServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 italic">
+        <p className="text-xs text-[#64748B] italic">
           * Time ranges are typical estimates for this kind of work; confirm them against your own project specifications before publishing.
         </p>
       </section>
@@ -252,13 +252,13 @@ export const BrazilServicesContent: React.FC = () => {
       {/* 3. Why Brazil Business Owners Hire UDMIDEAS */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Proven Competitive Edge
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Why Brazil Business Owners Hire UDMIDEAS
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             We adapt every technical and creative touchpoint to the distinct realities of the Brazilian digital marketplace:
           </p>
         </div>
@@ -269,16 +269,16 @@ export const BrazilServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between space-y-3"
+                className="p-6 rounded-2xl bg-white border border-[#E2E8F0] hover:border-blue-600/30 transition-all flex flex-col justify-between space-y-3"
               >
                 <div>
-                  <div className="w-9 h-9 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-3">
+                  <div className="w-9 h-9 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 mb-3">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <h3 className="text-base font-bold text-white mb-2">
+                  <h3 className="text-base font-bold text-[#0F172A] mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-slate-300 leading-relaxed">
+                  <p className="text-xs text-[#475569] leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -289,15 +289,15 @@ export const BrazilServicesContent: React.FC = () => {
       </section>
 
       {/* 4. Major Metropolitan Hubs in Brazil We Optimize For */}
-      <section className="p-6 sm:p-8 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-5">
+      <section className="p-6 sm:p-8 rounded-3xl bg-white border border-[#E2E8F0] space-y-5">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Local Geographic Targeting
           </div>
-          <h2 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
+          <h2 className="text-xl sm:text-2xl font-extrabold text-[#0F172A] tracking-tight">
             Local SEO for Brazil’s Economic Powerhouses
           </h2>
-          <p className="mt-1 text-xs sm:text-sm text-slate-300">
+          <p className="mt-1 text-xs sm:text-sm text-[#475569]">
             We deploy targeted local search optimization and Google Business Profile management across Brazil’s primary business capitals:
           </p>
         </div>
@@ -306,11 +306,11 @@ export const BrazilServicesContent: React.FC = () => {
           {targetCities.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-950 border border-slate-850 space-y-1 text-center"
+              className="p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-1 text-center"
             >
-              <div className="text-xs font-bold text-white">{item.city}</div>
-              <div className="text-[10px] font-mono text-emerald-400">{item.state}</div>
-              <div className="text-[10px] text-slate-400 leading-tight">{item.role}</div>
+              <div className="text-xs font-bold text-[#0F172A]">{item.city}</div>
+              <div className="text-[10px] font-mono text-emerald-700">{item.state}</div>
+              <div className="text-[10px] text-[#64748B] leading-tight">{item.role}</div>
             </div>
           ))}
         </div>
@@ -319,13 +319,13 @@ export const BrazilServicesContent: React.FC = () => {
       {/* 5. Custom Coded React JS Websites for Every Industry */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Zero Template Bloat
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Custom Coded React JS Websites for Every Industry
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             We design and develop websites for business industries, custom coded in React JS with no page builder templates. Each site is built for speed, small screens, and crawlability, so Google can read every page effortlessly.
           </p>
         </div>
@@ -334,9 +334,9 @@ export const BrazilServicesContent: React.FC = () => {
           {industries.map((ind, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-center gap-2.5 text-xs text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-center gap-2.5 text-xs text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
               <span className="font-medium">{ind}</span>
             </div>
           ))}
@@ -344,30 +344,30 @@ export const BrazilServicesContent: React.FC = () => {
       </section>
 
       {/* 6. Multilingual SEO and Digital Marketing Company */}
-      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-slate-900 to-blue-950/30 border border-emerald-500/20 space-y-3">
-        <h3 className="text-lg font-bold text-white flex items-center gap-2">
-          <Globe2 className="w-5 h-5 text-emerald-400" />
+      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-emerald-50/70 via-white to-blue-50/40 border border-emerald-200 space-y-3">
+        <h3 className="text-lg font-bold text-[#0F172A] flex items-center gap-2">
+          <Globe2 className="w-5 h-5 text-emerald-700" />
           <span>Multilingual SEO & Digital Marketing Company</span>
         </h3>
-        <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
           We are a multilingual digital marketing company. For Brazil, we write in Brazilian Portuguese (pt-BR), add English and Spanish versions where you sell across borders, and configure correct hreflang tags so Google serves the appropriate linguistic page to the right visitor. We apply the same proven methodology across French, German, Arabic, and Polish global markets.
         </p>
       </section>
 
       {/* 7. Hire Arun, SEO Expert with 15+ Years of Experience */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-6">
+      <section className="p-8 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Founder & Technical Leadership
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Hire Arun, SEO Expert with 15+ Years of Experience
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Arun founded UDMIDEAS and has worked in search engine optimization for more than 15 years. He is a hands-on technical lead, not an account manager, and works with clients across the USA, Israel, the Gulf region, Latin America, and Australia.
           </p>
-          <p className="mt-2 text-xs sm:text-sm font-semibold text-white">
-            Ready to grow your Brazil business? Request a free SEO audit or call/WhatsApp <span className="text-emerald-400 font-mono">+91-9521186150</span>.
+          <p className="mt-2 text-xs sm:text-sm font-semibold text-[#0F172A]">
+            Ready to grow your Brazil business? Request a free SEO audit or call/WhatsApp <span className="text-emerald-700 font-mono">+91-9521186150</span>.
           </p>
         </div>
       </section>
@@ -375,10 +375,10 @@ export const BrazilServicesContent: React.FC = () => {
       {/* 8. Frequently Asked Questions */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Brazil Market FAQ
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Frequently Asked Questions
           </h2>
         </div>
@@ -389,23 +389,23 @@ export const BrazilServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-all"
+                className="rounded-2xl border border-[#E2E8F0] bg-white overflow-hidden transition-all"
               >
                 <button
                   onClick={() => toggleFaq(idx)}
-                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-slate-850/50 transition-colors cursor-pointer"
+                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-[#F8FAFC] transition-colors cursor-pointer"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="text-xs font-mono font-bold text-emerald-400 shrink-0 mt-0.5">
+                    <span className="text-xs font-mono font-bold text-emerald-700 shrink-0 mt-0.5">
                       Q{String(idx + 1).padStart(2, '0')}.
                     </span>
-                    <span className="text-xs sm:text-sm font-bold text-white leading-snug">
+                    <span className="text-xs sm:text-sm font-bold text-[#0F172A] leading-snug">
                       {faq.q}
                     </span>
                   </div>
-                  <div className="text-slate-400 shrink-0">
+                  <div className="text-[#64748B] shrink-0">
                     {isOpen ? (
-                      <ChevronUp className="w-4 h-4 text-emerald-400" />
+                      <ChevronUp className="w-4 h-4 text-emerald-700" />
                     ) : (
                       <ChevronDown className="w-4 h-4" />
                     )}
@@ -413,7 +413,7 @@ export const BrazilServicesContent: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-slate-850/60 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
                     <p className="pl-7">{faq.a}</p>
                   </div>
                 )}
@@ -424,22 +424,22 @@ export const BrazilServicesContent: React.FC = () => {
       </section>
 
       {/* 9. Direct Contact & Consultation CTA */}
-      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-emerald-950/60 via-slate-900 to-blue-950/40 border border-emerald-500/30 text-center space-y-6">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-emerald-50/70 via-white to-blue-50/40 border border-emerald-200 text-center space-y-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Clock className="w-3.5 h-3.5" />
           <span>Brazil Web & Search Growth Plan</span>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight max-w-2xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] tracking-tight max-w-2xl mx-auto">
           Ready to Grow Your Brazil Business?
         </h2>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-xl mx-auto leading-relaxed">
           Reach Brazil’s 185 million internet users with a custom-coded React JS website and a high-converting search strategy in Brazilian Portuguese.
         </p>
 
-        <p className="text-sm font-bold text-white">
-          Contact Founder Arun directly: <span className="text-emerald-400 font-mono">+91-9521186150</span> · Email: <span className="text-blue-400 font-mono">info@udmideasusa.com</span>
+        <p className="text-sm font-bold text-[#0F172A]">
+          Contact Founder Arun directly: <span className="text-emerald-700 font-mono">+91-9521186150</span> · Email: <span className="text-[#1D4ED8] font-mono">info@udmideasusa.com</span>
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -447,7 +447,7 @@ export const BrazilServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20interested%20in%20Web%20Design,%20SEO%20and%20Digital%20Marketing%20for%20Brazil."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-xl shadow-emerald-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp Arun (+91-9521186150)</span>
@@ -455,7 +455,7 @@ export const BrazilServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <Mail className="w-4 h-4" />
             <span>Request Free Brazil SEO Audit</span>

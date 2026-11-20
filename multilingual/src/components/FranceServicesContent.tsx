@@ -290,16 +290,16 @@ export const FranceServicesContent: React.FC = () => {
     <div className="space-y-14 text-left">
       {/* Hero / Page Introduction */}
       <header className="max-w-4xl space-y-4">
-        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Globe2 className="w-3.5 h-3.5 shrink-0" />
           <span>France Website Design, Development & French SEO · 15+ Years Experience</span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight text-balance">
           France Website Design, Development & SEO Digital Marketing Company UDMIDEAS
         </h1>
 
-        <div className="space-y-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+        <div className="space-y-3 text-sm sm:text-base text-[#475569] leading-relaxed">
           <p>
             France is one of Europe's most attractive markets for businesses looking to expand their online presence, reach French-speaking customers, and increase digital sales. Whether you operate a local business, professional service company, manufacturing business, or eCommerce store, having a professionally designed French-language website and a strong digital marketing strategy can help you reach more customers.
           </p>
@@ -309,7 +309,7 @@ export const FranceServicesContent: React.FC = () => {
           <p>
             We help French business owners build professional websites, improve search engine visibility, attract qualified visitors, generate enquiries, and grow online sales.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Our approach combines custom-coded website development with SEO, AEO, GEO, content marketing, and digital advertising strategies designed around your business goals.
           </p>
         </div>
@@ -319,7 +319,7 @@ export const FranceServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20French%20website%20design%20and%20SEO%20in%20France."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp: +91-9521186150</span>
@@ -327,7 +327,7 @@ export const FranceServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
           >
             <span>Request Proposal (Direct Email)</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -338,35 +338,35 @@ export const FranceServicesContent: React.FC = () => {
       {/* France Digital Market: Statistics and Future Opportunities */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Market Intelligence
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             France Digital Market: Statistics and Future Opportunities
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             France has a strong digital economy, with millions of consumers purchasing products and services online. Businesses that invest in websites, SEO, and digital advertising can compete for both local and international customers.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Here are some important market statistics:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-3xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-3xl">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Digital market indicator</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Latest available statistics</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Latest available statistics</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {franceStats.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-medium text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-medium text-[#0F172A]">
                     {row.indicator}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700">
                     {row.stat}
                   </td>
                 </tr>
@@ -375,21 +375,21 @@ export const FranceServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 italic">
+        <p className="text-xs text-[#64748B] italic">
           Sources: FEVAD 2026, reporting 2025 market results. (fevad.com+1)
         </p>
 
         {/* Future of French Digital Business: 2027–2030 */}
         <div className="space-y-4 pt-2">
           <div className="max-w-4xl space-y-1.5">
-            <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+            <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
               <Sparkles className="w-4 h-4" />
               <span>Strategic Horizon</span>
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#0F172A]">
               Future of French Digital Business: 2027–2030
             </h3>
-            <p className="text-xs sm:text-sm text-slate-300">
+            <p className="text-xs sm:text-sm text-[#475569]">
               The future of digital business in France will be influenced by several important developments:
             </p>
           </div>
@@ -398,22 +398,22 @@ export const FranceServicesContent: React.FC = () => {
             {futureDevelopments.map((item, idx) => (
               <div
                 key={idx}
-                className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+                className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
               >
-                <div className="text-xs font-mono text-emerald-400 font-bold">
+                <div className="text-xs font-mono text-emerald-700 font-bold">
                   0{idx + 1}
                 </div>
-                <h4 className="text-sm sm:text-base font-bold text-white">
+                <h4 className="text-sm sm:text-base font-bold text-[#0F172A]">
                   {item.title}
                 </h4>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {item.desc}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-xs text-slate-400 italic max-w-4xl">
+          <p className="text-xs text-[#64748B] italic max-w-4xl">
             These are strategic growth opportunities, not guaranteed numerical forecasts. The direction of investment will depend on industry, consumer demand, and technology adoption.
           </p>
         </div>
@@ -422,36 +422,36 @@ export const FranceServicesContent: React.FC = () => {
       {/* Our Website Design and Digital Marketing Services in France */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Integrated Solutions & Pricing
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our Website Design and Digital Marketing Services in France
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS offers integrated digital solutions for French-speaking businesses. We focus on developing professional websites and promoting them through search engines, social media, and paid advertising.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Our services</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">What we provide</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Pricing</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">What we provide</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Pricing</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {servicesPricingRows.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.service}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.provides}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {row.pricing}
                   </td>
                 </tr>
@@ -460,7 +460,7 @@ export const FranceServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           The $500 starting price is an introductory project price, not a promise that every service or a complete marketing campaign is included. Final pricing depends on website size, functionality, content, advertising requirements, and project scope. Advertising budgets are separate.
         </div>
       </section>
@@ -468,17 +468,17 @@ export const FranceServicesContent: React.FC = () => {
       {/* French Website Design and Development Services */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Code2 className="w-4 h-4" />
             <span>Custom Engineering</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             French Website Design and Development Services
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Your website is your digital business identity. French customers should be able to understand your services, explore your products, and contact your company without language barriers. UDMIDEAS designs and develops custom-coded websites for French-language businesses.
           </p>
-          <p className="text-sm font-semibold text-white">
+          <p className="text-sm font-semibold text-[#0F172A]">
             Our website development services include:
           </p>
         </div>
@@ -487,19 +487,19 @@ export const FranceServicesContent: React.FC = () => {
           {devServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <div className="space-y-2 text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <div className="space-y-2 text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           <p>
             We work with technologies including React JS, PHP, Laravel, CodeIgniter, and WordPress, depending on project requirements.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Our objective is to develop websites that look professional, perform efficiently, and support long-term business growth.
           </p>
         </div>
@@ -508,17 +508,17 @@ export const FranceServicesContent: React.FC = () => {
       {/* French SEO Services for Business Websites */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Search className="w-4 h-4" />
             <span>Organic Search Visibility</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             French SEO Services for Business Websites
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Having a French-language website is only the first step. Your potential customers must also be able to find it through Google and other search platforms. Our French SEO services help businesses improve their organic search visibility and attract relevant visitors.
           </p>
-          <p className="text-sm font-semibold text-white">
+          <p className="text-sm font-semibold text-[#0F172A]">
             Our French SEO activities include:
           </p>
         </div>
@@ -527,19 +527,19 @@ export const FranceServicesContent: React.FC = () => {
           {frenchSeoActivities.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <div className="space-y-2 text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <div className="space-y-2 text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           <p>
             We focus on French search queries rather than simply translating English keywords. French customers may use different expressions, terminology, and buying-intent phrases depending on their industry and location.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Our goal is to increase relevant organic traffic, qualified enquiries, and business opportunities.
           </p>
         </div>
@@ -548,14 +548,14 @@ export const FranceServicesContent: React.FC = () => {
       {/* French eCommerce SEO Solutions */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <ShoppingCart className="w-4 h-4" />
             <span>Online Store Growth</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             French eCommerce SEO Solutions
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             France offers significant opportunities for online stores. However, eCommerce businesses need more than attractive product pages to compete successfully. UDMIDEAS provides French eCommerce SEO solutions for businesses selling products online.
           </p>
         </div>
@@ -564,19 +564,19 @@ export const FranceServicesContent: React.FC = () => {
           {ecommerceSeoServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <div className="space-y-2 text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <div className="space-y-2 text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           <p>
             We can support online stores built using WooCommerce, Magento, Shopify, and custom development platforms.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Whether you sell fashion, electronics, furniture, beauty products, home accessories, or industrial products, our strategy focuses on helping customers discover your products through relevant French search queries.
           </p>
         </div>
@@ -585,46 +585,46 @@ export const FranceServicesContent: React.FC = () => {
       {/* French SMM and PPC Digital Marketing Services */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider">
             Paid Social & Search Advertising
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             French SMM and PPC Digital Marketing Services
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Organic SEO takes time to build. Social media marketing and paid advertising can help businesses reach potential customers through additional digital channels.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2.5 text-base font-bold text-white">
-              <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+          <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2.5 text-base font-bold text-[#0F172A]">
+              <div className="w-8 h-8 rounded-lg bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 shrink-0">
                 <Share2 className="w-4 h-4" />
               </div>
               <span>Social Media Marketing (SMM)</span>
             </div>
             <ul className="space-y-2">
               {smmItems.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2.5 text-base font-bold text-white">
-              <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+          <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2.5 text-base font-bold text-[#0F172A]">
+              <div className="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-[#1D4ED8] shrink-0">
                 <MousePointerClick className="w-4 h-4" />
               </div>
               <span>Pay-Per-Click (PPC) Advertising</span>
             </div>
             <ul className="space-y-2">
               {ppcItems.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -632,11 +632,11 @@ export const FranceServicesContent: React.FC = () => {
           </div>
         </div>
 
-        <div className="space-y-1.5 text-xs sm:text-sm text-slate-300">
+        <div className="space-y-1.5 text-xs sm:text-sm text-[#475569]">
           <p>
             We create campaigns around French-language keywords, customer interests, product categories, and business locations.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Our objective is to help businesses generate relevant leads, increase enquiries, and improve advertising efficiency.
           </p>
         </div>
@@ -645,14 +645,14 @@ export const FranceServicesContent: React.FC = () => {
       {/* How UDMIDEAS Helps Grow French Businesses */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <TrendingUp className="w-4 h-4" />
             <span>5-Step Connected Growth Model</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             How UDMIDEAS Helps Grow French Businesses
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Our approach connects website development, SEO, and digital marketing instead of treating them as separate activities.
           </p>
         </div>
@@ -661,22 +661,22 @@ export const FranceServicesContent: React.FC = () => {
           {growthSteps.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
             >
-              <div className="text-xs font-mono text-emerald-400 font-bold">
+              <div className="text-xs font-mono text-emerald-700 font-bold">
                 0{idx + 1}
               </div>
-              <h3 className="text-sm sm:text-base font-bold text-white">
+              <h3 className="text-sm sm:text-base font-bold text-[#0F172A]">
                 {item.step}
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
+              <p className="text-xs text-[#475569] leading-relaxed">
                 {item.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           Our focus is not simply website traffic. We want to help businesses turn digital visibility into meaningful business opportunities.
         </p>
       </section>
@@ -684,14 +684,14 @@ export const FranceServicesContent: React.FC = () => {
       {/* Benefits of Choosing UDMIDEAS & Why Connect With Us */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <Award className="w-4 h-4" />
             <span>Partner Advantages</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Benefits of Choosing UDMIDEAS
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Working with an integrated website development and digital marketing company can help French businesses manage their online growth more effectively.
           </p>
         </div>
@@ -700,41 +700,41 @@ export const FranceServicesContent: React.FC = () => {
           {benefits.map((b, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1.5"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] space-y-1.5"
             >
-              <div className="flex items-center gap-2 font-bold text-sm text-white">
-                <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+              <div className="flex items-center gap-2 font-bold text-sm text-[#0F172A]">
+                <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0" />
                 <span>{b.title}</span>
               </div>
-              <p className="text-xs text-slate-300 pl-6 leading-relaxed">
+              <p className="text-xs text-[#475569] pl-6 leading-relaxed">
                 {b.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-blue-950/30 border border-blue-900/30 space-y-4">
-          <h3 className="text-lg sm:text-xl font-bold text-white">
+        <div className="p-6 rounded-2xl bg-gradient-to-br from-white via-white to-blue-50/40 border border-blue-200 space-y-4">
+          <h3 className="text-lg sm:text-xl font-bold text-[#0F172A]">
             Why French Business Owners Should Choose UDMIDEAS
           </h3>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             UDMIDEAS works with businesses that want to establish, improve, or expand their online presence. With 15+ years of experience in website development and digital marketing, our founder-led business understands the importance of combining technical development with practical marketing strategies.
           </p>
-          <p className="text-xs sm:text-sm font-semibold text-white">
+          <p className="text-xs sm:text-sm font-semibold text-[#0F172A]">
             Why connect with us?
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {whyConnectReasons.map((reason, idx) => (
               <div
                 key={idx}
-                className="p-3 rounded-xl bg-slate-950/70 border border-slate-800 flex items-start gap-2 text-xs text-slate-200"
+                className="p-3 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-start gap-2 text-xs text-[#0F172A]"
               >
-                <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#1D4ED8] shrink-0 mt-0.5" />
                 <span>{reason}</span>
               </div>
             ))}
           </div>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             We understand that every business has different objectives. A local French service company may need local SEO and lead generation, while an eCommerce business may require product optimization, shopping campaigns, and conversion improvements. We develop strategies according to those requirements.
           </p>
         </div>
@@ -743,33 +743,33 @@ export const FranceServicesContent: React.FC = () => {
       {/* French Businesses and Industries We Can Support */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Building2 className="w-4 h-4" />
             <span>Industry & City Coverage</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             French Businesses and Industries We Can Support
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Our services are suitable for different industries across France.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-3xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-3xl">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Industry</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Recommended digital services</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Recommended digital services</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {supportedIndustries.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.industry}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.services}
                   </td>
                 </tr>
@@ -778,7 +778,7 @@ export const FranceServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           We can also create location-focused SEO strategies for businesses targeting Paris, Lyon, Marseille, Toulouse, Nice, Bordeaux, Lille, Nantes, Strasbourg, and other French cities.
         </p>
       </section>
@@ -786,10 +786,10 @@ export const FranceServicesContent: React.FC = () => {
       {/* Frequently Asked Questions: French Business Owners */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Common Inquiries
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Frequently Asked Questions: French Business Owners
           </h2>
         </div>
@@ -800,23 +800,23 @@ export const FranceServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-colors"
+                className="rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-colors"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(idx)}
-                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-white hover:text-blue-400 transition-colors"
+                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-[#0F172A] hover:text-[#1D4ED8] transition-colors"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.q}</span>
                   {isOpen ? (
-                    <ChevronUp className="w-4 h-4 text-blue-400 shrink-0" />
+                    <ChevronUp className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                   ) : (
-                    <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+                    <ChevronDown className="w-4 h-4 text-[#64748B] shrink-0" />
                   )}
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-4 text-xs sm:text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+                  <div className="px-5 pb-4 text-xs sm:text-sm text-[#475569] border-t border-[#E2E8F0] pt-3 leading-relaxed">
                     {faq.a}
                   </div>
                 )}
@@ -827,26 +827,26 @@ export const FranceServicesContent: React.FC = () => {
       </section>
 
       {/* Grow Your French Business with UDMIDEAS */}
-      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-950 via-slate-900 to-emerald-950/50 border border-blue-800/40 space-y-6 shadow-xl">
+      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 space-y-6 shadow-sm">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Rocket className="w-4 h-4" />
             <span>Get Started</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Grow Your French Business with UDMIDEAS
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             The digital marketplace in France continues to evolve. Businesses that invest in professional websites, French-language SEO, eCommerce optimization, and targeted digital advertising can create stronger opportunities to attract customers.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Whether you are launching a new business, redesigning an existing website, expanding your eCommerce store, or trying to improve your Google rankings, UDMIDEAS can help you develop a digital growth strategy. We work with businesses looking for professional website design, custom development, French SEO, eCommerce SEO, social media marketing, and PPC advertising.
           </p>
         </div>
 
-        <div className="pt-4 border-t border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1 text-xs sm:text-sm text-slate-300">
-            <div className="font-bold text-white text-base">
+        <div className="pt-4 border-t border-[#E2E8F0] flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1 text-xs sm:text-sm text-[#475569]">
+            <div className="font-bold text-[#0F172A] text-base">
               Let's build your digital presence in France.
             </div>
             <div>
@@ -855,19 +855,19 @@ export const FranceServicesContent: React.FC = () => {
                 href="https://udmideasusa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:underline font-mono"
+                className="text-[#1D4ED8] hover:underline font-mono"
               >
                 https://udmideasusa.com/
               </a>{' '}
               · Email:{' '}
               <a
                 href="mailto:info@udmideasusa.com"
-                className="text-emerald-400 hover:underline font-mono"
+                className="text-emerald-700 hover:underline font-mono"
               >
                 info@udmideasusa.com
               </a>
             </div>
-            <div className="text-xs text-slate-400">
+            <div className="text-xs text-[#64748B]">
               Connect with UDMIDEAS for custom French website development and digital marketing.
             </div>
           </div>
@@ -877,14 +877,14 @@ export const FranceServicesContent: React.FC = () => {
               href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20discuss%20French%20website%20development%20and%20SEO%20for%20France."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp: +91-9521186150</span>
             </a>
             <a
               href="#inquiry-form"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
             >
               <span>Connect with UDMIDEAS</span>
               <ArrowRight className="w-3.5 h-3.5" />

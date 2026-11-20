@@ -1,14 +1,5 @@
 import React, { useState } from 'react';
-import {
-  FolderCheck,
-  Clock,
-  ExternalLink,
-  Globe2,
-  CheckCircle2,
-  Layers,
-  Sparkles,
-  ArrowRight
-} from 'lucide-react';
+import { FolderCheck, Clock, ArrowRight } from 'lucide-react';
 import { RECENT_WORK_DONE, PRESENT_WORK_DONE } from '../data/contentData';
 import { ProjectWork } from '../types';
 
@@ -25,30 +16,30 @@ export const WorkDoneTabsSection: React.FC<WorkDoneTabsSectionProps> = ({
     activeTab === 'recent' ? RECENT_WORK_DONE : PRESENT_WORK_DONE;
 
   return (
-    <section id="work-portfolio" className="py-24 bg-slate-900/40 border-b border-slate-800">
+    <section id="work-portfolio" className="py-20 lg:py-24 bg-white border-b border-[#E2E8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 text-left">
           <div>
-            <div className="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2">
-              08. Portfolio & Pipeline
+            <div className="text-[12px] sm:text-[13px] font-semibold text-[#1D4ED8] uppercase tracking-[0.08em] mb-2">
+              – PORTFOLIO &amp; ACTIVE PIPELINE
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-              Recent Work Done & Present Ongoing Projects.
+            <h2 className="text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#0F172A] leading-[1.2] tracking-tight">
+              Recent Work Done &amp; Present Ongoing Projects.
             </h2>
-            <p className="mt-2 text-sm text-slate-400">
+            <p className="mt-2 text-base text-[#475569]">
               Explore completed enterprise platforms and live client systems currently under active custom engineering.
             </p>
           </div>
 
-          {/* Interactive 2-Tab Controller */}
-          <div className="inline-flex p-1.5 rounded-xl bg-slate-950 border border-slate-800 shrink-0">
+          {/* Interactive Pill-Style 2-Tab Controller */}
+          <div className="inline-flex p-1.5 rounded-full bg-[#F8FAFC] border border-[#E2E8F0] shrink-0">
             <button
               onClick={() => setActiveTab('recent')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
+              className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
                 activeTab === 'recent'
-                  ? 'bg-blue-600 text-white shadow-md shadow-blue-600/30'
-                  : 'text-slate-400 hover:text-white'
+                  ? 'bg-[#0F172A] text-white shadow-sm'
+                  : 'text-[#475569] hover:text-[#0F172A]'
               }`}
               aria-label="View recent work done"
             >
@@ -58,10 +49,10 @@ export const WorkDoneTabsSection: React.FC<WorkDoneTabsSectionProps> = ({
 
             <button
               onClick={() => setActiveTab('ongoing')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all ${
+              className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
                 activeTab === 'ongoing'
-                  ? 'bg-emerald-600 text-white shadow-md shadow-emerald-600/30'
-                  : 'text-slate-400 hover:text-white'
+                  ? 'bg-[#1D4ED8] text-white shadow-sm'
+                  : 'text-[#475569] hover:text-[#0F172A]'
               }`}
               aria-label="View ongoing projects"
             >
@@ -73,54 +64,57 @@ export const WorkDoneTabsSection: React.FC<WorkDoneTabsSectionProps> = ({
 
         {/* Tab Content Display */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {currentList.map((project) => (
+          {currentList.map((project, idx) => (
             <div
               key={project.id}
-              className="bg-slate-950 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-slate-700 transition-all text-left group"
+              className="bg-white rounded-xl border border-[#E2E8F0] p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-600/30 text-left group"
             >
               <div>
                 {/* Status & Sector */}
-                <div className="flex items-center justify-between text-xs mb-3 pb-2 border-b border-slate-900">
-                  <span className="text-slate-400 font-medium">{project.sector} Business</span>
+                <div className="flex items-center justify-between text-xs mb-3 pb-3 border-b border-[#E2E8F0]">
+                  <span className="text-[#475569] font-semibold">
+                    <span className="font-mono text-[#1D4ED8] mr-1.5 tabular-nums">0{idx + 1} /</span>
+                    {project.sector}
+                  </span>
                   <span
-                    className={`font-mono text-[11px] px-2 py-0.5 rounded border ${
+                    className={`font-semibold text-[11px] px-2.5 py-0.5 rounded-md border ${
                       project.status === 'Completed'
-                        ? 'text-blue-400 bg-blue-950/40 border-blue-900/40'
-                        : 'text-emerald-400 bg-emerald-950/40 border-emerald-900/40'
+                        ? 'text-[#1D4ED8] bg-blue-50 border-blue-200/80'
+                        : 'text-emerald-700 bg-emerald-50 border-emerald-200/80'
                     }`}
                   >
-                    {project.status === 'Completed' ? 'Deployed & Verified' : 'In Engineering Sprint'}
+                    {project.status === 'Completed' ? 'Deployed' : 'In Sprint'}
                   </span>
                 </div>
 
                 {/* Project Title */}
-                <h3 className="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-1">
+                <h3 className="text-lg font-bold text-[#0F172A] group-hover:text-[#1D4ED8] transition-colors mb-1">
                   {project.title}
                 </h3>
-                <div className="text-xs text-slate-400 mb-3">
-                  Client: <span className="text-slate-300 font-medium">{project.client}</span> · {project.country}
+                <div className="text-xs text-[#475569] mb-3">
+                  Client: <span className="text-[#0F172A] font-semibold">{project.client}</span> · {project.country}
                 </div>
 
-                <p className="text-xs text-slate-300 leading-relaxed mb-4">
+                <p className="text-sm text-[#475569] leading-relaxed mb-4">
                   {project.details}
                 </p>
 
                 {/* Key Outcome / Scope */}
-                <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-850 mb-4">
-                  <div className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mb-1">
-                    {activeTab === 'recent' ? 'Measured Result:' : 'Current Milestone:'}
+                <div className="p-3.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] mb-4">
+                  <div className="text-[10px] text-[#475569] uppercase tracking-[0.08em] font-bold mb-1">
+                    {activeTab === 'recent' ? 'Measured Result' : 'Current Milestone'}
                   </div>
-                  <div className="text-xs font-semibold text-emerald-300 font-mono">
+                  <div className="text-xs font-bold text-[#1D4ED8] font-mono">
                     {project.keyOutcome}
                   </div>
                 </div>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-1 mb-4">
+                <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.techStack.map((tech) => (
                     <span
                       key={tech}
-                      className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 text-slate-400 border border-slate-800"
+                      className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-[#F8FAFC] text-[#475569] border border-[#E2E8F0]"
                     >
                       {tech}
                     </span>
@@ -129,16 +123,16 @@ export const WorkDoneTabsSection: React.FC<WorkDoneTabsSectionProps> = ({
               </div>
 
               {/* Footer Scope */}
-              <div className="pt-3 border-t border-slate-900 flex items-center justify-between text-xs">
-                <span className="text-slate-400 truncate max-w-[200px]">
+              <div className="pt-3.5 border-t border-[#E2E8F0] flex items-center justify-between text-xs gap-2">
+                <span className="text-[#475569] truncate max-w-[180px]">
                   {project.liveUrlOrScope}
                 </span>
                 <button
                   onClick={onOpenContact}
-                  className="text-blue-400 hover:text-blue-300 font-semibold inline-flex items-center gap-1 shrink-0"
+                  className="group/btn text-[#1D4ED8] hover:text-[#1E40AF] font-bold inline-flex items-center gap-1 shrink-0 cursor-pointer"
                 >
                   <span>Build Similar</span>
-                  <ArrowRight className="w-3 h-3" />
+                  <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform duration-200" />
                 </button>
               </div>
             </div>
