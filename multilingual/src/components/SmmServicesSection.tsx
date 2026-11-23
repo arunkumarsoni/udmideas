@@ -19,7 +19,7 @@ export const SmmServicesSection: React.FC<SmmServicesSectionProps> = ({
   const iconMap = [Share2, Video, MessageSquare, Users2];
 
   return (
-    <section id="smm-services" className="py-20 lg:py-24 bg-white border-b border-[#E2E8F0]">
+    <section id="smm-services" className="py-20 lg:py-24 bg-[#F8FAFC] border-b border-[#E2E8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-14 text-left">
@@ -41,7 +41,7 @@ export const SmmServicesSection: React.FC<SmmServicesSectionProps> = ({
             return (
               <div
                 key={smm.id}
-                className="bg-[#F8FAFC] hover:bg-white rounded-xl border border-[#E2E8F0] p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-600/30 text-left group"
+                className="bg-white rounded-xl border border-[#E2E8F0] p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-600/30 text-left group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">

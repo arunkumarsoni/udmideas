@@ -195,6 +195,11 @@ export const Footer: React.FC = () => {
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
+              <li>
+                <a href="/case-studies/" className="text-blue-300 hover:text-white transition-colors inline-flex items-center gap-1 font-medium">
+                  <span>Case Studies</span>
+                </a>
+              </li>
             </ul>
           </div>
 

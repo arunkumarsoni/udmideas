@@ -6,15 +6,11 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
-import { CaseStudiesSection } from './components/CaseStudiesSection';
 import { AboutUsSection } from './components/AboutUsSection';
-import { WebDevelopmentSection } from './components/WebDevelopmentSection';
+import { MultilingualServicesSection } from './components/MultilingualServicesSection';
 import { ReviewsSlider } from './components/ReviewsSlider';
-import { SeoServicesSection } from './components/SeoServicesSection';
 import { SmmServicesSection } from './components/SmmServicesSection';
 import { EmpoweredBySlider } from './components/EmpoweredBySlider';
-import { PpcServicesSection } from './components/PpcServicesSection';
-import { WorkDoneTabsSection } from './components/WorkDoneTabsSection';
 import { LatestBlogsSection } from './components/LatestBlogsSection';
 import { MapUsaSection } from './components/MapUsaSection';
 import { FaqSection } from './components/FaqSection';
@@ -22,6 +18,7 @@ import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { BlogPage } from './components/BlogPage';
 import { BlogDetailPage } from './components/BlogDetailPage';
+import { CaseStudiesPage } from './components/CaseStudiesPage';
 import { CaseStudyDetailPage } from './components/CaseStudyDetailPage';
 import { StandalonePageView } from './components/StandalonePageView';
 import { ContactModal } from './components/ContactModal';
@@ -95,6 +92,19 @@ export default function App() {
 
   const isHome = currentPath === '/';
   const isBlogListing = currentPath === '/blog/';
+  const isCaseStudiesListing = currentPath === '/case-studies/';
+
+  useEffect(() => {
+    if (isHome) {
+      const homeTitle =
+        'UDMIDEAS Multilingual Website Design, Development & SEO Digital Marketing Agency';
+      document.title = homeTitle;
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) {
+        ogTitle.setAttribute('content', homeTitle);
+      }
+    }
+  }, [isHome]);
 
   return (
     <div className="min-h-screen bg-white text-[#475569] flex flex-col font-sans selection:bg-[#1D4ED8] selection:text-white">
@@ -102,11 +112,19 @@ export default function App() {
       <Navbar currentPath={currentPath} />
 
       {/* Main View Router */}
-      {matchedCaseStudy ? (
+      {isCaseStudiesListing ? (
+        <main className="flex-grow">
+          <CaseStudiesPage
+            onBackToHome={() => navigateTo('/')}
+            onSelectCaseStudy={(cs) => navigateTo(`/case-study/${cs.slug || cs.id}/`)}
+            onOpenContact={() => setIsContactModalOpen(true)}
+          />
+        </main>
+      ) : matchedCaseStudy ? (
         <main className="flex-grow">
           <CaseStudyDetailPage
             caseStudy={matchedCaseStudy}
-            onBack={() => navigateTo('/')}
+            onBack={() => navigateTo('/case-studies/')}
             onSelectCaseStudy={(cs) => navigateTo(`/case-study/${cs.slug || cs.id}/`)}
             onOpenContact={() => setIsContactModalOpen(true)}
           />
@@ -134,44 +152,32 @@ export default function App() {
           <HeroSection
             onOpenContact={() => setIsContactModalOpen(true)}
             onExploreServices={() => {
-              const el = document.getElementById('web-development');
+              const el = document.getElementById('multilingual-services');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
             }}
           />
 
-          {/* 2. Case Studies Section - 4 Case Studies with New Tab Pages */}
-          <CaseStudiesSection
-            onSelectCaseStudy={(cs) => navigateTo(`/case-study/${cs.slug || cs.id}/`, true)}
-          />
-
-          {/* 3. About Us UDMIDEAS Section */}
+          {/* 2. About Us UDMIDEAS Section */}
           <AboutUsSection
             onOpenTeam={() => navigateTo('/team/', true)}
             onOpenContact={() => setIsContactModalOpen(true)}
           />
 
-          {/* 4. Website Design Development Services Section (2 blocks per row / pair layout) */}
-          <WebDevelopmentSection onOpenContact={() => setIsContactModalOpen(true)} />
+          {/* 3. Multilingual UDMIDEAS Services Section (7 Core Services) */}
+          <MultilingualServicesSection
+            onOpenContact={() => setIsContactModalOpen(true)}
+          />
 
-          {/* 5. Reviews Section Slider with 10 reviews moving in 5 seconds */}
+          {/* 4. Reviews Section Slider with 10 reviews moving in 5 seconds */}
           <ReviewsSlider />
 
-          {/* 6. SEO Services Section with all SEO, AEO, and GEO services */}
-          <SeoServicesSection onOpenContact={() => setIsContactModalOpen(true)} />
-
-          {/* 7. SMM Services Section with all social media marketing services */}
+          {/* 4. SMM Services Section with all social media marketing services */}
           <SmmServicesSection onOpenContact={() => setIsContactModalOpen(true)} />
 
-          {/* 8. Empowers By Companies Slider */}
+          {/* 5. Empowers By Companies Slider */}
           <EmpoweredBySlider />
 
-          {/* 9. Our PPC Services Section */}
-          <PpcServicesSection onOpenContact={() => setIsContactModalOpen(true)} />
-
-          {/* 10. Recent Work Done and Present Ongoing Work Done (Two Tabs in same section) */}
-          <WorkDoneTabsSection onOpenContact={() => setIsContactModalOpen(true)} />
-
-          {/* 11. Our Latest Blogs Section (4 Blogs in Slider) */}
+          {/* 6. Our Latest Blogs Section (4 Blogs in Slider) */}
           <LatestBlogsSection
             onOpenBlogReader={(b) => navigateTo(b.customUrl || `/blog/${b.slug}/`, true)}
             onOpenBlogPage={() => navigateTo('/blog/', true)}

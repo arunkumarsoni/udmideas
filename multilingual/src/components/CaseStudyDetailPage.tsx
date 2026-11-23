@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { CASE_STUDIES } from '../data/contentData';
 import { CaseStudy } from '../types';
+import { ConsultationForm } from './ConsultationForm';
 
 interface CaseStudyDetailPageProps {
   caseStudy: CaseStudy;
@@ -277,6 +278,11 @@ export const CaseStudyDetailPage: React.FC<CaseStudyDetailPageProps> = ({
             </div>
           </div>
         </div>
+
+        {/* Standardized Consultation Form */}
+        <section id="inquiry-form" className="mb-14 p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] shadow-xl max-w-3xl mx-auto">
+          <ConsultationForm headingTag="h2" />
+        </section>
 
         {/* Explore Other 3 Case Studies */}
         <div className="pt-12 border-t border-[#E2E8F0]">

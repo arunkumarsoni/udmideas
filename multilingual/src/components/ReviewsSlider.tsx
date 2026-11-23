@@ -73,7 +73,7 @@ export const ReviewsSlider: React.FC = () => {
         <div
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
-          className="relative rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] p-8 sm:p-12 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-blue-600/30"
+          className="relative rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] p-6 sm:p-10 lg:p-12 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-blue-600/30"
         >
           {/* Top Rating & Metric */}
           <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-6 border-b border-[#E2E8F0]">

@@ -30,6 +30,7 @@ import {
 } from 'lucide-react';
 import { BLOG_POSTS, NEW_YORK_REGIONS, LATAM_EXPANSION_REGIONS } from '../data/contentData';
 import { BlogPost } from '../types';
+import { ConsultationForm } from './ConsultationForm';
 
 interface BlogDetailPageProps {
   blog: BlogPost;
@@ -45,14 +46,6 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
   onOpenContact
 }) => {
   const [copied, setCopied] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    website: '',
-    message: `Inquiry regarding ${blog.title}`
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [regionSearch, setRegionSearch] = useState('');
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null);
 
@@ -216,78 +209,6 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name || !formData.email) return;
-
-    const subject = encodeURIComponent(`Organic SEO Quote Request from ${formData.name} (${blog.title})`);
-    const body = encodeURIComponent(
-      `Hello Arun and UDMIDEAS NYC Team,\n\n` +
-      `I am requesting an Organic SEO Consultation & Audit after reading: ${blog.title}\n\n` +
-      `Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Phone/WhatsApp: ${formData.phone || 'N/A'}\n` +
-      `Website: ${formData.website || 'N/A'}\n` +
-      `Message:\n${formData.message}\n\n` +
-      `Please reply to: ${formData.email}`
-    );
-
-    // Dispatch mailto to info@udmideasusa.com
-    window.location.href = `mailto:info@udmideasusa.com?subject=${subject}&body=${body}`;
-    setIsSubmitted(true);
-  };
-
-  // Internal Links Directory for this blog article
-  const internalLinks = [
-    { label: 'Bakersfield Website Development Company', href: '/bakersfield-website-development-company/' },
-    { label: 'Anaheim Web Development Company', href: '/anaheim-web-development-company/' },
-    { label: 'Top PPC Services in San Diego, CA', href: '/top-ppc-services-in-san-diego-ca-usa/' },
-    { label: 'Best SEO Company in France (French SEO)', href: '/seo-company-france/' },
-    { label: 'Best SEO Agency in Kuwait (Arabic SEO)', href: '/seo-agency-kuwait/' },
-    { label: 'Keep PPC Sales & Cut the Bill (SEO, AEO & GEO)', href: '/keep-the-sales-and-cut-the-ppc-bill-how/' },
-    { label: 'Traditional Jewelry & Shoe Shops: Go Online', href: '/its-time-to-go-online/' },
-    { label: 'Learn about Blog Commenting & Link Building', href: '/learn-about-blog-commenting/' },
-    { label: 'USA to LATAM: Spanish SEO', href: '/usa-to-latam-spanish-seo-and-market-expansion/' },
-    { label: 'Cross-Market SEO: Israel & Arab World', href: '/cross-market-seo-israel-and-the-arab-world/' },
-    { label: 'From Website Creation to Digital Authority', href: '/from-website-creation-to-digital-authority/' },
-    { label: 'The Architecture of Multilingual Digital Visibility', href: '/the-architecture-of-multilingual-digital-visibility/' },
-    { label: 'How Arun Handle SEO, AEO and GEO', href: '/how-arun-handle-seo-aeo-and-geo/' },
-    { label: 'Why Arun Is the Best Multilingual SEO Expert', href: '/why-arun-is-the-best-multilingual-seo-expert/' },
-    { label: 'Yonkers Remote SEO Expert', href: '/yonkers/' },
-    { label: "Hell's Kitchen Manhattan SEO Agency", href: '/hells-kitchen/' },
-    { label: 'Watertown North Country Ecommerce SEO', href: '/watertown/' },
-    { label: 'Utica Mohawk Valley Ecommerce SEO', href: '/utica/' },
-    { label: 'Troy Capital Region Ecommerce SEO', href: '/troy/' },
-    { label: 'Times Square Tour & Travel SEO', href: '/times-square/' },
-    { label: 'Syracuse Remote SEO Consultant', href: '/syracuse/' },
-    { label: 'Statue of Liberty Area Tour SEO', href: '/statue-of-liberty-area/' },
-    { label: 'Staten Island Remote SEO Consultant', href: '/staten-island/' },
-    { label: 'Schenectady Remote SEO Consultant', href: '/schenectady/' },
-    { label: 'Rochester Remote SEO Consultant', href: '/rochester/' },
-    { label: 'Queens Remote SEO Consultant', href: '/queens/' },
-    { label: 'New Rochelle Remote SEO Consultant', href: '/new-rochelle/' },
-    { label: 'Mount Vernon Remote SEO Consultant', href: '/mount-vernon/' },
-    { label: 'Manhattan Businesses SEO Consultant', href: '/manhattan/' },
-    { label: 'Kingston Hudson Valley Remote SEO', href: '/kingston/' },
-    { label: 'Empire State Tour & B2B SEO', href: '/empire-state/' },
-    { label: 'Central Park Tour & Travel SEO', href: '/central-park/' },
-    { label: 'Buffalo Remote SEO Consultant', href: '/buffalo/' },
-    { label: 'Brooklyn Businesses SEO Consultant', href: '/brooklyn/' },
-    { label: 'SEO Consultant for The Bronx', href: '/bronx/' },
-    { label: 'Albany Remote SEO Consultant', href: '/albany/' },
-    { label: 'New York HQ & USA Strategy', href: '/new-york/' },
-    { label: 'All Services Overview', href: '/services/' },
-    { label: 'Multilingual SEO Services', href: '/multilingual-search-engine-optimization/' },
-    { label: 'Answer Engine Optimization (AEO)', href: '/answer-engine-optimization/' },
-    { label: 'Generative Engine Optimization (GEO)', href: '/generative-engine-optimization/' },
-    { label: 'Website Design & Development', href: '/website-design-development/' },
-    { label: 'Social Media Marketing (SMM)', href: '/social-media-marketing/' },
-    { label: 'Pay Per Click (PPC) Advertising', href: '/pay-per-click/' },
-    { label: 'About UDMIDEAS (15+ Years)', href: '/about-us/' },
-    { label: 'Meet Founder Arun & Team', href: '/team/' },
-    { label: 'Contact UDMIDEAS NYC', href: '/contact-us/' }
-  ];
 
   const DISCUSSION_IMAGES = [
     {
@@ -1033,135 +954,9 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
           </div>
         </div>
 
-        {/* Dedicated Organic SEO Quote & Consultation Form Targeting info@udmideasusa.com */}
-        <section id="quote-form" className="mt-14 mb-16 p-8 sm:p-10 rounded-2xl bg-white border border-[#E2E8F0] shadow-lg">
-          <div className="max-w-2xl mb-8">
-            <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-[0.08em] mb-1.5 flex items-center gap-2">
-              <Mail className="w-4 h-4" />
-              Direct Email Delivery to info@udmideasusa.com
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
-              Request a Quote for Organic SEO Services.
-            </h2>
-            <p className="text-xs sm:text-sm text-[#475569] mt-2 leading-relaxed">
-              We at UDMIDEAS NYC Digital Marketing Agency take your business to the next level. Fill out this form to connect with Founder Arun at <strong className="text-[#0F172A] font-mono">info@udmideasusa.com</strong> or call/text directly at <strong className="text-[#0F172A] font-mono">+91-9521186150</strong>.
-            </p>
-          </div>
-
-          {isSubmitted ? (
-            <div className="p-8 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-4">
-              <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto border border-emerald-200">
-                <CheckCircle2 className="w-7 h-7" />
-              </div>
-              <h3 className="text-xl font-bold text-[#0F172A]">Inquiry Dispatched to info@udmideasusa.com!</h3>
-              <p className="text-xs sm:text-sm text-[#475569] max-w-lg mx-auto leading-relaxed">
-                Thank you, <strong className="text-[#0F172A]">{formData.name}</strong>. Your Organic SEO audit request has been sent to <span className="text-emerald-700 font-semibold font-mono">info@udmideasusa.com</span>. We will review your website and reply within 4 business hours.
-              </p>
-              <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
-                <a
-                  href={`https://wa.me/919521186150?text=Hello%20Arun,%20I%20just%20submitted%20an%20Organic%20SEO%20quote%20request%20under%20the%20name%20${encodeURIComponent(formData.name)}.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs inline-flex items-center gap-2 transition-all hover:shadow-md"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  <span>Follow Up on WhatsApp (+91-9521186150)</span>
-                </a>
-                <button
-                  onClick={() => setIsSubmitted(false)}
-                  className="px-4 py-2.5 rounded-xl bg-white border border-[#E2E8F0] text-[#475569] hover:text-[#0F172A] hover:bg-[#F8FAFC] text-xs font-medium cursor-pointer"
-                >
-                  Submit Another Request
-                </button>
-              </div>
-            </div>
-          ) : (
-            <form onSubmit={handleFormSubmit} className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-semibold text-[#0F172A] mb-1.5">
-                    Your Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="e.g. John Smith"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-600/15 transition-all"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-[#0F172A] mb-1.5">
-                    Business Email *
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    placeholder="name@company.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-600/15 transition-all"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-semibold text-[#0F172A] mb-1.5">
-                    Phone / WhatsApp Number
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="+1 (555) 000-0000"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-600/15 transition-all"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-[#0F172A] mb-1.5">
-                    Website URL to Audit
-                  </label>
-                  <input
-                    type="url"
-                    placeholder="https://yourwebsite.com"
-                    value={formData.website}
-                    onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-600/15 transition-all"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-xs font-semibold text-[#0F172A] mb-1.5">
-                  Target Keywords, Industry & Organic Goals
-                </label>
-                <textarea
-                  rows={4}
-                  placeholder="Tell us about your industry, current rankings, and target keywords for Organic SEO..."
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3.5 py-2.5 text-sm rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-[#94A3B8] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-blue-600/15 transition-all"
-                />
-              </div>
-
-              <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div className="text-[11px] text-[#64748B]">
-                  Direct routing to <span className="text-[#0F172A] font-semibold font-mono">info@udmideasusa.com</span> · Strict NDA protected.
-                </div>
-                <button
-                  type="submit"
-                  className="w-full sm:w-auto px-8 py-3 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] hover:shadow-md transition-all duration-200 inline-flex items-center justify-center gap-2 cursor-pointer"
-                >
-                  <span>Request Organic SEO Quote</span>
-                  <Send className="w-3.5 h-3.5" />
-                </button>
-              </div>
-            </form>
-          )}
+        {/* Standardized Consultation Form */}
+        <section id="quote-form" className="mt-14 mb-16 p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] shadow-xl max-w-3xl mx-auto">
+          <ConsultationForm headingTag="h2" />
         </section>
 
         {/* Author Bio Box */}
@@ -1185,38 +980,6 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({
             </p>
           </div>
         </div>
-
-        {/* Strategic Internal Links Directory (Opening in New Tab) */}
-        {!blog.disableInternalLinks && (
-          <section className="mt-14 pt-10 border-t border-[#E2E8F0]">
-            <div className="flex items-center justify-between mb-6">
-              <div>
-                <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-[0.08em]">
-                  – Internal Links Directory
-                </div>
-                <h3 className="text-xl font-bold text-[#0F172A] mt-1">
-                  Explore Related Web Design & Digital Marketing Solutions
-                </h3>
-              </div>
-              <span className="text-xs text-[#64748B] hidden sm:inline font-mono">Opens in new tab</span>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
-              {internalLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-xl bg-white border border-[#E2E8F0] hover:border-blue-600/30 hover:shadow-sm transition-all text-xs text-[#475569] hover:text-[#1D4ED8] font-medium flex items-center justify-between group"
-                >
-                  <span className="truncate">{link.label}</span>
-                  <ExternalLink className="w-3 h-3 text-[#94A3B8] group-hover:text-[#1D4ED8] shrink-0 ml-1.5" />
-                </a>
-              ))}
-            </div>
-          </section>
-        )}
 
         {/* Related Articles Carousel / Grid */}
         <div className="mt-14 pt-10 border-t border-[#E2E8F0]">

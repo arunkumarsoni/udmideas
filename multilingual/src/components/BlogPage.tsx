@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { BLOG_POSTS } from '../data/contentData';
 import { BlogPost } from '../types';
+import { ConsultationForm } from './ConsultationForm';
 
 interface BlogPageProps {
   onBackToHome: () => void;
@@ -304,6 +305,11 @@ export const BlogPage: React.FC<BlogPageProps> = ({
             )}
           </div>
         )}
+
+        {/* Standardized Consultation Form */}
+        <section id="inquiry-form" className="mt-16 p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] shadow-xl max-w-3xl mx-auto">
+          <ConsultationForm headingTag="h2" />
+        </section>
       </div>
     </div>
   );

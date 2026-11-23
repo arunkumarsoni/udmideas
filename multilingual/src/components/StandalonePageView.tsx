@@ -65,6 +65,7 @@ import { GeorgiaServicesContent } from './GeorgiaServicesContent';
 import { NorthCarolinaServicesContent } from './NorthCarolinaServicesContent';
 import { MichiganServicesContent } from './MichiganServicesContent';
 import { TeamPageContent } from './TeamPageContent';
+import { ConsultationForm } from './ConsultationForm';
 
 interface StandalonePageViewProps {
   path: string;
@@ -127,15 +128,6 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     page.path === '/michigan/' ||
     page.path === '/team/';
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: page.heading.slice(0, 40),
-    region: page.kicker,
-    message: ''
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   // Update dynamic SEO meta tags in head for this exact page
@@ -178,81 +170,6 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [page]);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name || !formData.email) return;
-
-    // Construct mailto link specifically to info@udmideasusa.com
-    const subject = encodeURIComponent(`New Consultation Request from UDMIDEAS (${page.heading.slice(0, 30)})`);
-    const body = encodeURIComponent(
-      `Hello Arun and UDMIDEAS Team,\n\n` +
-      `I am submitting an inquiry via the ${page.path} web page.\n\n` +
-      `Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Phone/WhatsApp: ${formData.phone || 'N/A'}\n` +
-      `Service: ${formData.service}\n` +
-      `Target Region: ${formData.region}\n` +
-      `Page URL: ${window.location.href}\n\n` +
-      `Project Scope / Message:\n${formData.message}\n\n` +
-      `Please reply to: ${formData.email}`
-    );
-
-    // Attempt to trigger mailto client to info@udmideasusa.com
-    const mailtoUrl = `mailto:info@udmideasusa.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoUrl;
-
-    setIsSubmitted(true);
-  };
-
-  // Related internal links for cross-linking
-  const relatedLinks = [
-    { label: 'Custom Website Design & Development', path: '/website-design-development/' },
-    { label: 'Digital Marketing Services', path: '/digital-marketing-services/' },
-    { label: 'Multilingual SEO & hreflang', path: '/multilingual-search-engine-optimization/' },
-    { label: 'Answer Engine Optimization (AEO)', path: '/answer-engine-optimization/' },
-    { label: 'Generative Engine Optimization (GEO)', path: '/generative-engine-optimization/' },
-    { label: 'Social Media Marketing (SMM)', path: '/social-media-marketing/' },
-    { label: 'Pay Per Click (PPC) Advertising', path: '/pay-per-click/' },
-    { label: 'New York HQ (NYC 10001)', path: '/new-york/' },
-    { label: 'Manhattan Businesses SEO Consultant', path: '/manhattan/' },
-    { label: 'Mount Vernon Remote SEO Consultant', path: '/mount-vernon/' },
-    { label: 'New Rochelle Remote SEO Consultant', path: '/new-rochelle/' },
-    { label: 'Queens Remote SEO Consultant', path: '/queens/' },
-    { label: 'Rochester Remote SEO Consultant', path: '/rochester/' },
-    { label: 'Schenectady Remote SEO Consultant', path: '/schenectady/' },
-    { label: 'Staten Island Remote SEO Consultant', path: '/staten-island/' },
-    { label: 'Statue of Liberty Area Tour SEO', path: '/statue-of-liberty-area/' },
-    { label: 'Syracuse Remote SEO Consultant', path: '/syracuse/' },
-    { label: 'Times Square Tour & Travel SEO', path: '/times-square/' },
-    { label: "Hell's Kitchen Manhattan SEO Agency", path: '/hells-kitchen/' },
-    { label: 'Troy Capital Region Ecommerce SEO', path: '/troy/' },
-    { label: 'Utica Mohawk Valley Ecommerce SEO', path: '/utica/' },
-    { label: 'Watertown North Country Ecommerce SEO', path: '/watertown/' },
-    { label: 'Yonkers Remote SEO Expert', path: '/yonkers/' },
-    { label: 'Why Arun Is the Best Multilingual SEO Expert', path: '/why-arun-is-the-best-multilingual-seo-expert/' },
-    { label: 'How Arun Handle SEO, AEO and GEO', path: '/how-arun-handle-seo-aeo-and-geo/' },
-    { label: 'The Architecture of Multilingual Digital Visibility', path: '/the-architecture-of-multilingual-digital-visibility/' },
-    { label: 'From Website Creation to Digital Authority', path: '/from-website-creation-to-digital-authority/' },
-    { label: 'Cross-Market SEO: Israel & Arab World', path: '/cross-market-seo-israel-and-the-arab-world/' },
-    { label: 'USA to LATAM: Spanish SEO', path: '/usa-to-latam-spanish-seo-and-market-expansion/' },
-    { label: 'Empire State Tour & B2B SEO', path: '/empire-state/' },
-    { label: 'Central Park Tour & Travel SEO', path: '/central-park/' },
-    { label: 'Brooklyn Businesses SEO Consultant', path: '/brooklyn/' },
-    { label: 'The Bronx SEO Consultant', path: '/bronx/' },
-    { label: 'Albany Remote SEO Consultant', path: '/albany/' },
-    { label: 'Buffalo Remote SEO Consultant', path: '/buffalo/' },
-    { label: 'Kingston Hudson Valley SEO', path: '/kingston/' },
-    { label: 'NYC Organic SEO Agency', path: '/organic-seo-agency-in-new-york-usa/' },
-    { label: 'Israel Tech Strategy', path: '/israel/' },
-    { label: 'USA Nationwide Strategy', path: '/usa/' },
-    { label: 'Latin America (LATAM)', path: '/latam/' },
-    { label: 'European Union (EU)', path: '/eu/' },
-    { label: 'Arab World & GCC (RTL)', path: '/arab-world/' },
-    { label: 'Meet Arun & Team', path: '/team/' },
-    { label: 'About UDMIDEAS', path: '/about-us/' },
-    { label: 'Contact Us', path: '/contact-us/' }
-  ].filter(l => l.path !== page.path);
 
   return (
     <article className="pt-28 pb-24 min-h-screen bg-[#F8FAFC] text-[#475569] text-left">
@@ -724,134 +641,9 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           </div>
         )}
 
-        {/* Dedicated Contact Form Targeting info@udmideasusa.com */}
-        <section id="inquiry-form" className="mb-16 p-7 sm:p-10 rounded-xl bg-white border border-[#E2E8F0] shadow-xl">
-          <div className="max-w-2xl mb-8">
-            <div className="text-[12px] font-semibold text-[#1D4ED8] uppercase tracking-[0.08em] mb-1.5 flex items-center gap-2">
-              <Mail className="w-4 h-4" />
-              Direct Email Notification to info@udmideasusa.com
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#0F172A] tracking-tight leading-[1.2]">
-              Request Your Free Multilingual Strategy &amp; Architecture Audit.
-            </h2>
-            <p className="text-sm text-[#475569] mt-2 leading-[1.65]">
-              Submitting this form directly notifies Founder Arun at <strong className="text-[#0F172A] font-mono">info@udmideasusa.com</strong>. We analyze your requirements and reply within 4 business hours.
-            </p>
-          </div>
-
-          {isSubmitted ? (
-            <div className="p-8 rounded-xl bg-emerald-50 border border-emerald-200 text-center space-y-4">
-              <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto border border-emerald-200">
-                <CheckCircle2 className="w-7 h-7" />
-              </div>
-              <h3 className="text-xl font-bold text-[#0F172A]">Inquiry Dispatched to info@udmideasusa.com!</h3>
-              <p className="text-sm text-[#475569] max-w-lg mx-auto leading-relaxed">
-                Thank you, <strong className="text-[#0F172A]">{formData.name}</strong>. Your inquiry has been routed to Founder Arun's official address (<span className="text-[#1D4ED8] font-mono font-semibold">info@udmideasusa.com</span>) for expedited review.
-              </p>
-              <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
-                <a
-                  href={`https://wa.me/919521186150?text=Hello%20Arun,%20I%20just%20submitted%20the%20form%20for%20${encodeURIComponent(page.path)}%20under%20the%20name%20${encodeURIComponent(formData.name)}.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-5 py-2.5 rounded-xl bg-[#0F172A] hover:bg-slate-800 text-white font-semibold text-xs inline-flex items-center gap-2 transition-colors"
-                >
-                  <MessageCircle className="w-4 h-4 text-emerald-400" />
-                  <span>Follow Up Instantly via WhatsApp (+91-9521186150)</span>
-                </a>
-                <button
-                  onClick={() => setIsSubmitted(false)}
-                  className="px-4 py-2.5 rounded-xl bg-white border border-[#E2E8F0] text-[#0F172A] hover:bg-[#F8FAFC] text-xs font-semibold cursor-pointer"
-                >
-                  Send Another Inquiry
-                </button>
-              </div>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-semibold text-[#0F172A] mb-1">
-                    Your Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="e.g. John Doe"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-slate-400 focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-[#1D4ED8]/15"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-[#0F172A] mb-1">
-                    Work Email * (Will receive confirmation)
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    placeholder="name@company.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-slate-400 focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-[#1D4ED8]/15"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs font-semibold text-[#0F172A] mb-1">
-                    Phone / WhatsApp Number
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="+1 (555) 000-0000"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-slate-400 focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-[#1D4ED8]/15"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-[#0F172A] mb-1">
-                    Selected Service Scope
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.service}
-                    onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-[#1D4ED8]/15"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-xs font-semibold text-[#0F172A] mb-1">
-                  Project Details, Target Languages &amp; Goals
-                </label>
-                <textarea
-                  rows={4}
-                  placeholder={`Describe your technical requirements, desired countries, and timeline for ${page.path}...`}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3.5 py-2.5 text-sm rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] placeholder-slate-400 focus:bg-white focus:outline-none focus:border-[#1D4ED8] focus:ring-2 focus:ring-[#1D4ED8]/15"
-                />
-              </div>
-
-              <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div className="text-xs text-[#475569]">
-                  🔒 Direct delivery to <span className="text-[#0F172A] font-semibold font-mono">info@udmideasusa.com</span> · Strict NDA protected.
-                </div>
-                <button
-                  type="submit"
-                  className="w-full sm:w-auto px-8 py-3 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-sm hover:shadow-md transition-all duration-200 inline-flex items-center justify-center gap-2 cursor-pointer"
-                >
-                  <span>Submit Inquiry to Arun</span>
-                  <Send className="w-3.5 h-3.5" />
-                </button>
-              </div>
-            </form>
-          )}
+        {/* Standardized Consultation Form */}
+        <section id="inquiry-form" className="mb-16 p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] shadow-xl max-w-3xl mx-auto">
+          <ConsultationForm headingTag="h2" />
         </section>
 
         {/* Page Specific FAQs */}
@@ -872,35 +664,6 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           </section>
         )}
 
-        {/* Inter-linked Cross-Linking Section */}
-        <section className="pt-12 border-t border-[#E2E8F0]">
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <div className="text-[12px] font-semibold text-[#1D4ED8] uppercase tracking-[0.08em]">
-                – INTERNAL LINKS DIRECTORY
-              </div>
-              <h3 className="text-xl font-bold text-[#0F172A] mt-1">
-                Explore Related Multilingual Web &amp; Digital Marketing Pages
-              </h3>
-            </div>
-            <span className="text-xs text-[#475569] hidden sm:inline font-mono">Links open in new tab</span>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
-            {relatedLinks.map((link) => (
-              <a
-                key={link.path}
-                href={link.path}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-white border border-[#E2E8F0] hover:border-[#1D4ED8]/50 hover:shadow-sm transition-all text-xs font-medium text-[#475569] hover:text-[#1D4ED8] flex items-center justify-between group"
-              >
-                <span className="truncate">{link.label}</span>
-                <ExternalLink className="w-3 h-3 text-slate-400 group-hover:text-[#1D4ED8] shrink-0 ml-1.5" />
-              </a>
-            ))}
-          </div>
-        </section>
       </div>
     </article>
   );
