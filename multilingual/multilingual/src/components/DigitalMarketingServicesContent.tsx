@@ -331,36 +331,36 @@ export const DigitalMarketingServicesContent: React.FC = () => {
       {/* 1. Key Statistics Table */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Data-Led Market Reality
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             How Digital Marketing Services Grow Businesses: Key Statistics
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Digital channels now take about 69% of global advertising spend, so a business without a digital plan is absent from where most buyers look. These figures show why companies invest in digital marketing services:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Statistic</th>
                 <th className="py-3.5 px-4 sm:px-6">Figure</th>
                 <th className="py-3.5 px-4 sm:px-6">Source</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {keyStatistics.map((item, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-[#0F172A]">
                     {item.stat}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {item.figure}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-400 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#64748B] text-xs">
                     {item.source}
                   </td>
                 </tr>
@@ -369,25 +369,25 @@ export const DigitalMarketingServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-3">
-          <div className="text-xs font-bold text-slate-300 uppercase tracking-wider">
+        <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-3">
+          <div className="text-xs font-bold text-[#475569] uppercase tracking-wider">
             Three points matter for your budget:
           </div>
-          <ul className="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <ul className="space-y-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             <li className="flex items-start gap-2">
-              <span className="font-mono font-bold text-blue-400">1.</span>
+              <span className="font-mono font-bold text-[#1D4ED8]">1.</span>
               <span><strong>Search is where intent lives:</strong> People who type a query are ready to compare and buy, which is why SEO returns the most over time.</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="font-mono font-bold text-blue-400">2.</span>
+              <span className="font-mono font-bold text-[#1D4ED8]">2.</span>
               <span><strong>Social reaches people before they search:</strong> SMM builds the demand that search later captures.</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="font-mono font-bold text-blue-400">3.</span>
+              <span className="font-mono font-bold text-[#1D4ED8]">3.</span>
               <span><strong>Speed and trust decide conversions:</strong> A slow or thin website wastes every click you pay for.</span>
             </li>
           </ul>
-          <p className="text-xs text-slate-500 italic pt-1">
+          <p className="text-xs text-[#64748B] italic pt-1">
             Forecasts differ by publisher because each counts channels differently, so treat the numbers as a range and refresh them each quarter.
           </p>
         </div>
@@ -396,13 +396,13 @@ export const DigitalMarketingServicesContent: React.FC = () => {
       {/* 4. Seven Connected Services at UDMIDEAS */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Full-Spectrum Digital Suite
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our Digital Marketing Services at UDMIDEAS
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             We offer seven connected digital marketing services. You can buy one, or combine them into a single growth plan:
           </p>
         </div>
@@ -413,30 +413,30 @@ export const DigitalMarketingServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="p-6 sm:p-7 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between hover:border-slate-700 hover:bg-slate-900/80 transition-all group"
+                className="p-6 sm:p-7 rounded-2xl bg-white border border-[#E2E8F0] flex flex-col justify-between hover:border-blue-600/30 hover:bg-white transition-all group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-mono font-bold text-emerald-400 bg-emerald-950/60 px-2.5 py-0.5 rounded border border-emerald-900/40">
+                    <span className="text-xs font-mono font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">
                       SERVICE {svc.num}
                     </span>
-                    <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 text-[#1D4ED8] flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Icon className="w-4 h-4" />
                     </div>
                   </div>
 
-                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
+                  <h3 className="text-lg font-bold text-[#0F172A] mb-2 group-hover:text-[#1D4ED8] transition-colors">
                     {svc.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed mb-4">
                     {svc.desc}
                   </p>
 
-                  <div className="space-y-2 pt-2 border-t border-slate-850">
+                  <div className="space-y-2 pt-2 border-t border-[#E2E8F0]">
                     {svc.bullets.map((b, bIdx) => (
-                      <div key={bIdx} className="flex items-start gap-2 text-xs text-slate-300">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                      <div key={bIdx} className="flex items-start gap-2 text-xs text-[#475569]">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
                         <span>{b}</span>
                       </div>
                     ))}
@@ -446,7 +446,7 @@ export const DigitalMarketingServicesContent: React.FC = () => {
             );
           })}
         </div>
-        <p className="text-xs text-slate-400 italic">
+        <p className="text-xs text-[#64748B] italic">
           Every service comes with a monthly report that links activity to enquiries, calls and sales.
         </p>
       </section>
@@ -454,40 +454,40 @@ export const DigitalMarketingServicesContent: React.FC = () => {
       {/* 5. SEO vs SMM vs PPC Comparison Table */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Strategic Channel Evaluation
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             SEO vs SMM vs PPC: Which Digital Marketing Service Is Best?
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             SEO is best for long-term, low-cost growth, PPC is best for fast leads, and SMM is best for brand awareness and community. Most businesses get the strongest results by combining all three:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Factor</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">SEO</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">SMM</th>
-                <th className="py-3.5 px-4 sm:px-6 text-purple-400">PPC</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">SEO</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">SMM</th>
+                <th className="py-3.5 px-4 sm:px-6 text-purple-700">PPC</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {channelComparison.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.factor}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.seo}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569]">
                     {row.smm}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569]">
                     {row.ppc}
                   </td>
                 </tr>
@@ -496,25 +496,25 @@ export const DigitalMarketingServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-3">
-          <div className="text-xs font-bold text-white uppercase tracking-wider">
+        <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-3">
+          <div className="text-xs font-bold text-[#0F172A] uppercase tracking-wider">
             Which one should you choose?
           </div>
-          <ul className="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <ul className="space-y-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             <li className="flex items-start gap-2">
-              <span className="text-emerald-400 font-bold">•</span>
+              <span className="text-emerald-700 font-bold">•</span>
               <span><strong>Choose SEO first</strong> if you want lasting growth and can wait a few months.</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-purple-400 font-bold">•</span>
+              <span className="text-purple-700 font-bold">•</span>
               <span><strong>Choose PPC first</strong> if you need leads this week or are testing a new offer.</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-blue-400 font-bold">•</span>
+              <span className="text-[#1D4ED8] font-bold">•</span>
               <span><strong>Choose SMM first</strong> if your product is visual or your audience discovers brands on social platforms.</span>
             </li>
           </ul>
-          <p className="text-xs text-slate-400 leading-relaxed pt-1">
+          <p className="text-xs text-[#64748B] leading-relaxed pt-1">
             We usually start clients with PPC for quick data while SEO and content build in the background. Social media then keeps the audience warm. After six months, the budget often shifts toward SEO because each organic lead costs less.
           </p>
         </div>
@@ -523,20 +523,20 @@ export const DigitalMarketingServicesContent: React.FC = () => {
       {/* 6. Worldwide Markets Table & Multilingual Focus */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Cross-Border Reach
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Worldwide Digital Marketing Services: LATAM, Europe and Arabic Markets
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             We provide digital marketing services to clients worldwide, from our base in Jaipur, India. Our largest growth areas outside the USA are Latin America, Europe and the Arabic-speaking Gulf:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Region</th>
                 <th className="py-3.5 px-4 sm:px-6">Example Markets</th>
@@ -544,19 +544,19 @@ export const DigitalMarketingServicesContent: React.FC = () => {
                 <th className="py-3.5 px-4 sm:px-6">What We Focus On</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {worldwideMarkets.map((m, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {m.region}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {m.markets}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono text-emerald-400 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono text-emerald-700 text-xs">
                     {m.languages}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {m.focus}
                   </td>
                 </tr>
@@ -566,32 +566,32 @@ export const DigitalMarketingServicesContent: React.FC = () => {
         </div>
 
         {/* Multilingual Details Box */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 space-y-4">
-          <h3 className="text-lg font-bold text-white flex items-center gap-2">
-            <Globe2 className="w-5 h-5 text-blue-400" />
+        <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white to-[#F8FAFC] border border-[#E2E8F0] space-y-4">
+          <h3 className="text-lg font-bold text-[#0F172A] flex items-center gap-2">
+            <Globe2 className="w-5 h-5 text-[#1D4ED8]" />
             <span>Multilingual digital marketing services</span>
           </h3>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             Translation alone does not rank or sell. Our multilingual digital marketing services start with keyword research in each language, because people search differently in Paris, Munich, Bogota and Riyadh.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-            <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-850 text-xs text-slate-300 leading-relaxed">
-              <strong className="text-white">French:</strong> Native copy, French search intent, and GDPR-aware consent banners.
+            <div className="p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs text-[#475569] leading-relaxed">
+              <strong className="text-[#0F172A]">French:</strong> Native copy, French search intent, and GDPR-aware consent banners.
             </div>
-            <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-850 text-xs text-slate-300 leading-relaxed">
-              <strong className="text-white">German:</strong> Precise, trust-focused wording and detailed product information that German buyers expect.
+            <div className="p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs text-[#475569] leading-relaxed">
+              <strong className="text-[#0F172A]">German:</strong> Precise, trust-focused wording and detailed product information that German buyers expect.
             </div>
-            <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-850 text-xs text-slate-300 leading-relaxed">
-              <strong className="text-white">Spanish:</strong> Separate versions for Spain and each Latin American country, with the right tone (for example, formal "usted" in Colombia).
+            <div className="p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs text-[#475569] leading-relaxed">
+              <strong className="text-[#0F172A]">Spanish:</strong> Separate versions for Spain and each Latin American country, with the right tone (for example, formal "usted" in Colombia).
             </div>
-            <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-850 text-xs text-slate-300 leading-relaxed">
-              <strong className="text-white">Arabic:</strong> Right-to-left layouts, Modern Standard Arabic for search and local dialect for social posts.
+            <div className="p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs text-[#475569] leading-relaxed">
+              <strong className="text-[#0F172A]">Arabic:</strong> Right-to-left layouts, Modern Standard Arabic for search and local dialect for social posts.
             </div>
-            <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-850 text-xs text-slate-300 leading-relaxed sm:col-span-2">
-              <strong className="text-white">Polish:</strong> Google and Allegro marketplace optimisation with native Polish writers.
+            <div className="p-3.5 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-xs text-[#475569] leading-relaxed sm:col-span-2">
+              <strong className="text-[#0F172A]">Polish:</strong> Google and Allegro marketplace optimisation with native Polish writers.
             </div>
           </div>
-          <p className="text-xs text-slate-400 pt-1">
+          <p className="text-xs text-[#64748B] pt-1">
             We also set up hreflang tags, so Google shows the correct language and country version to each visitor. Native editors review every page before it goes live.
           </p>
         </div>
@@ -600,36 +600,36 @@ export const DigitalMarketingServicesContent: React.FC = () => {
       {/* 7. Industry Breakdown Table & Ecommerce Section */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Industry Expertise
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Digital Marketing Services for Every Industry and Business Size
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             We work with small, medium and large businesses. A local clinic needs calls and bookings. A large brand needs market share. The plan changes, but the method stays the same: research, build, test, report.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Industry</th>
                 <th className="py-3.5 px-4 sm:px-6">Typical Goal</th>
                 <th className="py-3.5 px-4 sm:px-6">Services We Lead With</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {industries.map((ind, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {ind.industry}
                   </td>
-                  <td className="py-3 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3 px-4 sm:px-6 text-[#0F172A]">
                     {ind.goal}
                   </td>
-                  <td className="py-3 px-4 sm:px-6 text-emerald-400 text-xs font-medium">
+                  <td className="py-3 px-4 sm:px-6 text-emerald-700 text-xs font-medium">
                     {ind.services}
                   </td>
                 </tr>
@@ -639,41 +639,41 @@ export const DigitalMarketingServicesContent: React.FC = () => {
         </div>
 
         {/* Ecommerce Focus Box */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-3">
-          <h3 className="text-lg font-bold text-white flex items-center gap-2">
-            <ShoppingBag className="w-5 h-5 text-purple-400" />
+        <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[#E2E8F0] space-y-3">
+          <h3 className="text-lg font-bold text-[#0F172A] flex items-center gap-2">
+            <ShoppingBag className="w-5 h-5 text-purple-700" />
             <span>Ecommerce digital marketing services</span>
           </h3>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             Online stores are one of our biggest segments. Our ecommerce digital marketing services connect product pages, ads and email into one revenue plan:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
-            <div className="flex items-start gap-2 text-xs text-slate-300">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+            <div className="flex items-start gap-2 text-xs text-[#475569]">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
               <span>Product and category page SEO with schema for price, stock and reviews</span>
             </div>
-            <div className="flex items-start gap-2 text-xs text-slate-300">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+            <div className="flex items-start gap-2 text-xs text-[#475569]">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
               <span>Google Shopping and Performance Max feed setup</span>
             </div>
-            <div className="flex items-start gap-2 text-xs text-slate-300">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+            <div className="flex items-start gap-2 text-xs text-[#475569]">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
               <span>Meta and TikTok ads with creative testing</span>
             </div>
-            <div className="flex items-start gap-2 text-xs text-slate-300">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+            <div className="flex items-start gap-2 text-xs text-[#475569]">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
               <span>Cart recovery emails and conversion rate optimisation</span>
             </div>
-            <div className="flex items-start gap-2 text-xs text-slate-300">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+            <div className="flex items-start gap-2 text-xs text-[#475569]">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
               <span>Marketplace support, including Amazon and Allegro</span>
             </div>
-            <div className="flex items-start gap-2 text-xs text-slate-300">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+            <div className="flex items-start gap-2 text-xs text-[#475569]">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0 mt-0.5" />
               <span>Multilingual store pages for European and Arabic shoppers</span>
             </div>
           </div>
-          <p className="text-xs text-slate-400 italic pt-1">
+          <p className="text-xs text-[#64748B] italic pt-1">
             We track cost per sale and ROAS weekly, and we cut spend on products that do not pay back.
           </p>
         </div>
@@ -682,36 +682,36 @@ export const DigitalMarketingServicesContent: React.FC = () => {
       {/* 8. Future Trends Table */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-amber-700 uppercase tracking-wider mb-1">
             Looking Ahead: 2026 to 2030
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             The Future of Digital Marketing Services: Statistics to Watch
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Social, search and retail media will keep taking a larger share of advertising budgets, and AI search is changing how SEO works:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Trend</th>
                 <th className="py-3.5 px-4 sm:px-6">Forecast</th>
                 <th className="py-3.5 px-4 sm:px-6">Source</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {futureTrends.map((t, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-[#0F172A]">
                     {t.trend}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 text-xs">
                     {t.forecast}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-400 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#64748B] text-xs">
                     {t.source}
                   </td>
                 </tr>
@@ -719,30 +719,30 @@ export const DigitalMarketingServicesContent: React.FC = () => {
             </tbody>
           </table>
         </div>
-        <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
           <strong>The lesson for 2027 and beyond:</strong> Keep the proven channels, and add AEO and GEO so AI assistants can find and quote your brand.
         </p>
       </section>
 
       {/* 9. Why UDMIDEAS Is the Best Agency */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-6">
+      <section className="p-8 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Proven Global Advantage
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Why UDMIDEAS Is the Best Digital Marketing Agency for Global Growth
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {whyChooseUdmideas.map((item, idx) => (
-            <div key={idx} className="p-4 rounded-xl bg-slate-950 border border-slate-850 space-y-1">
-              <h4 className="text-sm font-bold text-white flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <div key={idx} className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-1">
+              <h4 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
                 <span>{item.title}</span>
               </h4>
-              <p className="text-xs text-slate-300 pl-6 leading-relaxed">
+              <p className="text-xs text-[#475569] pl-6 leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -751,22 +751,22 @@ export const DigitalMarketingServicesContent: React.FC = () => {
       </section>
 
       {/* 11. Conclusion & Call to Action */}
-      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-blue-950/60 via-slate-900 to-emerald-950/40 border border-blue-500/30 text-center space-y-6">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 text-center space-y-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Clock className="w-3.5 h-3.5" />
           <span>Complimentary Comprehensive Digital Marketing Audit</span>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight max-w-2xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] tracking-tight max-w-2xl mx-auto">
           Conclusion: Choose Digital Marketing Services That Fit Your Market
         </h2>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-xl mx-auto leading-relaxed">
           Digital marketing services work best when SEO, social, paid ads, content, video and reputation work together, in the languages your buyers use. UDMIDEAS brings that mix to small, medium and large businesses in every industry, from dentists to ecommerce brands, in Latin America, Europe, the Arabic-speaking world and beyond.
         </p>
 
-        <p className="text-sm font-bold text-white">
-          Ready to grow? Request your free digital marketing audit at <span className="text-blue-400">udmideasusa.com</span> or call <span className="text-emerald-400 font-mono">+91-9521186150</span>.
+        <p className="text-sm font-bold text-[#0F172A]">
+          Ready to grow? Request your free digital marketing audit at <span className="text-[#1D4ED8]">udmideasusa.com</span> or call <span className="text-emerald-700 font-mono">+91-9521186150</span>.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -774,7 +774,7 @@ export const DigitalMarketingServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20ready%20for%20a%20Free%20Digital%20Marketing%20Audit%20with%20UDMIDEAS."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-xl shadow-emerald-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp Arun: +91-9521186150</span>
@@ -782,7 +782,7 @@ export const DigitalMarketingServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <Mail className="w-4 h-4" />
             <span>Request Free Digital Audit</span>

@@ -252,23 +252,23 @@ export const PennsylvaniaServicesContent: React.FC = () => {
     <div className="space-y-16 text-left">
       {/* Hero / Introduction */}
       <header className="max-w-4xl space-y-5">
-        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Globe2 className="w-3.5 h-3.5 shrink-0" />
           <span>Pennsylvania Custom Web Design, Multilingual SEO, AEO, GEO, SMM &amp; PPC · 15+ Years</span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight text-balance">
           Pennsylvania Website Design, Development &amp; Multilingual Digital Marketing Company – UDMIDEAS
         </h1>
 
         <div className="space-y-3 pt-1">
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             Pennsylvania is home to a diverse business economy, including technology companies, healthcare providers, manufacturers, construction contractors, professional service firms, retailers, restaurants, educational institutions and eCommerce brands. Businesses across Philadelphia, Pittsburgh, Harrisburg, Allentown, Erie, Lancaster and other communities need strong websites and effective digital marketing to reach customers and compete online.
           </p>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             UDMIDEAS provides multilingual website design and development, SEO, AEO, GEO, social media marketing (SMM) and pay-per-click advertising (PPC) services for businesses throughout Pennsylvania. We build custom-coded websites from scratch and develop digital marketing strategies to help businesses improve their online visibility, reach relevant audiences and generate enquiries.
           </p>
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             Our services support local businesses, growing companies, professional firms, manufacturers and eCommerce brands looking to reach customers in Pennsylvania, across the United States and internationally.
           </p>
         </div>
@@ -278,7 +278,7 @@ export const PennsylvaniaServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20website%20design%20and%20multilingual%20digital%20marketing%20in%20Pennsylvania."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp: +91-9521186150</span>
@@ -286,7 +286,7 @@ export const PennsylvaniaServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
           >
             <span>Request Pennsylvania Consultation</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -297,14 +297,14 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       {/* Why Choose UDMIDEAS? */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Award className="w-4 h-4" />
             <span>Agency Advantages</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Why Choose UDMIDEAS?
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS combines website development and digital marketing to help businesses build a stronger online presence.
           </p>
         </div>
@@ -313,20 +313,20 @@ export const PennsylvaniaServicesContent: React.FC = () => {
           {whyChooseItems.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
             >
-              <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-emerald-400">
+              <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-emerald-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <span>{item.title}</span>
               </div>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                 {item.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           Our objective is to build websites that support business goals—not simply create attractive online pages.
         </div>
       </section>
@@ -334,33 +334,33 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       {/* Website Design and Development Services in Pennsylvania */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Code2 className="w-4 h-4" />
             <span>Custom Web Engineering</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Website Design and Development Services in Pennsylvania
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             We develop websites for businesses that need professional design, custom functionality, multilingual content or eCommerce capabilities.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-white">Website service</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">What we provide</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Website service</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">What we provide</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {webServicesRows.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.service}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.details}
                   </td>
                 </tr>
@@ -373,32 +373,32 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       {/* Website Development Cost */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Transparent Investment
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Website Development Cost
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS website development packages start at $500.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-white">Website package</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Starting cost</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Website package</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Starting cost</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {pricingPackages.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.pkg}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {row.cost}
                   </td>
                 </tr>
@@ -407,7 +407,7 @@ export const PennsylvaniaServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           The final price depends on page count, design complexity, languages, integrations, eCommerce features and technical requirements. Domain registration, hosting and third-party services may be additional.
         </div>
       </section>
@@ -415,14 +415,14 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       {/* Multilingual Website Development and SEO */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Search className="w-4 h-4" />
             <span>Our Multilingual Services Include</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Multilingual Website Development and SEO
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Pennsylvania businesses can reach customers beyond their immediate service areas by offering content in multiple languages. UDMIDEAS develops multilingual websites and language-specific SEO strategies to help companies communicate with different audiences.
           </p>
         </div>
@@ -431,15 +431,15 @@ export const PennsylvaniaServicesContent: React.FC = () => {
           {multilingualPoints.map((pt, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{pt}</span>
             </div>
           ))}
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-200 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#0F172A] leading-relaxed">
           We focus on accurate language targeting, useful content and technically correct multilingual implementation rather than simply duplicating pages through automatic translation.
         </div>
       </section>
@@ -447,37 +447,37 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       {/* SEO, AEO and GEO Services in Pennsylvania */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Sparkles className="w-4 h-4" />
             <span>Search &amp; AI Discovery</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             SEO, AEO and GEO Services in Pennsylvania
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Search behaviour is changing. Customers use traditional search engines, conversational questions and AI-powered discovery platforms to find businesses, compare services and make purchasing decisions. UDMIDEAS provides strategies that address these different discovery methods.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Service</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Main focus</th>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Activities</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Service</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Main focus</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Activities</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {searchVisibilityRows.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.service}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-300 font-medium">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700 font-medium">
                     {row.focus}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.activities}
                   </td>
                 </tr>
@@ -486,11 +486,11 @@ export const PennsylvaniaServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-5 rounded-xl bg-white border border-[#E2E8F0] space-y-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
           <p>
             Our SEO services include local SEO, national SEO, international SEO, eCommerce SEO, technical audits, Google Search Console analysis, analytics setup, content optimisation and Google Business Profile support.
           </p>
-          <p className="text-white font-semibold">
+          <p className="text-[#0F172A] font-semibold">
             The goal: Help relevant customers discover your business, understand your services and take action.
           </p>
         </div>
@@ -499,33 +499,33 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       {/* SMM and PPC Advertising */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <Megaphone className="w-4 h-4" />
             <span>Social &amp; Paid Acquisition</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             SMM and PPC Advertising
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             A website needs targeted visitors to create business opportunities. UDMIDEAS provides social media marketing and paid advertising services to help Pennsylvania businesses reach potential customers.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-purple-400">Service</th>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Marketing activities</th>
+                <th className="py-3.5 px-4 sm:px-6 text-purple-700">Service</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Marketing activities</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {smmPpcRows.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.service}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.activities}
                   </td>
                 </tr>
@@ -534,7 +534,7 @@ export const PennsylvaniaServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           Campaigns can be planned around business locations, services, customer interests and measurable objectives.
         </div>
       </section>
@@ -542,14 +542,14 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       {/* Pennsylvania Business Industries We Work With */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Building2 className="w-4 h-4" />
             <span>Sector Coverage</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Pennsylvania Business Industries We Work With
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             We provide website development and digital marketing solutions for a wide range of industries.
           </p>
         </div>
@@ -558,12 +558,12 @@ export const PennsylvaniaServicesContent: React.FC = () => {
           {pennsylvaniaIndustries.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-1.5 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-1.5 hover:border-blue-600/30 transition-all"
             >
-              <div className="text-sm sm:text-base font-bold text-white">
+              <div className="text-sm sm:text-base font-bold text-[#0F172A]">
                 {item.industry}
               </div>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                 {item.req}
               </p>
             </div>
@@ -574,37 +574,37 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       {/* UDMIDEAS Services Across All Pennsylvania Regions */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <MapPin className="w-4 h-4" />
             <span>All 11 Pennsylvania Regions</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             UDMIDEAS Services Across All Pennsylvania Regions
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Pennsylvania&apos;s tourism organisation recognises 11 distinct regions. UDMIDEAS offers website design, custom development, multilingual SEO, AEO, GEO, SMM and PPC services throughout all these regions, including their cities, towns and surrounding communities.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Pennsylvania region</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Representative cities and locations</th>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">UDMIDEAS services</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Pennsylvania region</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Representative cities and locations</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">UDMIDEAS services</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {pennsylvaniaRegions.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.region}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.cities}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-300 font-medium">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700 font-medium">
                     {row.services}
                   </td>
                 </tr>
@@ -613,45 +613,45 @@ export const PennsylvaniaServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
-          <strong className="text-white">Statewide service coverage:</strong> The cities listed are representative locations, not service boundaries. UDMIDEAS offers its digital services to businesses across Pennsylvania, including smaller towns and surrounding communities.
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
+          <strong className="text-[#0F172A]">Statewide service coverage:</strong> The cities listed are representative locations, not service boundaries. UDMIDEAS offers its digital services to businesses across Pennsylvania, including smaller towns and surrounding communities.
         </div>
       </section>
 
       {/* Pennsylvania Business and Digital Market Statistics */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <BarChart3 className="w-4 h-4" />
             <span>Market Intelligence</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Pennsylvania Business and Digital Market Statistics
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             The following figures provide useful context for businesses planning their online growth.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Statistic</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Latest available figure</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Reporting period</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Statistic</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Latest available figure</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Reporting period</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {pennsylvaniaStats.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-[#0F172A]">
                     {row.stat}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {row.figure}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#64748B] whitespace-nowrap">
                     {row.period}
                   </td>
                 </tr>
@@ -660,7 +660,7 @@ export const PennsylvaniaServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           These statistics highlight the scale of Pennsylvania&apos;s business market and the importance of accessible websites, online discovery and digital customer acquisition. The language figures also demonstrate why multilingual communication can be useful for businesses serving diverse audiences.
         </div>
       </section>
@@ -668,33 +668,33 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       {/* Future Digital Marketing Opportunities: 2027–2030 */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <ShieldCheck className="w-4 h-4" />
             <span>2027–2030 Strategic Outlook</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Future Digital Marketing Opportunities: 2027–2030
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Digital marketing will continue to evolve as search platforms, customer expectations and online purchasing behaviour change.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Trend</th>
-                <th className="py-3.5 px-4 sm:px-6 text-slate-200">Potential business opportunity</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Trend</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#0F172A]">Potential business opportunity</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {futureTrends.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.trend}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.opp}
                   </td>
                 </tr>
@@ -703,7 +703,7 @@ export const PennsylvaniaServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           Businesses that invest in useful content, strong websites, accurate business information and measurable marketing strategies can prepare for changing digital discovery methods.
         </div>
       </section>
@@ -711,10 +711,10 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       {/* Frequently Asked Questions */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Common Questions
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Frequently Asked Questions
           </h2>
         </div>
@@ -725,23 +725,23 @@ export const PennsylvaniaServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-colors"
+                className="rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-colors"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(idx)}
-                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-white hover:text-blue-400 transition-colors"
+                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-[#0F172A] hover:text-[#1D4ED8] transition-colors"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.q}</span>
                   {isOpen ? (
-                    <ChevronUp className="w-4 h-4 text-blue-400 shrink-0" />
+                    <ChevronUp className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                   ) : (
-                    <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+                    <ChevronDown className="w-4 h-4 text-[#64748B] shrink-0" />
                   )}
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-4 text-xs sm:text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+                  <div className="px-5 pb-4 text-xs sm:text-sm text-[#475569] border-t border-[#E2E8F0] pt-3 leading-relaxed">
                     {faq.a}
                   </div>
                 )}
@@ -752,47 +752,47 @@ export const PennsylvaniaServicesContent: React.FC = () => {
       </section>
 
       {/* Grow Your Pennsylvania Business with UDMIDEAS */}
-      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-950 via-slate-900 to-emerald-950/50 border border-blue-800/40 space-y-6 shadow-xl">
+      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 space-y-6 shadow-sm">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Rocket className="w-4 h-4" />
             <span>Contact UDMIDEAS to Discuss Your Pennsylvania Project</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Grow Your Pennsylvania Business with UDMIDEAS
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Your website is an important part of your business growth. Whether you need a new custom-coded website, multilingual website development, SEO, AEO, GEO, social media marketing or PPC advertising, UDMIDEAS can help you build a stronger digital presence.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             We work with businesses across Pennsylvania to develop websites and digital marketing strategies designed around their services, customers and growth objectives.
           </p>
-          <p className="text-sm font-bold text-white">
+          <p className="text-sm font-bold text-[#0F172A]">
             We Build Custom Websites. We Improve Search Visibility. We Grow Businesses.
           </p>
         </div>
 
-        <div className="pt-4 border-t border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1 text-xs sm:text-sm text-slate-300">
+        <div className="pt-4 border-t border-[#E2E8F0] flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1 text-xs sm:text-sm text-[#475569]">
             <div>
               Website:{' '}
               <a
                 href="https://www.udmideasusa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:underline font-mono"
+                className="text-[#1D4ED8] hover:underline font-mono"
               >
                 https://www.udmideasusa.com/
               </a>{' '}
               · Email:{' '}
               <a
                 href="mailto:info@udmideasusa.com"
-                className="text-emerald-400 hover:underline font-mono"
+                className="text-emerald-700 hover:underline font-mono"
               >
                 info@udmideasusa.com
               </a>
             </div>
-            <div className="text-xs text-slate-400">
+            <div className="text-xs text-[#64748B]">
               Contact UDMIDEAS to discuss your Pennsylvania website development and digital marketing project.
             </div>
           </div>
@@ -802,14 +802,14 @@ export const PennsylvaniaServicesContent: React.FC = () => {
               href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20grow%20my%20Pennsylvania%20business%20with%20UDMIDEAS."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp: +91-9521186150</span>
             </a>
             <a
               href="#inquiry-form"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
             >
               <span>Let&apos;s Grow Online</span>
               <ArrowRight className="w-3.5 h-3.5" />

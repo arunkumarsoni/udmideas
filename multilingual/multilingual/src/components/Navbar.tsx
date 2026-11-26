@@ -10,9 +10,7 @@ import {
   Search,
   Share2,
   TrendingUp,
-  Cpu,
-  Layers,
-  Sparkles
+  Cpu
 } from 'lucide-react';
 import {
   USA_STATES,
@@ -71,8 +69,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-slate-950/95 backdrop-blur-md border-b border-slate-800/80 shadow-lg shadow-black/40 py-2.5'
-          : 'bg-slate-950/80 backdrop-blur-sm border-b border-slate-900 py-3.5'
+          ? 'bg-[#0F172A]/98 backdrop-blur-md border-b border-slate-800 shadow-lg py-2.5'
+          : 'bg-[#0F172A] border-b border-slate-800/80 py-3.5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,35 +78,33 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
           {/* Brand Logo Wordmark with Root Link */}
           <a
             href="/"
-            className="flex items-center gap-2.5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md shrink-0 group"
+            className="flex items-center gap-2.5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D4ED8] rounded-md shrink-0 group"
             aria-label="UDMIDEAS Home"
           >
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-600 via-indigo-600 to-emerald-500 p-[1.5px] shadow-sm shadow-blue-500/20">
-              <div className="w-full h-full bg-slate-950 rounded-[7px] flex items-center justify-center">
-                <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-blue-400 to-emerald-400 text-sm tracking-tight">
-                  UDM
-                </span>
-              </div>
+            <div className="w-9 h-9 rounded-lg bg-[#1D4ED8] flex items-center justify-center shadow-sm group-hover:bg-[#1E40AF] transition-colors">
+              <span className="font-extrabold text-white text-sm tracking-tight font-[Plus_Jakarta_Sans]">
+                UDM
+              </span>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors">
+              <span className="text-xl font-extrabold tracking-tight text-white group-hover:text-blue-300 transition-colors font-[Plus_Jakarta_Sans]">
                 UDMIDEAS
               </span>
-              <span className="text-[10px] text-slate-400 font-medium tracking-wider uppercase -mt-1">
-                Custom Web & Marketing
+              <span className="text-[10px] text-[#94A3B8] font-semibold tracking-wider uppercase -mt-0.5">
+                Custom Web &amp; Marketing
               </span>
             </div>
           </a>
 
           {/* Desktop Navigation Links (with target="_blank" for separate web pages) */}
           <nav
-            className="hidden xl:flex items-center gap-1.5 text-sm font-medium text-slate-300"
+            className="hidden xl:flex items-center gap-1 text-sm font-medium text-[#94A3B8]"
             aria-label="Primary Navigation"
           >
             <a
               href="/"
-              className={`px-2.5 py-1.5 rounded-md transition-colors whitespace-nowrap ${
-                currentPath === '/' ? 'text-blue-400 bg-blue-950/40 font-semibold' : 'hover:text-white hover:bg-slate-800/60'
+              className={`px-2.5 py-1.5 rounded-lg transition-colors whitespace-nowrap ${
+                currentPath === '/' ? 'text-white bg-white/10 font-semibold' : 'hover:text-white hover:bg-white/5'
               }`}
             >
               Home
@@ -118,8 +114,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
               href="/about-us/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`px-2.5 py-1.5 rounded-md transition-colors whitespace-nowrap ${
-                currentPath === '/about-us/' ? 'text-blue-400 bg-blue-950/40 font-semibold' : 'hover:text-white hover:bg-slate-800/60'
+              className={`px-2.5 py-1.5 rounded-lg transition-colors whitespace-nowrap ${
+                currentPath === '/about-us/' ? 'text-white bg-white/10 font-semibold' : 'hover:text-white hover:bg-white/5'
               }`}
             >
               About Us
@@ -129,8 +125,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
               href="/team/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`px-2.5 py-1.5 rounded-md transition-colors whitespace-nowrap ${
-                currentPath === '/team/' ? 'text-blue-400 bg-blue-950/40 font-semibold' : 'hover:text-white hover:bg-slate-800/60'
+              className={`px-2.5 py-1.5 rounded-lg transition-colors whitespace-nowrap ${
+                currentPath === '/team/' ? 'text-white bg-white/10 font-semibold' : 'hover:text-white hover:bg-white/5'
               }`}
             >
               Team
@@ -147,28 +143,29 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-expanded={activeDropdown === 'services'}
-                className="flex items-center gap-1 px-2.5 py-1.5 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors whitespace-nowrap"
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap"
               >
                 Services
-                <ChevronDown className="w-3.5 h-3.5 text-slate-400 transition-transform duration-200" />
+                <ChevronDown className="w-3.5 h-3.5 text-[#94A3B8] transition-transform duration-200" />
               </a>
 
               {activeDropdown === 'services' && (
                 <div
-                  className="absolute left-0 mt-1 w-84 rounded-xl bg-slate-900 border border-slate-800 p-2 shadow-2xl shadow-black/80 animate-in fade-in slide-in-from-top-2 duration-150 z-50"
+                  className="absolute left-0 mt-2 w-84 rounded-xl bg-white border border-[#E2E8F0] p-2 shadow-xl z-50"
                   role="menu"
                 >
-                  <div className="px-3 py-1.5 border-b border-slate-800/80 mb-1 flex items-center justify-between">
-                    <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
-                      Custom Coding & Growth
+                  <div className="px-3 py-2 border-b border-[#E2E8F0] mb-1 flex items-center justify-between">
+                    <span className="text-[11px] font-semibold text-[#475569] uppercase tracking-[0.08em]">
+                      Custom Coding &amp; Growth
                     </span>
                     <a
                       href="/services/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[10px] text-blue-400 hover:underline font-mono"
+                      className="text-[11px] text-[#1D4ED8] hover:text-[#1E40AF] font-semibold inline-flex items-center gap-0.5 group/all"
                     >
-                      View All →
+                      <span>View All</span>
+                      <span className="group-hover/all:translate-x-0.5 transition-transform">→</span>
                     </a>
                   </div>
                   {servicesList.map((svc) => {
@@ -179,16 +176,16 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                         href={svc.path}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-800/80 transition-colors flex items-start gap-2.5 group"
+                        className="w-full text-left px-3 py-2 rounded-lg hover:bg-[#F8FAFC] transition-colors flex items-start gap-2.5 group"
                         role="menuitem"
                       >
-                        <IconComponent className="w-4 h-4 text-blue-400 mt-0.5 shrink-0 group-hover:text-blue-300" />
+                        <IconComponent className="w-4 h-4 text-[#1D4ED8] mt-0.5 shrink-0" />
                         <div>
-                          <div className="text-xs font-semibold text-slate-200 group-hover:text-white flex items-center gap-1">
+                          <div className="text-xs font-semibold text-[#0F172A] group-hover:text-[#1D4ED8] flex items-center gap-1 transition-colors">
                             <span>{svc.name}</span>
-                            <ExternalLink className="w-2.5 h-2.5 opacity-0 group-hover:opacity-100 transition-opacity text-slate-400" />
+                            <ExternalLink className="w-2.5 h-2.5 opacity-0 group-hover:opacity-100 transition-opacity text-[#475569]" />
                           </div>
-                          <div className="text-[11px] text-slate-400 line-clamp-1">
+                          <div className="text-[11px] text-[#475569] line-clamp-1">
                             {svc.desc}
                           </div>
                         </div>
@@ -204,10 +201,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
               href="/blog/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`px-2.5 py-1.5 rounded-md transition-colors whitespace-nowrap ${
+              className={`px-2.5 py-1.5 rounded-lg transition-colors whitespace-nowrap ${
                 currentPath === '/blog/'
-                  ? 'text-blue-400 bg-blue-950/40 font-semibold'
-                  : 'hover:text-white hover:bg-slate-800/60'
+                  ? 'text-white bg-white/10 font-semibold'
+                  : 'hover:text-white hover:bg-white/5'
               }`}
             >
               Blog
@@ -218,19 +215,19 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
               href="/contact-us/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`px-2.5 py-1.5 rounded-md transition-colors whitespace-nowrap ${
-                currentPath === '/contact-us/' ? 'text-blue-400 bg-blue-950/40 font-semibold' : 'hover:text-white hover:bg-slate-800/60'
+              className={`px-2.5 py-1.5 rounded-lg transition-colors whitespace-nowrap ${
+                currentPath === '/contact-us/' ? 'text-white bg-white/10 font-semibold' : 'hover:text-white hover:bg-white/5'
               }`}
             >
               Contact Us
             </a>
 
-            {/* Israel (Direct Geo Link with target="_blank") */}
+            {/* Israel */}
             <a
               href="/israel/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-2 py-1.5 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors flex items-center gap-1 text-xs whitespace-nowrap"
+              className="px-2 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-colors flex items-center gap-1 text-xs whitespace-nowrap"
               title="Israel Bilingual Tech & eCommerce Strategy"
             >
               <span>🇮🇱</span>
@@ -248,114 +245,68 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-expanded={activeDropdown === 'usa'}
-                className="flex items-center gap-1 px-2 py-1.5 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors text-xs whitespace-nowrap"
+                className="flex items-center gap-1 px-2 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-colors text-xs whitespace-nowrap"
               >
                 <span>🇺🇸</span>
                 <span>USA</span>
-                <ChevronDown className="w-3 h-3 text-slate-400" />
+                <ChevronDown className="w-3 h-3 text-[#94A3B8]" />
               </a>
 
               {activeDropdown === 'usa' && (
                 <div
-                  className="absolute left-0 mt-1 w-72 rounded-xl bg-slate-900 border border-slate-800 p-3 shadow-2xl shadow-black/80 animate-in fade-in slide-in-from-top-2 duration-150 z-50"
+                  className="absolute left-0 mt-2 w-72 rounded-xl bg-white border border-[#E2E8F0] p-3 shadow-xl z-50"
                   role="menu"
                 >
-                  <div className="flex items-center justify-between pb-2 border-b border-slate-800 mb-2">
-                    <span className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider">
-                      Top 20 USA States
+                  <div className="flex flex-col gap-1.5 pb-2.5 border-b border-[#E2E8F0] mb-2">
+                    <span className="text-[11px] font-semibold text-[#0F172A] uppercase tracking-[0.08em]">
+                      Top 20 USA States &amp; NY Hubs
                     </span>
-                    <div className="flex items-center gap-1.5 flex-wrap">
-                      <a href="/new-york/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-emerald-400 font-mono hover:underline">
-                        NYC
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/manhattan/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-pink-400 font-mono hover:underline">
-                        Manhattan
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/empire-state/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-yellow-400 font-mono hover:underline">
-                        Empire State
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/central-park/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-amber-400 font-mono hover:underline">
-                        Central Park
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/brooklyn/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-indigo-400 font-mono hover:underline">
-                        Brooklyn
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/bronx/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-cyan-400 font-mono hover:underline">
-                        Bronx
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/albany/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-blue-400 font-mono hover:underline">
-                        Albany
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/buffalo/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-teal-400 font-mono hover:underline">
-                        Buffalo
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/kingston/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-emerald-400 font-mono hover:underline">
-                        Kingston
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/mount-vernon/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-amber-400 font-mono hover:underline">
-                        Mount Vernon
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/new-rochelle/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-rose-400 font-mono hover:underline">
-                        New Rochelle
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/queens/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-purple-400 font-mono hover:underline">
-                        Queens
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/rochester/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-sky-400 font-mono hover:underline">
-                        Rochester
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/schenectady/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-emerald-400 font-mono hover:underline">
-                        Schenectady
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/staten-island/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-indigo-400 font-mono hover:underline">
-                        Staten Island
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/statue-of-liberty-area/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-teal-300 font-mono hover:underline">
-                        Statue of Liberty
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/syracuse/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-orange-400 font-mono hover:underline">
-                        Syracuse
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/times-square/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-yellow-300 font-mono hover:underline">
-                        Times Square
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/hells-kitchen/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-rose-400 font-mono hover:underline">
-                        Hell's Kitchen
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/troy/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-cyan-400 font-mono hover:underline">
-                        Troy
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/utica/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-lime-400 font-mono hover:underline">
-                        Utica
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/watertown/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-emerald-300 font-mono hover:underline">
-                        Watertown
-                      </a>
-                      <span className="text-slate-600 text-[10px]">·</span>
-                      <a href="/yonkers/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-amber-300 font-mono hover:underline">
-                        Yonkers
-                      </a>
+                    <div className="flex items-center gap-1.5 flex-wrap text-[10px]">
+                      <a href="/new-york/" target="_blank" rel="noopener noreferrer" className="text-[#1D4ED8] font-semibold hover:underline">NYC</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/manhattan/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Manhattan</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/empire-state/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Empire State</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/central-park/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Central Park</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/brooklyn/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Brooklyn</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/bronx/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Bronx</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/albany/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Albany</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/buffalo/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Buffalo</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/kingston/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Kingston</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/mount-vernon/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Mount Vernon</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/new-rochelle/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">New Rochelle</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/queens/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Queens</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/rochester/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Rochester</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/schenectady/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Schenectady</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/staten-island/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Staten Island</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/statue-of-liberty-area/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Statue of Liberty</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/syracuse/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Syracuse</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/times-square/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Times Square</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/hells-kitchen/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Hell's Kitchen</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/troy/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Troy</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/utica/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Utica</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/watertown/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Watertown</a>
+                      <span className="text-slate-300">·</span>
+                      <a href="/yonkers/" target="_blank" rel="noopener noreferrer" className="text-[#475569] hover:text-[#1D4ED8] hover:underline">Yonkers</a>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-1 max-h-64 overflow-y-auto pr-1">
@@ -367,8 +318,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                           href={stateSlug}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`text-left px-2 py-1.5 text-xs rounded hover:bg-slate-800 transition-colors truncate flex items-center justify-between ${
-                            st === 'New York' ? 'text-blue-400 font-semibold bg-blue-950/30' : 'text-slate-300 hover:text-white'
+                          className={`text-left px-2 py-1.5 text-xs rounded-lg transition-colors truncate flex items-center justify-between ${
+                            st === 'New York'
+                              ? 'text-[#1D4ED8] font-semibold bg-blue-50'
+                              : 'text-[#475569] hover:bg-[#F8FAFC] hover:text-[#0F172A]'
                           }`}
                         >
                           <span className="truncate">{st}</span>
@@ -392,23 +345,23 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-expanded={activeDropdown === 'latam'}
-                className="flex items-center gap-1 px-2 py-1.5 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors text-xs whitespace-nowrap"
+                className="flex items-center gap-1 px-2 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-colors text-xs whitespace-nowrap"
               >
                 <span>🌎</span>
                 <span>LATAM</span>
-                <ChevronDown className="w-3 h-3 text-slate-400" />
+                <ChevronDown className="w-3 h-3 text-[#94A3B8]" />
               </a>
 
               {activeDropdown === 'latam' && (
                 <div
-                  className="absolute left-0 mt-1 w-64 rounded-xl bg-slate-900 border border-slate-800 p-3 shadow-2xl shadow-black/80 animate-in fade-in slide-in-from-top-2 duration-150 z-50"
+                  className="absolute left-0 mt-2 w-64 rounded-xl bg-white border border-[#E2E8F0] p-3 shadow-xl z-50"
                   role="menu"
                 >
-                  <div className="pb-2 border-b border-slate-800 mb-2 flex items-center justify-between">
-                    <span className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider">
+                  <div className="pb-2 border-b border-[#E2E8F0] mb-2 flex items-center justify-between">
+                    <span className="text-[11px] font-semibold text-[#0F172A] uppercase tracking-[0.08em]">
                       Latin American Markets
                     </span>
-                    <a href="/latam/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-blue-400 hover:underline">
+                    <a href="/latam/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-[#1D4ED8] font-semibold hover:underline">
                       Overview
                     </a>
                   </div>
@@ -419,7 +372,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                         href={formatSlug(ct)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-left px-2 py-1.5 text-xs rounded hover:bg-slate-800 text-slate-300 hover:text-white transition-colors truncate flex items-center justify-between"
+                        className="text-left px-2 py-1.5 text-xs rounded-lg hover:bg-[#F8FAFC] text-[#475569] hover:text-[#0F172A] transition-colors truncate flex items-center justify-between"
                       >
                         <span className="truncate">{ct}</span>
                         <ExternalLink className="w-2 h-2 opacity-40 ml-1 shrink-0" />
@@ -441,23 +394,23 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-expanded={activeDropdown === 'eu'}
-                className="flex items-center gap-1 px-2 py-1.5 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors text-xs whitespace-nowrap"
+                className="flex items-center gap-1 px-2 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-colors text-xs whitespace-nowrap"
               >
                 <span>🇪🇺</span>
                 <span>EU</span>
-                <ChevronDown className="w-3 h-3 text-slate-400" />
+                <ChevronDown className="w-3 h-3 text-[#94A3B8]" />
               </a>
 
               {activeDropdown === 'eu' && (
                 <div
-                  className="absolute left-0 mt-1 w-56 rounded-xl bg-slate-900 border border-slate-800 p-3 shadow-2xl shadow-black/80 animate-in fade-in slide-in-from-top-2 duration-150 z-50"
+                  className="absolute left-0 mt-2 w-56 rounded-xl bg-white border border-[#E2E8F0] p-3 shadow-xl z-50"
                   role="menu"
                 >
-                  <div className="pb-2 border-b border-slate-800 mb-2 flex items-center justify-between">
-                    <span className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider">
-                      European Union & DACH
+                  <div className="pb-2 border-b border-[#E2E8F0] mb-2 flex items-center justify-between">
+                    <span className="text-[11px] font-semibold text-[#0F172A] uppercase tracking-[0.08em]">
+                      European Union &amp; DACH
                     </span>
-                    <a href="/eu/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-blue-400 hover:underline">
+                    <a href="/eu/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-[#1D4ED8] font-semibold hover:underline">
                       Overview
                     </a>
                   </div>
@@ -468,10 +421,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                         href={formatSlug(ct)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full text-left px-2.5 py-1.5 text-xs rounded hover:bg-slate-800 text-slate-300 hover:text-white transition-colors flex items-center justify-between"
+                        className="w-full text-left px-2.5 py-1.5 text-xs rounded-lg hover:bg-[#F8FAFC] text-[#475569] hover:text-[#0F172A] transition-colors flex items-center justify-between"
                       >
-                        <span>{ct}</span>
-                        <span className="text-[10px] text-slate-500 font-mono">Multilingual</span>
+                        <span className="font-medium">{ct}</span>
+                        <span className="text-[10px] text-[#94A3B8] font-mono">Multilingual</span>
                       </a>
                     ))}
                   </div>
@@ -490,23 +443,23 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-expanded={activeDropdown === 'arabic'}
-                className="flex items-center gap-1 px-2 py-1.5 rounded-md hover:text-white hover:bg-slate-800/60 transition-colors text-xs whitespace-nowrap"
+                className="flex items-center gap-1 px-2 py-1.5 rounded-lg hover:text-white hover:bg-white/5 transition-colors text-xs whitespace-nowrap"
               >
                 <span>🌍</span>
                 <span>Arabic</span>
-                <ChevronDown className="w-3 h-3 text-slate-400" />
+                <ChevronDown className="w-3 h-3 text-[#94A3B8]" />
               </a>
 
               {activeDropdown === 'arabic' && (
                 <div
-                  className="absolute right-0 mt-1 w-64 rounded-xl bg-slate-900 border border-slate-800 p-3 shadow-2xl shadow-black/80 animate-in fade-in slide-in-from-top-2 duration-150 z-50"
+                  className="absolute right-0 mt-2 w-64 rounded-xl bg-white border border-[#E2E8F0] p-3 shadow-xl z-50"
                   role="menu"
                 >
-                  <div className="pb-2 border-b border-slate-800 mb-2 flex items-center justify-between">
-                    <span className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider">
-                      Arab World & GCC
+                  <div className="pb-2 border-b border-[#E2E8F0] mb-2 flex items-center justify-between">
+                    <span className="text-[11px] font-semibold text-[#0F172A] uppercase tracking-[0.08em]">
+                      Arab World &amp; GCC
                     </span>
-                    <span className="text-[10px] text-amber-400 font-mono">RTL Ready</span>
+                    <span className="text-[10px] text-[#F59E0B] font-semibold font-mono">RTL Ready</span>
                   </div>
                   <div className="grid grid-cols-2 gap-1 max-h-64 overflow-y-auto">
                     {ARABIC_COUNTRIES.map((ct) => (
@@ -515,7 +468,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                         href={formatSlug(ct)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-left px-2 py-1.5 text-xs rounded hover:bg-slate-800 text-slate-300 hover:text-white transition-colors truncate flex items-center justify-between"
+                        className="text-left px-2 py-1.5 text-xs rounded-lg hover:bg-[#F8FAFC] text-[#475569] hover:text-[#0F172A] transition-colors truncate flex items-center justify-between"
                       >
                         <span className="truncate">{ct}</span>
                         <ExternalLink className="w-2 h-2 opacity-40 ml-1 shrink-0" />
@@ -529,32 +482,29 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
 
           {/* Right Action Zone */}
           <div className="flex items-center gap-2.5 shrink-0">
-            {/* WhatsApp Direct Header Link */}
             <a
               href="https://wa.me/919521186150?text=Hello%20UDMIDEAS,%20I%20am%20interested%20in%20multilingual%20website%20design%20and%20digital%20marketing%20services"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/40 border border-emerald-800/60 rounded-lg hover:bg-emerald-900/50 hover:text-emerald-300 transition-colors shadow-sm"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-white/90 bg-white/10 border border-white/15 rounded-lg hover:bg-white/15 hover:text-white transition-all duration-200"
               title="Chat with Arun & UDMIDEAS team on WhatsApp"
             >
               <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
               <span>WhatsApp</span>
             </a>
 
-            {/* Primary Action Button (Routes to /contact-us/ in new tab) */}
             <a
               href="/contact-us/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3.5 py-1.5 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-all shadow-sm shadow-blue-600/30 whitespace-nowrap"
+              className="px-4 py-2 text-xs font-semibold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] rounded-lg transition-all duration-200 hover:shadow-md whitespace-nowrap"
             >
               Get Free Consultation
             </a>
 
-            {/* Mobile Hamburger Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="xl:hidden p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg focus-visible:outline-none"
+              className="xl:hidden p-2 text-[#94A3B8] hover:text-white hover:bg-white/10 rounded-lg focus-visible:outline-none"
               aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={mobileMenuOpen}
             >
@@ -566,74 +516,34 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
 
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden bg-slate-950/98 border-b border-slate-800 max-h-[85vh] overflow-y-auto px-4 py-4 space-y-3">
+        <div className="xl:hidden bg-[#0F172A] border-b border-slate-800 max-h-[85vh] overflow-y-auto px-4 py-4 space-y-3 shadow-2xl">
           <div className="grid grid-cols-2 gap-2 pb-3 border-b border-slate-800 text-sm">
-            <a
-              href="/"
-              className="text-left px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200"
-            >
-              Home
-            </a>
-            <a
-              href="/about-us/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-left px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200"
-            >
-              About Us
-            </a>
-            <a
-              href="/team/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-left px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200"
-            >
-              Our Team
-            </a>
-            <a
-              href="/blog/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-left px-3 py-2 rounded-lg bg-slate-900/70 text-blue-400 font-semibold"
-            >
-              Blog (12+ Articles)
-            </a>
-            <a
-              href="/contact-us/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-left px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200"
-            >
-              Contact Us
-            </a>
-            <a
-              href="/israel/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-left px-3 py-2 rounded-lg bg-slate-900/70 text-slate-200 flex items-center gap-1.5"
-            >
-              <span>🇮🇱</span> Israel
-            </a>
+            <a href="/" className="text-left px-3 py-2 rounded-lg bg-white/5 text-white font-medium">Home</a>
+            <a href="/about-us/" target="_blank" rel="noopener noreferrer" className="text-left px-3 py-2 rounded-lg bg-white/5 text-white font-medium">About Us</a>
+            <a href="/team/" target="_blank" rel="noopener noreferrer" className="text-left px-3 py-2 rounded-lg bg-white/5 text-white font-medium">Our Team</a>
+            <a href="/blog/" target="_blank" rel="noopener noreferrer" className="text-left px-3 py-2 rounded-lg bg-[#1D4ED8]/20 text-blue-300 font-semibold">Blog (12+ Articles)</a>
+            <a href="/contact-us/" target="_blank" rel="noopener noreferrer" className="text-left px-3 py-2 rounded-lg bg-white/5 text-white font-medium">Contact Us</a>
+            <a href="/israel/" target="_blank" rel="noopener noreferrer" className="text-left px-3 py-2 rounded-lg bg-white/5 text-white font-medium flex items-center gap-1.5"><span>🇮🇱</span> Israel</a>
           </div>
 
           {/* Accordion: Services */}
           <div>
             <button
               onClick={() => setMobileExpandedSection(mobileExpandedSection === 'services' ? null : 'services')}
-              className="w-full flex items-center justify-between text-sm font-semibold text-slate-300 py-2 px-1"
+              className="w-full flex items-center justify-between text-sm font-semibold text-white py-2 px-1"
             >
               <span>Services (Separate Web Pages)</span>
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpandedSection === 'services' ? 'rotate-180' : ''}`} />
+              <ChevronDown className={`w-4 h-4 text-[#94A3B8] transition-transform ${mobileExpandedSection === 'services' ? 'rotate-180' : ''}`} />
             </button>
             {mobileExpandedSection === 'services' && (
-              <div className="pl-2 space-y-1 mt-1 border-l-2 border-slate-800">
+              <div className="pl-2 space-y-1 mt-1 border-l-2 border-[#1D4ED8]">
                 {servicesList.map((svc) => (
                   <a
                     key={svc.path}
                     href={svc.path}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full text-left py-1.5 px-2 text-xs text-slate-300 hover:text-white flex items-center justify-between"
+                    className="w-full text-left py-1.5 px-2 text-xs text-[#94A3B8] hover:text-white flex items-center justify-between"
                   >
                     <span>{svc.name}</span>
                     <ExternalLink className="w-2.5 h-2.5 text-slate-500" />
@@ -647,118 +557,72 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
           <div>
             <button
               onClick={() => setMobileExpandedSection(mobileExpandedSection === 'usa' ? null : 'usa')}
-              className="w-full flex items-center justify-between text-sm font-semibold text-slate-300 py-2 px-1"
+              className="w-full flex items-center justify-between text-sm font-semibold text-white py-2 px-1"
             >
               <span>🇺🇸 USA (Top 20 States Pages)</span>
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpandedSection === 'usa' ? 'rotate-180' : ''}`} />
+              <ChevronDown className={`w-4 h-4 text-[#94A3B8] transition-transform ${mobileExpandedSection === 'usa' ? 'rotate-180' : ''}`} />
             </button>
             {mobileExpandedSection === 'usa' && (
-              <div className="pl-2 mt-1 border-l-2 border-slate-800 space-y-2">
+              <div className="pl-2 mt-1 border-l-2 border-[#1D4ED8] space-y-2">
                 <div className="flex items-center flex-wrap gap-2 pt-1 pb-1 text-xs">
-                  <a href="/new-york/" target="_blank" rel="noopener noreferrer" className="text-emerald-400 font-semibold hover:underline">
-                    NYC 10001
-                  </a>
+                  <a href="/new-york/" target="_blank" rel="noopener noreferrer" className="text-blue-300 font-semibold hover:underline">NYC 10001</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/manhattan/" target="_blank" rel="noopener noreferrer" className="text-pink-400 font-semibold hover:underline">
-                    Manhattan
-                  </a>
+                  <a href="/manhattan/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Manhattan</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/empire-state/" target="_blank" rel="noopener noreferrer" className="text-yellow-400 font-semibold hover:underline">
-                    Empire State
-                  </a>
+                  <a href="/empire-state/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Empire State</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/central-park/" target="_blank" rel="noopener noreferrer" className="text-amber-400 font-semibold hover:underline">
-                    Central Park
-                  </a>
+                  <a href="/central-park/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Central Park</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/brooklyn/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 font-semibold hover:underline">
-                    Brooklyn
-                  </a>
+                  <a href="/brooklyn/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Brooklyn</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/bronx/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 font-semibold hover:underline">
-                    The Bronx
-                  </a>
+                  <a href="/bronx/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">The Bronx</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/albany/" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-semibold hover:underline">
-                    Albany NY
-                  </a>
+                  <a href="/albany/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Albany NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/buffalo/" target="_blank" rel="noopener noreferrer" className="text-teal-400 font-semibold hover:underline">
-                    Buffalo NY
-                  </a>
+                  <a href="/buffalo/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Buffalo NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/kingston/" target="_blank" rel="noopener noreferrer" className="text-emerald-400 font-semibold hover:underline">
-                    Kingston NY
-                  </a>
+                  <a href="/kingston/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Kingston NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/mount-vernon/" target="_blank" rel="noopener noreferrer" className="text-amber-400 font-semibold hover:underline">
-                    Mount Vernon NY
-                  </a>
+                  <a href="/mount-vernon/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Mount Vernon NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/new-rochelle/" target="_blank" rel="noopener noreferrer" className="text-rose-400 font-semibold hover:underline">
-                    New Rochelle NY
-                  </a>
+                  <a href="/new-rochelle/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">New Rochelle NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/queens/" target="_blank" rel="noopener noreferrer" className="text-purple-400 font-semibold hover:underline">
-                    Queens NYC
-                  </a>
+                  <a href="/queens/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Queens NYC</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/rochester/" target="_blank" rel="noopener noreferrer" className="text-sky-400 font-semibold hover:underline">
-                    Rochester NY
-                  </a>
+                  <a href="/rochester/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Rochester NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/schenectady/" target="_blank" rel="noopener noreferrer" className="text-emerald-400 font-semibold hover:underline">
-                    Schenectady NY
-                  </a>
+                  <a href="/schenectady/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Schenectady NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/staten-island/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 font-semibold hover:underline">
-                    Staten Island NYC
-                  </a>
+                  <a href="/staten-island/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Staten Island NYC</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/statue-of-liberty-area/" target="_blank" rel="noopener noreferrer" className="text-teal-300 font-semibold hover:underline">
-                    Statue of Liberty
-                  </a>
+                  <a href="/statue-of-liberty-area/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Statue of Liberty</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/syracuse/" target="_blank" rel="noopener noreferrer" className="text-orange-400 font-semibold hover:underline">
-                    Syracuse NY
-                  </a>
+                  <a href="/syracuse/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Syracuse NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/times-square/" target="_blank" rel="noopener noreferrer" className="text-yellow-300 font-semibold hover:underline">
-                    Times Square NYC
-                  </a>
+                  <a href="/times-square/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Times Square NYC</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/hells-kitchen/" target="_blank" rel="noopener noreferrer" className="text-rose-400 font-semibold hover:underline">
-                    Hell's Kitchen NYC
-                  </a>
+                  <a href="/hells-kitchen/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Hell's Kitchen NYC</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/troy/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 font-semibold hover:underline">
-                    Troy NY
-                  </a>
+                  <a href="/troy/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Troy NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/utica/" target="_blank" rel="noopener noreferrer" className="text-lime-400 font-semibold hover:underline">
-                    Utica NY
-                  </a>
+                  <a href="/utica/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Utica NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/watertown/" target="_blank" rel="noopener noreferrer" className="text-emerald-300 font-semibold hover:underline">
-                    Watertown NY
-                  </a>
+                  <a href="/watertown/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Watertown NY</a>
                   <span className="text-slate-600">·</span>
-                  <a href="/yonkers/" target="_blank" rel="noopener noreferrer" className="text-amber-300 font-semibold hover:underline">
-                    Yonkers NY
-                  </a>
+                  <a href="/yonkers/" target="_blank" rel="noopener noreferrer" className="text-[#94A3B8] hover:text-white hover:underline">Yonkers NY</a>
                 </div>
                 <div className="grid grid-cols-2 gap-1">
-                {USA_STATES.map((st) => (
-                  <a
-                    key={st}
-                    href={formatSlug(st)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-left py-1 px-1.5 text-xs text-slate-400 hover:text-white truncate"
-                  >
-                    {st}
-                  </a>
-                ))}
+                  {USA_STATES.map((st) => (
+                    <a
+                      key={st}
+                      href={formatSlug(st)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-left py-1 px-1.5 text-xs text-[#94A3B8] hover:text-white truncate"
+                    >
+                      {st}
+                    </a>
+                  ))}
                 </div>
               </div>
             )}
@@ -768,20 +632,20 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
           <div>
             <button
               onClick={() => setMobileExpandedSection(mobileExpandedSection === 'latam' ? null : 'latam')}
-              className="w-full flex items-center justify-between text-sm font-semibold text-slate-300 py-2 px-1"
+              className="w-full flex items-center justify-between text-sm font-semibold text-white py-2 px-1"
             >
               <span>🌎 LATAM Countries Pages</span>
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpandedSection === 'latam' ? 'rotate-180' : ''}`} />
+              <ChevronDown className={`w-4 h-4 text-[#94A3B8] transition-transform ${mobileExpandedSection === 'latam' ? 'rotate-180' : ''}`} />
             </button>
             {mobileExpandedSection === 'latam' && (
-              <div className="grid grid-cols-2 gap-1 pl-2 mt-1 border-l-2 border-slate-800">
+              <div className="grid grid-cols-2 gap-1 pl-2 mt-1 border-l-2 border-[#1D4ED8]">
                 {LATAM_COUNTRIES.map((ct) => (
                   <a
                     key={ct}
                     href={formatSlug(ct)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-left py-1 px-1.5 text-xs text-slate-400 hover:text-white truncate"
+                    className="text-left py-1 px-1.5 text-xs text-[#94A3B8] hover:text-white truncate"
                   >
                     {ct}
                   </a>
@@ -794,20 +658,20 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
           <div>
             <button
               onClick={() => setMobileExpandedSection(mobileExpandedSection === 'eu' ? null : 'eu')}
-              className="w-full flex items-center justify-between text-sm font-semibold text-slate-300 py-2 px-1"
+              className="w-full flex items-center justify-between text-sm font-semibold text-white py-2 px-1"
             >
               <span>🇪🇺 EU (France, Germany, Spain, Swiss, Poland)</span>
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpandedSection === 'eu' ? 'rotate-180' : ''}`} />
+              <ChevronDown className={`w-4 h-4 text-[#94A3B8] transition-transform ${mobileExpandedSection === 'eu' ? 'rotate-180' : ''}`} />
             </button>
             {mobileExpandedSection === 'eu' && (
-              <div className="grid grid-cols-2 gap-1 pl-2 mt-1 border-l-2 border-slate-800">
+              <div className="grid grid-cols-2 gap-1 pl-2 mt-1 border-l-2 border-[#1D4ED8]">
                 {EU_COUNTRIES.map((ct) => (
                   <a
                     key={ct}
                     href={formatSlug(ct)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-left py-1 px-1.5 text-xs text-slate-400 hover:text-white"
+                    className="text-left py-1 px-1.5 text-xs text-[#94A3B8] hover:text-white"
                   >
                     {ct}
                   </a>
@@ -820,20 +684,20 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
           <div>
             <button
               onClick={() => setMobileExpandedSection(mobileExpandedSection === 'arabic' ? null : 'arabic')}
-              className="w-full flex items-center justify-between text-sm font-semibold text-slate-300 py-2 px-1"
+              className="w-full flex items-center justify-between text-sm font-semibold text-white py-2 px-1"
             >
-              <span>🌍 Arab World (GCC & MENA)</span>
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpandedSection === 'arabic' ? 'rotate-180' : ''}`} />
+              <span>🌍 Arab World (GCC &amp; MENA)</span>
+              <ChevronDown className={`w-4 h-4 text-[#94A3B8] transition-transform ${mobileExpandedSection === 'arabic' ? 'rotate-180' : ''}`} />
             </button>
             {mobileExpandedSection === 'arabic' && (
-              <div className="grid grid-cols-2 gap-1 pl-2 mt-1 border-l-2 border-slate-800">
+              <div className="grid grid-cols-2 gap-1 pl-2 mt-1 border-l-2 border-[#1D4ED8]">
                 {ARABIC_COUNTRIES.map((ct) => (
                   <a
                     key={ct}
                     href={formatSlug(ct)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-left py-1 px-1.5 text-xs text-slate-400 hover:text-white truncate"
+                    className="text-left py-1 px-1.5 text-xs text-[#94A3B8] hover:text-white truncate"
                   >
                     {ct}
                   </a>
@@ -848,7 +712,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
               href="https://wa.me/919521186150?text=Hello%20UDMIDEAS,%20I%20am%20interested%20in%20multilingual%20website%20design%20and%20digital%20marketing%20services"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-emerald-600 text-white font-medium text-sm"
+              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-[#1D4ED8] hover:bg-[#1E40AF] text-white font-semibold text-sm transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Chat on WhatsApp (+91-9521186150)</span>

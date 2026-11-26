@@ -373,16 +373,16 @@ export const SwitzerlandServicesContent: React.FC = () => {
     <div className="space-y-14 text-left">
       {/* Hero / Page Introduction */}
       <header className="max-w-4xl space-y-4">
-        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Globe2 className="w-3.5 h-3.5 shrink-0" />
           <span>Switzerland 4-Language Web Design, Development & SEO · 15+ Years Experience</span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight text-balance">
           Switzerland Website Design, Development & SEO Digital Marketing Company | UDMIDEAS
         </h1>
 
-        <div className="space-y-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+        <div className="space-y-3 text-sm sm:text-base text-[#475569] leading-relaxed">
           <p>
             Switzerland is one of Europe's most attractive markets for businesses looking to establish a professional digital presence, reach international customers, and expand their online sales. With four national languages—German, French, Italian, and Romansh—businesses need multilingual websites and digital marketing strategies to connect with customers across different regions.
           </p>
@@ -395,19 +395,19 @@ export const SwitzerlandServicesContent: React.FC = () => {
           {swissLanguages.map((l) => (
             <div
               key={l.label}
-              className="p-3 rounded-xl bg-slate-900/70 border border-slate-800 text-xs"
+              className="p-3 rounded-xl bg-white border border-[#E2E8F0] text-xs"
             >
-              <div className="font-bold text-white">{l.label}</div>
-              <div className="text-emerald-400 font-mono">{l.native}</div>
+              <div className="font-bold text-[#0F172A]">{l.label}</div>
+              <div className="text-emerald-700 font-mono">{l.native}</div>
             </div>
           ))}
         </div>
 
-        <div className="space-y-2 text-sm text-slate-300 leading-relaxed">
+        <div className="space-y-2 text-sm text-[#475569] leading-relaxed">
           <p>
             Our objective is to help Swiss business owners build professional multilingual websites, improve search engine visibility, attract qualified visitors, generate enquiries, and grow online sales.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             We combine custom-coded website development with multilingual SEO, AEO, GEO, content marketing, social media marketing, and paid advertising.
           </p>
         </div>
@@ -417,7 +417,7 @@ export const SwitzerlandServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20multilingual%20website%20design%20and%20SEO%20in%20Switzerland."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp: +91-9521186150</span>
@@ -425,7 +425,7 @@ export const SwitzerlandServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
           >
             <span>Request Proposal (Direct Email)</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -436,32 +436,32 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* Switzerland Digital Market: Statistics and Future Opportunities */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Market Intelligence
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Switzerland Digital Market: Statistics and Future Opportunities
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Switzerland has a highly developed economy, strong internet adoption, and an established online shopping market. Businesses across manufacturing, financial services, tourism, healthcare, retail, and professional services can benefit from a strong digital presence.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-3xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-3xl">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Digital market indicator</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Market statistics</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Market statistics</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {swissStats.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-medium text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-medium text-[#0F172A]">
                     {row.indicator}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700">
                     {row.stat}
                   </td>
                 </tr>
@@ -470,34 +470,34 @@ export const SwitzerlandServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           Switzerland's multilingual population creates an opportunity for businesses to reach different language communities through dedicated website experiences.
         </p>
 
         {/* Four-Language Digital Marketing Opportunity */}
         <div className="space-y-3 pt-2">
-          <h3 className="text-xl font-bold text-white">
+          <h3 className="text-xl font-bold text-[#0F172A]">
             Four-Language Digital Marketing Opportunity
           </h3>
-          <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+          <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
             <table className="w-full text-left text-xs sm:text-sm">
-              <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+              <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
                 <tr>
                   <th className="py-3.5 px-4 sm:px-6">Language</th>
-                  <th className="py-3.5 px-4 sm:px-6 text-blue-400">Main target regions</th>
-                  <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Business opportunity</th>
+                  <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Main target regions</th>
+                  <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Business opportunity</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-800/80 text-slate-300">
+              <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
                 {fourLangOpp.map((row, idx) => (
-                  <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                    <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                  <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                    <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                       {row.language}
                     </td>
-                    <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                    <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                       {row.regions}
                     </td>
-                    <td className="py-3.5 px-4 sm:px-6 text-emerald-300">
+                    <td className="py-3.5 px-4 sm:px-6 text-emerald-700">
                       {row.opportunity}
                     </td>
                   </tr>
@@ -510,14 +510,14 @@ export const SwitzerlandServicesContent: React.FC = () => {
         {/* Future of Swiss Digital Business: 2027–2030 */}
         <div className="space-y-4 pt-2">
           <div className="max-w-4xl space-y-1.5">
-            <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+            <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
               <Sparkles className="w-4 h-4" />
               <span>Strategic Horizon</span>
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#0F172A]">
               Future of Swiss Digital Business: 2027–2030
             </h3>
-            <p className="text-xs sm:text-sm text-slate-300">
+            <p className="text-xs sm:text-sm text-[#475569]">
               Several developments are creating opportunities for Swiss companies:
             </p>
           </div>
@@ -526,22 +526,22 @@ export const SwitzerlandServicesContent: React.FC = () => {
             {futureDevelopments.map((item, idx) => (
               <div
                 key={idx}
-                className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+                className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
               >
-                <div className="text-xs font-mono text-emerald-400 font-bold">
+                <div className="text-xs font-mono text-emerald-700 font-bold">
                   0{idx + 1}
                 </div>
-                <h4 className="text-sm sm:text-base font-bold text-white">
+                <h4 className="text-sm sm:text-base font-bold text-[#0F172A]">
                   {item.title}
                 </h4>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {item.desc}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-xs text-slate-400 italic">
+          <p className="text-xs text-[#64748B] italic">
             These are strategic opportunities rather than guaranteed numerical forecasts.
           </p>
         </div>
@@ -550,37 +550,37 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* Switzerland Regions and Cantons: SEO Targeting Opportunities */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <MapPin className="w-4 h-4" />
             <span>26 Cantons · Four National Languages</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Switzerland Regions and Cantons: SEO Targeting Opportunities
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Switzerland has 26 cantons. Each canton provides potential opportunities for local SEO, multilingual website development, and regional digital marketing. The following table identifies the cantons, their capitals, and their main language associations. Language use can vary within individual cantons.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Canton / Region</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">Capital</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Main language</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Capital</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Main language</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {cantons.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.canton}
                   </td>
-                  <td className="py-3 px-4 sm:px-6 text-slate-200 whitespace-nowrap">
+                  <td className="py-3 px-4 sm:px-6 text-[#0F172A] whitespace-nowrap">
                     {row.capital}
                   </td>
-                  <td className="py-3 px-4 sm:px-6 font-mono text-xs text-emerald-300 whitespace-nowrap">
+                  <td className="py-3 px-4 sm:px-6 font-mono text-xs text-emerald-700 whitespace-nowrap">
                     {row.lang}
                   </td>
                 </tr>
@@ -589,7 +589,7 @@ export const SwitzerlandServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-blue-950/30 border border-blue-800/40 text-xs sm:text-sm text-blue-200 leading-relaxed">
+        <div className="p-4 rounded-xl bg-blue-50 border border-blue-200 text-xs sm:text-sm text-[#1D4ED8] leading-relaxed">
           <strong>Important:</strong> Romansh is primarily spoken in parts of Graubünden. Switzerland's language boundaries are not identical to canton boundaries. Bern, Fribourg, Valais, and Graubünden have multilingual areas.
         </div>
       </section>
@@ -597,36 +597,36 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* Our Website Design and Digital Marketing Services in Switzerland */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Integrated Solutions & Pricing
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our Website Design and Digital Marketing Services in Switzerland
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS offers multilingual digital solutions for Swiss businesses that want to reach customers in different language regions.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Our services</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">What we provide</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Pricing</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">What we provide</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Pricing</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {servicesPricingRows.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.service}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.provides}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {row.pricing}
                   </td>
                 </tr>
@@ -635,7 +635,7 @@ export const SwitzerlandServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           Website development starts at $500 for qualifying projects. Final costs depend on languages, pages, functionality, and project scope. SEO, SMM, PPC management and advertising budgets are quoted separately.
         </div>
       </section>
@@ -643,17 +643,17 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* German, French, Italian and Romansh Website Design and Development */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Code2 className="w-4 h-4" />
             <span>Custom Multilingual Engineering</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             German, French, Italian and Romansh Website Design and Development
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             A multilingual website allows Swiss businesses to communicate with customers in their preferred language. UDMIDEAS designs and develops websites supporting all four Swiss national languages.
           </p>
-          <p className="text-sm font-semibold text-white">
+          <p className="text-sm font-semibold text-[#0F172A]">
             Our website development services include:
           </p>
         </div>
@@ -662,19 +662,19 @@ export const SwitzerlandServicesContent: React.FC = () => {
           {devServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <div className="space-y-2 text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <div className="space-y-2 text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           <p>
             We work with React JS, PHP, Laravel, CodeIgniter, WordPress, and other suitable development technologies.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Our goal is to create websites where visitors can easily switch languages and access relevant information without confusion.
           </p>
         </div>
@@ -683,17 +683,17 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* Multilingual SEO Services for Switzerland */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Search className="w-4 h-4" />
             <span>Organic Multilingual Search</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Multilingual SEO Services for Switzerland
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             SEO in Switzerland requires a different approach from SEO in countries that primarily use one language. A business targeting Zurich may need German SEO, while a company targeting Geneva may need French SEO. Businesses operating across Switzerland may benefit from separate language-specific website sections.
           </p>
-          <p className="text-sm font-semibold text-white">
+          <p className="text-sm font-semibold text-[#0F172A]">
             Our multilingual SEO services include:
           </p>
         </div>
@@ -702,35 +702,35 @@ export const SwitzerlandServicesContent: React.FC = () => {
           {multilingualSeoServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
         <div className="space-y-3 max-w-xl pt-2">
-          <h3 className="text-sm font-bold text-white">We recommend separate language URLs, such as:</h3>
-          <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+          <h3 className="text-sm font-bold text-[#0F172A]">We recommend separate language URLs, such as:</h3>
+          <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
             <table className="w-full text-left text-xs sm:text-sm">
-              <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+              <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
                 <tr>
                   <th className="py-3 px-4 sm:px-6">Language</th>
-                  <th className="py-3 px-4 sm:px-6 text-emerald-400">Example URL structure</th>
+                  <th className="py-3 px-4 sm:px-6 text-emerald-700">Example URL structure</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-800/80 text-slate-300">
+              <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
                 {urlStructure.map((row, idx) => (
-                  <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                    <td className="py-3 px-4 sm:px-6 font-bold text-white">{row.lang}</td>
-                    <td className="py-3 px-4 sm:px-6 font-mono text-emerald-400">{row.url}</td>
+                  <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                    <td className="py-3 px-4 sm:px-6 font-bold text-[#0F172A]">{row.lang}</td>
+                    <td className="py-3 px-4 sm:px-6 font-mono text-emerald-700">{row.url}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#64748B] leading-relaxed">
             This structure helps organize multilingual content and supports search engines in understanding the language and intended audience of each page.
           </p>
         </div>
@@ -739,14 +739,14 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* Multilingual eCommerce SEO Solutions */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <ShoppingCart className="w-4 h-4" />
             <span>Online Store Growth</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Multilingual eCommerce SEO Solutions
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Switzerland's online retail market offers opportunities for businesses selling products across different language regions. UDMIDEAS provides multilingual eCommerce SEO solutions for online stores.
           </p>
         </div>
@@ -755,19 +755,19 @@ export const SwitzerlandServicesContent: React.FC = () => {
           {ecommerceSeoServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <div className="space-y-2 text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <div className="space-y-2 text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           <p>
             We support WooCommerce, Magento, Shopify, and custom eCommerce development platforms.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Whether you sell electronics, fashion, furniture, cosmetics, automotive products, home accessories, or industrial equipment, our objective is to improve product visibility and generate more sales opportunities.
           </p>
         </div>
@@ -776,46 +776,46 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* German, French, Italian and Romansh SMM and PPC Services */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider">
             Paid Social & Search Advertising
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             German, French, Italian and Romansh SMM and PPC Services
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Businesses can reach different Swiss language communities through targeted social media and paid advertising campaigns.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2.5 text-base font-bold text-white">
-              <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+          <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2.5 text-base font-bold text-[#0F172A]">
+              <div className="w-8 h-8 rounded-lg bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 shrink-0">
                 <Share2 className="w-4 h-4" />
               </div>
               <span>Social Media Marketing (SMM)</span>
             </div>
             <ul className="space-y-2">
               {smmItems.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2.5 text-base font-bold text-white">
-              <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+          <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2.5 text-base font-bold text-[#0F172A]">
+              <div className="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-[#1D4ED8] shrink-0">
                 <MousePointerClick className="w-4 h-4" />
               </div>
               <span>Pay-Per-Click (PPC) Advertising</span>
             </div>
             <ul className="space-y-2">
               {ppcItems.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -823,7 +823,7 @@ export const SwitzerlandServicesContent: React.FC = () => {
           </div>
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           Our advertising strategies consider language, location, customer interests, search intent, and business objectives.
         </p>
       </section>
@@ -831,14 +831,14 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* How UDMIDEAS Helps Grow Swiss Businesses */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <TrendingUp className="w-4 h-4" />
             <span>5-Stage Connected Strategy</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             How UDMIDEAS Helps Grow Swiss Businesses
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             We connect website development, multilingual SEO, and digital advertising into one digital growth strategy.
           </p>
         </div>
@@ -847,22 +847,22 @@ export const SwitzerlandServicesContent: React.FC = () => {
           {growthSteps.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
             >
-              <div className="text-xs font-mono text-emerald-400 font-bold">
+              <div className="text-xs font-mono text-emerald-700 font-bold">
                 0{idx + 1}
               </div>
-              <h3 className="text-sm sm:text-base font-bold text-white">
+              <h3 className="text-sm sm:text-base font-bold text-[#0F172A]">
                 {item.step}
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
+              <p className="text-xs text-[#475569] leading-relaxed">
                 {item.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           Our focus is to help businesses attract customers across Switzerland rather than limiting their online presence to one language community.
         </p>
       </section>
@@ -870,11 +870,11 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* Benefits of Choosing UDMIDEAS & Why Swiss Business Owners Should Choose UDMIDEAS */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <Award className="w-4 h-4" />
             <span>Partner Advantages</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Benefits of Choosing UDMIDEAS
           </h2>
         </div>
@@ -883,36 +883,36 @@ export const SwitzerlandServicesContent: React.FC = () => {
           {benefits.map((b, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{b}</span>
             </div>
           ))}
         </div>
 
-        <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-blue-950/30 border border-blue-900/30 space-y-4">
-          <h3 className="text-lg sm:text-xl font-bold text-white">
+        <div className="p-6 rounded-2xl bg-gradient-to-br from-white via-white to-blue-50/40 border border-blue-200 space-y-4">
+          <h3 className="text-lg sm:text-xl font-bold text-[#0F172A]">
             Why Swiss Business Owners Should Choose UDMIDEAS
           </h3>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             UDMIDEAS brings 15+ years of experience in website development and digital marketing, working with international clients across different countries. We understand that Switzerland requires a multilingual digital strategy. Simply translating one website into four languages is not enough. Each language version needs relevant keywords, appropriate content, regional targeting, and a consistent user experience.
           </p>
-          <p className="text-xs sm:text-sm font-semibold text-white">
+          <p className="text-xs sm:text-sm font-semibold text-[#0F172A]">
             Our strengths include:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {strengths.map((reason, idx) => (
               <div
                 key={idx}
-                className="p-3 rounded-xl bg-slate-950/70 border border-slate-800 flex items-start gap-2 text-xs text-slate-200"
+                className="p-3 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-start gap-2 text-xs text-[#0F172A]"
               >
-                <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#1D4ED8] shrink-0 mt-0.5" />
                 <span>{reason}</span>
               </div>
             ))}
           </div>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             We aim to provide a coordinated digital solution for companies that want to reach customers across different Swiss regions.
           </p>
         </div>
@@ -921,30 +921,30 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* Swiss Industries We Can Work For */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Building2 className="w-4 h-4" />
             <span>Industry Coverage</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Swiss Industries We Can Work For
           </h2>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-3xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-3xl">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Industry</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Recommended digital services</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Recommended digital services</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {supportedIndustries.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.industry}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.services}
                   </td>
                 </tr>
@@ -957,10 +957,10 @@ export const SwitzerlandServicesContent: React.FC = () => {
       {/* Frequently Asked Questions: Swiss Business Owners */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Common Inquiries
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Frequently Asked Questions: Swiss Business Owners
           </h2>
         </div>
@@ -971,23 +971,23 @@ export const SwitzerlandServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-colors"
+                className="rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-colors"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(idx)}
-                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-white hover:text-blue-400 transition-colors"
+                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-[#0F172A] hover:text-[#1D4ED8] transition-colors"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.q}</span>
                   {isOpen ? (
-                    <ChevronUp className="w-4 h-4 text-blue-400 shrink-0" />
+                    <ChevronUp className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                   ) : (
-                    <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+                    <ChevronDown className="w-4 h-4 text-[#64748B] shrink-0" />
                   )}
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-4 text-xs sm:text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+                  <div className="px-5 pb-4 text-xs sm:text-sm text-[#475569] border-t border-[#E2E8F0] pt-3 leading-relaxed">
                     {faq.a}
                   </div>
                 )}
@@ -998,16 +998,16 @@ export const SwitzerlandServicesContent: React.FC = () => {
       </section>
 
       {/* Grow Your Business Across Switzerland with UDMIDEAS */}
-      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-950 via-slate-900 to-emerald-950/50 border border-blue-800/40 space-y-6 shadow-xl">
+      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 space-y-6 shadow-sm">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Rocket className="w-4 h-4" />
             <span>Get Started</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Grow Your Business Across Switzerland with UDMIDEAS
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Switzerland offers an important opportunity for companies that want to expand their digital presence across multiple language communities. A business targeting only German-speaking customers may miss opportunities in French-speaking Geneva, Italian-speaking Ticino, and Romansh-speaking communities in Graubünden. With a multilingual website and a well-planned digital marketing strategy, businesses can reach a wider audience and create more opportunities for customer acquisition.
           </p>
         </div>
@@ -1016,21 +1016,21 @@ export const SwitzerlandServicesContent: React.FC = () => {
           {ctaProvideItems.map((item, idx) => (
             <div
               key={idx}
-              className="p-3 rounded-xl bg-slate-950/60 border border-slate-800 flex items-center gap-2 text-xs text-slate-200"
+              className="p-3 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-center gap-2 text-xs text-[#0F172A]"
             >
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           Whether you are a startup, local service provider, manufacturing company, professional organization, or eCommerce business, we can help develop your digital growth strategy.
         </p>
 
-        <div className="pt-4 border-t border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1 text-xs sm:text-sm text-slate-300">
-            <div className="font-bold text-white text-base">
+        <div className="pt-4 border-t border-[#E2E8F0] flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1 text-xs sm:text-sm text-[#475569]">
+            <div className="font-bold text-[#0F172A] text-base">
               Let's build your multilingual website, improve your search visibility, and grow your business across Switzerland.
             </div>
             <div>
@@ -1039,14 +1039,14 @@ export const SwitzerlandServicesContent: React.FC = () => {
                 href="https://udmideasusa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:underline font-mono"
+                className="text-[#1D4ED8] hover:underline font-mono"
               >
                 https://udmideasusa.com/
               </a>{' '}
               · Email:{' '}
               <a
                 href="mailto:info@udmideasusa.com"
-                className="text-emerald-400 hover:underline font-mono"
+                className="text-emerald-700 hover:underline font-mono"
               >
                 info@udmideasusa.com
               </a>
@@ -1058,14 +1058,14 @@ export const SwitzerlandServicesContent: React.FC = () => {
               href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20discuss%20multilingual%20website%20development%20and%20SEO%20for%20Switzerland."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp: +91-9521186150</span>
             </a>
             <a
               href="#inquiry-form"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
             >
               <span>Connect with UDMIDEAS</span>
               <ArrowRight className="w-3.5 h-3.5" />

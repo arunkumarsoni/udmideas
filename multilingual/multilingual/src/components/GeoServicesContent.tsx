@@ -355,17 +355,17 @@ export const GeoServicesContent: React.FC = () => {
       {/* 1. What Are GEO Services & How Generative Engines Pick Brands */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 font-mono text-xs font-semibold mb-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-200 text-purple-700 font-mono text-xs font-semibold mb-2">
             <Sparkles className="w-3.5 h-3.5" />
             <span>AI Search Engine Optimization · 15+ Years Search Track Record</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             What Are GEO Services?
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             GEO services, or generative engine optimization services, improve the chance that AI tools mention, recommend, and cite your brand when they generate answers. They work by strengthening your content, entity data, third-party mentions, and technical signals that large language models rely on.
           </p>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Buyers now ask an AI tool for a shortlist before they ever open Google: <em>"Which agency should I hire?"</em> and <em>"Which clinic is best near me?"</em> get one synthesized answer with a few select names in it. If your brand is not in that answer, you are not in the race.
           </p>
         </div>
@@ -373,20 +373,20 @@ export const GeoServicesContent: React.FC = () => {
         {/* 2-Column Overview Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Card 1: How Generative Engines Pick Brands */}
-          <div className="p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2 text-xs font-mono font-bold text-purple-400 uppercase tracking-wider">
+          <div className="p-6 sm:p-7 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2 text-xs font-mono font-bold text-purple-700 uppercase tracking-wider">
               <Bot className="w-4 h-4" />
               <span>How Generative Engines Pick Brands</span>
             </div>
             <div className="space-y-3">
               {howEnginesPickBrands.map((item) => (
-                <div key={item.num} className="flex items-start gap-2.5 text-xs text-slate-300">
-                  <span className="font-mono text-purple-400 font-bold shrink-0 mt-0.5">
+                <div key={item.num} className="flex items-start gap-2.5 text-xs text-[#475569]">
+                  <span className="font-mono text-purple-700 font-bold shrink-0 mt-0.5">
                     {item.num}.
                   </span>
                   <div>
-                    <strong className="text-white">{item.title}:</strong>{' '}
-                    <span className="text-slate-400">{item.desc}</span>
+                    <strong className="text-[#0F172A]">{item.title}:</strong>{' '}
+                    <span className="text-[#64748B]">{item.desc}</span>
                   </div>
                 </div>
               ))}
@@ -394,18 +394,18 @@ export const GeoServicesContent: React.FC = () => {
           </div>
 
           {/* Card 2: Where GEO Results Appear */}
-          <div className="p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="p-6 sm:p-7 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2 text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
               <Cpu className="w-4 h-4" />
               <span>Where GEO Results Appear</span>
             </div>
             <div className="space-y-3">
               {whereGeoResultsAppear.map((item, idx) => (
-                <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <div key={idx} className="flex items-start gap-2.5 text-xs text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-white">{item.title}:</strong>{' '}
-                    <span className="text-slate-400">{item.desc}</span>
+                    <strong className="text-[#0F172A]">{item.title}:</strong>{' '}
+                    <span className="text-[#64748B]">{item.desc}</span>
                   </div>
                 </div>
               ))}
@@ -413,28 +413,28 @@ export const GeoServicesContent: React.FC = () => {
           </div>
         </div>
 
-        <div className="p-5 rounded-2xl bg-slate-900/40 border border-slate-850 text-xs sm:text-sm text-slate-300 leading-relaxed">
-          <strong className="text-white">GEO does not replace SEO. It extends it.</strong> Our GEO services sit directly on a foundation of technical SEO, high-authority content, and white-hat link building, because generative AI tools lean on the exact same trusted web ecosystem that search engines crawl.
+        <div className="p-5 rounded-2xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
+          <strong className="text-[#0F172A]">GEO does not replace SEO. It extends it.</strong> Our GEO services sit directly on a foundation of technical SEO, high-authority content, and white-hat link building, because generative AI tools lean on the exact same trusted web ecosystem that search engines crawl.
         </div>
       </section>
 
       {/* 2. GEO Statistics: Why AI Visibility Matters in 2026 */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Data-Led Market Reality
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             GEO Statistics: Why AI Visibility Matters in 2026
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             AI search is no longer an experiment. These figures show why generative engine optimization now belongs in every serious commercial growth plan:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Market Metric</th>
                 <th className="py-3.5 px-4 sm:px-6">Figure (Approx.)</th>
@@ -442,19 +442,19 @@ export const GeoServicesContent: React.FC = () => {
                 <th className="py-3.5 px-4 sm:px-6">What It Means for Your Brand</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {geoStats.map((stat, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-[#0F172A]">
                     {stat.stat}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {stat.figure}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-400 text-xs whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#64748B] text-xs whitespace-nowrap">
                     {stat.source}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {stat.meaning}
                   </td>
                 </tr>
@@ -463,7 +463,7 @@ export const GeoServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 italic">
+        <p className="text-xs text-[#64748B] italic">
           <strong>The pattern is clear:</strong> Users get answers where they ask, and the brands named in those answers earn commercial trust first.
         </p>
       </section>
@@ -471,13 +471,13 @@ export const GeoServicesContent: React.FC = () => {
       {/* 3. Benefits of GEO Services */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Proven Commercial Impact
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Benefits of GEO Services for Modern Businesses
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             For dental clinics, law firms, e-commerce stores, and SaaS platforms, the benefit is direct. When a prospective buyer asks an AI tool for the best option in your city or industry, your brand wins the first impression:
           </p>
         </div>
@@ -486,16 +486,16 @@ export const GeoServicesContent: React.FC = () => {
           {benefits.map((b) => (
             <div
               key={b.num}
-              className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-all space-y-2 flex flex-col justify-between"
+              className="p-6 rounded-2xl bg-white border border-[#E2E8F0] hover:border-blue-600/30 transition-all space-y-2 flex flex-col justify-between"
             >
               <div>
-                <div className="font-mono text-xs font-bold text-purple-400 bg-purple-950/60 px-2.5 py-0.5 rounded border border-purple-900/40 w-fit mb-3">
+                <div className="font-mono text-xs font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded border border-purple-200 w-fit mb-3">
                   BENEFIT {b.num}
                 </div>
-                <h3 className="text-base font-bold text-white mb-2">
+                <h3 className="text-base font-bold text-[#0F172A] mb-2">
                   {b.title}
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {b.desc}
                 </p>
               </div>
@@ -507,13 +507,13 @@ export const GeoServicesContent: React.FC = () => {
       {/* 4. Our GEO Services Process: 8 Steps */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Systematic Methodology
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our GEO Services Process: 8 Systematic Steps
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             This proven framework operates across every industry and language we support, turning your website into an indisputable AI authority:
           </p>
         </div>
@@ -522,16 +522,16 @@ export const GeoServicesContent: React.FC = () => {
           {eightStepsProcess.map((step) => (
             <div
               key={step.step}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 flex flex-col justify-between hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 flex flex-col justify-between hover:border-blue-600/30 transition-all"
             >
               <div>
-                <div className="font-mono text-xs font-bold text-purple-400 mb-1">
+                <div className="font-mono text-xs font-bold text-purple-700 mb-1">
                   STEP {step.step}
                 </div>
-                <h3 className="text-sm font-bold text-white mb-2">
+                <h3 className="text-sm font-bold text-[#0F172A] mb-2">
                   {step.title}
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -543,13 +543,13 @@ export const GeoServicesContent: React.FC = () => {
       {/* 5. Our 90-Day GEO Services Plan */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Execution Timeline
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our 90-Day GEO Services Plan
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Early citation gains often appear within 90 days. Because AI algorithms evolve rapidly, we measure citations monthly and calibrate strategy continuously:
           </p>
         </div>
@@ -558,24 +558,24 @@ export const GeoServicesContent: React.FC = () => {
           {ninetyDayPlan.map((phase, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all relative overflow-hidden"
+              className="p-6 sm:p-7 rounded-2xl bg-white border border-[#E2E8F0] flex flex-col justify-between hover:border-blue-600/30 transition-all relative overflow-hidden"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-xs font-bold text-emerald-400 bg-emerald-950/60 px-2.5 py-1 rounded border border-emerald-900/40">
+                  <span className="font-mono text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">
                     {phase.timeline}
                   </span>
-                  <span className="text-xs font-mono text-slate-500 font-bold">
+                  <span className="text-xs font-mono text-[#64748B] font-bold">
                     {phase.phase}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-3">
+                <h3 className="text-lg font-bold text-[#0F172A] mb-3">
                   {phase.title}
                 </h3>
-                <div className="space-y-2.5 pt-3 border-t border-slate-850">
+                <div className="space-y-2.5 pt-3 border-t border-[#E2E8F0]">
                   {phase.items.map((item, itemIdx) => (
-                    <div key={itemIdx} className="flex items-start gap-2 text-xs text-slate-300">
-                      <span className="font-mono text-emerald-400 font-bold shrink-0 mt-0.5">•</span>
+                    <div key={itemIdx} className="flex items-start gap-2 text-xs text-[#475569]">
+                      <span className="font-mono text-emerald-700 font-bold shrink-0 mt-0.5">•</span>
                       <span className="leading-relaxed">{item}</span>
                     </div>
                   ))}
@@ -589,40 +589,40 @@ export const GeoServicesContent: React.FC = () => {
       {/* 6. GEO vs SEO vs AEO: What Is the Difference? */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Channel Comparison & Synergy
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             GEO vs SEO vs AEO: What Is the Difference?
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             The three disciplines overlap, and the most profitable search strategies deploy all three. SEO builds the foundation, AEO shapes the content to be quoted, and GEO builds the brand authority that makes AI tools trust and recommend you:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Strategic Factor</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">SEO</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">AEO</th>
-                <th className="py-3.5 px-4 sm:px-6 text-purple-400">GEO</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">SEO</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">AEO</th>
+                <th className="py-3.5 px-4 sm:px-6 text-purple-700">GEO</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {comparisonData.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.factor}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.seo}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-emerald-300">
+                  <td className="py-3.5 px-4 sm:px-6 text-emerald-700">
                     {row.aeo}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-purple-300">
+                  <td className="py-3.5 px-4 sm:px-6 text-purple-700">
                     {row.geo}
                   </td>
                 </tr>
@@ -631,7 +631,7 @@ export const GeoServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-850 space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
           <p>
             <strong>GEO is never finished:</strong> AI tools strongly favor fresh, updated sources. At UDMIDEAS, we audit and update your key citable pages on a quarterly cycle so your content remains accurate and continuously ingested.
           </p>
@@ -639,27 +639,27 @@ export const GeoServicesContent: React.FC = () => {
       </section>
 
       {/* 7. Why Choose UDMIDEAS for GEO Services */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-6">
+      <section className="p-8 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Proven Agency Leadership
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Why Choose UDMIDEAS for GEO Services
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Led by founder Arun with 15+ years of hands-on SEO dominance, we combine technical schema engineering, digital PR, and content architecture under one roof:
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {whyChooseUdmideas.map((item, idx) => (
-            <div key={idx} className="p-4 rounded-xl bg-slate-950 border border-slate-850 space-y-1">
-              <h4 className="text-sm font-bold text-white flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <div key={idx} className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-1">
+              <h4 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
                 <span>{item.title}</span>
               </h4>
-              <p className="text-xs text-slate-300 pl-6 leading-relaxed">
+              <p className="text-xs text-[#475569] pl-6 leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -670,36 +670,36 @@ export const GeoServicesContent: React.FC = () => {
       {/* 8. Industries We Serve */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Tailored Industry Frameworks
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Industries We Serve with GEO Solutions
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             We adapt prompt research and entity modeling to your industry's specific commercial buying questions:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Industry Sector</th>
                 <th className="py-3.5 px-4 sm:px-6">Typical Prompt We Target</th>
                 <th className="py-3.5 px-4 sm:px-6">GEO Solution Architecture</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {industriesServed.map((ind, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {ind.industry}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {ind.prompt}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-xs text-slate-300">
+                  <td className="py-3.5 px-4 sm:px-6 text-xs text-[#475569]">
                     {ind.solution}
                   </td>
                 </tr>
@@ -708,7 +708,7 @@ export const GeoServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 italic">
+        <p className="text-xs text-[#64748B] italic">
           <strong>Honesty pledge:</strong> We do not make false promises to control what an AI algorithm outputs. No legitimate agency can. We promise a proven, rigorous process, superior content, and steady, measured progress.
         </p>
       </section>
@@ -716,10 +716,10 @@ export const GeoServicesContent: React.FC = () => {
       {/* 9. GEO Services FAQ */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Questions & Answers
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             GEO Services FAQ
           </h2>
         </div>
@@ -730,23 +730,23 @@ export const GeoServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-all"
+                className="rounded-2xl border border-[#E2E8F0] bg-white overflow-hidden transition-all"
               >
                 <button
                   onClick={() => toggleFaq(idx)}
-                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-slate-850/50 transition-colors cursor-pointer"
+                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-[#F8FAFC] transition-colors cursor-pointer"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="text-xs font-mono font-bold text-purple-400 shrink-0 mt-0.5">
+                    <span className="text-xs font-mono font-bold text-purple-700 shrink-0 mt-0.5">
                       Q{String(idx + 1).padStart(2, '0')}.
                     </span>
-                    <span className="text-xs sm:text-sm font-bold text-white leading-snug">
+                    <span className="text-xs sm:text-sm font-bold text-[#0F172A] leading-snug">
                       {faq.q}
                     </span>
                   </div>
-                  <div className="text-slate-400 shrink-0">
+                  <div className="text-[#64748B] shrink-0">
                     {isOpen ? (
-                      <ChevronUp className="w-4 h-4 text-emerald-400" />
+                      <ChevronUp className="w-4 h-4 text-emerald-700" />
                     ) : (
                       <ChevronDown className="w-4 h-4" />
                     )}
@@ -754,7 +754,7 @@ export const GeoServicesContent: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-slate-850/60 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
                     <p className="pl-7">{faq.a}</p>
                   </div>
                 )}
@@ -765,22 +765,22 @@ export const GeoServicesContent: React.FC = () => {
       </section>
 
       {/* 10. Conclusion: Be the Brand AI Recommends */}
-      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-purple-950/60 via-slate-900 to-emerald-950/40 border border-purple-500/30 text-center space-y-6">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-purple-50/70 via-white to-emerald-50/40 border border-purple-200 text-center space-y-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Clock className="w-3.5 h-3.5" />
           <span>Full-Spectrum GEO & AEO Architecture</span>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight max-w-2xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] tracking-tight max-w-2xl mx-auto">
           Conclusion: Be the Brand AI Recommends
         </h2>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-xl mx-auto leading-relaxed">
           Buyers are asking AI tools who to trust, and those tools name only a few brands. GEO services are how you earn a place on that short list. The businesses that start now will build the authority that competitors will struggle to catch later.
         </p>
 
-        <p className="text-sm font-bold text-white">
-          Contact Founder Arun directly: <span className="text-emerald-400 font-mono">+91-9521186150</span> · Email: <span className="text-purple-400 font-mono">info@udmideasusa.com</span>
+        <p className="text-sm font-bold text-[#0F172A]">
+          Contact Founder Arun directly: <span className="text-emerald-700 font-mono">+91-9521186150</span> · Email: <span className="text-purple-700 font-mono">info@udmideasusa.com</span>
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -788,7 +788,7 @@ export const GeoServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20ready%20to%20get%20started%20with%20GEO%20Services%20at%20UDMIDEAS."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-xl shadow-emerald-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp Arun (+91-9521186150)</span>
@@ -796,7 +796,7 @@ export const GeoServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-purple-600 hover:bg-purple-500 shadow-xl shadow-purple-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-purple-600 hover:bg-purple-700 shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <Mail className="w-4 h-4" />
             <span>Request Custom GEO Audit</span>

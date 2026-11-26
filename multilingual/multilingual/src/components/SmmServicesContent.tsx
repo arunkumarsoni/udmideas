@@ -362,17 +362,17 @@ export const SmmServicesContent: React.FC = () => {
       {/* 1. What Are SMM Services and What Do We Do */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 font-mono text-xs font-semibold mb-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-[#1D4ED8] font-mono text-xs font-semibold mb-2">
             <Share2 className="w-3.5 h-3.5" />
             <span>Social Media Marketing Services · 15+ Years Track Record</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             What Are SMM Services and What Do We Do?
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             SMM services, short for social media marketing services, help your business find, win, and keep customers on platforms such as Facebook, Instagram, LinkedIn, TikTok, YouTube, and X. At UDMIDEAS, we deliver SMM services in many languages for businesses worldwide, backed by 15+ years of digital marketing experience.
           </p>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Most businesses post when they have time and hope for results. That rarely works. Social media rewards a clear plan, content tailored for each platform, a steady posting rhythm, and paid support where it makes commercial sense. We build and run that entire system for you.
           </p>
         </div>
@@ -382,13 +382,13 @@ export const SmmServicesContent: React.FC = () => {
           {whatWeDoList.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
             >
-              <div className="flex items-center gap-2 text-sm font-bold text-white">
-                <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
+              <div className="flex items-center gap-2 text-sm font-bold text-[#0F172A]">
+                <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                 <span>{item.title}</span>
               </div>
-              <p className="text-xs text-slate-300 leading-relaxed pl-6">
+              <p className="text-xs text-[#475569] leading-relaxed pl-6">
                 {item.desc}
               </p>
             </div>
@@ -396,44 +396,44 @@ export const SmmServicesContent: React.FC = () => {
         </div>
 
         {/* Integration with AEO & GEO note */}
-        <div className="p-5 rounded-2xl bg-gradient-to-r from-blue-950/40 via-slate-900 to-indigo-950/30 border border-blue-500/20 text-xs sm:text-sm text-slate-300 leading-relaxed">
-          <strong className="text-white">Social media directly powers AI search visibility:</strong> Active, well-described profiles feed authoritative brand signals and real-world entity citations that help your business earn prominent AEO snippet and GEO generative answers across ChatGPT, Gemini, and Google AI Overviews.
+        <div className="p-5 rounded-2xl bg-gradient-to-r from-blue-50/70 via-white to-indigo-50/40 border border-blue-200 text-xs sm:text-sm text-[#475569] leading-relaxed">
+          <strong className="text-[#0F172A]">Social media directly powers AI search visibility:</strong> Active, well-described profiles feed authoritative brand signals and real-world entity citations that help your business earn prominent AEO snippet and GEO generative answers across ChatGPT, Gemini, and Google AI Overviews.
         </div>
       </section>
 
       {/* 2. Social Media Statistics: Why SMM Services Matter */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Global Audience Reach
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Social Media Statistics: Why SMM Services Matter
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Your customers already spend hours every single day on social platforms. The numbers below, drawn from sources such as DataReportal and Meta, show the sheer scale of the commercial opportunity:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Audience Metric</th>
                 <th className="py-3.5 px-4 sm:px-6">Figure (Approx.)</th>
                 <th className="py-3.5 px-4 sm:px-6">What It Means for You</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {smmStats.map((stat, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-semibold text-[#0F172A]">
                     {stat.stat}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {stat.figure}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {stat.meaning}
                   </td>
                 </tr>
@@ -442,7 +442,7 @@ export const SmmServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 italic">
+        <p className="text-xs text-[#64748B] italic">
           <strong>The message is simple:</strong> Your buyers are on social media right now, and they respond best to brands that speak their native language. Figures are approximate and compiled from public research reports.
         </p>
       </section>
@@ -450,13 +450,13 @@ export const SmmServicesContent: React.FC = () => {
       {/* 3. Benefits of SMM Services */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Commercial Advantages
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             8 Tangible Benefits of SMM Services
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             For a dental clinic, a retail shop, or a high-growth SaaS platform, the business outcome is concrete: more of the right people discover you, trust your expertise, and reach out to buy:
           </p>
         </div>
@@ -465,16 +465,16 @@ export const SmmServicesContent: React.FC = () => {
           {benefits.map((b) => (
             <div
               key={b.num}
-              className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] hover:border-blue-600/30 transition-all flex flex-col justify-between"
             >
               <div>
-                <div className="font-mono text-xs font-bold text-purple-400 mb-2">
+                <div className="font-mono text-xs font-bold text-purple-700 mb-2">
                   BENEFIT {b.num}
                 </div>
-                <h3 className="text-sm font-bold text-white mb-2">
+                <h3 className="text-sm font-bold text-[#0F172A] mb-2">
                   {b.title}
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {b.desc}
                 </p>
               </div>
@@ -486,13 +486,13 @@ export const SmmServicesContent: React.FC = () => {
       {/* 4. How We Do It: Our SMM Services Process in 8 Steps */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Execution Framework
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             How We Do It: Our SMM Services Process in 8 Steps
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Every step has an assigned owner on our team, ensuring complete transparency and predictable delivery every month:
           </p>
         </div>
@@ -501,16 +501,16 @@ export const SmmServicesContent: React.FC = () => {
           {eightStepsProcess.map((step) => (
             <div
               key={step.step}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 flex flex-col justify-between hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 flex flex-col justify-between hover:border-blue-600/30 transition-all"
             >
               <div>
-                <div className="font-mono text-xs font-bold text-blue-400 mb-1">
+                <div className="font-mono text-xs font-bold text-[#1D4ED8] mb-1">
                   STEP {step.step}
                 </div>
-                <h3 className="text-sm font-bold text-white mb-2">
+                <h3 className="text-sm font-bold text-[#0F172A] mb-2">
                   {step.title}
                 </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -522,36 +522,36 @@ export const SmmServicesContent: React.FC = () => {
       {/* 5. Multilingual SMM Services: Worldwide, in Any Language */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Global Native Operations
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Multilingual SMM Services: Worldwide, in Any Language
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             A direct literal translation of a social post rarely succeeds. Regional humor, local celebrations, trending hashtags, and even the dominant platform vary dramatically from nation to nation. Our multilingual SMM services deploy native writers who culturally adapt the message, not just the words.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Language</th>
                 <th className="py-3.5 px-4 sm:px-6">Main Geographic Markets</th>
                 <th className="py-3.5 px-4 sm:px-6">Primary Platforms We Focus On</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {multilingualMarkets.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.lang}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.markets}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {row.platforms}
                   </td>
                 </tr>
@@ -560,21 +560,21 @@ export const SmmServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <p className="text-xs text-slate-400 leading-relaxed">
-          We run English, Spanish, French, German, Polish, Arabic, and Hebrew with our core team. For other languages, we partner with verified native writers and review every strategy together so your brand communicates naturally. In addition, our <strong className="text-slate-300">Multilingual SEO services</strong> bring that same international audience to your website through search.
+        <p className="text-xs text-[#64748B] leading-relaxed">
+          We run English, Spanish, French, German, Polish, Arabic, and Hebrew with our core team. For other languages, we partner with verified native writers and review every strategy together so your brand communicates naturally. In addition, our <strong className="text-[#475569]">Multilingual SEO services</strong> bring that same international audience to your website through search.
         </p>
       </section>
 
       {/* 6. Our 90-Day SMM Services Plan */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Proven Timeline
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our 90-Day SMM Services Plan
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             Most social accounts show distinct gains in organic reach and user engagement within 90 days. Lead and sales acceleration depend on your commercial offer, budget, and market, and we set clear, honest targets from day one:
           </p>
         </div>
@@ -583,24 +583,24 @@ export const SmmServicesContent: React.FC = () => {
           {ninetyDayPlan.map((phase, idx) => (
             <div
               key={idx}
-              className="p-6 sm:p-7 rounded-2xl bg-slate-900/70 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all"
+              className="p-6 sm:p-7 rounded-2xl bg-white border border-[#E2E8F0] flex flex-col justify-between hover:border-blue-600/30 transition-all"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-xs font-bold text-blue-400 bg-blue-950/60 px-2.5 py-1 rounded border border-blue-900/40">
+                  <span className="font-mono text-xs font-bold text-[#1D4ED8] bg-blue-50 px-2.5 py-1 rounded border border-blue-200">
                     {phase.timeline}
                   </span>
-                  <span className="text-xs font-mono text-slate-500 font-bold">
+                  <span className="text-xs font-mono text-[#64748B] font-bold">
                     {phase.phase}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-3">
+                <h3 className="text-lg font-bold text-[#0F172A] mb-3">
                   {phase.title}
                 </h3>
-                <div className="space-y-2.5 pt-3 border-t border-slate-850">
+                <div className="space-y-2.5 pt-3 border-t border-[#E2E8F0]">
                   {phase.items.map((item, itemIdx) => (
-                    <div key={itemIdx} className="flex items-start gap-2 text-xs text-slate-300">
-                      <span className="font-mono text-blue-400 font-bold shrink-0 mt-0.5">•</span>
+                    <div key={itemIdx} className="flex items-start gap-2 text-xs text-[#475569]">
+                      <span className="font-mono text-[#1D4ED8] font-bold shrink-0 mt-0.5">•</span>
                       <span className="leading-relaxed">{item}</span>
                     </div>
                   ))}
@@ -612,27 +612,27 @@ export const SmmServicesContent: React.FC = () => {
       </section>
 
       {/* 7. Why Choose UDMIDEAS for SMM Services */}
-      <section className="p-8 sm:p-10 rounded-3xl bg-slate-900/80 border border-slate-800 space-y-6">
+      <section className="p-8 sm:p-10 rounded-3xl bg-white border border-[#E2E8F0] space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider mb-1">
             Agency Track Record
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Why Choose UDMIDEAS for SMM Services
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#475569] leading-relaxed">
             Under the active leadership of founder Arun (15+ years in digital marketing), we unite social media, SEO, paid ads, and web engineering under one roof:
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {whyChooseUdmideas.map((item, idx) => (
-            <div key={idx} className="p-4 rounded-xl bg-slate-950 border border-slate-850 space-y-1">
-              <h4 className="text-sm font-bold text-white flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <div key={idx} className="p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-1">
+              <h4 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0" />
                 <span>{item.title}</span>
               </h4>
-              <p className="text-xs text-slate-300 pl-6 leading-relaxed">
+              <p className="text-xs text-[#475569] pl-6 leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -643,32 +643,32 @@ export const SmmServicesContent: React.FC = () => {
       {/* 8. Industries We Serve */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider mb-1">
             Sector-Specific Delivery
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Industries We Serve
           </h2>
-          <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+          <p className="mt-2 text-xs sm:text-sm text-[#64748B] leading-relaxed">
             We adapt visual formats, tone of voice, and ad funnels to the specific decision-making journey of your industry:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Industry Sector</th>
                 <th className="py-3.5 px-4 sm:px-6">Social Media Strategic Focus</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {industriesServed.map((ind, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {ind.industry}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-300 text-xs">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#475569] text-xs">
                     {ind.focus}
                   </td>
                 </tr>
@@ -677,7 +677,7 @@ export const SmmServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/50 border border-slate-800 text-xs text-slate-300 italic">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs text-[#475569] italic">
           <strong>Ethical agency pledge:</strong> We do not buy artificial followers or promise overnight viral illusions. We promise a clear strategy, consistent daily execution, and steady, measured commercial growth.
         </div>
       </section>
@@ -685,10 +685,10 @@ export const SmmServicesContent: React.FC = () => {
       {/* 9. SMM Services FAQ */}
       <section className="space-y-4">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Common Inquiries
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             SMM Services FAQ
           </h2>
         </div>
@@ -699,23 +699,23 @@ export const SmmServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-all"
+                className="rounded-2xl border border-[#E2E8F0] bg-white overflow-hidden transition-all"
               >
                 <button
                   onClick={() => toggleFaq(idx)}
-                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-slate-850/50 transition-colors cursor-pointer"
+                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 hover:bg-[#F8FAFC] transition-colors cursor-pointer"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="text-xs font-mono font-bold text-blue-400 shrink-0 mt-0.5">
+                    <span className="text-xs font-mono font-bold text-[#1D4ED8] shrink-0 mt-0.5">
                       Q{String(idx + 1).padStart(2, '0')}.
                     </span>
-                    <span className="text-xs sm:text-sm font-bold text-white leading-snug">
+                    <span className="text-xs sm:text-sm font-bold text-[#0F172A] leading-snug">
                       {faq.q}
                     </span>
                   </div>
-                  <div className="text-slate-400 shrink-0">
+                  <div className="text-[#64748B] shrink-0">
                     {isOpen ? (
-                      <ChevronUp className="w-4 h-4 text-emerald-400" />
+                      <ChevronUp className="w-4 h-4 text-emerald-700" />
                     ) : (
                       <ChevronDown className="w-4 h-4" />
                     )}
@@ -723,7 +723,7 @@ export const SmmServicesContent: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-slate-850/60 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  <div className="px-4 pb-5 pt-1 sm:px-5 sm:pb-6 border-t border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
                     <p className="pl-7">{faq.a}</p>
                   </div>
                 )}
@@ -734,22 +734,22 @@ export const SmmServicesContent: React.FC = () => {
       </section>
 
       {/* 10. Conclusion: Turn Followers into Customers */}
-      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-blue-950/60 via-slate-900 to-emerald-950/40 border border-blue-500/30 text-center space-y-6">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+      <section className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 text-center space-y-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Clock className="w-3.5 h-3.5" />
           <span>Full-Funnel Organic & Paid Social Campaigns</span>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight max-w-2xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] tracking-tight max-w-2xl mx-auto">
           Conclusion: Turn Followers into Customers
         </h2>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-xl mx-auto leading-relaxed">
           Social media is where your buyers spend hours every single day, in their own native language. SMM services give you a concrete plan, an authentic brand voice, and a dedicated team to turn that attention into revenue. The brands that show up consistently and speak locally are the ones people remember and choose.
         </p>
 
-        <p className="text-sm font-bold text-white">
-          Contact Founder Arun directly: <span className="text-emerald-400 font-mono">+91-9521186150</span> · Email: <span className="text-blue-400 font-mono">info@udmideasusa.com</span>
+        <p className="text-sm font-bold text-[#0F172A]">
+          Contact Founder Arun directly: <span className="text-emerald-700 font-mono">+91-9521186150</span> · Email: <span className="text-[#1D4ED8] font-mono">info@udmideasusa.com</span>
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -757,7 +757,7 @@ export const SmmServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20ready%20to%20get%20started%20with%20SMM%20Services%20at%20UDMIDEAS."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-xl shadow-emerald-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp Arun (+91-9521186150)</span>
@@ -765,7 +765,7 @@ export const SmmServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-xl shadow-blue-950/60 transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             <Mail className="w-4 h-4" />
             <span>Request Custom SMM Plan</span>

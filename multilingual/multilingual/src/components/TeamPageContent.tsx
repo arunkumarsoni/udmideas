@@ -242,7 +242,7 @@ export const TeamPageContent: React.FC = () => {
 
     return (
       <div
-        className={`relative w-full overflow-hidden bg-slate-950 ${
+        className={`relative w-full overflow-hidden bg-[#0F172A] ${
           isFounderCard
             ? 'h-[400px] sm:h-[480px] lg:h-full lg:min-h-[540px]'
             : 'h-[360px] sm:h-[440px] lg:h-full lg:min-h-[480px]'
@@ -258,22 +258,20 @@ export const TeamPageContent: React.FC = () => {
             className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.03]"
           />
         ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 p-8 text-center">
-            <div className="w-20 h-20 rounded-2xl border border-slate-700 bg-slate-900 flex items-center justify-center text-2xl font-bold font-mono text-white mb-4">
+          <div className="w-full h-full flex flex-col items-center justify-center bg-[#0F172A] p-8 text-center">
+            <div className="w-20 h-20 rounded-xl border border-slate-700 bg-slate-800 flex items-center justify-center text-2xl font-bold font-mono text-white mb-4">
               {member.initials}
             </div>
             <div className="text-base font-semibold text-white">{member.name}</div>
-            <div className="text-xs text-slate-400 mt-1">{member.role}</div>
+            <div className="text-xs text-[#94A3B8] mt-1">{member.role}</div>
           </div>
         )}
 
-        {/* Measured bottom scrim for crisp legibility */}
         <div
-          className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent pointer-events-none"
+          className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#0F172A]/20 to-transparent pointer-events-none"
           aria-hidden="true"
         />
 
-        {/* Quiet editorial index & location anchored at bottom of portrait */}
         <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6 flex items-end justify-between gap-4">
           <div>
             <div className="text-xs font-mono text-slate-300 tabular-nums">
@@ -283,7 +281,7 @@ export const TeamPageContent: React.FC = () => {
               {member.location}
             </div>
           </div>
-          <div className="text-xs font-mono text-slate-300 tabular-nums text-right">
+          <div className="text-xs font-mono text-[#F59E0B] font-semibold tabular-nums text-right">
             {member.experience}
           </div>
         </div>
@@ -293,41 +291,41 @@ export const TeamPageContent: React.FC = () => {
 
   return (
     <div className="space-y-14 sm:space-y-16">
-      {/* 1. Editorial Collective Summary Strip (4-Column Tabular Hairline Strip) */}
-      <section aria-label="Team Overview" className="border-y border-slate-800 py-7">
+      {/* 1. Deep Navy Collective Summary Strip */}
+      <section aria-label="Team Overview" className="rounded-xl bg-[#0F172A] border border-slate-800 p-6 sm:p-8 shadow-md">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-6 lg:divide-x lg:divide-slate-800">
           <div className="lg:pr-6">
-            <div className="text-2xl sm:text-3xl font-bold text-white tracking-tight font-mono tabular-nums">
+            <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-mono tabular-nums">
               65+ Years
             </div>
-            <p className="text-xs sm:text-sm text-slate-400 mt-1">
+            <p className="text-xs sm:text-sm text-[#94A3B8] mt-1">
               Combined senior SEO, development &amp; AI experience
             </p>
           </div>
 
           <div className="lg:px-6">
-            <div className="text-2xl sm:text-3xl font-bold text-white tracking-tight font-mono tabular-nums">
+            <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-mono tabular-nums">
               6 Specialists
             </div>
-            <p className="text-xs sm:text-sm text-slate-400 mt-1">
+            <p className="text-xs sm:text-sm text-[#94A3B8] mt-1">
               Direct senior execution with zero junior handoffs
             </p>
           </div>
 
           <div className="lg:px-6">
-            <div className="text-2xl sm:text-3xl font-bold text-white tracking-tight font-mono tabular-nums">
+            <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-mono tabular-nums">
               5 Global Hubs
             </div>
-            <p className="text-xs sm:text-sm text-slate-400 mt-1">
+            <p className="text-xs sm:text-sm text-[#94A3B8] mt-1">
               New York, France, Germany, Spain &amp; Saudi Arabia
             </p>
           </div>
 
           <div className="lg:pl-6">
-            <div className="text-2xl sm:text-3xl font-bold text-white tracking-tight font-mono tabular-nums">
+            <div className="text-2xl sm:text-3xl font-extrabold text-[#F59E0B] tracking-tight font-mono tabular-nums">
               7 Languages
             </div>
-            <p className="text-xs sm:text-sm text-slate-400 mt-1">
+            <p className="text-xs sm:text-sm text-[#94A3B8] mt-1">
               English, French, German, Arabic, Hebrew, Polish &amp; Spanish
             </p>
           </div>
@@ -338,19 +336,22 @@ export const TeamPageContent: React.FC = () => {
       <section aria-label="Filter and Navigate Team Profiles" className="space-y-5">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-5">
           <div className="space-y-1.5">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight [text-wrap:balance]">
+            <div className="text-[12px] font-semibold text-[#1D4ED8] uppercase tracking-[0.08em]">
+              – LEADERSHIP &amp; SPECIALISTS
+            </div>
+            <h2 className="text-[28px] sm:text-[34px] font-bold text-[#0F172A] tracking-tight leading-[1.2] [text-wrap:balance]">
               UDMIDEAS Team Profiles
             </h2>
-            <p className="text-sm sm:text-[15px] text-slate-400 max-w-2xl leading-relaxed">
+            <p className="text-sm sm:text-base text-[#475569] max-w-2xl leading-[1.65]">
               Every project is led directly by senior specialists across strategy, native-language search, full-stack web engineering, and applied AI.
             </p>
           </div>
 
-          {/* Functional Segmented Filter Bar */}
+          {/* Functional Segmented Pill Filter Bar */}
           <div
             role="tablist"
             aria-label="Filter team members by specialty"
-            className="inline-flex items-center gap-1 p-1 rounded-xl bg-slate-900 border border-slate-800 overflow-x-auto max-w-full"
+            className="inline-flex items-center gap-1.5 p-1 rounded-full bg-white border border-[#E2E8F0] overflow-x-auto max-w-full shadow-xs"
           >
             {FILTER_OPTIONS.map((opt) => {
               const isActive = activeFilter === opt.id;
@@ -361,14 +362,14 @@ export const TeamPageContent: React.FC = () => {
                   role="tab"
                   aria-selected={isActive}
                   onClick={() => setActiveFilter(opt.id)}
-                  className={`px-3.5 py-2 rounded-lg text-xs font-medium transition-colors duration-150 whitespace-nowrap shrink-0 cursor-pointer min-h-[40px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 ${
+                  className={`px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 whitespace-nowrap shrink-0 cursor-pointer min-h-[38px] ${
                     isActive
-                      ? 'bg-blue-600 text-white'
-                      : 'text-slate-300 hover:text-white hover:bg-slate-800/70'
+                      ? 'bg-[#0F172A] text-white shadow-xs'
+                      : 'text-[#475569] hover:text-[#0F172A] hover:bg-[#F8FAFC]'
                   }`}
                 >
                   {opt.label}{' '}
-                  <span className={`ml-1 font-mono tabular-nums ${isActive ? 'text-blue-100' : 'text-slate-500'}`}>
+                  <span className={`ml-1 font-mono tabular-nums ${isActive ? 'text-slate-300' : 'text-slate-400'}`}>
                     ({opt.count})
                   </span>
                 </button>
@@ -380,23 +381,21 @@ export const TeamPageContent: React.FC = () => {
         {/* Clean Unboxed Quick-Jump Roster Strip */}
         <nav
           aria-label="Jump to team member"
-          className="flex items-center gap-x-5 gap-y-2 overflow-x-auto pb-2 border-b border-slate-800/80"
+          className="flex items-center gap-x-5 gap-y-2 overflow-x-auto pb-2 border-b border-[#E2E8F0]"
         >
           {TEAM_PROFILES.map((member) => (
             <button
               key={member.id}
               type="button"
               onClick={() => handleJumpToMember(member.id)}
-              className="group inline-flex items-center gap-2 py-2 text-xs sm:text-sm text-slate-400 hover:text-white transition-colors duration-150 whitespace-nowrap shrink-0 cursor-pointer min-h-[40px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+              className="group inline-flex items-center gap-2 py-2 text-xs sm:text-sm text-[#475569] hover:text-[#1D4ED8] transition-colors duration-150 whitespace-nowrap shrink-0 cursor-pointer min-h-[40px]"
             >
-              <span className="font-mono text-xs text-blue-400 tabular-nums">{member.index}.</span>
-              <span className="font-medium border-b border-transparent group-hover:border-slate-500 pb-0.5">
+              <span className="font-mono text-xs font-bold text-[#1D4ED8] tabular-nums">{member.index}.</span>
+              <span className="font-semibold text-[#0F172A] group-hover:text-[#1D4ED8] border-b border-transparent group-hover:border-[#1D4ED8] pb-0.5">
                 {member.name}
               </span>
-              <span className="text-slate-600 hidden sm:inline" aria-hidden="true">
-                /
-              </span>
-              <span className="text-xs text-slate-500 hidden sm:inline">
+              <span className="text-slate-300 hidden sm:inline" aria-hidden="true">/</span>
+              <span className="text-xs text-[#475569] hidden sm:inline">
                 {member.location === 'Global Leadership' ? 'Founder' : member.location}
               </span>
             </button>
@@ -408,62 +407,57 @@ export const TeamPageContent: React.FC = () => {
       {founderProfile && (
         <article
           id={`team-member-${founderProfile.id}`}
-          className="group scroll-mt-24 rounded-2xl bg-slate-900/70 border border-slate-800 overflow-hidden"
+          className="group scroll-mt-24 rounded-xl bg-white border border-[#E2E8F0] shadow-md hover:shadow-lg hover:border-blue-600/30 transition-all duration-300 overflow-hidden"
         >
           <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
-            {/* Portrait Column */}
             <div className="lg:col-span-5 xl:col-span-4">
               {renderPortrait(founderProfile, true)}
             </div>
 
-            {/* Editorial Bio Column */}
             <div className="lg:col-span-7 xl:col-span-8 p-6 sm:p-8 lg:p-10 xl:p-12 flex flex-col justify-between gap-8">
               <div className="space-y-6">
-                {/* Clean Unboxed Metadata Header */}
-                <div className="space-y-2 pb-5 border-b border-slate-800">
-                  <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs sm:text-sm text-blue-400 font-medium">
-                    <span className="font-mono tabular-nums">01.</span>
+                <div className="space-y-2 pb-5 border-b border-[#E2E8F0]">
+                  <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs sm:text-sm text-[#1D4ED8] font-semibold">
+                    <span className="font-mono tabular-nums">01 / Founder</span>
+                    <span className="text-slate-300" aria-hidden="true">·</span>
                     <span>{founderProfile.role}</span>
-                    <span className="text-slate-600" aria-hidden="true">·</span>
-                    <span className="text-slate-300">{founderProfile.experience}</span>
+                    <span className="text-slate-300" aria-hidden="true">·</span>
+                    <span className="text-[#475569]">{founderProfile.experience}</span>
                   </div>
-                  <h3 className="text-3xl sm:text-4xl font-bold text-white tracking-tight [text-wrap:balance]">
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight [text-wrap:balance]">
                     {founderProfile.name}: {founderProfile.role}
                   </h3>
-                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm text-slate-400 pt-1">
-                    <span className="text-slate-200 font-medium">Languages:</span>
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm text-[#475569] pt-1">
+                    <span className="text-[#0F172A] font-semibold">Languages:</span>
                     <span>{founderProfile.languages}</span>
                   </div>
                 </div>
 
-                {/* Full Verbatim Founder Profile Paragraphs */}
-                <div className="space-y-4 text-[15px] sm:text-base leading-7 text-slate-300 tracking-[0.005em]">
+                <div className="space-y-4 text-base leading-[1.65] text-[#475569]">
                   {founderProfile.paragraphs.map((paragraph, pIdx) => (
                     <p key={pIdx}>{paragraph}</p>
                   ))}
                 </div>
 
-                {/* Unboxed Core Specialties Line */}
-                <div className="pt-2 border-t border-slate-800/80 flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs sm:text-sm text-slate-400">
-                  <span className="text-slate-200 font-semibold">Core Focus:</span>
+                <div className="pt-3 border-t border-[#E2E8F0] flex flex-wrap items-center gap-x-2.5 gap-y-1.5 text-xs sm:text-sm text-[#475569]">
+                  <span className="text-[#0F172A] font-bold">Core Focus:</span>
                   {founderProfile.focusAreas.map((area, idx) => (
                     <React.Fragment key={area}>
                       <span>{area}</span>
                       {idx < founderProfile.focusAreas.length - 1 && (
-                        <span className="text-slate-600" aria-hidden="true">·</span>
+                        <span className="text-slate-300" aria-hidden="true">·</span>
                       )}
                     </React.Fragment>
                   ))}
                 </div>
               </div>
 
-              {/* Single Primary Action + Secondary Text Link */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <a
                   href={`https://wa.me/919521186150?text=${encodeURIComponent(founderProfile.whatsappText)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold transition-colors duration-150 whitespace-nowrap shrink-0 min-h-[44px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#1D4ED8] hover:bg-[#1E40AF] text-white text-sm font-semibold shadow-sm hover:shadow-md transition-all duration-200 whitespace-nowrap shrink-0 min-h-[44px]"
                 >
                   <MessageCircle className="w-4 h-4 shrink-0" />
                   <span>Partner with Arun</span>
@@ -471,10 +465,10 @@ export const TeamPageContent: React.FC = () => {
                 <button
                   type="button"
                   onClick={scrollToInquiryForm}
-                  className="inline-flex items-center gap-1.5 px-4 py-3 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-150 whitespace-nowrap shrink-0 cursor-pointer min-h-[44px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+                  className="group/btn inline-flex items-center gap-1.5 px-4 py-3 text-sm font-bold text-[#1D4ED8] hover:text-[#1E40AF] transition-colors duration-150 whitespace-nowrap shrink-0 cursor-pointer min-h-[44px]"
                 >
                   <span>Send Project Brief</span>
-                  <ArrowRight className="w-4 h-4 shrink-0" />
+                  <ArrowRight className="w-4 h-4 shrink-0 group-hover/btn:translate-x-1 transition-transform duration-200" />
                 </button>
               </div>
             </div>
@@ -492,10 +486,9 @@ export const TeamPageContent: React.FC = () => {
               <article
                 key={member.id}
                 id={`team-member-${member.id}`}
-                className="group scroll-mt-24 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition-colors duration-200 overflow-hidden"
+                className="group scroll-mt-24 rounded-xl bg-white border border-[#E2E8F0] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-600/30 overflow-hidden"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
-                  {/* Portrait Column — alternates left/right on desktop, always top on mobile */}
                   <div
                     className={`lg:col-span-4 ${
                       portraitOnRight ? 'lg:order-2' : 'lg:order-1'
@@ -504,42 +497,39 @@ export const TeamPageContent: React.FC = () => {
                     {renderPortrait(member, false)}
                   </div>
 
-                  {/* Bio Prose Column */}
                   <div
                     className={`lg:col-span-8 p-6 sm:p-8 lg:p-10 flex flex-col justify-between gap-7 ${
                       portraitOnRight ? 'lg:order-1' : 'lg:order-2'
                     }`}
                   >
                     <div className="space-y-5">
-                      {/* Unboxed Metadata + Heading */}
-                      <div className="space-y-2 pb-4 border-b border-slate-800/90">
-                        <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs sm:text-sm text-slate-400">
-                          <span className="font-mono font-semibold text-blue-400 tabular-nums">
-                            {member.index}.
+                      <div className="space-y-2 pb-4 border-b border-[#E2E8F0]">
+                        <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs sm:text-sm text-[#475569]">
+                          <span className="font-mono font-bold text-[#1D4ED8] tabular-nums">
+                            {member.index} / Specialist
                           </span>
-                          <span className="text-slate-200 font-medium">{member.role}</span>
-                          <span className="text-slate-600" aria-hidden="true">·</span>
+                          <span className="text-slate-300" aria-hidden="true">·</span>
+                          <span className="text-[#0F172A] font-semibold">{member.role}</span>
+                          <span className="text-slate-300" aria-hidden="true">·</span>
                           <span>{member.location}</span>
-                          <span className="text-slate-600" aria-hidden="true">·</span>
-                          <span className="tabular-nums">{member.experience}</span>
+                          <span className="text-slate-300" aria-hidden="true">·</span>
+                          <span className="tabular-nums font-medium">{member.experience}</span>
                         </div>
-                        <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight [text-wrap:balance]">
+                        <h3 className="text-2xl sm:text-3xl font-bold text-[#0F172A] tracking-tight [text-wrap:balance]">
                           {member.name}: {member.role}, {member.location}
                         </h3>
                       </div>
 
-                      {/* Exact Verbatim Biography */}
-                      <div className="space-y-4 text-[15px] sm:text-base leading-7 text-slate-300 tracking-[0.005em]">
+                      <div className="space-y-4 text-base leading-[1.65] text-[#475569]">
                         {member.paragraphs.map((paragraph, pIdx) => (
                           <p key={pIdx}>{paragraph}</p>
                         ))}
                       </div>
                     </div>
 
-                    {/* Footer Row: Unboxed Specialties + Quiet Direct Action */}
-                    <div className="pt-5 border-t border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                      <div className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                        <span className="text-slate-200 font-medium">Focus: </span>
+                    <div className="pt-5 border-t border-[#E2E8F0] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                      <div className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                        <span className="text-[#0F172A] font-bold">Focus: </span>
                         {member.focusAreas.join(' · ')}
                       </div>
 
@@ -547,10 +537,10 @@ export const TeamPageContent: React.FC = () => {
                         href={`https://wa.me/919521186150?text=${encodeURIComponent(member.whatsappText)}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-150 whitespace-nowrap shrink-0 min-h-[40px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+                        className="group/link inline-flex items-center gap-1.5 text-sm font-bold text-[#1D4ED8] hover:text-[#1E40AF] transition-colors whitespace-nowrap shrink-0 min-h-[40px]"
                       >
                         <span>Work with {member.shortName}</span>
-                        <ArrowUpRight className="w-4 h-4 shrink-0" />
+                        <ArrowUpRight className="w-4 h-4 shrink-0 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-200" />
                       </a>
                     </div>
                   </div>
@@ -561,18 +551,18 @@ export const TeamPageContent: React.FC = () => {
         </section>
       )}
 
-      {/* 5. Cross-Border Collaboration Closing Block */}
-      <section className="rounded-2xl bg-slate-900/60 border border-slate-800 p-6 sm:p-8 lg:p-10">
+      {/* 5. Deep Navy Contrast Collaboration Closing Block */}
+      <section className="rounded-xl bg-[#0F172A] border border-slate-800 p-6 sm:p-8 lg:p-10 shadow-lg">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-8 space-y-3">
-            <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-blue-400">
+            <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.08em] text-[#F59E0B]">
               <Globe2 className="w-4 h-4 shrink-0" />
               <span>One Integrated Multilingual Team</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight [text-wrap:balance]">
               Strategy, native-language marketing, web development and AI engineering under one roof.
             </h2>
-            <p className="text-sm sm:text-[15px] text-slate-300 leading-7 max-w-2xl">
+            <p className="text-sm sm:text-base text-[#94A3B8] leading-[1.65] max-w-2xl">
               From PHP and responsive web builds in New York and France to Arabic campaigns in Saudi Arabia, German SEO in Germany, and practical AI automation from Spain, our specialists collaborate directly on every client engagement under Founder Arun.
             </p>
           </div>
@@ -581,16 +571,16 @@ export const TeamPageContent: React.FC = () => {
             <button
               type="button"
               onClick={scrollToInquiryForm}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold transition-colors duration-150 whitespace-nowrap shrink-0 cursor-pointer min-h-[44px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+              className="group inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#1D4ED8] hover:bg-[#1E40AF] text-white text-sm font-semibold shadow-sm hover:shadow-md transition-all duration-200 whitespace-nowrap shrink-0 cursor-pointer min-h-[44px]"
             >
               <span>Schedule Team Consultation</span>
-              <ArrowRight className="w-4 h-4 shrink-0" />
+              <ArrowRight className="w-4 h-4 shrink-0 group-hover:translate-x-1 transition-transform duration-200" />
             </button>
             <a
               href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20connect%20with%20the%20UDMIDEAS%20team%20about%20a%20new%20project."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-150 whitespace-nowrap shrink-0 min-h-[40px]"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-[#94A3B8] hover:text-white transition-colors duration-150 whitespace-nowrap shrink-0 min-h-[40px]"
             >
               <span>WhatsApp Arun (+91-9521186150)</span>
               <ArrowUpRight className="w-4 h-4 shrink-0" />

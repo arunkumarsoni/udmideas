@@ -11,14 +11,14 @@ export const FloatingWhatsApp: React.FC = () => {
     >
       {/* Floating Tooltip Bubble */}
       {!tooltipDismissed && (
-        <div className="hidden sm:flex items-center gap-2 bg-slate-900 border border-slate-700/80 text-white text-xs px-3.5 py-2.5 rounded-2xl shadow-xl shadow-black/60 animate-in fade-in slide-in-from-bottom-2">
+        <div className="hidden sm:flex items-center gap-2.5 bg-white border border-[#E2E8F0] text-[#0F172A] text-xs px-4 py-2.5 rounded-xl shadow-xl">
           <div>
-            <div className="font-semibold text-emerald-400">Chat with Arun & Team</div>
-            <div className="text-[11px] text-slate-300">Direct WhatsApp: +91-9521186150</div>
+            <div className="font-bold text-[#0F172A]">Chat with Arun &amp; Team</div>
+            <div className="text-[11px] text-[#475569]">Direct WhatsApp: +91-9521186150</div>
           </div>
           <button
             onClick={() => setTooltipDismissed(true)}
-            className="text-slate-400 hover:text-white p-1 ml-1"
+            className="text-slate-400 hover:text-[#0F172A] p-1 ml-1 cursor-pointer"
             aria-label="Dismiss chat tooltip"
           >
             <X className="w-3.5 h-3.5" />
@@ -31,13 +31,11 @@ export const FloatingWhatsApp: React.FC = () => {
         href="https://wa.me/919521186150?text=Hello%20Arun%20and%20UDMIDEAS,%20I%20would%20like%20to%20discuss%20a%20multilingual%20website%20design%20and%20digital%20marketing%20project."
         target="_blank"
         rel="noopener noreferrer"
-        className="relative flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-2xl shadow-emerald-500/50 hover:scale-105 active:scale-95 transition-all group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-400/50"
+        className="relative flex items-center justify-center w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white shadow-xl hover:scale-105 active:scale-95 transition-all group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-500/40"
         aria-label="Start WhatsApp conversation at +91-9521186150"
         title="WhatsApp: +91-9521186150"
       >
-        {/* Soft pulse ping */}
-        <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-40 animate-ping pointer-events-none" />
-
+        <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-35 animate-ping pointer-events-none" />
         <MessageCircle className="w-7 h-7 fill-white text-white group-hover:scale-110 transition-transform" />
       </a>
     </aside>

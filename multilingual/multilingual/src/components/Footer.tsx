@@ -1,157 +1,115 @@
 import React from 'react';
 import {
   MessageCircle,
-  Globe,
   Mail,
   MapPin,
   Phone,
-  Shield,
-  FileText,
-  Cookie,
-  ArrowRight,
   ExternalLink
 } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-950 border-t border-slate-900 text-slate-400 text-xs text-left">
+    <footer className="bg-[#0F172A] border-t border-slate-800 text-[#94A3B8] text-xs text-left">
       {/* Top Footer Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Column 1: Logo & Company Narrative */}
           <div className="lg:col-span-2 space-y-4">
-            <a href="/" className="flex items-center gap-2.5 inline-flex group">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-600 via-indigo-600 to-emerald-500 p-[1.5px] shadow-sm">
-                <div className="w-full h-full bg-slate-950 rounded-[7px] flex items-center justify-center">
-                  <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-blue-400 to-emerald-400 text-sm tracking-tight">
-                    UDM
-                  </span>
-                </div>
+            <a href="/" className="inline-flex items-center gap-2.5 group">
+              <div className="w-9 h-9 rounded-lg bg-[#1D4ED8] flex items-center justify-center shadow-sm group-hover:bg-[#1E40AF] transition-colors">
+                <span className="font-extrabold text-white text-sm tracking-tight font-[Plus_Jakarta_Sans]">
+                  UDM
+                </span>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors">
+                <span className="text-xl font-extrabold tracking-tight text-white group-hover:text-blue-300 transition-colors font-[Plus_Jakarta_Sans]">
                   UDMIDEAS
                 </span>
-                <span className="text-[10px] text-slate-400 font-medium tracking-wider uppercase -mt-1">
-                  Multilingual Web & Digital Marketing
+                <span className="text-[10px] text-[#94A3B8] font-semibold tracking-wider uppercase -mt-0.5">
+                  Multilingual Web &amp; Digital Marketing
                 </span>
               </div>
             </a>
 
-            <p className="text-slate-300 text-xs leading-relaxed max-w-sm">
-              Founded by <strong className="text-white">Arun</strong> with 15+ years of digital marketing dominance. 
-              Headquartered in New York, NY 10001. We build bespoke websites strictly from scratch using 
-              React Js, WordPress, CodeIgniter, Laravel, Magento, and PHP frameworks — custom coding only. 
+            <p className="text-[#94A3B8] text-sm leading-relaxed max-w-sm">
+              Founded by <strong className="text-white font-semibold">Arun</strong> with 15+ years of digital marketing dominance.
+              Headquartered in New York, NY 10001. We build bespoke websites strictly from scratch using
+              React Js, WordPress, CodeIgniter, Laravel, Magento, and PHP frameworks — custom coding only.
               Dedicated multilingual SEO, AEO, GEO, SMM, and PPC experts serving USA, LATAM, EU, Israel, and the Arab World.
             </p>
 
-            <div className="space-y-2.5 pt-2 text-slate-300 font-mono text-[11px]">
-              <div className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
-                <span className="leading-snug">350 5th Ave, New York, NY 10001, USA</span>
+            <div className="space-y-2.5 pt-2 text-[#94A3B8] text-xs">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
+                <span className="leading-snug text-slate-300">350 5th Ave, New York, NY 10001, USA</span>
               </div>
-              <div className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
-                <span className="leading-snug">11 Sams Trailer Ct, Hazlet, NJ 07730, United States</span>
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
+                <span className="leading-snug text-slate-300">11 Sams Trailer Ct, Hazlet, NJ 07730, United States</span>
               </div>
-              <div className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
-                <span className="leading-snug">16 Gamal Abdelwahab Street, El-Darb El-Ahmar, El Sayeda Zeinab, Cairo Governorate 11925, Egypt</span>
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-[#F59E0B] shrink-0 mt-0.5" />
+                <span className="leading-snug text-slate-300">16 Gamal Abdelwahab Street, El-Darb El-Ahmar, El Sayeda Zeinab, Cairo Governorate 11925, Egypt</span>
               </div>
-              <div className="flex items-center gap-2 pt-1 border-t border-slate-900/80">
-                <Mail className="w-3.5 h-3.5 text-blue-400 shrink-0" />
-                <a href="mailto:info@udmideasusa.com" className="hover:text-white transition-colors">
+              <div className="flex items-center gap-2.5 pt-2 border-t border-slate-800">
+                <Mail className="w-4 h-4 text-[#1D4ED8] shrink-0" />
+                <a href="mailto:info@udmideasusa.com" className="text-white hover:text-blue-300 transition-colors font-medium">
                   info@udmideasusa.com
                 </a>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <a href="tel:+919521186150" className="hover:text-white transition-colors">
-                  +91-9521186150 (Direct & WhatsApp)
+              <div className="flex items-center gap-2.5">
+                <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
+                <a href="tel:+919521186150" className="text-white hover:text-emerald-300 transition-colors font-medium">
+                  +91-9521186150 (Direct &amp; WhatsApp)
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Column 2: Quick Links (with target="_blank" separate web pages) */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider pb-1 border-b border-slate-900">
+          {/* Column 2: Quick Links */}
+          <div className="space-y-3.5">
+            <h4 className="text-xs font-bold text-white uppercase tracking-[0.08em] pb-2 border-b border-slate-800">
               Quick Links
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               <li>
-                <a
-                  href="/about-us/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/about-us/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>About Us</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/team/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/team/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>Our Dedicated Team</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/contact-us/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/contact-us/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>Contact Us (Direct Form)</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/blog/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1 text-blue-400"
-                >
-                  <span>Blog & Articles</span>
-                  <ExternalLink className="w-2.5 h-2.5 opacity-50" />
+                <a href="/blog/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-white transition-colors inline-flex items-center gap-1 font-medium">
+                  <span>Blog &amp; Articles</span>
+                  <ExternalLink className="w-2.5 h-2.5 opacity-60" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/privacy-policy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>Privacy Policy</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/terms-and-conditions/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/terms-and-conditions/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>Terms and Conditions</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/cookies/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/cookies/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>Cookies Policy</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
@@ -162,7 +120,7 @@ export const Footer: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   download="sitemap.xml"
-                  className="text-blue-400 hover:text-blue-300 font-mono transition-colors inline-flex items-center gap-1"
+                  className="text-blue-300 hover:text-white font-mono transition-colors inline-flex items-center gap-1"
                   title="Download and view sitemap.xml"
                 >
                   <span>Sitemap XML (Download)</span>
@@ -174,7 +132,7 @@ export const Footer: React.FC = () => {
                   href="https://wa.me/919521186150?text=Hello%20UDMIDEAS,%20I%20am%20contacting%20you%20from%20the%20website%20footer."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center gap-1.5"
+                  className="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1.5"
                 >
                   <MessageCircle className="w-3.5 h-3.5" />
                   <span>WhatsApp: +91-9521186150</span>
@@ -183,116 +141,81 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 3: Services (Separate Web Pages with target="_blank") */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider pb-1 border-b border-slate-900">
-              Web & Marketing Pages
+          {/* Column 3: Services */}
+          <div className="space-y-3.5">
+            <h4 className="text-xs font-bold text-white uppercase tracking-[0.08em] pb-2 border-b border-slate-800">
+              Web &amp; Marketing Pages
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               <li>
-                <a
-                  href="/services/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/services/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>Services Overview</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/website-design-development/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
-                  <span>Web Design & Development</span>
+                <a href="/website-design-development/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
+                  <span>Web Design &amp; Development</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/digital-marketing-services/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/digital-marketing-services/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>Digital Marketing Services</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/multilingual-search-engine-optimization/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/multilingual-search-engine-optimization/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>Multilingual SEO Services</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/answer-engine-optimization/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/answer-engine-optimization/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>AEO (Answer Engine Opt)</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/generative-engine-optimization/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/generative-engine-optimization/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>GEO (Generative AI SEO)</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/social-media-marketing/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/social-media-marketing/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>Social Media Marketing</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
                 </a>
               </li>
               <li>
-                <a
-                  href="/pay-per-click/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1"
-                >
+                <a href="/pay-per-click/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-flex items-center gap-1">
                   <span>Pay Per Click (PPC)</span>
                   <ExternalLink className="w-2.5 h-2.5 opacity-50" />
+                </a>
+              </li>
+              <li>
+                <a href="/case-studies/" className="text-blue-300 hover:text-white transition-colors inline-flex items-center gap-1 font-medium">
+                  <span>Case Studies</span>
                 </a>
               </li>
             </ul>
           </div>
 
           {/* Column 4: Key Regional & Country Web Pages */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider pb-1 border-b border-slate-900">
+          <div className="space-y-3.5">
+            <h4 className="text-xs font-bold text-white uppercase tracking-[0.08em] pb-2 border-b border-slate-800">
               Regional Pages
             </h4>
-            <div className="grid grid-cols-2 gap-x-2 gap-y-1.5 text-[11px]">
+            <div className="grid grid-cols-2 gap-x-2 gap-y-2 text-[11px]">
               <a href="/usa/" target="_blank" rel="noopener noreferrer" className="hover:text-white truncate">🇺🇸 USA</a>
-              <a href="/new-york/" target="_blank" rel="noopener noreferrer" className="hover:text-white text-blue-400 font-semibold truncate">🗽 New York</a>
+              <a href="/new-york/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-white font-semibold truncate">🗽 New York</a>
               <a href="/california/" target="_blank" rel="noopener noreferrer" className="hover:text-white truncate">🌴 California</a>
               <a href="/texas/" target="_blank" rel="noopener noreferrer" className="hover:text-white truncate">🤠 Texas</a>
               <a href="/florida/" target="_blank" rel="noopener noreferrer" className="hover:text-white truncate">☀️ Florida</a>
               <a href="/illinois/" target="_blank" rel="noopener noreferrer" className="hover:text-white truncate">🏙️ Illinois</a>
-              <a href="/israel/" target="_blank" rel="noopener noreferrer" className="hover:text-white text-blue-400 font-semibold truncate">🇮🇱 Israel</a>
+              <a href="/israel/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-white font-semibold truncate">🇮🇱 Israel</a>
               <a href="/france/" target="_blank" rel="noopener noreferrer" className="hover:text-white truncate">🇫🇷 France</a>
               <a href="/germany/" target="_blank" rel="noopener noreferrer" className="hover:text-white truncate">🇩🇪 Germany</a>
               <a href="/spain/" target="_blank" rel="noopener noreferrer" className="hover:text-white truncate">🇪🇸 Spain</a>
@@ -307,7 +230,7 @@ export const Footer: React.FC = () => {
             </div>
 
             {/* Social Media Channels */}
-            <div className="pt-4 border-t border-slate-900">
+            <div className="pt-4 border-t border-slate-800">
               <div className="text-[11px] font-semibold text-white mb-2.5">
                 Connect on Social Channels:
               </div>
@@ -316,7 +239,7 @@ export const Footer: React.FC = () => {
                   href="https://www.facebook.com/UniqueDigitalMarketing/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-blue-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
+                  className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#1D4ED8] hover:text-white border border-slate-700 flex items-center justify-center transition-colors text-slate-300"
                   aria-label="UDMIDEAS on Facebook"
                   title="Facebook"
                 >
@@ -326,7 +249,7 @@ export const Footer: React.FC = () => {
                   href="https://www.instagram.com/udmideas/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-pink-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
+                  className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#1D4ED8] hover:text-white border border-slate-700 flex items-center justify-center transition-colors text-slate-300"
                   aria-label="UDMIDEAS on Instagram"
                   title="Instagram"
                 >
@@ -336,7 +259,7 @@ export const Footer: React.FC = () => {
                   href="https://www.pinterest.com/udmideas/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-red-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
+                  className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#1D4ED8] hover:text-white border border-slate-700 flex items-center justify-center transition-colors text-slate-300"
                   aria-label="UDMIDEAS on Pinterest"
                   title="Pinterest"
                 >
@@ -346,7 +269,7 @@ export const Footer: React.FC = () => {
                   href="https://linkedin.com/company/udmideas"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-blue-700 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
+                  className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#1D4ED8] hover:text-white border border-slate-700 flex items-center justify-center transition-colors text-slate-300"
                   aria-label="UDMIDEAS on LinkedIn"
                   title="LinkedIn"
                 >
@@ -356,7 +279,7 @@ export const Footer: React.FC = () => {
                   href="https://www.youtube.com/@udmideas"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-red-600 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
+                  className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#1D4ED8] hover:text-white border border-slate-700 flex items-center justify-center transition-colors text-slate-300"
                   aria-label="UDMIDEAS on YouTube"
                   title="YouTube"
                 >
@@ -366,7 +289,7 @@ export const Footer: React.FC = () => {
                   href="https://x.com/udmideas"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-7 h-7 rounded-lg bg-slate-900 hover:bg-slate-700 hover:text-white border border-slate-800 flex items-center justify-center transition-colors text-slate-300"
+                  className="w-8 h-8 rounded-lg bg-white/5 hover:bg-[#1D4ED8] hover:text-white border border-slate-700 flex items-center justify-center transition-colors text-slate-300"
                   aria-label="UDMIDEAS on X"
                   title="X (Twitter)"
                 >
@@ -378,12 +301,12 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Legal, Accessibility & Direct Email statement */}
-        <div className="mt-12 pt-8 border-t border-slate-900 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 text-center md:text-left">
+        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-[#94A3B8] text-center md:text-left">
           <div>
-            © {new Date().getFullYear()} <strong className="text-slate-300">UDMIDEAS</strong>. All rights reserved. 
-            All client inquiries forwarded directly to <span className="text-emerald-400 font-mono">info@udmideasusa.com</span>.
+            © {new Date().getFullYear()} <strong className="text-white">UDMIDEAS</strong>. All rights reserved.
+            All client inquiries forwarded directly to <span className="text-white font-mono">info@udmideasusa.com</span>.
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-4 text-slate-400">
+          <div className="flex flex-wrap items-center justify-center gap-4 text-[#94A3B8]">
             <span>WCAG 2.1 AA Screen Reader Compliant</span>
             <span aria-hidden="true">·</span>
             <span>NYC 10001, USA</span>
@@ -393,7 +316,7 @@ export const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               download="sitemap.xml"
-              className="text-blue-400 hover:underline font-mono"
+              className="text-blue-300 hover:underline font-mono"
             >
               sitemap.xml
             </a>
@@ -402,7 +325,7 @@ export const Footer: React.FC = () => {
               href="https://wa.me/919521186150"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-emerald-400 hover:underline inline-flex items-center gap-1"
+              className="text-emerald-400 hover:underline inline-flex items-center gap-1 font-medium"
             >
               <span>WhatsApp: +91-9521186150</span>
             </a>

@@ -296,16 +296,16 @@ export const GermanyServicesContent: React.FC = () => {
     <div className="space-y-14 text-left">
       {/* Hero / Page Introduction */}
       <header className="max-w-4xl space-y-4">
-        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-semibold">
+        <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-mono text-xs font-semibold">
           <Globe2 className="w-3.5 h-3.5 shrink-0" />
           <span>Germany Website Design, Development & German SEO · 15+ Years Experience</span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight text-balance">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight text-balance">
           Germany Website Design, Development & SEO Digital Marketing Company | UDMIDEAS
         </h1>
 
-        <div className="space-y-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+        <div className="space-y-3 text-sm sm:text-base text-[#475569] leading-relaxed">
           <p>
             Germany is one of Europe's largest economies and an important market for digital business, eCommerce, manufacturing, technology, automotive, healthcare, and professional services. Businesses operating in Germany need a strong online presence to attract customers, compete in search results, and generate consistent business opportunities.
           </p>
@@ -315,7 +315,7 @@ export const GermanyServicesContent: React.FC = () => {
           <p>
             We help German business owners develop professional websites, improve Google visibility, attract qualified visitors, generate enquiries, and grow online sales.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Our services combine custom-coded website development with SEO, AEO, GEO, content marketing, social media marketing, and paid advertising strategies.
           </p>
         </div>
@@ -325,7 +325,7 @@ export const GermanyServicesContent: React.FC = () => {
             href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20am%20inquiring%20about%20German%20website%20design%20and%20SEO%20in%20Germany."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
           >
             <MessageCircle className="w-4 h-4" />
             <span>WhatsApp: +91-9521186150</span>
@@ -333,7 +333,7 @@ export const GermanyServicesContent: React.FC = () => {
 
           <a
             href="#inquiry-form"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs font-semibold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
           >
             <span>Request Proposal (Direct Email)</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -344,32 +344,32 @@ export const GermanyServicesContent: React.FC = () => {
       {/* Germany Digital Market: Statistics and Future Opportunities */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Market Intelligence
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Germany Digital Market: Statistics and Future Opportunities
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Germany has one of Europe's most developed digital economies. Consumers increasingly use online platforms to research companies, compare products, purchase goods, and access professional services. Some important market indicators include:
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-3xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-3xl">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Digital market indicator</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Statistics / market context</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Statistics / market context</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {germanyStats.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-medium text-white">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-medium text-[#0F172A]">
                     {row.indicator}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700">
                     {row.context}
                   </td>
                 </tr>
@@ -381,14 +381,14 @@ export const GermanyServicesContent: React.FC = () => {
         {/* Future of German Digital Business: 2027–2030 */}
         <div className="space-y-4 pt-2">
           <div className="max-w-4xl space-y-1.5">
-            <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+            <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
               <Sparkles className="w-4 h-4" />
               <span>Strategic Horizon</span>
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#0F172A]">
               Future of German Digital Business: 2027–2030
             </h3>
-            <p className="text-xs sm:text-sm text-slate-300">
+            <p className="text-xs sm:text-sm text-[#475569]">
               Several developments are creating opportunities for German businesses:
             </p>
           </div>
@@ -397,22 +397,22 @@ export const GermanyServicesContent: React.FC = () => {
             {futureDevelopments.map((item, idx) => (
               <div
                 key={idx}
-                className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+                className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
               >
-                <div className="text-xs font-mono text-emerald-400 font-bold">
+                <div className="text-xs font-mono text-emerald-700 font-bold">
                   0{idx + 1}
                 </div>
-                <h4 className="text-sm sm:text-base font-bold text-white">
+                <h4 className="text-sm sm:text-base font-bold text-[#0F172A]">
                   {item.title}
                 </h4>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-[#475569] leading-relaxed">
                   {item.desc}
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-xs text-slate-400 italic">
+          <p className="text-xs text-[#64748B] italic">
             These are growth opportunities rather than guaranteed market forecasts.
           </p>
         </div>
@@ -420,29 +420,29 @@ export const GermanyServicesContent: React.FC = () => {
         {/* Updated German Digital Market Statistics */}
         <div className="space-y-4 pt-4">
           <div className="max-w-4xl space-y-1.5">
-            <h3 className="text-xl sm:text-2xl font-bold text-white">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#0F172A]">
               Updated German Digital Market Statistics
             </h3>
-            <p className="text-xs sm:text-sm text-slate-300">
+            <p className="text-xs sm:text-sm text-[#475569]">
               The latest published figures provide a stronger picture of Germany's online market:
             </p>
           </div>
 
-          <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-3xl">
+          <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-3xl">
             <table className="w-full text-left text-xs sm:text-sm">
-              <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+              <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
                 <tr>
                   <th className="py-3.5 px-4 sm:px-6">Market indicator</th>
-                  <th className="py-3.5 px-4 sm:px-6 text-blue-400">Latest reported figure</th>
+                  <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">Latest reported figure</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-800/80 text-slate-300">
+              <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
                 {updatedStats.map((row, idx) => (
-                  <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                    <td className="py-3.5 px-4 sm:px-6 font-medium text-white">
+                  <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                    <td className="py-3.5 px-4 sm:px-6 font-medium text-[#0F172A]">
                       {row.indicator}
                     </td>
-                    <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-blue-400">
+                    <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-[#1D4ED8]">
                       {row.figure}
                     </td>
                   </tr>
@@ -451,7 +451,7 @@ export const GermanyServicesContent: React.FC = () => {
             </table>
           </div>
 
-          <p className="text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
             The BEVH forecast indicates that German online retail could continue expanding in 2026. This creates opportunities for businesses investing in German eCommerce websites, product SEO, and digital advertising.
           </p>
         </div>
@@ -460,36 +460,36 @@ export const GermanyServicesContent: React.FC = () => {
       {/* Our Website Design and Digital Marketing Services in Germany */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider">
             Integrated Solutions & Pricing
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Our Website Design and Digital Marketing Services in Germany
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS offers integrated digital solutions for German-speaking businesses.
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Our services</th>
-                <th className="py-3.5 px-4 sm:px-6 text-blue-400">What we provide</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Pricing</th>
+                <th className="py-3.5 px-4 sm:px-6 text-[#1D4ED8]">What we provide</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Pricing</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {servicesPricingRows.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.service}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.provides}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-400 whitespace-nowrap">
+                  <td className="py-3.5 px-4 sm:px-6 font-mono font-bold text-emerald-700 whitespace-nowrap">
                     {row.pricing}
                   </td>
                 </tr>
@@ -498,7 +498,7 @@ export const GermanyServicesContent: React.FC = () => {
           </table>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <div className="p-4 rounded-xl bg-white border border-[#E2E8F0] text-xs sm:text-sm text-[#475569] leading-relaxed">
           The $500 starting price applies to qualifying website projects. Final pricing depends on pages, features, content, and project scope. Monthly SEO and advertising management are quoted separately. Advertising spend is additional.
         </div>
       </section>
@@ -506,17 +506,17 @@ export const GermanyServicesContent: React.FC = () => {
       {/* German Website Design and Development Services */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Code2 className="w-4 h-4" />
             <span>Custom Engineering</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             German Website Design and Development Services
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             A professional German-language website helps customers understand your business, explore your services, and contact your company. UDMIDEAS designs and develops custom-coded websites for businesses targeting Germany.
           </p>
-          <p className="text-sm font-semibold text-white">
+          <p className="text-sm font-semibold text-[#0F172A]">
             Our website development services include:
           </p>
         </div>
@@ -525,19 +525,19 @@ export const GermanyServicesContent: React.FC = () => {
           {devServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <div className="space-y-2 text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <div className="space-y-2 text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           <p>
             We work with React JS, PHP, Laravel, CodeIgniter, and WordPress according to project requirements.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Our objective is to create websites that combine professional design, technical performance, and search engine visibility.
           </p>
         </div>
@@ -546,17 +546,17 @@ export const GermanyServicesContent: React.FC = () => {
       {/* German SEO Services for Business Websites */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Search className="w-4 h-4" />
             <span>Organic Search Visibility</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             German SEO Services for Business Websites
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             German customers often search using specific German industry terms and local expressions. Directly translating English keywords is not enough to build a successful German SEO strategy.
           </p>
-          <p className="text-sm font-semibold text-white">
+          <p className="text-sm font-semibold text-[#0F172A]">
             Our German SEO services include:
           </p>
         </div>
@@ -565,15 +565,15 @@ export const GermanyServicesContent: React.FC = () => {
           {germanSeoServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           We target relevant German search phrases and customer questions to help businesses improve organic visibility and attract qualified visitors.
         </p>
       </section>
@@ -581,14 +581,14 @@ export const GermanyServicesContent: React.FC = () => {
       {/* German eCommerce SEO Solutions */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <ShoppingCart className="w-4 h-4" />
             <span>Online Store Growth</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             German eCommerce SEO Solutions
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Germany has a large online retail market, creating opportunities for online stores across different industries. UDMIDEAS provides German eCommerce SEO solutions to improve product discovery and organic sales opportunities.
           </p>
         </div>
@@ -597,19 +597,19 @@ export const GermanyServicesContent: React.FC = () => {
           {ecommerceSeoServices.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-3.5 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
               <span>{item}</span>
             </div>
           ))}
         </div>
 
-        <div className="space-y-2 text-xs sm:text-sm text-slate-300 max-w-4xl leading-relaxed">
+        <div className="space-y-2 text-xs sm:text-sm text-[#475569] max-w-4xl leading-relaxed">
           <p>
             We can work with WooCommerce, Magento, Shopify, and custom eCommerce development platforms.
           </p>
-          <p className="text-slate-400">
+          <p className="text-[#64748B]">
             Industries include fashion, electronics, furniture, automotive accessories, beauty products, industrial equipment, and home appliances.
           </p>
         </div>
@@ -618,46 +618,46 @@ export const GermanyServicesContent: React.FC = () => {
       {/* German SMM and PPC Digital Marketing Services */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider">
             Paid Social & Search Advertising
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             German SMM and PPC Digital Marketing Services
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             SEO helps businesses build long-term organic visibility. SMM and PPC provide additional ways to reach potential customers and promote products.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2.5 text-base font-bold text-white">
-              <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+          <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2.5 text-base font-bold text-[#0F172A]">
+              <div className="w-8 h-8 rounded-lg bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 shrink-0">
                 <Share2 className="w-4 h-4" />
               </div>
               <span>German Social Media Marketing (SMM)</span>
             </div>
             <ul className="space-y-2">
               {smmItems.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
+                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-purple-700 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-            <div className="flex items-center gap-2.5 text-base font-bold text-white">
-              <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+          <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] space-y-4">
+            <div className="flex items-center gap-2.5 text-base font-bold text-[#0F172A]">
+              <div className="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-[#1D4ED8] shrink-0">
                 <MousePointerClick className="w-4 h-4" />
               </div>
               <span>German Pay-Per-Click (PPC)</span>
             </div>
             <ul className="space-y-2">
               {ppcItems.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#475569]">
+                  <CheckCircle2 className="w-4 h-4 text-[#1D4ED8] shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -665,7 +665,7 @@ export const GermanyServicesContent: React.FC = () => {
           </div>
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           Our campaigns focus on German-language advertising, relevant search terms, customer interests, and target locations.
         </p>
       </section>
@@ -673,14 +673,14 @@ export const GermanyServicesContent: React.FC = () => {
       {/* How UDMIDEAS Helps Grow German Businesses */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <TrendingUp className="w-4 h-4" />
             <span>5-Stage Connected Strategy</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             How UDMIDEAS Helps Grow German Businesses
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Our approach connects website development, SEO, and digital marketing into one growth strategy.
           </p>
         </div>
@@ -689,22 +689,22 @@ export const GermanyServicesContent: React.FC = () => {
           {growthSteps.map((item, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2 hover:border-slate-700 transition-all"
+              className="p-5 rounded-2xl bg-white border border-[#E2E8F0] space-y-2 hover:border-blue-600/30 transition-all"
             >
-              <div className="text-xs font-mono text-emerald-400 font-bold">
+              <div className="text-xs font-mono text-emerald-700 font-bold">
                 0{idx + 1}
               </div>
-              <h3 className="text-sm sm:text-base font-bold text-white">
+              <h3 className="text-sm sm:text-base font-bold text-[#0F172A]">
                 {item.step}
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
+              <p className="text-xs text-[#475569] leading-relaxed">
                 {item.desc}
               </p>
             </div>
           ))}
         </div>
 
-        <p className="text-xs sm:text-sm text-slate-300">
+        <p className="text-xs sm:text-sm text-[#475569]">
           Our focus is to help businesses convert online visibility into meaningful enquiries, customers, and sales.
         </p>
       </section>
@@ -712,11 +712,11 @@ export const GermanyServicesContent: React.FC = () => {
       {/* Benefits of Choosing UDMIDEAS & Why German Business Owners Should Choose UDMIDEAS */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-purple-700 uppercase tracking-wider flex items-center gap-1.5">
             <Award className="w-4 h-4" />
             <span>Partner Advantages</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Benefits of Choosing UDMIDEAS
           </h2>
         </div>
@@ -725,36 +725,36 @@ export const GermanyServicesContent: React.FC = () => {
           {benefits.map((b, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-slate-900/70 border border-slate-800 flex items-start gap-2.5 text-xs sm:text-sm text-slate-200"
+              className="p-4 rounded-xl bg-white border border-[#E2E8F0] flex items-start gap-2.5 text-xs sm:text-sm text-[#0F172A]"
             >
-              <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
               <span>{b}</span>
             </div>
           ))}
         </div>
 
-        <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900/90 to-blue-950/30 border border-blue-900/30 space-y-4">
-          <h3 className="text-lg sm:text-xl font-bold text-white">
+        <div className="p-6 rounded-2xl bg-gradient-to-br from-white via-white to-blue-50/40 border border-blue-200 space-y-4">
+          <h3 className="text-lg sm:text-xl font-bold text-[#0F172A]">
             Why German Business Owners Should Choose UDMIDEAS
           </h3>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             UDMIDEAS brings 15+ years of experience in website development and digital marketing. We understand that German businesses require professional websites, relevant German content, reliable technical performance, and marketing strategies that match local customer expectations.
           </p>
-          <p className="text-xs sm:text-sm font-semibold text-white">
+          <p className="text-xs sm:text-sm font-semibold text-[#0F172A]">
             Our strengths include:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {strengths.map((reason, idx) => (
               <div
                 key={idx}
-                className="p-3 rounded-xl bg-slate-950/70 border border-slate-800 flex items-start gap-2 text-xs text-slate-200"
+                className="p-3 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] flex items-start gap-2 text-xs text-[#0F172A]"
               >
-                <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#1D4ED8] shrink-0 mt-0.5" />
                 <span>{reason}</span>
               </div>
             ))}
           </div>
-          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
             We focus on understanding your business before recommending a digital marketing strategy.
           </p>
         </div>
@@ -763,30 +763,30 @@ export const GermanyServicesContent: React.FC = () => {
       {/* German Industries & Target Cities */}
       <section className="space-y-6">
         <div className="max-w-4xl space-y-2">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider flex items-center gap-1.5">
             <Building2 className="w-4 h-4" />
             <span>Industries & German Cities</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             German Industries We Can Support
           </h2>
         </div>
 
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 shadow-xl max-w-3xl">
+        <div className="overflow-x-auto rounded-2xl border border-[#E2E8F0] bg-white shadow-sm max-w-3xl">
           <table className="w-full text-left text-xs sm:text-sm">
-            <thead className="bg-slate-950 border-b border-slate-800 text-slate-300 font-semibold uppercase text-[11px] tracking-wider">
+            <thead className="bg-[#F8FAFC] border-b border-[#E2E8F0] text-[#475569] font-semibold uppercase text-[11px] tracking-wider">
               <tr>
                 <th className="py-3.5 px-4 sm:px-6">Industry</th>
-                <th className="py-3.5 px-4 sm:px-6 text-emerald-400">Recommended digital services</th>
+                <th className="py-3.5 px-4 sm:px-6 text-emerald-700">Recommended digital services</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-800/80 text-slate-300">
+            <tbody className="divide-y divide-[#E2E8F0] text-[#475569]">
               {supportedIndustries.map((row, idx) => (
-                <tr key={idx} className="hover:bg-slate-850/50 transition-colors">
-                  <td className="py-3.5 px-4 sm:px-6 font-bold text-white whitespace-nowrap">
+                <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
+                  <td className="py-3.5 px-4 sm:px-6 font-bold text-[#0F172A] whitespace-nowrap">
                     {row.industry}
                   </td>
-                  <td className="py-3.5 px-4 sm:px-6 text-slate-200">
+                  <td className="py-3.5 px-4 sm:px-6 text-[#0F172A]">
                     {row.services}
                   </td>
                 </tr>
@@ -796,21 +796,21 @@ export const GermanyServicesContent: React.FC = () => {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-sm font-bold text-white flex items-center gap-2">
-            <MapPin className="w-4 h-4 text-blue-400" />
+          <h3 className="text-sm font-bold text-[#0F172A] flex items-center gap-2">
+            <MapPin className="w-4 h-4 text-[#1D4ED8]" />
             <span>We can also develop location-focused SEO strategies for businesses targeting:</span>
           </h3>
           <div className="flex flex-wrap gap-2">
             {targetCities.map((city) => (
               <span
                 key={city}
-                className="px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 text-xs text-slate-200 font-medium"
+                className="px-3 py-1.5 rounded-lg bg-white border border-[#E2E8F0] text-xs text-[#0F172A] font-medium"
               >
                 {city}
               </span>
             ))}
           </div>
-          <p className="text-xs sm:text-sm text-slate-300">
+          <p className="text-xs sm:text-sm text-[#475569]">
             These locations provide opportunities for local SEO, city-specific landing pages, and regional customer acquisition.
           </p>
         </div>
@@ -819,10 +819,10 @@ export const GermanyServicesContent: React.FC = () => {
       {/* Frequently Asked Questions: German Business Owners */}
       <section className="space-y-6">
         <div className="max-w-3xl">
-          <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider mb-1">
+          <div className="text-xs font-mono font-bold text-[#1D4ED8] uppercase tracking-wider mb-1">
             Common Inquiries
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Frequently Asked Questions: German Business Owners
           </h2>
         </div>
@@ -833,23 +833,23 @@ export const GermanyServicesContent: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-800 bg-slate-900/60 overflow-hidden transition-colors"
+                className="rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-colors"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(idx)}
-                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-white hover:text-blue-400 transition-colors"
+                  className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-[#0F172A] hover:text-[#1D4ED8] transition-colors"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.q}</span>
                   {isOpen ? (
-                    <ChevronUp className="w-4 h-4 text-blue-400 shrink-0" />
+                    <ChevronUp className="w-4 h-4 text-[#1D4ED8] shrink-0" />
                   ) : (
-                    <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+                    <ChevronDown className="w-4 h-4 text-[#64748B] shrink-0" />
                   )}
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-4 text-xs sm:text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+                  <div className="px-5 pb-4 text-xs sm:text-sm text-[#475569] border-t border-[#E2E8F0] pt-3 leading-relaxed">
                     {faq.a}
                   </div>
                 )}
@@ -860,26 +860,26 @@ export const GermanyServicesContent: React.FC = () => {
       </section>
 
       {/* Grow Your Business in Germany with UDMIDEAS */}
-      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-950 via-slate-900 to-emerald-950/50 border border-blue-800/40 space-y-6 shadow-xl">
+      <section className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/40 border border-blue-200 space-y-6 shadow-sm">
         <div className="max-w-4xl space-y-3">
-          <div className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-wider flex items-center gap-1.5">
             <Rocket className="w-4 h-4" />
             <span>Get Started</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight">
             Grow Your Business in Germany with UDMIDEAS
           </h2>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Germany offers significant opportunities for businesses that want to improve their digital presence, attract online customers, and expand their operations. Whether you operate a manufacturing company, professional service business, local company, or eCommerce store, your website and digital marketing strategy play important roles in customer acquisition.
           </p>
-          <p className="text-sm text-slate-300 leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             UDMIDEAS helps German business owners build professional websites, improve organic search visibility, promote products, generate leads, and develop long-term digital growth strategies.
           </p>
         </div>
 
-        <div className="pt-4 border-t border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1 text-xs sm:text-sm text-slate-300">
-            <div className="font-bold text-white text-base">
+        <div className="pt-4 border-t border-[#E2E8F0] flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-1 text-xs sm:text-sm text-[#475569]">
+            <div className="font-bold text-[#0F172A] text-base">
               Let's build your website, improve your German search visibility, and grow your business in Germany.
             </div>
             <div>
@@ -888,14 +888,14 @@ export const GermanyServicesContent: React.FC = () => {
                 href="https://udmideasusa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:underline font-mono"
+                className="text-[#1D4ED8] hover:underline font-mono"
               >
                 https://udmideasusa.com/
               </a>{' '}
               · Email:{' '}
               <a
                 href="mailto:info@udmideasusa.com"
-                className="text-emerald-400 hover:underline font-mono"
+                className="text-emerald-700 hover:underline font-mono"
               >
                 info@udmideasusa.com
               </a>
@@ -907,14 +907,14 @@ export const GermanyServicesContent: React.FC = () => {
               href="https://wa.me/919521186150?text=Hello%20Arun,%20I%20would%20like%20to%20discuss%20German%20website%20development%20and%20SEO%20for%20Germany."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-950/60 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-sm hover:shadow-md transition-all"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp: +91-9521186150</span>
             </a>
             <a
               href="#inquiry-form"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-[#1D4ED8] hover:bg-[#1E40AF] shadow-md hover:shadow-md transition-all"
             >
               <span>Connect with UDMIDEAS</span>
               <ArrowRight className="w-3.5 h-3.5" />
