@@ -2940,41 +2940,27 @@ export function isLegacyBloggerPath(rawPath: string): boolean {
 }
 
 /**
- * Returns true only for known standalone routes in ALL_PAGES or the 50 valid US states.
+ * Strictly resolves metadata only for verified routes in ALL_PAGES or the 50 valid US states.
+ * Returns null for any legacy Blogger URL, unknown slug, or multi-segment path.
  */
-export function isValidStandalonePath(path: string): boolean {
-  if (isLegacyBloggerPath(path)) return false;
+export function findPageMetadata(path: string): PageSEO | null {
+  if (!path || isLegacyBloggerPath(path)) return null;
 
   const cleanPath = path.toLowerCase().replace(/%20/g, '-').replace(/ /g, '-');
   const normalized = cleanPath.endsWith('/') ? cleanPath : `${cleanPath}/`;
 
-  if (ALL_PAGES[normalized]) {
-    return true;
-  }
-
-  const stateMatch = normalized.match(/^\/([a-z-]+)\/$/);
-  if (stateMatch && VALID_US_STATE_SLUGS.has(stateMatch[1])) {
-    return true;
-  }
-
-  return false;
-}
-
-// Helper function to generate generic state/country/blog pages dynamically if not listed
-export function getPageMetadata(path: string): PageSEO {
-  // Normalize path
-  const cleanPath = path.toLowerCase().replace(/%20/g, '-').replace(/ /g, '-');
-  const normalized = cleanPath.endsWith('/') ? cleanPath : `${cleanPath}/`;
-
-  if (ALL_PAGES[normalized]) {
+  if (Object.prototype.hasOwnProperty.call(ALL_PAGES, normalized)) {
     return ALL_PAGES[normalized];
   }
 
-  // Check if it matches one of the 50 official US states
+  // Strictly match one of the 50 official US states
   const stateMatch = normalized.match(/^\/([a-z-]+)\/$/);
   if (stateMatch && VALID_US_STATE_SLUGS.has(stateMatch[1])) {
     const slug = stateMatch[1];
-    const formattedName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    const formattedName = slug
+      .split('-')
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
 
     return {
       path: normalized,
@@ -3004,20 +2990,16 @@ export function getPageMetadata(path: string): PageSEO {
     };
   }
 
-  // Fallback
-  return {
-    path: normalized,
-    title: 'UDMIDEAS | Multilingual Web Design & Digital Marketing Agency',
-    description: 'UDMIDEAS builds custom-coded multilingual websites and delivers international digital marketing for service & eCommerce businesses.',
-    kicker: 'Global Agency',
-    heading: 'Custom Web Design & Multilingual Growth.',
-    subheading: '15+ years of digital marketing dominance and custom software engineering.',
-    category: 'core',
-    canonicalUrl: `${CANONICAL_BASE}${normalized}`,
-    schemaType: 'WebPage',
-    keyHighlights: ['15+ Years Track Record', '100% Custom Coding Only', 'NYC 10001 Headquarters'],
-    features: [{ title: 'Custom Coding', desc: 'React, WordPress, Laravel, Magento.' }],
-    languages: ['English', 'Spanish', 'French', 'German', 'Arabic', 'Hebrew'],
-    faq: [{ q: 'How to contact?', a: 'WhatsApp Arun at +91-9521186150.' }]
-  };
+  return null;
+}
+
+/**
+ * Returns true only for known standalone routes in ALL_PAGES or the 50 valid US states.
+ */
+export function isValidStandalonePath(path: string): boolean {
+  return findPageMetadata(path) !== null;
+}
+
+export function getPageMetadata(path: string): PageSEO | null {
+  return findPageMetadata(path);
 }

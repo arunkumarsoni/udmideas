@@ -26,7 +26,7 @@ export const NotFound: React.FC<NotFoundProps> = ({
     const prevTitle = document.title;
     document.title = '404 - Page Not Found | UDMIDEAS';
 
-    // Add noindex, follow to prevent soft-404 indexing in Google Search Console
+    // Set noindex, follow to prevent soft-404 indexing in Google Search Console
     let robotsMeta = document.querySelector('meta[name="robots"]');
     const hadRobots = Boolean(robotsMeta);
     const prevRobots = robotsMeta?.getAttribute('content') || '';
@@ -51,7 +51,7 @@ export const NotFound: React.FC<NotFoundProps> = ({
   }, []);
 
   const displayPath =
-    requestedPath && requestedPath !== '/404/'
+    requestedPath && requestedPath !== '/404' && requestedPath !== '/404/'
       ? requestedPath
       : typeof window !== 'undefined'
         ? window.location.pathname
@@ -69,19 +69,14 @@ export const NotFound: React.FC<NotFoundProps> = ({
       aria-labelledby="not-found-heading"
       className="relative min-h-[82vh] bg-[#0D0E12] text-slate-200 pt-32 pb-24 px-4 sm:px-6 lg:px-8 flex items-center justify-center overflow-hidden"
     >
-      {/* Subtle Architectural Grid & Ambient Glow */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-[0.06]"
-        style={{
-          backgroundImage:
-            'linear-gradient(to right, #94A3B8 1px, transparent 1px), linear-gradient(to bottom, #94A3B8 1px, transparent 1px)',
-          backgroundSize: '48px 48px'
-        }}
-      />
+      {/* Pure Tailwind Ambient Glows */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[560px] h-[320px] rounded-full bg-[#1D4ED8]/20 blur-[120px]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-0 right-1/4 w-[380px] h-[220px] rounded-full bg-amber-500/10 blur-[120px]"
       />
 
       <div className="relative z-10 max-w-3xl w-full mx-auto text-center">
@@ -106,10 +101,10 @@ export const NotFound: React.FC<NotFoundProps> = ({
 
         {/* Clear Explanation */}
         <p className="text-base sm:text-lg text-slate-400 leading-[1.65] max-w-2xl mx-auto mb-6">
-          The URL you followed may be a retired legacy archive link or an outdated address that was removed when we upgraded the UDMIDEAS platform. Let&apos;s get you back to the right place.
+          The URL you followed may be mistyped, deleted, or part of an older archive removed when we upgraded the UDMIDEAS platform. Let&apos;s get you back to the right place.
         </p>
 
-        {/* Requested Path Pill */}
+        {/* Requested Path Display */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white/[0.04] border border-white/10 text-xs font-mono text-slate-400 mb-9 max-w-full overflow-hidden">
           <SearchX className="w-3.5 h-3.5 text-slate-500 shrink-0" />
           <span className="truncate">{displayPath}</span>
