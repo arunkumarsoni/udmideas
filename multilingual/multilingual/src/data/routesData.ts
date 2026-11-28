@@ -2905,6 +2905,61 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   }
 };
 
+export const VALID_US_STATE_SLUGS = new Set<string>([
+  'alabama', 'alaska', 'arizona', 'arkansas', 'california',
+  'colorado', 'connecticut', 'delaware', 'florida', 'georgia',
+  'hawaii', 'idaho', 'illinois', 'indiana', 'iowa',
+  'kansas', 'kentucky', 'louisiana', 'maine', 'maryland',
+  'massachusetts', 'michigan', 'minnesota', 'mississippi', 'missouri',
+  'montana', 'nebraska', 'nevada', 'new-hampshire', 'new-jersey',
+  'new-mexico', 'new-york', 'north-carolina', 'north-dakota', 'ohio',
+  'oklahoma', 'oregon', 'pennsylvania', 'rhode-island', 'south-carolina',
+  'south-dakota', 'tennessee', 'texas', 'utah', 'vermont',
+  'virginia', 'washington', 'west-virginia', 'wisconsin', 'wyoming'
+]);
+
+/**
+ * Returns true if a URL path matches legacy Blogger patterns
+ * (e.g., /*.html, /search/*, /p/*, /feeds/*, /2019/05/...) or /404/.
+ */
+export function isLegacyBloggerPath(rawPath: string): boolean {
+  const p = rawPath.toLowerCase();
+  return (
+    p === '/404' ||
+    p === '/404/' ||
+    p.endsWith('.html') ||
+    p.endsWith('.html/') ||
+    p === '/search' ||
+    p.startsWith('/search/') ||
+    p.startsWith('/p/') ||
+    p === '/feeds' ||
+    p.startsWith('/feeds/') ||
+    p.startsWith('/b/') ||
+    /^\/20[0-2][0-9]\//.test(p)
+  );
+}
+
+/**
+ * Returns true only for known standalone routes in ALL_PAGES or the 50 valid US states.
+ */
+export function isValidStandalonePath(path: string): boolean {
+  if (isLegacyBloggerPath(path)) return false;
+
+  const cleanPath = path.toLowerCase().replace(/%20/g, '-').replace(/ /g, '-');
+  const normalized = cleanPath.endsWith('/') ? cleanPath : `${cleanPath}/`;
+
+  if (ALL_PAGES[normalized]) {
+    return true;
+  }
+
+  const stateMatch = normalized.match(/^\/([a-z-]+)\/$/);
+  if (stateMatch && VALID_US_STATE_SLUGS.has(stateMatch[1])) {
+    return true;
+  }
+
+  return false;
+}
+
 // Helper function to generate generic state/country/blog pages dynamically if not listed
 export function getPageMetadata(path: string): PageSEO {
   // Normalize path
@@ -2915,9 +2970,9 @@ export function getPageMetadata(path: string): PageSEO {
     return ALL_PAGES[normalized];
   }
 
-  // Check if it matches a USA state
+  // Check if it matches one of the 50 official US states
   const stateMatch = normalized.match(/^\/([a-z-]+)\/$/);
-  if (stateMatch) {
+  if (stateMatch && VALID_US_STATE_SLUGS.has(stateMatch[1])) {
     const slug = stateMatch[1];
     const formattedName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 

@@ -21,10 +21,10 @@ import { BlogDetailPage } from './components/BlogDetailPage';
 import { CaseStudiesPage } from './components/CaseStudiesPage';
 import { CaseStudyDetailPage } from './components/CaseStudyDetailPage';
 import { StandalonePageView } from './components/StandalonePageView';
+import { NotFound } from './components/NotFound';
 import { ContactModal } from './components/ContactModal';
 import { BLOG_POSTS, CASE_STUDIES } from './data/contentData';
-import { ALL_PAGES } from './data/routesData';
-import { BlogPost, CaseStudy } from './types';
+import { isLegacyBloggerPath, isValidStandalonePath } from './data/routesData';
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState<string>(() => {
@@ -67,32 +67,51 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Route matching logic
-  // Check if currentPath is a blog detail page
-  const matchedBlog = BLOG_POSTS.find((b) => {
-    const slug = b.slug.toLowerCase();
-    const custom = b.customUrl ? b.customUrl.toLowerCase() : '';
-    return (
-      currentPath === `/blog/${slug}/` ||
-      currentPath === `/${slug}/` ||
-      (custom && currentPath === custom) ||
-      currentPath.includes(slug)
-    );
-  });
+  const navigateToServicesSection = () => {
+    if (window.location.pathname !== '/') {
+      window.history.pushState({}, '', '/#multilingual-services');
+      setCurrentPath('/');
+      setTimeout(() => {
+        const el = document.getElementById('multilingual-services');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 120);
+    } else {
+      const el = document.getElementById('multilingual-services');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-  // Check if currentPath is a case study detail page
-  const matchedCaseStudy = CASE_STUDIES.find((cs) => {
-    const slug = (cs.slug || cs.id).toLowerCase();
-    return (
-      currentPath === `/case-study/${slug}/` ||
-      currentPath === `/${slug}/` ||
-      currentPath.includes(slug)
-    );
-  });
+  // Route matching logic
+  const isLegacyOrExplicit404 = isLegacyBloggerPath(currentPath);
+
+  // Check if currentPath is a blog detail page (never match legacy Blogger URLs)
+  const matchedBlog = isLegacyOrExplicit404
+    ? undefined
+    : BLOG_POSTS.find((b) => {
+        const slug = b.slug.toLowerCase();
+        const custom = b.customUrl ? b.customUrl.toLowerCase() : '';
+        return (
+          currentPath === `/blog/${slug}/` ||
+          currentPath === `/${slug}/` ||
+          (custom && currentPath === custom)
+        );
+      });
+
+  // Check if currentPath is a case study detail page (never match legacy Blogger URLs)
+  const matchedCaseStudy = isLegacyOrExplicit404
+    ? undefined
+    : CASE_STUDIES.find((cs) => {
+        const slug = (cs.slug || cs.id).toLowerCase();
+        return (
+          currentPath === `/case-study/${slug}/` ||
+          currentPath === `/${slug}/`
+        );
+      });
 
   const isHome = currentPath === '/';
   const isBlogListing = currentPath === '/blog/';
   const isCaseStudiesListing = currentPath === '/case-studies/';
+  const isValidStandalone = !isLegacyOrExplicit404 && isValidStandalonePath(currentPath);
 
   useEffect(() => {
     if (isHome) {
@@ -102,6 +121,13 @@ export default function App() {
       const ogTitle = document.querySelector('meta[property="og:title"]');
       if (ogTitle) {
         ogTitle.setAttribute('content', homeTitle);
+      }
+
+      if (window.location.hash === '#multilingual-services') {
+        setTimeout(() => {
+          const el = document.getElementById('multilingual-services');
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
       }
     }
   }, [isHome]);
@@ -195,12 +221,22 @@ export default function App() {
           {/* Frequently Asked Questions Section (Added before Footer with 20 unique Q&As) */}
           <FaqSection onOpenContact={() => setIsContactModalOpen(true)} />
         </main>
-      ) : (
-        /* Standalone Separate Web Page for any of the requested URLs */
+      ) : isValidStandalone ? (
+        /* Standalone Separate Web Page for verified valid URLs */
         <main className="flex-grow">
           <StandalonePageView
             path={currentPath}
             onNavigateHome={() => navigateTo('/')}
+            onNavigateTo={(p) => navigateTo(p)}
+          />
+        </main>
+      ) : (
+        /* Catch-all 404 route (path="*") for legacy Blogger URLs & unknown paths */
+        <main className="flex-grow">
+          <NotFound
+            requestedPath={currentPath}
+            onGoHome={() => navigateTo('/')}
+            onGoServices={navigateToServicesSection}
             onNavigateTo={(p) => navigateTo(p)}
           />
         </main>

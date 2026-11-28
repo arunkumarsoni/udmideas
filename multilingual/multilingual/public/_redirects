@@ -1,0 +1,18 @@
+# Cloudflare Pages _redirects configuration for UDMIDEAS
+# Legacy Blogger URLs — return HTTP 404 before SPA fallback so search engines de-index retired archive URLs cleanly
+
+/*.html         /404.html   404
+/search/*       /404.html   404
+/search         /404.html   404
+/p/*            /404.html   404
+/feeds/*        /404.html   404
+/feeds          /404.html   404
+/b/*            /404.html   404
+/200*/*         /404.html   404
+/201*/*         /404.html   404
+/202*/*         /404.html   404
+/404            /404.html   404
+/404/           /404.html   404
+
+# SPA fallback for all valid React application routes
+/*              /index.html 200
