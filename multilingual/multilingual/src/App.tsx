@@ -46,6 +46,8 @@ function normalizeRoutePath(rawPath: string): string {
   return lower.endsWith('/') ? lower : `${lower}/`;
 }
 
+const STRICT_SLUG_REGEX = /^[a-z0-9-]+$/;
+
 const BlogSlugRoute: React.FC<RouteHelpersProps> = ({
   onNavigateTo,
   onGoServices,
@@ -56,7 +58,9 @@ const BlogSlugRoute: React.FC<RouteHelpersProps> = ({
   const cleanSlug = (slug || '').toLowerCase();
 
   const matchedBlog =
-    !cleanSlug || isLegacyBloggerPath(`/blog/${cleanSlug}/`)
+    !cleanSlug ||
+    !STRICT_SLUG_REGEX.test(cleanSlug) ||
+    isLegacyBloggerPath(`/blog/${cleanSlug}/`)
       ? undefined
       : BLOG_POSTS.find((b) => b.slug.toLowerCase() === cleanSlug);
 
@@ -91,7 +95,9 @@ const CaseStudySlugRoute: React.FC<RouteHelpersProps> = ({
   const cleanSlug = (slug || '').toLowerCase();
 
   const matchedCaseStudy =
-    !cleanSlug || isLegacyBloggerPath(`/case-study/${cleanSlug}/`)
+    !cleanSlug ||
+    !STRICT_SLUG_REGEX.test(cleanSlug) ||
+    isLegacyBloggerPath(`/case-study/${cleanSlug}/`)
       ? undefined
       : CASE_STUDIES.find((cs) => (cs.slug || cs.id).toLowerCase() === cleanSlug);
 
@@ -123,11 +129,11 @@ const DynamicSlugRoute: React.FC<RouteHelpersProps> = ({
 }) => {
   const { slug } = useParams<{ slug: string }>();
   const location = useLocation();
-  const cleanSlug = (slug || '').toLowerCase().replace(/%20/g, '-').replace(/ /g, '-');
+  const cleanSlug = (slug || '').toLowerCase();
   const normalized = cleanSlug ? `/${cleanSlug}/` : '';
 
-  // Reject empty slugs and legacy Blogger / .html patterns immediately
-  if (!cleanSlug || isLegacyBloggerPath(normalized)) {
+  // Reject empty, malformed (spaces, dots, .html), or legacy Blogger slugs immediately
+  if (!cleanSlug || !STRICT_SLUG_REGEX.test(cleanSlug) || isLegacyBloggerPath(normalized)) {
     return (
       <NotFound
         requestedPath={location.pathname}
@@ -138,12 +144,10 @@ const DynamicSlugRoute: React.FC<RouteHelpersProps> = ({
     );
   }
 
-  // 1. Strict match against root-level blog slugs or customUrls
-  const matchedBlog = BLOG_POSTS.find((b) => {
-    const blogSlug = b.slug.toLowerCase();
-    const customUrl = b.customUrl ? b.customUrl.toLowerCase() : '';
-    return blogSlug === cleanSlug || (customUrl && customUrl === normalized);
-  });
+  // 1. Strict whitelist match against explicitly defined root-level blog customUrls
+  const matchedBlog = BLOG_POSTS.find(
+    (b) => Boolean(b.customUrl) && b.customUrl!.toLowerCase() === normalized
+  );
 
   if (matchedBlog) {
     return (
@@ -156,23 +160,7 @@ const DynamicSlugRoute: React.FC<RouteHelpersProps> = ({
     );
   }
 
-  // 2. Strict match against root-level case study slugs
-  const matchedCaseStudy = CASE_STUDIES.find(
-    (cs) => (cs.slug || cs.id).toLowerCase() === cleanSlug
-  );
-
-  if (matchedCaseStudy) {
-    return (
-      <CaseStudyDetailPage
-        caseStudy={matchedCaseStudy}
-        onBack={() => onNavigateTo('/case-studies/')}
-        onSelectCaseStudy={(cs) => onNavigateTo(`/case-study/${cs.slug || cs.id}/`)}
-        onOpenContact={onOpenContact}
-      />
-    );
-  }
-
-  // 3. Strict match against verified standalone pages (ALL_PAGES or 50 US states)
+  // 2. Strict whitelist match against explicit predefined entries in ALL_PAGES
   const matchedPage = findPageMetadata(normalized);
   if (matchedPage) {
     return (
@@ -184,7 +172,7 @@ const DynamicSlugRoute: React.FC<RouteHelpersProps> = ({
     );
   }
 
-  // 4. Any unmatched single-segment slug strictly renders 404 NotFound
+  // 3. Any unmatched slug strictly renders 404 NotFound (zero auto-generated pages)
   return (
     <NotFound
       requestedPath={location.pathname}
