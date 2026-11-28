@@ -82,7 +82,8 @@ export default function App() {
   };
 
   // Route matching logic
-  const isLegacyOrExplicit404 = isLegacyBloggerPath(currentPath);
+  const isExplicit404Route = currentPath === '/404/' || currentPath === '/404';
+  const isLegacyOrExplicit404 = isExplicit404Route || isLegacyBloggerPath(currentPath);
 
   // Check if currentPath is a blog detail page (never match legacy Blogger URLs)
   const matchedBlog = isLegacyOrExplicit404
@@ -138,7 +139,17 @@ export default function App() {
       <Navbar currentPath={currentPath} />
 
       {/* Main View Router */}
-      {isCaseStudiesListing ? (
+      {isExplicit404Route ? (
+        /* Explicit /404 route */
+        <main className="flex-grow">
+          <NotFound
+            requestedPath={currentPath}
+            onGoHome={() => navigateTo('/')}
+            onGoServices={navigateToServicesSection}
+            onNavigateTo={(p) => navigateTo(p)}
+          />
+        </main>
+      ) : isCaseStudiesListing ? (
         <main className="flex-grow">
           <CaseStudiesPage
             onBackToHome={() => navigateTo('/')}
