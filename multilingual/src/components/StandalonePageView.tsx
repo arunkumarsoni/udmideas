@@ -16,7 +16,8 @@ import {
   Sparkles,
   ExternalLink
 } from 'lucide-react';
-import { PageSEO, getPageMetadata } from '../data/routesData';
+import { findPageMetadata } from '../data/routesData';
+import { NotFound } from './NotFound';
 import { USA_STATES, LATAM_COUNTRIES, EU_COUNTRIES, ARABIC_COUNTRIES } from '../data/contentData';
 import { WebsiteDesignServicesContent } from './WebsiteDesignServicesContent';
 import { DigitalMarketingServicesContent } from './DigitalMarketingServicesContent';
@@ -65,6 +66,10 @@ import { GeorgiaServicesContent } from './GeorgiaServicesContent';
 import { NorthCarolinaServicesContent } from './NorthCarolinaServicesContent';
 import { MichiganServicesContent } from './MichiganServicesContent';
 import { TeamPageContent } from './TeamPageContent';
+import { LatamServicesContent } from './LatamServicesContent';
+import { EuServicesContent } from './EuServicesContent';
+import { UsaServicesContent } from './UsaServicesContent';
+import { ArabWorldServicesContent } from './ArabWorldServicesContent';
 import { ConsultationForm } from './ConsultationForm';
 
 interface StandalonePageViewProps {
@@ -78,60 +83,69 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
   onNavigateHome,
   onNavigateTo
 }) => {
-  const page = getPageMetadata(path);
+  const page = findPageMetadata(path);
+  const pagePath = page?.path ?? '';
   const isCustomServicePage =
-    page.path === '/digital-marketing-services/' ||
-    page.path === '/website-design-development/' ||
-    page.path === '/multilingual-search-engine-optimization/' ||
-    page.path === '/answer-engine-optimization/' ||
-    page.path === '/generative-engine-optimization/' ||
-    page.path === '/social-media-marketing/' ||
-    page.path === '/pay-per-click/' ||
-    page.path === '/brazil/' ||
-    page.path === '/colombia/' ||
-    page.path === '/chile/' ||
-    page.path === '/ecuador/' ||
-    page.path === '/panama/' ||
-    page.path === '/israel/' ||
-    page.path === '/mexico/' ||
-    page.path === '/argentina/' ||
-    page.path === '/peru/' ||
-    page.path === '/costa-rica/' ||
-    page.path === '/uruguay/' ||
-    page.path === '/dominican-republic/' ||
-    page.path === '/guatemala/' ||
-    page.path === '/france/' ||
-    page.path === '/germany/' ||
-    page.path === '/spain/' ||
-    page.path === '/switzerland/' ||
-    page.path === '/poland/' ||
-    page.path === '/uae/' ||
-    page.path === '/oman/' ||
-    page.path === '/iran/' ||
-    page.path === '/bahrain/' ||
-    page.path === '/yemen/' ||
-    page.path === '/saudi-arabia/' ||
-    page.path === '/qatar/' ||
-    page.path === '/morocco/' ||
-    page.path === '/egypt/' ||
-    page.path === '/iraq/' ||
-    page.path === '/about-us/' ||
-    page.path === '/new-york/' ||
-    page.path === '/california/' ||
-    page.path === '/texas/' ||
-    page.path === '/florida/' ||
-    page.path === '/illinois/' ||
-    page.path === '/pennsylvania/' ||
-    page.path === '/ohio/' ||
-    page.path === '/georgia/' ||
-    page.path === '/north-carolina/' ||
-    page.path === '/michigan/' ||
-    page.path === '/team/';
+    pagePath === '/digital-marketing-services/' ||
+    pagePath === '/website-design-development/' ||
+    pagePath === '/multilingual-search-engine-optimization/' ||
+    pagePath === '/answer-engine-optimization/' ||
+    pagePath === '/generative-engine-optimization/' ||
+    pagePath === '/social-media-marketing/' ||
+    pagePath === '/pay-per-click/' ||
+    pagePath === '/brazil/' ||
+    pagePath === '/colombia/' ||
+    pagePath === '/chile/' ||
+    pagePath === '/ecuador/' ||
+    pagePath === '/panama/' ||
+    pagePath === '/israel/' ||
+    pagePath === '/mexico/' ||
+    pagePath === '/argentina/' ||
+    pagePath === '/peru/' ||
+    pagePath === '/costa-rica/' ||
+    pagePath === '/uruguay/' ||
+    pagePath === '/dominican-republic/' ||
+    pagePath === '/guatemala/' ||
+    pagePath === '/france/' ||
+    pagePath === '/germany/' ||
+    pagePath === '/spain/' ||
+    pagePath === '/switzerland/' ||
+    pagePath === '/poland/' ||
+    pagePath === '/uae/' ||
+    pagePath === '/oman/' ||
+    pagePath === '/iran/' ||
+    pagePath === '/bahrain/' ||
+    pagePath === '/yemen/' ||
+    pagePath === '/saudi-arabia/' ||
+    pagePath === '/qatar/' ||
+    pagePath === '/morocco/' ||
+    pagePath === '/egypt/' ||
+    pagePath === '/iraq/' ||
+    pagePath === '/about-us/' ||
+    pagePath === '/new-york/' ||
+    pagePath === '/california/' ||
+    pagePath === '/texas/' ||
+    pagePath === '/florida/' ||
+    pagePath === '/illinois/' ||
+    pagePath === '/pennsylvania/' ||
+    pagePath === '/ohio/' ||
+    pagePath === '/georgia/' ||
+    pagePath === '/north-carolina/' ||
+    pagePath === '/michigan/' ||
+    pagePath === '/team/' ||
+    pagePath === '/latam/' ||
+    pagePath === '/eu/' ||
+    pagePath === '/usa/' ||
+    pagePath === '/arab-world/';
 
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
+  void openFaqIndex;
+  void setOpenFaqIndex;
 
   // Update dynamic SEO meta tags in head for this exact page
   useEffect(() => {
+    if (!page) return;
+
     document.title = page.title;
 
     // Update or insert meta description
@@ -144,10 +158,10 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     metaDesc.setAttribute('content', page.description);
 
     // Update OpenGraph tags
-    let ogTitle = document.querySelector('meta[property="og:title"]');
+    const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) ogTitle.setAttribute('content', page.title);
 
-    let ogDesc = document.querySelector('meta[property="og:description"]');
+    const ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) ogDesc.setAttribute('content', page.description);
 
     let ogUrl = document.querySelector('meta[property="og:url"]');
@@ -170,6 +184,17 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [page]);
+
+  if (!page) {
+    return (
+      <NotFound
+        requestedPath={path}
+        onGoHome={onNavigateHome}
+        onGoServices={() => onNavigateTo('/#multilingual-services')}
+        onNavigateTo={onNavigateTo}
+      />
+    );
+  }
 
   return (
     <article className="pt-28 pb-24 min-h-screen bg-[#F8FAFC] text-[#475569] text-left">
@@ -209,7 +234,7 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         </nav>
 
         {/* Hero Section (omitted on dedicated custom country pages that render their own hero section) */}
-        {page.path !== '/ecuador/' && page.path !== '/israel/' && page.path !== '/mexico/' && page.path !== '/argentina/' && page.path !== '/peru/' && page.path !== '/costa-rica/' && page.path !== '/uruguay/' && page.path !== '/dominican-republic/' && page.path !== '/guatemala/' && page.path !== '/france/' && page.path !== '/germany/' && page.path !== '/spain/' && page.path !== '/switzerland/' && page.path !== '/poland/' && page.path !== '/uae/' && page.path !== '/oman/' && page.path !== '/iran/' && page.path !== '/bahrain/' && page.path !== '/yemen/' && page.path !== '/saudi-arabia/' && page.path !== '/qatar/' && page.path !== '/morocco/' && page.path !== '/egypt/' && page.path !== '/iraq/' && page.path !== '/about-us/' && page.path !== '/new-york/' && page.path !== '/california/' && page.path !== '/texas/' && page.path !== '/florida/' && page.path !== '/illinois/' && page.path !== '/pennsylvania/' && page.path !== '/ohio/' && page.path !== '/georgia/' && page.path !== '/north-carolina/' && page.path !== '/michigan/' && (
+        {page.path !== '/arab-world/' && page.path !== '/usa/' && page.path !== '/eu/' && page.path !== '/latam/' && page.path !== '/ecuador/' && page.path !== '/israel/' && page.path !== '/mexico/' && page.path !== '/argentina/' && page.path !== '/peru/' && page.path !== '/costa-rica/' && page.path !== '/uruguay/' && page.path !== '/dominican-republic/' && page.path !== '/guatemala/' && page.path !== '/france/' && page.path !== '/germany/' && page.path !== '/spain/' && page.path !== '/switzerland/' && page.path !== '/poland/' && page.path !== '/uae/' && page.path !== '/oman/' && page.path !== '/iran/' && page.path !== '/bahrain/' && page.path !== '/yemen/' && page.path !== '/saudi-arabia/' && page.path !== '/qatar/' && page.path !== '/morocco/' && page.path !== '/egypt/' && page.path !== '/iraq/' && page.path !== '/about-us/' && page.path !== '/new-york/' && page.path !== '/california/' && page.path !== '/texas/' && page.path !== '/florida/' && page.path !== '/illinois/' && page.path !== '/pennsylvania/' && page.path !== '/ohio/' && page.path !== '/georgia/' && page.path !== '/north-carolina/' && page.path !== '/michigan/' && (
           <header className="max-w-4xl space-y-4 mb-12">
             <div className="flex flex-wrap items-center gap-2 text-xs text-[#475569]">
               <span className="font-semibold text-[#1D4ED8] bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200/80 uppercase tracking-[0.06em]">
@@ -298,6 +323,20 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         {page.path === '/pay-per-click/' && (
           <div className="mb-16">
             <PpcServicesContent />
+          </div>
+        )}
+
+        {/* USA eCommerce Website Development & SEO Content (All 50 States & Cities) */}
+        {page.path === '/usa/' && (
+          <div className="mb-16">
+            <UsaServicesContent />
+          </div>
+        )}
+
+        {/* LATAM eCommerce Website Development, SEO & Digital Marketing Content */}
+        {page.path === '/latam/' && (
+          <div className="mb-16">
+            <LatamServicesContent />
           </div>
         )}
 
@@ -392,6 +431,13 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
           </div>
         )}
 
+        {/* European Union eCommerce Website Development & Multilingual SEO Content */}
+        {page.path === '/eu/' && (
+          <div className="mb-16">
+            <EuServicesContent />
+          </div>
+        )}
+
         {/* France Website Design, Development & French SEO Content */}
         {page.path === '/france/' && (
           <div className="mb-16">
@@ -424,6 +470,13 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
         {page.path === '/poland/' && (
           <div className="mb-16">
             <PolandServicesContent />
+          </div>
+        )}
+
+        {/* Arab World RTL eCommerce Website Development & Arabic SEO Content */}
+        {page.path === '/arab-world/' && (
+          <div className="mb-16">
+            <ArabWorldServicesContent />
           </div>
         )}
 

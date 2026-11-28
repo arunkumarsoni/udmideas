@@ -1420,11 +1420,11 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   },
   '/usa/': {
     path: '/usa/',
-    title: 'USA Web Design & National SEO Services | NYC 10001 | UDMIDEAS',
-    description: 'UDMIDEAS USA headquarters in New York, NY 10001. Providing custom web development, nationwide SEO, AEO, and multi-state PPC across all 50 states.',
-    kicker: 'USA Headquarters',
-    heading: 'United States Custom Web Engineering & Growth Marketing.',
-    subheading: 'Headquartered in Midtown Manhattan (NYC 10001), UDMIDEAS delivers high-performance website engineering and data-driven marketing across all 50 US states.',
+    title: 'USA eCommerce Website Development & SEO in All 50 States & Cities | UDMIDEAS',
+    description: 'UDMIDEAS builds custom eCommerce websites and delivers SEO, Local SEO, PPC, AEO, GEO & social media marketing across all 50 US states and major cities with sales tax, WCAG 2.1 AA & CCPA setup.',
+    kicker: 'USA Nationwide Focus',
+    heading: 'UDMIDEAS USA eCommerce Website Development & SEO - Digital Marketing Services in All States and Cities',
+    subheading: 'Custom-coded React JS, Shopify, WooCommerce, BigCommerce & Magento stores, nationwide & city-level SEO, Google Shopping PPC, AEO, GEO, and sales tax/payment setup across all 50 US states.',
     category: 'region',
     canonicalUrl: `${CANONICAL_BASE}/usa/`,
     schemaType: 'Place',
@@ -1446,11 +1446,11 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   },
   '/latam/': {
     path: '/latam/',
-    title: 'LATAM Multilingual Web Design & Marketing Services | UDMIDEAS',
-    description: 'Custom website development and digital marketing for Latin America: Brazil, Mexico, Colombia, Argentina, Chile, Peru. Native Spanish & Portuguese checkout integrations.',
-    kicker: 'Regional Focus',
-    heading: 'Latin America (LATAM) Custom Web & eCommerce Solutions.',
-    subheading: 'Empowering service-based and eCommerce businesses across Latin America with localized payment checkouts (Pix, MercadoPago, Oxxo), lightweight mobile performance, and WhatsApp commerce.',
+    title: 'LATAM eCommerce Website Development, SEO & Digital Marketing | UDMIDEAS',
+    description: 'UDMIDEAS builds custom eCommerce & service websites and ranks online stores across Latin America (Brazil, Mexico, Argentina, Colombia, Chile) in Spanish & Portuguese with Pix, OXXO, Boleto & Mercado Pago.',
+    kicker: 'Latin America (LATAM) Focus',
+    heading: 'LATAM eCommerce Website Development, Multilingual SEO & Digital Marketing.',
+    subheading: 'Custom-coded online stores, localized Spanish & Portuguese SEO, Pix/OXXO/Boleto/Mercado Pago checkout integrations, PPC, AEO, GEO, and video marketing across Latin America.',
     category: 'region',
     canonicalUrl: `${CANONICAL_BASE}/latam/`,
     schemaType: 'Place',
@@ -1826,11 +1826,11 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   },
   '/eu/': {
     path: '/eu/',
-    title: 'European Union Web Design & Multilingual SEO | UDMIDEAS',
-    description: 'GDPR-compliant custom web engineering and international SEO for France, Germany, Spain, Switzerland, and Poland. Sub-second Core Web Vitals across Europe.',
-    kicker: 'Regional Focus',
-    heading: 'European Union (EU) Custom Web Engineering & SEO.',
-    subheading: 'Engineering strictly GDPR-compliant, high-speed multilingual websites and search campaigns calibrated to French, German, Spanish, Swiss, and Polish commercial habits.',
+    title: 'European Union eCommerce Website Development & Multilingual SEO | UDMIDEAS',
+    description: 'UDMIDEAS builds custom eCommerce & service websites and runs multilingual SEO, PPC, AEO, and GEO across Germany, France, Spain, Italy, Netherlands & the EU with GDPR, VAT/OSS & local payments.',
+    kicker: 'European Union (EU) Focus',
+    heading: 'UDMIDEAS European Union eCommerce Website Development & Multilingual SEO - Digital Marketing Services',
+    subheading: 'Custom-coded EU online stores, native German, French, Spanish, Italian & Dutch SEO, GDPR/VAT/OSS setup, iDEAL/Klarna/Bizum/CB/SEPA payments, PPC, AEO & GEO.',
     category: 'region',
     canonicalUrl: `${CANONICAL_BASE}/eu/`,
     schemaType: 'Place',
@@ -2287,11 +2287,11 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   },
   '/arab-world/': {
     path: '/arab-world/',
-    title: 'Arabic World & GCC Web Design & Digital Marketing | UDMIDEAS',
-    description: 'Expert bi-directional Arabic (RTL) website design, custom software development, and digital marketing across UAE, Saudi Arabia, Qatar, Oman, Kuwait, Egypt.',
-    kicker: 'Regional Focus',
-    heading: 'Arabic World & GCC Bi-Directional Web Engineering.',
-    subheading: 'Mastery of true Right-to-Left (RTL) layouts, native Arabic typography, and culturally calibrated digital marketing across Dubai, Riyadh, Doha, and the MENA region.',
+    title: 'Arab World eCommerce Website Development & Arabic SEO Services | UDMIDEAS',
+    description: 'UDMIDEAS builds right-to-left (RTL) Arabic eCommerce websites and runs native Arabic SEO, PPC, Snapchat, TikTok, AEO & GEO across GCC, Levant, Nile Valley, Maghreb, Iraq & Yemen with mada, KNET, Tabby & Fawry.',
+    kicker: 'Arab World Focus',
+    heading: 'UDMIDEAS Arab World eCommerce Website Development & SEO - Arabic Digital Marketing Services',
+    subheading: 'True RTL Arabic online stores in React JS, Shopify, WooCommerce, Magento, Salla & Zid, dialect-aware Arabic SEO, Snapchat/TikTok/Google Ads, AEO, GEO & regional payment integrations.',
     category: 'region',
     canonicalUrl: `${CANONICAL_BASE}/arab-world/`,
     schemaType: 'Place',
@@ -2825,6 +2825,266 @@ export const ALL_PAGES: Record<string, PageSEO> = {
       { q: 'Do you serve businesses in the Upper Peninsula?', a: 'Yes. Our services are available throughout Michigan, including the Upper Peninsula, Traverse City Region, Detroit Region and all other business regions.' }
     ]
   },
+  '/new-jersey/': {
+    path: '/new-jersey/',
+    title: 'New Jersey Web Design, Development & Multilingual SEO | UDMIDEAS',
+    description: 'Custom website design, React/Laravel engineering, and multilingual SEO services for businesses in New Jersey. Local Hazlet, NJ & NYC 10001 offices serving Newark, Jersey City, Hoboken, Edison, Princeton, and statewide.',
+    kicker: 'USA State Strategy',
+    heading: 'New Jersey Custom Web Design & Multilingual Digital Marketing.',
+    subheading: 'Accelerating service-based and eCommerce companies across New Jersey from our Hazlet, NJ and Manhattan NY 10001 offices with custom-coded React, WordPress, Laravel, and Magento websites.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/new-jersey/`,
+    schemaType: 'LocalBusiness',
+    keyHighlights: [
+      'Direct New Jersey presence (Hazlet, NJ 07730) paired with our NYC 10001 headquarters',
+      '100% custom-coded React, WordPress, Laravel, and Magento websites delivering 95+ Core Web Vitals',
+      'Multilingual SEO, AEO, GEO, SMM, and Google/Meta PPC campaigns for New Jersey markets',
+      'Direct strategy consultation with Founder Arun (+91-9521186150)'
+    ],
+    features: [
+      { title: 'New Jersey Regional Coverage', desc: 'Serving Newark, Jersey City, Hoboken, Edison, Princeton, Cherry Hill, and every NJ commercial corridor.' },
+      { title: 'Custom Coding Only', desc: 'Zero bloated page-builder templates—clean architecture engineered for leads and eCommerce conversions.' },
+      { title: 'Full-Funnel Digital Marketing', desc: 'Organic local & national SEO paired with high-ROAS Google Shopping, Search, and Meta Ads.' }
+    ],
+    languages: ['English', 'Spanish'],
+    faq: [
+      { q: 'Does UDMIDEAS have a physical presence in New Jersey?', a: 'Yes. Alongside our New York City headquarters, UDMIDEAS maintains an office at 11 Sams Trailer Ct, Hazlet, NJ 07730 serving New Jersey businesses directly.' }
+    ]
+  },
+  '/virginia/': {
+    path: '/virginia/',
+    title: 'Virginia Web Design, Development & Multilingual SEO | UDMIDEAS',
+    description: 'Custom website design, React/Laravel engineering, and localized SEO services for businesses in Virginia including Northern Virginia, Richmond, Virginia Beach, Arlington, and Alexandria.',
+    kicker: 'USA State Strategy',
+    heading: 'Virginia Custom Web Design & Digital Marketing.',
+    subheading: 'Accelerating service-based, B2B, and eCommerce companies in Virginia with custom-coded React, WordPress, Laravel, and Magento architectures paired with targeted Google Ads and SEO.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/virginia/`,
+    schemaType: 'Place',
+    keyHighlights: [
+      'Targeted web engineering and digital marketing for Northern Virginia, Richmond, Virginia Beach, and statewide businesses',
+      '100% custom-coded architecture delivering fast mobile speeds and 95+ Core Web Vitals',
+      'Multilingual SEO, AEO, GEO, and paid search campaigns built for measurable revenue',
+      'Direct consultation with Founder Arun via WhatsApp (+91-9521186150) and scheduled video calls'
+    ],
+    features: [
+      { title: 'Statewide Virginia Reach', desc: 'Capturing high-intent buyers across Arlington, Alexandria, Tysons, Richmond, Norfolk, and Virginia Beach.' },
+      { title: 'Custom Coding Only', desc: 'Zero bloated themes or third-party page builders that slow down user conversions.' },
+      { title: 'Full-Funnel Acquisition', desc: 'Combining organic search visibility with high-ROAS paid media across Google and Meta.' }
+    ],
+    languages: ['English', 'Spanish'],
+    faq: [
+      { q: 'Do you work with B2B and eCommerce businesses across Virginia?', a: 'Yes. UDMIDEAS builds custom websites and manages SEO, AEO, GEO, and PPC campaigns for Virginia service providers, SaaS teams, and online stores.' }
+    ]
+  },
+  '/washington/': {
+    path: '/washington/',
+    title: 'Washington State Web Design, Development & SEO | UDMIDEAS',
+    description: 'Custom website design, React/Laravel engineering, and multilingual SEO services for businesses in Washington State including Seattle, Bellevue, Tacoma, Spokane, and Vancouver.',
+    kicker: 'USA State Strategy',
+    heading: 'Washington Custom Web Design & Digital Marketing.',
+    subheading: 'Accelerating technology, service-based, and eCommerce companies in Washington with custom-coded React, WordPress, Laravel, and Magento architectures paired with targeted Google Ads and SEO.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/washington/`,
+    schemaType: 'Place',
+    keyHighlights: [
+      'Custom web development and SEO tailored for Seattle, Bellevue, Tacoma, Spokane, and statewide Washington companies',
+      '100% custom-coded architecture delivering sub-second load times and 95+ Core Web Vitals',
+      'Multilingual SEO, AEO, GEO, and high-converting PPC campaigns',
+      'Direct consultation with Founder Arun via WhatsApp (+91-9521186150) and scheduled video calls'
+    ],
+    features: [
+      { title: 'Pacific Northwest Market Reach', desc: 'Capturing commercial buyers across Seattle, Bellevue, Redmond, Tacoma, and Spokane.' },
+      { title: 'Custom Coding Only', desc: 'Clean, maintainable codebases engineered in React JS, Laravel, PHP, WordPress, and Magento.' },
+      { title: 'Full-Funnel Acquisition', desc: 'Combining technical SEO with Google Shopping, Search, and LinkedIn paid campaigns.' }
+    ],
+    languages: ['English', 'Spanish'],
+    faq: [
+      { q: 'Do you provide remote web development and SEO for Washington businesses?', a: 'Yes. We collaborate directly with founders and marketing teams in Seattle, Bellevue, and across Washington via scheduled video calls and direct founder support.' }
+    ]
+  },
+  '/arizona/': {
+    path: '/arizona/',
+    title: 'Arizona Web Design, Development & Multilingual SEO | UDMIDEAS',
+    description: 'Custom website design, React/Laravel engineering, and English/Spanish SEO services for businesses in Arizona including Phoenix, Scottsdale, Tucson, Mesa, and Chandler.',
+    kicker: 'USA State Strategy',
+    heading: 'Arizona Custom Web Design & Digital Marketing.',
+    subheading: 'Accelerating service-based and eCommerce companies in Arizona with custom-coded React, WordPress, Laravel, and Magento architectures paired with bilingual English/Spanish SEO and Google Ads.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/arizona/`,
+    schemaType: 'Place',
+    keyHighlights: [
+      'Targeted web design and bilingual SEO for Phoenix, Scottsdale, Tucson, Mesa, Tempe, and Chandler',
+      '100% custom-coded architecture delivering sub-second load times and 95+ Core Web Vitals',
+      'English and Spanish local SEO, AEO, GEO, and Google/Meta Ads management',
+      'Direct consultation with Founder Arun via WhatsApp (+91-9521186150) and scheduled video calls'
+    ],
+    features: [
+      { title: 'Arizona Metro & Statewide Reach', desc: 'Capturing high-intent leads across Greater Phoenix, Scottsdale, and Tucson.' },
+      { title: 'Custom Coding Only', desc: 'Zero bloated templates—mobile-first custom websites engineered to convert.' },
+      { title: 'Bilingual Growth Marketing', desc: 'Full-funnel English and Spanish SEO paired with tightly managed PPC budgets.' }
+    ],
+    languages: ['English', 'Spanish'],
+    faq: [
+      { q: 'Can you rank our Arizona business in both English and Spanish?', a: 'Yes. We build native English and Spanish landing pages with proper hreflang tags and localized Arizona search terms.' }
+    ]
+  },
+  '/massachusetts/': {
+    path: '/massachusetts/',
+    title: 'Massachusetts Web Design, Development & SEO | UDMIDEAS',
+    description: 'Custom website design, React/Laravel engineering, and localized SEO services for businesses in Massachusetts including Boston, Cambridge, Worcester, and Springfield.',
+    kicker: 'USA State Strategy',
+    heading: 'Massachusetts Custom Web Design & Digital Marketing.',
+    subheading: 'Accelerating healthcare, biotech, B2B, and eCommerce companies in Massachusetts with custom-coded React, WordPress, Laravel, and Magento architectures paired with targeted Google Ads and SEO.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/massachusetts/`,
+    schemaType: 'Place',
+    keyHighlights: [
+      'Targeted web engineering and digital marketing for Boston, Cambridge, Worcester, and statewide Massachusetts clients',
+      '100% custom-coded architecture delivering sub-second load times and 95+ Core Web Vitals',
+      'Enterprise SEO, AEO, GEO, and B2B LinkedIn/Google Ads campaigns',
+      'Direct consultation with Founder Arun via WhatsApp (+91-9521186150) and scheduled video calls'
+    ],
+    features: [
+      { title: 'Greater Boston & New England Reach', desc: 'Capturing decision-makers across Boston, Cambridge, Quincy, Worcester, and Springfield.' },
+      { title: 'Custom Coding Only', desc: 'Bespoke React, WordPress, Laravel, and Magento builds with zero template bloat.' },
+      { title: 'Full-Funnel Acquisition', desc: 'Combining organic authority with measurable paid search and social campaigns.' }
+    ],
+    languages: ['English', 'Spanish'],
+    faq: [
+      { q: 'Does UDMIDEAS serve Boston and Massachusetts businesses?', a: 'Yes. From our East Coast hub in NYC 10001, we serve Massachusetts businesses across Boston, Cambridge, and statewide.' }
+    ]
+  },
+  '/tennessee/': {
+    path: '/tennessee/',
+    title: 'Tennessee Web Design, Development & SEO | UDMIDEAS',
+    description: 'Custom website design, React/Laravel engineering, and localized SEO services for businesses in Tennessee including Nashville, Memphis, Knoxville, and Chattanooga.',
+    kicker: 'USA State Strategy',
+    heading: 'Tennessee Custom Web Design & Digital Marketing.',
+    subheading: 'Accelerating service-based and eCommerce companies in Tennessee with custom-coded React, WordPress, Laravel, and Magento architectures paired with targeted Google Ads and SEO.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/tennessee/`,
+    schemaType: 'Place',
+    keyHighlights: [
+      'Targeted web design and digital marketing for Nashville, Memphis, Knoxville, and Chattanooga',
+      '100% custom-coded architecture delivering sub-second load times and 95+ Core Web Vitals',
+      'Local & national SEO, AEO, GEO, and high-ROAS Google/Meta Ads',
+      'Direct consultation with Founder Arun via WhatsApp (+91-9521186150) and scheduled video calls'
+    ],
+    features: [
+      { title: 'Tennessee Statewide Reach', desc: 'Capturing high-intent customers in Nashville, Memphis, Knoxville, Franklin, and Chattanooga.' },
+      { title: 'Custom Coding Only', desc: 'Zero bloated themes or third-party page builders that slow down user conversions.' },
+      { title: 'Full-Funnel Acquisition', desc: 'Combining organic search dominance with measurable paid acquisition.' }
+    ],
+    languages: ['English', 'Spanish'],
+    faq: [
+      { q: 'Do you build custom eCommerce and service websites for Tennessee companies?', a: 'Yes. We engineer custom stores and lead-generation websites for businesses across Nashville, Memphis, Knoxville, and statewide.' }
+    ]
+  },
+  '/indiana/': {
+    path: '/indiana/',
+    title: 'Indiana Web Design, Development & SEO | UDMIDEAS',
+    description: 'Custom website design, React/Laravel engineering, and localized SEO services for businesses in Indiana including Indianapolis, Fort Wayne, Evansville, and South Bend.',
+    kicker: 'USA State Strategy',
+    heading: 'Indiana Custom Web Design & Digital Marketing.',
+    subheading: 'Accelerating manufacturing, service-based, and eCommerce companies in Indiana with custom-coded React, WordPress, Laravel, and Magento architectures paired with targeted Google Ads and SEO.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/indiana/`,
+    schemaType: 'Place',
+    keyHighlights: [
+      'Targeted web design and digital marketing for Indianapolis, Fort Wayne, Evansville, and South Bend',
+      '100% custom-coded architecture delivering sub-second load times and 95+ Core Web Vitals',
+      'Technical SEO, AEO, GEO, and ROI-focused PPC campaign management',
+      'Direct consultation with Founder Arun via WhatsApp (+91-9521186150) and scheduled video calls'
+    ],
+    features: [
+      { title: 'Indiana Commercial Coverage', desc: 'Capturing high-intent leads across Indianapolis, Carmel, Fort Wayne, Bloomington, and statewide.' },
+      { title: 'Custom Coding Only', desc: 'Zero bloated templates—clean, fast, scalable custom engineering.' },
+      { title: 'Full-Funnel Acquisition', desc: 'Combining organic search rankings with targeted Google and Meta advertising.' }
+    ],
+    languages: ['English', 'Spanish'],
+    faq: [
+      { q: 'How do Indiana businesses get started with UDMIDEAS?', a: 'Submit the consultation form or message Founder Arun directly on WhatsApp (+91-9521186150) for a free website and SEO architecture review.' }
+    ]
+  },
+  '/missouri/': {
+    path: '/missouri/',
+    title: 'Missouri Web Design, Development & SEO | UDMIDEAS',
+    description: 'Custom website design, React/Laravel engineering, and localized SEO services for businesses in Missouri including Kansas City, St. Louis, Springfield, and Columbia.',
+    kicker: 'USA State Strategy',
+    heading: 'Missouri Custom Web Design & Digital Marketing.',
+    subheading: 'Accelerating service-based and eCommerce companies in Missouri with custom-coded React, WordPress, Laravel, and Magento architectures paired with targeted Google Ads and SEO.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/missouri/`,
+    schemaType: 'Place',
+    keyHighlights: [
+      'Targeted web design and digital marketing for Kansas City, St. Louis, Springfield, and Columbia',
+      '100% custom-coded architecture delivering sub-second load times and 95+ Core Web Vitals',
+      'Technical SEO, AEO, GEO, and conversion-focused Google/Meta PPC',
+      'Direct consultation with Founder Arun via WhatsApp (+91-9521186150) and scheduled video calls'
+    ],
+    features: [
+      { title: 'Missouri Statewide Reach', desc: 'Capturing commercial buyers across St. Louis, Kansas City, Springfield, and Columbia.' },
+      { title: 'Custom Coding Only', desc: 'Zero bloated WordPress themes or third-party page builders.' },
+      { title: 'Full-Funnel Acquisition', desc: 'Combining organic search growth with measurable paid search and social campaigns.' }
+    ],
+    languages: ['English', 'Spanish'],
+    faq: [
+      { q: 'Does UDMIDEAS serve both Kansas City and St. Louis markets?', a: 'Yes. We provide custom web engineering, local SEO, and PPC management across Kansas City, St. Louis, and all Missouri regions.' }
+    ]
+  },
+  '/maryland/': {
+    path: '/maryland/',
+    title: 'Maryland Web Design, Development & SEO | UDMIDEAS',
+    description: 'Custom website design, React/Laravel engineering, and localized SEO services for businesses in Maryland including Baltimore, Bethesda, Rockville, Annapolis, and Silver Spring.',
+    kicker: 'USA State Strategy',
+    heading: 'Maryland Custom Web Design & Digital Marketing.',
+    subheading: 'Accelerating healthcare, B2B, service-based, and eCommerce companies in Maryland with custom-coded React, WordPress, Laravel, and Magento architectures paired with targeted Google Ads and SEO.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/maryland/`,
+    schemaType: 'Place',
+    keyHighlights: [
+      'Targeted web design and digital marketing for Baltimore, Bethesda, Rockville, Silver Spring, and Annapolis',
+      '100% custom-coded architecture delivering sub-second load times and 95+ Core Web Vitals',
+      'Multilingual SEO, AEO, GEO, and high-intent PPC campaigns',
+      'Direct consultation with Founder Arun via WhatsApp (+91-9521186150) and scheduled video calls'
+    ],
+    features: [
+      { title: 'Maryland & DMV Corridor Reach', desc: 'Capturing buyers across Baltimore, Montgomery County, Annapolis, and the DC metro.' },
+      { title: 'Custom Coding Only', desc: 'Bespoke React, WordPress, Laravel, and Magento engineering built for speed and conversions.' },
+      { title: 'Full-Funnel Acquisition', desc: 'Combining organic search rankings with high-ROAS Google and Meta campaigns.' }
+    ],
+    languages: ['English', 'Spanish'],
+    faq: [
+      { q: 'Do you support Maryland businesses in both local and national SEO?', a: 'Yes. We structure city, state, and national landing pages backed by clean technical SEO and conversion tracking.' }
+    ]
+  },
+  '/colorado/': {
+    path: '/colorado/',
+    title: 'Colorado Web Design, Development & SEO | UDMIDEAS',
+    description: 'Custom website design, React/Laravel engineering, and localized SEO services for businesses in Colorado including Denver, Colorado Springs, Boulder, Aurora, and Fort Collins.',
+    kicker: 'USA State Strategy',
+    heading: 'Colorado Custom Web Design & Digital Marketing.',
+    subheading: 'Accelerating SaaS, outdoor eCommerce, and service-based companies in Colorado with custom-coded React, WordPress, Laravel, and Magento architectures paired with targeted Google Ads and SEO.',
+    category: 'usa-state',
+    canonicalUrl: `${CANONICAL_BASE}/colorado/`,
+    schemaType: 'Place',
+    keyHighlights: [
+      'Targeted web design and digital marketing for Denver, Boulder, Colorado Springs, Aurora, and Fort Collins',
+      '100% custom-coded architecture delivering sub-second load times and 95+ Core Web Vitals',
+      'Multilingual SEO, AEO, GEO, and high-ROAS Google Shopping & Search PPC',
+      'Direct consultation with Founder Arun via WhatsApp (+91-9521186150) and scheduled video calls'
+    ],
+    features: [
+      { title: 'Front Range & Statewide Reach', desc: 'Capturing high-intent buyers across Denver, Boulder, Colorado Springs, and Fort Collins.' },
+      { title: 'Custom Coding Only', desc: 'Zero bloated templates—clean, fast custom code built for growth.' },
+      { title: 'Full-Funnel Acquisition', desc: 'Combining organic search dominance with measurable paid media across Google and Meta.' }
+    ],
+    languages: ['English', 'Spanish'],
+    faq: [
+      { q: 'Do you work with Colorado eCommerce brands and local service businesses?', a: 'Yes. UDMIDEAS builds custom online stores and service websites for clients across Denver, Boulder, Colorado Springs, and statewide.' }
+    ]
+  },
   '/privacy-policy/': {
     path: '/privacy-policy/',
     title: 'Privacy Policy | UDMIDEAS NYC 10001',
@@ -2905,64 +3165,57 @@ export const ALL_PAGES: Record<string, PageSEO> = {
   }
 };
 
-// Helper function to generate generic state/country/blog pages dynamically if not listed
-export function getPageMetadata(path: string): PageSEO {
-  // Normalize path
-  const cleanPath = path.toLowerCase().replace(/%20/g, '-').replace(/ /g, '-');
-  const normalized = cleanPath.endsWith('/') ? cleanPath : `${cleanPath}/`;
+/**
+ * Returns true if a URL path matches legacy Blogger patterns
+ * (e.g., /*.html, /search/*, /p/*, /feeds/*, /2019/05/...) or /404/.
+ */
+export function isLegacyBloggerPath(rawPath: string): boolean {
+  const p = rawPath.toLowerCase();
+  return (
+    p === '/404' ||
+    p === '/404/' ||
+    p.endsWith('.html') ||
+    p.endsWith('.html/') ||
+    p === '/search' ||
+    p.startsWith('/search/') ||
+    p.startsWith('/p/') ||
+    p === '/feeds' ||
+    p.startsWith('/feeds/') ||
+    p.startsWith('/b/') ||
+    /^\/20[0-2][0-9]\//.test(p)
+  );
+}
 
-  if (ALL_PAGES[normalized]) {
+/**
+ * Strictly resolves metadata ONLY from explicit predefined entries in ALL_PAGES.
+ * Never auto-generates pages or formats unknown slugs into Title Case.
+ * Returns null for any non-whitelisted, legacy, or malformed URL.
+ */
+export function findPageMetadata(path: string): PageSEO | null {
+  if (!path || isLegacyBloggerPath(path)) return null;
+
+  const lower = path.toLowerCase();
+  const normalized = lower.endsWith('/') ? lower : `${lower}/`;
+
+  // Strict single-segment lowercase alphanumeric/hyphen whitelist format
+  if (!/^\/[a-z0-9-]+\/$/.test(normalized)) {
+    return null;
+  }
+
+  if (Object.prototype.hasOwnProperty.call(ALL_PAGES, normalized)) {
     return ALL_PAGES[normalized];
   }
 
-  // Check if it matches a USA state
-  const stateMatch = normalized.match(/^\/([a-z-]+)\/$/);
-  if (stateMatch) {
-    const slug = stateMatch[1];
-    const formattedName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  return null;
+}
 
-    return {
-      path: normalized,
-      title: `${formattedName} Web Design & Multilingual Marketing | UDMIDEAS`,
-      description: `Custom website design, React/Laravel engineering, and localized SEO services for businesses in ${formattedName}. Headquartered in NYC 10001, serving all 50 states.`,
-      kicker: 'USA State Strategy',
-      heading: `${formattedName} Custom Web Design & Digital Marketing.`,
-      subheading: `Accelerating service-based and eCommerce companies in ${formattedName} with custom-coded React, WordPress, Laravel, and Magento architectures paired with targeted Google Ads and SEO.`,
-      category: 'usa-state',
-      canonicalUrl: `${CANONICAL_BASE}${normalized}`,
-      schemaType: 'Place',
-      keyHighlights: [
-        `Targeted web design and digital marketing engineered for commercial clients in ${formattedName}`,
-        '100% custom-coded architecture delivering sub-second load times and 95+ Core Web Vitals',
-        'Headquartered at 350 5th Ave, New York, NY 10001, providing nationwide support',
-        'Direct consultation with Founder Arun via WhatsApp (+91-9521186150) and scheduled video calls'
-      ],
-      features: [
-        { title: `Local & National Reach in ${formattedName}`, desc: `Capturing high-intent buyers in metropolitan centers and throughout ${formattedName}.` },
-        { title: 'Custom Coding Only', desc: 'Zero bloated WordPress themes or third-party page builders that slow down user conversions.' },
-        { title: 'Full-Funnel Acquisition', desc: 'Combining organic search dominance with high-ROAS paid media across Google and Meta.' }
-      ],
-      languages: ['English', 'Spanish'],
-      faq: [
-        { q: `Do you provide in-person or remote consultations for ${formattedName}?`, a: `We provide direct video and WhatsApp consultations with Founder Arun, as well as on-site executive briefings from our New York headquarters.` }
-      ]
-    };
-  }
+/**
+ * Returns true only for explicitly whitelisted standalone routes in ALL_PAGES.
+ */
+export function isValidStandalonePath(path: string): boolean {
+  return findPageMetadata(path) !== null;
+}
 
-  // Fallback
-  return {
-    path: normalized,
-    title: 'UDMIDEAS | Multilingual Web Design & Digital Marketing Agency',
-    description: 'UDMIDEAS builds custom-coded multilingual websites and delivers international digital marketing for service & eCommerce businesses.',
-    kicker: 'Global Agency',
-    heading: 'Custom Web Design & Multilingual Growth.',
-    subheading: '15+ years of digital marketing dominance and custom software engineering.',
-    category: 'core',
-    canonicalUrl: `${CANONICAL_BASE}${normalized}`,
-    schemaType: 'WebPage',
-    keyHighlights: ['15+ Years Track Record', '100% Custom Coding Only', 'NYC 10001 Headquarters'],
-    features: [{ title: 'Custom Coding', desc: 'React, WordPress, Laravel, Magento.' }],
-    languages: ['English', 'Spanish', 'French', 'German', 'Arabic', 'Hebrew'],
-    faq: [{ q: 'How to contact?', a: 'WhatsApp Arun at +91-9521186150.' }]
-  };
+export function getPageMetadata(path: string): PageSEO | null {
+  return findPageMetadata(path);
 }
