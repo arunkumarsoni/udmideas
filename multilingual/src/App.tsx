@@ -4,14 +4,6 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  useLocation,
-  useNavigate,
-  useParams
-} from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AboutUsSection } from './components/AboutUsSection';
@@ -29,205 +21,78 @@ import { BlogDetailPage } from './components/BlogDetailPage';
 import { CaseStudiesPage } from './components/CaseStudiesPage';
 import { CaseStudyDetailPage } from './components/CaseStudyDetailPage';
 import { StandalonePageView } from './components/StandalonePageView';
-import { NotFound } from './components/NotFound';
 import { ContactModal } from './components/ContactModal';
 import { BLOG_POSTS, CASE_STUDIES } from './data/contentData';
-import { findPageMetadata, isLegacyBloggerPath, normalizeSlug } from './data/routesData';
+import { ALL_PAGES } from './data/routesData';
+import { BlogPost, CaseStudy } from './types';
 
-interface RouteHelpersProps {
-  onNavigateTo: (path: string, newTab?: boolean) => void;
-  onGoServices: () => void;
-  onOpenContact: () => void;
-}
+export default function App() {
+  const [currentPath, setCurrentPath] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const p = window.location.pathname.toLowerCase();
+      // Handle root or normalized trailing slash
+      if (!p || p === '/') return '/';
+      return p.endsWith('/') ? p : `${p}/`;
+    }
+    return '/';
+  });
 
-function normalizeRoutePath(rawPath: string): string {
-  const clean = normalizeSlug(rawPath);
-  return clean ? `/${clean}/` : '/';
-}
-
-const STRICT_SLUG_REGEX = /^[a-z0-9-]+$/;
-
-const BlogSlugRoute: React.FC<RouteHelpersProps> = ({
-  onNavigateTo,
-  onGoServices,
-  onOpenContact
-}) => {
-  const { slug } = useParams<{ slug: string }>();
-  const location = useLocation();
-  const cleanSlug = normalizeSlug(slug || '');
-
-  const matchedBlog =
-    !cleanSlug ||
-    !STRICT_SLUG_REGEX.test(cleanSlug) ||
-    isLegacyBloggerPath(location.pathname)
-      ? undefined
-      : BLOG_POSTS.find((b) => normalizeSlug(b.slug) === cleanSlug);
-
-  if (!matchedBlog) {
-    return (
-      <NotFound
-        requestedPath={location.pathname}
-        onGoHome={() => onNavigateTo('/')}
-        onGoServices={onGoServices}
-        onNavigateTo={(p) => onNavigateTo(p)}
-      />
-    );
-  }
-
-  return (
-    <BlogDetailPage
-      blog={matchedBlog}
-      onBack={() => onNavigateTo('/blog/')}
-      onSelectBlog={(b) => onNavigateTo(b.customUrl || `/blog/${b.slug}/`)}
-      onOpenContact={onOpenContact}
-    />
-  );
-};
-
-const CaseStudySlugRoute: React.FC<RouteHelpersProps> = ({
-  onNavigateTo,
-  onGoServices,
-  onOpenContact
-}) => {
-  const { slug } = useParams<{ slug: string }>();
-  const location = useLocation();
-  const cleanSlug = normalizeSlug(slug || '');
-
-  const matchedCaseStudy =
-    !cleanSlug ||
-    !STRICT_SLUG_REGEX.test(cleanSlug) ||
-    isLegacyBloggerPath(location.pathname)
-      ? undefined
-      : CASE_STUDIES.find((cs) => normalizeSlug(cs.slug || cs.id) === cleanSlug);
-
-  if (!matchedCaseStudy) {
-    return (
-      <NotFound
-        requestedPath={location.pathname}
-        onGoHome={() => onNavigateTo('/')}
-        onGoServices={onGoServices}
-        onNavigateTo={(p) => onNavigateTo(p)}
-      />
-    );
-  }
-
-  return (
-    <CaseStudyDetailPage
-      caseStudy={matchedCaseStudy}
-      onBack={() => onNavigateTo('/case-studies/')}
-      onSelectCaseStudy={(cs) => onNavigateTo(`/case-study/${cs.slug || cs.id}/`)}
-      onOpenContact={onOpenContact}
-    />
-  );
-};
-
-const DynamicSlugRoute: React.FC<RouteHelpersProps> = ({
-  onNavigateTo,
-  onGoServices,
-  onOpenContact
-}) => {
-  const { slug } = useParams<{ slug: string }>();
-  const location = useLocation();
-  const cleanSlug = normalizeSlug(slug || location.pathname);
-
-  // Reject empty, malformed (spaces, dots, .html), or legacy Blogger slugs immediately
-  if (
-    !cleanSlug ||
-    !STRICT_SLUG_REGEX.test(cleanSlug) ||
-    isLegacyBloggerPath(location.pathname)
-  ) {
-    return (
-      <NotFound
-        requestedPath={location.pathname}
-        onGoHome={() => onNavigateTo('/')}
-        onGoServices={onGoServices}
-        onNavigateTo={(p) => onNavigateTo(p)}
-      />
-    );
-  }
-
-  // 1. Strict whitelist match against explicitly defined root-level blog customUrls (slash-normalized)
-  const matchedBlog = BLOG_POSTS.find(
-    (b) => Boolean(b.customUrl) && normalizeSlug(b.customUrl!) === cleanSlug
-  );
-
-  if (matchedBlog) {
-    return (
-      <BlogDetailPage
-        blog={matchedBlog}
-        onBack={() => onNavigateTo('/blog/')}
-        onSelectBlog={(b) => onNavigateTo(b.customUrl || `/blog/${b.slug}/`)}
-        onOpenContact={onOpenContact}
-      />
-    );
-  }
-
-  // 2. Strict whitelist match against explicit predefined entries in ALL_PAGES (slash-normalized)
-  const matchedPage = findPageMetadata(cleanSlug);
-  if (matchedPage) {
-    return (
-      <StandalonePageView
-        path={matchedPage.path}
-        onNavigateHome={() => onNavigateTo('/')}
-        onNavigateTo={(p) => onNavigateTo(p)}
-      />
-    );
-  }
-
-  // 3. Any unmatched slug strictly renders 404 NotFound (zero auto-generated pages)
-  return (
-    <NotFound
-      requestedPath={location.pathname}
-      onGoHome={() => onNavigateTo('/')}
-      onGoServices={onGoServices}
-      onNavigateTo={(p) => onNavigateTo(p)}
-    />
-  );
-};
-
-function AppContent() {
-  const location = useLocation();
-  const navigate = useNavigate();
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
-  const currentPath = normalizeRoutePath(location.pathname);
-  const isHome = currentPath === '/';
+  // Sync state with browser location on popstate
+  useEffect(() => {
+    const handlePopState = () => {
+      const p = window.location.pathname.toLowerCase();
+      const normalized = !p || p === '/' ? '/' : (p.endsWith('/') ? p : `${p}/`);
+      setCurrentPath(normalized);
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   const navigateTo = (path: string, newTab: boolean = false) => {
-    if (path === '/#multilingual-services') {
-      navigateToServicesSection();
-      return;
-    }
-
     const cleanPath = path.toLowerCase().replace(/%20/g, '-').replace(/ /g, '-');
-    const normalized =
-      !cleanPath || cleanPath === '/'
-        ? '/'
-        : cleanPath.endsWith('/')
-          ? cleanPath
-          : `${cleanPath}/`;
+    const normalized = cleanPath.endsWith('/') ? cleanPath : `${cleanPath}/`;
 
     if (newTab) {
       window.open(normalized, '_blank');
       return;
     }
 
-    navigate(normalized);
+    if (window.location.pathname !== normalized) {
+      window.history.pushState({}, '', normalized);
+    }
+    setCurrentPath(normalized);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const navigateToServicesSection = () => {
-    if (location.pathname !== '/') {
-      navigate('/#multilingual-services');
-      setTimeout(() => {
-        const el = document.getElementById('multilingual-services');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 120);
-    } else {
-      const el = document.getElementById('multilingual-services');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // Route matching logic
+  // Check if currentPath is a blog detail page
+  const matchedBlog = BLOG_POSTS.find((b) => {
+    const slug = b.slug.toLowerCase();
+    const custom = b.customUrl ? b.customUrl.toLowerCase() : '';
+    return (
+      currentPath === `/blog/${slug}/` ||
+      currentPath === `/${slug}/` ||
+      (custom && currentPath === custom) ||
+      currentPath.includes(slug)
+    );
+  });
+
+  // Check if currentPath is a case study detail page
+  const matchedCaseStudy = CASE_STUDIES.find((cs) => {
+    const slug = (cs.slug || cs.id).toLowerCase();
+    return (
+      currentPath === `/case-study/${slug}/` ||
+      currentPath === `/${slug}/` ||
+      currentPath.includes(slug)
+    );
+  });
+
+  const isHome = currentPath === '/';
+  const isBlogListing = currentPath === '/blog/';
+  const isCaseStudiesListing = currentPath === '/case-studies/';
 
   useEffect(() => {
     if (isHome) {
@@ -238,141 +103,110 @@ function AppContent() {
       if (ogTitle) {
         ogTitle.setAttribute('content', homeTitle);
       }
-
-      if (location.hash === '#multilingual-services') {
-        setTimeout(() => {
-          const el = document.getElementById('multilingual-services');
-          if (el) el.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
     }
-  }, [isHome, location.hash]);
-
-  const notFoundElement = (
-    <NotFound
-      requestedPath={location.pathname}
-      onGoHome={() => navigateTo('/')}
-      onGoServices={navigateToServicesSection}
-      onNavigateTo={(p) => navigateTo(p)}
-    />
-  );
-
-  const homeElement = (
-    <>
-      {/* 1. Hero Header Section */}
-      <HeroSection
-        onOpenContact={() => setIsContactModalOpen(true)}
-        onExploreServices={() => {
-          const el = document.getElementById('multilingual-services');
-          if (el) el.scrollIntoView({ behavior: 'smooth' });
-        }}
-      />
-
-      {/* 2. About Us UDMIDEAS Section */}
-      <AboutUsSection
-        onOpenTeam={() => navigateTo('/team/', true)}
-        onOpenContact={() => setIsContactModalOpen(true)}
-      />
-
-      {/* 3. Multilingual UDMIDEAS Services Section (7 Core Services) */}
-      <MultilingualServicesSection
-        onOpenContact={() => setIsContactModalOpen(true)}
-      />
-
-      {/* 4. Reviews Section Slider with 10 reviews moving in 5 seconds */}
-      <ReviewsSlider />
-
-      {/* 5. SMM Services Section with all social media marketing services */}
-      <SmmServicesSection onOpenContact={() => setIsContactModalOpen(true)} />
-
-      {/* 6. Empowers By Companies Slider */}
-      <EmpoweredBySlider />
-
-      {/* 7. Our Latest Blogs Section (4 Blogs in Slider) */}
-      <LatestBlogsSection
-        onOpenBlogReader={(b) => navigateTo(b.customUrl || `/blog/${b.slug}/`, true)}
-        onOpenBlogPage={() => navigateTo('/blog/', true)}
-      />
-
-      {/* 8. Map USA with Location NYC 10001 */}
-      <MapUsaSection
-        onSelectState={(stateName) => {
-          const slug = '/' + stateName.toLowerCase().replace(/\s+/g, '-') + '/';
-          navigateTo(slug, true);
-        }}
-        onOpenContact={() => setIsContactModalOpen(true)}
-      />
-
-      {/* 9. Frequently Asked Questions Section */}
-      <FaqSection onOpenContact={() => setIsContactModalOpen(true)} />
-    </>
-  );
+  }, [isHome]);
 
   return (
     <div className="min-h-screen bg-white text-[#475569] flex flex-col font-sans selection:bg-[#1D4ED8] selection:text-white">
       {/* Universal Top Navigation with Mega/Submenus & New Tab Links */}
       <Navbar currentPath={currentPath} />
 
-      {/* Strict React Router View */}
-      <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={homeElement} />
-          <Route
-            path="/blog"
-            element={
-              <BlogPage
-                onBackToHome={() => navigateTo('/')}
-                onOpenContact={() => setIsContactModalOpen(true)}
-                onSelectBlog={(b) => navigateTo(b.customUrl || `/blog/${b.slug}/`, true)}
-              />
-            }
+      {/* Main View Router */}
+      {isCaseStudiesListing ? (
+        <main className="flex-grow">
+          <CaseStudiesPage
+            onBackToHome={() => navigateTo('/')}
+            onSelectCaseStudy={(cs) => navigateTo(`/case-study/${cs.slug || cs.id}/`)}
+            onOpenContact={() => setIsContactModalOpen(true)}
           />
-          <Route
-            path="/blog/:slug"
-            element={
-              <BlogSlugRoute
-                onNavigateTo={navigateTo}
-                onGoServices={navigateToServicesSection}
-                onOpenContact={() => setIsContactModalOpen(true)}
-              />
-            }
+        </main>
+      ) : matchedCaseStudy ? (
+        <main className="flex-grow">
+          <CaseStudyDetailPage
+            caseStudy={matchedCaseStudy}
+            onBack={() => navigateTo('/case-studies/')}
+            onSelectCaseStudy={(cs) => navigateTo(`/case-study/${cs.slug || cs.id}/`)}
+            onOpenContact={() => setIsContactModalOpen(true)}
           />
-          <Route
-            path="/case-studies"
-            element={
-              <CaseStudiesPage
-                onBackToHome={() => navigateTo('/')}
-                onSelectCaseStudy={(cs) => navigateTo(`/case-study/${cs.slug || cs.id}/`)}
-                onOpenContact={() => setIsContactModalOpen(true)}
-              />
-            }
+        </main>
+      ) : matchedBlog ? (
+        <main className="flex-grow">
+          <BlogDetailPage
+            blog={matchedBlog}
+            onBack={() => navigateTo('/blog/')}
+            onSelectBlog={(b) => navigateTo(b.customUrl || `/blog/${b.slug}/`)}
+            onOpenContact={() => setIsContactModalOpen(true)}
           />
-          <Route
-            path="/case-study/:slug"
-            element={
-              <CaseStudySlugRoute
-                onNavigateTo={navigateTo}
-                onGoServices={navigateToServicesSection}
-                onOpenContact={() => setIsContactModalOpen(true)}
-              />
-            }
+        </main>
+      ) : isBlogListing ? (
+        <main className="flex-grow">
+          <BlogPage
+            onBackToHome={() => navigateTo('/')}
+            onOpenContact={() => setIsContactModalOpen(true)}
+            onSelectBlog={(b) => navigateTo(b.customUrl || `/blog/${b.slug}/`, true)}
           />
-          <Route path="/404" element={notFoundElement} />
-          <Route
-            path="/:slug"
-            element={
-              <DynamicSlugRoute
-                onNavigateTo={navigateTo}
-                onGoServices={navigateToServicesSection}
-                onOpenContact={() => setIsContactModalOpen(true)}
-              />
-            }
+        </main>
+      ) : isHome ? (
+        <main className="flex-grow">
+          {/* 1. Hero Header Section */}
+          <HeroSection
+            onOpenContact={() => setIsContactModalOpen(true)}
+            onExploreServices={() => {
+              const el = document.getElementById('multilingual-services');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }}
           />
-          <Route path="*" element={notFoundElement} />
-        </Routes>
-      </main>
 
-      {/* Footer Menu with all required links to separate web pages */}
+          {/* 2. About Us UDMIDEAS Section */}
+          <AboutUsSection
+            onOpenTeam={() => navigateTo('/team/', true)}
+            onOpenContact={() => setIsContactModalOpen(true)}
+          />
+
+          {/* 3. Multilingual UDMIDEAS Services Section (7 Core Services) */}
+          <MultilingualServicesSection
+            onOpenContact={() => setIsContactModalOpen(true)}
+          />
+
+          {/* 4. Reviews Section Slider with 10 reviews moving in 5 seconds */}
+          <ReviewsSlider />
+
+          {/* 4. SMM Services Section with all social media marketing services */}
+          <SmmServicesSection onOpenContact={() => setIsContactModalOpen(true)} />
+
+          {/* 5. Empowers By Companies Slider */}
+          <EmpoweredBySlider />
+
+          {/* 6. Our Latest Blogs Section (4 Blogs in Slider) */}
+          <LatestBlogsSection
+            onOpenBlogReader={(b) => navigateTo(b.customUrl || `/blog/${b.slug}/`, true)}
+            onOpenBlogPage={() => navigateTo('/blog/', true)}
+          />
+
+          {/* 12. Map USA with Location NYC 10001 */}
+          <MapUsaSection
+            onSelectState={(stateName) => {
+              const slug = '/' + stateName.toLowerCase().replace(/\s+/g, '-') + '/';
+              navigateTo(slug, true);
+            }}
+            onOpenContact={() => setIsContactModalOpen(true)}
+          />
+
+          {/* Frequently Asked Questions Section (Added before Footer with 20 unique Q&As) */}
+          <FaqSection onOpenContact={() => setIsContactModalOpen(true)} />
+        </main>
+      ) : (
+        /* Standalone Separate Web Page for any of the requested URLs */
+        <main className="flex-grow">
+          <StandalonePageView
+            path={currentPath}
+            onNavigateHome={() => navigateTo('/')}
+            onNavigateTo={(p) => navigateTo(p)}
+          />
+        </main>
+      )}
+
+      {/* 13. Footer Menu with all required links to separate web pages */}
       <Footer />
 
       {/* Persistent WhatsApp Button at Bottom Right Corner */}
@@ -384,13 +218,5 @@ function AppContent() {
         onClose={() => setIsContactModalOpen(false)}
       />
     </div>
-  );
-}
-
-export default function App() {
-  return (
-    <BrowserRouter>
-      <AppContent />
-    </BrowserRouter>
   );
 }
