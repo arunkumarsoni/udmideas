@@ -3166,44 +3166,78 @@ export const ALL_PAGES: Record<string, PageSEO> = {
 };
 
 /**
+ * Strips leading and trailing slashes and lowercases any URL path or slug
+ * so both `/slug` and `/slug/` normalize identically.
+ */
+export function normalizeSlug(rawPath: string): string {
+  return (rawPath || '').trim().replace(/^\/+|\/+$/g, '').toLowerCase();
+}
+
+const STRICT_SINGLE_SLUG_REGEX = /^[a-z0-9-]+$/;
+
+/**
+ * Pre-normalized O(1) whitelist dictionary built directly from ALL_PAGES.
+ * Every key is stripped of leading/trailing slashes and lowercased.
+ */
+const NORMALIZED_PAGES_MAP: Record<string, PageSEO> = Object.entries(ALL_PAGES).reduce(
+  (acc, [key, value]) => {
+    const cleanKey = normalizeSlug(key);
+    if (cleanKey) {
+      acc[cleanKey] = value;
+    }
+    return acc;
+  },
+  {} as Record<string, PageSEO>
+);
+
+// Explicit canonical shorthand aliases for core pages
+if (NORMALIZED_PAGES_MAP['about-us']) {
+  NORMALIZED_PAGES_MAP['about'] = NORMALIZED_PAGES_MAP['about-us'];
+}
+if (NORMALIZED_PAGES_MAP['contact-us']) {
+  NORMALIZED_PAGES_MAP['contact'] = NORMALIZED_PAGES_MAP['contact-us'];
+}
+
+/**
  * Returns true if a URL path matches legacy Blogger patterns
  * (e.g., /*.html, /search/*, /p/*, /feeds/*, /2019/05/...) or /404/.
  */
 export function isLegacyBloggerPath(rawPath: string): boolean {
-  const p = rawPath.toLowerCase();
+  const trimmed = (rawPath || '').trim().toLowerCase();
+  const slug = normalizeSlug(trimmed);
+  const withLeading = trimmed.startsWith('/') ? trimmed : `/${trimmed}`;
+
   return (
-    p === '/404' ||
-    p === '/404/' ||
-    p.endsWith('.html') ||
-    p.endsWith('.html/') ||
-    p === '/search' ||
-    p.startsWith('/search/') ||
-    p.startsWith('/p/') ||
-    p === '/feeds' ||
-    p.startsWith('/feeds/') ||
-    p.startsWith('/b/') ||
-    /^\/20[0-2][0-9]\//.test(p)
+    slug === '404' ||
+    withLeading.endsWith('.html') ||
+    withLeading.endsWith('.html/') ||
+    slug === 'search' ||
+    withLeading.startsWith('/search/') ||
+    withLeading.startsWith('/p/') ||
+    slug === 'feeds' ||
+    withLeading.startsWith('/feeds/') ||
+    withLeading.startsWith('/b/') ||
+    /^\/20[0-2][0-9]\//.test(withLeading)
   );
 }
 
 /**
  * Strictly resolves metadata ONLY from explicit predefined entries in ALL_PAGES.
- * Never auto-generates pages or formats unknown slugs into Title Case.
- * Returns null for any non-whitelisted, legacy, or malformed URL.
+ * Strips leading and trailing slashes from both the requested path and ALL_PAGES keys
+ * so `/slug` and `/slug/` match cleanly without ever auto-generating fallback pages.
  */
 export function findPageMetadata(path: string): PageSEO | null {
   if (!path || isLegacyBloggerPath(path)) return null;
 
-  const lower = path.toLowerCase();
-  const normalized = lower.endsWith('/') ? lower : `${lower}/`;
+  const slug = normalizeSlug(path);
 
   // Strict single-segment lowercase alphanumeric/hyphen whitelist format
-  if (!/^\/[a-z0-9-]+\/$/.test(normalized)) {
+  if (!slug || !STRICT_SINGLE_SLUG_REGEX.test(slug)) {
     return null;
   }
 
-  if (Object.prototype.hasOwnProperty.call(ALL_PAGES, normalized)) {
-    return ALL_PAGES[normalized];
+  if (Object.prototype.hasOwnProperty.call(NORMALIZED_PAGES_MAP, slug)) {
+    return NORMALIZED_PAGES_MAP[slug];
   }
 
   return null;

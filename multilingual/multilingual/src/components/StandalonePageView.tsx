@@ -16,7 +16,7 @@ import {
   Sparkles,
   ExternalLink
 } from 'lucide-react';
-import { findPageMetadata } from '../data/routesData';
+import { findPageMetadata, normalizeSlug } from '../data/routesData';
 import { NotFound } from './NotFound';
 import { USA_STATES, LATAM_COUNTRIES, EU_COUNTRIES, ARABIC_COUNTRIES } from '../data/contentData';
 import { WebsiteDesignServicesContent } from './WebsiteDesignServicesContent';
@@ -83,8 +83,9 @@ export const StandalonePageView: React.FC<StandalonePageViewProps> = ({
   onNavigateHome,
   onNavigateTo
 }) => {
-  const page = findPageMetadata(path);
-  const pagePath = page?.path ?? '';
+  const normalizedInputSlug = normalizeSlug(path);
+  const page = findPageMetadata(normalizedInputSlug);
+  const pagePath = page ? `/${normalizeSlug(page.path)}/` : '';
   const isCustomServicePage =
     pagePath === '/digital-marketing-services/' ||
     pagePath === '/website-design-development/' ||
